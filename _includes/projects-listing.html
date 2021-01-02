@@ -2,7 +2,7 @@
 <li>
     <b>{{ project.name }}</b>
     {{ project.content }}
-    {% for link in project.links %}
-        <a href="{{ link.href }}">{{ link.name }}</a>
+    {% for item in project.links %}
+        <a href="{{ item.link }}">{{ item.name }}</a>
     {% endfor %}
 </li>
