@@ -17,6 +17,9 @@ defaults:
   - scope:
       path: ""
       type: "posts"
+  - scope:
+      path: ""
+      type: "projects"
 
 plugins:
   - jekyll-feed
