@@ -5,12 +5,10 @@
     <a href="https://linuxhub.it" target="_blank" rel="noopener noreferrer">visit</a> the portal I founded.</p>
 <p>This site contains Italian texts that I didn't want to translate.</p>
 <p>Just to say, I am not looking for a job and this is not a website to showcase my skills.</p>
-<br />
+<br>
 <p class="r"><i>_ Mirko</i></p>
-
-<hr />
-
-<span>Projects I'm working on*<br />
+<hr>
+<span>Projects I'm working on*<br>
     <small>* See all my projects <a href="/projects">here</a></small>
 </span>
 <ol>
