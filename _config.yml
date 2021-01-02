@@ -19,9 +19,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "projects"
+
+collections:
+  - projects
+  - bookmarks
 
 plugins:
   - jekyll-feed
