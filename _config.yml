@@ -23,6 +23,7 @@ defaults:
 collections:
   - projects
   - bookmarks
+  - contributions
 
 plugins:
   - jekyll-feed

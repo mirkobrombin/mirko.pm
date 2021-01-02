@@ -1,0 +1,8 @@
+{% assign contribution = include.contribution %}
+<li>
+    <b>{{ contribution.name }}</b>
+    {{ contribution.content }}
+    {% for item in contribution.links %}
+        <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+</li>
