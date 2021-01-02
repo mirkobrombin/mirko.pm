@@ -3,8 +3,8 @@ description:
 author: Mirko brombin
 email: send@mirko.pm
 
-assets: /mirko.pm/assets
-uploads: /mirko.pm/uploads
+assets: /assets
+uploads: /uploads
 
 permalink: /blog/:title/
 markdown: kramdown
