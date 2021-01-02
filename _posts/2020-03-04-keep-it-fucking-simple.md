@@ -5,7 +5,6 @@ published: 2020-03-04
 published_human: "4 March 2020"
 layout: post
 ---
-
 Quello di cui vi voglio parlare oggi è il metodo con cui normalmente chiunque sviluppa l'interfaccia di un sito web.
 
 Inizialmente (e parlo di molti anni fa) i siti web erano limitati dalla scarsa presenza di regole ed elementi i quali obbligavano gli sviluppatori (al tempo ancora non classificati come web designer) ad arrangiare interfacce poco funzionali ma semplici.
