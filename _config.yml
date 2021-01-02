@@ -25,5 +25,23 @@ collections:
   - bookmarks
   - contributions
 
+navigation:
+    - link: "/"
+      name: Me
+    - link: "/blog/"
+      name: Blog
+    - link: "/texts/"
+      name: Texts
+    - link: "/food/"
+      name: Food
+    - link: "/bookmarks/"
+      name: Bookmarks
+    - link: "/projects/"
+      name: Projects
+    - link: "/contributions/"
+      name: Contributions
+    - link: "https://t.me/mirkofeeds"
+      name: Feed
+
 plugins:
   - jekyll-feed

@@ -1,4 +1,5 @@
 ---
+title: Projects
 layout: projects
 ---
 {% assign projects = site.projects | sort: "date" | sort: "updated" | reverse %}

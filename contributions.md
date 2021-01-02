@@ -1,4 +1,5 @@
 ---
+title: Contributions
 layout: contributions
 ---
 {% assign contributions = site.contributions | sort: "date" | sort: "updated" | reverse %}

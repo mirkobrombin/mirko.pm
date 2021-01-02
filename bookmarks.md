@@ -1,4 +1,5 @@
 ---
+title: Bookmarks
 layout: bookmarks
 ---
 {% assign bookmarks = site.bookmarks | sort: "date" | sort: "updated" | reverse %}
