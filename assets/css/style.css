@@ -1,10 +1,11 @@
 body {
     visibility: visible !important;
-    transition: opacity 0.2s;
+    transition: opacity .2s;
     opacity: 1 !important;
     font-family: Martel, serif;
     padding: 10px;
-    font-size: 1em
+    font-size: 1em;
+    color: #1c1714
 }
 
 a {
@@ -44,7 +45,7 @@ pre>code {
 }
 
 header>h1 {
-    margin: 0 0.4em 0 0;
+    margin: 0 .4em 0 0;
     min-width: 276px;
     text-align: left;
     font-size: 2em
@@ -105,7 +106,7 @@ main>article>h3+time {
 
 footer p,
 main>h2+span {
-    font-size: 0.938em
+    font-size: .938em
 }
 
 article>time,
@@ -113,13 +114,13 @@ main>h2+span {
     padding: 0 0 10px
 }
 
-main>ol li:hover a,
-main a {
+main a,
+main>ol li:hover a {
     padding: 1px 7px
 }
 
-main>ul li,
-main p {
+main p,
+main>ul li {
     line-height: 26px
 }
 
@@ -167,7 +168,7 @@ main>ol li b {
     text-overflow: ellipsis;
     vertical-align: bottom;
     white-space: nowrap;
-    font-size: 1.188em;
+    font-size: 1.188em
 }
 
 pre>code::-webkit-scrollbar {
@@ -204,8 +205,63 @@ main>span {
 }
 
 main>span>small {
-    font-size: 0.8em;
+    font-size: .8em;
     margin: 8px 0 0
+}
+
+main>span>small>a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: underline;
+    padding: 0 2px
+}
+
+hr {
+    margin: 2rem 1rem;
+    border: 0;
+    border-bottom: 1px solid
+}
+
+aside {
+    margin: 1.7rem 2rem .4rem 0;
+    padding: 1.6rem 2rem;
+    float: left
+}
+
+article>time {
+    display: block
+}
+
+aside>b {
+    font-size: 1.4em
+}
+
+aside>ul {
+    margin: 1rem 0;
+    padding: 0
+}
+
+aside>ul>li {
+    margin: 0 1rem
+}
+
+aside>ul>li>a {
+    background-color: transparent;
+    color: inherit
+}
+
+aside>ul>li>a:hover {
+    text-decoration: underline
+}
+
+header>h1>b {
+    color: #d1bb94
+}
+
+header a:hover,
+main a:hover,
+main>ol li a:hover {
+    background-color: #d1bb94
 }
 
 @font-face {
@@ -253,7 +309,7 @@ html::-webkit-scrollbar-thumb {
     width: 6px
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width:745px) {
 
     header,
     header a {
@@ -309,25 +365,27 @@ header a {
 
 header a.s,
 header a:hover,
-main>ol li:hover a,
 main a {
-    color: #fff;
-    background-color: #000
+    color: #fff
+}
+
+header a.s,
+main a {
+    background-color: #4d4942
 }
 
 article>time,
 footer p,
 main>h2+span {
-    color: #8c8c8c
+    color: #908d9d
 }
 
 .d span,
 body,
 html::-webkit-scrollbar-track {
-    background-color: #fff
+    background-color: #fbfbfe
 }
 
-::-moz-selection,
 ::selection,
 main>article p i,
 mark {
@@ -338,15 +396,16 @@ mark {
 header a.s,
 header a:hover,
 html::-webkit-scrollbar-thumb:hover,
+main a,
 main>ol li a,
-main>ol li:hover a,
-main a {
+main>ol li:hover a {
     background-color: #191919
 }
 
 article+article,
 footer,
-header {
+header,
+hr {
     border-color: #e8e8e8
 }
 
@@ -355,11 +414,13 @@ main>ol li:hover:not(.d) {
 }
 
 header h1 span {
-    color: #a1a3ad91
+    color: #ada8a191
 }
 
+aside,
 code {
-    background-color: #00000030
+    background-color: #4d494212;
+    color: #4d4942
 }
 
 @media (prefers-color-scheme:dark) {
@@ -379,12 +440,11 @@ code {
         background-color: #949699
     }
 
-    ::-moz-selection,
     ::selection,
     main>article p i,
     mark {
-        background-color: #37342d;
-        color: #ffe59e
+        background-color: #2e2d37;
+        color: #9ecbff
     }
 
     html::-webkit-scrollbar-thumb:hover {
@@ -397,11 +457,21 @@ code {
         content: "Dark mode";
         display: block;
         margin: 10px;
-        opacity: 0.3;
+        opacity: .3;
         padding: 7px 15px;
         position: fixed;
         right: 0;
         top: initial
+    }
+
+    header>h1>b {
+        color: #c050ff
+    }
+
+    header a:hover,
+    main a:hover,
+    main>ol li a:hover {
+        background-color: #662988
     }
 
     .d span,
@@ -409,22 +479,22 @@ code {
     footer a,
     header a,
     header h1 span {
-        color: #f1f1f1c2
+        color: #b4aecc
     }
 
     article,
     header,
     header a.s,
     header a:hover,
-    main>ol li:hover a,
-    main a {
-        color: #fff
+    main a,
+    main>ol li:hover a {
+        color: #bbb7cc
     }
 
     .d span,
     body,
     html::-webkit-scrollbar-track {
-        background-color: #19191a
+        background-color: #131217
     }
 
     main>ol li {
@@ -436,24 +506,29 @@ code {
     }
 
     header a.s,
-    header a:hover,
     header::after,
-    main>ol li a,
-    main>ol li:hover a,
-    main a {
+    main a,
+    main>ol li a {
         background-color: #000
     }
 
-    header {
-        border-bottom-color: #3c3c3c
+    header,
+    hr {
+        border-bottom-color: #22202b
     }
 
     article+article,
     footer {
-        border-top-color: #3c3c3c
+        border-top-color: #22202b
     }
 
     main>ol li:hover:not(.d) {
         background-color: #a6a6a61f
+    }
+
+    aside,
+    code {
+        color: #b0acc1;
+        background-color: #1b1920
     }
 }
