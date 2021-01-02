@@ -1,0 +1,59 @@
+<h2>Ciao_</h2>
+<p>My name is Mirko Brombin, class of '94 and this is my personal website, containing mainly bookmarks, projects, posts
+    and recipes.</p>
+<p>If you landed on this website looking for Linux and Open source content, I recommend you to
+    <a href="https://linuxhub.it" target="_blank" rel="noopener noreferrer">visit</a> the portal I founded.</p>
+<p>This site contains Italian texts that I didn't want to translate.</p>
+<p>Just to say, I am not looking for a job and this is not a website to showcase my skills.</p>
+<br />
+<p class="r"><i>_ Mirko</i></p>
+
+<hr />
+
+<span>Projects I'm working on*<br />
+    <small>* See all my projects <a href="/projects">here</a></small>
+</span>
+<ol>
+    <li>
+        <b>@unifiedban_bot</b>
+        <p>The complete solution for the manage and sedue your Telegram group.</p>
+        <p>Firstly developed in python (now in C#) this bot allows an accurate control of spam in the
+            your telegram groups and thanks to the web interface you can manage the operations
+            directly from browser.
+        </p>
+        <a href="https://t.me/unifiedban_bot">@unifiedban_bot</a>
+        <a href="https://github.com/unified-ban/How-To-Start">unified-ban/how-to-start</a>
+        <a href="https://t.me/unifiedban_news">news</a>
+        <a href="https://t.me/unifiedban_logs">logs</a>
+        <a href="https://t.me/unifiedban_group">group</a>
+        <a href="https://unifiedban.solutions">web</a>
+    </li>
+    <li>
+        <b>biskuit</b>
+        <p>A modern CMS developed in php/synfony/vue.js born from the dead Pagekit project.</p>
+        <p>The project was born with the aim of resuming the well-known CMS, it brings several bugfixes, improvements
+            and
+            fixes security holes.
+        </p>
+        <a href="https://github.com/biskuitorg/biskuit">biskuitorg/biskuit</a>
+        <a href="https://biskuit.org">biskuit.org</a>
+    </li>
+    <li>
+        <b>Bottles</b>
+        <p>Easy management of wineprefixes on Debian/Ubuntu and derivatives.</p>
+        <p>The project was born mainly for the elementary OS distribution.</p>
+        <a href="https://github.com/bottlesdevs/bottles">bottlesdevs/bottles/v2</a>
+        <a href="https://github.com/bottlesdevs/Bottles/tree/v1">bottlesdevs/bottles/v1</a>
+        <a href="https://github.com/bottlesdevs/Bottles/wiki">wiki</a>
+    </li>
+    <li>
+        <b>BitMyCoins</b>
+        <p>Application for track cryptocurrencies on Linux.</p>
+        <a href="https://github.com/mirkobrombin/BitMyCoins">mirkobrombin/BitMyCoins</a>
+    </li>
+    <li>
+        <b>ppaextender</b>
+        <p>Simply extend repos on Ubuntu/Debian and derivatives.</p>
+        <a href="https://github.com/linuxhubit/ppaextender">linuxhubit/ppaextender</a>
+    </li>
+</ol>
