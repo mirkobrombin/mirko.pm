@@ -3,7 +3,7 @@ description:
 author: Mirko brombin
 email: send@mirko.pm
 
-assets: /assets
+assets: assets
 uploads: /uploads
 
 markdown: kramdown
