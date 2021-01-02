@@ -1,5 +1,4 @@
 ---
-name: "unifiedban.solutions"
+name: "*unified/ban - Free Telegram spam and scam prevention bot"
 link: "https://unifiedban.solutions"
-description: "Complete Telegram solution. Keep your users safe and manage your group with the most advanced, comprehensive and free solution."
 ---
