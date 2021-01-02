@@ -1,5 +1,5 @@
 ---
-name: "github.com"
+name: github.com
 links: 
     - link: "https://github.com/linuxhubit"
       name: /linuxhubit
