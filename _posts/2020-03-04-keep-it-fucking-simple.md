@@ -3,6 +3,7 @@ title: "Keep it fucking simple @css"
 description: "Quello di cui vi voglio parlare oggi è il metodo con cui normalmente chiunque sviluppa l'interfaccia di un sito web."
 published: 2020-03-04
 published_human: "4 March 2020"
+layout: post
 ---
 
 Quello di cui vi voglio parlare oggi è il metodo con cui normalmente chiunque sviluppa l'interfaccia di un sito web.
