@@ -1,6 +1,6 @@
-<span>My personal blog<br />
-    <small>My point of view but also programming, cooking and saving.</small>
-</span>
+---
+layout: blog
+---
 
 {% assign posts = site.posts | sort: "date" | sort: "updated" | reverse %}
 
