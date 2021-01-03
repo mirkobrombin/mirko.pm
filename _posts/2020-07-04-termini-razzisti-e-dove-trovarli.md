@@ -3,6 +3,7 @@ title: "Termini razzisti e dove trovarli"
 description: "Il razzismo è un problema che tormenta la gente da moltissimi anni, oserei dire da sempre. Neri, gialli, bianchi, turchini, leghisti e chi più ne ha più ne metta."
 published: 2020-07-04
 layout: post
+published: true
 ---
 Il razzismo è un problema che tormenta la gente da moltissimi anni, oserei dire da sempre. Neri, gialli, bianchi, turchini, leghisti e chi più ne ha più ne metta. In un modo o nell'altro siamo tutti classificati, se non per il colore per la nazionalità, per i capelli, per la religione, per la preferenza politica.. ce n'è per tutti.
 

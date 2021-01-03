@@ -3,6 +3,7 @@ title: "Un blog in HTML?"
 description: "I più curiosi hanno di certo dato un'occhiata al sorgente di questo sito web, arrivando alla deduzione che sia stato realizzato in HTML."
 published: 2020-01-11
 layout: post
+published: true
 ---
 I più curiosi hanno di certo dato un'occhiata al sorgente di questo sito web, arrivando alla deduzione che sia stato realizzato in HTML.
 

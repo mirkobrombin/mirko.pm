@@ -3,6 +3,7 @@ title: "Il coronavirus infetta anche i media"
 description: "Ogni mattina mi informo sulle ultime notizie. Apro la mia applicazione preferita, scorro le notizie .."
 published: 2020-02-24
 layout: post
+published: true
 ---
 Ogni mattina mi informo sulle ultime notizie. Apro la mia applicazione preferita, scorro le notizie sul virus.. scorro le notizie sul virus.. scorro nel notizie sul virus.. e.. dove sono i post contro il nuovo Samsung Galaxy Flop? E i miei amati politici?
 

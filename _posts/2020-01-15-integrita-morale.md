@@ -3,6 +3,7 @@ title: "Integrità morale"
 description: "Nella vita ci sono episodi che cambiano il nostro modo di vedere le cose."
 published: 2020-01-15
 layout: post
+published: true
 ---
 Nella vita ci sono episodi che cambiano il nostro modo di vedere le cose. Spesso ci si aspetta di conoscere bene delle persone, dedicando a queste rispetto ed affidabilità scottandosi poi con quelli che sono i reali presupposti opportunistici.
 

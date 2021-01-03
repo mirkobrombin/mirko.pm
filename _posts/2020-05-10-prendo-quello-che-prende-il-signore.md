@@ -3,6 +3,7 @@ title: "Prendo quello che prende il signore"
 description: "Io credo che non esista cosa più triste del non poter ragionare di testa propria."
 published: 2020-05-10
 layout: post
+published: true
 ---
 Io credo che non esista cosa più triste del non poter ragionare di testa propria.
 
