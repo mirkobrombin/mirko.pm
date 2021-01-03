@@ -311,6 +311,12 @@ html::-webkit-scrollbar-thumb {
 
 @media screen and (max-width:745px) {
 
+    main>article>img,
+    main>article>p>img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     header,
     header a {
         display: block
