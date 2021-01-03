@@ -43,7 +43,7 @@ Dal 2017 ho cominciato a sviluppare
 gruppi, software per desktop e server (Linux), portali di pubblicazione e
 gestione contenuti, [CMS](https://github.com/biskuitorg/) etc.
 
-Essendo lo sviluppo di applicazioni in GTK il mio target principale, ho
+Essendo lo sviluppo di applicazioni GTK il mio target principale, ho
 cominciato ad utilizzare <mark>GNOME Builder</mark>, l'IDE tutto in uno di
 GNOME.
 
