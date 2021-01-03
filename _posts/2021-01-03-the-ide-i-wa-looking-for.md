@@ -38,8 +38,9 @@ mi sono serviti a trovare lui, l'IDE definitivo.
 
 #### L'IDE definitivo.
 Il mio modo di programmare ed il target in se sono cambiati molto di recente.
-Dal 2017 ho cominciato a sviluppare bot Telegram per la sicurezza e gestione
-dei gruppi, software per desktop e server (Linux), portali di pubblicazione e
+Dal 2017 ho cominciato a sviluppare 
+[bot Telegram](https://unifiedban.solutions) per la sicurezza e gestione dei
+gruppi, software per desktop e server (Linux), portali di pubblicazione e
 gestione contenuti, CMS etc.
 
 Essendo lo sviluppo di applicazioni in GTK il mio target principale, ho
