@@ -4,6 +4,7 @@ description: "Premetto che non ho pronta una programmazione di articoli."
 published: 2020-01-10
 layout: post
 published: true
+translated: false
 ---
 Premetto che non ho pronta una programmazione di articoli.
 

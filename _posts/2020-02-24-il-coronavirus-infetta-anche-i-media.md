@@ -4,6 +4,7 @@ description: "Ogni mattina mi informo sulle ultime notizie. Apro la mia applicaz
 published: 2020-02-24
 layout: post
 published: true
+translated: false
 ---
 Ogni mattina mi informo sulle ultime notizie. Apro la mia applicazione preferita, scorro le notizie sul virus.. scorro le notizie sul virus.. scorro nel notizie sul virus.. e.. dove sono i post contro il nuovo Samsung Galaxy Flop? E i miei amati politici?
 

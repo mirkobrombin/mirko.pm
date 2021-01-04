@@ -4,6 +4,7 @@ description: "I più curiosi hanno di certo dato un'occhiata al sorgente di ques
 published: 2020-01-11
 layout: post
 published: true
+translated: false
 ---
 I più curiosi hanno di certo dato un'occhiata al sorgente di questo sito web, arrivando alla deduzione che sia stato realizzato in HTML.
 

@@ -4,6 +4,7 @@ description: "Quello di cui vi voglio parlare oggi è il metodo con cui normalme
 published: 2020-03-04
 layout: post
 published: true
+translated: false
 ---
 Quello di cui vi voglio parlare oggi è il metodo con cui normalmente chiunque sviluppa l'interfaccia di un sito web.
 
