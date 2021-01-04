@@ -1,8 +1,10 @@
 ---
 title: Privacy Policy
+description: mirko.pm's Privacy Policy
+layout: page
 ---
-<span>Information pursuant to art. 13 of the Privacy Code  
-<small>In accordance with article 13 of the code of Legislative Decree 196/2003, we provide you with the following information.</small></span>
+*Information pursuant to art. 13 of the Privacy Code*
+> In accordance with article 13 of the code of Legislative Decree 196/2003, we provide you with the following information.
 
 We at **https://mirko.pm** believe that the privacy of our visitors is extremely important. This document describes in detail the types of personal information collected and recorded by our site and how it is used
 
