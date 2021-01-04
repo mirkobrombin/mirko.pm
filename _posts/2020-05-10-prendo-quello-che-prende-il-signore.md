@@ -4,7 +4,8 @@ description: "Io credo che non esista cosa più triste del non poter ragionare d
 published: 2020-05-10
 layout: post
 published: true
-translated: false
+is_translation: false
+translation: false
 ---
 Io credo che non esista cosa più triste del non poter ragionare di testa propria.
 

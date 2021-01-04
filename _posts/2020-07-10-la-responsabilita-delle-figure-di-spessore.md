@@ -4,7 +4,8 @@ description: "A volte mi capita di fermarmi e ragionare su questioni che probabi
 published: 2020-07-10
 layout: post
 published: true
-translated: false
+is_translation: false
+translation: false
 ---
 A volte mi capita di fermarmi e ragionare su questioni che probabilmente, anzi sicuramente, non necessitano di una mia intromissione e questo accade nei momenti meno opportuni: mentre parlo con qualcuno, mentre riordino casa, quando lavo l'auto con l'acqua che scorre a fiumi.. insomma tutta una storia.
 
