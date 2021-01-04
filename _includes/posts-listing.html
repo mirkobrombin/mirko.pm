@@ -6,8 +6,8 @@
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ date | date: "%a, %b %e, %Y" }}</time>
     <p>{{ post.content | strip_html | truncatewords: 32 }}</p>
     <a href="{{ post.url }}">Read</a>
-    {% if page.translation %}
-        &nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ page.translation }}">English version</a>
+    {% if post.translation %}
+        <a href="/blog/{{ post.translation }}" class="no-button">English version</a>
     {% endif %}
 </article>
 {% endif %}
