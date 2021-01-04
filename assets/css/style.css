@@ -429,6 +429,16 @@ code {
     color: #4d4942
 }
 
+span.no-translation {
+    border-top: 1px solid #5d5028;
+    padding: 1rem;
+    display: block;
+    margin: 1rem 0;
+    font-size: .9em;
+    color: #5d5028;
+    text-align: right;
+}
+
 /* My personal color-scheme for snippets */
 .language-python .k, .language-python .ow,
 .language-css .n {

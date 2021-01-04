@@ -4,6 +4,7 @@ description: ""
 published: 2021-01-03
 layout: post
 published: true
+translated: false
 ---
 Sono uno sviluppatore da ormai diversi anni, cominciai a googlare <mark>come
 creare un sito web</mark> quando avevo 14 anni e da allora di strada ne ho
