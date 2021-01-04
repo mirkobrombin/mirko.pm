@@ -429,14 +429,32 @@ code {
     color: #4d4942
 }
 
-span.no-translation {
-    border-top: 1px solid #5d5028;
+span.no-translation,
+span.translation {
     padding: 1rem;
     display: block;
     margin: 1rem 0;
     font-size: .9em;
+    border-top: 1px solid
+}
+
+span.no-translation {
+    border-top-color: #5d5028;
     color: #5d5028;
     text-align: right;
+}
+
+span.translation {
+    border-top-color: #28345d;
+    color: #28345d;
+    text-align: left;
+}
+
+span.translation a {
+    background-color: initial;
+    color: initial;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 /* My personal color-scheme for snippets */
