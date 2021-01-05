@@ -538,8 +538,13 @@ span.translation a {
 
     header a:hover,
     main a:hover,
-    main>ol li a:hover {
+    main>ol li a:hover,
+    span.translation {
         background-color: #662988
+    }
+    
+    span.translation {
+        border-color: #662988
     }
 
     .d span,
