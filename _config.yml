@@ -6,7 +6,7 @@ email: send@mirko.pm
 assets: /assets
 uploads: /uploads
 
-permalink: /blog/:title/
+permalink: /articles/:title/
 markdown: kramdown
 
 paginate: 5
