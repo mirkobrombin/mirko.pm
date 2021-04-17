@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - apache  - centos  - php  - nextcloud
+  - apache  
+  - centos  
+  - php  
+  - nextcloud
 ---
 Di cosa sia **Netxcloud** e come installarlo su **CentOS** ne abbiamo già parlato in [**questo**](https://linuxhub.it/article/howto-installare-nextcloud-centos-7) articolo. Di seguito mi rivolgerò a quegli utenti che hanno invece installato una versione non attuale di Nextcloud e che ovviamente vogliono aggiornare per godere a pieno delle ultime novità.
 

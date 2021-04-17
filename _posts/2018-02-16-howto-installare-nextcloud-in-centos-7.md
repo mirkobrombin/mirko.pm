@@ -5,7 +5,12 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - mysql  - centos  - letsencrypt  - php  - nextcloud
+  - nginx  
+  - mysql  
+  - centos  
+  - letsencrypt  
+  - php  
+  - nextcloud
 ---
 NextCloud è una piattaforma di Cloud Storage, basato su ownCloud, rispetto questo si distingue per il gran numero di applicazioni ed integrazioni disponibili, oltre che una community vasta.
 

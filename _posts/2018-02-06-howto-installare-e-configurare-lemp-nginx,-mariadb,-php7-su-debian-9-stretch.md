@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - debian  - mysql  - php
+  - nginx  
+  - debian  
+  - mysql  
+  - php
 ---
 <p>Specialmente per l'utilizzo e la distribuzione di applicativi web, una corretta configurazione di un server web é indispensabile. Trattando questo argomento mi sento in dovere di dire che vi sono diverse scuole di pensiero. C'é chi predilige Apache a Nginx, chi viceversa, chi li sfrutta entrambi in sincronia. Lo stesso vale per MySQL e MariaDB. Quello che andró a spiegare in questa guida riguarda la seguente combinazione di software:</p>
 

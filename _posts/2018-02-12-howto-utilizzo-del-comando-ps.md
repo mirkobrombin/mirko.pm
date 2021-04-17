@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - gnome  - systemd  - systemd
+  - gnome  
+  - systemd
 ---
 Comprendere la gestione dei processi di Linux può essere utile sia per gli sviluppatori che per gli amministratori di sistema. Il comando **ps** è un modo eccellente per ottenere informazioni sui processi in esecuzione.
 

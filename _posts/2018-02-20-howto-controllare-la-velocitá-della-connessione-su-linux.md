@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - debian  - python  - php  - github
+  - debian  
+  - python  
+  - php  
+  - github
 ---
 Spesso capita la necessitá di **controllare la velocitá** **della** propria **connessione** internet. C'é chi utilizza tool grafici, chi siti web. In questo articolo vi proponiamo 2 comandi pratici all'uso, con cui potrete testare la velocitá della vostra connessione.
 
