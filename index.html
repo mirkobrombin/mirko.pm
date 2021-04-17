@@ -1,8 +1,6 @@
 ---
 title: Home
 layout: default
-pagination: 
-  enabled: true
 ---
 
 {% assign posts = site.posts | sort: "date" | sort: "updated" | reverse %}
@@ -11,8 +9,6 @@ pagination:
     {% for post in paginator.posts %}
         {% include posts-listing.html post=post %}
     {% endfor %}
-
-
 
     {% if paginator.total_pages > 1 %}
         <ol>
@@ -28,5 +24,4 @@ pagination:
         {% endif %}
         </ol>
     {% endif %}
-
 </div>

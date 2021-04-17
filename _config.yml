@@ -9,15 +9,8 @@ uploads: /uploads
 permalink: /blog/:title/
 markdown: kramdown
 
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 11
-  permalink: '/posts/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'published'
-  sort_reverse: true
+paginate: 5
+paginate_path: "/:num/"
 
 defaults:
   - scope:
@@ -36,4 +29,4 @@ navigation:
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
+  - jekyll-paginate
