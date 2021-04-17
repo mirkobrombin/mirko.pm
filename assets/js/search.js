@@ -1,7 +1,8 @@
 search_field = document.querySelector("header input[type='search']"),
     body = document.querySelector("body"),
     header = document.querySelector("header"),
-    search_results = document.querySelector("header form > div"),
+    search_results_container = document.querySelector("header form > div"),
+    search_results = document.querySelector("header form > div > div"),
     search_result = document.querySelector("header form > div > div article"),
     search_keywords = "";
 
@@ -47,7 +48,7 @@ fetch('https://linuxhub.it/search.json')
                 `;
                 search_results.appendChild(post);
             });
-            search_results.style.display = "block";
+            search_results_container.style.display = "block";
         }
         search_field.addEventListener("keyup", search);
     })
@@ -59,7 +60,7 @@ fetch('https://linuxhub.it/search.json')
 
 window.addEventListener('mouseup', e => {
     if (e.target.tagName != "ARTICLE" & e.target.tagName != "INPUT") {
-        search_results.style.display = "none",
+        search_results_container.style.display = "none",
             search_results.innerHTML = "",
             body.style.overflow = "auto",
             search_field.value = "",
