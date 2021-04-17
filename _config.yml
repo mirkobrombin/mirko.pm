@@ -25,7 +25,11 @@ defaults:
 
 navigation:
     - link: "/"
-      name: Educazione per Linux ed Open source
+      name: Home
+    - link: "https://t.me/linuxpeople"
+      name: Community Telegram
+    - link: "https://linuxpeople.org"
+      name: "linuxpeople"
 
 plugins:
   - jekyll-feed
