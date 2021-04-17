@@ -5,7 +5,9 @@ layout: post
 author: WhiXard
 author_github: Bildcraft1
 tags:
-  - python  - github  - bash
+  - python  
+  - github  
+  - bash
 ---
 Projector è un programma creato da JetBrains, il suo scopo è quello di poter avviare da un server (o da un PC locale più potente della nostra macchina) una delle tante IDE JetBrains e di poterle usare direttamente dal Browser senza dover installare nulla sul nostro computer.
 
