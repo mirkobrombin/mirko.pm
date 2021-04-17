@@ -30,8 +30,9 @@ window.addEventListener('scroll', function(e) {
             document.querySelector('aside>ul>li>a.' + t.getAttribute("id")).classList.add("active")
         }
     })
-}),
+});
 // related articles
+/*
 article_tag = document.querySelector("main>article>span+div .tag:first-child").innerText,
 article_keyword = article_tag ? article_tag : "nginx",
 related_articles = document.querySelector("section[related] > div"),
@@ -39,3 +40,4 @@ related_article = document.querySelector("header form > div > div article"),
 related_url = 'search?searchword=' + article_keyword + '&limit=6&areas[0]=blog',
 load(related_articles, related_url, '.tm-main.tm-content.uk-width-medium-1-1'),
 related_articles.style.display = "block";
+*/

@@ -45,6 +45,8 @@ fetch('https://linuxhub.it/search.json')
                     <a href="${result["url"]}">
                         <h2>${result["title"]}</h2>
                     </a>
+                    <br />
+                    <p>${result["excerpt"]}</p>
                 `;
                 search_results.appendChild(post);
             });
@@ -59,7 +61,7 @@ fetch('https://linuxhub.it/search.json')
     });
 
 window.addEventListener('mouseup', e => {
-    if(!["ARTICLE", "INPUT", "A"].indexOf(e.target.tagName)) {
+    if(e.target.tagName == "DIV") {
         search_results_container.style.display = "none",
             search_results.innerHTML = "",
             body.style.overflow = "auto",
