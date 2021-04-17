@@ -9,7 +9,7 @@ search_field = document.querySelector("header input[type='search']"),
 var taglist_tmp = [];
 var posts = [];
 
-fetch('http://127.0.0.1:4000/search.json')
+fetch('https://linuxhub.it/search.json')
     .then(res => res.json())
     .then((posts) => {
         console.info("linux/hub Posts index found.");

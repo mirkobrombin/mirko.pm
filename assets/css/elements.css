@@ -697,10 +697,6 @@ header form>section .tag {
     margin: 0 .4rem 0
 }
 
-header.typing>div>form>input[type=search] {
-    color: transparent
-}
-
 header form>section::after {
     content: "|";
     animation: blink 1s linear infinite

@@ -4,9 +4,9 @@ layout: none
 [
   {% for post in site.posts %}
     {
-      "title"    : "{{ post.title | escape }}",
+      "title"    : {{ post.title | escape | jsonify }},
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "excerpt"  : "{{ post.content | strip_html | truncatewords: 32 }}…",
+      "excerpt"  : {{ post.content | strip_html | truncatewords: 32 | jsonify}},
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}"
     } {% unless forloop.last %},{% endunless %}
