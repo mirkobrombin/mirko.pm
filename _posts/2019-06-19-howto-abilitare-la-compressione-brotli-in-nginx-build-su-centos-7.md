@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - centos  - github
+  - nginx  
+  - centos 
+  - github
 ---
 In questa guida vediamo come installare e abilitare la compressione Brotli, su installazioni compilate di Nginx per Centos 7.
 

@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - centos  - rhel  - bash
+  - nginx  
+  - centos  
+  - rhel  
+  - bash
 ---
 Se stai cercando l'installazione di Nginx su Centos 7, procedi la lettura <a href="https://linuxhub.it/articles/howto-installare-nginx-su-centos-7-e-configurazione-ssl">qui</a>.
 

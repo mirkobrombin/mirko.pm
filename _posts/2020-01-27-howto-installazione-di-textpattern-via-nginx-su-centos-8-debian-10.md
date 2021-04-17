@@ -5,7 +5,12 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - debian  - mysql  - centos  - php  - rhel
+  - nginx  
+  - debian  
+  - mysql  
+  - centos  
+  - php  
+  - rhel
 ---
 Textpattern è un CMS semplice e leggero ma potente, ottimo per la realizzazione di progetti web sia elaborati che non (come portfolio, gestione contenuti pagina, blog..).
 

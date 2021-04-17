@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - apache  - centos
+  - nginx  
+  - apache  
+  - centos
 ---
 Il protocollo HTTP/2 è la seconda versione del comune protocollo HTTP utilizzato nel web. Si basa su SPDY, un protocollo di trasferimento creato da Google che riduce la latenza e le prestazioni nella fase di caricamento delle pagine web.
 

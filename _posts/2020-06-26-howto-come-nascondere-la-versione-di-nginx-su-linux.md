@@ -5,7 +5,11 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - nginx  - debian  - centos  - rhel  - bash
+  - nginx  
+  - debian  
+  - centos  
+  - rhel  
+  - bash
 ---
 Quando si possiede un web server con installato **Nginx**, nelle pagine di errore o negli header è possibile identificare la **versione** del software installata, dato che potrebbe essere utilizzato da qualche malintenzionato per trovare vulnerabilità per accedere alla propria macchina.
 

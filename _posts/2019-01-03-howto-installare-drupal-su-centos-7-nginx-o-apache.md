@@ -5,7 +5,11 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - apache  - mysql  - centos  - php
+  - nginx  
+  - apache  
+  - mysql  
+  - centos  
+  - php
 ---
 In questa #howto vediamo come si installa Drupal su **Centos 7**, sfruttando Nginx o Apache come Web server (in questa guida si mostra l'installazione su uno dei due Web server appena citati, non sulla loro coesistenza).
 

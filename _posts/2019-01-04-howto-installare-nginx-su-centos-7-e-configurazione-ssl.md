@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - centos
+  - nginx 
+  - centos
 ---
 In questa guida andremo a vedere come è possibile installare Nginx su Centos 7 via repository ufficiale.
 

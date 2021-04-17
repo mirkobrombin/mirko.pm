@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - php  - bash
+  - nginx  
+  - php  
+  - bash
 ---
 **VestaCP** è un pannello di gestione e controllo per web server Nginx + php-fpm e/o Apache, oltre che database server come MySQL e PostgreSQL.
 

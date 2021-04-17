@@ -5,7 +5,12 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - nginx  - debian  - nodejs  - centos  - rhel  - bash
+  - nginx  
+  - debian  
+  - nodejs  
+  - centos  
+  - rhel  
+  - bash
 ---
 **NodeJS** è una runtime di JavaScript costruita sul motore V8 di Chrome che viene utilizzata principalmente per realizzare applicazioni web come siti statici o veri e propri CMS.
 

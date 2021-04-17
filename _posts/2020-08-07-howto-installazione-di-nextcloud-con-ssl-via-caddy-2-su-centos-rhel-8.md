@@ -5,7 +5,15 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - mysql  - centos  - fedora  - php  - nextcloud  - rhel  - caddy  - bash
+  - nginx  
+  - mysql  
+  - centos  
+  - fedora 
+  - php  
+  - nextcloud  
+  - rhel  
+  - caddy  
+  - bash
 ---
 **NextCloud** è una piattaforma di Cloud Storage basata su ownCloud, che rispetto a questo si distingue per il gran numero di applicazioni ed integrazioni disponibili, oltre che per una community vasta.
 

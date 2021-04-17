@@ -5,7 +5,14 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - apache  - centos  - python  - php  - github  - gnome  - bash
+  - nginx  
+  - apache  
+  - centos  
+  - python  
+  - php 
+  - github  
+  - gnome  
+  - bash
 ---
 Uno script di post installazione può semplificare il lavoro in molti casi, come per un rollout, la configurazione di un ambiente di sviluppo o il semplice cambio di distribuzione.
 

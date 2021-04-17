@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - mysql  - php
+  - nginx  
+  - mysql  
+  - php
 ---
 <p>Moodle é un software riservato ai settori dell'istruzione. Si tratta di un gestionale per docenti, studenti e collaboratori, al momento il piú usato.</p>
 

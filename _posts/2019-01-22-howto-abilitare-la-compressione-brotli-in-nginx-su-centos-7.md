@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - centos
+  - nginx  
+  - centos
 ---
 **Brotli** è un algoritmo di compressione sempre più difuso nei browser moderni. Questo algoritmo offre prestazioni maggiori rispetto Gzip, parliamo di quasi il **40%** di ottimizzazione della compressione, oltre che un miglioramento delle prestazioni necessarie per l'impiego.
 

@@ -59,7 +59,7 @@ fetch('https://linuxhub.it/search.json')
     });
 
 window.addEventListener('mouseup', e => {
-    if (e.target.tagName != "ARTICLE" & e.target.tagName != "INPUT") {
+    if(!["ARTICLE", "INPUT", "A"].indexOf(e.target.tagName)) {
         search_results_container.style.display = "none",
             search_results.innerHTML = "",
             body.style.overflow = "auto",
