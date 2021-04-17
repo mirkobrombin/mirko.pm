@@ -171,3 +171,8 @@
 .tag.special-tag {
     padding: 0 10px;
 }
+
+.tag.edit {
+    box-shadow: none;
+    padding: 0;
+}

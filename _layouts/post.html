@@ -30,6 +30,9 @@ layout: default
         </em>
     </span>
     <div>
+        <div class="tag edit">
+            <a href="https://github.com/linuxhubit/linuxhub.it/blob/main/_posts/{{ page.date | date:'%Y-%m-%d' }}-{{ page.url | replace: '/articles/', '' }}.md">Edit on GitHub</a>
+        </div>
         {% for tag in page.tags %}
             <div class="tag {{ tag }}">{{ tag }}</div>
         {% endfor %}
