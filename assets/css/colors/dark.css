@@ -1,0 +1,327 @@
+@media (prefers-color-scheme:dark) {
+    .hljs {
+        box-shadow: none;
+        display: block;
+        overflow-x: auto;
+        padding: .5em;
+        color: #abb2bf;
+        background: #282c34
+    }
+
+    header form>div article::after,
+    main>aside>span:first-child::after {
+        color: #fff
+    }
+
+    .hljs-function .hljs-params {
+        color: #a6e22e
+    }
+
+    .hljs-function .hljs-params .hljs-typing {
+        color: #fd971f
+    }
+
+    .hljs-module-access .hljs-module {
+        color: #7e57c2
+    }
+
+    .hljs-constructor {
+        color: #e2b93d
+    }
+
+    .hljs-constructor .hljs-string {
+        color: #9ccc65
+    }
+
+    .hljs-comment,
+    .hljs-quote {
+        color: #b18eb1;
+        font-style: italic
+    }
+
+    .hljs-doctag,
+    .hljs-formula {
+        color: #c678dd
+    }
+
+    .hljs-deletion,
+    .hljs-name,
+    .hljs-section,
+    .hljs-selector-tag,
+    .hljs-subst {
+        color: #e06c75
+    }
+
+    .hljs-literal {
+        color: #56b6c2
+    }
+
+    .hljs-addition,
+    .hljs-attribute,
+    .hljs-meta-string,
+    .hljs-regexp,
+    .hljs-string {
+        color: #98c379
+    }
+
+    .hljs-built_in,
+    .hljs-class .hljs-title {
+        color: #e6c07b
+    }
+
+    .hljs-attr,
+    .hljs-number,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-pseudo,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-variable {
+        color: #d19a66
+    }
+
+    .hljs-emphasis {
+        font-style: italic
+    }
+
+    .hljs-strong {
+        font-weight: 700
+    }
+
+    .hljs-link {
+        text-decoration: underline
+    }
+
+    #search-form,
+    article>div>div:not(.tag),
+    blockquote,
+    footer,
+    header form>div article,
+    header>div>form>input[type=search],
+    main>div>article,
+    pre,
+    section:not(.spotlight):nth-child(2n+1),
+    section>div>fieldset>a {
+        background-color: #1c1c1d;
+    }
+
+    pre {
+        border-color: #151617
+    }
+
+    footer,
+    header a,
+    main>div>article>h1+span,
+    main>div>article>p {
+        color: #9f9ea4
+    }
+
+    .uk-search-page article,
+    article thead,
+    blockquote,
+    main>article.hasSummary,
+    main>aside {
+        border-color: #3b3b3b
+    }
+
+    header,
+    header form>div article,
+    header>nav,
+    main>div>article {
+        border-color: #202122;
+    }
+
+    .icon,
+    footer>div>div>a>img,
+    header>div>a>img {
+        filter: brightness(0) invert()
+    }
+
+    footer li>a,
+    header>div>form>.icon,
+    main>aside>ul>li>a {
+        opacity: .4
+    }
+
+    footer li:hover>a,
+    main>aside>ul>li:hover a,
+    main>aside>ul>li>a.active {
+        opacity: 1
+    }
+
+    .tag,
+    footer a,
+    footer>div>div>a>img,
+    header>div>a>img,
+    header>div>form:hover>.icon,
+    header>div>form>input:active+.icon,
+    header>div>form>input:focus+.icon {
+        opacity: .8
+    }
+
+    a,
+    body,
+    button,
+    footer h3,
+    footer li>a,
+    header>div>ul>li:hover>a,
+    header>nav>ul>li.selected a,
+    header>nav>ul>li:hover>a,
+    input,
+    input[type=submit],
+    main>article>h1+span>em,
+    main>aside>ul>li>a.active,
+    main>div>article:first-child>a:last-child,
+    main>div>article:hover>a:last-child,
+    main>div>article>h2+span>em,
+    select,
+    textarea {
+        color: #d3d3d3
+    }
+
+    input:active,
+    input:focus,
+    main>article,
+    main>div>article:hover,
+    select:active,
+    select:focus,
+    textarea:active,
+    textarea:focus {
+        box-shadow: inset 0 0 0 2px #27292a
+    }
+
+    main>div>article>a:last-child {
+        color: transparent
+    }
+
+    code.hljs,
+    main>article>div h2,
+    main>article>div h3,
+    main>article>div h4,
+    main>article>div p,
+    main>article>div ul>li,
+    pre {
+        color: #c6c7cc
+    }
+
+    main>aside>span:first-child::after {
+        background-color: #ff6873
+    }
+
+    :not(pre)>code,
+    em {
+        color: #ff6873
+    }
+
+    :not(pre)>code {
+        border-color: #f0615c
+    }
+
+    span.hljs-string {
+        color: #3b70ae
+    }
+
+    .hljs-keyword,
+    .hljs-operator,
+    .hljs-pattern-match {
+        color: #f92672
+    }
+
+    .hljs-bullet,
+    .hljs-function,
+    .hljs-link,
+    .hljs-meta,
+    .hljs-pattern-match .hljs-constructor,
+    .hljs-selector-id,
+    .hljs-symbol,
+    .hljs-title {
+        color: #61aeee
+    }
+
+    body,
+    button,
+    input,
+    input:active,
+    input:focus,
+    input[type=submit],
+    section:nth-child(odd)>div>fieldset>a,
+    select,
+    select:active,
+    select:focus,
+    textarea,
+    textarea:active,
+    textarea:focus {
+        background-color: #202122
+    }
+
+    main>aside>ul>li>a.active {
+        border-left-color: #fff
+    }
+
+    header form>div {
+        background-color: #202223
+    }
+
+    html::-webkit-scrollbar-track {
+        border: 7px solid #1e1e1f
+    }
+
+    html::-webkit-scrollbar-track:hover {
+        background-color: #28282a
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background-color: #616161
+    }
+
+    html::-webkit-scrollbar-thumb:window-inactive {
+        background-color: #949699
+    }
+
+    html::-webkit-scrollbar-thumb:hover {
+        background-color: #fff
+    }
+
+    html::-webkit-scrollbar-track {
+        background-color: #1e1e1f
+    }
+
+    header form>div article,
+    main>div>article,
+    main>div>ol:last-child>li a:hover,
+    section[related]>div article {
+        box-shadow: 0 25px 45px -12px rgba(0, 0, 0, .48)
+    }
+
+    header form>section {
+        background-color: transparent !important
+    }
+
+    header>div>form>input[type=search] {
+        box-shadow: 0 10px 15px -3px rgba(11, 11, 11, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)
+    }
+
+    header form>div article:first-of-type::after {
+        background-color: #0a5d9c
+    }
+
+    header form>div article:nth-of-type(2)::after {
+        background-color: #35668b
+    }
+
+    header form>div article:nth-of-type(3)::after {
+        background-color: #3e596e
+    }
+
+    section[related] {
+        background-color: transparent
+    }
+
+    article tbody tr:nth-child(odd) {
+        background-color: #282929
+    }
+
+    article tbody tr:hover {
+        background-color: #34373a
+    }
+}

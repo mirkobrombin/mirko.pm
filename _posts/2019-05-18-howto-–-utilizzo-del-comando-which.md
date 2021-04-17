@@ -1,0 +1,10 @@
+---
+title: "#howto – Utilizzo del comando 'which'"
+published: 2019-05-18
+layout: post
+author: Mirko B.
+author_github: mirkobrombin
+tags:
+  - bash
+---
+<p>Capita soprattutto in ambienti di lavoro e sviluppo, di dover identificare il percorso assoluto di uno strumento/comando/link, ed è in queste circostanze che viene in nostro aiuto il comando&nbsp;<strong>which</strong>.</p><p>Un esempio può essere quello in cui sono presenti più versioni di uno strumento nel sistema (es.&nbsp;<strong>nano</strong>) &nbsp;e vogliamo capire se al suo richiamo, stiamo utilizzando la versione predefinita di sistema o quella in una differente posizione.</p><h2>Sintassi</h2><p>Questo è uno di quei comandi che fa semplicemente ciò che deve, per questo la sua sintassi è estremamente semplice e non offre&nbsp;molte opzioni:</p><pre><code>which [-a] nome</code></pre><p>dove la flag <strong>nome</strong>&nbsp;identifica il nome assoluto dello strumento o link.</p><h2>Utilizzo del comando</h2><p>Come dicevo poco fa, l'utilizzo di questo comando è estremamente semplice, nell'esempio in cui vogliamo trovare il percorso assoluto di&nbsp;<strong>bash</strong>:</p><pre><code>which bash</code></pre><p>il possibile output è il seguente:</p><pre><code>/usr/bin/bash</code></pre><h3>Utilizzo con liste</h3><p>Possiamo fornire più nomi da cui prelevare il percorso assoluto, semplicemente alternandoli ad uno spazio:</p><pre><code>which bash echo</code></pre><p>di conseguenza abbiamo un output simile al seguente:</p><pre><code>/usr/bin/bash/bin/echo</code></pre><h3>Tutti i percorsi</h3><p>Sfruttando la flag&nbsp;<strong>-a</strong>&nbsp;nonchè l'unica opzione, possiamo istruire questo strumento a mostrare tutti i percorsi disponibili:</p><pre><code>which -a nome</code></pre><p>&nbsp;</p><p>Per dubbi e chiarimenti, utilizzate il nostro <a href="https://t.me/gentedilinux">gruppo Telegram</a>.</p><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p>

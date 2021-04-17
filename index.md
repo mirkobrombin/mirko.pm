@@ -1,3 +1,32 @@
 ---
-layout: home
+title: Home
+layout: default
+pagination: 
+  enabled: true
 ---
+
+{% assign posts = site.posts | sort: "date" | sort: "updated" | reverse %}
+
+<div>
+    {% for post in paginator.posts %}
+        {% include posts-listing.html post=post %}
+    {% endfor %}
+
+
+
+    {% if paginator.total_pages > 1 %}
+        <ol>
+            {% if paginator.previous_page %}
+                <li>
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Nuovi articoli</a>
+                </li>
+            {% endif %}
+            {% if paginator.next_page %}
+                <li>
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Articoli passati</a>
+                </li>
+        {% endif %}
+        </ol>
+    {% endif %}
+
+</div>

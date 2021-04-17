@@ -1,0 +1,173 @@
+.tag {
+    padding: 0 .7rem 0 1.95rem;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    margin: 0 .875rem .8rem 0;
+    display: inline-table;
+    background-position: .6rem .26rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0.1875em 0.5em -0.3125em;
+}
+
+.tag.nginx {
+    background-image: url(../images/tags/icon_nginx.png);
+    color: #009830;
+    background-color: #e3fdeb
+}
+
+.tag.debian {
+    background-image: url(../images/tags/icon_debian.png);
+    color: #d90150;
+    background-color: #ffe4ee
+}
+
+.tag.apache {
+    background-image: url(../images/tags/icon_apache.png);
+    color: #84206f;
+    background-color: #fff0fc
+}
+
+.tag.mysql {
+    background-image: url(../images/tags/icon_mysql.png);
+    color: #00618b
+}
+
+.tag.ubuntu {
+    background-image: url(../images/tags/icon_ubuntu.png);
+    color: #ff6209;
+    background-color: #ffebdf
+}
+
+.tag.nodejs {
+    background-image: url(../images/tags/icon_nodejs.png);
+    color: #8cc84b;
+    background-color: #f3ffe5
+}
+
+.tag.mongodb {
+    background-image: url(../images/tags/icon_mongodb.png);
+    color: #1e8f36;
+    background-color: #def9e4
+}
+
+.tag.chromeos {
+    background-image: url(../images/tags/icon_chromeos.png);
+    color: #3582ea;
+    background-color: #e5f0ff
+}
+
+.tag.centos {
+    background-image: url(../images/tags/icon_centos.png);
+    color: #232278;
+    background-color: #ecebff
+}
+
+.tag.fedora {
+    background-image: url(../images/tags/icon_fedora.png);
+    color: #243f72;
+    background-color: #e3ebf9
+}
+
+.tag.letsencrypt {
+    background-image: url(../images/tags/icon_letsencrypt.png);
+    color: #ffa403;
+    background-color: #fdf4e5
+}
+
+.tag.netcore {
+    background-image: url(../images/tags/icon_netcore.png);
+    color: #6c429c;
+    background-color: #f5edff
+}
+
+.tag.vestacp {
+    background-image: url(../images/tags/icon_vestacp.png);
+    color: #505050;
+    background-color: #f2f2f2
+}
+
+.tag.python {
+    background-image: url(../images/tags/icon_python.png);
+    color: #336b99;
+    background-color: #e1f2ff
+}
+
+.tag.php {
+    background-image: url(../images/tags/icon_php.png);
+    color: #4c6394;
+    background-color: #e4edff
+}
+
+.tag.nextcloud {
+    background-image: url(../images/tags/icon_nextcloud.png);
+    color: #118acc;
+    background-color: #e4f5ff
+}
+
+.tag.github {
+    background-image: url(../images/tags/icon_github.png);
+    color: #24292e;
+    background-color: #f2f2f2
+}
+
+.tag.gnome {
+    background-image: url(../images/tags/icon_gnome.png);
+    color: #24292e;
+    background-color: #ebecee
+}
+
+.tag.arch.linux,
+.tag.archlinux {
+    background-image: url(../images/tags/icon_archlinux.png);
+    color: #1793d1;
+    background-color: #ddf4ff
+}
+
+.tag.natale {
+    background-image: url(../images/tags/icon_christmas.png);
+    color: #ea6b77;
+    background-color: #ffeaec
+}
+
+.tag.rhel {
+    background-image: url(../images/tags/icon_rhel.png);
+    color: #fb3333;
+    background-color: #ffe3e3
+}
+
+.tag.caddy {
+    background-image: url(../images/tags/icon_caddy.png);
+    color: #269973;
+    background-color: #d4fde8
+}
+
+.tag.bash,
+.tag.privacy,
+.tag.ssh,
+.tag.systemd {
+    padding-left: .7rem
+}
+
+.tag.ssh {
+    color: #267999;
+    background-color: #dbf9f2
+}
+
+.tag.bash {
+    color: #7146b5;
+    background-color: #ebe5fd
+}
+
+.tag.systemd {
+    color: #269973;
+    background-color: #e5fded
+}
+
+.tag.privacy {
+    color: #99264e;
+    background-color: #fde5f0
+}
+
+.tag.special-tag {
+    padding: 0 10px;
+}

@@ -1,0 +1,10 @@
+---
+title: '#howto – Installare screen su Fedora/Centos/Debian e derivate'
+published: 2019-06-02
+layout: post
+author: Alessandro Zangrandi
+author_github: AlexzanDev
+tags:
+
+---
+<p><a href="https://linuxhub.it/article/howto-utilizzo-del-comando-screen"><strong>Screen</strong></a> è un potente strumento in grado di controllare più sessioni, dando loro un nome ed assegnandole ad un processo.</p><h2>Installazione</h2><p>Di norma questo strumento è preinstallato in quasi tutte le distribuzioni GNU/Linux ma, se così non dovesse essere, è possibile installarlo dalla repository di sistema.</p><h3>Controllo versione</h3><p>Prima di tutto verifichiamo che non sia già presente nel sistema, richiedendone la versione:</p><pre><code>screen --version</code></pre><p>se l'output ricevuto è simile al seguente:</p><pre><code>Screen version 4.05.00 (GNU) 10-Dec-16</code></pre><p>significa che screen è già installato sulla nostra macchina. Nel caso in cui l'output è simile al seguente:</p><pre><code>screen: comando non trovato</code></pre><p>significa che non è presente.</p><h3>Debian, Ubuntu e derivate</h3><p>Nel caso di Debian, Ubuntu e derivate, possiamo installare il pacchetto tramite&nbsp;<strong>apt</strong>:</p><pre><code>sudo apt install screen</code></pre><h3>RHEL/CentOS</h3><p>Per CentOS (ma anche RHEL), possiamo usare&nbsp;<strong>yum</strong>&nbsp;in questo modo:</p><pre><code>sudo yum install screen</code></pre><h3>Fedora</h3><p>Fedora e spin, dalle versioni più recenti, usano il gestore pacchetti&nbsp;<strong>dnf</strong>, proseguiamo quindi in questo modo:</p><pre><code>sudo dnf install screen</code></pre><h2>Utilizzo</h2><p>Ad installazione completata possiamo ripetere lo step&nbsp;<strong>Controllo versione</strong>&nbsp;per accertarci che tutto sia andato nel verso giusto.</p><p>Nel caso di esito positivo, vi rimando a <a href="https://linuxhub.it/article/howto-utilizzo-del-comando-screen">questa guida</a> sull'utilizzo del comando screen.</p>

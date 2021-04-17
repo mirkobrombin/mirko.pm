@@ -1,0 +1,10 @@
+---
+title: 'Annunciato Atom-IDE'
+published: 2017-09-13
+layout: post
+author: Mirko B.
+author_github: mirkobrombin
+tags:
+  - php
+---
+<strong>GitHub</strong>, col contribuito di Facebook, è lieta di annunciare il lancio di <strong>Atom-IDE</strong>, un set di pacchetti opzionali che porteranno funzionalità da IDE su Atom. La release iniziale includerà pacchetti per TypeScript, Flow, JavaScript, Java e C#, e tramite i suoi server linguistici fornirà un'analisi sintetica e profonda del codice e dei progetti al quale si lavorerà. Questo <em>language server protocol</em> è gia stato adottato da un certo numero di organizzazioni tra cui Eclipse, Sourcegraph, Palantir, RedHat, Facebook e GitHub.<img class="alignnone size-full wp-image-1926 size-full wp-image-143" src="https://linuxhub.it/wordpress/wp-content/uploads/2017/09/atom2.png" alt="" width="1560" height="1048" />Il consiglio è quello di usare Atom beta 1.21 poiché questa versione include i file necessari per il controllo dei processi necessari a garantire che i server linguistici che andremo ad elencare funzionino correttamente.Per prima cosa cliccate su "Install Package" e poi andate a cercare ed ad installare quello che vi serve:<ul>    <li><span style="color: #800080;"><strong>ide-typescript</strong></span> per Typescript e Javascript</li>    <li><span style="color: #800080;"><strong>ide-flowtype</strong></span> per Flow type</li>    <li><span style="color: #800080;"><strong>ide-csharp</strong> </span>per C# ed il server linguistico OminSharp</li>    <li><span style="color: #800080;"><strong>ide-java</strong>, che<strong> </strong></span>si commenta da solo. Vi serve Java Runtime alla versione 8 installato sulla vostra macchina per funzionare</li>    <li><span style="color: #800080;"><strong>ide-php</strong>,<strong> </strong></span>vi serve php7 installato sulla vostra macchina.</li></ul>Maggiori informazioni le trovate sul<a href="http://blog.atom.io/2017/09/12/announcing-atom-ide.html"> Blog ufficiale di Atom</a>.&nbsp;<span style="color: #800080;"><strong>#StayOpen_Source</strong></span>&nbsp;

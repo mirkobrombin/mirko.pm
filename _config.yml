@@ -1,6 +1,6 @@
-title: Mirko Brombin
-description: 
-author: Mirko brombin
+title: linux/hub
+description: Guide curate e dettagliate sul mondo Linux ed Open source. Trattiamo nello specifico argomenti a scopo educativo.
+author: linuxhub.it Team
 email: send@mirko.pm
 
 assets: /assets
@@ -8,6 +8,16 @@ uploads: /uploads
 
 permalink: /blog/:title/
 markdown: kramdown
+
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 11
+  permalink: '/posts/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'published'
+  sort_reverse: true
 
 defaults:
   - scope:
@@ -20,28 +30,10 @@ defaults:
     values:
       layout: "post"
 
-collections:
-  - projects
-  - bookmarks
-  - contributions
-
 navigation:
     - link: "/"
-      name: Me
-    - link: "/blog/"
-      name: Blog
-    - link: "/texts/"
-      name: Texts
-    - link: "/food/"
-      name: Food
-    - link: "/bookmarks/"
-      name: Bookmarks
-    - link: "/projects/"
-      name: Projects
-    - link: "/contributions/"
-      name: Contributions
-    - link: "https://t.me/mirkofeeds"
-      name: Feed
+      name: Educazione per Linux ed Open source
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2

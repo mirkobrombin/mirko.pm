@@ -6,9 +6,11 @@ The template is distributed under the MIT license. The contents (texts, articles
 - ruby
 - ruby-devel
 - github-pages
+- jekyll-paginate-v2
 
 ```bash
 gem install github-pages
+gem install jekyll-paginate-v2
 ```
 
 ### Build

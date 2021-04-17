@@ -1,0 +1,10 @@
+---
+title: 'Nautilus 3.30 nasconde tante novitá - data di rilascio'
+published: 2018-07-28
+layout: post
+author: Mirko B.
+author_github: mirkobrombin
+tags:
+  - gnome
+---
+<!-- wp:paragraph --><p>GNOME 3.30 é sempre piú vicino al rilascio (5 Settembre 2018), tra numerosi bugfix e nuove funionalitá, troviamo importanti novitá anche per il file manager Nautilus.</p><!-- /wp:paragraph --><!-- wp:image {"id":6550} --><figure class="wp-block-image"><img src="https://linuxhub.it/wordpress/wp-content/uploads/2018/07/nautilus-3.30-views-menu.jpg" alt="" class="wp-image-6550"/></figure><!-- /wp:image --><!-- wp:paragraph --><p>Fra le numerose novitá introdotte con la nuova versione di Nautilis, troviamo:</p><!-- /wp:paragraph --><!-- wp:list --><ul><li>una miglior esperienza Flatpak</li><li>un potente motore di ricerca veloce e versatile</li><li>supporto per l'eliminazione della directory Desktop</li><li>una miglior gestione delle funzioni per l'Accessibilitá</li><li>supporto touch per menu e visualizzazioni</li><li>una miglior gestione della sezione Recenti</li><li>azioni in background</li><li>miglior design dei titolo durante il ridimensionamento della finestra</li><li>una nuova barra dei percorsi e ricerca</li><li>redesign della barra degli strumenti</li></ul><!-- /wp:list --><!-- wp:paragraph --><p>Se tutto ció é poco, basi sapere che Nautilus 3.30 promette anche di migliorare l'interfaccia delle visualizzazioni, una migliore gestione degli errori/avvisi che offre informazioni aggiuntive nella finestra di dialogo Proprietà, sará inoltre possibile eseguire l'azione "Apri con" per i file nel Cestino.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p><strong>Planning</strong> | <a href="https://wiki.gnome.org/ReleasePlanning/FeaturePlans">https://wiki.gnome.org/ReleasePlanning/FeaturePlans</a></p><!-- /wp:paragraph -->

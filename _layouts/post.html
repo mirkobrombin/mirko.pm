@@ -1,17 +1,46 @@
 ---
 layout: default
 ---
-<article>
-    <h2>{{ page.title }}</h2>
-    <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
-    {% if page.is_translation == false %}
-        {% if page.translation == false %}
-            <span class="no-translation">I'm sorry but this post was written in Italian, my native language. I could translate it in the future.</span>
-        {% else %}
-            <span class="translation">
-                <a href="/blog/{{ page.translation }}">Here</a> you can find the english version of this post.
+
+<aside>
+    <span>Indice</span>
+    <ul>
+        <li>Caricamento..</li>
+    </ul>
+    <span>{{ content | number_of_words | divided_by: 197 }} minuti circa di lettura</span>
+</aside>
+<article itemscope itemtype="https://schema.org/NewsArticle" class="hasSummary">
+    <meta itemprop="image" content="https://linuxhub.it/storage/linuxhub.png" hidden />
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <span>
+        <em itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
+            <span itemprop="name">linux/hub</span>
+            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://linuxhub.it/storage/brand.png" />
             </span>
-        {% endif %}
-    {% endif %}
-    <p>{{ content }}</p>
+        </em>
+        Scritto da
+        <em itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <a href="//github.com/{{ page.author_github }}" target="_blank">
+                <span itemprop="name">{{ page.author }}</span>
+            </a>
+        </em> il
+        <em itemprop="datePublished" content="{{ page.date }}">
+            <time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
+        </em>
+    </span>
+    <div>
+        {% for tag in page.tags %}
+            <div class="tag {{ tag }}">{{ tag }}</div>
+        {% endfor %}
+    </div>
+    <div>{{ content }}</div>
 </article>
+
+<section related>
+    <h4>Leggi anche</h4>
+    <div>Caricamento..</div>
+</section>
+
+<script src="/assets/js/highlight.min.js"></script>
+<script src="/assets/js/post.js"></script>

@@ -1,6 +1,36 @@
-<header>
-    <h1 title="Mirko B.{{ page.url }}">m<b>b</b><span>{{ page.url | truncate: 11 }}</span></h1>
-    {% for item in site.navigation %}
-    <a href="{{ item.link }}" class="{% if page.url == item.link %}s{% endif %}">{{ item.name }}</a>
-    {% endfor %}
+<header itemscope itemtype="https://schema.org/WebSite">
+    <!--
+    <nav>
+        <?= $view->menu('main', 'menu-navbar.php') ?>
+    </nav>
+    -->
+    <div>
+        <a href="/" title="{{ site.title }}">
+            <img src="/assets/images/brand.svg" alt="linux/hub" />
+            <img src="/assets/images/logo-lh-icon.svg" alt="linux/hub" style="display:none" />
+        </a>
+        <meta itemprop="url" content="https://linuxhub.it/"/>
+        <form method="GET" action="search" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+            <meta itemprop="target" content="https://linuxhub.it/search?searchword={searchword}" />
+            <input itemprop="query-input" type="search" autocomplete="off" name="searchword" spellcheck="false" placeholder="Cerca [beta].." />
+            <img class="icon" src="/assets/images/zondicons/search.svg" alt="cerca" />
+            <input type="submit" name="submit" hidden>
+            <section></section>
+            <div></div>
+        </form>
+        <ul>
+        {% for item in site.navigation %}
+            <li>
+                <a href="{{ item.link }}" class="{% if page.url == item.link %}s{% endif %}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
 </header>
+
+<section class="spotlight">
+    <div>
+    <h3>+ contenuti</h3>
+    <p>Lo sapevi che puoi trovare tanti altri contenuti sul nostro feed <a href="https://t.me/linuxpeople_feed">Telegram</a>?</p>
+    </div>
+</section>

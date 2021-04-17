@@ -1,0 +1,303 @@
+@media (prefers-color-scheme:light) {
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        padding: .5em 1rem;
+        color: #383a42
+    }
+
+    .hljs,
+    article tbody tr:nth-child(odd) {
+        background: #fafafa
+    }
+
+    .hljs-comment,
+    .hljs-quote {
+        color: #a0a1a7;
+        font-style: italic
+    }
+
+    .hljs-doctag,
+    .hljs-formula,
+    .hljs-keyword {
+        color: #a626a4
+    }
+
+    .hljs-deletion,
+    .hljs-name,
+    .hljs-section,
+    .hljs-selector-tag,
+    .hljs-subst {
+        color: #e45649
+    }
+
+    .hljs-literal {
+        color: #0184bb
+    }
+
+    .hljs-addition,
+    .hljs-attribute,
+    .hljs-meta-string,
+    .hljs-regexp,
+    .hljs-string {
+        color: #50a14f
+    }
+
+    .hljs-built_in,
+    .hljs-class .hljs-title {
+        color: #c18401
+    }
+
+    .hljs-attr,
+    .hljs-number,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-pseudo,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-variable {
+        color: #986801
+    }
+
+    .hljs-bullet,
+    .hljs-link,
+    .hljs-meta,
+    .hljs-selector-id,
+    .hljs-symbol,
+    .hljs-title {
+        color: #4078f2
+    }
+
+    .hljs-emphasis {
+        font-style: italic
+    }
+
+    .hljs-strong {
+        font-weight: 700
+    }
+
+    .hljs-link {
+        text-decoration: underline
+    }
+
+    .uk-search-page article>h1>a,
+    fieldset,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    main>div>ol:last-child>li a:hover,
+    section[related]>div article h1 a {
+        color: #000
+    }
+
+    #search-form,
+    blockquote,
+    header form>div article,
+    header>div>form>input,
+    main>article,
+    main>article>span+div,
+    main>div>article,
+    main>div>ol:last-child>li a:hover,
+    pre,
+    section[related]>div article,
+    section[style]>div>fieldset>a {
+        background-color: #fff
+    }
+
+    button,
+    input[type=submit],
+    section>div>fieldset>a {
+        background-color: #3a3a3a
+    }
+
+    :not(pre)>code,
+    button,
+    header form>div article::after,
+    input[type=submit],
+    main>aside>span:first-child::after,
+    section>div>fieldset>a,
+    section[style]>div>h2,
+    section[style]>div>p {
+        color: #fff
+    }
+
+    article thead,
+    main>aside {
+        border-color: #e2e2e2
+    }
+
+    pre {
+        border-color: #e5e5e5
+    }
+
+    article>section:nth-child(odd),
+    body,
+    footer,
+    html::-webkit-scrollbar-track,
+    input,
+    select,
+    textarea {
+        background-color: #f9f9f9
+    }
+
+    footer,
+    header a,
+    main>div>article>h1+span,
+    main>div>article>p,
+    section[style]>div>fieldset>a {
+        color: #20133a
+    }
+
+    .uk-search-page article,
+    main>article,
+    main>article.hasSummary,
+    main>div>article {
+        border-color: #e4e4e4
+    }
+
+    header>nav,
+    main>div>ol:last-child>li a:hover {
+        border-color: #e5e5e5
+    }
+
+    footer li>a,
+    header>div>form>.icon,
+    main>aside>ul>li>a {
+        opacity: .7;
+        color: #2c2c2c
+    }
+
+    footer li:hover>a,
+    main>aside>ul>li:hover a,
+    main>aside>ul>li>a.active {
+        opacity: 1
+    }
+
+    input:not([type=search]):active,
+    input:not([type=search]):focus,
+    select:active,
+    select:focus,
+    textarea:active,
+    textarea:focus {
+        background-color: #f8f8f8
+    }
+
+    body,
+    footer h3,
+    footer li>a,
+    input,
+    main>aside>ul>li>a.active,
+    main>div>article:first-child>a:last-child,
+    main>div>article:hover>a:last-child,
+    select,
+    textarea {
+        color: #151515
+    }
+
+    input:not([type=search]):active,
+    input:not([type=search]):focus,
+    select:active,
+    select:focus,
+    textarea:active,
+    textarea:focus {
+        box-shadow: inset 0 0 0 2px #ececec
+    }
+
+    main>div>article>a:last-child {
+        color: transparent
+    }
+
+    code.hljs,
+    main>article>div h2,
+    main>article>div h3,
+    main>article>div h4,
+    main>article>div p,
+    main>article>div ul>li,
+    main>article>h1+span>em,
+    main>div>article>h2+span>em,
+    pre {
+        color: #263651
+    }
+
+    .uk-search-page article>h1:hover>a,
+    em {
+        color: #2a3b58
+    }
+
+    :not(pre)>code,
+    main>aside>span:first-child::after {
+        background: #2dbfbd
+    }
+
+    a,
+    header>div>ul>li.selected a,
+    header>div>ul>li:hover>a,
+    main>article>div>blockquote>p {
+        color: #fe1804
+    }
+
+    blockquote {
+        border-color: #fe1804
+    }
+
+    header>div>ul>li.selected {
+        background-color: #ffece1
+    }
+
+    main>aside>ul>li>a.active {
+        border-left-color: #151515
+    }
+
+    main>article>div em,
+    main>article>div i {
+        background-color: #fff6a4
+    }
+
+    header form>div {
+        background-color: #fafafa
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 7px solid #f5f5f5
+    }
+
+    ::-webkit-scrollbar-track:hover {
+        background-color: #ececec
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #616161
+    }
+
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background-color: #949699
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #191919
+    }
+
+    header form>div article:first-of-type::after {
+        background-color: #0b89ec
+    }
+
+    header form>div article:nth-of-type(2)::after {
+        background-color: #5db1f3
+    }
+
+    header form>div article:nth-of-type(3)::after {
+        background-color: #89c3f1
+    }
+
+    article tbody tr:hover {
+        background-color: #eeefef
+    }
+}
+
+@media screen and (max-width:46.5625em) {
+    body {
+        background-color: #fff
+    }
+}

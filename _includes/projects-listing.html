@@ -1,8 +1,0 @@
-{% assign project = include.project %}
-<li>
-    <b>{{ project.name }}</b>
-    {{ project.content }}
-    {% for item in project.links %}
-        <a href="{{ item.link }}">{{ item.name }}</a>
-    {% endfor %}
-</li>
