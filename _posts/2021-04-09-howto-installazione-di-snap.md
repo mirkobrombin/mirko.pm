@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - archlinux  - bash
+  - archlinux  
+  - bash
 ---
 Le snap sono pacchetti di app per desktop, cloud e IoT facili da installare, sicuri, multipiattaforma e privi di dipendenze, queste vengono infatti pacchettizzate assieme al software, per tanto non è necessario installarle a parte.
 
