@@ -5,7 +5,14 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - apache  - mysql  - centos  - fedora  - php  - rhel  - bash
+  - nginx  
+  - apache  
+  - mysql  
+  - centos  
+  - fedora  
+  - php  
+  - rhel  
+  - bash
 ---
 **Drupal** è un potente CMS Open source, noto per la sua estensibilità, compatibilità ed il basso consumo di risorse.
 
