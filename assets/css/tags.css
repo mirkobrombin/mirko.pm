@@ -147,7 +147,7 @@
     background-color: #e5f4fd
 }
 
-.tag.java {
+.tag.docker {
     background-image: url(../images/tags/icon_docker.png);
     color: #609beb;
     background-color: #e5f4fd
