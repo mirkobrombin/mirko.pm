@@ -28,12 +28,26 @@ fetch('https://linuxhub.it/search.json')
             {
                 header.classList.add("typing")
             }
+
             window.scrollTo(0, 0);
-            var results = []
+
+            let results = [],
+                terms = term.trim().split(" "),
+                regex_string = "";
+
+            terms.forEach(t => {
+                if(t != " ") {
+                    regex_string += `(?=.*${t})`
+                }
+            });
+
+            regex_string = `${regex_string}.*`;
+            console.warn(regex_string);
 
             for (var i=0 ; i < posts.length ; i++)
             {
-                if (posts[i]["title"].toLowerCase().includes(term)) 
+                let matches = posts[i]["title"].toLowerCase().match(regex_string);
+                if (matches != null) 
                 {
                     results.push(posts[i]);
                 }
