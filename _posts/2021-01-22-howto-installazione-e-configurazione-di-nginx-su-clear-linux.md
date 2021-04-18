@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - centos  - rhel  - bash
+  - nginx  
+  - centos  
+  - rhel  
+  - bash
 ---
 **Nginx** è un web server e reverse proxy potente, estremamente personalizzabile e disponibile su tutte le piattaforme.
 
