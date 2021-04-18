@@ -5,7 +5,7 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - gnome  - bash
+  - java  
 ---
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 

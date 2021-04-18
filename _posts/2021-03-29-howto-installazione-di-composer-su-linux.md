@@ -5,7 +5,7 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - php  - bash
+  - php
 ---
 **Composer** è uno strumento per la gestione delle dipendenze di **PHP**. Questo strumento consente ad uno sviluppatore di dichiarare, scaricare ed installare le librerie da cui dipende il proprio progetto, ed è anche in grado di gestirle ed aggiornarle in maniera rapida e veloce.
 

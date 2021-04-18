@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - ubuntu  - fedora  - bash
+  - ubuntu  
+  - fedora  
+  - docker
 ---
 **Microsoft SQL** è un DBMS (Database management system) relazionale ad alta performanca, sviluppato dalla omonima azienda e distribuito per tutti i sistemi operativi Linux, MacOS e Windows.
 
