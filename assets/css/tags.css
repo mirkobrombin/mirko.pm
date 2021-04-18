@@ -141,6 +141,12 @@
     background-color: #d4fde8
 }
 
+.tag.java {
+    background-image: url(../images/tags/icon_java.png);
+    color: #609beb;
+    background-color: #e5f4fd
+}
+
 .tag.bash,
 .tag.privacy,
 .tag.ssh,
