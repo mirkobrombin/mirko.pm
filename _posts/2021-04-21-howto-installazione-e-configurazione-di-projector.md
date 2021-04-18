@@ -21,13 +21,13 @@ Per utilizzare Projector dobbiamo installare Python e alcune dipendenze, qui sot
 
 Se usiamo Ubuntu e derivate facciamo questo comando per installare Python:
 
-```?bash
+```bash
 apt install python3 python3-pip
 ```
 
 Una volta aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
 
-```?bash
+```bash
 apt install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
 ```
 
@@ -36,13 +36,13 @@ apt install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
 
 Su Fedora installiamo Python utilizzando `dnf`:
 
-```?bash
+```bash
 dnf install python3 python3-pip
 ```
 
 Anche qua una volta aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
 
-```?bash
+```bash
 dnf install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
 ```
 
@@ -51,13 +51,13 @@ dnf install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
 
 Se utilizzato Arch Linux installiamo Python utilizzando `pacman`:
 
-```?bash
+```bash
 pacman -S python3 python3-pip
 ```
 
 Su Arch Linux invece dobbiamo fare alcuni comandi in più perché le librerie hanno dei nomi diversi
 
-```?bash
+```bash
 pacman -S libxtst freetype2 libxi less libxrender
 ```
 
@@ -65,13 +65,13 @@ Dopo dobbiamo linkare alcune librerie perché hanno un nome diverso da quello ch
 
 Per linkare `libxext` facciamo:
 
-```?bash
+```bash
 ln -sf  ls -l /lib64/libXext.so.6.4.0 /lib64/libxext.so.6
 ```
 
 E per linkare `libxrender` facciamo:
 
-```?bash
+```bash
 ln -sf  ls -l 
 /lib64/libXrender.so.1.3.0 /lib64/libxrender.so.1.3.0
 ```
@@ -80,19 +80,19 @@ ln -sf  ls -l
 
 Se utilizziamo CentOS/RHEL installiamo Python usando `yum`:
 
-```?bash
+```bash
 yum install python3 python3-pip
 ```
 
 Anche qua una volta aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
 
-```?bash
+```bash
 yum install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
 ```
 
 Bene, una volta aver installato tutte le dipendenze e Python ora possiamo installare Projector, facciamo il seguente comando per installare Projector utilizzando `pip`:
 
-```?bash
+```bash
 pip3 install projector-installer --user
 # Facciamo il comando source cosi per ricaricare la path
 source ~/.profile 
