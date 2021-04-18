@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Projector'
-published: 2021-04-15
+published: 2021-04-21
 layout: post
 author: WhiXard
 author_github: Bildcraft1
