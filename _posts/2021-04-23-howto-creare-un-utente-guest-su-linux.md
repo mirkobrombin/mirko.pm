@@ -1,5 +1,5 @@
 ---
-title: '#howto - Creare un utente Guest '
+title: '#howto - Creare un utente Guest su Linux'
 published: 2021-04-23
 layout: post
 author: Davide Galati
@@ -43,16 +43,9 @@ Nello specifico, si sta chiedendo che la dimensione sia massimo di `1Gb`. Questo
 >
 > la size specifica il massimo uso che si potrà fare di quello spazio, quindi dormite sonni tranquilli poiché se solo montato ma non utilizzato, quello spazio non avrà alcun peso in memoria.
 
-
-
 Con le opzioni **uid** e **gid** si specifica a chi appartiene una determinata cartella, in termini di *utente (uid)* e *gruppo (gid)*,  per cui, se il vostro utente ospite si chiama in un altro modo dovrete modificare il valore dopo `uid`.
 
-
-
 ### Test del file fstab
-
-
-
 Mai fare modifiche ad un fstab e riavviare senza testarlo, perché potrebbe costarci l'avvio del sistema! 
 
 Quindi testatelo con il comando: 
@@ -61,9 +54,7 @@ Quindi testatelo con il comando:
 Se tutto è andato a buon fine allora non avrete alcun output, altrimenti cancellate la riga che avete aggiunto in precedenza e cercate supporto da qualcuno che, in materia, è più ferrato di voi.
 
 
-
 ## Password
-
 Normalmente gli utenti hanno una propria password, perciò il mio consiglio è quello di impostare per l'utente ospite una password semplice come "**guest**" con il comando : 
 
 ```bash
@@ -73,17 +64,13 @@ passwd guest
 Sostituendo, eventualmente, a "guest" il nome dell'utente di interesse. 
 
 
-
 Tuttavia, sono sicuro che in molti preferiranno creare un utente senza alcuna password, poiché più comodo all'atto pratico, per un utente temporaneo. In tal caso basta digitare: 
 
 ```bash
 passwd -d guest 
 ```
 
-
-
 Questo comando elimina la password di guest, permettendo quindi ad alcuni sistemi di fare l'accesso senza password. Attenzione però, *non tutti i sistemi supportano questo comportamento*!
-
 
 
 ## Eseguire uno script all'avvio con home temporanea
