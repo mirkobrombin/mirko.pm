@@ -5,7 +5,11 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - github  - archlinux  - rhel  - bash  - systemd  - bash  - systemd
+  - github  
+  - archlinux  
+  - rhel  
+  - bash  
+  - systemd
 ---
 **Arch Linux** è una distribuzione Linux piuttosto apprezzata ed utilizzata dalla community, ma lo sapevate che può girare anche su un processore **ARM**? Questa guida raccoglierà quelle che sono le mie esperienze in merito all'installazione e configurazione di Arch Linux a 64bit su Raspberry Pi 4.
 

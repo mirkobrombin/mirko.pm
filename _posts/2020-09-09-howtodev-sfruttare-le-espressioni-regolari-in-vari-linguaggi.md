@@ -5,7 +5,9 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - python  - gnome  - bash
+  - python  
+  - gnome  
+  - bash
 ---
 > NOTA: Questo articolo dà il via ad una serie di nuove rubriche sperimentali di linuxhub.it di cui sarebbe gradito un riscontro nei nostri gruppi
 

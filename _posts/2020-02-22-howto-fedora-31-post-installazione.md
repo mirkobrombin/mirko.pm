@@ -5,7 +5,9 @@ layout: post
 author: Mattia Cosma
 author_github: mattiacosma
 tags:
-  - fedora  - gnome  - bash
+  - fedora  
+  - gnome  
+  - bash
 ---
 Se stai consultando questo articolo è perchè, molto probabilmente, hai appena installato sul tuo PC **Fedora 31**, nuova versione della distro Linux sponsorizzata da Red Hat e derivata dall'omonima distribuzione.
 

@@ -5,7 +5,8 @@ layout: post
 author: Mattia Cosma
 author_github: mattiacosma
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 In questa guida vediamo come utilizzare e sincronizzare **OneDrive** sulle principali distribuzioni Linux, tramite uno strumento gratuito sviluppato in D.
 

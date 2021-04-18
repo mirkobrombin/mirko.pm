@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 **git** è uno dei sistemi di controllo versione più utilizzati al mondo, se non il più usato.
 

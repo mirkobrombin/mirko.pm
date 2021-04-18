@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - mysql  - php  - rhel  - bash
+  - mysql  
+  - php  
+  - rhel  
+  - bash
 ---
 Zabbix è una piattaforma Open source per il monitoraggio di server e servizi in rete, che mette a disposizione una semplice interfaccia da cui poterne gestire l'operatività.
 

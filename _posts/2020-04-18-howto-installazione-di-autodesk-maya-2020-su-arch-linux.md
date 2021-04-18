@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - python  - archlinux  - bash
+  - python  
+  - archlinux  
+  - bash
 ---
 Maya è un software per la modellazione 3D sviluppato e distribuito da Autodesk.
 

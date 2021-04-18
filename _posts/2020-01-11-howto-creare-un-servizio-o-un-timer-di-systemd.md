@@ -5,7 +5,9 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - ubuntu  - bash  - systemd  - bash  - systemd
+  - ubuntu  
+  - systemd  
+  - bash
 ---
 <p>Oggi vediamo come programmare un servizio per systemd, il tutto cercando di riassumere e semplificare le già abbondanti documentazioni della freedesktop ( <a href=https://www.freedesktop.org/software/systemd/man/systemd.service.html>qua per la sezione service</a>, <a href="https://www.freedesktop.org/software/systemd/man/systemd.exec.html#">qua per il log degli eventi</a> e <a href="https://www.freedesktop.org/software/systemd/man/systemd.unit.html">qua per unit e install</a> )</p>
 <h2 id="un-generico-service">Un generico service</h2>

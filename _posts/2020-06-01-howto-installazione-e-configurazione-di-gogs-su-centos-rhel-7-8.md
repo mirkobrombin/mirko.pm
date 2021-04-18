@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 **Gogs** è un servizio git self-hosted. Rispetto a GitLab e similari, questo si presenta come un sistema molto leggero e performante.
 

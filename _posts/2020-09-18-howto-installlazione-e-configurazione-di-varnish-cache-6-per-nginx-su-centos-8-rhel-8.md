@@ -5,7 +5,10 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nginx  - centos  - rhel  - bash  - systemd  - bash  - systemd
+  - nginx  
+  - centos  
+  - rhel  
+  - bash
 ---
 **Varnish** è un potete strumento per la gestione della **cache** di applicativi con grossi carichi di contenuti. Normalmente questo sistema viene utilizzato in combinazione con Apache o Nginx. 
 

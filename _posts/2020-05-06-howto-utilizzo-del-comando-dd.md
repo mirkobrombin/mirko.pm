@@ -5,7 +5,8 @@ layout: post
 author: Mattia Cosma
 author_github: mattiacosma
 tags:
-  - centos  - bash
+  - centos  
+  - bash
 ---
 *dd* è uno strumento da riga di terminale comunemente usato per creare immagini ISO (ad esempio copie di backup), ma anche scrivere le stesse su disco.
 

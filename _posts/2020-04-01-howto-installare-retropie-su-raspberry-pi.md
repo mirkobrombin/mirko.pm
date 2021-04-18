@@ -5,7 +5,8 @@ layout: post
 author: WhiXard
 author_github: Bildcraft1
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 **Retropie** è un software che ci permette di giocare ad una vastità di giochi per console retro (NES, SNES, SEGA Master System ecc.) direttamente dal nostro Rapsberry Pi.
 

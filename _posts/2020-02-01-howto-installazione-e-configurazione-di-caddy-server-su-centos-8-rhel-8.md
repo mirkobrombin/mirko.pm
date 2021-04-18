@@ -5,7 +5,12 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - centos  - fedora  - php  - rhel  - caddy  - bash
+  - centos  
+  - fedora  
+  - php  
+  - rhel  
+  - caddy  
+  - bash
 ---
 Caddy è un Web Server altamente estensibile e performante scritto in linguaggio Go.
 

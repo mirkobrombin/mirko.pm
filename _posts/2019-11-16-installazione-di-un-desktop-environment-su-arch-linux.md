@@ -5,7 +5,10 @@ layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - php  - gnome  - archlinux  - bash
+  - php  
+  - gnome  
+  - archlinux  
+  - bash
 ---
 Il **Desktop Environment**, o _DE_, è uno dei programmi più importanti che andiamo ad installare durante il setup di Arch. Il _DE_ si occupa soprattutto di fornire un interfaccia grafica all'utente per interagire con il sistema e i software. 
 

@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - centos  - bash  - systemd  - bash  - systemd
+  - centos  
+  - bash
 ---
 **Redis** è un programma archivio chiave-valore in memoria gratuito e open source che supporta diversi tipi di strutture dati. Può essere utilizzato come database, come cache oppure molto altro ancora. Spesso viene utilizzato per creare applicazioni scalabili e che hanno bisogno di una grande performance.
 

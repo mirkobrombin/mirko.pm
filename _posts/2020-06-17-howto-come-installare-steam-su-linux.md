@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - fedora  - bash
+  - fedora  
+  - bash
 ---
 **Steam** è senza ombra di dubbio uno dei negozi digitali per i videogiochi conosciuti al mondo, se non il più popolare. Nonostante il supporto sia notevolmente minore rispetto a Windows, molti giochi funzionano su distribuzioni Linux senza troppi problemi, sia direttamente che utilizzando **Proton**.
 

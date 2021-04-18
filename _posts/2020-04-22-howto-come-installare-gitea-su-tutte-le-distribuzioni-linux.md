@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd
 ---
 **Gitea** è una soluzione hosting Git installabile senza troppe difficoltà su qualsiasi distribuzione Linux. Simile a GitHub, Bitbucket e GitLab, Gitea è un fork di Gogs, e due dei suoi punti di forza sono la **velocità** e la **leggerezza** con cui gira.
 

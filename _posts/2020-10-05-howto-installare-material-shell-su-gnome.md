@@ -5,7 +5,9 @@ layout: post
 author: WhiXard
 author_github: Bildcraft1
 tags:
-  - github  - gnome  - bash
+  - github  
+  - gnome  
+  - bash
 ---
 **Material Shell** è un estensione per il Desktop Environment **GNOME** che serve a dare quel tocco di WM (Window Manager) a GNOME.
 

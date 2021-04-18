@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - debian  - ubuntu  - bash
+  - debian  
+  - ubuntu  
+  - bash
 ---
 **R** è un linguaggio di programmazione Open source indirizzato all'analisi statistica dei dati.
 

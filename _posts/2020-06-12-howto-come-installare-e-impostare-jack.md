@@ -5,7 +5,8 @@ layout: post
 author: WhiXard
 author_github: Bildcraft1
 tags:
-  - python  - bash
+  - python 
+  - bash
 ---
 **JACK Audio Connection Kit** è un daemon server audio professionale che fornisce connessioni in tempo reale a bassa latenza per dati audio e MIDI tra applicazioni che implementano la sua API.
 

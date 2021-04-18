@@ -5,7 +5,8 @@ layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd 
 ---
 **systemd** è un init system, gestore dei servizi e molto altro. Egli, essendo il primo processo avviato dal kernel al boot, avrà _PID 1_ e dal suo avvio inizierà ad inizializzare il sistema, avviando tutti i servizi necessari. Ma **systemd** è anche più di questo, egli è anche fornito di un set di funzioni di gestione del sistema, che vanno da un _boot loader_, ad un _software di gestione della rete_ e molti altri.
 

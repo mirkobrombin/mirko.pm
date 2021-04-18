@@ -5,7 +5,8 @@ layout: post
 author: WhiXard
 author_github: Bildcraft1
 tags:
-  - python  - bash
+  - python  
+  - bash
 ---
 In questa guida vedremo come installare a dovere una **telecamera** sul nostro **Raspberry Pi**.
 

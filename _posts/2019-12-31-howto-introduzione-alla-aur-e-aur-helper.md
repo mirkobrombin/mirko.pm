@@ -5,7 +5,8 @@ layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - archlinux  - bash
+  - archlinux  
+  - bash
 ---
 La **AUR** (*Arch User Repository*) è una repository di pacchetti per Arch Linux gestito dalla comunità. La AUR contiene dei file, i **PKGBUILD** che contengono le informazioni per compilare un pacchetto e installarlo con _Pacman_. 
 

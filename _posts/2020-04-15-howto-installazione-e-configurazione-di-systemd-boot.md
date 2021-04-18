@@ -5,7 +5,8 @@ layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd
 ---
 <p><strong>Systemd-boot</strong> è un bootloader per sistemi EFI. A differenza di GRUB lavora solo sulla ESP (EFI System Partition) del disco su cui è installato, dove dovrà essere presente anche il kernel e file di configurazione del bootloader.</p>
 <h2 id="installazione">Installazione</h2>

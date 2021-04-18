@@ -5,7 +5,8 @@ layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - bash  - ssh  - ssh  - bash
+  - bash
+  - ssh
 ---
 **SSH** è uno strumento fondamentale per gestire server e PC locali, come ad esempio un Raspberry PI. Con questo protocollo è possibile collegarsi direttamente alla console del computer remoto. SSH è l'acronimo di **Secure Shell**.
 

@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 **Spotify TUI** è un vero e proprio client CLI per Spotify scritto in Rust.
 

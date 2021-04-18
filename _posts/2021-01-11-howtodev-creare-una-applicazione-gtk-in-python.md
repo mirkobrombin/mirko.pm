@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - python  - github  - gnome
+  - python  
+  - github  
+  - gnome
 ---
 In questo articolo della serie di *#howtodev* vedremo come iniziare a sviluppare applicazioni con la libreria grafica GTK in Python. Si tratta di una guida introduttiva, e dunque non tratteremo l'argomento a 360 gradi.
 

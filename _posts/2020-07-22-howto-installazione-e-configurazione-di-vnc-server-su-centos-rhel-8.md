@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - bash  - systemd  - bash  - systemd
+  - centos
+  - rhel
 ---
 **VNC** è un'applicazione per la condivisione del desktop in rete. Utilizza il protocollo Remote Frame Buffer e funziona su un modello client/server.
 

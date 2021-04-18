@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd
 ---
 **PostgreSQL** è un DBMS (Base di dati a oggetti) completo ed Open source, uno dei più performanti disponibili.
 

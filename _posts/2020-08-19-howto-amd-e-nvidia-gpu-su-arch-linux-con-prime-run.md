@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd
+  - archlinux
 ---
 Abbiamo <a href="https://linuxhub.it/articles/howto-portatili-nvidia-optimus-intel-nvidia-su-arch-linux-con-optimus-manager">già parlato</a> di come gestire le schede Intel e Nvidia su portatili Optimus mediante l'uso di Optimus manager.
 

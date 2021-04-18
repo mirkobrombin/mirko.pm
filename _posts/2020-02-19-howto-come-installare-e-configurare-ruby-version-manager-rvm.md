@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - debian  - bash
+  - debian  
+  - bash
 ---
 **Ruby** è uno dei linguaggi di programmazione più popolari degli ultimi anni, e se utilizzato assieme a framework come Ruby on Rails, la cui installazione [è spiegata in questa guida](https://linuxhub.it/articles/howto-installazione-di-ruby-on-rails-e-creazione-di-un-app), può diventare molto potente. 
 

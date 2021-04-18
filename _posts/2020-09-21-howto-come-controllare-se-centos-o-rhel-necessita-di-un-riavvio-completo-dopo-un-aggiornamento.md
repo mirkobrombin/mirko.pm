@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd
 ---
 Dopo aver aggiornato il proprio sistema con **CentOS** o **RHEL** non è raro porsi la seguente domanda: "Devo proprio riavviare il PC / server?". Ebbene, grazie ad un comando sarà proprio la nostra macchina a darci la risposta, e ad evitare riavvii superflui.
 

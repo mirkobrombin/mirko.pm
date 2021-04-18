@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - mysql  - centos  - bash
+  - mysql  
+  - centos  
+  - bash
 ---
 **MariaDB** è una implementazione di MySQL (per meglio dire, un fork) che porta con sé diversi miglioramenti come ad esempio un supporto più esteso ai differenti storage engine, plugin e altre funzionalità degne di nota come la precisione temporale dei log e l'implementazione dei pool di thread.
 

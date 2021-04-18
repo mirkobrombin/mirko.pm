@@ -5,7 +5,8 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash
+  - systemd
 ---
 Da quando è stato introdotto, sono molti quelli che per un motivo o un altro si sono trovati spaesati di fronte alle novità del sistema **U**nified **E**xtensible **F**irmware **I**nterface (noto come UEFI).
 

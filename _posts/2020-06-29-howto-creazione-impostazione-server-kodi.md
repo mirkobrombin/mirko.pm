@@ -5,7 +5,9 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - fedora  - github  - bash
+  - fedora  
+  - github  
+  - bash
 ---
 In genere è comune per molti archiviare la propria musica e film preferiti su un disco. In questa guida vediamo come sfruttare questi dati archiviati tramite **Kodi**, una piattaforma che ci permette di gestire quei contenuti su più dispositivi e sistemi.
 

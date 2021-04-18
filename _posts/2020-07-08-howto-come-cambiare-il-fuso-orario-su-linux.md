@@ -5,7 +5,7 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash
 ---
 Su Linux, così come in tutti i sistemi operativi principali, avere il **fuso orario**, e dunque data e ora, configurati correttamente in base alla nostra locazione è essenziale per evitare che alcune operazioni vengano effettuate in un orario sbagliato, come un cron job o un riavvio pianificato del sistema.
 

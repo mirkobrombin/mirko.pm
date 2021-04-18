@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd
 ---
 Mumble è una applicazione VoIP dedicata principalmente ai giocatori e distribuita su licenza libera. Viene fornito in versione server il quale viene usato per ospitare appunto un server accessibile mediante apposito client.
 

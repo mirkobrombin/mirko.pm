@@ -5,7 +5,9 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - fedora  - python  - bash
+  - fedora  
+  - python  
+  - bash
 ---
 **Django** è un web framework open-source scritto in **Python** con alcuni semplici principi alla base, come la scalabilità, la ri-usabilità e lo sviluppo rapido.
 

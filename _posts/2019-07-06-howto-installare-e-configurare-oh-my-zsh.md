@@ -5,7 +5,9 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - ubuntu  - github  - bash
+  - ubuntu  
+  - github  
+  - bash
 ---
 **Oh My Zsh** è un framework open source creato per personalizzare la propria configurazione di default di **zsh**, una delle shell più utilizzate in alternativa alla classica bash, di recente è stata adottata da MacOS.
 

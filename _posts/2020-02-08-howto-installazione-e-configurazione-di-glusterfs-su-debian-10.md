@@ -5,7 +5,8 @@ layout: post
 author: Mattia Cosma
 author_github: mattiacosma
 tags:
-  - bash  - systemd  - bash  - systemd
+  - bash  
+  - systemd  
 ---
 *GlusterFS * è un file system open source distribuito e scalabile che permette la memorizzazione di risorse su dispositivi di archiviazione in una rete.
 

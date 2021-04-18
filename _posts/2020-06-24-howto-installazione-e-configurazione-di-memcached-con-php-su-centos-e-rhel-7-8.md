@@ -5,7 +5,9 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - centos  - php  - bash
+  - centos  
+  - php  
+  - bash
 ---
 **memcached** è un sistema di caching Open source ad alte prestazioni. In questa guida vedremo come installarlo su CentOS e RHEL 7/8 e renderlo funzionante con la nostra installazione di PHP.
 

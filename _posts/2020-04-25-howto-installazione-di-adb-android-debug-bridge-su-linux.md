@@ -5,7 +5,8 @@ layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 **ADB** è uno strumento usato per eseguire operazioni su un telefono Android via USB o rete. La suite dei programmi ADB fornisce uno strumento per operazioni su _Android/Recovery_, uno per le operazioni in _Fastboot_ e altri per il filesystem, come la formattazione delle partizioni.
 

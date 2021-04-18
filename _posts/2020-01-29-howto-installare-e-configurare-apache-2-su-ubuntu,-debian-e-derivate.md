@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - apache  - bash
+  - apache  
+  - bash
 ---
 Una delle principali alternative al conosciutissimo Nginx è sicuramente **Apache**, web server molto utilizzato per via della sua semplicità, dei moduli che lo estendono e del suo supporto riconosciuto da quasi tutti i principali CMS e non solo.
 

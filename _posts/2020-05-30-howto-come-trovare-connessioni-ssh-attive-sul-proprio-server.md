@@ -5,7 +5,8 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - bash  - ssh  - ssh  - bash
+  - bash  
+  - ssh
 ---
 In questa guida vedremo **come identificare le connessioni SSH attive su una macchina**, questo grazie all'ausilio di cinque comandi, `who`, `w`, `ps`, `netstat`e `last`.
 

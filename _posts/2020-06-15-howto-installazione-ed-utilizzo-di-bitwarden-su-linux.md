@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 **Bitwarden** è un gestore password open source e sincronizzato disponibile per tutti i sistemi operativi desktop e mobili sia come client che come estensione browser.
 

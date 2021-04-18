@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - gnome  - privacy  - privacy
+  - gnome  
+  - privacy
 ---
 Diversi mesi fa abbiamo parlato di come il comfort costi la nostra privacy. Ció significa che se vogliamo una certa comoditá dobbiamo pagarla con i nostri dati personali, la privacy. Se da un lato questa puó sembrare una tirannia, dall'altra abbiamo la certezza che la nostra privacy verrá concessa solo a chi ci offre il servizio, mantenendo in parte la nostra indipendenza.
 
