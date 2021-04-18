@@ -42,7 +42,6 @@ fetch('https://linuxhub.it/search.json')
             });
 
             regex_string = `${regex_string}.*`;
-            console.warn(regex_string);
 
             for (var i=0 ; i < posts.length ; i++)
             {
