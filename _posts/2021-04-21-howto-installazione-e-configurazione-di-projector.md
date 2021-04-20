@@ -102,7 +102,7 @@ source ~/.profile
 
 ## Configurazione
  
- Una volta aver installato Projector, utilizziamo il comando `projector install`, ci ritroveremo con l'interfaccia di considerazione seguente
+ Dopo aver installato Projector, utilizziamo il comando `projector install`, ci ritroveremo con l'interfaccia di considerazione seguente
  
 ![Screenshot%202021 04 15%20at%2009.58.30](storage/Screenshot%202021-04-15%20at%2009.58.30.png)
 
