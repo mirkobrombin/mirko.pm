@@ -5,8 +5,8 @@ layout: post
 author: WhiXard
 author_github: Bildcraft1
 tags:
-  - python  
-  - github  
+  - python
+  - github
   - bash
 ---
 Projector è un programma creato da JetBrains, il suo scopo è quello di poter avviare da un server (o da un PC locale più potente della nostra macchina) una delle tante IDE JetBrains e di poterle usare direttamente dal Browser senza dover installare nulla sul nostro computer.
@@ -15,17 +15,17 @@ Questo è molto utile se per caso stiamo utilizzando un PC non molto performante
 
 ## Installazione
 
-Per utilizzare Projector dobbiamo installare Python e alcune dipendenze, qui sotto metto i comandi per le distro più comuni
+Per utilizzare Projector dobbiamo installare Python e alcune dipendenze, qui sotto trovate i comandi per le distro più comuni
 
 ### Ubuntu
 
-Se usiamo Ubuntu e derivate facciamo questo comando per installare Python:
+Se usiamo Ubuntu e derivate utilizziamo questo comando per installare Python:
 
 ```bash
 apt install python3 python3-pip
 ```
 
-Una volta aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
+Dopo aver installato Python dobbiamo installare delle librerie per far funzionare Projector:
 
 ```bash
 apt install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
@@ -40,7 +40,7 @@ Su Fedora installiamo Python utilizzando `dnf`:
 dnf install python3 python3-pip
 ```
 
-Anche qua una volta aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
+Anche qua, dopo aver installato Python, dobbiamo installare delle librerie per far funzionare Projector:
 
 ```bash
 dnf install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
@@ -55,13 +55,13 @@ Se utilizzato Arch Linux installiamo Python utilizzando `pacman`:
 pacman -S python3 python3-pip
 ```
 
-Su Arch Linux invece dobbiamo fare alcuni comandi in più perché le librerie hanno dei nomi diversi
+Su Arch Linux, invece, dobbiamo utilizzare alcuni comandi in più perché le librerie hanno dei nomi diversi
 
 ```bash
 pacman -S libxtst freetype2 libxi less libxrender
 ```
 
-Dopo dobbiamo linkare alcune librerie perché hanno un nome diverso da quello che Projector cerca, quindi facciamo i se guanti comandi per linkare le librerie
+Dopo averle installate, dobbiamo linkare le librerie perché hanno un nome diverso da quello che Projector cerca, quindi lanciamo i seguenti comandi per linkare le librerie
 
 Per linkare `libxext` facciamo:
 
@@ -84,7 +84,7 @@ Se utilizziamo CentOS/RHEL installiamo Python usando `yum`:
 yum install python3 python3-pip
 ```
 
-Anche qua una volta aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
+Anche qua, dopo aver installato Python dobbiamo installare delle librerie per far funzionare Projector con questo comando:
 
 ```bash
 yum install less libxext6 libxrender1 libxtst6 libfreetype6 libxi6
@@ -102,17 +102,17 @@ source ~/.profile
 
 ## Configurazione
  
- Una volta aver installato Projector, utilizziamo il comando `projector install`, ci ritroveremo con una UI del genere
+ Una volta aver installato Projector, utilizziamo il comando `projector install`, ci ritroveremo con l'interfaccia di considerazione seguente
  
 ![Screenshot%202021 04 15%20at%2009.58.30](storage/Screenshot%202021-04-15%20at%2009.58.30.png)
 
-Qua possiamo scegliere una IDE da installare, una volta scelta la IDE preferita (Ricordo che per alcune IDE c'è bisogno di una licenza)
+Qui possiamo scegliere una IDE da installare. (Ricordo che per alcune IDE è necessaria una licenza).
 
-Una volta aver installato l'IDE che vogliamo facciamo  `projector run`, ci dovrebbe dare un indirizzo dove è hostata la nostra istanza della IDE, possiamo andarci direttamente dal nostro browser
+Una volta che abbiamo installato l'IDE che preferiamo, lanciamo  `projector run`, ci dovrebbe dare un indirizzo dove è hostata la nostra istanza della IDE, alla quale possiamo accedere direttamente dal nostro browser
 
 ![Screenshot%202021 04 15%20at%2010.05.28](storage/Screenshot%202021-04-15%20at%2010.05.28.png)
 
 ## Conclusione
-Bene, una volta aver fatto tutti questi passaggi possiamo utilizzare la nostra IDE senza dover usare la nostra potenza di calcolo per esempio per compilare un programma, qui sotto lascio 2 link utili che riportano direttamente alla Wiki della Jetbrains, una per poter installare un vostro certificato SSL per poter utilizzare <a href="https://github.com/JetBrains/projector-installer#secure-connection">Projector sotto HTTPS</a> (che abilità delle funzioni in più) e la seconda spiega come installare <a href="https://github.com/JetBrains/projector-installer#android-studio-support">Android Studio</a>, perché per ragioni legali non si può installare direttamente dalla CLI di Projector
+Bene, una volta aver fatto tutti questi passaggi possiamo utilizzare la nostra IDE senza dover usare la nostra potenza di calcolo per esempio per compilare un programma, qui sotto lascio due link utili che riportano direttamente alla Wiki di Jetbrains, una per poter installare un vostro certificato SSL per poter utilizzare <a href="https://github.com/JetBrains/projector-installer#secure-connection">Projector sotto HTTPS</a> (che abilità delle funzioni in più) e la seconda spiega come installare <a href="https://github.com/JetBrains/projector-installer#android-studio-support">Android Studio</a>, perché per ragioni legali non si può installare direttamente dalla CLI di Projector.
 
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
