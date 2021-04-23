@@ -2,6 +2,13 @@
 <meta name="theme-color" content="#ffffff" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+{% if page.description %}
+<meta name="description" content="{{ page.description }}" />
+{% else if site.description %}
+<meta name="description" content="{{ site.description }}" />
+{% endif %}
+
 <link rel="icon" href="{{ site.assets }}/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="{{ site.assets }}/css/theme.css?v6" />
 <script src="/assets/js/scripts.js"></script>
