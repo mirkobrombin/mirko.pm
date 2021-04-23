@@ -5,8 +5,8 @@ layout: default
 
 {% assign posts = site.posts | sort: "date" | sort: "updated" | reverse %}
 
+<h1 style="display: none;">linux/hub Posts</h1>
 <div>
-    <h1 style="display: none;">linux/hub Posts</h1>
     {% for post in paginator.posts %}
         {% include posts-listing.html post=post %}
     {% endfor %}
