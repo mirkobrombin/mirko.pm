@@ -5,7 +5,7 @@
 	{% include head.html %}
 	{% if page.description == "" %}
 		<meta name="description" content="{{ site.description }}" />
-	{% else if post %}
+	{% else if post.content != "" %}
 		<meta name="description" content="{{ post.content | strip_html | truncatewords: 15 }}…" />
 	{% else %}
 		<meta name="description" content="{{ page.description }}" />
