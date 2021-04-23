@@ -2,6 +2,7 @@ title: linux/hub
 description: Guide curate e dettagliate sul mondo Linux ed Open source. Trattiamo nello specifico argomenti a scopo educativo.
 author: linuxhub.it Team
 email: send@mirko.pm
+url: https://linuxhub.it
 
 assets: /assets
 uploads: /uploads
@@ -34,3 +35,4 @@ navigation:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
