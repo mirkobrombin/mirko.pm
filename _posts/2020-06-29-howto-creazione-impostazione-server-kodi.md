@@ -71,7 +71,7 @@ Per informazioni sul download vi riporto alle fonti ufficiali sul loro [sito](ht
 
 La prima schermata di Kodi (generalmente si apre a schermo intero) ricorda un po' le interfacce dei vecchi lettori DVD. Per prima cosa troverete una barra laterale in verticale (nelle vecchie versioni potrebbe esserci una barra orizzontale centrale) ed una serie di opzioni. Il tema di default si chiama **Estuary**, ma non preoccupatevi di questo perchè l'interfaccia è perfettamente personalizzabile.
 
-![Kodi estuary home](/uploads/kodi-server/Kodi/kodi_estuary_home.png)
+![Kodi estuary home](/uploads/kodi-server/kodi_estuary_home.png)
 
 La navigazione avviene col mouse o se volete con tastiera. Esistono add-on per utilizzare e configurare anche joystick o altre periferiche. Tutte le impostazioni le troviamo al simbolo della rotellina presente nella nostra barra di navigazione. 
 
@@ -79,7 +79,7 @@ La navigazione avviene col mouse o se volete con tastiera. Esistono add-on per u
 
 Per aggiungere sorgenti multimediali è necessario andare nel menu corrispettivo. Mettiamo caso di voler aggiungere della musica: andiamo nella sezione Musica, scorriamo il menù fino alla voce "File" e premiamoci sopra.
 
-![seleziona sorgente musicale](/uploads/kodi-server/Kodi/kodi_file_musica.png)
+![seleziona sorgente musicale](/uploads/kodi-server/kodi_file_musica.png)
 
 A questo punto selezioniamo `Aggiungi musica`, poi `Esplora` e infine selezioniamo il percorso sorgente dei nostri contenuti multimediali.
 
@@ -91,7 +91,7 @@ Nel caso in cui non vi piacesse l'interfaccia di base, sappiate che potete cambi
 
 La prima opzione (omonima al menù) vi farà selezionare la skin tra quelle scaricate localmente, mentre "Altro" permette di effettuare il download direttamente dal sistema. Cambiando tema non cambierete solo i colori, **ma l'intera interfaccia**. Alcune skin consentono un livello maggiore di personalizzazione, e consentono anche di cambiare sfondo, colori e caratteri. Il tema sotto proposto si chiama Unity:
 
-![kodi con tema unity](/uploads/kodi-server/Kodi/kodi_unity_home.png)
+![kodi con tema unity](/uploads/kodi-server/kodi_unity_home.png)
 
 Nel menu `impostazioni`, poi `interfaccia` è anche presente un'impostazione per cambiare la Lock Screen o disattivarla del tutto.
 
@@ -106,7 +106,7 @@ Accedete a `impostazioni` > `Add-on` > `Installa da repository` > `Add-on gioch
 
 Scaricate quindi l'add-on per giochi SNES.
 
-![add on snes](/uploads/kodi-server/Kodi/kodi_add_on_snes.png)
+![add on snes](/uploads/kodi-server/kodi_add_on_snes.png)
 
 Importante è tenere in considerazione che specialmente per gli emulatori, alcuni add-on sono specifici per la piattaforma per cui si installano.
 
@@ -136,7 +136,7 @@ Selezioniamo `Permetti controllo remoto via HTTP` e immettiamo valori a piacere 
 
 Selezioniamo anche l'opzione `permetti controllo remoto da applicazioni su questo dispositivo`.
 
-![impostazioni server](/uploads/kodi-server/Kodi/kodi_server_settings.png)
+![impostazioni server](/uploads/kodi-server/kodi_server_settings.png)
 
 Notare che è disponibile anche la personalizzazione dell'interfaccia. Similmente a quanto spiegato nella sezione [nuove skin](##nuove-skin), è possibile infatti scaricare e usare delle skin per l'interfaccia web.
 
@@ -153,7 +153,7 @@ Giusto per un esempio concreto, supponendo l'indirizzo IP sia `192.168.1.53` e l
 
 Ci apparirà quindi il popup con la richiesta dell'username e della password. Inseriamoli, *et voilà*:
 
-![interfaccia web kodi](/uploads/kodi-server/Kodi/kodi_web_interface.png)
+![interfaccia web kodi](/uploads/kodi-server/kodi_web_interface.png)
 
 Qui l'esperienza dell'interfaccia di Kodi è ancora più stravolta da tema a tema: ad esempio alcuni temi non si applicano al browser web da cellulare... ma vi serve davvero?
 
@@ -172,6 +172,6 @@ Per prima cosa installiamo **Kore** sul nostro dispositivo: già dalla prima sch
 Inseriamo quindi nome utente e password, ed effettuiamo un test della connessione. Se tutto andrà a buon fine, il telecomando sarà connesso a Kodi e potrete utilizzarlo per avviare film, canzoni e altro! 
 Potrete navigare il file system per ogni categoria nei drive da voi inseriti, inviare film dallo smartphone a Kodi o viceversa. Facendo coppia con determinati addon come **YouTube** potete persino condividere un link al volo ed eseguirlo invece che sullo smartphone, sul vostro device Kodi!
 
-![Kodi kore app](/uploads/kodi-server/Kodi/kodi_kore_app.jpg)
+![Kodi kore app](/uploads/kodi-server/kodi_kore_app.jpg)
 
 Per maggiori informazioni, dubbi e chiarimenti, non esitate a fare domande sul <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.
