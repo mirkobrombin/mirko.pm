@@ -13,8 +13,6 @@ tags:
 ---
 **Arch Linux** è una distribuzione Linux piuttosto apprezzata ed utilizzata dalla community, ma lo sapevate che può girare anche su un processore **ARM**? Questa guida raccoglierà quelle che sono le mie esperienze in merito all'installazione e configurazione di Arch Linux a 64bit su Raspberry Pi 4.
 
-![](https://raw.githubusercontent.com/PsykeDady/Archlinux_installazione/master/images/arch-wallpaper.png)
-
 > **Attenzione**: Al momento esistono davvero pochi pacchetti su Arch Linux ARM a 64bit, ci son diversi problemi in fase di installazione e non è per nulla stabile. Consiglio, per chi necessita di un'installazione funzionante o pronta, di usare **la versione 32bit** o meglio ancora **Manjaro a 64bit** che è molto più fornito.
 
 ## Download e Flash su SD
