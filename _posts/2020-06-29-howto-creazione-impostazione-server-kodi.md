@@ -71,7 +71,7 @@ Per informazioni sul download vi riporto alle fonti ufficiali sul loro [sito](ht
 
 La prima schermata di Kodi (generalmente si apre a schermo intero) ricorda un po' le interfacce dei vecchi lettori DVD. Per prima cosa troverete una barra laterale in verticale (nelle vecchie versioni potrebbe esserci una barra orizzontale centrale) ed una serie di opzioni. Il tema di default si chiama **Estuary**, ma non preoccupatevi di questo perchè l'interfaccia è perfettamente personalizzabile.
 
-![Kodi estuary home](../uploads/kodi-server/Kodi/kodi_estuary_home.png)
+![Kodi estuary home](kodi-server/Kodi/kodi_estuary_home.png)
 
 La navigazione avviene col mouse o se volete con tastiera. Esistono add-on per utilizzare e configurare anche joystick o altre periferiche. Tutte le impostazioni le troviamo al simbolo della rotellina presente nella nostra barra di navigazione. 
 
