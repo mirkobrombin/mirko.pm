@@ -134,7 +134,7 @@ e diamo il comando seguente (Il punto iniziale è obbligatorio):
 
 ```bash 
 cd boot
-./mksrc
+./mkscr
 ```
 
 ### File config.txt 
