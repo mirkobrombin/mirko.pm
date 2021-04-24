@@ -52,7 +52,7 @@ Scaricare l'implementazione ufficiale di Go tramite la [nostra guida](https://li
 
 #### Debian/Ubuntu
 
-Si può installare tramite Go tramite apt con:
+Si può installare Go tramite apt con:
 
 ```bash
 apt install go
@@ -216,8 +216,6 @@ Ecco una tabella completa anche degli interi non segnati:
 Per il bene della semplicità non scenderò nei dettagli qui, ma per esprimere numeri con la virgola possiamo usare i tipi `float32` e `float64`.
 
 È anche possibile utilizzare numeri complessi grazie al tipo `complex`.
-
-`float` dipende dall'implementazione, ma generalmente è uguale a `float32`.
 
 ### Booleani
 
