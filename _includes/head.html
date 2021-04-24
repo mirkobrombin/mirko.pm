@@ -4,9 +4,9 @@
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
 {% if page.description %}
-<meta name="description" content="{{ page.description }}" />
-{% else if site.description %}
-<meta name="description" content="{{ site.description }}" />
+    <meta name="description" content="{{ page.description }}" />
+{% elsif site.description %}
+    <meta name="description" content="{{ site.description }}" />
 {% endif %}
 
 <link rel="icon" href="{{ site.assets }}/favicon.ico" type="image/x-icon">
