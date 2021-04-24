@@ -1,5 +1,6 @@
 ---
 title: '#howto – Installare snap in RHEL/Centos 7'
+description: "Sono molti i vantaggi dei pacchetti snap, in primis la loro esecuzione sicura in una sandbox e le dipendenze pre-incluse nel pacchetto."
 published: 2019-06-01
 layout: post
 author: Mirko B.
@@ -7,4 +8,47 @@ author_github: mirkobrombin
 tags:
 
 ---
-<p>Sono molti i vantaggi dei pacchetti snap, in primis la loro esecuzione sicura in una sandbox e le dipendenze pre-incluse nel pacchetto.</p><blockquote><p>La principale differenza rispetto&nbsp;flatpak è la non necessità del runtime GNOME, installato nel sistema.</p></blockquote><p>Questa guida si applica a sistemi RHEL e Centos 7 ma non è escluso che funzioni anche su Fedora e altre derivate di RHEL.</p><h2>Preparazione repository</h2><p>Per prima cosa installiamo la repository <strong>epel</strong>:</p><pre><code>sudo yum install epel-release</code></pre><p>ed il plugin manager&nbsp;<strong>copr</strong>:</p><pre><code>sudo yum install yum-plugin-copr</code></pre><p>infine aggiungiamo la repository&nbsp;<strong>snapcore</strong>&nbsp;a copr:</p><pre><code>sudo yum copr enable ngompa/snapcore-el7</code></pre><h2>Installazione</h2><p>Ora che la repository è stata installata, procediamo con l'installazione vera e propria&nbsp;via&nbsp;<strong>yum</strong>:</p><pre><code>sudo yum install snapd</code></pre><p>e abilitiamo il servizio con&nbsp;<strong>systemctl</strong>:</p><pre><code>sudo systemctl enable snapd</code></pre><p>ora digitiamo:</p><pre><code>snap --version</code></pre><p>per verificarne il corretto funzionamento, nel caso in vui viene restituita la versione, tutto è andato per il verso giusto e snap è pronto all'uso.</p><h3>Risoluzione bug comune</h3><p>Uno dei bug più frequenti è la posizione della directory /<strong>snap</strong>: molte applicazioni cercano infatti questa cartella nella root del sistema, ma in questo caso è presente in /var/lib/snapd/snap. Per risolvere questo problema, basta semplicemente creare un link simbolico, come di seguito:</p><pre><code>sudo ln -s /var/lib/snapd/snap /snap</code></pre><p>&nbsp;</p><p><em>Good&nbsp;<strong>*nix</strong>?</em><br /><em>&nbsp;- Mirko</em></p>
+Sono molti i vantaggi dei pacchetti snap, in primis la loro esecuzione sicura in una sandbox e le dipendenze pre-incluse nel pacchetto.
+
+> La principale differenza rispetto flatpak è la non necessità del runtime GNOME, installato nel sistema.
+
+Questa guida si applica a sistemi RHEL e Centos 7 ma non è escluso che funzioni anche su Fedora e altre derivate di RHEL.
+
+## Preparazione repository
+
+Per prima cosa installiamo la repository **epel**:
+
+    sudo yum install epel-release
+
+ed il plugin manager **copr**:
+
+    sudo yum install yum-plugin-copr
+
+infine aggiungiamo la repository **snapcore** a copr:
+
+    sudo yum copr enable ngompa/snapcore-el7
+
+## Installazione
+
+Ora che la repository è stata installata, procediamo con l'installazione vera e propria via **yum**:
+
+    sudo yum install snapd
+
+e abilitiamo il servizio con **systemctl**:
+
+    sudo systemctl enable snapd
+
+ora digitiamo:
+
+    snap --version
+
+per verificarne il corretto funzionamento, nel caso in vui viene restituita la versione, tutto è andato per il verso giusto e snap è pronto all'uso.
+
+### Risoluzione bug comune
+
+Uno dei bug più frequenti è la posizione della directory /**snap**: molte applicazioni cercano infatti questa cartella nella root del sistema, ma in questo caso è presente in /var/lib/snapd/snap. Per risolvere questo problema, basta semplicemente creare un link simbolico, come di seguito:
+
+    sudo ln -s /var/lib/snapd/snap /snap
+
+_Good ***nix**?_  
+_ - Mirko_

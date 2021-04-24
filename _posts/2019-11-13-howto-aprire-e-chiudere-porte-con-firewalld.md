@@ -1,5 +1,6 @@
 ---
 title: '#howto - Aprire e chiudere porte con firewalld'
+description: "Firewalld è un potente strumento per il controllo del firewall su Linux."
 published: 2019-11-13
 layout: post
 author: Mirko B.

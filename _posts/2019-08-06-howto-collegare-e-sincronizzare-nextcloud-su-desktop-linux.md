@@ -1,5 +1,6 @@
 ---
 title: '#howto - Collegare e sincronizzare Nextcloud su desktop Linux'
+description: "Ciò che andiamo a vedere oggi è come collegare e sincronizzare Nextcloud nella nostra distribuzione desktop di tutti i.."
 published: 2019-08-06
 layout: post
 author: Mirko B.
@@ -9,4 +10,78 @@ tags:
   - github  
   - bash
 ---
-<p>Abbiamo già pubblicato nella <a href="https://linuxhub.it/node/537">Raccolta su Nextcloud</a> come installare questa piattaforma su varie distribuzioni server.</p><blockquote><p>Il termine Linux nel titolo di questo articolo fa riferimento in realtà a tutto l'insieme di distribuzioni compatibili (Fedora, Ubuntu, Debian, ..).</p></blockquote><p>Ciò che andiamo a vedere oggi è come collegare e sincronizzare Nextcloud nella nostra distribuzione desktop di tutti i giorni. I pregi di mantenere la sincronia fra desktop e server sono diversi, in primis l'immediata disponibilità dei file, il loro aggiornamento ed il poterli utilizzare quando non è presente una connessione per poi salvare le modifiche quando torniamo online.</p><h2>Installazione</h2><p>Il mio metodo preferito per sincronizzare i file è tramite il client ufficiale, si può poi optare per altre soluzioni come ad esempio la configurazione del percorso DAV ma non è questa la guida.</p><p>Per prima cosa scarichiamo il client ufficiale (<a href="https://nextcloud.com/install/#install-clients">qui</a>) che su Linux viene fornito sotto forma di AppImage pronta all'uso:</p><img class=" size-full wp-image-523" alt="Download Nextcloud Linux AppImage" data-align="center" data-entity-type="file" data-entity-uuid="c4b13e66-c41c-4f61-8df8-c53b59c40e91" src="https://linuxhub.it/wordpress/wp-content/uploads/2019/08/howto_nextcloud_download_linuxhub.png" width="709" height="158" /><p>Successivamente portiamoci nella directory dove è stato scarico il file e spostiamolo nella locazione <strong>/opt </strong>di sistema:</p><pre><code>sudo mv Nextcloud*.AppImage /opt</code></pre><p>ed impostiamo i permessi per l'esecuzione del file:</p><pre><code>sudo chmod +x /opt/Nextcloud*.AppImage</code></pre><p>in questo modo lo possiamo eseguire come una normale applicazione.</p><h2>Registrazione nel sistema</h2><p>Portarsi sempre alla directory <strong>/opt</strong> o ricorrere al terminale per avviare l'applicazione, non è di certo la miglior scelta in un contesto produttivo. In questa parte di guida vediamo come registrare l'applicazione con <strong>appimaged</strong> in modo da inserire la nostra AppImage nella directory di sistema e facendola così rilevare ed inserire nei menu delle applicazioni.</p><p>Per prima cosa scarichiamo <strong>appimaged</strong>:</p><pre><code>wget "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage"</code></pre><p>impostiamo i permessi:</p><pre><code>chmod +x appimaged-x86_64.AppImage</code></pre><p>ed installiamo</p><pre><code>./appimaged-x86_64.AppImage --install</code></pre><p>rieffettuiamo il login col nostro account per renderlo funzionante. Infine eseguiamo:</p><pre><code>appimaged</code></pre><p>&nbsp;per rilevare le nostre AppImage, ora NextCloud compare nel nostro menu applicazioni.</p><h2>Avvio col sistema</h2><p>Per facilitarne il funzionamento, può tornare utile eseguirlo col sistema in modo da avviarlo ad ogni accensione.</p><p>Ci sono diversi metodi per fare ciò, quello che consiglio io è sfruttare le impostazioni fornite col Desktop Environment in uso.</p><h3>KDE</h3><p>Nel caso di KDE possiamo procedere dal gestore Impostazioni, cerchiamo <strong>Avvio e spegnimento</strong>, una volta entrati nella sezione clicchiamo su <strong>Aggiungi programma</strong> e selezioniamo la nostra AppImage in <strong>/opt</strong>, infine salviamo le modifiche.</p><h3>GNOME</h3><p>Creiamo uno script <strong>sh</strong> per l'esecuzione della nostra <strong>AppImage</strong> in ~/.config/autostart:</p><pre><code>nano ~/.config/autostart/nextcloud.sh</code></pre><p>col seguente contenuto:</p><pre><code>#!/bin/bashcd /opt./Nextcloud.AppImage</code></pre><p>infine salviamo.</p><h3>XFCE/Mate</h3><p>Dal menu delle Impostazioni, portiamoci su <strong>Avvio applicazioni</strong>, nella finestra che si apre clicchiamo su <strong>Aggiungi</strong> e selezioniamo il percorso della nostra AppImage in <strong>/opt</strong>.</p><p>&nbsp;</p><p>Per dubbi e chiarimenti, utilizzate il nostro&nbsp;<a href="https://t.me/gentedilinux">gruppo Telegram</a>.</p><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p>
+Abbiamo già pubblicato nella raccolta di guide su Nextcloud, come installare questa piattaforma su varie distribuzioni server.
+
+> Il termine Linux nel titolo di questo articolo fa riferimento in realtà a tutto l'insieme di distribuzioni compatibili (Fedora, Ubuntu, Debian, ..).
+
+Ciò che andiamo a vedere oggi è come collegare e sincronizzare Nextcloud nella nostra distribuzione desktop di tutti i giorni. I pregi di mantenere la sincronia fra desktop e server sono diversi, in primis l'immediata disponibilità dei file, il loro aggiornamento ed il poterli utilizzare quando non è presente una connessione per poi salvare le modifiche quando torniamo online.
+
+## Installazione
+
+Il mio metodo preferito per sincronizzare i file è tramite il client ufficiale, si può poi optare per altre soluzioni come ad esempio la configurazione del percorso DAV ma non è questa la guida.
+
+Per prima cosa scarichiamo il client ufficiale ([qui](https://nextcloud.com/install/#install-clients)) che su Linux viene fornito sotto forma di AppImage pronta all'uso:
+
+![Download Nextcloud Linux AppImage](https://linuxhub.it/wordpress/wp-content/uploads/2019/08/howto_nextcloud_download_linuxhub.png)
+
+Successivamente portiamoci nella directory dove è stato scarico il file e spostiamolo nella locazione **/opt** di sistema:
+
+    sudo mv Nextcloud*.AppImage /opt
+
+ed impostiamo i permessi per l'esecuzione del file:
+
+    sudo chmod +x /opt/Nextcloud*.AppImage
+
+in questo modo lo possiamo eseguire come una normale applicazione.
+
+## Registrazione nel sistema
+
+Portarsi sempre alla directory **/opt** o ricorrere al terminale per avviare l'applicazione, non è di certo la miglior scelta in un contesto produttivo. In questa parte di guida vediamo come registrare l'applicazione con **appimaged** in modo da inserire la nostra AppImage nella directory di sistema e facendola così rilevare ed inserire nei menu delle applicazioni.
+
+Per prima cosa scarichiamo **appimaged**:
+
+    wget "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage"
+
+impostiamo i permessi:
+
+    chmod +x appimaged-x86_64.AppImage
+
+ed installiamo
+
+    ./appimaged-x86_64.AppImage --install
+
+rieffettuiamo il login col nostro account per renderlo funzionante. Infine eseguiamo:
+
+    appimaged
+
+ per rilevare le nostre AppImage, ora NextCloud compare nel nostro menu applicazioni.
+
+## Avvio col sistema
+
+Per facilitarne il funzionamento, può tornare utile eseguirlo col sistema in modo da avviarlo ad ogni accensione.
+
+Ci sono diversi metodi per fare ciò, quello che consiglio io è sfruttare le impostazioni fornite col Desktop Environment in uso.
+
+### KDE
+
+Nel caso di KDE possiamo procedere dal gestore Impostazioni, cerchiamo **Avvio e spegnimento**, una volta entrati nella sezione clicchiamo su **Aggiungi programma** e selezioniamo la nostra AppImage in **/opt**, infine salviamo le modifiche.
+
+### GNOME
+
+Creiamo uno script **sh** per l'esecuzione della nostra **AppImage** in ~/.config/autostart:
+
+    nano ~/.config/autostart/nextcloud.sh
+
+col seguente contenuto:
+
+    #!/bin/bashcd /opt./Nextcloud.AppImage
+
+infine salviamo.
+
+### XFCE/Mate
+
+Dal menu delle Impostazioni, portiamoci su **Avvio applicazioni**, nella finestra che si apre clicchiamo su **Aggiungi** e selezioniamo il percorso della nostra AppImage in **/opt**.
+
+Per dubbi e chiarimenti, utilizzate il nostro [gruppo Telegram](https://t.me/gentedilinux).
+
+_?Good *nix _**__Mirko_**

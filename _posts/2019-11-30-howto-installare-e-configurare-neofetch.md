@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di neofetch'
+description: "neofetch è un interessante e leggero strumento utilizzabile da terminale che, su ben 150 sistemi operativi diversi.."
 published: 2019-11-30
 layout: post
 author: Alessandro Zangrandi
@@ -7,8 +8,7 @@ author_github: AlexzanDev
 tags:
   - fedora  - github
 ---
-**neofetch** è un interessante e leggero strumento utilizzabile da terminale che, su ben 
-150 sistemi operativi diversi, fornisce informazioni sul proprio sistema e hardware, indicando anche CPU, GPU, RAM, disco e molto altro.
+**neofetch** è un interessante e leggero strumento utilizzabile da terminale che, su ben 150 sistemi operativi diversi, fornisce informazioni sul proprio sistema e hardware, indicando anche CPU, GPU, RAM, disco e molto altro.
 
 ![Neofetch terminale dylanaraps](storage/neofetch-terminale-dylanaraps.png)
 

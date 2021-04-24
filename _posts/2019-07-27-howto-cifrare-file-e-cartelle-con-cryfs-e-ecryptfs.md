@@ -1,5 +1,6 @@
 ---
 title: '#howto - Cifrare file e cartelle con CryFS e ECryptFS'
+description: "In questa guida vediamo due metodi per tenere al sicuro i nostri file, nello specifico CryFS e ecryptfs."
 published: 2019-07-27
 layout: post
 author: Davide Galati
@@ -8,4 +9,83 @@ tags:
   - github  
   - bash
 ---
-<p>In questa guida vediamo due metodi per tenere al sicuro i nostri file, nello specifico <strong>CryFS</strong> e <strong>ecryptfs</strong>.</p><p>Personalmente, consiglio il primo metodo poiché&nbsp;permette l'interazione con i servizi cloud (come Dropbox), tuttavia se volete sapere ad esempio come cifrare la vostra intera home con il secondo metodo, su <a href="https://github.com/PsykeDady/Archlinux_installazione">github</a>&nbsp;trovate una sezione nella mia guida di installazione di Archlinux (dovrebbe valere anche per altre distro).</p><blockquote><p>Consiglio di fare le prime prove con dati di poco rilievo per evitare di comprometterne il contenuto.</p></blockquote><h2>ecryptFS</h2><p>Iniziamo con <strong>ecryptfs</strong> e supponiamo di dover cifrare la cartella <em>/percorso/SegretiDiStato</em>.</p><p>Installiamo dunque i pacchetti necessari dal package manager di sistema:</p><pre><code class="language-bash"># Debian/Ubuntu e derivatesudo apt install ecryptfs-utils keyutils rsync lsof# RHEL/Centos e derivatesudo yum install ecryptfs-utils keyutils rsync lsof# Fedora e derivatesudo dnf install ecryptfs-utils keyutils rsync lsof</code></pre><p>Procediamo con l'abilitazione del modulo con <strong>modprobe</strong>:</p><pre><code class="language-bash">sudo modprobe ecryptfs</code></pre><p>rendiamo privata la nostra cartella di interesse:</p><pre><code class="language-bash">chmod 700 /percorso</code></pre><p>e procediamo con ecryptfs:</p><pre><code class="language-bash">sudo mount -t ecryptfs /percorso /percorso</code></pre><p>questo comando servirà anche a decifrare la cartella ogni qual volta vorrete usarla.</p><p>Per cifrare e rendere quindi inaccessibile la locazione, digitiamo:</p><pre><code class="language-bash">sudo umount /percorso</code></pre><p>Possiamo rendere più semplice l'operazione prendendo l'ultima riga del file <strong>/etc/mtab</strong>:</p><pre><code>tail -1 /etc/mtab</code></pre><p>copiamo tutte le opzioni che terminano per <strong>ecryptfs</strong> (tranne <strong>ecryptfs_sig</strong>) e creiamo il seguente script:</p><pre><code>sudo mount -t ecryptfs /percorso /percorso -o &lt;tutte le opzioni separate da ,&gt;</code></pre><p>dopo di ché usate questo script per montare la cartella!</p><h2>CryFS</h2><p>Procediamo con l'installazione di <strong>cryfs</strong>:</p><pre><code class="language-bash"># Debian/Ubuntu e derivatesudo apt install cryfs# RHEL/Centos e derivatesudo yum install cryfs# Fedora e derivatesudo dnf install cryfs</code></pre><p>Facciamo chiarezza ad alcune definizioni prima di procedere:</p><ul>	<li><strong>mountpoint</strong> è dove scriverete e leggerete i vostri file</li>	<li><strong>basepoint</strong> è dove cryfs salverà le informazioni riguardanti i dati e la cifratura.</li></ul><p>Supponendo sempre di dover cifrare <strong>/percorso</strong>, creiamo un'altra locazione da usare come <em>basepoint</em> (consiglio di crearla nascosta)</p><pre><code class="language-bash">mkdir .SDSb </code></pre><blockquote><p>Possiamo comunque avviare Cryfs senza creare il percorso in anticipo, la creerà lo strumento stesso.</p></blockquote><p>procediamo con:</p><pre><code>cryfs cartellabase cartellamount</code></pre><p>e nel nostro caso specifico:</p><pre><code>cryfs /percorso</code></pre><p>ci verrà chiesto se vogliamo le impostazioni di default e quale password vogliamo. Tra le opzioni disponibili ci sono metodo di cifratura, a quanti bit e altro.</p><p>Possiamo smontare la locazione con:</p><pre><code>cryfs-umount /percorso</code></pre><p>Se utilizzate cryfs in combinazione a dropbox, ricordate di inserire dentro la cartella del cloud la directory base e non quella di mount!</p><pre><code class="language-bash">cryfs Dropbox/.cartellabase Altropercorso/cartellaMount</code></pre><p>così facendo eviterete inutili problematiche di sincronizzazione continua.</p><p>Esistono comunque dei tool grafici (come vault di plasma) che consentono di usare questi tool senza doversi appoggiare al terminale, ma conoscere come funzionano e come configurare questi tool vi renderà possibile correggere eventuali errori delle GUI.</p>
+In questa guida vediamo due metodi per tenere al sicuro i nostri file, nello specifico **CryFS** e **ecryptfs**.
+
+Personalmente, consiglio il primo metodo poiché permette l'interazione con i servizi cloud (come Dropbox), tuttavia se volete sapere ad esempio come cifrare la vostra intera home con il secondo metodo, su [github](https://github.com/PsykeDady/Archlinux_installazione) trovate una sezione nella mia guida di installazione di Archlinux (dovrebbe valere anche per altre distro).
+
+> Consiglio di fare le prime prove con dati di poco rilievo per evitare di comprometterne il contenuto.
+
+## ecryptFS
+
+Iniziamo con **ecryptfs** e supponiamo di dover cifrare la cartella _/percorso/SegretiDiStato_.
+
+Installiamo dunque i pacchetti necessari dal package manager di sistema:
+
+    # Debian/Ubuntu e derivatesudo apt install ecryptfs-utils keyutils rsync lsof# RHEL/Centos e derivatesudo yum install ecryptfs-utils keyutils rsync lsof# Fedora e derivatesudo dnf install ecryptfs-utils keyutils rsync lsof
+
+Procediamo con l'abilitazione del modulo con **modprobe**:
+
+    sudo modprobe ecryptfs
+
+rendiamo privata la nostra cartella di interesse:
+
+    chmod 700 /percorso
+
+e procediamo con ecryptfs:
+
+    sudo mount -t ecryptfs /percorso /percorso
+
+questo comando servirà anche a decifrare la cartella ogni qual volta vorrete usarla.
+
+Per cifrare e rendere quindi inaccessibile la locazione, digitiamo:
+
+    sudo umount /percorso
+
+Possiamo rendere più semplice l'operazione prendendo l'ultima riga del file **/etc/mtab**:
+
+    tail -1 /etc/mtab
+
+copiamo tutte le opzioni che terminano per **ecryptfs** (tranne **ecryptfs_sig**) e creiamo il seguente script:
+
+    sudo mount -t ecryptfs /percorso /percorso -o <tutte le opzioni separate da ,>
+
+dopo di ché usate questo script per montare la cartella!
+
+## CryFS
+
+Procediamo con l'installazione di **cryfs**:
+
+    # Debian/Ubuntu e derivatesudo apt install cryfs# RHEL/Centos e derivatesudo yum install cryfs# Fedora e derivatesudo dnf install cryfs
+
+Facciamo chiarezza ad alcune definizioni prima di procedere:
+
+*   **mountpoint** è dove scriverete e leggerete i vostri file
+*   **basepoint** è dove cryfs salverà le informazioni riguardanti i dati e la cifratura.
+
+Supponendo sempre di dover cifrare **/percorso**, creiamo un'altra locazione da usare come _basepoint_ (consiglio di crearla nascosta)
+
+    mkdir .SDSb 
+
+> Possiamo comunque avviare Cryfs senza creare il percorso in anticipo, la creerà lo strumento stesso.
+
+procediamo con:
+
+    cryfs cartellabase cartellamount
+
+e nel nostro caso specifico:
+
+    cryfs /percorso
+
+ci verrà chiesto se vogliamo le impostazioni di default e quale password vogliamo. Tra le opzioni disponibili ci sono metodo di cifratura, a quanti bit e altro.
+
+Possiamo smontare la locazione con:
+
+    cryfs-umount /percorso
+
+Se utilizzate cryfs in combinazione a dropbox, ricordate di inserire dentro la cartella del cloud la directory base e non quella di mount!
+
+    cryfs Dropbox/.cartellabase Altropercorso/cartellaMount
+
+così facendo eviterete inutili problematiche di sincronizzazione continua.
+
+Esistono comunque dei tool grafici (come vault di plasma) che consentono di usare questi tool senza doversi appoggiare al terminale, ma conoscere come funzionano e come configurare questi tool vi renderà possibile correggere eventuali errori delle GUI.

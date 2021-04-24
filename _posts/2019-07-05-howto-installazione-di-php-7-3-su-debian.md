@@ -1,11 +1,13 @@
 ---
 title: '#howto - Installazione di PHP 7.3 su Debian'
+description: "In questa breve guida vediamo come installare php nella versione più recente.."
 published: 2019-07-05
 layout: post
 author: Hersel Giannella
 author_github: hersel
 tags:
-  - mysql  - php
+  - mysql  
+  - php
 ---
 In questa breve guida vediamo come installare **php**nella versione più recente ed aggiornata (php 7.3 nel momento in cui scrivo questa guida).
 

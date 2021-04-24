@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione di Flatpak e configurazione di Flathub'
+description: "Flatpak è un formato pacchetto sempre più diffuso in Linux. Si tratta di un ambiente sandbox particolarmente responsivo che permette l'esecuz.."
 published: 2019-10-22
 layout: post
 author: Mirko B.
@@ -8,4 +9,92 @@ tags:
   - ubuntu  
   - gnome
 ---
-<p>Flatpak è un formato pacchetto sempre più diffuso in Linux.</p><p>Si tratta di un ambiente sandbox particolarmente responsivo che permette l'esecuzione di applicazioni isolate dal sistema. L'integrazione è totale, è possibile infatti lavorare con i file di sistema, accedere alle periferiche e sfruttare lo stesso tema in uso dal desktop environment.</p><p>Flathub è la repository software più generosa al momento, offre una vasta quantità di applicazioni pronte all'uso in formato Flatpak.</p><h2>Installazione</h2><p>Per prima cosa vediamo come installare Flatpak nelle principali distribuzioni.</p><h3>Debian/Pop!_OS/Ubuntu e flavours</h3><p>Per quanto riguarda Ubuntu, Kubuntu, Xubuntu, Lubuntu e gli altri membri della famiglia, troviamo Flatpak nelle repository di sistema, facilmente installabile tramite apt:</p><pre><code>sudo apt install flatpak</code></pre><p>in questo modo sarà possibile sfruttare a pieno flatpak una volta riavviato il sistema.</p><p>Nel caso di GNOME Software presente nel sistema, possiamo installare un plugin che permette l'installazione facilitata delle flatpak direttamente dallo store:</p><pre><code>sudo apt install gnome-software-plugin-flatpak</code></pre><h3>openSUSE</h3><p>Possiamo installare flatpak tramite il gestore pacchetti di sistema, zypper:</p><pre><code>sudo zypper install flatpak</code></pre><p>riavviamo il sistema per renderlo operativo.</p><h3>Arch Linux e derivate</h3><p>Possiamo installare flatpak direttamente dal gestore pacchetti pacman:</p><pre><code>sudo pacman -S flatpak</code></pre><h3>elementary OS</h3><p>Per prima cosa installiamo gli strumenti necessari ad aggiungere repository di terze parti:</p><pre><code>sudo apt install software-properties-common --no-install-recommends</code></pre><p>e aggiungiamo la repository di flatpak:</p><pre><code>sudo add-apt-repository ppa:alexlarsson/flatpak</code></pre><p>per poi installare:</p><pre><code>sudo apt updatesudo apt install flatpak</code></pre><p>come per le altre distribuzioni, riavviamo per renderlo operativo.</p><h3>Clear Linux</h3><p>Possiamo procedere con l'installazione dalle repository di sistema, tramite il gestore dei pacchetti swupd:</p><pre><code>sudo swupd bundle-add desktop</code></pre><p>riavviamo il sistema per renderlo operativo.</p><h3>Solus</h3><p>In Solus è necessaria l'installazione di un secondo pacchetto ossia <strong>xdg-desktop-portal-gtk</strong> per il corretto funzionamento di Flatpak:</p><pre><code>sudo eopkg install flatpak xdg-desktop-portal-gtk</code></pre><p>riavviamo il sistema per renderlo operativo.</p><blockquote><p>Se la tua distribuzione non è presente in questa guida, probabilmente perchè Flatpak è già presente come standard.</p><p>C'è da tenere in considerazione che nonostante la sua presenza da diversi anni, è comunque un pacchetto giovane e spesso necessita di una distribuzione recente e aggiornata per funzionare.</p></blockquote><h2>Configurazione di Flathub</h2><p>Il comando flatpak offre la flag <strong>remote-add </strong>per l'aggiunta di repository al sistema, sfruttiamola per aggiungere Flathub:</p><pre><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code></pre><p>Possiamo installare nuovo software tramite il portale Flathub (<a href="https://flathub.org/home">qui</a>, premendo sul pulsante <strong>Install</strong> presente nella pagina di ogni applicazione) o tramite flag <strong>install</strong> del comando flathub:</p><pre><code>flatpak install com.spotify.Client</code></pre><p>nell'esempio qui sopra installiamo il client Spotify per Linux.</p><p>In alternativa è possibile installare software tramite GNOME Software se presente il plugin <strong>gnome-software-plugin-flatpak</strong>, normalmente presente nelle repository di sistema e preinstallato nell'ambiente GNOME.</p><p>&nbsp;</p><p>Per dubbi e chiarimenti, fate accesso al nostro gruppo <a href="https://t.me/gentedilinux">Telegram</a>.</p><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p>
+Flatpak è un formato pacchetto sempre più diffuso in Linux.
+
+Si tratta di un ambiente sandbox particolarmente responsivo che permette l'esecuzione di applicazioni isolate dal sistema. L'integrazione è totale, è possibile infatti lavorare con i file di sistema, accedere alle periferiche e sfruttare lo stesso tema in uso dal desktop environment.
+
+Flathub è la repository software più generosa al momento, offre una vasta quantità di applicazioni pronte all'uso in formato Flatpak.
+
+## Installazione
+
+Per prima cosa vediamo come installare Flatpak nelle principali distribuzioni.
+
+### Debian/Pop!_OS/Ubuntu e flavours
+
+Per quanto riguarda Ubuntu, Kubuntu, Xubuntu, Lubuntu e gli altri membri della famiglia, troviamo Flatpak nelle repository di sistema, facilmente installabile tramite apt:
+
+    sudo apt install flatpak
+
+in questo modo sarà possibile sfruttare a pieno flatpak una volta riavviato il sistema.
+
+Nel caso di GNOME Software presente nel sistema, possiamo installare un plugin che permette l'installazione facilitata delle flatpak direttamente dallo store:
+
+    sudo apt install gnome-software-plugin-flatpak
+
+### openSUSE
+
+Possiamo installare flatpak tramite il gestore pacchetti di sistema, zypper:
+
+    sudo zypper install flatpak
+
+riavviamo il sistema per renderlo operativo.
+
+### Arch Linux e derivate
+
+Possiamo installare flatpak direttamente dal gestore pacchetti pacman:
+
+    sudo pacman -S flatpak
+
+### elementary OS
+
+Per prima cosa installiamo gli strumenti necessari ad aggiungere repository di terze parti:
+
+    sudo apt install software-properties-common --no-install-recommends
+
+e aggiungiamo la repository di flatpak:
+
+    sudo add-apt-repository ppa:alexlarsson/flatpak
+
+per poi installare:
+
+    sudo apt updatesudo apt install flatpak
+
+come per le altre distribuzioni, riavviamo per renderlo operativo.
+
+### Clear Linux
+
+Possiamo procedere con l'installazione dalle repository di sistema, tramite il gestore dei pacchetti swupd:
+
+    sudo swupd bundle-add desktop
+
+riavviamo il sistema per renderlo operativo.
+
+### Solus
+
+In Solus è necessaria l'installazione di un secondo pacchetto ossia **xdg-desktop-portal-gtk** per il corretto funzionamento di Flatpak:
+
+    sudo eopkg install flatpak xdg-desktop-portal-gtk
+
+riavviamo il sistema per renderlo operativo.
+
+> Se la tua distribuzione non è presente in questa guida, probabilmente perchè Flatpak è già presente come standard.
+> 
+> C'è da tenere in considerazione che nonostante la sua presenza da diversi anni, è comunque un pacchetto giovane e spesso necessita di una distribuzione recente e aggiornata per funzionare.
+
+## Configurazione di Flathub
+
+Il comando flatpak offre la flag **remote-add** per l'aggiunta di repository al sistema, sfruttiamola per aggiungere Flathub:
+
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+Possiamo installare nuovo software tramite il portale Flathub ([qui](https://flathub.org/home), premendo sul pulsante **Install** presente nella pagina di ogni applicazione) o tramite flag **install** del comando flathub:
+
+    flatpak install com.spotify.Client
+
+nell'esempio qui sopra installiamo il client Spotify per Linux.
+
+In alternativa è possibile installare software tramite GNOME Software se presente il plugin **gnome-software-plugin-flatpak**, normalmente presente nelle repository di sistema e preinstallato nell'ambiente GNOME.
+
+Per dubbi e chiarimenti, fate accesso al nostro gruppo [Telegram](https://t.me/gentedilinux).
+
+_?Good *nix _**__Mirko_**

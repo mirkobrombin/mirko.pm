@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installare Nginx su Centos 7 e configurazione SSL'
+description: "In questa guida andremo a vedere come è possibile installare Nginx su Centos 7 via repository ufficiale."
 published: 2019-01-04
 layout: post
 author: Mirko B.

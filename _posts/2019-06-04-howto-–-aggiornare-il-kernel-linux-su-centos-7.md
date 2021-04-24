@@ -1,11 +1,14 @@
 ---
 title: '#howto – Aggiornare il kernel linux su Centos 7'
+description: "Centos 7 viene normalmente fornito con una versione stabile seppur molto vecchia, del kernel Linux.."
 published: 2019-06-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - debian  - centos  - fedora
+  - debian  
+  - centos  
+  - fedora
 ---
 Centos 7 viene normalmente fornito con una versione stabile seppur molto vecchia, del kernel Linux. Questa scelta può essere condivisa come no, vediamo in questa guida come aggiornarlo.
 

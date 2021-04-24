@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di GlusterFS su Debian 10'
+description: "GlusterFS è un file system open source distribuito e scalabile che permette la memorizzazione di risorse su dispositivi di archiviazione.."
 published: 2020-02-08
 layout: post
 author: Mattia Cosma

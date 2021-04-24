@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Caddy Server su 2 Centos 8/RHEL 8/Fedora 31+'
+description: "Caddy è un Web Server altamente estensibile e performante scritto in linguaggio Go."
 published: 2020-02-01
 layout: post
 author: Mirko B.

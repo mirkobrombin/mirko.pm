@@ -7,4 +7,94 @@ author_github: MichaelMessaggi
 tags:
   - fedora
 ---
-<!-- wp:paragraph --><p>Per installare Fedora con tutti i pacchetti più aggiornati, è possibile utilizzare un'immagine NetInstall, scaricabile dalla <a href="https://alt.fedoraproject.org/">pagina dei download alternativi di Fedora 31 (Selezionate "Everything"/"Tutto" dalla lunga lista).</a></p><!-- /wp:paragraph --><!-- wp:paragraph --><p>In questa guida andremo quindi a vedere, come effettuare l'installazione di Fedora tramite NetInstall.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Configurazione iniziale</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Andando oltre la normale procedura di:</p><!-- /wp:paragraph --><!-- wp:list --><ul>	<li>Download</li>	<li>Scrittura della ISO sul dispositivo di installazione</li>	<li>Avvio dal dispositivo di installazione</li></ul><!-- /wp:list --><!-- wp:paragraph --><p>passiamo subito al dunque con la prima schermata della nostra NetInstall.</p><!-- /wp:paragraph --><!-- wp:image {"id":7042,"align":"center","width":473,"height":266} --><p><img class=" size-full wp-image-443" alt="" height="266" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-16-53-33.png" width="473" /></p><p>Schermata di selezione della lingua.</p><!-- /wp:image --><!-- wp:paragraph --><p>In questa schermata é possibile selezionare la lingua di installazione, subito dopo, possiamo passare alla configurazione vera e propria del sistema.</p><!-- /wp:paragraph --><!-- wp:image {"id":7043,"align":"center","width":472,"height":265} --><p><img class=" size-full wp-image-444" alt="" height="265" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-04-39.png" width="472" /></p><p>Schermata di configurazione del sistema.</p><!-- /wp:image --><!-- wp:paragraph --><p>Attraverso questa schermata viene eseguita la configurazione del sistema, vale a dire: hostname, selezione di quale "spin" di Fedora e quali componenti aggiuntivi si vuole installare ed in che locazione installarli.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Sconsiglio agli utenti meno esperti di modificare la Sorgente di Installazione, in quanto l'immagine NetInstall è preconfigurata per installare autonomamente i pacchetti più aggiornati disponibili nei repository di Fedora.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Procediamo quindi con la configurazione <strong>dell'hostname,</strong> vale a dire il "nome" che vogliamo dare al nostro pc, per poterlo distinguere facilmente dagli altri nella rete. Per intenderci, sará anche la dicitura presente di prefisso nel terminale (ex. root@hostname) sarà&nbsp;comunque possibile modificarlo in seguito.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Selezioniamo quindi <strong>"Network</strong> <strong>&amp;</strong> <strong>Host Name"</strong> per accedere al pannello di configurazione rete e hostname.</p><!-- /wp:paragraph --><!-- wp:image {"id":7044,"align":"center","width":485,"height":273} --><p><img class=" size-full wp-image-445" alt="" height="273" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-19-20.png" width="485" /></p><p>Pannello di configurazione rete e hostname.</p><!-- /wp:image --><!-- wp:paragraph --><p>Potete digitare l'hostname che volete assegnare al vostro sistema nel riquadro in basso a sinistra, quindi premere "apply" per confermarlo.&nbsp;</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>In caso vogliate utilizzare una connessione wireless, potete selezionare la scheda di rete wireless, quindi la Wi-Fi.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Una volta ultimate le modifiche,&nbsp; é opportuno premere il tasto "Fatto" in alto a sinistra per tornare alla schermata principale di configurazione.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Configurazione storage e selezione Software</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Possiamo ora passare alla configurazione dello storage, vale a dire dove vogliamo installare fisicamente il sistema.</p><!-- /wp:paragraph --><!-- wp:image {"id":7045,"align":"center","width":498,"height":280} --><p><img class=" size-full wp-image-446" alt="" height="280" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-31-51.png" width="498" /></p><p>Schermata di configurazione storage.</p><!-- /wp:image --><!-- wp:paragraph --><p>Selezioniamo, nella barra <strong>"Dischi locali standard",</strong> il disco su cui vogliamo installare Fedora.&nbsp;</p><!-- /wp:paragraph --><!-- wp:quote --><blockquote><p>É possibile cifrare il disco per evitare che malintenzionati abbiano accesso facile ai vostri dati, in caso di smarrimento del dispositivo.</p></blockquote><!-- /wp:quote --><!-- wp:paragraph --><p>Quando premerete "Fatto", in alto a sinistra, se l'installer non dovesse trovare spazio a sufficienza per installare Fedora sul disco che avete selezionato, vi chiederà di aggiungere altri dischi o recuperare spazio da quello selezionato (in caso contenga altre partizioni).<br />Prestate molta attenzione premendo <strong>"Recupera Spazio",</strong> perché cancellerà tutti i dati nelle partizioni selezionate. (Nessun dato verrà toccato finché non premerete <strong>"Avvia Installazione".)</strong><br /><strong>Passiamo</strong> ora alla selezione del software da installare.</p><!-- /wp:paragraph --><!-- wp:image {"id":7046,"align":"center","width":506,"height":284} --><p><img class=" size-full wp-image-447" alt="" height="284" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-47-44.png" width="506" /></p><p>Schermata di selezione del software.</p><!-- /wp:image --><!-- wp:paragraph --><p>In questa schermata si sceglie cosa installare. In questo screenshot, è stata selezionata Fedora Workstation "base", senza componenti aggiuntivi, con <strong>GNOME 3.32.</strong> Nella colonna a sinistra potete scegliere su quale "spin" di Fedora basare questa installazione, mentre nella colonna di destra potete arricchire il vostro sistema. Quando avete completato la configurazione, premete, come di consueto, "Fatto".<br /><br />Quando siete certi di aver configurato tutto correttamente, potete premere <strong>"Avvia Installazione",</strong> nell'angolo in basso a destra della schermata principale di configurazione, che avvierà la formattazione del disco ed il download dei dati, permettendoci di procedere verso la configurazione della password di root e dell'account utente.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Configurazione dell'account utente</h2><!-- /wp:heading --><!-- wp:image {"id":7047,"align":"center","width":520,"height":292} --><p><img class=" size-full wp-image-448" alt="" height="292" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-18-00-49.png" width="520" /></p><p>Schermata di installazione, configurazione account utente e root.</p><!-- /wp:image --><!-- wp:paragraph --><p>In questa schermata possiamo controllare l'andamento dell'installazione e configurare il nostro account utente e quello di root.<br />Potete impostare la password di root premendo sull'apposito pulsante, e digitandola nel campo apposito.<br />Per creare il nostro account, apriamo questa schermata di configurazione:</p><!-- /wp:paragraph --><!-- wp:image {"id":7048,"align":"center","width":525,"height":295} --><p><img class=" size-full wp-image-449" alt="" height="295" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-18-05-23.png" width="525" /></p><p>Schermata di creazione account utente.</p><!-- /wp:image --><!-- wp:paragraph --><p>In questa schermata, si configurano le credenziali di accesso al proprio account utente, che potranno comunque venir modificate in seguito nelle impostazioni. Potete modificare la posizione della cartella Home del vostro account, che normalmente si troverà in "<strong>/home/nomeutente</strong>", premendo su Avanzate. Quando avrete concluso, premete "Fatto", ed attendete che la procedura di installazione volga al termine.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Completamento dell'Installazione</h2><!-- /wp:heading --><!-- wp:image {"id":7050,"align":"center"} --><p><img class=" size-full wp-image-450" alt="" src="https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-19-00-26.png" width="1920" height="1080" /></p><p>Completamento dell'installazione.</p><!-- /wp:image --><!-- wp:paragraph --><p>La procedura d'installazione è, ora, conclusa. Riavviamo il pc per accedere al sistema che abbiamo installato.<br /><br />Spero di esservi stati utile con questa mia guida. In caso aveste bisogno di ulteriori delucidazioni, vi aspettiamo nella sezione <a href="https://linuxhub.it/domande-risposte/">Domande</a> del sito o sul gruppo <a href="https://t.me/gentedilinux">Telegram</a></p><!-- /wp:paragraph -->
+Per installare Fedora con tutti i pacchetti più aggiornati, è possibile utilizzare un'immagine NetInstall, scaricabile dalla [pagina dei download alternativi di Fedora 31 (Selezionate "Everything"/"Tutto" dalla lunga lista).](https://alt.fedoraproject.org/)
+
+In questa guida andremo quindi a vedere, come effettuare l'installazione di Fedora tramite NetInstall.
+
+## Configurazione iniziale
+
+Andando oltre la normale procedura di:
+
+*   Download
+*   Scrittura della ISO sul dispositivo di installazione
+*   Avvio dal dispositivo di installazione
+
+passiamo subito al dunque con la prima schermata della nostra NetInstall.
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-16-53-33.png)
+
+Schermata di selezione della lingua.
+
+In questa schermata é possibile selezionare la lingua di installazione, subito dopo, possiamo passare alla configurazione vera e propria del sistema.
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-04-39.png)
+
+Schermata di configurazione del sistema.
+
+Attraverso questa schermata viene eseguita la configurazione del sistema, vale a dire: hostname, selezione di quale "spin" di Fedora e quali componenti aggiuntivi si vuole installare ed in che locazione installarli.
+
+Sconsiglio agli utenti meno esperti di modificare la Sorgente di Installazione, in quanto l'immagine NetInstall è preconfigurata per installare autonomamente i pacchetti più aggiornati disponibili nei repository di Fedora.
+
+Procediamo quindi con la configurazione **dell'hostname,** vale a dire il "nome" che vogliamo dare al nostro pc, per poterlo distinguere facilmente dagli altri nella rete. Per intenderci, sará anche la dicitura presente di prefisso nel terminale (ex. root@hostname) sarà comunque possibile modificarlo in seguito.
+
+Selezioniamo quindi **"Network** **&** **Host Name"** per accedere al pannello di configurazione rete e hostname.
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-19-20.png)
+
+Pannello di configurazione rete e hostname.
+
+Potete digitare l'hostname che volete assegnare al vostro sistema nel riquadro in basso a sinistra, quindi premere "apply" per confermarlo. 
+
+In caso vogliate utilizzare una connessione wireless, potete selezionare la scheda di rete wireless, quindi la Wi-Fi.
+
+Una volta ultimate le modifiche,  é opportuno premere il tasto "Fatto" in alto a sinistra per tornare alla schermata principale di configurazione.
+
+## Configurazione storage e selezione Software
+
+Possiamo ora passare alla configurazione dello storage, vale a dire dove vogliamo installare fisicamente il sistema.
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-31-51.png)
+
+Schermata di configurazione storage.
+
+Selezioniamo, nella barra **"Dischi locali standard",** il disco su cui vogliamo installare Fedora. 
+
+> É possibile cifrare il disco per evitare che malintenzionati abbiano accesso facile ai vostri dati, in caso di smarrimento del dispositivo.
+
+Quando premerete "Fatto", in alto a sinistra, se l'installer non dovesse trovare spazio a sufficienza per installare Fedora sul disco che avete selezionato, vi chiederà di aggiungere altri dischi o recuperare spazio da quello selezionato (in caso contenga altre partizioni).  
+Prestate molta attenzione premendo **"Recupera Spazio",** perché cancellerà tutti i dati nelle partizioni selezionate. (Nessun dato verrà toccato finché non premerete **"Avvia Installazione".)**  
+**Passiamo** ora alla selezione del software da installare.
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-17-47-44.png)
+
+Schermata di selezione del software.
+
+In questa schermata si sceglie cosa installare. In questo screenshot, è stata selezionata Fedora Workstation "base", senza componenti aggiuntivi, con **GNOME 3.32.** Nella colonna a sinistra potete scegliere su quale "spin" di Fedora basare questa installazione, mentre nella colonna di destra potete arricchire il vostro sistema. Quando avete completato la configurazione, premete, come di consueto, "Fatto".  
+
+Quando siete certi di aver configurato tutto correttamente, potete premere **"Avvia Installazione",** nell'angolo in basso a destra della schermata principale di configurazione, che avvierà la formattazione del disco ed il download dei dati, permettendoci di procedere verso la configurazione della password di root e dell'account utente.
+
+## Configurazione dell'account utente
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-18-00-49.png)
+
+Schermata di installazione, configurazione account utente e root.
+
+In questa schermata possiamo controllare l'andamento dell'installazione e configurare il nostro account utente e quello di root.  
+Potete impostare la password di root premendo sull'apposito pulsante, e digitandola nel campo apposito.  
+Per creare il nostro account, apriamo questa schermata di configurazione:
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-18-05-23.png)
+
+Schermata di creazione account utente.
+
+In questa schermata, si configurano le credenziali di accesso al proprio account utente, che potranno comunque venir modificate in seguito nelle impostazioni. Potete modificare la posizione della cartella Home del vostro account, che normalmente si troverà in "**/home/nomeutente**", premendo su Avanzate. Quando avrete concluso, premete "Fatto", ed attendete che la procedura di installazione volga al termine.
+
+## Completamento dell'Installazione
+
+![](https://linuxhub.it/wordpress/wp-content/uploads/2018/10/Schermata-da-2018-10-26-19-00-26.png)
+
+Completamento dell'installazione.
+
+La procedura d'installazione è, ora, conclusa. Riavviamo il pc per accedere al sistema che abbiamo installato.  
+
+Spero di esservi stati utile con questa mia guida. In caso aveste bisogno di ulteriori delucidazioni, vi aspettiamo nella sezione [Domande](https://linuxhub.it/domande-risposte/) del sito o sul gruppo [Telegram](https://t.me/gentedilinux)

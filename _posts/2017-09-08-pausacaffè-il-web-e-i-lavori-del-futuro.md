@@ -1,5 +1,6 @@
 ---
-title: '? #pausacaffè - Il Web e i lavori del futuro'
+title: '#pausacaffè - Il Web e i lavori del futuro'
+description: "Non mi soffermo di certo sullo spiegare come definire il web stesso un lavoro sia concettualmente un errore da ignorante."
 published: 2017-09-08
 layout: post
 author: Mirko B.

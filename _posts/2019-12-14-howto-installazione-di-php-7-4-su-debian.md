@@ -1,11 +1,16 @@
 ---
 title: '#howto - Installazione di PHP 7.4 su Debian'
+description: "ualche settimana fa, il PHP Group ha rilasciato ufficialmente la versione 7.4 di PHP.."
 published: 2019-12-14
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - debian  - apache  - mysql  - ubuntu  - php
+  - debian  
+  - apache  
+  - mysql  
+  - ubuntu  
+  - php
 ---
 Qualche settimana fa, il PHP Group ha rilasciato ufficialmente la versione 7.4 di **PHP**, che introduce varie novità per tutti gli sviluppatori che quotidianamente utilizzano questo linguaggio.
 

@@ -1,5 +1,6 @@
 ---
 title: '#howto - Creare uno script di post installazione con UPI (Universal Post Install)'
+description: "Uno script di post installazione può semplificare il lavoro in molti casi, come per un rollout, la configurazione di un ambiente di svilu.."
 published: 2019-09-02
 layout: post
 author: Mirko B.

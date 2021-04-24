@@ -1,5 +1,6 @@
 ---
 title: "#howto – Utilizzo del comando 'aspell'"
+description: "aspell e è un correttore ortografico interattivo che si occupa di analizzare l'input o file, alla ricerca di errori ortografici, permettendoti di correggerli istantaneamente."
 published: 2018-09-19
 layout: post
 author: Mirko B.
@@ -7,4 +8,40 @@ author_github: mirkobrombin
 tags:
   - bash
 ---
-<!-- wp:paragraph --><p><strong>aspell</strong> e è un <strong>correttore ortografico interattivo</strong> che si occupa di analizzare l'input o file, alla ricerca di errori ortografici, permettendoti di correggerli istantaneamente.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Trattandosi di uno strumento da riga di comando, é utile se affiancato da un editor di testo anch'esso da riga di comando, come vi o nano.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Sintassi</h2><!-- /wp:heading --><!-- wp:paragraph --><p>aspell é composto dalla seguente sintassi:</p><!-- /wp:paragraph --><!-- wp:preformatted --><pre><code>aspell [opzioni]</code></pre><!-- /wp:preformatted --><!-- wp:paragraph --><p>Questo tool viene fornito con varie impostazioni che andiamo ora a trattare singolarmente.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Correzione file di testo</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Uno dei migliori impieghi per questo tool é quello nella correzione di file di testo. Possiamo infatti fornire un file al comando con la flag <strong>-c</strong>:</p><!-- /wp:paragraph --><!-- wp:preformatted --><pre><code class="language-bash">aspell -c documento.txt</code></pre><!-- /wp:preformatted --><!-- wp:paragraph --><p>Come possiamo notare, il software evidenzierá parola per parola da correggere (solo se errata), mostrando le possibili soluzioni e strumenti di interazione (Ignora, sostituisci, aggiungi, annulla, ..).</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Controllo termine (e liste)</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Un altro impiego di questo tool lo troviamo in fase consultiva, é infatti possibile <strong>controllare singole parole</strong> tramite la flag <strong>-a</strong>:</p><!-- /wp:paragraph --><!-- wp:preformatted --><pre><code class="language-bash">aspell -a</code></pre><!-- /wp:preformatted --><!-- wp:paragraph --><p>Una volta digitato, il tool rimarrá in attesa del termine da analizzare, basterá digitarne uno per ricevere immediatamente risposta.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se vogliamo invece <strong>controllare una lista</strong> di parole, usiamo la flag <strong>list</strong>:</p><!-- /wp:paragraph --><!-- wp:preformatted --><pre><code class="language-bash">aspell list</code></pre><!-- /wp:preformatted --><!-- wp:paragraph --><p>Una volta digitato il tool rimarrá in attesa di una lista anziché un singolo termine, una volta digitate (una per riga), procediamo con <strong>Ctrl+D per la risposta.</strong></p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Per dubbi e chiarimenti, utilizzate il gruppo Telegram qui sotto.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p><!-- /wp:paragraph -->
+**aspell** e è un **correttore ortografico interattivo** che si occupa di analizzare l'input o file, alla ricerca di errori ortografici, permettendoti di correggerli istantaneamente.
+
+Trattandosi di uno strumento da riga di comando, é utile se affiancato da un editor di testo anch'esso da riga di comando, come vi o nano.
+
+## Sintassi
+
+aspell é composto dalla seguente sintassi:
+
+    aspell [opzioni]
+
+Questo tool viene fornito con varie impostazioni che andiamo ora a trattare singolarmente.
+
+### Correzione file di testo
+
+Uno dei migliori impieghi per questo tool é quello nella correzione di file di testo. Possiamo infatti fornire un file al comando con la flag **-c**:
+
+    aspell -c documento.txt
+
+Come possiamo notare, il software evidenzierá parola per parola da correggere (solo se errata), mostrando le possibili soluzioni e strumenti di interazione (Ignora, sostituisci, aggiungi, annulla, ..).
+
+### Controllo termine (e liste)
+
+Un altro impiego di questo tool lo troviamo in fase consultiva, é infatti possibile **controllare singole parole** tramite la flag **-a**:
+
+    aspell -a
+
+Una volta digitato, il tool rimarrá in attesa del termine da analizzare, basterá digitarne uno per ricevere immediatamente risposta.
+
+Se vogliamo invece **controllare una lista** di parole, usiamo la flag **list**:
+
+    aspell list
+
+Una volta digitato il tool rimarrá in attesa di una lista anziché un singolo termine, una volta digitate (una per riga), procediamo con **Ctrl+D per la risposta.**
+
+Per dubbi e chiarimenti, utilizzate il gruppo Telegram qui sotto.
+
+_?Good *nix _**__Mirko_**

@@ -1,5 +1,6 @@
 ---
 title: "#pausacaffe -  C'è distro per te"
+description: "Buongiorno o buonasera a te che prendi un caffè a qualsiasi ora del giorno e che vuoi installare la tua.."
 published: 2020-02-15
 layout: post
 author: Niccolò Martiri

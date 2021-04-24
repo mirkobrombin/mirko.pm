@@ -1,5 +1,6 @@
 ---
 title: 'Rilasciato GNOME 3.36.1, risolve diversi bug'
+description: "GNOME 3.36.1 è la prima point release del ramo 3.36. Rilasciata da poco, porta con se tre settima.."
 published: 2020-04-03
 layout: post
 author: Mirko B.

@@ -1,5 +1,6 @@
 ---
 title: "#howto – Utilizzo del comando 'history"
+description: "Sono molte le righe di comando che eseguiamo da terminale, soprattutto se lavoriamo su server e capita spe.."
 published: 2019-05-28
 layout: post
 author: Mirko B.

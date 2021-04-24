@@ -1,5 +1,6 @@
 ---
 title: '#howto - Abilitazione del protocollo HTTP/2 in Nginx'
+description: "Il protocollo HTTP/2 è la seconda versione del comune protocollo HTTP utilizzato nel web."
 published: 2019-01-04
 layout: post
 author: Mirko B.

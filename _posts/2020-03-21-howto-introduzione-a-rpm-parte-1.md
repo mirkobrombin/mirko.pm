@@ -1,5 +1,6 @@
 ---
 title: '#howto - Introduzione a RPM Parte  1'
+description: "RPM (Red Hat Package Manager) è un gestore pacchetti sviluppato da Red Hat che è riuscito ad imporsi su.."
 published: 2020-03-21
 layout: post
 author: Mattia Cosma

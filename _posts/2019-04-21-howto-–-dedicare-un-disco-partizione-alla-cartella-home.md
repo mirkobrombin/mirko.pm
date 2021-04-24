@@ -1,5 +1,6 @@
 ---
 title: '#howto – Dedicare un disco/partizione alla cartella /home'
+description: "Grazie al Cloud e a dischi sempre più capienti, è meno frequente l'esigenza di espandere lo spazio di sistema ma in certe circosta.."
 published: 2019-04-21
 layout: post
 author: Mirko B.
@@ -7,4 +8,120 @@ author_github: mirkobrombin
 tags:
 
 ---
-<p>Grazie al Cloud e a dischi sempre più capienti, è&nbsp;meno frequente l'esigenza di espandere lo spazio di sistema ma in certe circostanze, come ad esempio in ambienti di produzione, può essere indispensabile muovere la cartella <strong>/home</strong> su un nuovo disco o partizione.</p><p>Ci sono metodi più strutturati come LVM, con cui possiamo <a href="https://linuxhub.it/article/howto-cose-e-come-estendere-il-volume-lvm">organizzare dischi e partizioni</a> in una struttura similare ad un&nbsp;RAID 0, forse il miglior metodo per rendere "elastico" il nostro sistema, potendolo ridimensionare ed espandere facilmente.</p><p>Esistono poi metodi più pratici come l'utilizzo della tabella dei file system (fstab), ossia il metodo che andiamo a vedere oggi.</p><h2>Precauzioni</h2><p>Dobbiamo tenere in considerazione che questa procedura&nbsp;è tanto facile quanto fatale per i nostri dati. Facciamo una copia della cartella /home, almeno fino a che non abbiamo raggiunto lo scopo.</p><p>Nel caso abbiate appena aggiunto un disco per questa guida, evitate di montare&nbsp;in una locazione, sarà più facile identificarlo.</p><p>Consiglio, se possibile effettuate queste azioni al di fuori dell'ambiente grafico, evitando possibili malfunzionamenti poichè&nbsp;eventuali file di configurazione sono presenti nella cartella&nbsp;<strong>.config</strong>&nbsp;della nostra home e non solo:</p><pre><code>CTRL+ALT+F1</code></pre><h2>Preparazione partizione</h2><p>In questa sezione andiamo a preparare la partizione di cui abbiamo bisogno, indifferentemente che sia un nuovo disco o uno già presente.</p><p>Identifichiamo con <a href="https://linuxhub.it/article/howto-utilizzo-del-comando-lsblk"><strong>lsblk</strong></a>&nbsp;il disco in cui vogliamo creare la partizione:</p><pre><code>sudo lsblk</code></pre><p>andando per esclusione, troviamo il disco target, nel caso abbiate appena aggiunto un nuovo disco, escludiamo tutti quelli che non hanno un mount point.</p><p>Nel nostro output:</p><pre><code>NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTsdb    253:0   0  80G  1 disksda    253:0    0   80G  0 disk??sda1 253:1    0   80G  0 part /</code></pre><p>Nel nostro caso, il disco che vogliamo usare è&nbsp;<strong>sdb,</strong>&nbsp;quindi&nbsp;<strong>/dev/sdb</strong>.</p><blockquote><p>Nel caso fosse già presente una partizione nel disco che vogliamo usare, saltiamo il prossimo step.</p></blockquote><h2>Creazione partizione</h2><p>Creiamo ora la nuova partizione, configuriamo&nbsp;<strong>fdisk</strong>&nbsp;sul nostro disco:</p><pre><code>sudo fdisk /dev/sdb</code></pre><p>premendo&nbsp;<strong>n</strong>&nbsp;ci verrà chiesto se vogliamo una partizione:</p><ul>	<li>primary</li>	<li>extended</li></ul><p>in questo caso la partizione non dovrà ospitare un sistema da boot, scegliamo quindi&nbsp;<strong>extended</strong>.</p><p>Ci viene ora richiesta la dimensione della partizione che deve essere fornita in MB e preceduta dal simbolo&nbsp;<strong>+</strong>, quindi se il nostro disco è di 80G, possiamo creare una partizione non più grande di 80G, nel nostro esempio sarà di 40G, quindi (<strong>40*1000=40000</strong>):</p><pre><code>+40000</code></pre><p>salviamo infine digitando&nbsp;<strong>w</strong>.</p><p>Controlliamo l'effettiva creazione della nostra partizione con <strong>lsblk</strong>:</p><pre><code>sudo lsblk</code></pre><p>il che nel nostro caso mostrerà&nbsp;<strong>sdb1</strong>&nbsp;in lista.</p><h3>File system partizione</h3><p>Una volta creata la nuova partizione, è indispensabile creare un file system al suo interno, nel nostro caso useremo&nbsp;<strong>ext4</strong>:</p><pre><code>sudo mkfs.ext4 /dev/sdb1</code></pre><h2>Locazione&nbsp;temporanea</h2><p>Andiamo ora a creare un percorso temporaneo per la nuova partizione:</p><pre><code>sudo mkdir /mnt/home_tmp</code></pre><p>e montiamo la nuova partizione al suo interno:</p><pre><code>sudo mount /dev/sdb1 /mnt/home_tmp</code></pre><p>In questo momento abbiamo:</p><ul>	<li><strong>/home</strong>&nbsp;con tutti i contenuti originali</li>	<li><strong>/mnt/home_tmp</strong>&nbsp;che punta alla nuova partizione che andremo a dedicare a&nbsp;<strong>/home</strong></li></ul><h2>Copiare i contenuti</h2><p>Procediamo ora col copiare il contenuto della cartella /home nella nuova partizione quindi in /mnt/home_tmp:</p><pre><code>sudo rsync -avx /home/ /mnt/home_tmp</code></pre><blockquote><p><strong>rsync</strong>&nbsp;è uno strumento che permette appunto la sincronizzazione completa di file e directory fra dischi e network.</p></blockquote><p>Montiamo ora provvisoriamente la partizione in /home per controllare&nbsp;il suo contenuto:</p><pre><code>sudo umount /mnt/home_tmpsudo mount /dev/sdb1 /home</code></pre><h2>Partizione permanente</h2><p>Prima di procedere con l'eliminazione della vecchia cartella /home, assicuriamoci che la nuova partizione venga montata correttamente all'avvio di sistema, questo sfruttando&nbsp;<strong>fstab</strong>.</p><p>Prima di tutto procuriamoci il&nbsp;<strong>UUID</strong>&nbsp;della nostra partizione:</p><pre><code>sudo blkid</code></pre><p>nel nostro caso: <strong>4e9871e2-d91d-4f875-8d6c-02d5fda71a9b</strong>.</p><p>Modifichiamo ora il file&nbsp;<strong>/etc/fstab</strong>:</p><pre><code>sudo nano /etc/fstab</code></pre><p>e aggiungiamo come ultima riga la nuova istruzione:</p><pre><code>UUID=4e9871e2-d91d-4f875-8d6c-02d5fda71a9b /home ext4 defaults 0 2</code></pre><p>ricordando di sostituire il UUID qui sopra col vostro ottenuto precedentemente e nel caso di un file system differente, sostituiamo ext4 con quello corretto.</p><p>Procediamo col reboot e la cartella /home risiede ora nella nuova partizione dedicata. Possiamo eliminare i vecchi contenuti smontando la partizione e pulendo la cartella /home, per poi montare nuovamente a seguito del riavvio.</p><p>&nbsp;</p><p>Per dubbi e chiarimenti, utilizzate il nostro&nbsp;<a href="https://t.me/gentedilinux">gruppo Telegram</a>.</p><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p>
+Grazie al Cloud e a dischi sempre più capienti, è meno frequente l'esigenza di espandere lo spazio di sistema ma in certe circostanze, come ad esempio in ambienti di produzione, può essere indispensabile muovere la cartella **/home** su un nuovo disco o partizione.
+
+Ci sono metodi più strutturati come LVM, con cui possiamo [organizzare dischi e partizioni](https://linuxhub.it/article/howto-cose-e-come-estendere-il-volume-lvm) in una struttura similare ad un RAID 0, forse il miglior metodo per rendere "elastico" il nostro sistema, potendolo ridimensionare ed espandere facilmente.
+
+Esistono poi metodi più pratici come l'utilizzo della tabella dei file system (fstab), ossia il metodo che andiamo a vedere oggi.
+
+## Precauzioni
+
+Dobbiamo tenere in considerazione che questa procedura è tanto facile quanto fatale per i nostri dati. Facciamo una copia della cartella /home, almeno fino a che non abbiamo raggiunto lo scopo.
+
+Nel caso abbiate appena aggiunto un disco per questa guida, evitate di montare in una locazione, sarà più facile identificarlo.
+
+Consiglio, se possibile effettuate queste azioni al di fuori dell'ambiente grafico, evitando possibili malfunzionamenti poichè eventuali file di configurazione sono presenti nella cartella **.config** della nostra home e non solo:
+
+    CTRL+ALT+F1
+
+## Preparazione partizione
+
+In questa sezione andiamo a preparare la partizione di cui abbiamo bisogno, indifferentemente che sia un nuovo disco o uno già presente.
+
+Identifichiamo con [**lsblk**](https://linuxhub.it/article/howto-utilizzo-del-comando-lsblk) il disco in cui vogliamo creare la partizione:
+
+    sudo lsblk
+
+andando per esclusione, troviamo il disco target, nel caso abbiate appena aggiunto un nuovo disco, escludiamo tutti quelli che non hanno un mount point.
+
+Nel nostro output:
+
+    NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTsdb    253:0   0  80G  1 disksda    253:0    0   80G  0 disk??sda1 253:1    0   80G  0 part /
+
+Nel nostro caso, il disco che vogliamo usare è **sdb,** quindi **/dev/sdb**.
+
+> Nel caso fosse già presente una partizione nel disco che vogliamo usare, saltiamo il prossimo step.
+
+## Creazione partizione
+
+Creiamo ora la nuova partizione, configuriamo **fdisk** sul nostro disco:
+
+    sudo fdisk /dev/sdb
+
+premendo **n** ci verrà chiesto se vogliamo una partizione:
+
+*   primary
+*   extended
+
+in questo caso la partizione non dovrà ospitare un sistema da boot, scegliamo quindi **extended**.
+
+Ci viene ora richiesta la dimensione della partizione che deve essere fornita in MB e preceduta dal simbolo **+**, quindi se il nostro disco è di 80G, possiamo creare una partizione non più grande di 80G, nel nostro esempio sarà di 40G, quindi (**40*1000=40000**):
+
+    +40000
+
+salviamo infine digitando **w**.
+
+Controlliamo l'effettiva creazione della nostra partizione con **lsblk**:
+
+    sudo lsblk
+
+il che nel nostro caso mostrerà **sdb1** in lista.
+
+### File system partizione
+
+Una volta creata la nuova partizione, è indispensabile creare un file system al suo interno, nel nostro caso useremo **ext4**:
+
+    sudo mkfs.ext4 /dev/sdb1
+
+## Locazione temporanea
+
+Andiamo ora a creare un percorso temporaneo per la nuova partizione:
+
+    sudo mkdir /mnt/home_tmp
+
+e montiamo la nuova partizione al suo interno:
+
+    sudo mount /dev/sdb1 /mnt/home_tmp
+
+In questo momento abbiamo:
+
+*   **/home** con tutti i contenuti originali
+*   **/mnt/home_tmp** che punta alla nuova partizione che andremo a dedicare a **/home**
+
+## Copiare i contenuti
+
+Procediamo ora col copiare il contenuto della cartella /home nella nuova partizione quindi in /mnt/home_tmp:
+
+    sudo rsync -avx /home/ /mnt/home_tmp
+
+> **rsync** è uno strumento che permette appunto la sincronizzazione completa di file e directory fra dischi e network.
+
+Montiamo ora provvisoriamente la partizione in /home per controllare il suo contenuto:
+
+    sudo umount /mnt/home_tmpsudo mount /dev/sdb1 /home
+
+## Partizione permanente
+
+Prima di procedere con l'eliminazione della vecchia cartella /home, assicuriamoci che la nuova partizione venga montata correttamente all'avvio di sistema, questo sfruttando **fstab**.
+
+Prima di tutto procuriamoci il **UUID** della nostra partizione:
+
+    sudo blkid
+
+nel nostro caso: **4e9871e2-d91d-4f875-8d6c-02d5fda71a9b**.
+
+Modifichiamo ora il file **/etc/fstab**:
+
+    sudo nano /etc/fstab
+
+e aggiungiamo come ultima riga la nuova istruzione:
+
+    UUID=4e9871e2-d91d-4f875-8d6c-02d5fda71a9b /home ext4 defaults 0 2
+
+ricordando di sostituire il UUID qui sopra col vostro ottenuto precedentemente e nel caso di un file system differente, sostituiamo ext4 con quello corretto.
+
+Procediamo col reboot e la cartella /home risiede ora nella nuova partizione dedicata. Possiamo eliminare i vecchi contenuti smontando la partizione e pulendo la cartella /home, per poi montare nuovamente a seguito del riavvio.
+
+Per dubbi e chiarimenti, utilizzate il nostro [gruppo Telegram](https://t.me/gentedilinux).
+
+_?Good *nix _**__Mirko_**

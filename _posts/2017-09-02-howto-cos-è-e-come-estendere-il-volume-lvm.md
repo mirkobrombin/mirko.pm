@@ -1,5 +1,6 @@
 ---
 title: "#howto - Cos'è e come estendere il volume LVM"
+description: "Si può pensare a LVM come delle 'partizioni dinamiche', facili da creare, ridimensionare ed eliminare, in questo caso queste 'partizioni' vengono chiamate volumi logici."
 published: 2017-09-02
 layout: post
 author: Mirko B.
@@ -11,13 +12,13 @@ Si può pensare a LVM come delle "partizioni dinamiche", facili da creare, ridim
 
 Per la creazione di un volume logico è necessario un gruppo di volumi, a sua volta composto da volumi fisici. Questa struttura permette la completa scalabilità del volume logico, permettendo la facile espansione del disco stesso.
 
-![Struttura LVM](storage/linuxhub.it-gruppo-di-volumi-rappresentazione.png)
+![Struttura LVM](/uploads/linuxhub.it-gruppo-di-volumi-rappresentazione.png)
 
 L'immagine qui sopra mostra 3 volumi fisici (es. sda1/sdb1/sdc1) che riferiscono allo stesso gruppo di volumi, possiamo quindi rivolgerci a quest'ultimo come un disco vero e proprio su cui creare partizioni (volumi logici), in questo specifico caso sono stati creati 4 volumi logici.
 
 In un esempio pratico d'installazione Linux su struttura LVM, possiamo sfruttare l'immagine qui sotto, che mostra 3 dischi (sda/sdb/sdc) le cui partizioni (sda2/sdb1/sdb2/sdc1) riferiscono al gruppo di volumi (VolumeGroup1) da cui, a loro volta vengono creati i volumi logici (home/dati/spool), questi volumi vengono formattati col file system appropriato e montate nella corretta locazione /home /backup /var).
 
-<img src="storage/12-0.jpg" alt="lvm">
+![LVM](/uploads/12-0.jpg)
 
 Di certo hai notato che la partizione sda1 del disco sda è stata esclusa dal gruppo di volumi (VolumeGroup1), questo siccome la partizione di boot non può risiedere in un volume logico. Per questa guida abbiamo 2 dischi:
 

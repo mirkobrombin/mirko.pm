@@ -1,11 +1,13 @@
 ---
 title: '#howto - Installazione di GitHub Client su Debian/Ubuntu RHEL/Fedora e derivate'
+description: "GitHub Client è il client ufficiale per l'omonima piattaforma. Offre molte funzionalità e permette di gestire ed interagire con ogni repos.."
 published: 2019-12-08
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - debian  - github
+  - debian  
+  - github
 ---
 GitHub Client è il client ufficiale per l'omonima piattaforma. Offre molte funzionalità e permette di gestire ed interagire con ogni repository.
 

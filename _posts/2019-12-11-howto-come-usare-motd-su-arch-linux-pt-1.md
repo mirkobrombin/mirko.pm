@@ -1,11 +1,12 @@
 ---
 title: '#howto -  Come usare MOTD su Arch Linux - Pt. 1'
+description: "MOTD o Message Of The Day è un programma che viene eseguito dalla shell di login.."
 published: 2019-12-11
 layout: post
 author: Niccolò Martiri
 author_github: talebian
 tags:
-  - ssh  - ssh
+  - ssh
 ---
 **MOTD**, o _Message Of The Day_ è un programma che viene eseguito dalla shell di login ( **getty** ) dopo aver fatto l'accesso e che può mostrare delle informazioni, statiche o dinamiche. MOTD per questo viene spesso usato nei server, dove viene mostrato dopo il login ssh, ma può essere funzionale anche su Ambienti Desktop standard a scopo di abbellimento grafico. Vediamo quindi come utilizzare MOTD.
 

@@ -1,10 +1,83 @@
 ---
 title: '#howto - Installazione di .Net Core su Centos 7, Fedora 30 e openSUSE 42.3'
+description: "In questa guida vediamo come installare il framework .Net Core di Microsoft su Centos 7 (e successivi), Fedora 30 e openSUSE 42.3."
 published: 2019-10-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - debian  - centos  - fedora
+  - debian  
+  - centos  
+  - fedora
 ---
-<p>In questa guida vediamo come installare il framework .Net Core di Microsoft su Centos 7 (e successivi), Fedora 30 e openSUSE 42.3.</p><blockquote><p>Esiste una variante di questa guida per Debian, disponibile <a href="https://linuxhub.it/article/howto-installare-net-core-su-debian">qui</a>.</p></blockquote><h2>Installazione su Centos 7</h2><p>L'installazione è di per se molto semplice e non richiede particolari passaggi. Per prima cosa aggiungiamo la chiave Microsoft e la repository:</p><pre><code>sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm</code></pre><p>Una volta fatto procediamo con l'installazione di .Net Core, nello specifico del pacchetto <strong>dotnet-sdk-3.0</strong>:</p><pre><code>sudo yum install dotnet-sdk-3.0</code></pre><p>Possiamo verificare la corretta installazione tramite<strong> </strong>la flag <strong>--info</strong> del comando <strong>dotnet</strong> in questo modo:</p><pre><code>dotnet --info</code></pre><p>se come output ci viene fornita la versione installata del framework, significa che è stato installato correttamente.</p><h2>Installazione su Fedora 30</h2><p>Per prima cosa importiamo la chiave Microsoft per l'accesso alla repository:</p><pre><code>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc</code></pre><p>procediamo poi con l'aggiunta della repository nel sistema, nello specifico andiamo a scaricare la configurazione della repository nella locazione /etc/yum.repos.d/microsoft-prod.repo:</p><pre><code>sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/30/prod.repo</code></pre><p>Infine installiamo il pacchetto dotnet-sdk-3.0 tramite <strong>dnf</strong>:</p><pre><code>sudo dnf install dotnet-sdk-3.0</code></pre><p>e verifichiamo la corretta installazione tramite<strong> </strong>la flag <strong>--info</strong> del comando <strong>dotnet</strong> in questo modo:</p><pre><code>dotnet --info</code></pre><p>il che restituirà come output la versione del framework.</p><h2>Installazione su openSUSE 42.3</h2><p>Prima&nbsp; di procedere con la configurazione delle repo, è necessario installare la dipendenza <strong>libicu</strong> tramite zypper:</p><pre><code>sudo zypper install libicu</code></pre><p>a seguire importiamo la chiave Microsoft per l'accesso alla repository:</p><pre><code>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc</code></pre><p>Otteniamo una copia della configurazione per la repository, nello specifico verrà posizionata in /etc/zypp/repos.d/microsoft-prod.repo:</p><pre><code>sudo wget -q -O /etc/zypp/repos.d/microsoft-prod.repo https://packages.microsoft.com/config/opensuse/42.3/prod.repo</code></pre><p>ed aggiorniamo i permessi di proprietà all'utente root:</p><pre><code>sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo</code></pre><p>Infine possiamo installare il pacchetto <strong>dotnet-sdk-3.0</strong> tramite zypper:</p><pre><code>sudo zypper install dotnet-sdk-3.0</code></pre><p>possiamo verificare la corretta installazione tramite comando <strong>dotnet</strong>, nello specifico tramite la flag <strong>--info</strong> in questo modo:</p><pre><code>dotnet --info</code></pre><p>nel caso di corretta installazione, ci verrà restituito come output la versione corrente installata di .Net Core.</p><p>&nbsp;</p><p>Per dubbi e chiarimenti, fate accesso al nostro gruppo <a href="https://t.me/gentedilinux">Telegram</a>.</p><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p>
+In questa guida vediamo come installare il framework .Net Core di Microsoft su Centos 7 (e successivi), Fedora 30 e openSUSE 42.3.
+
+> Esiste una variante di questa guida per Debian, disponibile [qui](https://linuxhub.it/article/howto-installare-net-core-su-debian).
+
+## Installazione su Centos 7
+
+L'installazione è di per se molto semplice e non richiede particolari passaggi. Per prima cosa aggiungiamo la chiave Microsoft e la repository:
+
+    sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
+
+Una volta fatto procediamo con l'installazione di .Net Core, nello specifico del pacchetto **dotnet-sdk-3.0**:
+
+    sudo yum install dotnet-sdk-3.0
+
+Possiamo verificare la corretta installazione tramitela flag **--info** del comando **dotnet** in questo modo:
+
+    dotnet --info
+
+se come output ci viene fornita la versione installata del framework, significa che è stato installato correttamente.
+
+## Installazione su Fedora 30
+
+Per prima cosa importiamo la chiave Microsoft per l'accesso alla repository:
+
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+procediamo poi con l'aggiunta della repository nel sistema, nello specifico andiamo a scaricare la configurazione della repository nella locazione /etc/yum.repos.d/microsoft-prod.repo:
+
+    sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/30/prod.repo
+
+Infine installiamo il pacchetto dotnet-sdk-3.0 tramite **dnf**:
+
+    sudo dnf install dotnet-sdk-3.0
+
+e verifichiamo la corretta installazione tramitela flag **--info** del comando **dotnet** in questo modo:
+
+    dotnet --info
+
+il che restituirà come output la versione del framework.
+
+## Installazione su openSUSE 42.3
+
+Prima  di procedere con la configurazione delle repo, è necessario installare la dipendenza **libicu** tramite zypper:
+
+    sudo zypper install libicu
+
+a seguire importiamo la chiave Microsoft per l'accesso alla repository:
+
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+Otteniamo una copia della configurazione per la repository, nello specifico verrà posizionata in /etc/zypp/repos.d/microsoft-prod.repo:
+
+    sudo wget -q -O /etc/zypp/repos.d/microsoft-prod.repo https://packages.microsoft.com/config/opensuse/42.3/prod.repo
+
+ed aggiorniamo i permessi di proprietà all'utente root:
+
+    sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
+
+Infine possiamo installare il pacchetto **dotnet-sdk-3.0** tramite zypper:
+
+    sudo zypper install dotnet-sdk-3.0
+
+possiamo verificare la corretta installazione tramite comando **dotnet**, nello specifico tramite la flag **--info** in questo modo:
+
+    dotnet --info
+
+nel caso di corretta installazione, ci verrà restituito come output la versione corrente installata di .Net Core.
+
+Per dubbi e chiarimenti, fate accesso al nostro gruppo [Telegram](https://t.me/gentedilinux).
+
+_?Good *nix _**__Mirko_**

@@ -1,5 +1,6 @@
 ---
 title: '#howto - Creare un sito statico con Jekyll e le Github Pages (seconda parte)'
+description: "In questa seconda parte vedremo come pubblicarlo su GitHub sfruttando GitHub Pages per avere un sito web personale."
 published: 2020-01-08
 layout: post
 author: Andrea Guzzon

@@ -1,11 +1,12 @@
 ---
 title: '#howto - Creare un sito statico con Jekyll e le Github pages'
+description: "Questa è una guida in due parti in cui, dopo aver presentato il generatore di siti statici Jekyll.."
 published: 2019-12-18
 layout: post
 author: Andrea Guzzon
 author_github: beard33
 tags:
-  - python  - github
+  - github
 ---
 Questa è una guida in due parti in cui, dopo aver presentato il generatore di siti statici **Jekyll**, verrà illustrato come utilizzarlo combinato alle **github pages** per avere in modo completamente gratuito un sito personale (sia esso un blog, una landing page o un portfolio)
 

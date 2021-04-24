@@ -1,10 +1,93 @@
 ---
 title: '#howto - Installare e configurare Nextcloud con dominio e certificato SSL su Ubuntu e derivate'
+description: "Nextcloud è una piattaforma di file sharing open source che permette l'archiviazione in cloud di file personali.."
 published: 2019-01-05
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - nextcloud  - privacy  - privacy
+  - nextcloud  
+  - privacy
 ---
-<p>Nextcloud è una piattaforma di file sharing open source che permette l'archiviazione in cloud di file personali (documenti, immagini, archivi, ..), il tutto rispettando i principi di sicurezza e privacy di cui gode dalla nascita.</p><p>In questa guida andiamo a vedere come è possibile installare e configurare Nextcloud su server Ubuntu e derivate.</p><h2>Installazione</h2><p>Per l'installazione andremo ad usare&nbsp;<strong>snap</strong>, un gestore di pacchetti ideato da Canonical Ltd. e distribuito con Ubuntu dalla release 18.04 in poi. La peculiarità di questo gestore sta nella sua struttura, che consente di installare un'applicazione con tutte le librerie di cui ha bisogno, separate dal sistema, evitando così possibili&nbsp;conflitti di dipendenza fra diverse applicazioni.</p><p>Procediamo con l'installazione via&nbsp;<strong>snap</strong>:</p><pre><code>sudo snap install nextcloud</code></pre><p>verifichiamo infine la corretta installazione interrogando i cambiamenti (<strong>changes</strong>) con snap:</p><pre><code>snap changes nextcloud</code></pre><p>verrà restituito un output con 5 colonne, leggendo la seconda (<strong>Status</strong>) leggiamo&nbsp;<strong>Done</strong>&nbsp;se l'installazione è andata a buon fine.</p><h2>Configurazione</h2><p>Nextcloud viene fornito con accesso via riga di comando, per una rapida gestione e manutenzione.</p><h3>Creazione account admin</h3><p>Per la configurazione della piattaforma ci servirà un account di amministrazione, per crearlo possiamo sfruttare il seguente set di istruzioni via terminale:</p><pre><code>sudo nextcloud.manual-install user password</code></pre><p>dove:</p><ul>	<li>user - è il nostro nome utente</li>	<li>password - è la password dell'utente</li></ul><p>riceveremo come output:&nbsp;<strong>Nextcloud was successfully installed</strong>.</p><h3>Configurazione dominio di accesso</h3><p>Possiamo accedere alla nostra installazione via indirizzo IP ma può tornare utile evitare di esporlo pubblicamente o semplicemente ricordarlo facilmente, collegando un dominio, ad esempio <strong>il_mio_nextcloud.ex</strong>.</p><p>Per prima cosa dobbiamo registrare un dominio e puntarne i DNS al nostro server: per una miglior gestione dei contenuti, la guida su come&nbsp;<strong>puntare un dominio ad un IP</strong>&nbsp;è disponibile&nbsp;<a href="https://linuxhub.it/article/howto-puntare-un-dominio-ad-un-ip">a questo link</a>.</p><p>Una volta puntato il dominio al nostro server, possiamo aggiungerlo via terminale:</p><pre><code>sudo nextcloud.occ config:system:set trusted_domains 1 --value=il_mio_nextcloud.ex</code></pre><p>dove&nbsp;<strong>il_mio_nextcloud.ex</strong>&nbsp;è il dominio che abbiamo precedentemente&nbsp;puntato all'indirizzo IP del server.</p><p>Ora possiamo raggiungere l'installazione dal dominio appena collegato.</p><h3>Configurazione SSL</h3><p>Allo scopo di migliorare la sicurezza della nostra installazione Nextcloud, andiamo ora a generare e collegare un certificato SSL, abilitando l'accesso tramite connessione sicura SSL (https).&nbsp;</p><p>Prima di tutto dobbiamo configurare&nbsp;<strong>ufw</strong>&nbsp;(il firewall) per accettare le connessioni via SSL, per farlo digitiamo:</p><pre><code>sudo ufw allow 80,443/tcp</code></pre><p>Possiamo procedere ora in due modi:</p><ul>	<li>Let's Encrypt - osia tramite l'ottenimento&nbsp;di un certificato via&nbsp;Let's Encrypt</li>	<li>Self-Signed - generando quindi il certificato "in casa"</li></ul><h4>Let's Encrypt</h4><p>La procedura è guidata via console con <strong>nextcloud.enable-https</strong>&nbsp;digitando:</p><pre><code>sudo nextcloud.enable-https lets-encrypt</code></pre><p>ci verrà chiesto di confermare i requisiti, inserire un indirizzo e-mail valido per il recupero ed il dominio a cui si riferirà il dominio. Una volta completato ci restituirà un output di successo (<strong>Done</strong>).</p><h4>Self-Signed</h4><p>Scegliando la procedura&nbsp;Self-Signed, il metodo è lo stesso, con la sostanziale differenza che non necessità di procedura guidata, digitando&nbsp;quindi:</p><pre><code>sudo nextcloud.enable-https self-signed</code></pre><p>riceveremo subito un messaggio di successo (<strong>Done</strong>).</p><p>Visitando ora il nostro dominio precedendo con&nbsp;<strong>https://</strong>&nbsp;avremo accesso alla nostra installazione Nextcloud sotto SSL.</p><p><em>Good&nbsp;<strong>*nix</strong>?</em><br /><em>&nbsp;- Mirko</em></p>
+Nextcloud è una piattaforma di file sharing open source che permette l'archiviazione in cloud di file personali (documenti, immagini, archivi, ..), il tutto rispettando i principi di sicurezza e privacy di cui gode dalla nascita.
+
+In questa guida andiamo a vedere come è possibile installare e configurare Nextcloud su server Ubuntu e derivate.
+
+## Installazione
+
+Per l'installazione andremo ad usare **snap**, un gestore di pacchetti ideato da Canonical Ltd. e distribuito con Ubuntu dalla release 18.04 in poi. La peculiarità di questo gestore sta nella sua struttura, che consente di installare un'applicazione con tutte le librerie di cui ha bisogno, separate dal sistema, evitando così possibili conflitti di dipendenza fra diverse applicazioni.
+
+Procediamo con l'installazione via **snap**:
+
+    sudo snap install nextcloud
+
+verifichiamo infine la corretta installazione interrogando i cambiamenti (**changes**) con snap:
+
+    snap changes nextcloud
+
+verrà restituito un output con 5 colonne, leggendo la seconda (**Status**) leggiamo **Done** se l'installazione è andata a buon fine.
+
+## Configurazione
+
+Nextcloud viene fornito con accesso via riga di comando, per una rapida gestione e manutenzione.
+
+### Creazione account admin
+
+Per la configurazione della piattaforma ci servirà un account di amministrazione, per crearlo possiamo sfruttare il seguente set di istruzioni via terminale:
+
+    sudo nextcloud.manual-install user password
+
+dove:
+
+*   user - è il nostro nome utente
+*   password - è la password dell'utente
+
+riceveremo come output: **Nextcloud was successfully installed**.
+
+### Configurazione dominio di accesso
+
+Possiamo accedere alla nostra installazione via indirizzo IP ma può tornare utile evitare di esporlo pubblicamente o semplicemente ricordarlo facilmente, collegando un dominio, ad esempio **il_mio_nextcloud.ex**.
+
+Per prima cosa dobbiamo registrare un dominio e puntarne i DNS al nostro server: per una miglior gestione dei contenuti, la guida su come **puntare un dominio ad un IP** è disponibile [a questo link](https://linuxhub.it/article/howto-puntare-un-dominio-ad-un-ip).
+
+Una volta puntato il dominio al nostro server, possiamo aggiungerlo via terminale:
+
+    sudo nextcloud.occ config:system:set trusted_domains 1 --value=il_mio_nextcloud.ex
+
+dove **il_mio_nextcloud.ex** è il dominio che abbiamo precedentemente puntato all'indirizzo IP del server.
+
+Ora possiamo raggiungere l'installazione dal dominio appena collegato.
+
+### Configurazione SSL
+
+Allo scopo di migliorare la sicurezza della nostra installazione Nextcloud, andiamo ora a generare e collegare un certificato SSL, abilitando l'accesso tramite connessione sicura SSL (https). 
+
+Prima di tutto dobbiamo configurare **ufw** (il firewall) per accettare le connessioni via SSL, per farlo digitiamo:
+
+    sudo ufw allow 80,443/tcp
+
+Possiamo procedere ora in due modi:
+
+*   Let's Encrypt - osia tramite l'ottenimento di un certificato via Let's Encrypt
+*   Self-Signed - generando quindi il certificato "in casa"
+
+#### Let's Encrypt
+
+La procedura è guidata via console con **nextcloud.enable-https** digitando:
+
+    sudo nextcloud.enable-https lets-encrypt
+
+ci verrà chiesto di confermare i requisiti, inserire un indirizzo e-mail valido per il recupero ed il dominio a cui si riferirà il dominio. Una volta completato ci restituirà un output di successo (**Done**).
+
+#### Self-Signed
+
+Scegliando la procedura Self-Signed, il metodo è lo stesso, con la sostanziale differenza che non necessità di procedura guidata, digitando quindi:
+
+    sudo nextcloud.enable-https self-signed
+
+riceveremo subito un messaggio di successo (**Done**).
+
+Visitando ora il nostro dominio precedendo con **https://** avremo accesso alla nostra installazione Nextcloud sotto SSL.
+
+_Good ***nix**?_  
+_ - Mirko_

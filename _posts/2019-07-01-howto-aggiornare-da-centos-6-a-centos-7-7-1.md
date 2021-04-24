@@ -1,10 +1,81 @@
 ---
 title: '#howto - Aggiornare da Centos 6 a Centos 7/7.1'
+description: "Spesso i server di produzione sono fermi ad una versione meno recente (ma non per forza obsoleta) del sistema.."
 published: 2019-07-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - centos  - rhel
+  - centos  
+  - rhel
 ---
-<p>Spesso i server di produzione sono fermi ad una versione meno recente (ma non per forza obsoleta) del sistema operativo. Questo a causa di possibili conflitti, mancanza di compatibilità e soprattutto tempo.</p><p>In questa guida vediamo come è possibile aggiornare Centos dalla versione 6 alla versione 7.</p><blockquote><p>Se il tuo è un server in produzione, ti consiglio l'installazione di una macchina secondaria in cui installare una versione aggiornata e pulita del sistema, in modo da assicurare i tuoi progetti da possibili incompatibilità.</p></blockquote><h2>Installazione del Upgrade Tool</h2><p>Per questa operazione ci serve l'Upgrade Tool di RedHat, aggiungiamo quindi la sua repository:</p><pre><code>nano /etc/yum.repos.d/rhelupgrade.repo</code></pre><p>col seguente contenuto:</p><pre><code>[upgrade]name=upgradebaseurl=http://dev.centos.org/centos/6/upg/x86_64/enabled=1gpgcheck=0</code></pre><p>Proseguiamo con l'installazione dell'assistente e dello strumento d'aggiornamento:</p><pre><code>sudo yum install preupgrade-assistant-contents preupgrade-assistant redhat-upgrade-tool</code></pre><h2>Fase pre-aggiornamento</h2><p>Grazie allo strumento di pre-aggiornamento, possiamo verificare quali sono i possibili conflitti prima di aggiornare, digitiamo quindi:</p><pre><code>preupg</code></pre><p>nell'output possiamo vedere quali sono i pacchetti che subiranno modifiche con l'aggiornamento.&nbsp; Controllate attentamente se il loro aggiornamento può rendere incompatibili i vostri progetti.</p><h2>Aggiornamento</h2><p>Passiamo alla fase di aggiornamento vero e prorprio</p><blockquote><p>Consiglio di effettuare un backup dei dati prima di procedere con l'aggiornamento.</p></blockquote><p>importiamo la chiave per la repo:</p><pre><code>sudo rpm --import http://centos.excellmedia.net/7.0.1406/os/x86_64/RPM-GPG-KEY-CentOS-7</code></pre><p>e tramite lo strumento di aggiornamento fornito da Red Hat, aggiorniamo il sistema:</p><pre><code>sudo redhat-upgrade-tool --network 7.0 --instrepo http://centos.excellmedia.net/7.0.1406/os/x86_64/</code></pre><p>Nel caso in cui il comando restituisca un errore, significa che ci possono essere incongruenze nell'aggiornamento, in questo caso conviene controllare attentamente per possibili problemi. Possiamo comunque forzare l'installazione con la flag <strong>-force</strong>:</p><pre><code>sudo redhat-upgrade-tool --network 7.0 --force --instrepo http://centos.excellmedia.net/7.0.1406/os/x86_64/</code></pre><p>Una volta completato, dovremmo ricevere un output simile al seguente:</p><pre><code>..setting up system for upgradeFinished. Reboot to start upgrade.</code></pre><p>riavviamo il sistema:</p><pre><code>sudo reboot</code></pre><p>Il sistema viene ora avviato in una fase di aggiornamento, con un kernel personalizzato, il procedimento è automatico e possiamo controllare i log per eventuali problemi. Una volta completato, ci porterà in una console chiedendo il login, effettuiamo l'accesso col nostro utente e controlliamo la versione di sistema:</p><pre><code>cat /etc/redhat-release</code></pre><p>che dovrebbe risultare in qualcosa di simile:</p><pre><code>CentOS Linux release 7.0.1406 (Core)</code></pre><h2>Aggiornamento alla 7.1</h2><p>Da questo momento, l'aggiornamento a tuttoil ramo 7.x, avviene tramite upgrade via yum:</p><pre><code>sudo yum upgrade</code></pre><p>&nbsp;</p><p><em>Good&nbsp;<strong>*nix</strong>?</em><br /><em>&nbsp;- Mirko</em></p>
+Spesso i server di produzione sono fermi ad una versione meno recente (ma non per forza obsoleta) del sistema operativo. Questo a causa di possibili conflitti, mancanza di compatibilità e soprattutto tempo.
+
+In questa guida vediamo come è possibile aggiornare Centos dalla versione 6 alla versione 7.
+
+> Se il tuo è un server in produzione, ti consiglio l'installazione di una macchina secondaria in cui installare una versione aggiornata e pulita del sistema, in modo da assicurare i tuoi progetti da possibili incompatibilità.
+
+## Installazione del Upgrade Tool
+
+Per questa operazione ci serve l'Upgrade Tool di RedHat, aggiungiamo quindi la sua repository:
+
+    nano /etc/yum.repos.d/rhelupgrade.repo
+
+col seguente contenuto:
+
+    [upgrade]name=upgradebaseurl=http://dev.centos.org/centos/6/upg/x86_64/enabled=1gpgcheck=0
+
+Proseguiamo con l'installazione dell'assistente e dello strumento d'aggiornamento:
+
+    sudo yum install preupgrade-assistant-contents preupgrade-assistant redhat-upgrade-tool
+
+## Fase pre-aggiornamento
+
+Grazie allo strumento di pre-aggiornamento, possiamo verificare quali sono i possibili conflitti prima di aggiornare, digitiamo quindi:
+
+    preupg
+
+nell'output possiamo vedere quali sono i pacchetti che subiranno modifiche con l'aggiornamento.  Controllate attentamente se il loro aggiornamento può rendere incompatibili i vostri progetti.
+
+## Aggiornamento
+
+Passiamo alla fase di aggiornamento vero e prorprio
+
+> Consiglio di effettuare un backup dei dati prima di procedere con l'aggiornamento.
+
+importiamo la chiave per la repo:
+
+    sudo rpm --import http://centos.excellmedia.net/7.0.1406/os/x86_64/RPM-GPG-KEY-CentOS-7
+
+e tramite lo strumento di aggiornamento fornito da Red Hat, aggiorniamo il sistema:
+
+    sudo redhat-upgrade-tool --network 7.0 --instrepo http://centos.excellmedia.net/7.0.1406/os/x86_64/
+
+Nel caso in cui il comando restituisca un errore, significa che ci possono essere incongruenze nell'aggiornamento, in questo caso conviene controllare attentamente per possibili problemi. Possiamo comunque forzare l'installazione con la flag **-force**:
+
+    sudo redhat-upgrade-tool --network 7.0 --force --instrepo http://centos.excellmedia.net/7.0.1406/os/x86_64/
+
+Una volta completato, dovremmo ricevere un output simile al seguente:
+
+    ..setting up system for upgradeFinished. Reboot to start upgrade.
+
+riavviamo il sistema:
+
+    sudo reboot
+
+Il sistema viene ora avviato in una fase di aggiornamento, con un kernel personalizzato, il procedimento è automatico e possiamo controllare i log per eventuali problemi. Una volta completato, ci porterà in una console chiedendo il login, effettuiamo l'accesso col nostro utente e controlliamo la versione di sistema:
+
+    cat /etc/redhat-release
+
+che dovrebbe risultare in qualcosa di simile:
+
+    CentOS Linux release 7.0.1406 (Core)
+
+## Aggiornamento alla 7.1
+
+Da questo momento, l'aggiornamento a tuttoil ramo 7.x, avviene tramite upgrade via yum:
+
+    sudo yum upgrade
+
+_Good ***nix**?_  
+_ - Mirko_

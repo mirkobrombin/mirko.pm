@@ -2,8 +2,8 @@
 title: 'I blog compiono 20 anni!'
 published: 2017-07-18
 layout: post
-author: Mirko B.
-author_github: mirkobrombin
+author: Leonardo O.
+author_github: linuxhubit
 tags:
 
 ---

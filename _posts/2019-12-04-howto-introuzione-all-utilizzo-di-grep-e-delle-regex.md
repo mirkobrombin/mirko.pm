@@ -1,5 +1,6 @@
 ---
 title: "#howto - Introduzione all'utilizzo di Grep e delle RegEx"
+description: "Con RegEx (REGular EXpression) espressione regolare, si intende una sequenza di caratteri che descrive uno speci.."
 published: 2019-12-04
 layout: post
 author: Andrea Guzzon

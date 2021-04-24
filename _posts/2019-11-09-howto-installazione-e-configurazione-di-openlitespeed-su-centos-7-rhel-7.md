@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di OpenLitespeed su Centos 7/RHEL 7'
+description: "OpenLitespeed è la variante Open source di Litespeed, un Web Server.."
 published: 2019-11-09
 layout: post
 author: Mirko B.

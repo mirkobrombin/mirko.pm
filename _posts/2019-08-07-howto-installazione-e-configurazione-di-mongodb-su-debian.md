@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di MongoDB su Debian'
+description: "MongoDB è un database non relazionale, basato su documenti. La sua struttura lo colloca nella classifica dei database NoSQL."
 published: 2019-08-07
 layout: post
 author: Hersel Giannella
@@ -7,4 +8,70 @@ author_github: hersel
 tags:
   - mongodb  - systemd  - systemd
 ---
-<p><span><strong>MongoDB</strong> è un database non relazionale, basato su documenti.</span><span> La sua struttura lo colloca nella classifica dei database <strong>NoSQL</strong>.</span></p><p>In questa guida vediamo come installarlo su Debian .</p><h2>Installazione</h2><p>Per prima cosa dobbiamo installare il pacchetto <strong>mongodb</strong> dal gestore pacchetti:</p><pre><code>sudo apt install -y mongodb</code></pre><p>questo è in realtà un metapackage che andrà ad installare un totale di 5 pacchetti:</p><ul>	<li><code>mongodb-org-server</code></li>	<li><code>mongodb-org-mongos</code></li>	<li><code>mongodb-org-shell</code></li>	<li><code>mongodb-org-tools</code></li></ul><p>procediamo infine con l'abilitazione e l'avvio del servizio via <strong>systemctl</strong>:</p><pre><code>sudo systemctl enable mongodbsudo systemctl start mongodb</code></pre><p>richiedendone quindi lo stato:</p><pre><code>sudo systemctl status mongodb</code></pre><p>dovremmo ricevere un output simile al seguente:</p><pre><code>mongodb.service - An object/document-oriented database   Loaded: loaded (/lib/systemd/system/mongodb.service; enabled; vendor preset: enabled)   Active: active (running) since Wed 2019-08-07 17:55:43 BST; 38min ago     Docs: man:mongod(1) Main PID: 17360 (mongod)    Tasks: 16 (limit: 4915)   CGroup: /system.slice/mongodb.service           ??17360 /usr/bin/mongod --unixSocketPrefix=/run/mongodb --config /etc/mongodb.confAug 07 17:55:43 hersy systemd[1]: Started An object/document-oriented database.</code></pre><p>Possiamo procedere nel seguente modo per ottenere una seconda verifica del suo funzionamento:</p><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'</code></pre><p>ottenendo quindi un esito simile al seguente:</p><pre><code>MongoDB shell version: 3.2.11connecting to: test{        "authInfo" : {                "authenticatedUsers" : [ ],                "authenticatedUserRoles" : [ ]        },        "ok" : 1}</code></pre><p>dove <strong>ok: 1 </strong>è la conferma che il server funziona correttamente.</p><h2>Configurazione</h2><p>Per impostazione base MongoDB è configurato per funzionare nella maggior parte delle casistiche, unico accorgimento è quello di modificare l'indirizzo IP a cui è consentita la connessione. Infatti di default resta in ascolto sull'indirizzo locale <strong>127.0.0.1 </strong>per consetire a MongoDB di funzionare con un IP pubblico ci basta modificare le impostazioni con il seguente comando:</p><pre><code>sudo nano /etc/mongodb.conf</code></pre><p>andiamo quindi a modificare come segue:</p><pre><code>bind_ip = 127.0.0.1, NOSTRO_IP#port = 27017</code></pre><p>dove <strong>NOSTRO_IP</strong> è ovviamente il nostro indirizzo IP a cui vogliamo abilitare l'accesso.</p><p>Ultimate le modifiche riavviamo il servizio via systemctl:</p><pre><code>sudo systemctl restart mongodb</code></pre><p>&nbsp;</p><p>Per dubbi e chiarimenti, utilizzate il nostro&nbsp;<a href="https://t.me/gentedilinux">gruppo Telegram</a>.</p>
+**MongoDB** è un database non relazionale, basato su documenti. La sua struttura lo colloca nella classifica dei database **NoSQL**.
+
+In questa guida vediamo come installarlo su Debian .
+
+## Installazione
+
+Per prima cosa dobbiamo installare il pacchetto **mongodb** dal gestore pacchetti:
+
+    sudo apt install -y mongodb
+
+questo è in realtà un metapackage che andrà ad installare un totale di 5 pacchetti:
+
+*   `mongodb-org-server`
+*   `mongodb-org-mongos`
+*   `mongodb-org-shell`
+*   `mongodb-org-tools`
+
+procediamo infine con l'abilitazione e l'avvio del servizio via **systemctl**:
+
+    sudo systemctl enable mongodbsudo systemctl start mongodb
+
+richiedendone quindi lo stato:
+
+    sudo systemctl status mongodb
+
+dovremmo ricevere un output simile al seguente:
+
+    mongodb.service - An object/document-oriented database   
+    Loaded: loaded (/lib/systemd/system/mongodb.service; enabled; vendor preset: enabled)   
+    Active: active (running) since Wed 2019-08-07 17:55:43 BST; 38min ago     
+    ..
+    Started An object/document-oriented database.
+
+Possiamo procedere nel seguente modo per ottenere una seconda verifica del suo funzionamento:
+
+    mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+
+ottenendo quindi un esito simile al seguente:
+
+    MongoDB shell version: 3.2.11
+    connecting to: test{        
+      "authInfo" : {                
+        "authenticatedUsers" : [ ],                
+        "authenticatedUserRoles" : [ ]        
+        },        
+        "ok" : 1
+      }
+
+dove **ok: 1** è la conferma che il server funziona correttamente.
+
+## Configurazione
+
+Per impostazione base MongoDB è configurato per funzionare nella maggior parte delle casistiche, unico accorgimento è quello di modificare l'indirizzo IP a cui è consentita la connessione. Infatti di default resta in ascolto sull'indirizzo locale **127.0.0.1** per consetire a MongoDB di funzionare con un IP pubblico ci basta modificare le impostazioni con il seguente comando:
+
+    sudo nano /etc/mongodb.conf
+
+andiamo quindi a modificare come segue:
+
+    bind_ip = 127.0.0.1, NOSTRO_IP#port = 27017
+
+dove **NOSTRO_IP** è ovviamente il nostro indirizzo IP a cui vogliamo abilitare l'accesso.
+
+Ultimate le modifiche riavviamo il servizio via systemctl:
+
+    sudo systemctl restart mongodb
+
+Per dubbi e chiarimenti, utilizzate il nostro [gruppo Telegram](https://t.me/linuxpeople).

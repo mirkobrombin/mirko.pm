@@ -1,5 +1,6 @@
 ---
 title: '#howto - Introduzione a systemd'
+description: "systemd è un init system, gestore dei servizi e molto altro. Egli, essendo il primo processo avviato dal kernel al bo.."
 published: 2020-01-18
 layout: post
 author: Niccolò Martiri

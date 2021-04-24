@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di PostgreSQL 11 su Centos 8/RHEL 8'
+description: "PostgreSQL è un DBMS (Base di dati a oggetti) completo ed Open source, uno dei più performanti disponibili."
 published: 2020-03-07
 layout: post
 author: Mirko B.

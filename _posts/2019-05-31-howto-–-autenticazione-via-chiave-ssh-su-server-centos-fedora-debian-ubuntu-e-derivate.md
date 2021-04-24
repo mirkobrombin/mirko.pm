@@ -1,10 +1,79 @@
 ---
 title: '#howto – Autenticazione via chiave SSH su server Centos/Fedora/Debian/Ubuntu e derivate'
+description: "Oltre ai grossi benefici sulla comodità che una chiave SSH offre rispetto alle password, sono molti i motivi per cui è im.."
 published: 2019-05-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - ssh  - ssh
+  - ssh
+  - fedora
+  - centos
+  - ubuntu
+  - debian
 ---
-<p>Oltre ai grossi benefici sulla comodità che una chiave SSH offre rispetto alle password, sono molti i motivi per cui è importante scegliere una chiave rispetto allo standard più comune di autenticazione, in primis la sicurezza.</p><p>Il processo di autenticazione attraverso chiave avviene tramite la verifica in due parti, una server e l'altra client. Dopo la richiesta di accesso, il server invia un messaggo codificato al client e ne attende la decodifica basata sulla chiave presente sul nostro PC (client) e se l'esito è positivo, permette l'accesso.</p><h2>Creazione della chiave RSA</h2><p>Procediamo quindi con la creazione della chiave sul nostro PC, in questo si tratta di una chiave&nbsp;RSA a 2048-bit, ossia una chiave decisamente complessa da raggirare.</p><blockquote><p>Le chiavi da 2048-bit sono al momento le più diffuse ma per questo non meno sicure. Lo standard massimo per una chiave è di 4096-bit, equivalente ad una password di 12 caratteri misti.</p></blockquote><p>Per creare la nostra chiave possiamo usare&nbsp;<strong>ssh-keygen</strong>:</p><pre><code>ssh-keygen</code></pre><p>a cui possiamo passare l'opzione&nbsp;<strong>-b</strong>&nbsp;con uno una dimensione differente,&nbsp;ad esempio&nbsp;4096 (di base sarà 2048).</p><p>Come output del comando precedente, riceviamo la richiesta di inserire una locazione in cui salvare la nostra chiave, possiamo premere semplicemnete <strong>Invio</strong> per salvarla nella cartella&nbsp;<strong>.ssh</strong>&nbsp;nella nostra&nbsp;<strong>/home</strong>, successivamente ci verrà chiesto di inserire una&nbsp;<strong>passphrase</strong> (frase di accesso), si tratta di un valore opzionale raccomandato che aggiunge un secondo livello di sicurezza alla nostra chiave.</p><blockquote><p>La passphrase verrà richiesta all'accesso come una normale password, subito dopo l'approvazione della chiave.</p></blockquote><p>Una volta finito, nella locazione scelta (.ssh), sono presenti le due chiavi (pubblica e privata).</p><h2>Configurazione&nbsp;server</h2><p>Ora che le nostre chiavi sono pronte, possiamo&nbsp;procedere con la configurazione vera e propria sul server.</p><p>Tutto il processo di configurazione della chiave è semplificato grazie a&nbsp;<strong>ssh-copy-id</strong>, offerto di base nella maggior parte delle distribuzioni Linux. Avviamo quindi il tool&nbsp;sul nostro PC (client):</p><pre><code>ssh-copy-id utente@server</code></pre><p>dove:</p><ul>	<li><strong>utente&nbsp;</strong>&nbsp;è l'username a cui abbiamo accesso sul server</li>	<li><strong>server</strong>&nbsp;il dominio o indirizzo IP del server</li></ul><p>ci verrà mostrato un output simile:</p><pre><code>The authenticity of host 'server' can't be established.ECDSA key fingerprint is ----.Are you sure you want to continue connecting (yes/no)? yes</code></pre><p>a cui rispondiamo&nbsp;<strong>yes</strong>&nbsp;(potrebbe non essere necessario in caso questa non è la prima volta in cui facciamo accesso via SSH al server).</p><p>Una volta trovata la chiave creata precedentemente, ci verrà richiesta la password dell'utente sul server, digitiamola e premiamo invio, dovremmo avere un risultato come il seguente:</p><pre><code>Number of key(s) added: 1</code></pre><p>il che significa che la chiave è stata copiata correttamente sul server. Da ora le prossime connessioni SSH da client a server non richiedono password (a meno che non sia stata inserita una passphrase).</p><h3>Disabilitazione della password</h3><p>Come forma di sicurezza, è consigliato disabilitare il login ssh via password, vincolando esclusivamente l'accesso via chiave SSH, per fare ciò apriamo il file&nbsp;<strong>/etc/ssh/sshd_config</strong>&nbsp;sul server col nostro editor preferito, ad esempio&nbsp;<strong>nano</strong>:</p><pre><code>sudo nano /etc/ssh/sshd_config</code></pre><p>sfruttiamo la combinazione&nbsp;<strong>CTRL+W</strong>&nbsp;(in caso di nano) e cerchiamo il parametro&nbsp;<strong>PasswordAuthentication</strong>, da modificare come segue:</p><pre><code>PasswordAuthentication no</code></pre><p>salviamo (<strong>CTRL+X)</strong>&nbsp;e riavviamo il processo&nbsp;<strong>ssh</strong>:</p><pre><code>sudo systemctl restart sshd</code></pre><p>Da ora le prossime connessioni SSH non accettano l'accesso tramite password.</p><p>&nbsp;</p><p><em>Good&nbsp;<strong>*nix</strong>?</em><br /><em>&nbsp;- Mirko</em></p>
+Oltre ai grossi benefici sulla comodità che una chiave SSH offre rispetto alle password, sono molti i motivi per cui è importante scegliere una chiave rispetto allo standard più comune di autenticazione, in primis la sicurezza.
+
+Il processo di autenticazione attraverso chiave avviene tramite la verifica in due parti, una server e l'altra client. Dopo la richiesta di accesso, il server invia un messaggo codificato al client e ne attende la decodifica basata sulla chiave presente sul nostro PC (client) e se l'esito è positivo, permette l'accesso.
+
+## Creazione della chiave RSA
+
+Procediamo quindi con la creazione della chiave sul nostro PC, in questo si tratta di una chiave RSA a 2048-bit, ossia una chiave decisamente complessa da raggirare.
+
+> Le chiavi da 2048-bit sono al momento le più diffuse ma per questo non meno sicure. Lo standard massimo per una chiave è di 4096-bit, equivalente ad una password di 12 caratteri misti.
+
+Per creare la nostra chiave possiamo usare **ssh-keygen**:
+
+    ssh-keygen
+
+a cui possiamo passare l'opzione **-b** con uno una dimensione differente, ad esempio 4096 (di base sarà 2048).
+
+Come output del comando precedente, riceviamo la richiesta di inserire una locazione in cui salvare la nostra chiave, possiamo premere semplicemnete **Invio** per salvarla nella cartella **.ssh** nella nostra **/home**, successivamente ci verrà chiesto di inserire una **passphrase** (frase di accesso), si tratta di un valore opzionale raccomandato che aggiunge un secondo livello di sicurezza alla nostra chiave.
+
+> La passphrase verrà richiesta all'accesso come una normale password, subito dopo l'approvazione della chiave.
+
+Una volta finito, nella locazione scelta (.ssh), sono presenti le due chiavi (pubblica e privata).
+
+## Configurazione server
+
+Ora che le nostre chiavi sono pronte, possiamo procedere con la configurazione vera e propria sul server.
+
+Tutto il processo di configurazione della chiave è semplificato grazie a **ssh-copy-id**, offerto di base nella maggior parte delle distribuzioni Linux. Avviamo quindi il tool sul nostro PC (client):
+
+    ssh-copy-id utente@server
+
+dove:
+
+*   **utente ** è l'username a cui abbiamo accesso sul server
+*   **server** il dominio o indirizzo IP del server
+
+ci verrà mostrato un output simile:
+
+    The authenticity of host 'server' can't be established.ECDSA key fingerprint is ----.Are you sure you want to continue connecting (yes/no)? yes
+
+a cui rispondiamo **yes** (potrebbe non essere necessario in caso questa non è la prima volta in cui facciamo accesso via SSH al server).
+
+Una volta trovata la chiave creata precedentemente, ci verrà richiesta la password dell'utente sul server, digitiamola e premiamo invio, dovremmo avere un risultato come il seguente:
+
+    Number of key(s) added: 1
+
+il che significa che la chiave è stata copiata correttamente sul server. Da ora le prossime connessioni SSH da client a server non richiedono password (a meno che non sia stata inserita una passphrase).
+
+### Disabilitazione della password
+
+Come forma di sicurezza, è consigliato disabilitare il login ssh via password, vincolando esclusivamente l'accesso via chiave SSH, per fare ciò apriamo il file **/etc/ssh/sshd_config** sul server col nostro editor preferito, ad esempio **nano**:
+
+    sudo nano /etc/ssh/sshd_config
+
+sfruttiamo la combinazione **CTRL+W** (in caso di nano) e cerchiamo il parametro **PasswordAuthentication**, da modificare come segue:
+
+    PasswordAuthentication no
+
+salviamo (**CTRL+X)** e riavviamo il processo **ssh**:
+
+    sudo systemctl restart sshd
+
+Da ora le prossime connessioni SSH non accettano l'accesso tramite password.
+
+_Good ***nix**?_  
+_ - Mirko_

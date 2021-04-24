@@ -1,5 +1,6 @@
 ---
 title: "#howto - Utilizzo del comando 'screen"
+description: "Sono diverse le circostanze in cui screen viene in nostro soccorso, dimostrandosi uno degli strumenti piu utili."
 published: 2019-06-02
 layout: post
 author: Alessandro Zangrandi
@@ -19,9 +20,7 @@ La sintassi di **screen** è la seguente
 
     screen [opzioni]
 
-sfruttando la flag **--help** riceviamo come output la lista completa delle opzioni disponibili. Possiamo inoltre avere accesso tutti i comandi disponibili, digitiamo in sequenza **_CTRL+A_** e poi **_?_**. L'output sarà questo:
-
-                                                                 Screen key bindings, page 1 of 1\.                                                             Command key:  ^A   Literal ^A:  a  break       ^B b         flow        ^F f         lockscreen  ^X x         pow_break   B            screen      ^C c         width       W  clear       C            focus       ^I           log         H            pow_detach  D            select      '            windows     ^W w  colon       :            hardcopy    h            login       L            prev        ^H ^P p ^?   silence     _            wrap        ^R r  copy        ^[ [         help        ?            meta        a            quit        \            split       S            writebuf    >  detach      ^D d         history     { }          monitor     M            readbuf     <            suspend     ^Z z         xoff        ^S s  digraph     ^V           info        i            next        ^@ ^N sp n   redisplay   ^L l         time        ^T t         xon         ^Q q  displays    *            kill        K k          number      N            remove      X            title       A  dumptermcap .            lastmsg     ^M m         only        Q            removebuf   =            vbell       ^G  fit         F            license     ,            other       ^A           reset       Z            version     v^]   paste ."    windowlist -b-    select -0    select 01    select 12    select 23    select 34    select 45    select 56    select 67    select 78    select 89    select 9I    login onO    login off]    paste .|    split -v:kB: focus prev                                                              [Press Space or Return to end.]
+sfruttando la flag **--help** riceviamo come output la lista completa delle opzioni disponibili. Possiamo inoltre avere accesso tutti i comandi disponibili, digitiamo in sequenza **_CTRL+A_** e poi **_?_**. 
 
 ## Utilizzo del comando
 

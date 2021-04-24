@@ -1,5 +1,6 @@
 ---
 title: "#howto – Utilizzo del comando 'curl'"
+description: "curl è un potente strumento per il download di risorse web e non solo, si può infatti utilizzare anche in altri contesti, come ad esempio interpellare delle API e inviare e/o ricevere header."
 published: 2019-09-16
 layout: post
 author: Mirko B.
@@ -7,4 +8,80 @@ author_github: mirkobrombin
 tags:
 
 ---
-<p>Il comando <strong>curl</strong> è un potente strumento per il download di risorse web e non solo, si può infatti utilizzare anche in altri contesti, come ad esempio interpellare delle API e inviare e/o ricevere header.</p><h2>Sintassi</h2><p>La sintassi del comando è la seguente:</p><pre><code>curl [opzioni] [url]</code></pre><h2>Utilizzo del comando</h2><p>Come comando è facilmente comprensibile, supporta diverse opzioni e si può utilizzare in più contesti.</p><p>Nel caso in cui vogliamo ricevere il contenuto di una risorsa (ad esempio questa guida):</p><pre><code>curl https://linuxhub.it/article/howto-utilizzo-del-comando-curl</code></pre><p>riceveremo un output col contenuto della pagina web, in formato HTML.</p><h3>Download di file</h3><p>Possiamo scaricare un file, ad esempio un archivio .zip, specificandone l'output mediante flag <strong>-o</strong>:</p><pre><code>curl https://url/archivio.zip -o archivio.zip</code></pre><p>in alternativa possiamo sfruttare l'operatore <strong>&gt;</strong> nel comando curl in questo modo:</p><pre><code>curl https://url/archivio.zip &gt; archivio.zip</code></pre><p>altrimenti sfruttando il nome stesso della risorsa tramite flag <strong>-O</strong>:</p><pre><code>curl -O https://url/archivio.zip</code></pre><p>in tutti i casi, il file verrà scaricato sotto nome <strong>archivio.zip</strong>.</p><h3>Download di file multipli</h3><p>Come visto precedentemente per la flag <strong>-O</strong>, possiamo utilizzare lo stesso concetto per scaricare più file semplicemente scrivendo in sequenza:</p><pre><code>curl -O https://url/archivio_1.zip -O https://url/archivio_2.zip</code></pre><p>per scaricare quindi i file <strong>archivio_1.zip</strong> e <strong>archivio_2.zip</strong>.</p><h3>Riprende un download interrotto</h3><p>Nel caso in cui un download viene interrotto per x motivi, possiamo recuperarlo portandoci nella locazione dove è presente il frammento del precedente download e sfruttare la flag <strong>-C</strong> per continuarne il download:</p><pre><code>curl -C - -O https://link/archivio.zip</code></pre><h3>Reindirizzamenti</h3><p>Può capitare di inciampare in un messaggio che specifica lo spostamento in nuova locazione della risorsa, possiamo istruire curl a seguire questo/i reindirizzamenti tramite flag <strong>-L</strong>:</p><pre><code>curl -OL https://url_vecchio/archivio.zip</code></pre><p>il che farà riferimento al link nuovo nel caso di reindirizzamento.</p><h3>Ricevere gli header</h3><p>Possiamo utilizzare la flag <strong>-I</strong> per ricevere gli header di una chiamata, ad esempio per visualizzare quelli di questo sito web:</p><pre><code>curl -X HEAD -i https://linuxhub.it</code></pre><p>in questo caso l'output sarà simile al seguente:</p><pre><code>curl -I https://linuxhub.itHTTP/2 200 date: Mon, 16 Sep 2019 08:52:35 GMTcontent-type: text/html; charset=UTF-8x-drupal-dynamic-cache: MISSlink: &lt;https://linuxhub.it/&gt;; rel="shortlink", &lt;https://linuxhub.it/&gt;; rel="canonical"x-ua-compatible: IE=edgecontent-language: itx-content-type-options: nosniffx-frame-options: SAMEORIGIN</code></pre><h3>Inviare header</h3><p>Nel caso in cui vogliamo interagire con la risorsa inviando un header, ad esempio uno di autenticazione (<strong>Authorization</strong>), possiamo utilizzare la flag <strong>--header</strong> (o <strong>-I</strong>) in questo modo:</p><pre><code>curl --header "Authorization: AUTH_TOKEN" https:/link_risorsa</code></pre><p>il quale restituirà un output a seconda della programmazione della risorsa.</p><p>&nbsp;</p><p>Per dubbi e chiarimenti, fate accesso al nostro gruppo <a href="https://t.me/gentedilinux">Telegram</a>.</p><p><em>?Good *nix&nbsp;</em><strong><em>_Mirko</em></strong></p>
+Il comando **curl** è un potente strumento per il download di risorse web e non solo, si può infatti utilizzare anche in altri contesti, come ad esempio interpellare delle API e inviare e/o ricevere header.
+
+## Sintassi
+
+La sintassi del comando è la seguente:
+
+    curl [opzioni] [url]
+
+## Utilizzo del comando
+
+Come comando è facilmente comprensibile, supporta diverse opzioni e si può utilizzare in più contesti.
+
+Nel caso in cui vogliamo ricevere il contenuto di una risorsa (ad esempio questa guida):
+
+    curl https://linuxhub.it/article/howto-utilizzo-del-comando-curl
+
+riceveremo un output col contenuto della pagina web, in formato HTML.
+
+### Download di file
+
+Possiamo scaricare un file, ad esempio un archivio .zip, specificandone l'output mediante flag **-o**:
+
+    curl https://url/archivio.zip -o archivio.zip
+
+in alternativa possiamo sfruttare l'operatore **>** nel comando curl in questo modo:
+
+    curl https://url/archivio.zip > archivio.zip
+
+altrimenti sfruttando il nome stesso della risorsa tramite flag **-O**:
+
+    curl -O https://url/archivio.zip
+
+in tutti i casi, il file verrà scaricato sotto nome **archivio.zip**.
+
+### Download di file multipli
+
+Come visto precedentemente per la flag **-O**, possiamo utilizzare lo stesso concetto per scaricare più file semplicemente scrivendo in sequenza:
+
+    curl -O https://url/archivio_1.zip -O https://url/archivio_2.zip
+
+per scaricare quindi i file **archivio_1.zip** e **archivio_2.zip**.
+
+### Riprende un download interrotto
+
+Nel caso in cui un download viene interrotto per x motivi, possiamo recuperarlo portandoci nella locazione dove è presente il frammento del precedente download e sfruttare la flag **-C** per continuarne il download:
+
+    curl -C - -O https://link/archivio.zip
+
+### Reindirizzamenti
+
+Può capitare di inciampare in un messaggio che specifica lo spostamento in nuova locazione della risorsa, possiamo istruire curl a seguire questo/i reindirizzamenti tramite flag **-L**:
+
+    curl -OL https://url_vecchio/archivio.zip
+
+il che farà riferimento al link nuovo nel caso di reindirizzamento.
+
+### Ricevere gli header
+
+Possiamo utilizzare la flag **-I** per ricevere gli header di una chiamata, ad esempio per visualizzare quelli di questo sito web:
+
+    curl -X HEAD -i https://linuxhub.it
+
+in questo caso l'output sarà simile al seguente:
+
+    curl -I https://linuxhub.itHTTP/2 200 date: Mon, 16 Sep 2019 08:52:35 GMTcontent-type: text/html; charset=UTF-8x-drupal-dynamic-cache: MISSlink: <https://linuxhub.it/>; rel="shortlink", <https://linuxhub.it/>; rel="canonical"x-ua-compatible: IE=edgecontent-language: itx-content-type-options: nosniffx-frame-options: SAMEORIGIN
+
+### Inviare header
+
+Nel caso in cui vogliamo interagire con la risorsa inviando un header, ad esempio uno di autenticazione (**Authorization**), possiamo utilizzare la flag **--header** (o **-I**) in questo modo:
+
+    curl --header "Authorization: AUTH_TOKEN" https:/link_risorsa
+
+il quale restituirà un output a seconda della programmazione della risorsa.
+
+Per dubbi e chiarimenti, fate accesso al nostro gruppo [Telegram](https://t.me/gentedilinux).
+
+_?Good *nix _**__Mirko_**

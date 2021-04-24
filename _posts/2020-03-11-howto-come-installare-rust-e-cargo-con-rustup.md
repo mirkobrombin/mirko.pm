@@ -1,5 +1,6 @@
 ---
 title: '#howto - Installazione di Rust e Cargo con rustup'
+description: "Rust è un linguaggio di programmazione performante, veloce e sicuro sviluppato da Mozilla Research."
 published: 2020-03-11
 layout: post
 author: Alessandro Zangrandi

@@ -2,8 +2,8 @@
 title: 'E se volessimo cambiare DE?'
 published: 2017-05-07
 layout: post
-author: Mirko B.
-author_github: mirkobrombin
+author: Giuliano Z.
+author_github: linuxhubit
 tags:
   - php  
   - gnome  
