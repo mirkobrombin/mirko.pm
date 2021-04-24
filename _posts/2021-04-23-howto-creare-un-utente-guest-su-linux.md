@@ -15,7 +15,9 @@ Se condividete il pc con utenti occasionali come familiari, colleghi o amici pot
 
 Innanzitutto creiamo il nostro utente con il comando *useradd*: 
 
- `useradd -m -g users -G video,audio,network,disk,input -s /bin/bash guest`   
+ ```bash
+ useradd -m -g users -G video,audio,network,disk,input -s /bin/bash guest
+ ```
 
 Per i più curiosi: 
 
