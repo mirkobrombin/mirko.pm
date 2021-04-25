@@ -118,7 +118,11 @@ pinch:
       threshold: 0.1
 ```
 
-In questo caso abbiamo come opzione la "threshold", che determina a quanta porzione di pinch in percentuale è associato un singolo comando.
+In questo caso abbiamo come opzione la "**threshold**", che determina a quanta porzione di pinch in percentuale è associato un singolo comando.
+
+Un altra opzione interessante è **interval** che determina quanto deve passare tra una ripetizione ed un altra
+
+Di default tutte e due le opzioni sono ad impostate ad 1
 
 ### La mia configurazione (e altre)
 
@@ -185,26 +189,30 @@ pinch:
   2:
     in:
       command: 'xdotool key ctrl+plus' # Zoom in
-      threshold: 0.1
     out:
       command: 'xdotool key ctrl+minus' # Zoom out
-      threshold: 0.1
 
 rotate:
   3:
     clockwise:
-      threshold: 0.4
       command: 'xdotool key XF86MonBrightnessUp' # Brightness up
     counterclockwise:
-      threshold: 0.4
       command: 'xdotool key XF86MonBrightnessDown' # Brightness down
   4:
     clockwise:
-      threshold: 0.4
       command: 'xdotool key XF86AudioRaiseVolume' # Volume up
     counterclockwise:
-      threshold: 0.4
       command: 'xdotool key XF86AudioLowerVolume' # Volume down
+
+threshold:
+  pinch: 0.1
+  rotate: 0.1
+  swipe: 0.5
+
+interval:
+  pinch: 0.3
+  rotate: 0.3
+  swipe: 0.8
 
 plugin: 
   inputs:
@@ -212,7 +220,6 @@ plugin:
       enable-tap: true # click to tap
       enable-dwt: true # disable tap while typing
       show-keycodes: true # https://github.com/iberianpig/fusuma-plugin-keypress#add-show-keycode-option
-
 ```
 
 Sulla pagina GitHub di fusuma troverete altre configurazioni interessanti con dei template appositi.
