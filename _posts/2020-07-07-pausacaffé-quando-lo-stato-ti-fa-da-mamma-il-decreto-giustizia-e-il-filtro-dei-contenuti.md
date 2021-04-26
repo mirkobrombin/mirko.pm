@@ -5,7 +5,8 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - privacy  - privacy
+  - legge
+  - porno 
 ---
 Il cittadino tipo italiano nel mondo è sempre riuscito a farsi riconoscere. Una serie lunghissima di stereotipi sono stati nel tempo contrassegnati alla nostra popolazione:
 
