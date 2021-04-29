@@ -18,12 +18,12 @@ In un mondo in cui è diventata indispensabile la rapidità, l'efficienza e talv
 
 ## Cos'è Docker
 
-**Docker** è un software open source, multipiattaforma che permette di virtualizzare singole applicazioni in dei  **container** che sono isolati dal nostro **host principale** (il nostro sistema operativo per intenderci).
+**Docker** è un software open source, multipiattaforma che permette di virtualizzare singole applicazioni in dei **container** che sono isolati dal nostro **host principale** (il nostro sistema operativo per intenderci).
 Il paragone con le **macchine virtuali** balza subito all'occhio ma ci sono delle differenze sostanziali:
-- Docker non virtualizza l'hardware ma lo condivide col sistema operativo ( ogni container se li gestisce autonomia e isolamento )
+- Docker non virtualizza l'hardware ma lo condivide col sistema operativo (ogni container se li gestisce autonomia e isolamento)
 - su Docker non viene virtualizzato un intero sistema operativo, ma una specifica applicazione, contenuta in un immagine che contiene software, dipendenze e che generalmente possiamo trovare nei [repository ufficiali](https://hub.docker.com/).
 
-### i vantaggi di questo approccio
+### I vantaggi di questo approccio
 
  I vantaggi di Docker sono molteplici:
 
@@ -33,7 +33,7 @@ Il paragone con le **macchine virtuali** balza subito all'occhio ma ci sono dell
 
 ## Installazione
 
-L'installazione di Docker segue diversi passaggi in base a quale distribuzione stiamo utilizzando, di seguito vedremo i vari procedimenti per Ubuntu, Fedora e Archlinux.
+L'installazione di Docker segue diversi passaggi in base a quale distribuzione stiamo utilizzando, di seguito vedremo i vari procedimenti per Ubuntu, Fedora e ArchLinux.
 
 ### Ubuntu ( > 18.04):
 
@@ -148,7 +148,7 @@ Per vedere effettivamente che il tutto è andato come sperato eseguiamo:
 docker ps -a
 ```
 
-e dovremmo ottenere un output simile a questo:
+dovremmo ottenere un output simile a questo:
 
 ```bash
 CONTAINER ID       IMAGE             COMMAND       CREATED      STATUS        PORTS         NAMES
