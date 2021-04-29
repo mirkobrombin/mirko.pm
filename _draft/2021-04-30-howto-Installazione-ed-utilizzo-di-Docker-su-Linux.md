@@ -4,7 +4,7 @@ title: '#howto - Installare Docker su Linux'
 published:
 layout: post
 author: Floppy Loppy
-author_github:
+author_github: raspFloppy
 tags:
 - bash
 - docker
