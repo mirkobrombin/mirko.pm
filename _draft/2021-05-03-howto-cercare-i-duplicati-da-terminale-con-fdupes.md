@@ -1,5 +1,5 @@
 ---
-title: '#howto-cercare i duplicati da terminale con fdupes'
+title: '#howto - cercare i duplicati da terminale con fdupes'
 published: 2021-30-04T10:40
 layout: post
 author: Davide Galati (in arte PsykeDady)
