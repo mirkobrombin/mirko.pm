@@ -85,7 +85,7 @@ Navighiamo, all'interno della lista con le frecce direzionali su e giu, eventual
 Per ogni blocco si possono specificare alcune operazioni, supponiamo di avere un gruppo di tre duplicati, numerati quindi da 1 a 3. 
 La prima operazione da poter fare è poter indicare uno o più file da preservare, ad esempio conserviamo solo il primo digitando `1`, oppure *più file separati da virgole*, scrivendo ad esempio `1,2`. 
 
-Nel gruppo, i file da conservare avranno un segno +, quelli che saranno eliminati con il segno -, vediamo un esempio: 
+Nel gruppo, i file da conservare avranno un segno +, quelli che saranno eliminati il segno -, vediamo un esempio: 
 ```bash
     [+] ./asd.txt
     [+] ./file2
