@@ -1,7 +1,7 @@
 ---
 
 title: '#howto - Installare Docker su Linux'
-published: 2021-30-04T10:40
+published: 2021-04-30T10:40
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy
