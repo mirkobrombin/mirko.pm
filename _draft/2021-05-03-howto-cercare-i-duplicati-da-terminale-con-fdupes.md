@@ -11,11 +11,11 @@ tags:
 - fedora
 ---
 
-Essì. Sicuramente quel file l'hai già scaricato 10 volte, e quell'altra foto ? ce l'hai in almeno due directory.
+Eh si,sicuramente quel file l'hai già scaricato 10 volte, e quell'altra foto? Ce l'hai in almeno due directory.
 L'unico modo per esserne certi però è lasciare che dei software analizzino le nostre cartelle. 
 
 ## fdupes
-Uno dei software, utilizzabili direttamente da terminale, tra i più immediati è sicuramente `fdupes`.  Presente nella maggiorparte delle repository possiamo installarlo con il nostro gestore di pacchetti di sistema
+Uno dei software, utilizzabili direttamente da terminale, tra i più immediati è sicuramente `fdupes`.  Presente nella maggiorparte delle repository. Possiamo installarlo con il nostro gestore di pacchetti di sistema.
 
 ### Ubuntu 
 
@@ -85,7 +85,7 @@ Navighiamo, all'interno della lista con le frecce direzionali su e giu, eventual
 Per ogni blocco si possono specificare alcune operazioni, supponiamo di avere un gruppo di tre duplicati, numerati quindi da 1 a 3. 
 La prima operazione da poter fare è poter indicare uno o più file da preservare, ad esempio conserviamo solo il primo digitando `1`, oppure *più file separati da virgole*, scrivendo ad esempio `1,2`. 
 
-Nel gruppo, i file da conservare avranno un segno +, quelli che saranno eliminati il segno -, vediamo un esempio: 
+Nel gruppo, i file da conservare avranno un segno +, quelli che saranno eliminati con il segno -, vediamo un esempio: 
 ```bash
     [+] ./asd.txt
     [+] ./file2
@@ -99,7 +99,7 @@ Se abbiamo sbagliato una determinata selezione, possiamo tornare con le frecce s
 Se in un determinato gruppo non vogliamo eliminare nessun duplicato, possiamo digitare `all` e quindi invio.
 
 #### operazioni su più gruppi 
-Non è sicurament il massimo operare un gruppo alla volta nel caso di tantissimi duplicati, quindi possiamo operare anche per "**selezioni**"
+Non è sicuramente il massimo operare un gruppo alla volta nel caso di tantissimi duplicati, quindi possiamo operare anche per "**selezioni**"
 
 Si possono selezionare tutti i file che, nel percorso, contengono un determinato testo con: `sel testocontenuto` 
 Esistono le varianti: 
