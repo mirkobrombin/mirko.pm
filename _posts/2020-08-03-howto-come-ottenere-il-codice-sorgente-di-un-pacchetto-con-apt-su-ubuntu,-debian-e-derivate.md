@@ -5,7 +5,9 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - debian  - ubuntu  - bash
+  - debian  
+  - ubuntu  
+  - bash
 ---
 Molto spesso il comando `apt` viene semplicemente utilizzato per scaricare pacchetti da installare nel proprio sistema, ma questo può anche essere usato per scaricare il sorgente di un pacchetto.
 
