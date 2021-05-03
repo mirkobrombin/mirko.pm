@@ -1,6 +1,6 @@
 ---
 title: '#howto - cercare i duplicati da terminale con fdupes'
-published: 2021-05-03T10:40
+published: 2021-05-03T09:30
 layout: post
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
