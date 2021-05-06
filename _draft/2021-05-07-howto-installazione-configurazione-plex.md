@@ -1,5 +1,3 @@
-
-
 ---
 title: '#howto - Installazione e configurazione di un server Plex ' 
 published: 2021-05-07 
@@ -11,7 +9,6 @@ tags:
 - archlinux 
 - ubuntu 
 - fedora
-
 ---
 
 In passato abbiamo trattato come [installare un server kodi](https://linuxhub.it/articles/howto-creazione-impostazione-server-kodi/) da poter usare eventualmente come media center casalingo, ma se si vuole estendere l'uso del server al di fuori delle proprie mura, magari da poter anche utilizzare insieme agli amici per visionare alcuni filmati o ascoltare dei brani, possiamo invece ricorrere a [Plex Media Server](https://www.plex.tv/media-server-downloads/)
@@ -32,7 +29,7 @@ Il servizio è totalmente gratuito, tuttavia Plex INC mette a disposizione alcun
 
 - abbonamento mensile (5€/mese nel momento in cui scrivo)
 - abbonamento annuale (40€/anno nel momento in cui scrivo)
-- abbonamento mensile (120€ nel momento in cui scrivo)
+- acquisto (120€ nel momento in cui scrivo)
 
 Inoltre possiede un altro servizio a pagamento che consente di trasformare il media center in una retro gaming station da usare in cloud ( vedi [Plex Arcade](https://www.plex.tv/arcade/), attualmente non disponibile su host Linux )
 
