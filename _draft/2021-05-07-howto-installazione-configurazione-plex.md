@@ -24,7 +24,7 @@ In passato abbiamo trattato come [installare un server kodi](https://linuxhub.it
 
 Plex è un software per creare un proprio media server raggiungibile eventualmente in WAN (ovvero da qualunque postazione internet).  
 
-È per gran parte rilasciato sotto GPLv2, le parti open source son per lo più quelle che riguardano l'host (ovvero i software da installare per creare il server).
+È per gran parte rilasciato sotto GPLv2, le parti open source sono per lo più quelle che riguardano l'host (ovvero i software da installare per creare il server).
 Il servizio è totalmente gratuito, tuttavia Plex INC mette a disposizione alcuni meccanismi premium che potete comprare secondo diverse formule : 
 
 - abbonamento mensile (5€/mese nel momento in cui scrivo)
@@ -37,13 +37,13 @@ Inoltre possiede un altro servizio a pagamento che consente di trasformare il me
 
 ### È legale?
 
-Fondamentalmente plex fornisce un servizio per riprodurre ovunque i tuoi file multimediali, questi però devono essere di tua proprietà per evitare di incappare in problemi che riguardano la legalità. 
+Fondamentalmente plex fornisce un servizio per riprodurre ovunque i tuoi file multimediali, questi però devono essere di tua proprietà per evitare di incontrare  problemi che riguardano la legalità dei contenuti riprodotti. 
 
 
 
 ## Installare Plex Media Server 
 
-Innanzitutto per poter sfruttare a pieno il servizio è necessario che vi facciate un account su [plex.tv](https://www.plex.tv).
+Innanzitutto per poter sfruttare a pieno il servizio è necessario fare un account su [plex.tv](https://www.plex.tv).
 Un po' come per Netflix, potete anche fare un account che contiene più profili, magari nell'ottica di gestire un server con i vostri più *cari amici o parenti*, tenete tuttavia conto che in questo caso l'email e la password saranno unici. 
 
 Esiste comunque l'opzione di condividere alcune librerie con altri account totalmente diversi (quindi ognuno con la sua email e la sua password)
@@ -161,7 +161,7 @@ Quindi colleghiamo il nostro account e indichiamo al server quali sono le nostre
 
 ### Essere raggiungibili dall'esterno
 
-Accedete alle vostre impostazioni del router di casa, in genere si va sull'indirizzo http://192.168.1.1 o comunque il primo indirizzo segnato dal vostro *gateway* 
+Accedete alle vostre impostazioni del router di casa, in genere si va sull'indirizzo http://192.168.1.1 o il primo indirizzo segnato dal vostro *gateway* 
 
 Quindi trovate le impostazioni per il routing statico, assegnatevi un ip.
 
@@ -169,11 +169,11 @@ Dopo bisogna andare nelle impostazioni del *port forwarding* e aprire le porte d
 Plex opera per impostazione predefinita sulla porta `32400`, ma quest'impostazione può essere anche sovrascritta nelle impostazioni.
 
 Disconnettete il server dalla linea quindi riconnettetelo.
-Se tutto è andato a buon fine, dovreste vedere nella sezione (in alto sulla foto profilo cliccate e poi `Account` )  `impostazioni`&rarr;`Accesso Remoto` la frase 
+Se tutto è andato a buon fine, dovreste vedere nella sezione in alto, cliccando sulla foto profilo, in seguito `Account` `impostazioni`&rarr;`Accesso Remoto` la frase 
 
 >  Completamente accessibile dall'esterno della tua rete
 
-Se così non è, giocate con le impostazioni, attivate l'accesso remoto e ricontrollate i processi spiegati su 
+Se così non è, giocate con le impostazioni, attivate l'accesso remoto e ricontrollate i processi spiegati in precedenza
 
 
 
