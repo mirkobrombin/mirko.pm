@@ -5,7 +5,14 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - github  - archlinux  - bash
+  - github  
+  - archlinux  
+  - bash
+  - fedora
+  - flatpak
+  - snap
+  - flathub
+  - snapcraft
 ---
 **Bottles** è un programma open-source che consente di eseguire in maniera molto rapida e veloce software sviluppati principalmente per Windows su Linux. Questo programma offre ambienti preconfigurati con dipendenze e configurazioni specifiche che possono tornare utili per determinati software, che siano applicazioni di comune utilità oppure giochi.
 
@@ -44,13 +51,18 @@ flatpak --version
 il quale dovrà ritornare un output simile al seguente:
 
 ```bash
-? flatpak --version
+flatpak --version
 Flatpak 1.8.4
 ```
 
 In caso contrario vi rimando a [questa](https://linuxhub.it/articles/howto-installazione-di-flatpak-e-configurazione-di-flathub) guida per la configurazione.
 
 Non ci resta che installare Bottles, apriamo la pagina ufficiale su [Flathub](https://flathub.org/apps/details/com.usebottles.bottles) e clicchiamo su **Install**. Questo scaricherà il file `.flatpakref` o aprirà lo store di sistema con la pagina di installazione, a seconda di come è stato configurato.
+
+### Snapcraft
+Bottles viene offerto anche sotto forma di snap, il formato pacchetto offerto da Canonical.
+
+Possiamo installarla accedendo alla [pagina ufficiale](https://snapcraft.io/bottles) dello store Snapcraft.
 
 ### Pacchetti non ufficiali
 
