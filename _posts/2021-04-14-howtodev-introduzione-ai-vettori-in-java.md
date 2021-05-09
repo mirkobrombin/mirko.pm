@@ -309,7 +309,7 @@ Questo è sbagliato per diversi motivi:
 La forma giusta sarebbe stata:
 
 ```java
-for (int i=vettore.length; i>0; i++)
+for (int i=vettore.length-1; i>=0; i--)
 ```
 
 
