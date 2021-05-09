@@ -1,6 +1,4 @@
-
-
---- 
+---
 title: '#howto - articolo demo' 
 published: aaaa-mm-gg 
 layout: post 
