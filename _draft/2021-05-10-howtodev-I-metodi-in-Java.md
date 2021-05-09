@@ -225,7 +225,7 @@ static void stampaCaratteri(char[]lettere){
 
 > **NOTA**:  
 >
-> In genere non vale la pena creare un metodo per un istruzione o due. Creare troppi metodi potrebbe diventare più confusionario che farne uno che faccia più cose, tuttavia alcune volte potrebbe essere anche necessario. In ogni caso è sempre buona norma fare un brainstorming iniziale in un listato di codice intero inizialmente e poi suddividere le varie zone del codice dead code
+> In genere non vale la pena creare un metodo per un istruzione o due. Creare troppi metodi potrebbe diventare più confusionario che farne uno che faccia più cose, tuttavia alcune volte potrebbe essere anche necessario. In ogni caso è sempre buona norma fare un brainstorming iniziale in un listato di codice intero inizialmente e poi suddividere le varie zone del codice
 
 
 
@@ -378,13 +378,13 @@ Il puntatore è poi un indirizzo di memoria in cui vengono scritti effettivament
 
 Se non è ancora chiaro si osservi questo schema: 
 
-![](storage/stack.png)
+![stack](storage/java/stack.png)
 
 
 
 Normalmente le variabili sono memorizzate nello stack, ovvero *una parte della memoria ordinata* che lavora con ordine **LIFO** ( l' ultimo arrivato è il primo valore che viene poi operato ). Un puntatore come è stato già detto, è un numero che indica l'indirizzo dove si può trovare quel dato, ma quel dato si trova in un area di memoria detta **HEAP** in cui non esiste un ordine:
 
-![stackheap](storage/vettore.png) 
+![stackheap](storage/java/vettore.png) 
 
 quando viene modificato un dato in un vettore, non viene modificato il suo valore nello stack, ma uno dei suoi valori nell'heap.
 
