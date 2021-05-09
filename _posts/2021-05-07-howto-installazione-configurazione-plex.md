@@ -13,12 +13,8 @@ tags:
 
 In passato abbiamo trattato come [installare un server kodi](https://linuxhub.it/articles/howto-creazione-impostazione-server-kodi/) da poter usare eventualmente come media center casalingo, ma se si vuole estendere l'uso del server al di fuori delle proprie mura, magari da poter anche utilizzare insieme agli amici per visionare alcuni filmati o ascoltare dei brani, possiamo invece ricorrere a [Plex Media Server](https://www.plex.tv/media-server-downloads/)
 
-> <u>ATTENZIONE</u>:
->
-> Scaricare materiale protetto da copyright rappresenta un illecito punibile per legge oltre che un'azione a danno della proprietà intellettuale di chi crea quei contenuti.
+> Attenzione: Scaricare materiale protetto da copyright rappresenta un illecito punibile per legge oltre che un'azione a danno della proprietà intellettuale di chi crea quei contenuti.
 > La redazione di linux/hub presuppone che tutto il materiale che andrete ad archiviare sia stato ottenuto con la giusta licenza.
-
-
 
 ## Cos'è Plex 
 
@@ -34,12 +30,9 @@ Il servizio è totalmente gratuito, tuttavia Plex INC mette a disposizione alcun
 Inoltre possiede un altro servizio a pagamento che consente di trasformare il media center in una retro gaming station da usare in cloud ( vedi [Plex Arcade](https://www.plex.tv/arcade/), attualmente non disponibile su host Linux )
 
 
-
-### È legale?
+### Note legali
 
 Fondamentalmente plex fornisce un servizio per riprodurre ovunque i tuoi file multimediali, questi però devono essere di tua proprietà per evitare di incontrare  problemi che riguardano la legalità dei contenuti riprodotti. 
-
-
 
 ## Installare Plex Media Server 
 
@@ -48,11 +41,9 @@ Un po' come per Netflix, potete anche fare un account che contiene più profili,
 
 Esiste comunque l'opzione di condividere alcune librerie con altri account totalmente diversi (quindi ognuno con la sua email e la sua password)
 
-
-
 Una volta fatto l'account, possiamo passare all'installazione del server nel nostro host
 
-### installazione su Debian, Ubuntu e derivate
+### Debian, Ubuntu e derivate
 
 Trovate il pacchetto di installazione sul [sito ufficiale](https://www.plex.tv/media-server-downloads/#plex-media-server), disponibile per intel/amd a 32bit/64bit o anche dispositivi arm a 32bit o 64bit.
 
@@ -64,8 +55,7 @@ dpkg -i plexmediaserver*.deb
 ```
 
 
-
-### installazione su Fedora 
+### Fedora 
 
 Aggiungere il repository su Fedora: 
 
@@ -78,15 +68,12 @@ gpgkey=https://downloads.plex.tv/plex-keys/PlexSign.key
 gpgcheck=1' | sudo tee /etc/yum.repos.d/plex.repo
 ```
 
-
-
 Aggiornare dnf e installare 
 
 ```bash
 dnf upgrade 
 dnf install plexmediaserver -y
 ```
-
 
 
 ### Archlinux 
@@ -115,8 +102,6 @@ mkdir -p /contenutiPlex/{Film,SerieTV,Musica}
 chmod -R 777 /contenutiPlex
 ```
 
-
-
 Una soluzione alternativa (più sicura) potrebbe essere quella di creare e gestire l'accesso alla cartella da un gruppo specifico per i media: 
 
 ```bash
@@ -132,31 +117,25 @@ usermod -a -G plexmedia plex
 
 Non garantisco però che questa soluzione *funzioni sempre*.
 
-
-
 ### Connettersi e configurare il server
 
 Quindi avviamo il server tramite `systemd`: 
-
-`systemctl start plexmediaserver.service`
-
-
+```bash
+systemctl start plexmediaserver.service
+```
 
 Possiamo renderlo persistente ad ogni avvio sostituendo **start** con **enable**  
 
-`systemctl enable plexmediaserver.service`
-
-
+```bash
+systemctl enable plexmediaserver.service
+```
 
 Apriamo il browser e digitiamo nella barra degli indirizzi: 
 `http://127.0.0.1:32400/web/index.html`
 
->**NOTA BENE**: 
->se stiamo configurando plex tramite ssh su un dispositivo che non è il nostro attuale pc, si deve riportare l'indirizzo ip della piattaforma in cui plex è installato)
+> Nota: Se stiamo configurando plex tramite ssh su un dispositivo che non è il nostro attuale pc, si deve riportare l'indirizzo ip della piattaforma in cui plex è installato)
 
 Quindi colleghiamo il nostro account e indichiamo al server quali sono le nostre librerie, se sfogliando le cartelle non vedete quella che avete configurato, è *una questione di permessi*, riavviate il dispositivo o ricontrollate i permessi della cartella.
-
-
 
 
 ### Essere raggiungibili dall'esterno
@@ -169,16 +148,8 @@ Dopo bisogna andare nelle impostazioni del *port forwarding* e aprire le porte d
 Plex opera per impostazione predefinita sulla porta `32400`, ma quest'impostazione può essere anche sovrascritta nelle impostazioni.
 
 Disconnettete il server dalla linea quindi riconnettetelo.
-Se tutto è andato a buon fine, dovreste vedere nella sezione in alto, cliccando sulla foto profilo, in seguito `Account` `impostazioni`&rarr;`Accesso Remoto` la frase 
+Se tutto è andato a buon fine, dovreste vedere nella sezione in alto, cliccando sulla foto profilo, in seguito `Account` `impostazioni`&rarr;`Accesso Remoto` la frase: *Completamente accessibile dall'esterno della tua rete*.
 
->  Completamente accessibile dall'esterno della tua rete
-
-Se così non è, giocate con le impostazioni, attivate l'accesso remoto e ricontrollate i processi spiegati in precedenza
-
-
-
-
-
-
+Se così non è, giocate con le impostazioni, attivate l'accesso remoto e ricontrollate i processi spiegati in precedenza.
 
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
