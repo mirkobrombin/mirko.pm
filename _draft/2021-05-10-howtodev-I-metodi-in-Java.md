@@ -20,8 +20,6 @@ In questo articolo saranno trattate le funzioni e le variabili statiche in Java 
 
 - creazione dei metodi statici in un file 
 - il main come funzione statica
-- metodi ricorsivi
-
 
 
 ## Prerequisti 
