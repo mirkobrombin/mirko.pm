@@ -286,7 +286,7 @@ static boolean maiuscola(char lettera){
 
 
 ```java
-static char invertiCapitalizzazione (char lettera) {
+static char invertiMinuscolaMaiuscola (char lettera) {
     return (char) ( lettera + (
         minuscola(lettera) ? 'A' - 'a' : 
         maiuscola(lettera) ? 'a' - 'A' :
@@ -304,7 +304,7 @@ Vediamo ora come uscirebbe un software con tutti questi metodi
  ```java
 public class MaiuscoleMinuscole { 
     
-	static char invertiCapitalizzazione (char lettera) {
+	static char invertiMinuscolaMaiuscola (char lettera) {
         return (char) ( lettera + (
             minuscola(lettera) ? 'A' - 'a' : 
             maiuscola(lettera) ? 'a' - 'A' :
@@ -328,7 +328,7 @@ public class MaiuscoleMinuscole {
     
     static void convertiMaiuscole(char [] lettere){
         for (int i=0; i<lettere.length;i++) 
-            lettere[i]= invertiCapitalizzazione(lettere[i]);
+            lettere[i]= invertiMinuscolaMaiuscola(lettere[i]);
     }
     
     public static void main (String [] args ) {
