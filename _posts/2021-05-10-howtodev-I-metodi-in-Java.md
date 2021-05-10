@@ -125,7 +125,7 @@ Supponiamo ora di voler impostare una struttura che faccia la conversione per qu
 Facciamo quindi un metodo che prende un vettore di caratteri in input e lo modifica:
 
 ```java
-public static void convertiMaiuscole(char [] lettere){
+static void convertiMaiuscole(char [] lettere){
     for (int i=0; i<lettere.length;i++){ 
         if(lettere[i]>='a'&&lettere[i]<='z')
             lettere[i]=(char)(lettere[i]-'a'+'A');
