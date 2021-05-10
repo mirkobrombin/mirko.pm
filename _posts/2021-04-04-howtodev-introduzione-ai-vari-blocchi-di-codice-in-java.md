@@ -48,7 +48,7 @@ Nei primi linguaggi di programmazione erano utilizzate le così dette *istruzion
 
 Supponiamo il seguente flusso:
 
-![Java blocks giratiESpara mermaid](storage/Java/java_blocks_giratiESpara_mermaid.png)
+![Java blocks giratiESpara mermaid](/uploads/java/java_blocks_giratiESpara_mermaid.png)
 
 Potremmo rappresentarlo in questi passi con le istruzioni di salto: 
 
@@ -115,7 +115,7 @@ public class TestBloccoAnonimo{
 
 Vediamo un esempio di if pratico. Supponiamo il seguente caso: 
 
-![](storage/Java/java_blocks_volumeIF.png)
+![](/uploads/java/java_blocks_volumeIF.png)
 
 Notiamo che il passo "ascolta musica" viene eseguito qualunque sia il path preso. Come trasformare questo concetto in Java e, più specificatamente, con un if?
 
@@ -129,7 +129,7 @@ System.out.println("ascolta la musica con volume a "+volume);
 ```
 
 Proviamo a complicare le cose, ascoltando la musica solo se il volume non è maggiore di 7, senza cambiarlo: 
-![](storage/Java/java_blocks_volumeIFELSE.png)
+![](/uploads/java/java_blocks_volumeIFELSE.png)
 
 In Java, per esprimere questa situazione, useremo il costrutto *else* dopo l'if: 
 
@@ -146,7 +146,7 @@ else
 
 Facciamo un ulteriore sforzo, volendo indicare ora che, se il volume supera una certa soglia, lo riportiamo a quella soglia.
 
-![](storage/Java/java_blocks_volumeIFELSEIF.jpeg)
+![](/uploads/java/java_blocks_volumeIFELSEIF.jpeg)
 
 Questo è leggermente più complesso, e in questo caso notiamo che c'è un if dentro il ramo di *else*. Vediamo il corrispettivo a codice:
 

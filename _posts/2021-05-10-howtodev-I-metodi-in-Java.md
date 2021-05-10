@@ -376,13 +376,13 @@ Il puntatore è poi un indirizzo di memoria in cui vengono scritti effettivament
 
 Se non è ancora chiaro si osservi questo schema: 
 
-![stack](storage/java/stack.png)
+![stack](/uploads/java/stack.png)
 
 
 
 Normalmente le variabili sono memorizzate nello stack, ovvero *una parte della memoria ordinata* che lavora con ordine **LIFO** ( l' ultimo arrivato è il primo valore che viene poi operato ). Un puntatore come è stato già detto, è un numero che indica l'indirizzo dove si può trovare quel dato, ma quel dato si trova in un area di memoria detta **HEAP** in cui non esiste un ordine:
 
-![stackheap](storage/java/vettore.png) 
+![stackheap](/uploads/java/vettore.png) 
 
 quando viene modificato un dato in un vettore, non viene modificato il suo valore nello stack, ma uno dei suoi valori nell'heap.
 
