@@ -30,7 +30,7 @@ I requisiti per la piena comprensione di questo articolo sono stati affrontati n
 
 
 
-E negli articoli precedenti, già elencati nell'articolo precedente. 
+E nei precedenti. 
 Se siete novizi di Java potete iniziare direttamente da [*Introduzione alla programmazione java*](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java)
 
 
