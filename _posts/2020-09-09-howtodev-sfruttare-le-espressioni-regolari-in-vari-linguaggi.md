@@ -5,8 +5,8 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - python  
-  - gnome  
+  - python
+  - gnome
   - bash
 ---
 > NOTA: Questo articolo dà il via ad una serie di nuove rubriche sperimentali di linuxhub.it di cui sarebbe gradito un riscontro nei nostri gruppi
@@ -95,7 +95,7 @@ Un gruppo particolare, che potrebbe essere utile a chi nei suoi programmi ha a c
 
 Per i più curiosi potrebbe essere ben accetto sapere quali sono i codici Unicode delle singole lettere accentate. Di seguito potete trovare una piccola tabella riassuntiva
 
-| Codice accento grave &grave; | Codice accento acuto &acute; | lettera di riferimento |
+| Codice accento grave &#96;   | Codice accento acuto &acute; | lettera di riferimento |
 | :--------------------------: | :--------------------------: | :--------------------: |
 |           `\u00c0`           |           `\u00c1`           |          *A*           |
 |           `\u00c8`           |           `\u00c9`           |          *E*           |
