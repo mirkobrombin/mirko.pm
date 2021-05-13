@@ -1,12 +1,12 @@
 ---
-title: "howto creare un Dockerfile"
+title: "howto - creare un Dockerfile"
 published: 2021-05-14
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy
 tags:
-        - bash
-	- docker	
+- bash
+- docker	
 ---
 
 Se vogliamo creare una nostra immagine personalizzata da utilizzare in Docker allora il Dockerfile fa al caso nostro.
@@ -43,7 +43,7 @@ Alcuni dei comandi del Dockerfile che andremo ad utilizzare sono:
 >  Nota: 
 >
 > La differenza tra `ADD` e `COPY` è che il primo ha funzionalità maggiori tra cui il poter copiare file remoti 
-> all'interno del container tramite url oppure estrarre un file compresso all'interno del container mentre  `COPY` copia solo i file locali dall'host al container.
+> all'interno del container tramite `URL` oppure estrarre un file compresso all'interno del container mentre  `COPY` copia solo i file locali dall'host al container.
 > `COPY` è stato introdotto per problemi di funzionalità del comando `ADD` che per via delle sue troppe funzionalità
 > può avere comportamenti inaspettati quando si cerca di copiaere un file su un container.
   
@@ -52,7 +52,7 @@ Alcuni dei comandi del Dockerfile che andremo ad utilizzare sono:
 ## Come eseguire un Dockerfile
 
 Per eseguire un Dockerfile dobbiamo usare un comando di Docker, `build`.
-Il comando build interpreta i comandi del dockerfile li esegue in ordine e crea e da un nome all'immagine personalizzata che abbiamo creato e la salva all'interno del nostro repository locale di Docker.
+Il comando build interpreta i comandi del dockerfile e li esegue in ordine. Crea e da un nome all'immagine personalizzata che abbiamo creato e la salva all'interno del nostro repository locale di Docker.
 
 Per eseguire il comando dobbiamo specificare la directory nel quale abbiamo creato il nostro Dockerfile e quindi eseguire:
 
@@ -68,7 +68,7 @@ dove:
 >  Nota: 
 >
 > Possiamo anche escludere il `-t` ed il `<nome-immagine>` ma in questo il nome dell'immagine sarà un codice assegnato 
-> da Docker che risulta molto scomodo da ricordare e da cercare perciò per comodità è sempre meglio assegnari sempre un 
+> da Docker che risulta molto scomodo da ricordare e da cercare perciò per comodità è sempre meglio assegnare sempre un 
 > nome manualmente.
 
 
@@ -136,7 +136,7 @@ docker run hello-python
 ``` 
 E se tutto è andato a buon fine stamperà un "Hello, world".
 
-### Esempio2 
+### Esempio 2 
 
 In questo esempio creeremo un semplice webserver in python tramite `Flask` eseguito dentro un container.
 
@@ -183,7 +183,7 @@ e adesso andiamo a commentarlo:
 Eseguiamo quindi:
 
 ``` docker
-docker build -t flask-webserver .
+docker build -t flask-webserver 
 ```
 
 ed infine:
@@ -205,4 +205,4 @@ Se quindi proviamo andare in `http://172.17.0.2:5000` potrevo vedere stampato il
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+Per ogni dubbio, chiarimento o curiosità ci trovate sul nostro [gruppo Telegram](https://t.me/linuxpeople).
