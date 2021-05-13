@@ -6,7 +6,7 @@ author: Floppy Loppy
 author_github: raspFloppy
 tags:
         - bash
-		- docker	
+	- docker	
 ---
 
 Se vogliamo creare una nostra immagine personalizzata da utilizzare in Docker allora il Dockerfile fa al caso nostro.
