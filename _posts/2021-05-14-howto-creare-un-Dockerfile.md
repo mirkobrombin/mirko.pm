@@ -1,5 +1,5 @@
 ---
-title: "howto - creare un Dockerfile"
+title: "howto - Creare un Dockerfile"
 published: 2021-05-14
 layout: post
 author: Floppy Loppy
@@ -9,8 +9,11 @@ tags:
 - docker	
 ---
 
-Se vogliamo creare una nostra immagine personalizzata da utilizzare in Docker allora il Dockerfile fa al caso nostro.
+Docker è un software open source, multipiattaforma che permette di virtualizzare singole applicazioni in dei container isolati dal sistema host principale.
 
+Abbiamo già parlato di Docker in un [precedente articolo](https://linuxhub.it/articles/howto-Installazione-ed-utilizzo-di-Docker-su-Linux/) a cui vi rimando per approfondire l'argomento.
+
+In questa guida vediamo come realizzare un *Dockerfile*, ossia una immagine Docker personalizzata, su misura delle nostre necessità.
 
 ## Prerequisiti
 Prima di procedere con questa lettura sarebbe bene visionare l'articolo precedente:
