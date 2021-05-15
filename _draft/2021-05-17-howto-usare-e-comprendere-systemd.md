@@ -17,6 +17,8 @@ Non entreremo del merito del perché sia uno dei software più controversi, ma i
 
 ## la compilation di tool che offre
 
+Avvio dei processi, log, monitoraggio del sistema della sessione e anche dei tempi di avvio. Systemd ha una serie di tool che utilizzati possono analizzare tutti questi aspetti, vediamo quali sono i comandi da terminale che possiamo utilizzare: 
+
 - systemctl
 - journalctl
 - systemd-notify
@@ -26,15 +28,56 @@ Non entreremo del merito del perché sia uno dei software più controversi, ma i
 - loginctl
 - systemd-nspawn
 
+Tra questi approfondiremo **systemctl**,**journalctl**,**systemd-analyze**, **systemd-cgtop** e **loginctl** 
 
 
 ## Abilitare, avviare e gestire i servizi con systemctl
 
+Il tool più abusato sicuramente, avvia i servizi  e ha alcune funzioni per la gestione della sessione.
+
+### cosa sono i servizi
+
+I servizi, o demoni di sistema, sono software che per lo più girano di sottofondo generando l'ambiente in cui l'utente e i programmi operano.
+
+Tutti i servizi si trovano nella cartelle cartelle contenute in `/etc/systemd` e `/lib/systemd`
+
+Normalmente i servizi sono nella cartella `system`,  acuni servizi, attivabili non a livello di sistema ma solo in sessione da un utente, son contenute nelle cartella `user`
+
+#### attivare e disattivare i servizi
+
+Un servizio **attivato** è un servizio che si avvia con il sistema, per farlo:  
+
+`systemctl enable nomeservizio`   
+
+Può essere poi disattivato con `systemctl disable nomeservizio` 
+
+#### avviare un servizio e fermarlo
+
+per avviare un servizio immediatamente digitare: 
+`systemctl start nomeservice`   
+
+per fermarlo 
+
+`systemctl stop nomeservizio `  
 
 
-### cosa sono i servizi 
 
-### scrivere un servizio 
+Si può eventualmente "**riavviare**" con il comando: 
+`systemctl restart nomeservizio `  
+
+Ma ancora meglio, uno dei comandi più utili è sicuramente   
+
+`systemctl enable --now nomeservizio`  
+
+#### il caso `--user`
+
+Se il servizio è in una directory **user** e non system, può essere avviato usando il parametro `--user`. Normalmente si usano questi servizi per limitare le tipologie di utenti che possono avviare quel servizio e più nel particolare, normalmente, lo si fa per far si che alcuni servizi possano essere abilitati senza permessi di amministratore.
+
+### scrivere un servizio
+
+Possiamo scrivere un servizio Systemd da noi, posizioniamoci nella cartella `/etc/systemd/system` e scrivendo un file che ha come estensione `.service` 
+
+Vediamo la struttura base di un servizio 
 
 
 
