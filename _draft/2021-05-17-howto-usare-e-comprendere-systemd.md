@@ -9,13 +9,13 @@ tags:
 - systemd 
 ---
 
-Osannato da alcuni, odiato da altri, **systemd** rappresenta. nel mondo linux, uno degli *strumenti di gestione centralizzata di init, demoni, librerie e amministrazione del sistema* più completo nel panorama. 
+Osannato da alcuni, odiato da altri, **systemd** rappresenta nel mondo linux, uno degli *strumenti di gestione centralizzata di init, demoni, librerie e amministrazione del sistema* più completo nel panorama. 
 
 Non entreremo del merito del perché sia uno dei software più controversi, ma impareremo ad usarlo e capirne i meccanismi base.
 
 
 
-## La compilation di tool che offre
+## La suite di tool che offre
 
 Avvio dei processi, log, monitoraggio del sistema della sessione e anche dei tempi di avvio. Systemd ha una serie di tool che utilizzati possono analizzare tutti questi aspetti, vediamo quali sono i comandi da terminale che possiamo utilizzare: 
 
@@ -28,12 +28,12 @@ Avvio dei processi, log, monitoraggio del sistema della sessione e anche dei tem
 - loginctl
 - systemd-nspawn
 
-Tra questi approfondiremo **systemctl**,**journalctl**,**systemd-analyze**, **systemd-cgtop** e **loginctl** 
+Tra questi approfondiremo **systemctl**, **journalctl**, **systemd-analyze**, **systemd-cgtop** e **loginctl**.
 
 
 ## Abilitare, avviare e gestire i servizi con systemctl
 
-Il tool più abusato sicuramente, avvia i servizi  e ha alcune funzioni per la gestione della sessione.
+Il tool sicuramente più utilizzato: avvia i servizi  e ha alcune funzioni per la gestione della sessione.
 
 ### Cosa sono i servizi
 
@@ -41,7 +41,7 @@ I servizi, o demoni di sistema, sono software che per lo più girano di sottofon
 
 Tutti i servizi si trovano nella cartelle cartelle contenute in `/etc/systemd` e `/lib/systemd`
 
-Normalmente i servizi sono nella cartella `system`,  alcuni servizi, attivabili non a livello di sistema ma solo in sessione da un utente, son contenute nelle cartella `user`
+Normalmente i servizi sono nella cartella `system`; alcuni servizi, attivabili non a livello di sistema ma solo in sessione da un utente, son contenute nelle cartella `user`.
 
 #### Attivare e disattivare i servizi
 
@@ -49,7 +49,7 @@ Un servizio **attivato** è un servizio che si avvia con il sistema, per farlo:
 
 `systemctl enable nomeservizio`   
 
-Può essere poi disattivato con `systemctl disable nomeservizio` 
+Può essere poi disattivato con `systemctl disable nomeservizio`.
 
 #### Avviare e fermare i servizi
 
@@ -211,7 +211,7 @@ Ne possiamo concatenare anche più servizi in uno stesso comando
 
 ### Filtrare le priorità 
 
-Un altra funzione utile è quella di poter filtrare le priorità attraverso il parametro `-p`, questo ci permetterà di visualizzare solo messaggi di errore o solo di warning o solo console log. 
+Un altra funzione utile è quella di poter filtrare le priorità attraverso il parametro `-p`: questo ci permetterà di visualizzare solo messaggi di errore o solo di warning o solo console log. 
 I livelli di priorità sono:   
 
 0. emergenza
@@ -225,7 +225,7 @@ I livelli di priorità sono:
 
 
 
-Per visualizzare ad esempio criticità ed errori scriviamo:
+Ad esempio, per visualizzare criticità ed errori scriviamo:
 `journalctl -p 2 -p 3`
 
 
@@ -233,7 +233,7 @@ Per visualizzare ad esempio criticità ed errori scriviamo:
 ### Varie altre funzioni 
 
 Tutte le funzioni descritte possono essere usate insieme, per una ricerca molto dettagliata. Inoltre possiamo chiedere a journalctl di spostarci direttamente all'ultimo log disponibile con il parametro `-e` e di essere molto dettagliato con il parametro `-x`.
-Vediamo un comando completo : 
+Vediamo un comando completo: 
 `journalctl -p 3 -b 1 --since "2021-05-01" -xeu NetworkManager`
 
 
@@ -254,7 +254,7 @@ ci verranno restituiti in output quattro tempi diversi (tre in sistemi senza UEF
 
  
 
-Facciamo un passo in più e analizziamo quanto ogni singolo servizio ci ha messo ad avviarsi con : 
+Facciamo un passo in più e analizziamo quanto ogni singolo servizio ci ha messo ad avviarsi con: 
 `systemd-analyze blame`
 
 > **Attenzione** a decifrare questi dati, i processi possono essere eseguiti anche parallelamente e il complessivo dei tempi stampati non è anche il complessivo dei tempi di avvio, non tutti i processi bloccano il boot. 
