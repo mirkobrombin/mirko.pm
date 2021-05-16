@@ -15,7 +15,7 @@ Non entreremo del merito del perché sia uno dei software più controversi, ma i
 
 
 
-## la compilation di tool che offre
+## La compilation di tool che offre
 
 Avvio dei processi, log, monitoraggio del sistema della sessione e anche dei tempi di avvio. Systemd ha una serie di tool che utilizzati possono analizzare tutti questi aspetti, vediamo quali sono i comandi da terminale che possiamo utilizzare: 
 
@@ -35,7 +35,7 @@ Tra questi approfondiremo **systemctl**,**journalctl**,**systemd-analyze**, **sy
 
 Il tool più abusato sicuramente, avvia i servizi  e ha alcune funzioni per la gestione della sessione.
 
-### cosa sono i servizi
+### Cosa sono i servizi
 
 I servizi, o demoni di sistema, sono software che per lo più girano di sottofondo generando e gestendo l'ambiente in cui l'utente e i programmi operano.
 
@@ -43,7 +43,7 @@ Tutti i servizi si trovano nella cartelle cartelle contenute in `/etc/systemd` e
 
 Normalmente i servizi sono nella cartella `system`,  alcuni servizi, attivabili non a livello di sistema ma solo in sessione da un utente, son contenute nelle cartella `user`
 
-#### attivare e disattivare i servizi
+#### Attivare e disattivare i servizi
 
 Un servizio **attivato** è un servizio che si avvia con il sistema, per farlo:  
 
@@ -51,7 +51,7 @@ Un servizio **attivato** è un servizio che si avvia con il sistema, per farlo:
 
 Può essere poi disattivato con `systemctl disable nomeservizio` 
 
-#### avviare un servizio e fermarlo
+#### Avviare e fermare i servizi
 
 per avviare un servizio immediatamente digitare: 
 `systemctl start nomeservice`   
@@ -65,17 +65,23 @@ per fermarlo
 Si può eventualmente "**riavviare**" con il comando: 
 `systemctl restart nomeservizio `  
 
+
+
 Ma ancora meglio, uno dei comandi più utili è sicuramente   
 
 `systemctl enable --now nomeservizio`  
 
-#### il caso `--user`
+che esegue `enable` e `start` in contemporanea
 
-Se il servizio è in una directory **user** e non *system*, può essere avviato usando il parametro `--user`. Normalmente si usano questi servizi per limitare le tipologie di utenti che possono avviare quel servizio e, più nel particolare, per far si che alcuni servizi possano essere abilitati senza permessi di amministratore.
 
-### scrivere un servizio
 
-Possiamo scrivere un servizio Systemd da noi, posizioniamoci nella cartella `/etc/systemd/system` e scrivendo un file che ha come estensione `.service` 
+#### Il caso `--user`
+
+Se il servizio è in una directory **user** e non *system*, può essere avviato usando il parametro `--user`. Normalmente si usano questi servizi per limitare le tipologie di utenti che possono avviare quel servizio e, più nel particolare, per far sì che alcuni servizi possano essere abilitati senza permessi di amministratore.
+
+### Scrivere un servizio
+
+Possiamo scrivere un servizio Systemd noi stessi, posizioniamoci nella cartella `/etc/systemd/system` e scrivendo un file che ha come estensione `.service` 
 
 Vediamo la struttura base di un servizio molto semplice che avvia uno script:
 
@@ -101,7 +107,7 @@ Per ulteriori informazioni su come scrivere un servizio systemd abbiamo già una
 
 
 
-### altre funzioni : avvio e sessione
+### Altre funzioni : avvio e sessione
 
 `Systemctl` può gestire attività semplici di gestione della sessione, vediamo quali: 
 
@@ -114,7 +120,7 @@ Per ulteriori informazioni su come scrivere un servizio systemd abbiamo già una
 
 
 
-> **NOTA**: per le funzioni di ibernazione, dovete avere una swap funzionante e configurare il grub per la ripresa dell' ibernazione dal file di swap
+> **NOTA**: per le funzioni di ibernazione, dovete avere una swap funzionante e configurare il grub per la ripresa dell'ibernazione dal file di swap
 
 
 
@@ -123,7 +129,7 @@ Scendendo nel particolare è addirittura possibile riavviare direttamente su int
 
 
 
-### tabella dei comandi systemctl
+### Tabella dei comandi systemctl
 
 La seguente tabella è stata presa da https://github.com/PsykeDady/Archlinux_installazione e rappresenta un riassunto delle funzioni principali di `systemctl` e relativi comandi
 
@@ -171,7 +177,7 @@ Potete chiedere una lista di tutte le sessioni memorizzate con:
 
 `journalctl --list-boots`
 
-### analizzare il log per range di data
+### Analizzare il log per range di data
 
 Si può chiedere di analizzare specifici intervalli temporali, specificando una data di inizio, di fine o entrambe. 
 
@@ -189,7 +195,7 @@ Ad esempio riduciamo la finestra temporale tra il *2021-04-30 ore 00:01* alle *2
 
 
 
-### analizzare il log di uno specifico servizio 
+### Analizzare il log di uno specifico servizio 
 
 possiamo analizzare anche il log per uno specifico servizio, semplicemente digitando il nome del servizio dopo il parametro `-u`
 
@@ -203,7 +209,7 @@ Ne possiamo concatenare anche più servizi in uno stesso comando
 
 
 
-### filtrare le priorità 
+### Filtrare le priorità 
 
 Un altra funzione utile è quella di poter filtrare le priorità attraverso il parametro `-p`, questo ci permetterà di visualizzare solo messaggi di errore o solo di warning o solo console log. 
 I livelli di priorità sono:   
@@ -219,12 +225,12 @@ I livelli di priorità sono:
 
 
 
-Per visualiuzzare ad esempio criticità ed errori scriviamo :
+Per visualizzare ad esempio criticità ed errori scriviamo:
 `journalctl -p 2 -p 3`
 
 
 
-### varie altre funzioni 
+### Varie altre funzioni 
 
 Tutte le funzioni descritte possono essere usate insieme, per una ricerca molto dettagliata. Inoltre possiamo chiedere a journalctl di spostarci direttamente all'ultimo log disponibile con il parametro `-e` e di essere molto dettagliato con il parametro `-x`.
 Vediamo un comando completo : 
@@ -283,7 +289,7 @@ I comandi possibili sono
 - `loginctl unlock-session ID` ( sblocca lo schermo della sessione con l'id passato in input )
 - `loginctl lock-sessions` ( blocca lo schermo di tutte le sessioni )
 - `loginctl unlock-sessions` ( sblocca lo schermo di tutte le sessioni )
-- `loginctl kill-user nomeutente` ( equivalente a `pkill -u nomeutente`, termina brutalmente la sessione)
+- `loginctl kill-user nomeutente` ( equivalente a `pkill -u nomeutente`, termina brutalmente la sessione )
 
 
 
