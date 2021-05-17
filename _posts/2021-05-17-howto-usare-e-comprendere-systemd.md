@@ -15,7 +15,7 @@ Non entreremo del merito del perché sia uno dei software più controversi, ma i
 
 ## La suite di tool che offre
 
-Avvio dei processi, log, monitoraggio del sistema della sessione e anche dei tempi di avvio. Systemd ha una serie di tool che utilizzati possono analizzare tutti questi aspetti, vediamo quali sono i comandi da terminale che possiamo utilizzare: 
+Avvio dei processi, log, monitoraggio del sistema, della sessione e anche dei tempi di avvio. Systemd ha una serie di tool che utilizzati possono analizzare tutti questi aspetti, vediamo quali sono i comandi da terminale che possiamo utilizzare: 
 
 - systemctl
 - journalctl
