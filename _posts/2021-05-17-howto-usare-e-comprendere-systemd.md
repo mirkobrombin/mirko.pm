@@ -26,7 +26,7 @@ Avvio dei processi, log, monitoraggio del sistema, della sessione e anche dei te
 - loginctl
 - systemd-nspawn
 
-Tra questi approfondiremo *systemctl*, *journalctl*, *systemd-analyze*, *systemd-cgtop* e *loginctl*.
+Tra questi approfondiremo *systemctl*, *journalctl*, *systemd-analyze* e *loginctl*.
 
 
 ## Abilitare, avviare e gestire i servizi con systemctl
