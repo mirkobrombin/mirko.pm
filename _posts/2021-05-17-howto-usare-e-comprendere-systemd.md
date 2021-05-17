@@ -9,11 +9,9 @@ tags:
 - systemd 
 ---
 
-Osannato da alcuni, odiato da altri, **systemd** rappresenta nel mondo linux, uno degli *strumenti di gestione centralizzata di init, demoni, librerie e amministrazione del sistema* più completo nel panorama. 
+**Systemd** rappresenta nel mondo linux, uno degli strumenti di gestione centralizzata di init, demoni, librerie ed amministrazione del sistema più completo nel panorama. 
 
 Non entreremo del merito del perché sia uno dei software più controversi, ma impareremo ad usarlo e capirne i meccanismi base.
-
-
 
 ## La suite di tool che offre
 
@@ -28,7 +26,7 @@ Avvio dei processi, log, monitoraggio del sistema della sessione e anche dei tem
 - loginctl
 - systemd-nspawn
 
-Tra questi approfondiremo **systemctl**, **journalctl**, **systemd-analyze**, **systemd-cgtop** e **loginctl**.
+Tra questi approfondiremo *systemctl*, *journalctl*, *systemd-analyze*, *systemd-cgtop* e *loginctl*.
 
 
 ## Abilitare, avviare e gestire i servizi con systemctl
@@ -47,32 +45,43 @@ Normalmente i servizi sono nella cartella `system`; alcuni servizi, attivabili n
 
 Un servizio **attivato** è un servizio che si avvia con il sistema, per farlo:  
 
-`systemctl enable nomeservizio`   
+```
+systemctl enable nomeservizio
+```
 
-Può essere poi disattivato con `systemctl disable nomeservizio`.
+Può essere poi disattivato con:
+
+```
+systemctl disable nomeservizio
+```
 
 #### Avviare e fermare i servizi
 
-per avviare un servizio immediatamente digitare: 
-`systemctl start nomeservice`   
+Per avviare un servizio utilizziamo l'opzione `start`:
 
-per fermarlo 
+```
+systemctl start nomeservizio
+```
 
-`systemctl stop nomeservizio `  
+invece possiamo interrompere il servizio utilizzando l'opzione `stop`:
 
+```
+systemctl stop nomeservizio
+```
 
+infine con `restart` possiamo riavviare il servizio:
 
-Si può eventualmente "**riavviare**" con il comando: 
-`systemctl restart nomeservizio `  
+```
+systemctl restart nomeservizio
+```
 
+Ma ancora meglio, una delle opzioni più utili è sicuramente `enable --now`:
 
-
-Ma ancora meglio, uno dei comandi più utili è sicuramente   
-
-`systemctl enable --now nomeservizio`  
+```
+systemctl enable --now nomeservizio
+```
 
 che esegue `enable` e `start` in contemporanea
-
 
 
 #### Il caso `--user`
@@ -97,19 +106,14 @@ ExecStart=/percorso/eseguibile
 WantedBy=multi-user.target
 ```
 
-
-
-> **NOTA**: lo script indicato nella sezione `ExecStart` deve essere eseguibile.
-
-
+lo script indicato nella sezione `ExecStart` deve essere eseguibile.
 
 Per ulteriori informazioni su come scrivere un servizio systemd abbiamo già una guida dedicata [qui](https://linuxhub.it/articles/howto-creare-un-servizio-o-un-timer-di-systemd/)
 
 
-
 ### Altre funzioni : avvio e sessione
 
-`Systemctl` può gestire attività semplici di gestione della sessione, vediamo quali: 
+Systemctl può gestire attività semplici di gestione della sessione, vediamo quali: 
 
 - spegnere ( `poweroff` )
 - riavviare ( `reboot` )
@@ -118,47 +122,38 @@ Per ulteriori informazioni su come scrivere un servizio systemd abbiamo già una
 - sospensione ibrida ( `hybrid-suspend` )
 - sospendi e iberna dopo un lasso di tempo ( `suspend-then-hibernate` )
 
+per le funzioni di ibernazione, dovete avere una swap funzionante e configurare il grub per la ripresa dell'ibernazione dal file di swap
 
+Scendendo nel particolare è addirittura possibile riavviare direttamente su interfaccia EFI se disponibile: 
 
-> **NOTA**: per le funzioni di ibernazione, dovete avere una swap funzionante e configurare il grub per la ripresa dell'ibernazione dal file di swap
-
-
-
-Scendendo nel particolare è addirittura possibile riavviare direttamente su interfaccia EFI se ne disponete una, con questo comando: 
-`systemctl reboot --firmware-setup` 
-
-
+```
+systemctl reboot --firmware-setup
+```
 
 ### Tabella dei comandi systemctl
 
 La seguente tabella è stata presa da https://github.com/PsykeDady/Archlinux_installazione e rappresenta un riassunto delle funzioni principali di `systemctl` e relativi comandi
 
-|       sudo?        | comando                                       | spiegazione                                                  |
+|       sudo        | comando                                       | spiegazione                                                  |
 | :----------------: | :-------------------------------------------- | :----------------------------------------------------------- |
-| :white_check_mark: | `systemctl enable <servizio>`                 | abilita il servizio all’avvio, che viene quindi attivato ogni qualvolta accedete |
-| :white_check_mark: | `systemctl start <servizio>`                  | avvia immediatamente il servizio                             |
-| :white_check_mark: | `systemctl restart <servizio>`                | spegne e riavvia il servizio                                 |
-| :white_check_mark: | `systemctl stop <servizio>`                   | spegne il servizio, contrario di start                       |
-| :white_check_mark: | `systemctl disable <servizio>`                | disabilita il servizio, contrario di enable                  |
-| :white_check_mark: | `systemctl status <servizio>`                 | controlla lo stato del servizio, se è attivo, in errore o spento |
-| :heavy_minus_sign: | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
-|                    | `systemctl poweroff`                          | spegne il sistema                                            |
-|                    | `systemctl reboot`                            | riavvia il sistema                                           |
-|                    | `systemctl hibernate`                         | iberna il sistema, da usare solo se avete  attivato l’ibernazione in modo corretto |
-|                    | `systemctl suspend`                           | sospende il sistema                                          |
-|                    | `systemctl suspend-then-hibernate`            | sospende per un certo periodo di tempo.  Poi iberna          |
-|                    | `systemctl hybrid-sleep`                      | Sospende e iberna il sistema. Così che se la batteria si scarica, il pc è comunque ibernato |
-
+| ✅ | `systemctl enable <servizio>`                 | abilita il servizio all’avvio, che viene quindi attivato ogni qualvolta accedete |
+| ✅ | `systemctl start <servizio>`                  | avvia immediatamente il servizio                             |
+| ✅ | `systemctl restart <servizio>`                | spegne e riavvia il servizio                                 |
+| ✅ | `systemctl stop <servizio>`                   | spegne il servizio, contrario di start                       |
+| ✅ | `systemctl disable <servizio>`                | disabilita il servizio, contrario di enable                  |
+| ✅ | `systemctl status <servizio>`                 | controlla lo stato del servizio, se è attivo, in errore o spento |
+|| `systemctl poweroff`                          | spegne il sistema                                            |
+|| `systemctl reboot`                            | riavvia il sistema                                           |
+|| `systemctl hibernate`                         | iberna il sistema, da usare solo se avete  attivato l’ibernazione in modo corretto |
+|| `systemctl suspend`                           | sospende il sistema                                          |
+|| `systemctl suspend-then-hibernate`            | sospende per un certo periodo di tempo.  Poi iberna          |
+|| `systemctl hybrid-sleep`                      | Sospende e iberna il sistema. Così che se la batteria si scarica, il pc è comunque ibernato |
 
 
 ## Monitorare i servizi e i log con journalctl
 
 Attraverso `journalctl` possiamo verificare lo stato dei servizi attivi ed eventualmente i loro errori, ma anche vari log degli eventi di sistema. 
-Già richiamando 
-`journalctl`   
-
-Possiamo guardare il registro di tutte le attività e scorrerlo con una text interface stile less.
-
+Richiamando `journalctl` possiamo guardare il registro di tutte le attività e scorrerlo con una text interface stile less.
 
 
 ### Analizzare il log per specifici boot
@@ -169,13 +164,17 @@ Ad esempio `journalctl -b 0` restituirà il log a partire *da quando avete apert
 
 Aumentando il numero, tornerete dietro nella storia: 
 
-`journalctl -b 1`  
+```
+journalctl -b 1
+```
 
 Preleverà solo i log del boot precedente a quello attuale, fino a quando non è stato chiuso il pc.
 
 Potete chiedere una lista di tutte le sessioni memorizzate con:
 
-`journalctl --list-boots`
+```
+journalctl --list-boots
+```
 
 ### Analizzare il log per range di data
 
@@ -187,27 +186,27 @@ Per imporre invece un *limite superiore di data* ad un log bisogna specificare l
 
 Ad esempio riduciamo la finestra temporale tra il *2021-04-30 ore 00:01* alle *2021-05-02 ore 13:01*
 
-`journalctl --since "2021-04-30 00:01" --until "2021-05-02 13:01"`
+```
+journalctl --since "2021-04-30 00:01" --until "2021-05-02 13:01"
+```
 
-
-
-> **NOTA BENE** : ovviamente il log effettivo partirà poi dalla prima occorrenza memorizzata del registro fino all'ultima, se non vi è nulla in data *2021-04-30 ore 00:01* ma i log iniziano dal *2021-05-01 ore 01:00* la finestra temporale si sposterà in automatico
+> **Note** : ovviamente il log effettivo partirà poi dalla prima occorrenza memorizzata del registro fino all'ultima, se non vi è nulla in data *2021-04-30 ore 00:01* ma i log iniziano dal *2021-05-01 ore 01:00* la finestra temporale si sposterà in automatico
 
 
 
 ### Analizzare il log di uno specifico servizio 
 
-possiamo analizzare anche il log per uno specifico servizio, semplicemente digitando il nome del servizio dopo il parametro `-u`
+Possiamo analizzare anche il log per uno specifico servizio, semplicemente digitando il nome del servizio dopo il parametro `-u`
 
-`journalctl -u servizio`
-
-
+```
+journalctl -u servizio
+```
 
 Ne possiamo concatenare anche più servizi in uno stesso comando 
 
-`journalctl -u servizio -u servizio2`
-
-
+```
+journalctl -u servizio -u servizio2
+```
 
 ### Filtrare le priorità 
 
@@ -223,23 +222,22 @@ I livelli di priorità sono:
 6. informazioni
 7. debug
 
-
-
 Ad esempio, per visualizzare criticità ed errori scriviamo:
-`journalctl -p 2 -p 3`
 
-
+```
+journalctl -p 2 -p 3
+```
 
 ### Varie altre funzioni 
 
 Tutte le funzioni descritte possono essere usate insieme, per una ricerca molto dettagliata. Inoltre possiamo chiedere a journalctl di spostarci direttamente all'ultimo log disponibile con il parametro `-e` e di essere molto dettagliato con il parametro `-x`.
 Vediamo un comando completo: 
-`journalctl -p 3 -b 1 --since "2021-05-01" -xeu NetworkManager`
 
-
+```
+journalctl -p 3 -b 1 --since "2021-05-01" -xeu NetworkManager
+```
 
 Abbiamo così chiesto a journalctl di prelevare i log di errore, del boot precedente, a partire dal 2021 05 01 e solo di NetworkManager
-
 
 
 ## Analizzare i servizi e i tempi di avvio con Systemd-Analyze
@@ -248,14 +246,17 @@ Attraverso `systemd-analyze` si possono analizzare alcuni aspetti delle performa
 
 Digitandolo con il parametro `time` o senza alcun parametro (viene sottointeso):
 
-`systemd-analyze time`
+```
+systemd-analyze time
+```
 
 ci verranno restituiti in output quattro tempi diversi (tre in sistemi senza UEFI) che indicano tempo per il raggiungimento dal grub all'avvio del kernel, il tempo di avvio del kernel, quindi quello degli altri servizi e infine quello grafico se esiste.
 
- 
-
 Facciamo un passo in più e analizziamo quanto ogni singolo servizio ci ha messo ad avviarsi con: 
-`systemd-analyze blame`
+
+```
+systemd-analyze blame
+```
 
 > **Attenzione** a decifrare questi dati, i processi possono essere eseguiti anche parallelamente e il complessivo dei tempi stampati non è anche il complessivo dei tempi di avvio, non tutti i processi bloccano il boot. 
 
@@ -265,22 +266,18 @@ Altri due comandi molto utili sono  `plot` e `dot` che creano dei grafici esplic
 
 In particolare:
 
- `systemd-analyze plot > file.svg`
+```
+systemd-analyze plot > file.svg
+```
 
 Serve a generare un file svg contenente tutti i comandi `systemd-analyze time ` e `systemd-analyze blame `
 
-Con 
-
-`systemd-analyze dot  | dot -T svg > grafico2.svg`
-
-viene generato un grafo delle dipendenze di avvio.
+Con `systemd-analyze dot  | dot -T svg > grafico2.svg` viene generato un grafo delle dipendenze di avvio.
 
 
 ## Le sessioni utente e loginctl
 
 Potete infine gestire alcuni aspetti che riguardano la sessione utente con `loginctl`
-
-
 
 I comandi possibili sono
 
@@ -290,8 +287,6 @@ I comandi possibili sono
 - `loginctl lock-sessions` ( blocca lo schermo di tutte le sessioni )
 - `loginctl unlock-sessions` ( sblocca lo schermo di tutte le sessioni )
 - `loginctl kill-user nomeutente` ( equivalente a `pkill -u nomeutente`, termina brutalmente la sessione )
-
-
 
 
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
