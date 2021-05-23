@@ -48,7 +48,7 @@ apt install make gcc ruby-dev
 ``` bash
 dns install make ruby ruby-dev
 ```
-> Nota: Su Fedora a differenza di Ubuntu gcc è già preinstallato perciò non è necessario installarlo
+> Nota: Su Fedora a differenza di Ubuntu `gcc` è già preinstallato perciò non è necessario installarlo
 
 
 ## Attivazione
@@ -60,21 +60,27 @@ gem install colorls
 gem update colorls
 ```
 
-Una volta installato dobbiamo andare ad aggiungere due righe al nostro file di configurazione di **Zsh**, `~/.zshrc`:
+Una volta installato dobbiamo andare ad aggiungere due righe al nostro file di configurazione della shell che utilizziamo, `~/.zshrc` oppure `~/.bashrc`:
 
 ``` bash
 alias ls='colorls --group-directories-first'
 ```
+> NOTA: Per vedere che shell si sta utilizzando usate il comando `echo $0`
+
 In questo modo abbiamo assegnato un alias al comando `ls`, che quando verrà "chiamato" eseguirà il comando `colorls`.
 
-Possiamo anche aggiungere a `~/.zshrc`:
+Possiamo anche aggiungere a `~/.zshrc` o `~/.bashrc`:
 ``` bash
 alias ll='colorls -lA --sd --gs --group-directories-first''
 ```
 Andando a creare un nuovo comando che corrisponde ad eseguire `ls -l` ma mostrando anche le icone di cartelle e file.
 
 
-Una volta aggiunti gli alias ci basterà caricare i cambiamenti apportati a zsh eseguendo:
+Una volta aggiunti gli alias ci basterà caricare i cambiamenti apportati ai file di configurazione della shell (`~/.zshrc`, `~/.bashrc`) eseguendo:
+``` bash
+source ~/.bashrc
+```
+oppure:
 ``` bash
 source ~/.zshrc
 ```
