@@ -1,5 +1,5 @@
 ---
-title: '#howto - Colorare il tuo terminale Linux' 
+title: '#howto - Colorare ls tramite colorls' 
 published: 2021-05-24 
 layout: post 
 author: Floppy
@@ -15,12 +15,12 @@ tags:
 Se vogliamo rendere più accattivante esteticamente il nostro terminale, allora dovremo sicuramente installare e provare `colorls`, uno script in **Ruby** che "colora" l'output del comando `ls` monstrando le icone di cartelle e dei file in base alla loro estensione. 
 
 ## Prerequisiti
-Prima di tutto è necessario avere **ZSH** e **Oh-My-Zsh** installati, perciò vi rimando all'articolo precedente:
+Per aver funzionante ruby su zsh, prima di tutto è necessario avere **ZSH** e **Oh-My-Zsh** installati, perciò vi rimando all'articolo precedente:
 
 - [#howto - Installare e configurare Oh My Zsh](https://linuxhub.it/articles/howto-installare-e-configurare-oh-my-zsh/)
 
 ## Installazione 
- 
+
 Per poter visualzzare le icone dobbiamo essere muniti di font specifici.
 
 I font di cui abbiamo bisogno fanno parte dei [NERD FONTS](https://github.com/ryanoasis/nerd-fonts), un insieme di font che contengono al loro interno moltissime icone.
@@ -38,7 +38,7 @@ Una volta finita l'installazione, impostiamo a scelta sul nostro terminale uno d
 Impostato il font, dobbiamo installare le dipendenze necessarie:
 
 ### Ubuntu
- 
+
 ``` bash
 apt install make gcc ruby-dev
 ```
@@ -48,7 +48,15 @@ apt install make gcc ruby-dev
 ``` bash
 dns install make ruby ruby-dev
 ```
-> Nota: Su Fedora a differenza di Ubuntu `gcc` è già preinstallato perciò non è necessario installarlo
+> Nota: Su Fedora a differenza di Ubuntu `gcc` è già preinstallato perciò non è necessario installarlo 
+
+### Archlinux
+
+```bash
+pacman -S ruby
+```
+
+
 
 
 ## Attivazione
@@ -60,12 +68,24 @@ gem install colorls
 gem update colorls
 ```
 
-Una volta installato dobbiamo andare ad aggiungere due righe al nostro file di configurazione della shell che utilizziamo, `~/.zshrc` oppure `~/.bashrc`:
+
+
+Su alcune distribuzioni, potrebbe essere necessario aggiungere il path di ruby al proprio file rc ( `.zshrc` o `.bashrc` nella home) : 
+
+```bash
+export PATH=PATH:/home/username/.local/share/gem/ruby/3.0.0/bin
+```
+
+ricordatevi di sostituire il vostro `username` nel path sopra indicato. Controllare l'esistenza del path, il numero potrebbe variare in base alla versione di ruby che si ha installata 
+
+> NOTA: Per vedere che shell si sta utilizzando usate il comando `echo $SHELL`. se state usando bash, avrete il `.bashrc` , viceversa per zsh
+
+Dobbiamo poi aggiungere altre due righe al file: 
 
 ``` bash
 alias ls='colorls --group-directories-first'
 ```
-> NOTA: Per vedere che shell si sta utilizzando usate il comando `echo $0`
+
 
 In questo modo abbiamo assegnato un alias al comando `ls`, che quando verrà "chiamato" eseguirà il comando `colorls`.
 
