@@ -219,13 +219,13 @@ Al `PRUNE_PATH`
 
 ## plocate 
 
-plocate è presentata come un alternativa più leggera di mlocate, che usai lo stesso db anche
+plocate è presentata come un alternativa più leggera di mlocate, ed usa lo stesso db e gli stessi comandi.  
 
-`plocate` va in conflitto con `mlocale`
+`plocate` va in conflitto con `mlocale`  
 
 
 
-Installatelo con la vostra distribuzione disinstallando mlocate e quindi utilizzatelo esattamente allo stesso modoS
+Installatelo con la vostra distribuzione disinstallando mlocate
 
 
 
