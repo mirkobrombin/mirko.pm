@@ -95,7 +95,7 @@ updatedb
 
 ## usare locate
 
-Supponiamo ad un certo punto del nostro f.s.la struttura : 
+Supponiamo ad un certo punto del nostro file system la struttura : 
 
 ```bash
 Ciao
@@ -109,7 +109,7 @@ Ciao
 
 
 
-Quindi possiamo cercare nel file system. Ad esempio: 
+Quindi possiamo iniziare le ricerche. Ad esempio: 
 
 ``` bash 
 locate "ciao"
@@ -132,7 +132,7 @@ Possiamo specificare alcuni valori come opzioni:
 locate -i "ciao"
 ```
 
-Restituirà Una lista di valori che corrispondono alla ricerca.
+Restituirà:
 
 ```bash
 Ciao
@@ -150,7 +150,7 @@ Ciao/dsa.jpg
 locate -c "Ciao"
 ```
 
-Restituirà Una lista di valori che corrispondono alla ricerca.
+Restituirà solo il numero:
 
 ```bash
 7
@@ -163,7 +163,7 @@ Restituirà Una lista di valori che corrispondono alla ricerca.
 locate -l 2 "Ciao"
 ```
 
-Restituirà Una lista di valori che corrispondono alla ricerca.
+Restituirà:
 
 ```bash
 Ciao
@@ -177,7 +177,7 @@ Ciao/asd
 locate -0 "ciao"
 ```
 
-Restituirà Una lista di valori che corrispondono alla ricerca.
+Restituirà:
 
 ```bash
 CiaoCiao/asdCiao/asd.pngCiao/ciaoCiao/ciao.pngCiao/dsaCiao/dsa.jpg
@@ -191,7 +191,7 @@ CiaoCiao/asdCiao/asd.pngCiao/ciaoCiao/ciao.pngCiao/dsaCiao/dsa.jpg
 locate -r 'Ciao.*png' 
 ```
 
-Restituirà Una lista di valori che corrispondono alla ricerca.
+Restituirà:
 
 ```bash
 Ciao/asd.png
