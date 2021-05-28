@@ -8,7 +8,7 @@ tags:
 - bash
 - archlinux
 - ubuntu
-- Fedora
+- fedora
 ---
 
 
