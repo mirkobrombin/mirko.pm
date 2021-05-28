@@ -13,7 +13,7 @@ tags:
 
 ---
 
-*NB: Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby*
+ > *NB: Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby*
 
 
 
@@ -82,7 +82,7 @@ end
 
 Prima ho parlato di null safety quindi prendiamo in esempio i metodi `to_int` e `to_int?`.
 
-In caso di problemi il primo metodo andrà in errore, mentre il secondo ritornerà un `(Int | Nil)`. Questo vuol dire che il secondo metodo potrebbe ritornare un numero intero o un valore nullo, e quando proviamo ad usare questo risultato senza assicurarci della sua validità il compilare andrà in errore.
+In caso di problemi il primo metodo andrà in errore, mentre il secondo ritornerà un `(Int | Nil)`. Questo vuol dire che il secondo metodo potrebbe ritornare un numero intero o un valore nullo e quando proviamo ad usare questo risultato senza assicurarci della sua validità il compilare andrà in errore.
 
 ```crystal
 n = "2".to_i?
