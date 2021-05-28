@@ -1,5 +1,5 @@
 ---
-title: '#howto - usare locate' 
+title: '#howto - Utilizzo comando locate' 
 published: 2021-05-28
 layout: post 
 author: Davide Galati (in arte PsykeDady)
