@@ -13,7 +13,7 @@ tags:
 
 ---
 
-#### *NB: Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby*
+*NB: Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby*
 
 
 
