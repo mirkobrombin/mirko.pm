@@ -1,6 +1,5 @@
 ---
-
-title: 'Crystal, il nuovo Ruby?'
+title: 'howtodev - Crystal, il nuovo Ruby?'
 published: 2021-05-31
 layout: post
 author: Massimiliano Noviello
@@ -10,10 +9,11 @@ tags:
 - Ruby
 - Crystal
 - Concorrente
-
 ---
 
- > *NB: Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby*
+
+## Prerequisiti
+Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby
 
 
 
@@ -26,28 +26,17 @@ Questo è ciò che promette Crystal, un linguaggio che di recente (22 marzo 2021
 Ma andiamo a vedere alcuni pregi e difetti del linguaggio nel dettaglio dal punto di vista di un fan di Ruby.
 
 
-
----
-
-
-
 ## Pregi
 
 Vediamo i motivi per i quali amo questo linguaggio:
-
-
 
 ### Ruby-like
 
 Essendone Ruby la maggiore fonte di ispirazione del linguaggio, Crystal sarà un ambiente familiare per tutti i programmatori Ruby pur con qualche chicca in più come l'overloading.
 
-
-
 ### Performance
 
 Crystal usa LLVM e sfrutta diverse ottimizzazione a cui Ruby non ha accesso a causa della sua natura dinamicamente tipizzata e controllata a runtime (anche se con la sua compilazione JIT Ruby sta guadagnando terreno).
-
-
 
 ### Tipizzazione
 
@@ -150,10 +139,6 @@ puts "Dopo l'arrivo dei dati"
 
 
 
----
-
-
-
 ### Difetti
 
 Putroppo non è tutto rose e fiori, ecco le mie maggiori critiche a Crystal:
@@ -190,13 +175,8 @@ Al momento tutte le energie del team sono dedicate al supporto a windows che dov
 
 
 
----
-
-
-
 ## Conclusione
 
 Vedo molto potenziale, il linguaggio mi sembra promettente, ma ora vogliamo sentire la tua opinione!
 
 Vieni a parlarne sul nostro [gruppo Telegram](https://t.me/linuxpeople).
-
