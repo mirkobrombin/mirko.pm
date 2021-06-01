@@ -1,5 +1,5 @@
 ---
-title: 'howtodev - Crystal, il nuovo Ruby'
+title: '#howtodev - Crystal, il nuovo Ruby'
 published: 2021-05-31
 layout: post
 author: Massimiliano Noviello
@@ -8,7 +8,6 @@ tags:
 
 - Ruby
 - Crystal
-- Concorrente
 ---
 
 
