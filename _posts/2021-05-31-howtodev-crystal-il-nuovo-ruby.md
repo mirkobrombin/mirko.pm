@@ -17,7 +17,7 @@ Questo è ciò che promette Crystal, un linguaggio che di recente (22 marzo 2021
 
 Ma andiamo a vedere alcuni pregi e difetti del linguaggio nel dettaglio dal punto di vista di un fan di Ruby.
 
-> Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby
+> Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby.
 
 ## Pregi
 
