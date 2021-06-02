@@ -132,7 +132,7 @@ puts "Dopo l'arrivo dei dati"
 
 
 
-### Difetti
+## Difetti
 
 Putroppo non è tutto rose e fiori, ecco le mie maggiori critiche a Crystal:
 
