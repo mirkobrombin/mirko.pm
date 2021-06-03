@@ -1,5 +1,5 @@
 ---
-title: 'howtodev - Crystal, il nuovo Ruby'
+title: '#howtodev - Crystal, il nuovo Ruby'
 published: 2021-05-31
 layout: post
 author: Massimiliano Noviello
@@ -8,16 +8,8 @@ tags:
 
 - Ruby
 - Crystal
-- Concorrente
 ---
 
-
-## Prerequisiti
-Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby
-
-
-
-## Intro
 
 Quanto sarebbe bello scrivere codice Ruby performante, staticamente tipizzato (senza rinunciare alla libertà della tipizzazione debole), null safe, con potente metaprogrammazione, modello di concorrenza simile a quello di Go e un buon strumento per la gestione dei progetti?
 
@@ -25,6 +17,7 @@ Questo è ciò che promette Crystal, un linguaggio che di recente (22 marzo 2021
 
 Ma andiamo a vedere alcuni pregi e difetti del linguaggio nel dettaglio dal punto di vista di un fan di Ruby.
 
+> Questo articolo è principalmente indirizzato a chi ha già esperienza col linguaggio Ruby.
 
 ## Pregi
 
@@ -139,7 +132,7 @@ puts "Dopo l'arrivo dei dati"
 
 
 
-### Difetti
+## Difetti
 
 Putroppo non è tutto rose e fiori, ecco le mie maggiori critiche a Crystal:
 
