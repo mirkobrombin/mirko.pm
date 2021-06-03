@@ -21,8 +21,24 @@ Iniziamo con **ecryptfs** e supponiamo di dover cifrare la cartella _/percorso/S
 
 Installiamo dunque i pacchetti necessari dal package manager di sistema:
 
-    # Debian/Ubuntu e derivatesudo apt install ecryptfs-utils keyutils rsync lsof# RHEL/Centos e derivatesudo yum install ecryptfs-utils keyutils rsync lsof# Fedora e derivatesudo dnf install ecryptfs-utils keyutils rsync lsof
+### Debian/Ubuntu e derivate
 
+```bash
+apt install ecryptfs-utils keyutils rsync lsof
+```
+
+### RHEL/Centos e derivate
+
+```bash
+yum install ecryptfs-utils keyutils rsync lsof
+```
+
+### Fedora e derivate
+```bash
+dnf install ecryptfs-utils keyutils rsync lsof
+```
+
+### Procedimento 
 Procediamo con l'abilitazione del modulo con **modprobe**:
 
     sudo modprobe ecryptfs
@@ -55,12 +71,27 @@ dopo di ché usate questo script per montare la cartella!
 
 Procediamo con l'installazione di **cryfs**:
 
-    # Debian/Ubuntu e derivatesudo apt install cryfs# RHEL/Centos e derivatesudo yum install cryfs# Fedora e derivatesudo dnf install cryfs
+### Debian/Ubuntu e derivate
+```bash
+sudo apt install cryfs
+```
+
+### RHEL/Centos e derivate
+
+```bash 
+sudo yum install cryfs
+```
+
+### Fedora e derivate
+
+```bash
+sudo dnf install cryfs
+```
 
 Facciamo chiarezza ad alcune definizioni prima di procedere:
 
-*   **mountpoint** è dove scriverete e leggerete i vostri file
-*   **basepoint** è dove cryfs salverà le informazioni riguardanti i dati e la cifratura.
+-   **mountpoint** è dove scriverete e leggerete i vostri file
+-   **basepoint** è dove cryfs salverà le informazioni riguardanti i dati e la cifratura.
 
 Supponendo sempre di dover cifrare **/percorso**, creiamo un'altra locazione da usare come _basepoint_ (consiglio di crearla nascosta)
 
