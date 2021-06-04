@@ -1,6 +1,6 @@
 ---
 title: '#howto - cifrare la home con ecryptfs' 
-published: 2021-06-03
+published: 2021-06-04
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
