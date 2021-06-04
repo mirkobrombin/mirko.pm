@@ -42,13 +42,13 @@ Installiamo anche `wmctrl` e `xdotool` per automatizzare la pressione dei tasti:
 
 ```bash
 # Ubuntu, Debian e derivate 
-apt-get install wmctrl xodotool
+apt-get install wmctrl xdotool
 
 # Fedora e altre distribuzioni con yum
-yum install wmctrl xodotool
+yum install wmctrl xdotool
 
 # Arch Linux e derivate 
-pacman -S wmctrl xodotool
+pacman -S wmctrl xdotool
 ```
 
 > *NOTA*: La seguente guida supporrà che avvierete Fusuma in un **server X** e non in un server **Wayland**, anche se il software è compatibile con entrambi.
