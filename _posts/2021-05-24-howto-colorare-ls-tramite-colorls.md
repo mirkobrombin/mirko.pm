@@ -73,7 +73,7 @@ gem update colorls
 Su alcune distribuzioni, potrebbe essere necessario aggiungere il path di ruby al proprio file rc ( `.zshrc` o `.bashrc` nella home) : 
 
 ```bash
-export PATH=PATH:/home/username/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:/home/username/.local/share/gem/ruby/3.0.0/bin
 ```
 
 ricordatevi di sostituire il vostro `username` nel path sopra indicato. Controllare l'esistenza del path, il numero potrebbe variare in base alla versione di ruby che si ha installata 
