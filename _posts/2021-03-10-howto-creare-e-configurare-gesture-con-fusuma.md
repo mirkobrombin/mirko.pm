@@ -5,7 +5,8 @@ layout: post
 author: Davide Galati
 author_github: psykedady
 tags:
-  - github  - bash
+  - github
+  - bash
 ---
 Ancora una volta ci ritroviamo davanti l'ormai celere problema delle esperienze del touchpad e delle gesture su Linux. [In questo articolo](https://linuxhub.it/articles/howto-gesture-meravigliose-e-come-crearle) avevamo trovato una soluzione con `libinput-gestures`, ma oggi vogliamo darvene una migliore con **Fusuma**. 
 
@@ -244,6 +245,11 @@ con il seguente contenuto:
 Name=Fusuma
 Exec=/home/vostronome/.gem/ruby/2.7.0/bin/fusuma 
 Type=Application
+```
+
+Testate il percorso di esecuzione, se non funziona provate con:
+```bash
+/home/vostronome/.local/share/gem/ruby/3.0.0/bin/fusuma
 ```
 
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.
