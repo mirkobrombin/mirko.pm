@@ -6,7 +6,7 @@ author: Floppy Loppy
 author_github: raspFloppy
 tags:
     - bash
-	- docker	
+    - docker	
 ---
 
 Se volessimo creare un'**applicazione multiservizio** tramite docker, in nostro aiuto ci viene incontro il file `docker-compose.yml`.
