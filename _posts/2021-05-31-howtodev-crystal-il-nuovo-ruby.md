@@ -89,11 +89,7 @@ Per scrivere macro basta usare due paia di parentesi graffe `{{}}`
 Scriviamo per esempio un programma il cui binario abbia in una variabile una lista di file all'interno di quella cartella in tempo di compilazione:
 
 <div class="highlight">
-	<pre class="highlight hljs ini">
-		<code>
-			files = {{`ls`.stringify.strip.split("\n")}}
-		</code>
-	</pre>
+<code>files = &#123;&#123;`ls`.stringify.strip.split("\n")&#125;&#125;</code>
 </div>
 
 
