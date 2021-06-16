@@ -88,9 +88,15 @@ Per scrivere macro basta usare due paia di parentesi graffe `{{}}`
 
 Scriviamo per esempio un programma il cui binario abbia in una variabile una lista di file all'interno di quella cartella in tempo di compilazione:
 
-```crystal
-files = {{`ls`.stringify.strip.split("\n")}}
-```
+<div class="highlight">
+	<pre class="highlight hljs ini">
+		<code>
+			files = {{`ls`.stringify.strip.split("\n")}}
+		</code>
+	</pre>
+</div>
+
+
 
 L'output del comando `ls` viene catturato e `stringify` indica che deve essere trattato come una stringa e non come un identificatore (dato che le macro sono capaci di generare identificatori).
 
