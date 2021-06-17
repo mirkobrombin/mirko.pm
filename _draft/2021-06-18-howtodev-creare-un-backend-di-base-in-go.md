@@ -17,7 +17,7 @@ tags:
 
 ## Introduzione
 
-Essendo Go stato creato per sviluppare microservizi, è naturale aspettarsi una un network stack abbastanza completo direttamente nella standard library.
+Essendo Go stato concepito per sviluppare microservizi, include un network stack abbastanza completo direttamente nella standard library.
 
 Lo scopo di questa breve guida è introdurre il lettore al modulo `net/http` così che possa poi condurre i propri studi in autonomia.
 
@@ -46,24 +46,24 @@ import (
 
 ### Creare degli handler
 
-Ora è il momento di creare delle funzioni dette handler il cui scopo è elaborare le richieste sui vari percorsi (Es: `/`, `/qualcosa`)
+Ora è il momento di creare delle funzioni dette handler il cui scopo è elaborare le richieste sui vari percorsi (Es: `/`, `/percorso`)
 
 Ogni funzione handler richiede due parametri, un `http.ResponseWriter` e un `*http.Request`.
 
 
 
-A questo punto ci basta definire la funzione con
+A questo punto, ci basta definire la funzione con
 
 ```go
 func mioHandler(res http.ResponseWriter, req *http.Request) {   
 }
 ```
 
-essendo `res` un `http.ResponseWriter` esso soddisfa l'interfaccia `io.Writer`, permettendoci di scrivervi dati sopra per inviare la risposta al client.
+essendo `res` un `http.ResponseWriter`, esso soddisfa l'interfaccia `io.Writer`, permettendoci di scrivervi dati da inviare come risposta al client.
 
-Possiamo fare questo in vari modi, ma per comodità useremo `fmt.Fprint`.
+Possiamo farlo in vari modi, ma per comodità useremo `fmt.Fprint`.
 
-`fmt.Fprint` è analoga a `fmt.Print` ma invece di scrivere sullo standard output lo fa su un `io.Writer`.
+`fmt.Fprint` è analoga a `fmt.Print` ma scrive lo standard output su un `io.Writer`.
 
 | Funzione       | Analoga       |
 | --------------:|:------------- |
@@ -71,7 +71,7 @@ Possiamo fare questo in vari modi, ma per comodità useremo `fmt.Fprint`.
 | `fmt.Fprintln` | `fmt.Println` |
 | `fmt.Fprintf`  | `fmt.Printf`  |
 
-Quindi aggiorniamo la funzione mioHandler di conseguenza:
+Quindi aggiorniamo la funzione `mioHandler` di conseguenza:
 
 ```go
 func mioHandler(res http.ResponseWriter, req *http.Request) {
@@ -83,7 +83,7 @@ func mioHandler(res http.ResponseWriter, req *http.Request) {
 
 ### Colleghiamo l'handler a un percorso
 
-A questo punto nella funzione main ci basta usare `http.HandleFunc` per collegare l'handler appena creato al percorso che desideriamo:
+A questo punto nella funzione main ci basta utilizzare `http.HandleFunc` per collegare l'handler appena creato al percorso che desideriamo:
 
 ```go
 func main() {
@@ -91,13 +91,13 @@ func main() {
 }
 ```
 
-In questo caso abbiamo collegato la funzione `mioHandler` al percorso `/`
+In questo caso abbiamo collegato la funzione `mioHandler` al percorso `/`.
 
 
 
 ### Mettiamo il server in ascolto
 
-Ora ci basta solo indicare al server su quale porta ascoltare. In questo caso userò la `8080`
+Ora ci basta indicare al server su quale porta ascoltare. In questo caso userò la `8080`:
 
 ```go
 func main() {
@@ -107,13 +107,13 @@ func main() {
 }
 ```
 
-Ora il server sarà in ascolto e contattando `127.0.0.1` (l'indirizzo locale) ci verrà ritornato il codice html che abbiamo messo nella funzione `fmt.Fprint`
+Ora il server sarà in ascolto, contattando `127.0.0.1` (l'indirizzo locale) ci verrà restituito il codice HTML che abbiamo messo nella funzione `fmt.Fprint`.
 
 
 
 ## Riproviamoci
 
-Questa volta mettendo in sieme tutto quello che abbiamo creato, ne creeremo un altro con due handler:
+Questa volta mettendo insieme tutto quello che abbiamo creato, ne creeremo un altro con due handler:
 
 ```go
 package main
