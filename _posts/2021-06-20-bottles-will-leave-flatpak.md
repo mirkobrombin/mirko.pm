@@ -24,7 +24,7 @@ The project has been split into two libraries (
 [libbottles](https://github.com/bottlesdevs/libbottles)), the system components, 
 dependencies and installer are being rewritten too. In short, a real new project 
 from scratch that is proceeding in small steps but of which I am proud. 
-Actually, I'm very proud of it.
+Actually, *I'm very proud of it.*
 
 ![](https://camo.githubusercontent.com/67c8dc53cbd154e38b2af4f22176da7246e70e720474b9bb5776550110d9694a/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4579635231635758414145747856523f666f726d61743d6a7067)
 
@@ -34,8 +34,8 @@ we ever expected and I am delighted with all those who have contributed with a
 constructive report. Special thanks to all of you, words are not enough.
 
 ## So why leave Flatpak?
-Bottles is a project that takes a very long time, really a LONG TIME, imagine a 
-lot of time and multiply the number of bugs that have been found in Bottles to 
+*Bottles is a project that takes a very long time*, really a LONG TIME, imagine 
+a lot of time and multiply the number of bugs that have been found in Bottles to 
 date. Ok that's an exaggeration but it's a really long time.
 
 Just applying new translations takes about 1h on my part: bad words are filtered, 
@@ -47,13 +47,13 @@ Dealing with bug reports and new feature requests also takes a lot of time.
 Unfortunately not all users (currently over 30%) know how to open an issue in 
 the correct way and often there are not enough details to understand the problem. 
 From that moment a conversation begins where we try to understand the problem, 
-asking for more logs (possibly in English ... seriously provide them in English, 
-a small part of me dies every time you publish a log in any other language than 
-the English). Once a log is received, the identification of the error begins and 
-then begins the phase in which we try to replicate that error, usually by 
-mounting a VM with the same distro, desktop environment and package. Sometimes 
-we are lucky and can easily replicate the bug and this is confirmed and fixed 
-within a maximum of one day depending on its severity.
+asking for more logs (possibly in English ... *seriously provide them in 
+English*, a small part of me dies every time you publish a log in any other 
+language than the English). Once a log is received, the identification of the 
+error begins and then begins the phase in which we try to replicate that error, 
+usually by mounting a VM with the same distro, desktop environment and package.
+Sometimes we are lucky and can easily replicate the bug and this is confirmed 
+and fixed within a maximum of one day depending on its severity.
 
 But when we are not able to replicate a bug then we start a research phase in 
 the code to try to imagine what may have caused the problem. If this step also 
@@ -69,7 +69,7 @@ structure and therefore is stalled, waiting for the next main release, which
 could allow the integration of the feature.
 
 Ok, I have described the management of any Open source project (and not) but in 
-this case it is a project designed and developed by a single person (me). Ok 
+this case it is a project designed and *developed by a single person (me)*. Ok 
 there are many contributions received and I'm not complaining, indeed thank you 
 again seriously, please continue. Unfortunately, however, none of these 
 contributions take place on Bottles v4 or in the management of the Issues or in 
@@ -81,20 +81,20 @@ less knowledge. Most of the bugs reported are related to the Flatpak version of
 Bottles and I really spend many days figuring out how to fix them, this because 
 of my little knowledge about it.
 
-This lack of experience of mine, plus the reduced time I have due to what I have
-explained above (and my job), means that I cannot focus on developing Bottles v4 
-as I should, slowing down the project drastically.
+*This lack of experience of mine*, plus the reduced time I have due to what I 
+have explained above (and my job), means that I cannot focus on developing 
+Bottles v4 as I should, slowing down the project drastically.
 
 I also see that the Flathub user community (the repository where Bottles is 
 distributed) is very demanding. I browsed the Bottles reviews on GNOME Software 
 and was very amazed to find that alongside some positive reviews, there are 
 others that are very negative and unfortunately absolutely not constructive. 
 Stop everyone, I know what you are thinking and no .. I do not expect only 
-positive reviews and I am much happier to read negative ones as they help me to 
-grow and improve. Unfortunately, however, these criticisms are not constructive 
-and often complain about Wine problems instead of Bottles.
+positive reviews and I am much happier to read negative ones as these *help me 
+to grow and improve*. Unfortunately, however, these criticisms are not 
+constructive and often complain about Wine problems instead of Bottles.
 
-**Bottles is NOT Wine**: this is what I have said over and over again. Bottles 
+*Bottles is NOT Wine*: this is what I have said over and over again. Bottles 
 is a Wine prefix manager, with several features but it ends there. We don't 
 promise to run Windows software that doesn't work with Wine, and we don't claim 
 Bottles is THE definitive way to do it. Unfortunately this simple concept does 
@@ -126,7 +126,7 @@ be officially supported.
 ## Goodbye forever to Flatpak?
 ![](https://media1.tenor.com/images/b7e17ee010f0cc3955db366f931764f8/tenor.gif?itemid=10683738)
 
-Officially yes, I will no longer distribute Bottles via Flatpak. Anyone who 
+Officially yes, *I will no longer distribute Bottles via Flatpak*. Anyone who 
 feels free to republish and maintain it, with patches and updates but this will 
 not be officially supported by the project. However, it will be possible to 
 build the Flatpak from source and install a local copy, I will keep the manifest 
