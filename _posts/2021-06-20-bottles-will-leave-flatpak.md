@@ -4,7 +4,7 @@ description: "I also see that the Flathub user community (the repository where B
 published: 2021-06-20
 layout: post
 published: true
-is_translation: false
+is_translation: true
 hidden: true
 ---
 Bottles was born as an absolutely non-pretentious project in 2017, it was mostly
