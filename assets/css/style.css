@@ -314,7 +314,7 @@ html::-webkit-scrollbar-thumb {
     main>article>img,
     main>article>p>img {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     header,
@@ -394,6 +394,7 @@ html::-webkit-scrollbar-track {
 
 ::selection,
 main>article p i,
+main>article p em,
 mark {
     background: #ffffd5;
     color: #535219
@@ -441,55 +442,58 @@ span.translation {
 span.no-translation {
     border-top-color: #5d5028;
     color: #5d5028;
-    text-align: right;
+    text-align: right
 }
 
 span.translation {
     border-top-color: #28345d;
     color: #28345d;
-    text-align: left;
+    text-align: left
 }
 
 span.translation a {
     background-color: initial;
     color: initial;
     text-decoration: underline;
-    font-weight: 600;
+    font-weight: 600
 }
 
-/* My personal color-scheme for snippets */
-.language-python .k, .language-python .ow,
-.language-css .n {
-    color: #0f9814;
+.language-css .n,
+.language-python .k,
+.language-python .ow {
+    color: #0f9814
 }
 
-.language-python .s,
+.language-css .nt,
+.language-css .o,
 .language-html .s,
-.language-css .nt, .language-css .o {
-    color: #006dc3;
+.language-python .s {
+    color: #006dc3
 }
 
-.language-python .nb,
-.language-css .nb {
-    color: #FF9800;
+.language-css .nb,
+.language-python .nb {
+    color: #ff9800
 }
 
-.language-python .k, .language-python .ow, .language-python .nb,
+.language-css .nl,
 .language-html .nt,
-.language-css .nl {
-    font-weight: bold;
+.language-python .k,
+.language-python .nb,
+.language-python .ow {
+    font-weight: 700
 }
 
-.language-python .bp,.language-python .mi,
-.language-css .k {
-    color: #8c1540;
+.language-css .k,
+.language-python .bp,
+.language-python .mi {
+    color: #8c1540
 }
 
-.language-python .nf,
-.language-html .na {
-    color: #f13355;
+.language-html .na,
+.language-python .nf {
+    color: #f13355
 }
-/* /My personal color-scheme for snippets */
 
 @media (prefers-color-scheme:dark) {
     html::-webkit-scrollbar-track {
@@ -542,7 +546,7 @@ span.translation a {
     span.translation {
         background-color: #662988
     }
-    
+
     span.translation {
         border-color: #662988
     }
