@@ -1,6 +1,6 @@
 {% assign post = include.post %}
 {% assign date = post.date %}
-{% if post.published == true and not post.hidden %}
+{% if post.published == true and !post.hidden %}
 <article>
     <h3>{{ post.title }}</h3>
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ date | date: "%a, %b %e, %Y" }}</time>
