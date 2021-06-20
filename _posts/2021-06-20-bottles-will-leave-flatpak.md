@@ -1,10 +1,11 @@
 ---
 title: "This is why Bottles is about to leave Flatpak"
-description: ""
+description: "I also see that the Flathub user community (the repository where Bottles is distributed) is very demanding."
 published: 2021-06-20
 layout: post
-published: false
+published: true
 is_translation: false
+hidden: true
 ---
 Bottles was born as an absolutely non-pretentious project in 2017, it was mostly
 my personal need.
