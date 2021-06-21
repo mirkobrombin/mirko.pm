@@ -7,7 +7,7 @@ author: Massimiliano Noviello
 author_github: linuxhubit
 tags:
 
-- Go
+- go
 
 ---
 
