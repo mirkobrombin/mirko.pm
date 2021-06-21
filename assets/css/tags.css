@@ -27,6 +27,12 @@
     background-color: #fff0fc
 }
 
+.tag.ruby {
+    background-image: url(../images/tags/icon_apache.png);
+    color: #84202e;
+    background-color: #fff0f0;
+}
+
 .tag.mysql {
     background-image: url(../images/tags/icon_mysql.png);
     color: #00618b
