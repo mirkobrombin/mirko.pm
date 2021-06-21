@@ -133,4 +133,11 @@ not be officially supported by the project. It will still be possible
 build the Flatpak from source and install a local copy, I will keep the manifest
 updated to the current version.
 
+I'd like to end this post, clarifying once again that Bottles isn't just a 
+Wine prefix manager and that I want a lot from this project. I understand that 
+many see it as just a pretty face on top of a regular Wine prefix manager but 
+it's not the same for me. I have big plans in mind and I want to realize them
+all and above all in my own way, as it is my idea and my project. I want to 
+revolutionize the way Wine is used in managers and I want to do it my way.
+
 _Mirko
