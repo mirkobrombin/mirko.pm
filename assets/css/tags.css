@@ -167,6 +167,13 @@
     background-color: #e5f4fd
 }
 
+tag.crystal {
+    background-position: 7px 2px;
+    background-image: url(../images/tags/icon_crystal.png);
+    color: #000000;
+    background-color: #fbfbfb;
+}
+
 .tag.bash,
 .tag.privacy,
 .tag.ssh,
@@ -202,3 +209,4 @@
     box-shadow: none;
     padding: 0;
 }
+
