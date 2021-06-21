@@ -120,6 +120,10 @@ package. The Flathub beta repository is currently maintained by third parties
 who take care of keeping it aligned with git, however even this will no longer 
 be officially supported.
 
+Don't hate me but personally I feel relieved by abandoning Flatpak.
+I understand many of you will disagree but it is my time and my sanity 
+(which is compromised when I try to fix a bug in Flatpak).
+
 ## Goodbye forever to Flatpak?
 ![](https://media1.tenor.com/images/b7e17ee010f0cc3955db366f931764f8/tenor.gif?itemid=10683738)
 
