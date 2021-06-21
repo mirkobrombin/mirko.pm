@@ -8,31 +8,21 @@ author_github: linuxhubit
 tags:
 
 - Go
-- Web
-- Backend
 
 ---
 
 
 
 ## Introduzione
-
 Essendo Go stato concepito per sviluppare microservizi, include un network stack abbastanza completo direttamente nella standard library.
 
 Lo scopo di questa breve guida è introdurre il lettore al modulo `net/http` così che possa poi condurre i propri studi in autonomia.
 
 
-
-
-
 ## Guida passo passo
-
 Andiamo a capire come mettere in piedi questo backend passo dopo passo.
 
-
-
 ### Moduli in uso
-
 Sarà necessario importare `net/http` e `fmt` (quest'ultimo non sarà necessario ma faciliterà le cose). Possiamo farlo con
 
 ```go
@@ -42,15 +32,10 @@ import (
 )
 ```
 
-
-
 ### Creare degli handler
-
 Ora è il momento di creare delle funzioni dette handler il cui scopo è elaborare le richieste sui vari percorsi (Es: `/`, `/percorso`)
 
 Ogni funzione handler richiede due parametri, un `http.ResponseWriter` e un `*http.Request`.
-
-
 
 A questo punto, ci basta definire la funzione con
 
@@ -79,10 +64,7 @@ func mioHandler(res http.ResponseWriter, req *http.Request) {
 }
 ```
 
-
-
 ### Colleghiamo l'handler a un percorso
-
 A questo punto nella funzione main ci basta utilizzare `http.HandleFunc` per collegare l'handler appena creato al percorso che desideriamo:
 
 ```go
@@ -93,10 +75,7 @@ func main() {
 
 In questo caso abbiamo collegato la funzione `mioHandler` al percorso `/`.
 
-
-
 ### Mettiamo il server in ascolto
-
 Ora ci basta indicare al server su quale porta ascoltare. In questo caso userò la `8080`:
 
 ```go
@@ -109,10 +88,7 @@ func main() {
 
 Ora il server sarà in ascolto, contattando `127.0.0.1` (l'indirizzo locale) ci verrà restituito il codice HTML che abbiamo messo nella funzione `fmt.Fprint`.
 
-
-
 ## Riproviamoci
-
 Questa volta mettendo insieme tutto quello che abbiamo creato, ne creeremo un altro con due handler:
 
 ```go
@@ -147,5 +123,4 @@ func main() {
 
 
 ## Conclusione
-
 Non era poi così complicato, ma se hai avuto problemi non esitare a contattarci sul nostro [gruppo Telegram](https://t.me/linuxpeople).
