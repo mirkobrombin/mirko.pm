@@ -123,6 +123,12 @@
     background-color: #ddf4ff
 }
 
+.tag.go {
+    background-image: url(../images/tags/icon_go.png);
+    color: #1793d1;
+    background-color: #ddf4ff
+}
+
 .tag.natale {
     background-image: url(../images/tags/icon_christmas.png);
     color: #ea6b77;
