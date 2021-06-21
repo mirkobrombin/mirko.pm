@@ -125,8 +125,10 @@
 
 .tag.go {
     background-image: url(../images/tags/icon_go.png);
-    color: #1793d1;
-    background-color: #ddf4ff
+    background-size: 16px;
+    background-position: 10px 10px;
+    color: #13bbe6;
+    background-color: #ddf9ff;
 }
 
 .tag.natale {
