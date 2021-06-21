@@ -5,10 +5,8 @@ layout: post
 author: Niccolò Venerandi
 author_github: veggero 
 tags: 
-- plasma 
+- kde 
 ---
-
-
 
 Il metodo più semplice per fare in modo che Plasma abbia un aspetto stupendo e adatto ai tuoi gusti è - sicuramente - lasciare il tema di default, Breeze, e ammirarlo in tutta la sua bellezza.
 
@@ -16,10 +14,7 @@ Nonostante questo, ci sono utenti che apprezzano maggiormente temi terzi [tra le
 
 Ma nel caso tu fossi nella categoria peggiore - gli utenti che vogliono modificare il proprio tema, o crearne uno proprio - ecco una breve guida che dovrebbe aiutarti a realizzare un tema che incontri perfettamente i tuoi gusti estetici.
 
-
-
 ## Cos'è un tema plasma
-
 Un tema plasma personalizza l'aspetto di plasma esclusivamente (il pannello, gli applet, krunner). Le applicazioni seguono un tema diverso e non sono coperte da questa guida. 
 
 I temi plasma sono fatti di SVG. Se non sapeste cosa sono gli svg, vi rimando a [questa breve guida](https://www.w3.org/TR/SVG2/); in particolare, è supportato un subset di SVG chiamato [SVG tiny](https://www.w3.org/TR/SVGTiny12/intro.html).
@@ -31,7 +26,6 @@ Infine, l'habitat naturale di questi temi è `/usr/share/plasma/desktoptheme/` p
 Andiamo ora a vedere brevemente questi aspetti.
 
 ## I Metadati 
-
 Il file metadata.desktop risiete nella parent directory del tema e contiene innanzitutto queste informazioni:
 
 ```
@@ -105,7 +99,6 @@ Va anche supportato a livello di SVG, come vedremo dopo.
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
 
 ## File Directory
-
 Le cartelle che un tema può usare sono: `widgets/`, `weather/`, `icons/`, `dialogs/`, `solid/`, `translucent/`, `opaque/`.
 
 Widgets, Weather, Icons, Dialogs sono le cartelle che contengono gli effettivi SVG.
@@ -117,7 +110,6 @@ Translucent contiene una versione del tema ma da utilizzare quando il contrast e
 Opaque contiene una versione opaca e semplificata da usare quando il compositing è disattivo.
 
 ## I file SVG
-
 Attivate nel vostro editor SVG il pannello per vedere gli id degli elementi.
 
 Intanto, nei vari SVG potrebbero esserci degli hint. Useranno con l'id `hint-qualcosa`. 
@@ -133,16 +125,10 @@ Principalmente tutti gli SVG sono composti da questi elementi. Utilizzate sempre
 Vi ho anche parlato di supportare il coloscheme. Per far ciò basti utilizzare `class="ColorScheme-Background" fill="currentColor"` nell'elemento SVG desiderato; ovviamente la classe può essere diversa da "background" (ci sono vari colori disponibili, basti editare un file SVG di breeze con Kate per scoprirli) come anche `currentColor` può essere usato sia in fill che nel colore dell'outline.
 
 ## Iniziamo!
-
 Ok, no, non vi dirò tutti i dettagli di tutti gli SVG. Ci vorrebbero ore.
 
 Fortunatamente, ho già speso varie ore a descrivere molti SVG. Potete vedere [qui una playlist](https://www.youtube.com/watch?v=XrNWYt_vciA&list=PLX3_anRd8Mp7ibLDlSEJHNzSBaTslFp-x) di video che descrivono come editare i componenti più importanti di un tema: pannello, applet, highlights, bottoni e così via.
 
 Trovo che sia molto più utile vedere come i file SVG vengono effettivamente creati piuttosto che cercare di spiegarli con del semplice testo: non avrebbe lo stesso effetto.
 
-
-
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
-
-
-
