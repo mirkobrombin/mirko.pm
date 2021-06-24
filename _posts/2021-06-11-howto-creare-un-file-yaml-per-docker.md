@@ -1,5 +1,5 @@
 ---
-title: "#howto - creare un file yaml per docker"
+title: "#howto - Creare un file yaml per docker"
 published: 2021-06-11
 layout: post
 author: Floppy Loppy

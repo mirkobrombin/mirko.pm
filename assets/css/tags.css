@@ -27,6 +27,12 @@
     background-color: #fff0fc
 }
 
+.tag.ruby {
+    background-image: url(../images/tags/icon_ruby.png);
+    color: #84202e;
+    background-color: #fff0f0;
+}
+
 .tag.mysql {
     background-image: url(../images/tags/icon_mysql.png);
     color: #00618b
@@ -123,6 +129,14 @@
     background-color: #ddf4ff
 }
 
+.tag.go {
+    background-image: url(../images/tags/icon_go.png);
+    background-size: 16px;
+    background-position: 10px 10px;
+    color: #13bbe6;
+    background-color: #ddf9ff;
+}
+
 .tag.natale {
     background-image: url(../images/tags/icon_christmas.png);
     color: #ea6b77;
@@ -151,6 +165,13 @@
     background-image: url(../images/tags/icon_docker.png);
     color: #609beb;
     background-color: #e5f4fd
+}
+
+tag.crystal {
+    background-position: 7px 2px;
+    background-image: url(../images/tags/icon_crystal.png);
+    color: #000000;
+    background-color: #fbfbfb;
 }
 
 .tag.bash,
@@ -188,3 +209,4 @@
     box-shadow: none;
     padding: 0;
 }
+
