@@ -29,7 +29,7 @@ Tutto parte dal repository github https://github.com/linuxhubit/linuxhub.it. Tra
 
 - `_draft` : in questa cartella risiedono gli articoli in bozza nonché articoli demo lasciati come esempio per le nostre categorie principali
 - `_posts` : in questa cartella si trovano gli articoli pubblicati. 
-- `uploads` : qui risiedono i file allegati alle varie pubblicazioni, come foto o pdf. Si precisare che per maggiore leggibilità nonché leggerezza del repository è nostra politica *limitare quanto più possibile gli allegati ad un articolo*
+- `uploads` : qui risiedono i file allegati alle varie pubblicazioni, come foto o pdf. Ci teniamo a precisare che per maggiore leggibilità nonché leggerezza del repository è nostra politica *limitare quanto più possibile gli allegati ad un articolo*
 - `_trash` : qui vengono spostati vecchi articoli non più attuali che hanno subito una riedizione completa
 
 
