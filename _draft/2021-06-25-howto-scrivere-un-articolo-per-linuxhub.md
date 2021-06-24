@@ -36,7 +36,7 @@ Tutto parte dal repository github https://github.com/linuxhubit/linuxhub.it. Tra
 
 ### Schedulazione
 
-La schedulazione degli articoli di linuxhub è di *cadenza settimanale* ed è soggetta a *variazioni mensili* nonché pubblicazioni **occasionali extra**.
+La schedulazione degli articoli di linux/hub è di *cadenza settimanale* ed è soggetta a *variazioni mensili* nonché pubblicazioni **occasionali extra**.
 
 Il numero di articoli settimanali viene deciso in base al numero di articolisti disponibili, negli anni è variato da 3 al più attuale 1 articolo a settimana. 
 
@@ -44,18 +44,18 @@ Il numero di articoli settimanali viene deciso in base al numero di articolisti 
 
 ### Processo di scrittura, revisione pre-pubblicazione e post-pubblicazione
 
-Lo staff di Linuxhub è diviso in editori e revisori, come intuibile dal nome, i primi scrivono gli articoli mentre i secondi lo correggono. I ruoli non sono né fissi né rigidi. In base alle necessità ogni editore può diventare redattore e viceversa. 
+Lo staff di linux/hub è diviso in autori e revisori, come intuibile dal nome, i primi scrivono gli articoli mentre i secondi ne fanno la revisione. I ruoli non sono né fissi né rigidi, in base alle necessità ogni autore può diventare revisore e viceversa. 
 
-Ciò che invece è importante è che ogni mese venga rispettata dagli editori la cadenza fissata (o dare il giusto preavviso affinché si possa riassegnare). 
+Ciò che invece è importante è che ogni mese venga rispettata dagli autori la cadenza fissata (o dare il giusto preavviso affinché si possa riassegnare). 
 
-Ogni articolo deve essere scritto un giorno prima della pubblicazione, per dare il tempo ai revisori di poter correggere eventuali problemi al suo interno. 
+Ogni articolo deve essere disponibile almeno un giorno prima della pubblicazione, per dare il tempo ai revisori di poter correggere eventuali problemi e mancanze. 
 Dopo la revisione l'articolo viene pubblicato e, se necessario, revisionato ulteriormente.
 
 
 
 ## Il formato di pubblicazione 
 
-Tutti gli articoli vanno scritti in *formato testuale con sintassi markdown*, rinominati secondo il formato `aaaa-mm-gg-howto-nome-articolo.md` dove :
+Tutti gli articoli vanno scritti in *formato testuale con sintassi Markdown*, rinominati secondo il formato `aaaa-mm-gg-howto-nome-articolo.md` dove :
 
 - `aaaa` è l'anno di pubblicazione
 - `mm` è il mese di pubblicazione 
@@ -88,7 +88,7 @@ tags:
 
 ## Sintassi Markdown
 
-Linuxhub utilizza la sintassi Markdown standard, riportata di seguito in esempio di utilizzo per chi ne fosse nuovo: 
+linux/hub utilizza la sintassi Markdown standard, riportata di seguito in un esempio pratico: 
 
 ```markdown
 ## TITOLO 2
