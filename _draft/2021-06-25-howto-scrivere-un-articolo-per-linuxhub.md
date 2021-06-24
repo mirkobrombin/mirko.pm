@@ -134,7 +134,9 @@ Tabella:
 
 
 
-Nei nostri articoli non utilizziamo mai il **titolo 1**, ma si parte sempre *da Titolo 2* ( e comunque dopo *l'header* ) e massimo fino a **Titolo 4**
+Nei nostri articoli non utilizziamo mai il **titolo 1**, ma si parte sempre *da Titolo 2* ( e comunque dopo *l'header* ) e massimo fino a **Titolo 4**.  
+
+La sezione che intercorre tra **l'header** e la prima occorrenza del **Titolo 2** è una presentazione del contenuto dell'articolo
 
 ## Linee guida per la pubblicazione 
 
