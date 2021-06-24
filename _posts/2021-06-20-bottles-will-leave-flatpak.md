@@ -5,6 +5,8 @@ published: 2021-06-20
 layout: post
 published: true
 is_translation: false
+translation: false
+is_english: true
 ---
 Bottles was born as an absolutely non-pretentious project in 2017, it was mostly
 my personal need.

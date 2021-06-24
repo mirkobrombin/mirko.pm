@@ -5,7 +5,7 @@ layout: default
     <h2>{{ page.title }}</h2>
     <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
     {% if page.is_translation == false %}
-        {% if page.translation == false %}
+        {% if page.translation == false and is_english == nil  %}
             <span class="no-translation">I'm sorry but this post was written in Italian, my native language. I could translate it in the future.</span>
         {% else %}
             <span class="translation">
