@@ -80,7 +80,8 @@ author_github: Nome github
 tags: 
 - lista 
 - dei 
-- tags 
+- tags
+- minuscoli
 ---
 ```
 
@@ -143,9 +144,9 @@ La sezione che intercorre tra **l'header** e la prima occorrenza del **Titolo 2*
 
 Di seguito vengono esposte le linee guida per scrivere correttamente un articolo per linux/hub:
 
--  mai citare `sudo` nelle guide (l'utente deve capire solo quando utilizzare i privilegi di amministratore )
+- mai citare `sudo` nelle guide (l'utente deve capire solo quando utilizzare i privilegi di amministratore )
 
-- Le guide devono trattare argomenti testati da chi li scrive 
+- le guide devono trattare argomenti testati da chi li scrive 
 
 - per chi scrive guide di programmazione (categoria `howtodev`), va considerata l'idea di mettere **prerequisiti** e **obiettivi** della guida come capitoli a se stanti
 
