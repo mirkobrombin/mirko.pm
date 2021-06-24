@@ -11,14 +11,14 @@ tags:
 
 
 
-Quest'anno la redazione e l'organizzazione di Linuxhub hanno attraverso profondi cambiamenti. Il nostro staff si impegna ogni settimana a produrre contenuti di qualità, non banali ma neanche complessi, che possano portare utenti semplici a conoscere meglio la propria distribuzione e utenti più esperti a potersi costruire da soli software e script per la gestione di progetti e del sistema. 
+Quest'anno la redazione e l'organizzazione di Linuxhub hanno attraversato profondi cambiamenti. Il nostro staff si impegna ogni settimana a produrre contenuti di qualità, non banali ma neanche complessi, che possano portare utenti semplici a conoscere meglio la propria distribuzione e utenti più esperti a potersi costruire da soli software e script per la gestione di progetti e del sistema. 
 I nostri autori non scrivono spinti dal lucro, il nostro sito non presenta pubblicità e questo ci consente di pubblicare articoli basati su quello che pensiamo possa servirvi e aiutarvi nella quotidianità e non per uno o due click in più. 
 
 Abbiamo voluto, nei nostri ultimi cambiamenti, pensare un modo per includere il lettore **attivamente** alla scrittura dei nostri articoli, ecco quindi il nostro primo *meta-articolo* che vi illustrerà come scrivere ( o partecipare alla scrittura) di un articolo per Linuxhub.
 
 
 
-> Ricordiamo a chiunque eventualmente voglia candidarsi per far parte ufficialmente dello staff che i nostri autori non ricevono alcun compenso essendo linuxhub un sito privo di entroiti. 
+> Ricordiamo a chiunque eventualmente voglia candidarsi per far parte ufficialmente dello staff che i nostri autori non ricevono alcun compenso essendo linuxhub un sito privo di introiti. 
 > Il nostro scopo è quello di portare a voi lettori le nostre esperienze, i nostri esperimenti e le nostre conoscenze. Condividiamo la cultura, non la vendiamo al miglior offerente.
 
 
