@@ -59,7 +59,7 @@ Tutti gli articoli vanno scritti in *formato testuale con sintassi markdown*, ri
 
 - `aaaa` è l'anno di pubblicazione
 - `mm` è il mese di pubblicazione 
-- M è il giorno di pubblicazione 
+- `dd` è il giorno di pubblicazione 
 - howto è il format. Sono tre i format previsti attualmente da Linuxhub: 
   - `howto` - guide sul mondo linux
   - `howtodev` - guide di programmazione 
