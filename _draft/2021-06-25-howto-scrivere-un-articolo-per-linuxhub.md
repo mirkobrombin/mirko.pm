@@ -183,12 +183,12 @@ Le guide devono trattare argomenti legali, di interesse per l'utente e non devon
 
 Le guide sull'installazione di un determinato software per non essere considerate banali devono necessariamente contenere informazioni su cosa e a chi serve quel software e come utilizzarlo 
 
-**È necessario che chiunque si appresta a scrivere un articolo per Linuxhub eviti il freebooting:** *non siete obbligati a scrivere nulla, meglio non scrivere che rubare le idee altrui*.
+**È necessario che chiunque si appresti a scrivere un articolo per linux/hub eviti il freebooting:** *non siete obbligati a scrivere nulla, meglio non scrivere che rubare le idee altrui*.
 
 ## Come richiedere una pubblicazione o modifica
 
 
-Chiunque può scrivere un articolo per linuxhub, modificarne uno esistente o proporne una nuova versione. 
+Chiunque può scrivere un articolo per linux/hub, modificarne uno esistente o proporne una nuova versione. 
 
 ### creare un nuovo articolo 
 I membri dello staff possono creare un nuovo articolo creando un file nella cartella  **_draft** e chiedendone una revisione. Il file verrà poi pubblicato spostandolo nella cartella **_post**
