@@ -138,9 +138,10 @@ Nei nostri articoli non utilizziamo mai il **titolo 1**, ma si parte sempre *da 
 
 La sezione che intercorre tra **l'header** e la prima occorrenza del **Titolo 2** è una presentazione del contenuto dell'articolo
 
+
 ## Linee guida per la pubblicazione 
 
-Le nostre regole di buona scrittura per un articolo attualmente sono :
+Di seguito vengono esposte le linee guida per scrivere correttamente un articolo per linux/hub:
 
 -  mai citare `sudo` nelle guide (l'utente deve capire solo quando utilizzare i privilegi di amministratore )
 
