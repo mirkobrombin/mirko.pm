@@ -1,5 +1,5 @@
 ---
-title: '#howto - Scrivere un articolo per Linuxhub' 
+title: '#howto - Scrivere un articolo per linux/hub' 
 published: 2021-06-25
 layout: post 
 author: Davide Galati (in arte PsykeDady)
