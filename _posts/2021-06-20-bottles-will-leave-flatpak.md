@@ -109,6 +109,8 @@ explain it again. I will just say that the intention to remove Winetricks was
 announced a little over a year ago, it was also announced in Bottles itself 
 with an alert. Winetricks is no longer present in Bottles since 2.1.
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I hope it is clear to everyone that Bottles is not Wine.<br>Bottles is a simple, intuitive and feature-rich (e.g. bottle versioning, DXVK, dependencies management and more) wine prefix manager.<br>With v4 we will introduce our installers to which we will give official support.<a href="https://twitter.com/hashtag/linux?src=hash&amp;ref_src=twsrc%5Etfw">#linux</a></p>&mdash; Bottles (@usebottles) <a href="https://twitter.com/usebottles/status/1396391067247915011?ref_src=twsrc%5Etfw">May 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 **Bottles is not yet another Wine prefix manager**, there are already many 
 similar (and perhaps better) tools that share in how they work and the tools 
 they offer (including Winetricks) and my intention is not to create a program 
@@ -129,11 +131,13 @@ I understand many of you will disagree but it is my time and my sanity
 ## Goodbye forever to Flatpak?
 ![](https://media1.tenor.com/images/b7e17ee010f0cc3955db366f931764f8/tenor.gif?itemid=10683738)
 
-Officially yes, *I will no longer distribute Bottles via Flatpak*. Anyone
-feel free to republish and keep it, with patches and updates, but this one will
-not be officially supported by the project. It will still be possible
+Officially yes, *I will no longer officially distribute Bottles via Flatpak*. 
+Anyone feel free to republish and keep it, with patches and updates, but this 
+one will not be officially supported by the project. It will still be possible
 build the Flatpak from source and install a local copy, I will keep the manifest
 updated to the current version.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">To be clear: we have not abandoned <a href="https://twitter.com/hashtag/Flathub?src=hash&amp;ref_src=twsrc%5Etfw">#Flathub</a> forever, we are simply looking for someone to take responsibility for it, allowing us to continue developing Bottles without depending on the problems of a single distribution format. 🥺</p>&mdash; Bottles (@usebottles) <a href="https://twitter.com/usebottles/status/1408776375155179522?ref_src=twsrc%5Etfw">June 26, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I'd like to end this post, clarifying once again that Bottles isn't just a 
 Wine prefix manager and that I want a lot from this project. I understand that 
