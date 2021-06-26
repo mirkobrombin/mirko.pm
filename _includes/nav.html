@@ -1,5 +1,12 @@
 <header>
-    <h1 title="Mirko B.{{ page.url }}">m<b>b</b><span>{{ page.url | truncate: 11 }}</span></h1>
+    <h1 title="Mirko B.{{ page.url }}">
+        {% if page.url == "/" %}
+            Mirko <b>B.</b>
+        {% else %}
+            M<b>B</b>
+            <span>{{ page.url | truncate: 11 }}</span>
+        {% endif %}
+    </h1>
     {% for item in site.navigation %}
     <a href="{{ item.link }}" class="{% if page.url == item.link %}s{% endif %}">{{ item.name }}</a>
     {% endfor %}
