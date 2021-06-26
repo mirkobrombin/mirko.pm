@@ -63,7 +63,7 @@ header a.s {
 main>article li,
 main>article p {
     font-size: 1.125em;
-    line-height: 30px
+    line-height: 36px;
 }
 
 main {
@@ -116,7 +116,7 @@ main>h2+span {
 
 main a,
 main>ol li:hover a {
-    padding: 1px 7px
+    padding: 1px 7px;
 }
 
 main p,
