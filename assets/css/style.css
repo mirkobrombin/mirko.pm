@@ -4,8 +4,8 @@ body {
     opacity: 1 !important;
     font-family: Martel, serif;
     padding: 10px;
-    font-size: 1em;
-    color: #1c1714
+    font-size: 1.1em;
+    color: #1c1714;
 }
 
 a {
@@ -121,7 +121,7 @@ main>ol li:hover a {
 
 main p,
 main>ul li {
-    line-height: 26px
+    line-height: 30px;
 }
 
 header {
