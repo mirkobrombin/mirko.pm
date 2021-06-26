@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@400;600&display=swap);
 
 body {
     visibility: visible !important;
@@ -7,7 +7,7 @@ body {
     font-family: Martel, serif;
     padding: 10px;
     font-size: 1.1em;
-    color: #1c1714;
+    color: #1c1714
 }
 
 a {
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif
 }
 
 blockquote,
@@ -60,14 +60,14 @@ header>h1 {
     min-width: 276px;
     text-align: left;
     font-size: 2em;
-    text-align: center;
+    text-align: center
 }
 
 header a {
     display: inline-table;
     padding: 0 10px;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif
 }
 
 header a.s {
@@ -77,7 +77,7 @@ header a.s {
 main>article li,
 main>article p {
     font-size: 1.125em;
-    line-height: 36px;
+    line-height: 36px
 }
 
 main {
@@ -130,21 +130,20 @@ main>h2+span {
 
 main a,
 main>ol li:hover a {
-    padding: 1px 7px;
+    padding: 1px 7px
 }
 
 main p,
 main>ul li {
-    line-height: 30px;
+    line-height: 30px
 }
 
 header {
     align-items: center;
     border-bottom: 1px solid;
-    /* display:flex; */
     justify-content: center;
     padding: 0 0 20px;
-    text-align: center;
+    text-align: center
 }
 
 main>ol {
@@ -152,9 +151,9 @@ main>ol {
 }
 
 main>ol li {
-    margin: 0 0 3px;
+    margin: 0 0 1rem;
     padding: 10px 16px;
-    border-left-color: #191919
+    border-left-color: #191919;
 }
 
 main>ol li a {
@@ -270,13 +269,13 @@ aside>ul>li>a:hover {
 }
 
 header>h1>b {
-    color: #795548;
+    color: #795548
 }
 
 header a:hover,
 main a:hover,
 main>ol li a:hover {
-    background-color: #795548;
+    background-color: #795548
 }
 
 @font-face {
@@ -404,7 +403,7 @@ main>h2+span {
 .d span,
 body,
 html::-webkit-scrollbar-track {
-    background-color: #fbfbfe;
+    background-color: #fbfbfe
 }
 
 ::selection,
