@@ -255,13 +255,13 @@ aside>ul>li>a:hover {
 }
 
 header>h1>b {
-    color: #d1bb94
+    color: #795548;
 }
 
 header a:hover,
 main a:hover,
 main>ol li a:hover {
-    background-color: #d1bb94
+    background-color: #795548;
 }
 
 @font-face {
@@ -393,8 +393,8 @@ html::-webkit-scrollbar-track {
 }
 
 ::selection,
-main>article p i,
 main>article p em,
+main>article p i,
 mark {
     background: #ffffd5;
     color: #535219
@@ -513,8 +513,8 @@ span.translation a {
     }
 
     ::selection,
-    main>article p i,
     main>article p em,
+    main>article p i,
     mark {
         background-color: #2e2d37;
         color: #9ecbff
