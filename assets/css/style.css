@@ -11,7 +11,13 @@ body {
 }
 
 a {
-    text-decoration: none
+    color: #795548;
+    text-decoration: none;
+}
+
+a.nb {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 h1 {
@@ -128,8 +134,8 @@ main>h2+span {
     padding: 0 0 10px
 }
 
-main a,
-main>ol li:hover a {
+main a:not(.nb),
+main>ol li:hover a:not(.nb) {
     padding: 1px 7px
 }
 
@@ -151,9 +157,9 @@ main>ol {
 }
 
 main>ol li {
-    margin: 0 0 1rem;
+    margin: 0 0 3px;
     padding: 10px 16px;
-    border-left-color: #191919;
+    border-left-color: #191919
 }
 
 main>ol li a {
@@ -272,9 +278,7 @@ header>h1>b {
     color: #795548
 }
 
-header a:hover,
-main a:hover,
-main>ol li a:hover {
+header a:not(.nb):hover, main a:not(.nb):hover, main>ol li a:not(.nb):hover {
     background-color: #795548
 }
 
@@ -385,12 +389,12 @@ header a {
 
 header a.s,
 header a:hover,
-main a {
+main a:not(.nb) {
     color: #fff
 }
 
 header a.s,
-main a {
+main a:not(.nb) {
     background-color: #4d4942
 }
 
@@ -417,9 +421,9 @@ mark {
 header a.s,
 header a:hover,
 html::-webkit-scrollbar-thumb:hover,
-main a,
-main>ol li a,
-main>ol li:hover a {
+main a:not(.nb),
+main>ol li a:not(.nb),
+main>ol li:hover a:not(.nb) {
     background-color: #191919
 }
 
