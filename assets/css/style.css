@@ -11,13 +11,13 @@ body {
 }
 
 a {
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
 }
 
 a {
     color: #795548;
     text-decoration: none;
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent
 }
 
 a.nb {
@@ -78,7 +78,7 @@ header a {
     display: inline-table;
     padding: 0 10px;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif
 }
 
 header a.s {
@@ -334,7 +334,7 @@ html::-webkit-scrollbar-thumb {
     width: 6px
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width:745px) {
 
     main>article>img,
     main>article>p>img {
@@ -520,7 +520,7 @@ span.translation a {
     color: #f13355
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme:dark) {
     html::-webkit-scrollbar-track {
         border: 7px solid #1e1e1f
     }
@@ -564,7 +564,7 @@ span.translation a {
 
     header>h1>b {
         color: #c050ff;
-        text-shadow: 0 0 20px #c050ff;
+        text-shadow: 0 0 20px #c050ff
     }
 
     header a:not(.nb):hover,
@@ -572,7 +572,7 @@ span.translation a {
     main>ol li a:not(.nb):hover,
     span.translation {
         background-color: #c050ff;
-        box-shadow: 0 0 90px 0 #c050ff;
+        box-shadow: 0 0 90px 0 #c050ff
     }
 
     span.translation {
@@ -583,11 +583,13 @@ span.translation a {
     body,
     footer a,
     header a,
-    header h1 span {
+    header h1 span,
+    a.nb {
         color: #b4aecc
     }
 
-    article, header {
+    article,
+    header {
         color: #bbb7cc
     }
 
