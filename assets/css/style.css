@@ -449,6 +449,10 @@ header h1 span {
     color: #ada8a191
 }
 
+div.twitter-tweet {
+    margin: 10px auto;
+}
+
 aside,
 code {
     background-color: #4d494212;
