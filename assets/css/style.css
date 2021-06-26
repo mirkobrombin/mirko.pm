@@ -514,6 +514,7 @@ span.translation a {
 
     ::selection,
     main>article p i,
+    main>article p em,
     mark {
         background-color: #2e2d37;
         color: #9ecbff
