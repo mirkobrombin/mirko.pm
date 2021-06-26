@@ -12,12 +12,12 @@ body {
 
 a {
     color: #795548;
-    text-decoration: none;
+    text-decoration: none
 }
 
 a.nb {
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 h1 {
@@ -278,7 +278,9 @@ header>h1>b {
     color: #795548
 }
 
-header a:not(.nb):hover, main a:not(.nb):hover, main>ol li a:not(.nb):hover {
+header a:not(.nb):hover,
+main a:not(.nb):hover,
+main>ol li a:not(.nb):hover {
     background-color: #795548
 }
 
@@ -559,9 +561,9 @@ span.translation a {
         color: #c050ff
     }
 
-    header a:hover,
-    main a:hover,
-    main>ol li a:hover,
+    header a:not(.nb):hover,
+    main a:not(.nb):hover,
+    main>ol li a:not(.nb):hover,
     span.translation {
         background-color: #662988
     }
@@ -603,8 +605,8 @@ span.translation a {
 
     header a.s,
     header::after,
-    main a,
-    main>ol li a {
+    main a:not(.nb),
+    main>ol li a:not(.nb) {
         background-color: #000
     }
 
