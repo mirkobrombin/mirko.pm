@@ -8,8 +8,6 @@ author_github: linuxhubit
 tags:
 
 - shredding
-- shred
-- rm
 - bash
 
 ---
