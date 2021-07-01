@@ -14,7 +14,7 @@ tags:
 
 Molto famosa e ormai largamente usata è la powerline nei nostri terminali, questo strano tema che, attraverso caratteri UNICODE, rende colorato e informativo ogni riga del nostro output su terminale. 
 
-Questa funzione si può facilmente ottenere attraverso diversi procedimenti e comunque facilmente
+Questa funzione si può facilmente ottenere attraverso diversi procedimenti e comunque facilmente.
 
 
 
@@ -49,7 +49,7 @@ Ricordiamoci di selezionare il font scaricato nelle preferenze del nostro emulat
 
 ### python-pip 
 
-Un installazione di python a mio dire, non è mai completa se non avete anche installato **[pip](https://github.com/pypa/pip)**, ovvero **Python Installer Package**
+Un'installazione di python a mio dire, non è mai completa se non avete anche installato **[pip](https://github.com/pypa/pip)**, ovvero **Python Installer Package**
 
 
 
@@ -121,7 +121,7 @@ pip install powerline-shell
 
 ### bash 
 
-Modifichiamo il file `$HOME/.bashrc` aggiungendo queste righe
+Modifichiamo il file `$HOME/.bashrc` aggiungendo queste righe:
 
 
 
@@ -139,9 +139,9 @@ fi
 
 ### zsh 
 
-non consiglio di installare powerline-shell su zsh, esistendo alternative di gran lunga migliori come **powerlevel**. 
+Non consiglio di installare powerline-shell su zsh, esistendo alternative di gran lunga migliori come **powerlevel**. 
 
-In ogni caso per installarlo aggiungete al file `$HOME/.zshrc` : 
+In ogni caso per installarlo aggiungete al file `$HOME/.zshrc`: 
 
 ```bash 
 function powerline_precmd() {
@@ -193,7 +193,7 @@ touch $_/config.json
 
 
 
-fondamentalmente è un file json in cui nella sezione segments vanno inseriti i vari moduli che volete mostrare e il tema. 
+Fondamentalmente è un file json in cui nella sezione segments vanno inseriti i vari moduli che volete mostrare e il tema. 
 Trovate così i vostri moduli: 
 
 ```bash
@@ -216,7 +216,7 @@ ls /usr/lib/python3.?/site-packages/powerline_shell/themes/
 
 ## powerlevel10k
 
-L'alternativa migliore è sicuramente powerlevel10k, con molte funzioni nonché un menu di configurazione dedicato. Purtroppo non disponibile su tutti gli interpreti, ma solo per zsh e ( se pur con un altro nome) fish
+L'alternativa migliore è sicuramente powerlevel10k, con molte funzioni nonché un menu di configurazione dedicato. Purtroppo non è disponibile su tutti gli interpreti, ma solo per zsh e (se pur con un altro nome) fish
 
 
 
@@ -226,7 +226,7 @@ Per installare su zsh abbiamo bisogno innanzitutto di oh-my-zsh. In realtà non 
 
 
 
-Scaricate il tema così : 
+Scaricate il tema così: 
 
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -249,7 +249,7 @@ ZSH_THEME="powerlevel10k/powerlevel9k"
 ```
 
 Ma non avrete la funzione di personalizzazione. 
-riavviate zsh per completare l'installazione.
+Riavviate zsh per completare l'installazione.
 
 
 
@@ -263,7 +263,7 @@ Su fish potrete installare invece **TIDE**, che ha le stesse funzioni.
 
 **Fisher** è un gestore di plugin di fish. 
 
-Installatelo se non lo avete: 
+Installatelo, se non lo avete: 
 
 ```bash
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
@@ -290,7 +290,7 @@ exec fish --init-command "set -g fish_greeting; emit _tide_init_install"
 
 ####  configurazione
 
-per configurarlo, utilizzate il comando 
+Per configurarlo, utilizzate il comando 
 
 ```bash
 tide configure
