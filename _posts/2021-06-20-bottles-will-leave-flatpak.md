@@ -8,6 +8,10 @@ is_translation: false
 translation: false
 is_english: true
 ---
+> Wait, this article is obsolete, there have been some changes of decision and 
+> I invite you to read this 
+> [comment](https://github.com/flathub/com.usebottles.bottles/issues/90#issuecomment-872482952).
+
 Bottles was born as an absolutely non-pretentious project in 2017, it was mostly
 my personal need.
 In 2020 I decided to give new light to the project, aiming to offer a new concept
