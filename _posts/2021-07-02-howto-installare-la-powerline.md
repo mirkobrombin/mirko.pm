@@ -1,5 +1,5 @@
 ---
-title: '#howto - Usare la powerline' 
+title: '#howto - Installare la powerline' 
 published: 2021-07-02 
 layout: post 
 author: Davide Galati (in arte PsykeDady)
