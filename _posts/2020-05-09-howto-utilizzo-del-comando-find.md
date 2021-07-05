@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando find'
-published: 2020-05-09
+date: 2020-05-09
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

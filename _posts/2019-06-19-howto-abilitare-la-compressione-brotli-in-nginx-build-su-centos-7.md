@@ -1,7 +1,7 @@
 ---
 title: '#howto - Abilitare la compressione Brotli in Nginx (build) su Centos 7'
 description: "In questa guida vediamo come installare e abilitare la compressione Brotli, su installazioni compilate di Nginx per Centos 7."
-published: 2019-06-19
+date: 2019-06-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Linux: USB, siamo davvero tutti a rischio?'
-published: 2017-11-16
+date: 2017-11-16
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

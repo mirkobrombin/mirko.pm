@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare KDE Plasma su Linux Mint 19'
-published: 2018-10-24
+date: 2018-10-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

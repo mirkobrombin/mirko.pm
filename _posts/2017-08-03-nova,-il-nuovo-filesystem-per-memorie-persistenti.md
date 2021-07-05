@@ -1,6 +1,6 @@
 ---
 title: 'Nova, il nuovo filesystem per memorie persistenti'
-published: 2017-08-03
+date: 2017-08-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

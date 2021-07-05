@@ -1,6 +1,6 @@
 ---
 title: 'ReactOS, maggior supporto a file system e altri miglioramenti'
-published: 2017-12-09
+date: 2017-12-09
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

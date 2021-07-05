@@ -1,6 +1,6 @@
 ---
 title: 'SalentOS - Intervista a Gabriele Martina, fondatore e team leader del progetto.'
-published: 2017-12-14
+date: 2017-12-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

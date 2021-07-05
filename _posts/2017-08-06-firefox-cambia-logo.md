@@ -1,6 +1,6 @@
 ---
 title: 'Firefox cambia logo?'
-published: 2017-08-06
+date: 2017-08-06
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

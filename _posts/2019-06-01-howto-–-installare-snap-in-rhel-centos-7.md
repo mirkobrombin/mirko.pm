@@ -1,7 +1,7 @@
 ---
 title: '#howto – Installare snap in RHEL/Centos 7'
 description: "Sono molti i vantaggi dei pacchetti snap, in primis la loro esecuzione sicura in una sandbox e le dipendenze pre-incluse nel pacchetto."
-published: 2019-06-01
+date: 2019-06-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

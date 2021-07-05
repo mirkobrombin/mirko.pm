@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare Open Web Analytics con Nginx e SSL su Centos 7'
 description: "OWA (Open Web Analytics) è una piattaforma di analitca performante e completa, oltre che Open source."
-published: 2019-06-24
+date: 2019-06-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

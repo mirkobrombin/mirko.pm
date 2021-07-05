@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di GitHub CLI'
-published: 2020-09-25
+date: 2020-09-25
 layout: post
 author: WhiXard
 author_github: Bildcraft1

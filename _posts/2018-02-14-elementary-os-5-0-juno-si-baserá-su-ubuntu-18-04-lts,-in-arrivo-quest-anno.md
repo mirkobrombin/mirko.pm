@@ -1,6 +1,6 @@
 ---
 title: "elementary OS 5.0 Juno si baserá su Ubuntu 18.04 LTS, in arrivo quest'anno"
-published: 2018-02-14
+date: 2018-02-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

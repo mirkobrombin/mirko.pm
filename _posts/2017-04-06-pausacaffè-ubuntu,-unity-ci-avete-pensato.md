@@ -1,7 +1,7 @@
 ---
 title: '#pausacaffè - Ubuntu, Unity: ci avete pensato?'
 description: "Non intendo se ci abbia pensato Mark Shuttleworth: lui ha di certo giá fatto i conti con Unity."
-published: 2017-04-06
+date: 2017-04-06
 layout: post
 author: Giuliano Z.
 author_github: linuxhubit

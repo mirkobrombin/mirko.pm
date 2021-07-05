@@ -1,6 +1,6 @@
 ---
 title: '#pausacaffè - Gentoo, perchè sceglierlo?'
-published: 2017-07-15
+date: 2017-07-15
 layout: post
 author: Leonardo O.
 author_github: linuxhubit

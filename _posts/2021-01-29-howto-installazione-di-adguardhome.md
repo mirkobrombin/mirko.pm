@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di AdGuardHome'
-published: 2021-01-29
+date: 2021-01-29
 layout: post
 author: WhiXard
 author_github: Bildcraft1

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Ottenere il sorgente di un pacchetto via apt su Ubuntu e derivate'
-published: 2020-08-03
+date: 2020-08-03
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

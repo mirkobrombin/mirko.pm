@@ -1,6 +1,6 @@
 ---
 title: '#howto -  installazione ed utilizzo di Zeal su Linux'
-published: 2020-09-23
+date: 2020-09-23
 layout: post
 author: Andrea Guzzon
 author_github: beard33

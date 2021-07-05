@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare DBeaver via PPA su Ubuntu e derivate'
-published: 2017-12-13
+date: 2017-12-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Sublime Text sulle principali distribuzioni Linux'
-published: 2021-03-12
+date: 2021-03-12
 layout: post
 author: WhiXard
 author_github: Bildcraft1

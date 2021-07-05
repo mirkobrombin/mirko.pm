@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di neofetch'
 description: "neofetch è un interessante e leggero strumento utilizzabile da terminale che, su ben 150 sistemi operativi diversi.."
-published: 2019-11-30
+date: 2019-11-30
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

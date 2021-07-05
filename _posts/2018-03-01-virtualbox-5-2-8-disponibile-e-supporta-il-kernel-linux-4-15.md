@@ -1,6 +1,6 @@
 ---
 title: 'Virtualbox 5.2.8 disponibile e supporta il kernel Linux 4.15'
-published: 2018-03-01
+date: 2018-03-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

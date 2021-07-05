@@ -1,6 +1,6 @@
 ---
 title: 'Lo smartphone Linux si fa! Librem 5 supera quota $ 1.5'
-published: 2017-10-10
+date: 2017-10-10
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,7 +1,7 @@
 ---
 title: '#howto - Portatili Nvidia Optimus (Intel+Nvidia) su Arch Linux con optimus-manager'
 description: "Optimus è una tecnologia sviluppata da Nvidia per la commutazione di GPU, ossia la gestione tra i due adattatori gra.."
-published: 2019-12-31
+date: 2019-12-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

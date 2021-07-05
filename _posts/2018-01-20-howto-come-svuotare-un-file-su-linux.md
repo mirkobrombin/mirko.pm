@@ -1,6 +1,6 @@
 ---
 title: '#howto - Come ripulire un file su linux'
-published: 2018-01-20
+date: 2018-01-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

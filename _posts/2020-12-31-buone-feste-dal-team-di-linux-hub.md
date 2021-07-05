@@ -1,6 +1,6 @@
 ---
 title: 'Buone feste dal Team di linux/hub'
-published: 2020-12-31
+date: 2020-12-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

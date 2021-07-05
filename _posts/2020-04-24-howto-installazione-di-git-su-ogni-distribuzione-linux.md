@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di git su ogni distribuzione Linux'
-published: 2020-04-24
+date: 2020-04-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

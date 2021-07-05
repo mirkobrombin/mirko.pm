@@ -1,6 +1,6 @@
 ---
 title: "Gnome: uno script per ampliare l'overview"
-published: 2017-08-28
+date: 2017-08-28
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

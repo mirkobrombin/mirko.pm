@@ -1,6 +1,6 @@
 ---
 title: 'Un nuovo Installer per ElementaryOS in cantiere'
-published: 2017-08-29
+date: 2017-08-29
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu cerca una direzione per Mir/Wayland e lo chiede alla community'
-published: 2017-11-25
+date: 2017-11-25
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

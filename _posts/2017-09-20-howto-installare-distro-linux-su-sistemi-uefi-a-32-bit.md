@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare distro Linux su sistemi UEFI a 32 bit'
-published: 2017-09-20
+date: 2017-09-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

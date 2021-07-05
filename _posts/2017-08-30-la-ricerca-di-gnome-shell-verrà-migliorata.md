@@ -1,6 +1,6 @@
 ---
 title: 'La ricerca di GNOME Shell verrà migliorata'
-published: 2017-08-30
+date: 2017-08-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

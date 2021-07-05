@@ -1,6 +1,6 @@
 ---
 title: '#pausacaffè – Non solo Desktop Environment'
-published: 2017-09-04
+date: 2017-09-04
 layout: post
 author: dlcgold
 author_github: dlcgold

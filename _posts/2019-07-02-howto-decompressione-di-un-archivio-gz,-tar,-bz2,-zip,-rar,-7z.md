@@ -1,7 +1,7 @@
 ---
 title: '#howto - Decompressione di un archivio (gz, tar, bz2, zip, rar, 7z)'
 description: "I formati di compressione sono molti e spesso sono altrettanto differenti gli strumenti per decomprimerli."
-published: 2019-07-02
+date: 2019-07-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

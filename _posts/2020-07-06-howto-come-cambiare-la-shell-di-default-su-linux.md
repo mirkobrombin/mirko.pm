@@ -1,6 +1,6 @@
 ---
 title: '#howto - Come cambiare la shell di default su Linux'
-published: 2020-07-06
+date: 2020-07-06
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

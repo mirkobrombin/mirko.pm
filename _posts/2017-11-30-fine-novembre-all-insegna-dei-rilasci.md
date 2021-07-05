@@ -1,6 +1,6 @@
 ---
 title: "Fine Novembre all'insegna dei rilasci"
-published: 2017-11-30
+date: 2017-11-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

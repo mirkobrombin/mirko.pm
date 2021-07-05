@@ -1,6 +1,6 @@
 ---
 title: 'Wine 2.12 rilasciato con Audio Driver per Android'
-published: 2017-07-08
+date: 2017-07-08
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

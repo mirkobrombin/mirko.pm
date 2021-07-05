@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e funzionamento di Angular 8+ su Debian'
 description: Angular 2+ (o semplicemente Angular) è una piattaforma open source per lo sviluppo di applicazioni web con licenza MIT, evoluzione di AngularJS, sviluppato principalmente da Google."
-published: 2019-11-27
+date: 2019-11-27
 layout: post
 author: Hersel Giannella
 author_github: hersel

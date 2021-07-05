@@ -1,6 +1,6 @@
 ---
 title: 'GNOME, risolto il memory leak nella release 3.28.2'
-published: 2018-05-15
+date: 2018-05-15
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

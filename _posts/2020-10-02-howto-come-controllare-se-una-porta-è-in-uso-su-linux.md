@@ -1,6 +1,6 @@
 ---
 title: '#howto - Controllare se una porta è in uso su Linux'
-published: 2020-10-02
+date: 2020-10-02
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

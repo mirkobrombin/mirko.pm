@@ -1,7 +1,7 @@
 ---
 title: '#pausacaffé – Fuga da facebook, perché partecipare'
 description: "Diversi mesi fa abbiamo parlato di come il comfort costi la nostra privacy. Ció significa che se vogliam.."
-published: 2018-12-06
+date: 2018-12-06
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

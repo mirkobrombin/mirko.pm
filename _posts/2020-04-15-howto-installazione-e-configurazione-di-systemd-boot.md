@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di systemd-boot'
 description: "Systemd-boot è un bootloader per sistemi EFI. A differenza di GRUB lavora solo sulla ESP (EFI System Partit.."
-published: 2020-04-15
+date: 2020-04-15
 layout: post
 author: Niccolò Martiri
 author_github: talebian

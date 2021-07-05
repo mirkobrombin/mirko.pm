@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di MariaDB su CentOS 7'
-published: 2020-05-16
+date: 2020-05-16
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

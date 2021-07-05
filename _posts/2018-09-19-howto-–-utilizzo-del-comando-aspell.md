@@ -1,7 +1,7 @@
 ---
 title: "#howto – Utilizzo del comando 'aspell'"
 description: "aspell e è un correttore ortografico interattivo che si occupa di analizzare l'input o file, alla ricerca di errori ortografici, permettendoti di correggerli istantaneamente."
-published: 2018-09-19
+date: 2018-09-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

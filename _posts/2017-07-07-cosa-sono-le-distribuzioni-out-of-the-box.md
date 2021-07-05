@@ -1,7 +1,7 @@
 ---
 title: 'Cosa sono le distribuzioni Out of the box?'
 description: "Oggigiorno Linux non è più visto come un bene per pochi, è vasto, performante e ricco di soluzioni per tutti i gusti.."
-published: 2017-07-07
+date: 2017-07-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

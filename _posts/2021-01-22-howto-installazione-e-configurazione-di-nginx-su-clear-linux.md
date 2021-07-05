@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Nginx su Clear Linux'
-published: 2021-01-22
+date: 2021-01-22
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

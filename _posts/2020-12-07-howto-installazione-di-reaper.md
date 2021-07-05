@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di REAPER su Linux'
-published: 2020-12-07
+date: 2020-12-07
 layout: post
 author: WhiXard
 author_github: Bildcraft1

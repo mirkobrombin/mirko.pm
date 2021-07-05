@@ -1,7 +1,7 @@
 ---
 title: '#howto - Introduzione a RPM Parte  2'
 description: "In questa seconda guida dedicata a RPM, il gestore pacchetti sviluppato da Red Hat, vedremo alcuni comandi avanz.."
-published: 2020-04-04
+date: 2020-04-04
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

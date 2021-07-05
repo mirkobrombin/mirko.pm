@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando uname'
-published: 2020-09-11
+date: 2020-09-11
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

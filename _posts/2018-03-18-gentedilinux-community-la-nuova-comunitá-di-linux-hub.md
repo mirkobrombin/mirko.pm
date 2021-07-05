@@ -1,6 +1,6 @@
 ---
 title: '? /gentedilinux/community - La nuova comunitá di Linux HUB'
-published: 2018-03-18
+date: 2018-03-18
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

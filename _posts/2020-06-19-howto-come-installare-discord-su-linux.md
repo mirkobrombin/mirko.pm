@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Discord su Linux'
-published: 2020-06-19
+date: 2020-06-19
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

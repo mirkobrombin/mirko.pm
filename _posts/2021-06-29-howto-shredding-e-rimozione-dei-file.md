@@ -1,7 +1,7 @@
 ---
 
 title: '#howto - Shredding e rimozione dei file'
-published: 2021-06-29
+date: 2021-06-29
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit

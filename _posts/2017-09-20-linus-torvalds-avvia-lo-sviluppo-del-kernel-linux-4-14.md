@@ -1,6 +1,6 @@
 ---
 title: 'Linus Torvalds avvia lo sviluppo del Kernel Linux 4.14'
-published: 2017-09-20
+date: 2017-09-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

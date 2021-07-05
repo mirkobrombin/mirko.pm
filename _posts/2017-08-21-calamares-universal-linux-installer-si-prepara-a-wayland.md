@@ -1,6 +1,6 @@
 ---
 title: 'Calamares Universal Linux Installer si prepara a Wayland'
-published: 2017-08-21
+date: 2017-08-21
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

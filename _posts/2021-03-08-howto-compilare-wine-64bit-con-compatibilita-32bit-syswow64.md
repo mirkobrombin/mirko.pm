@@ -1,6 +1,6 @@
 ---
 title: '#howto - Compilare Wine 64Bit con compatibilità 32Bit e patch staging'
-published: 2021-03-08
+date: 2021-03-08
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

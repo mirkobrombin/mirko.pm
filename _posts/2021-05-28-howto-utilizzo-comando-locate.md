@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando locate' 
-published: 2021-05-28
+date: 2021-05-28
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 

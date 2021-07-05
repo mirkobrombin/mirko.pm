@@ -1,6 +1,6 @@
 ---
 title: "#pausacaffè - Sicurezza e privacy più forti nell'Open Source?"
-published: 2017-08-05
+date: 2017-08-05
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

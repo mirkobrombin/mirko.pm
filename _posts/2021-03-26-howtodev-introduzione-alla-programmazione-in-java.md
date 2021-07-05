@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Introduzione alla programmazione in Java'
-published: 2021-03-26
+date: 2021-03-26
 layout: post
 author: Davide Galati
 author_github: psykedady

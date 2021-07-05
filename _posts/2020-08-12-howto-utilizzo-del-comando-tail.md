@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando tail'
-published: 2020-08-12
+date: 2020-08-12
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

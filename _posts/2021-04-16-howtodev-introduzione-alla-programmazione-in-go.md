@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Introduzione alla programmazione in Go'
-published: 2021-04-16
+date: 2021-04-16
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit

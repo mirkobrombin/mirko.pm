@@ -1,6 +1,6 @@
 ---
 title: 'KDE Frameworks 5.41.0 rilasciato con ben 120 bug risolti e miglioramenti'
-published: 2017-12-11
+date: 2017-12-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

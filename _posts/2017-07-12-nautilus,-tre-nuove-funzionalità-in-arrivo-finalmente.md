@@ -1,6 +1,6 @@
 ---
 title: 'Nautilus, tre nuove funzionalità in arrivo (finalmente)'
-published: 2017-07-12
+date: 2017-07-12
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

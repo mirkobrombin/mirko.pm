@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Introduzione ai vari blocchi di codice in Java'
-published: 2021-04-04
+date: 2021-04-04
 layout: post
 author: Davide Galati
 author_github: psykedady

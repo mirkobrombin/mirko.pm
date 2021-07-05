@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 18.04 LTS abbandona Python 2 (lavori in corso)'
-published: 2017-12-11
+date: 2017-12-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

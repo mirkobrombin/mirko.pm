@@ -1,6 +1,6 @@
 ---
 title: '#howto - Configurazione di un reverse_proxy su Caddy Server 2'
-published: 2020-08-21
+date: 2020-08-21
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

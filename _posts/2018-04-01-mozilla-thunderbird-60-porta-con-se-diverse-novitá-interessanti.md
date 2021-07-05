@@ -1,6 +1,6 @@
 ---
 title: 'Mozilla Thunderbird 60 porta con se diverse novitá interessanti'
-published: 2018-04-01
+date: 2018-04-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

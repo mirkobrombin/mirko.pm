@@ -1,6 +1,6 @@
 ---
 title: 'GNOME - In fase di risoluzione il problema di perdita memoria'
-published: 2018-03-30
+date: 2018-03-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

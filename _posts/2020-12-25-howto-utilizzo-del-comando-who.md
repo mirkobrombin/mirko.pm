@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando who'
-published: 2020-12-25
+date: 2020-12-25
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

@@ -1,6 +1,6 @@
 ---
 title: "#howto - Creare un Dockerfile"
-published: 2021-05-14
+date: 2021-05-14
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy

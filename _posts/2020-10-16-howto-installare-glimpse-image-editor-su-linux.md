@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Glimpse Image Editor su Linux'
-published: 2020-10-16
+date: 2020-10-16
 layout: post
 author: WhiXard
 author_github: Bildcraft1

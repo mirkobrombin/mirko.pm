@@ -1,7 +1,7 @@
 ---
 title: '#howto – Installare screen su Fedora/Centos/Debian e derivate'
 description: "Di norma questo strumento è preinstallato in quasi tutte le distribuzioni GNU/Linux ma, se così non dovesse essere, è possibile in.."
-published: 2019-06-02
+date: 2019-06-02
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

@@ -1,7 +1,7 @@
 ---
 title: '#howto – Utilizzo base di Vim'
 description: "(Vi IMproved) è uno degli da riga di comando più conosciuti ed utilizzati in ambito UNIX, ed è preinstallato in parecchie distribuzioni GNU/Linux."
-published: 2018-10-27
+date: 2018-10-27
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: '? 26 anni di Linux'
-published: 2017-08-25
+date: 2017-08-25
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

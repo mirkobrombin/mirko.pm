@@ -1,6 +1,6 @@
 ---
 title: '#howto - Fedora 26 Workstation guida post installazione'
-published: 2017-09-24
+date: 2017-09-24
 layout: post
 author: Giuseppe F.
 author_github: linuxhubit

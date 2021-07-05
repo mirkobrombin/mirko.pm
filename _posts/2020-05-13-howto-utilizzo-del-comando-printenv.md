@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando printenv'
-published: 2020-05-13
+date: 2020-05-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

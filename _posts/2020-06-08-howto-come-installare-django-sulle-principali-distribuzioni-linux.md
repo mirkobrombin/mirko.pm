@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Django sulle principali distribuzioni Linux'
-published: 2020-06-08
+date: 2020-06-08
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

@@ -1,7 +1,7 @@
 ---
 title: '#howto - Aggiornamento del kernel su Debian/Ubuntu e derivate'
 description: "Aggiornare il kernel di una distribuzione, è una operazione tanto semplice quanto indispensabile, nonostante spesso le di.."
-published: 2019-11-03
+date: 2019-11-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

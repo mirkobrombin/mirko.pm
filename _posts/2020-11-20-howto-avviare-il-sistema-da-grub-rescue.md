@@ -1,6 +1,6 @@
 ---
 title: '#howto - Avviare il sistema da GRUB Rescue'
-published: 2020-11-20
+date: 2020-11-20
 layout: post
 author: Davide Galati
 author_github: psykedady

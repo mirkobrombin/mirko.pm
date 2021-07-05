@@ -1,6 +1,6 @@
 ---
 title: '#howto – Installare Fedora tramite NetInstall'
-published: 2018-10-26
+date: 2018-10-26
 layout: post
 author: Michael Messaggi
 author_github: MichaelMessaggi

@@ -1,7 +1,7 @@
 ---
 title: '10 cose che non sai su Linux'
 description: "Linux è un argomento tanto vasto quanto misterioso, eccoti 10 cose che non sai."
-published: 2017-07-08
+date: 2017-07-08
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

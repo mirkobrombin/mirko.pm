@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare Nextcloud in CentOS 7'
-published: 2018-02-16
+date: 2018-02-16
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

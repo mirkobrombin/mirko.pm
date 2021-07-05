@@ -1,6 +1,6 @@
 ---
 title: '#howto - Come conoscere temperatura della CPU e GPU del Raspberry Pi'
-published: 2020-11-23
+date: 2020-11-23
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

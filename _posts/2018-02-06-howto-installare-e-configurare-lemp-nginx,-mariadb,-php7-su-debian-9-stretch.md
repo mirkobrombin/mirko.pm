@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare e configurare LEMP (Nginx, MariaDB, PHP7) su Debian 9 Stretch'
-published: 2018-02-06
+date: 2018-02-06
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

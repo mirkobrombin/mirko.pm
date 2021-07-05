@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di fail2ban su Fedora 33/CentOS 8'
-published: 2020-12-11
+date: 2020-12-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

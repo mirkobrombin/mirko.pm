@@ -1,6 +1,6 @@
 ---
 title: 'Purism collabora con Nitrokey per la realizzazione di Purekey'
-published: 2018-05-19
+date: 2018-05-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

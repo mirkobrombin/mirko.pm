@@ -1,6 +1,6 @@
 ---
 title: '#howto - Aggiornare Nextcloud da riga di comando'
-published: 2018-02-20
+date: 2018-02-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

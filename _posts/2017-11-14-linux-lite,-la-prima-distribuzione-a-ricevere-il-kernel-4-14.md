@@ -1,6 +1,6 @@
 ---
 title: 'Linux Lite, la prima distribuzione a ricevere il kernel 4.14'
-published: 2017-11-14
+date: 2017-11-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

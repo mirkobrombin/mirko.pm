@@ -1,6 +1,6 @@
 ---
 title: 'Debian Stretch guida post installazione'
-published: 2017-07-10
+date: 2017-07-10
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

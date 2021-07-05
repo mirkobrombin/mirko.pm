@@ -1,6 +1,6 @@
 ---
 title: 'Aggiungiamo programmi a Debian 9'
-published: 2017-07-22
+date: 2017-07-22
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di UEFI su Linux'
-published: 2020-07-17
+date: 2020-07-17
 layout: post
 author: Davide Galati
 author_github: psykedady

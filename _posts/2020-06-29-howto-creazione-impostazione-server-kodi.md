@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di un server Kodi'
-published: 2020-06-29
+date: 2020-06-29
 layout: post
 author: Davide Galati
 author_github: psykedady

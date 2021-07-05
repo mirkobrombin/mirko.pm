@@ -1,7 +1,7 @@
 ---
 title: "#howto - Cos'è e come estendere il volume LVM"
 description: "Si può pensare a LVM come delle 'partizioni dinamiche', facili da creare, ridimensionare ed eliminare, in questo caso queste 'partizioni' vengono chiamate volumi logici."
-published: 2017-09-02
+date: 2017-09-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

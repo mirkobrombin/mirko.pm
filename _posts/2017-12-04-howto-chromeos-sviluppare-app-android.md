@@ -1,6 +1,6 @@
 ---
 title: '#howto #ChromeOS - Sviluppare app Android'
-published: 2017-12-04
+date: 2017-12-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

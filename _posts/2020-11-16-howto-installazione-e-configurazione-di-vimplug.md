@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di VimPlug'
-published: 2020-11-16
+date: 2020-11-16
 layout: post
 author: WhiXard
 author_github: Bildcraft1

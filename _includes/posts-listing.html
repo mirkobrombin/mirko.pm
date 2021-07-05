@@ -1,7 +1,7 @@
 {% assign post = include.post %}
 {% assign date = post.date %}
 
-{% if post.published != false %}
+{% if post.date != false %}
 
     <article itemscope itemtype="https://schema.org/NewsArticle">
         <meta itemprop="image" content="/assets/images/cover.png" hidden="">
@@ -19,7 +19,7 @@
                     <span itemprop="name">{{ post.author }}</span>
                 </a>
             </em> il
-            <em itemprop="datePublished" content="{{ post.published }}">
+            <em itemprop="datePublished" content="{{ post.date }}">
                 <time datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ date | date: "%a, %b %e, %Y" }}</time>
             </em>
         </span>

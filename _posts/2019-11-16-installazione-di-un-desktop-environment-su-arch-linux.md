@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione di un Desktop Environment su Arch Linux'
 description: "Il Desktop Environment, o DE è uno dei programmi più importanti che andiamo ad installare durante il setup di Arch."
-published: 2019-11-16
+date: 2019-11-16
 layout: post
 author: Niccolò Martiri
 author_github: talebian

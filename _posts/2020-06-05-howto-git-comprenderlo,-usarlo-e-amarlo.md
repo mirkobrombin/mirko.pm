@@ -1,6 +1,6 @@
 ---
 title: "#howto -  Guida all'utilizzo di git"
-published: 2020-06-05
+date: 2020-06-05
 layout: post
 author: Davide Galati
 author_github: psykedady

@@ -1,7 +1,7 @@
 ---
 title: '#howto - Gesture meravigliose e come crearle'
 description: "Invidiabili le gesture di MacOS?  Vediamo come ottenere la stessa esperienza sulla nostra distribuzione Linux preferita! "
-published: 2019-07-20
+date: 2019-07-20
 layout: post
 author: Davide Galati
 author_github: psykedady

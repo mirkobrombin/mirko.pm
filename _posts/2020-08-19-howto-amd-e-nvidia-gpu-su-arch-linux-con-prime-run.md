@@ -1,6 +1,6 @@
 ---
 title: '#howto - AMD e Nvidia GPU su Arch Linux con prime-run'
-published: 2020-08-19
+date: 2020-08-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

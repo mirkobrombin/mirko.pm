@@ -1,7 +1,7 @@
 ---
 title: '#howto - Aggiornare da Centos 6 a Centos 7/7.1'
 description: "Spesso i server di produzione sono fermi ad una versione meno recente (ma non per forza obsoleta) del sistema.."
-published: 2019-07-01
+date: 2019-07-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

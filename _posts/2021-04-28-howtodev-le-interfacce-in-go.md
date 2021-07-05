@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Le interfacce in Go'
-published: 2021-04-28
+date: 2021-04-28
 layout: post
 author: Massimiliano Noviello
 author_github: DumbMahreeo

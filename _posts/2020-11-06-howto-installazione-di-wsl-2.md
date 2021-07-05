@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di WSL 2 su Windows 10'
-published: 2020-11-06
+date: 2020-11-06
 layout: post
 author: WhiXard
 author_github: Bildcraft1

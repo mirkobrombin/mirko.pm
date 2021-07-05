@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando head'
-published: 2020-08-05
+date: 2020-08-05
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

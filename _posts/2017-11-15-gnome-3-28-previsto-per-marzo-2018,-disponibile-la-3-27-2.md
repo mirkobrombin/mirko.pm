@@ -1,6 +1,6 @@
 ---
 title: 'GNOME 3.28 previsto per Marzo 2018, disponibile la 3.27.2'
-published: 2017-11-15
+date: 2017-11-15
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

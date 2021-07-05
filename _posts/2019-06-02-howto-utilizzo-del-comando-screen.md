@@ -1,7 +1,7 @@
 ---
 title: "#howto - Utilizzo del comando 'screen"
 description: "Sono diverse le circostanze in cui screen viene in nostro soccorso, dimostrandosi uno degli strumenti piu utili."
-published: 2019-06-02
+date: 2019-06-02
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

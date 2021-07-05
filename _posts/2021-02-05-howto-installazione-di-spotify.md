@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Spotify su Linux'
-published: 2021-02-05
+date: 2021-02-05
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

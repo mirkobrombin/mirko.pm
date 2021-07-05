@@ -1,7 +1,7 @@
 ---
 title: '#howto - Compilare Python 3.7 su Debian'
 description: "In questa guida vediamo come installare e rendere funzionale l'ultima versione di Python (al momento la 3.7) su Debian, compilando qu.."
-published: 2019-06-23
+date: 2019-06-23
 layout: post
 author: Hersel Giannella
 author_github: hersel

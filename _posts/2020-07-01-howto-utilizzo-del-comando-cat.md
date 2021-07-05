@@ -1,6 +1,6 @@
 ---
 title: "#howto – Utilizzo del comando 'cat'"
-published: 2020-07-01
+date: 2020-07-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

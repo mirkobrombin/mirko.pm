@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di TeamSpeak 3 su Linux'
-published: 2020-06-22
+date: 2020-06-22
 layout: post
 author: WhiXard
 author_github: Bildcraft1

@@ -1,6 +1,6 @@
 ---
 title: '#howto: Installare e configurare ZSH'
-published: 2017-10-27
+date: 2017-10-27
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

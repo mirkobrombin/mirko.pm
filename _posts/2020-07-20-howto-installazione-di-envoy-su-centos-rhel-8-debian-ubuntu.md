@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Envoy Proxy su Centos/RHEL 8/Debian 8+/Ubuntu 16.04+'
-published: 2020-07-20
+date: 2020-07-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

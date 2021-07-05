@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Bottles su Linux'
-published: 2021-01-04
+date: 2021-01-04
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

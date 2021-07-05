@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Material Shell su GNOME'
-published: 2020-10-05
+date: 2020-10-05
 layout: post
 author: WhiXard
 author_github: Bildcraft1

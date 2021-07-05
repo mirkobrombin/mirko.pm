@@ -1,7 +1,7 @@
 ---
 title: '#howto - Modificare un PDF con LibreOffice Draw'
 description: "Qualche volta è probabile trovarsi (nella scomoda) situazione di dover modificare un PDF.."
-published: 2017-09-26
+date: 2017-09-26
 layout: post
 author: Leonardo O.
 author_github: linuxhubit

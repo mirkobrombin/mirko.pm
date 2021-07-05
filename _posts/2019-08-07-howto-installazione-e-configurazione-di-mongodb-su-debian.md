@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di MongoDB su Debian'
 description: "MongoDB è un database non relazionale, basato su documenti. La sua struttura lo colloca nella classifica dei database NoSQL."
-published: 2019-08-07
+date: 2019-08-07
 layout: post
 author: Hersel Giannella
 author_github: hersel

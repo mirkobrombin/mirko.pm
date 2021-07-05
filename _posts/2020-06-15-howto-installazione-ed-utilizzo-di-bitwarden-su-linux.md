@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione ed utilizzo di Bitwarden su Linux'
-published: 2020-06-15
+date: 2020-06-15
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

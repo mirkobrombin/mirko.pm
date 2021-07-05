@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di Zabbix su Centos 8/RHEL 8'
 description: "Zabbix è una piattaforma Open source per il monitoraggio di server e servizi in rete, che mette a disposizione una semp.."
-published: 2020-02-26
+date: 2020-02-26
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

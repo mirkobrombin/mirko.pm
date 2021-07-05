@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare e configurare Oh My Zsh'
 description: "OhMyZsh è un framework open source creato per personalizzare la propria configurazione di default di zsh.."
-published: 2019-07-06
+date: 2019-07-06
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

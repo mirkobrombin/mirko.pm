@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Go'
-published: 2021-03-01
+date: 2021-03-01
 layout: post
 author: WhiXard
 author_github: Bildcraft1

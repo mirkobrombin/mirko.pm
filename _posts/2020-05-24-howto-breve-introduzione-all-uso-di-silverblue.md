@@ -1,6 +1,6 @@
 ---
 title: "#howto - Breve introduzione all'uso di Silverblue"
-published: 2020-05-24
+date: 2020-05-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Secondo COO di Hiri, gli utenti Linux sono più preziosi'
-published: 2017-07-20
+date: 2017-07-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

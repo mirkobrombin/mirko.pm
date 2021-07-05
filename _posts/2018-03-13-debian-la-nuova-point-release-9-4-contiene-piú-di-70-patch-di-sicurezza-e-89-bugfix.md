@@ -1,6 +1,6 @@
 ---
 title: 'Debian la nuova Point release 9.4 contiene piú di 70 patch di sicurezza e 89 bugfix'
-published: 2018-03-13
+date: 2018-03-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

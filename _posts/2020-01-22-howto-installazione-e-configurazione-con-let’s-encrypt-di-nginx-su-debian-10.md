@@ -1,7 +1,7 @@
 ---
 title: "#howto - Installazione e configurazione di Nginx con Let's Encrypt su Debian 10"
 description: "In questa guida andremo a vedere come procedere alla installazione e configurazione con Let’s Encrypt di Nginx su Debian 10."
-published: 2020-01-22
+date: 2020-01-22
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

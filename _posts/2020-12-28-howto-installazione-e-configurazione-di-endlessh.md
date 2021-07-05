@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Endlessh'
-published: 2020-12-28
+date: 2020-12-28
 layout: post
 author: WhiXard
 author_github: Bildcraft1

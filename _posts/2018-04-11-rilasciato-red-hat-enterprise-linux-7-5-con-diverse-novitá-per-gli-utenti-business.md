@@ -1,6 +1,6 @@
 ---
 title: 'Rilasciato Red Hat Enterprise Linux 7.5 con diverse novitá per gli utenti business'
-published: 2018-04-11
+date: 2018-04-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

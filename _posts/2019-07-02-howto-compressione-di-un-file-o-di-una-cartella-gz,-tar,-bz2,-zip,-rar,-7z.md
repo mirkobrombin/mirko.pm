@@ -1,7 +1,7 @@
 ---
 title: '#howto - Compressione di un file o di una cartella (gz, tar, bz2, zip, rar, 7z)'
 description: "Spesso, per diminuire il peso di un file o raggruppare tanti documenti (o cartelle) si ricorre alla compressione in archivi.."
-published: 2019-07-02
+date: 2019-07-02
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

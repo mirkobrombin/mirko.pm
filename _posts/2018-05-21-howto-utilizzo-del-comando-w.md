@@ -1,7 +1,7 @@
 ---
 title: '#howto - Utilizzo del comando "w"'
 description: "Una delle principali utilità per l'amministrazione di sistemi Linux, é il comando.."
-published: 2018-05-21
+date: 2018-05-21
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Linux Mint 19 "Tara" in arrivo a Giugno nei PC Mintbox Mini 2'
-published: 2018-04-02
+date: 2018-04-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

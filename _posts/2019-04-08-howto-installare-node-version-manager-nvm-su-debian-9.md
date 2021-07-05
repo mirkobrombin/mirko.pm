@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare Node Version Manager (NVM) su Debian 9'
 description: "NodeJS è una runtime di JavaScript OpenSource multipiattaforma orientato agli eventi per l'esecuzione di codice Javascript Server Side, costruita sul motore Javascript V8 di Google Chrome."
-published: 2019-04-08
+date: 2019-04-08
 layout: post
 author: Hersel Giannella
 author_github: hersel

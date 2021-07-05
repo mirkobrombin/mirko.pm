@@ -1,7 +1,7 @@
 ---
 title: '#pausacaffé – Europa/Google, distorsione della libertá'
 description: "Sono passati ormai giorni da quando è entrata in vigore la nuova serie di leggi volte a proteggere i diritti d'autore e la nostra"
-published: 2018-10-24
+date: 2018-10-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

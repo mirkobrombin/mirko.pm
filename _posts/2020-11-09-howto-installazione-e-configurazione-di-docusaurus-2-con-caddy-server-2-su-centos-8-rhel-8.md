@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Docusaurus 2 con Caddy Server 2 su CentOS 8/RHEL 8'
-published: 2020-11-09
+date: 2020-11-09
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

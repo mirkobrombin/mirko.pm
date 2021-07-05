@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione ed utilizzo di Snap'
-published: 2021-04-09
+date: 2021-04-09
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

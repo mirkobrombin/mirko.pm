@@ -1,7 +1,7 @@
 ---
 title: "#howto – Utilizzo del comando 'which'"
 description: "Capita soprattutto in ambienti di lavoro e sviluppo, di dover identificare il percorso assoluto di uno strumento/comando.."
-published: 2019-05-18
+date: 2019-05-18
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

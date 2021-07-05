@@ -1,6 +1,6 @@
 ---
 title: 'PeppermintOS 8 - Focus e post-install'
-published: 2017-12-13
+date: 2017-12-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

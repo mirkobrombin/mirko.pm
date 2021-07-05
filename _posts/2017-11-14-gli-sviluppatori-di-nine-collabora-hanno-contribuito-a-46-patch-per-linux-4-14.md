@@ -1,6 +1,6 @@
 ---
 title: 'Gli sviluppatori di Nine Collabora hanno contribuito a 46 patch per Linux 4.14'
-published: 2017-11-14
+date: 2017-11-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

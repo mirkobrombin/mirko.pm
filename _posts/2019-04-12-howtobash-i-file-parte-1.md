@@ -1,6 +1,6 @@
 ---
 title: '#howtobash - I file (Parte 1)'
-published: 2019-04-12
+date: 2019-04-12
 layout: post
 author: Leo
 author_github: linuxhubit

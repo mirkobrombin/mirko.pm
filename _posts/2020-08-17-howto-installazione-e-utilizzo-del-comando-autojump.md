@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e utilizzo del comando autojump'
-published: 2020-08-17
+date: 2020-08-17
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

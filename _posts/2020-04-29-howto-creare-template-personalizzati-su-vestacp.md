@@ -1,6 +1,6 @@
 ---
 title: '#howto - Creare e modificare template personalizzati su VestaCP'
-published: 2020-04-29
+date: 2020-04-29
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

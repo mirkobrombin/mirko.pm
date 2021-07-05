@@ -1,6 +1,6 @@
 ---
 title: 'Q4OS - La Debian user friendly per i nuovi Linux users'
-published: 2017-10-13
+date: 2017-10-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

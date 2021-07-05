@@ -1,6 +1,6 @@
 ---
 title: 'Un aggiornamento sulla risoluzione di Meltdown & Spectre'
-published: 2018-01-15
+date: 2018-01-15
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

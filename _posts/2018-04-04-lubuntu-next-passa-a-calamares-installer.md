@@ -1,6 +1,6 @@
 ---
 title: 'Lubuntu Next passa a Calamares Installer'
-published: 2018-04-04
+date: 2018-04-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

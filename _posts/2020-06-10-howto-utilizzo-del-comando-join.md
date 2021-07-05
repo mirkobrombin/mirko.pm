@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando join'
-published: 2020-06-10
+date: 2020-06-10
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

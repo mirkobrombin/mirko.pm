@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione ed uso di TagSH'
-published: 2020-12-30
+date: 2020-12-30
 layout: post
 author: Davide Galati
 author_github: psykedady

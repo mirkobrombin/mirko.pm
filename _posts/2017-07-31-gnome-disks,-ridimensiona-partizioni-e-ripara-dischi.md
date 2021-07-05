@@ -1,6 +1,6 @@
 ---
 title: 'GNOME Disks, ridimensiona partizioni e ripara dischi'
-published: 2017-07-31
+date: 2017-07-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

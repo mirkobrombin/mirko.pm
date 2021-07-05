@@ -1,6 +1,6 @@
 ---
 title: 'Il gruppo di Linux HUB ora su Telegram!'
-published: 2017-07-11
+date: 2017-07-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

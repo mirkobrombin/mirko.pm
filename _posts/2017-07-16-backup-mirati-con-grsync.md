@@ -1,6 +1,6 @@
 ---
 title: 'Backup mirati con Grsync'
-published: 2017-07-16
+date: 2017-07-16
 layout: post
 author: Leonardo O.
 author_github: linuxhubit

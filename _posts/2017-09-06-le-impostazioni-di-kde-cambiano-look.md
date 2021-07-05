@@ -1,6 +1,6 @@
 ---
 title: 'Le impostazioni di KDE cambiano look'
-published: 2017-09-06
+date: 2017-09-06
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

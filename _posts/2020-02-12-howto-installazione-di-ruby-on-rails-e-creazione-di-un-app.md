@@ -1,7 +1,7 @@
 ---
 title: "#howto - Installazione di Ruby on Rails e creazione di un'app"
 description: "Ruby on Rails è uno dei framework web più utilizzati nel mondo dei siti internet. Con esso è possibile creare, utilizzando il linguaggio.."
-published: 2020-02-12
+date: 2020-02-12
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

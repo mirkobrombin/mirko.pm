@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - I metodi in Java' 
-published: 2021-05-10
+date: 2021-05-10
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady

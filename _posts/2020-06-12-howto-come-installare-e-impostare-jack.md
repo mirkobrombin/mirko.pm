@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di  JACK su Linux'
-published: 2020-06-12
+date: 2020-06-12
 layout: post
 author: WhiXard
 author_github: Bildcraft1

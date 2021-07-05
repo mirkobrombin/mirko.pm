@@ -1,6 +1,6 @@
 ---
 title: 'Rilasciato Adobe Brackets 1.11 con pieno supporto a Linux'
-published: 2017-09-27
+date: 2017-09-27
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

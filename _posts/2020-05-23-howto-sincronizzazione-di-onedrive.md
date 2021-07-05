@@ -1,6 +1,6 @@
 ---
 title: '#howto - Sincronizzazione di OneDrive sulle principali distribuzioni Linux'
-published: 2020-05-23
+date: 2020-05-23
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

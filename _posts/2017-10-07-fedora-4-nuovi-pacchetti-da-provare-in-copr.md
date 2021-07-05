@@ -1,6 +1,6 @@
 ---
 title: 'Fedora 4 nuovi pacchetti da provare in COPR'
-published: 2017-10-07
+date: 2017-10-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

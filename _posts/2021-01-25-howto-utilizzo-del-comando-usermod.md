@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando usermod'
-published: 2021-01-25
+date: 2021-01-25
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

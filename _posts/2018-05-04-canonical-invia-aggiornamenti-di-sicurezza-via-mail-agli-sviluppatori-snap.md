@@ -1,6 +1,6 @@
 ---
 title: 'Canonical invia aggiornamenti di sicurezza via mail agli sviluppatori snap'
-published: 2018-05-04
+date: 2018-05-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

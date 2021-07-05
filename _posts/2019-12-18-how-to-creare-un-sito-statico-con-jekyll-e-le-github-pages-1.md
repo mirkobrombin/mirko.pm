@@ -1,7 +1,7 @@
 ---
 title: '#howto - Creare un sito statico con Jekyll e le Github pages'
 description: "Questa è una guida in due parti in cui, dopo aver presentato il generatore di siti statici Jekyll.."
-published: 2019-12-18
+date: 2019-12-18
 layout: post
 author: Andrea Guzzon
 author_github: beard33

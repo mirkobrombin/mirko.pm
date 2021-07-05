@@ -1,6 +1,6 @@
 ---
 title: 'La LibreOffice Conference di Roma sa da fa, Italo Vignoli rimane, per ora'
-published: 2017-08-26
+date: 2017-08-26
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

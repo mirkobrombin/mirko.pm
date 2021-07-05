@@ -1,6 +1,6 @@
 ---
 title: 'Arriva la beta di Linux Lite 4.0 con diverse funzionalità e miglioramenti'
-published: 2018-04-30
+date: 2018-04-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

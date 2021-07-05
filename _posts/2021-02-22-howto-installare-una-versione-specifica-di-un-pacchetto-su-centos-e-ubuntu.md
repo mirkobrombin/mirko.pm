@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare una versione specifica di un pacchetto su CentOS, Fedora, Debian, Ubuntu e derivate'
-published: 2021-02-22
+date: 2021-02-22
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

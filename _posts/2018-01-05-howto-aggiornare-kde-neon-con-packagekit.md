@@ -1,6 +1,6 @@
 ---
 title: '#howto - Aggiornare KDE Neon con PackageKit'
-published: 2018-01-05
+date: 2018-01-05
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

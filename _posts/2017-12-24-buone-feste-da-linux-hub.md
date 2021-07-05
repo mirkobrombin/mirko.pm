@@ -1,6 +1,6 @@
 ---
 title: 'Buone feste da Linux HUB!'
-published: 2017-12-24
+date: 2017-12-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: '? #pausacaffè – Perchè scelgo ElementaryOS?'
-published: 2017-08-27
+date: 2017-08-27
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

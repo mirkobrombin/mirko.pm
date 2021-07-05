@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di LMMS  '
-published: 2020-08-17
+date: 2020-08-17
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

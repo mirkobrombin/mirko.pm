@@ -1,7 +1,7 @@
 ---
 title: "#howto - Guida all'uso di Visual Studio Code"
 description: "Chi abitualmente chiacchiera con noi sul gruppo Telegram di linuxpeople sa già che il mio editor di codice pr.."
-published: 2019-08-04
+date: 2019-08-04
 layout: post
 author: Davide Galati
 author_github: psykedady

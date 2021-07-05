@@ -1,6 +1,6 @@
 ---
 title: 'Falkon (QupZilla) è disponibile per il test come Snap app'
-published: 2017-08-30
+date: 2017-08-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

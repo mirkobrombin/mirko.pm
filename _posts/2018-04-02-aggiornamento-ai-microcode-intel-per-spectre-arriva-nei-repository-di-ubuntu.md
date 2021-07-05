@@ -1,6 +1,6 @@
 ---
 title: 'Aggiornamento ai Microcode Intel per Spectre arriva nei repository di Ubuntu'
-published: 2018-04-02
+date: 2018-04-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

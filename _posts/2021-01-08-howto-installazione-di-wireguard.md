@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di WireGuard su Linux'
-published: 2021-01-08
+date: 2021-01-08
 layout: post
 author: WhiXard
 author_github: Bildcraft1

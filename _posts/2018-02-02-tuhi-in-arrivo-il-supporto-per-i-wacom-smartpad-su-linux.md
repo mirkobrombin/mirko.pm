@@ -1,6 +1,6 @@
 ---
 title: 'Tuhi - In arrivo il supporto per i Wacom Smartpad su Linux'
-published: 2018-02-02
+date: 2018-02-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

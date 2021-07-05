@@ -1,6 +1,6 @@
 ---
 title: 'HOW TO: Replicazione Master/Slave Mysql'
-published: 2017-08-07
+date: 2017-08-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

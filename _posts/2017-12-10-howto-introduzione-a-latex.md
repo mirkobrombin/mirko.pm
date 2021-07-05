@@ -1,6 +1,6 @@
 ---
 title: '#howto - Introduzione a LaTeX'
-published: 2017-12-10
+date: 2017-12-10
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

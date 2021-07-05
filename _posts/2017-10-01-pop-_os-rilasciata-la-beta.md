@@ -1,6 +1,6 @@
 ---
 title: 'Pop!_OS:  rilasciata la beta'
-published: 2017-10-01
+date: 2017-10-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

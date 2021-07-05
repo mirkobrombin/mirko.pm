@@ -1,7 +1,7 @@
 ---
 title: '#howto - Utilizzo di mkinitcpio su Arch Linux'
 description: "In un sistema con kernel Linux, un initramfs, o initial ramdisk filesystem, è un'immagine che viene caricata.."
-published: 2020-03-28
+date: 2020-03-28
 layout: post
 author: Niccolò Martiri
 author_github: talebian

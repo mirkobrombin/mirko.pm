@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di vsftpd su CentOS/RHEL 7/8'
-published: 2020-05-07
+date: 2020-05-07
 layout: post
 author: Pietro di Caprio
 author_github: pietrodicaprio

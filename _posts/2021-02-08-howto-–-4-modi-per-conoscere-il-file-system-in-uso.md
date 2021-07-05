@@ -1,6 +1,6 @@
 ---
 title: '#howto – Come conoscere il file system in uso'
-published: 2021-02-08
+date: 2021-02-08
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'I nostri dati al sicuro con Rsync'
-published: 2017-07-19
+date: 2017-07-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

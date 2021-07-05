@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Imagick su CentOS 7/8 e derivate'
-published: 2020-11-02
+date: 2020-11-02
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

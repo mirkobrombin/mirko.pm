@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 17.10, svelato il nuovo look'
-published: 2017-09-05
+date: 2017-09-05
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

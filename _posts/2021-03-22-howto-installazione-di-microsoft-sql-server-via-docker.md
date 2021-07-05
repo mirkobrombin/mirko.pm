@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Microsoft SQL Server via Docker'
-published: 2021-03-22
+date: 2021-03-22
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

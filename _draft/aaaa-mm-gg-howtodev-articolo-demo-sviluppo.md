@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - articolo demo sviluppo' 
-published: aaaa-mm-gg 
+date: aaaa-mm-gg H:M
 layout: post 
 author: Nome Autore
 author_github: Nome github 

@@ -1,6 +1,6 @@
 ---
 title: 'KDE Plasma 5.12 LTS è stato rilasciato'
-published: 2018-02-07
+date: 2018-02-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

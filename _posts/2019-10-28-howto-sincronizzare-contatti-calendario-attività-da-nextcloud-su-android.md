@@ -1,7 +1,7 @@
 ---
 title: '#howto - Sincronizzare contatti/calendario/attività da Nextcloud su Android'
 description: "In questa guida vediamo come sincronizzare contatti, calendario ed attività su Android tramite app OpenSync, disponibile gratuitamente tramite Play Store di Google."
-published: 2019-10-28
+date: 2019-10-28
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

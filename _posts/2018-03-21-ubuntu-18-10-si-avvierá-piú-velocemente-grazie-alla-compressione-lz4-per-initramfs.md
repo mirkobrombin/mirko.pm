@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 18.10 si avvierá piú velocemente grazie alla compressione LZ4 per Initramfs'
-published: 2018-03-21
+date: 2018-03-21
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

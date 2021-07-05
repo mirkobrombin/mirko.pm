@@ -1,6 +1,6 @@
 ---
 title: "Dash to Dock aggiunge l'isolamento del monitor e migliora le anteprime delle finestre"
-published: 2017-07-12
+date: 2017-07-12
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di GitLab CE con SSL su Centos 8/RHEL 8'
-published: 2020-10-30
+date: 2020-10-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

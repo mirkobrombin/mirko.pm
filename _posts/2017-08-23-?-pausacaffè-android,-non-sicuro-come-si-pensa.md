@@ -1,6 +1,6 @@
 ---
 title: '? #pausacaffè - Android, non sicuro come si pensa?'
-published: 2017-08-23
+date: 2017-08-23
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

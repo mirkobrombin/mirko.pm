@@ -1,6 +1,6 @@
 ---
 title: 'Snap di default su Ubuntu 18.04?'
-published: 2017-11-20
+date: 2017-11-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

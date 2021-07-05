@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo di SSH per connettersi a GitHub'
-published: 2020-08-28
+date: 2020-08-28
 layout: post
 author: Andrea Guzzon
 author_github: beard33

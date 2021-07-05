@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di CentOS 8 Stream da Netinstall'
-published: 2020-10-19
+date: 2020-10-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

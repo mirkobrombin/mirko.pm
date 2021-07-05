@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 18.04 LTS disponibile per Raspberry Pi 3 Model B grazie a RaspEX'
-published: 2018-03-29
+date: 2018-03-29
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,7 +1,7 @@
 ---
 title: '#howto #ChromeOS – Programmazione'
 description: "Negli ultimi anni il fenomeno Chromebook si fa sentire piú che mai. Dalla sua nascita come esperimento.."
-published: 2018-08-17
+date: 2018-08-17
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

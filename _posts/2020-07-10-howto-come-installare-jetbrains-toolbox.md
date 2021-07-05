@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di  JetBrains Toolbox su Linux'
-published: 2020-07-10
+date: 2020-07-10
 layout: post
 author: WhiXard
 author_github: Bildcraft1

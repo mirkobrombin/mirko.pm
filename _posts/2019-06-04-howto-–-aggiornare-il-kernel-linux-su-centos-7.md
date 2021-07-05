@@ -1,7 +1,7 @@
 ---
 title: '#howto – Aggiornare il kernel linux su Centos 7'
 description: "Centos 7 viene normalmente fornito con una versione stabile seppur molto vecchia, del kernel Linux.."
-published: 2019-06-04
+date: 2019-06-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

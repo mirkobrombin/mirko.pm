@@ -1,6 +1,6 @@
 ---
 title: "#howto - Come controllare l'uso della memoria (RAM) su Linux'"
-published: 2021-02-15
+date: 2021-02-15
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

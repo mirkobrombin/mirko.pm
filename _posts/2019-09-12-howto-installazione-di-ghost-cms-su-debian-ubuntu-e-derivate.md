@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione di Ghost CMS su Debian/Ubuntu e derivate'
 description: "Ghost è una piattaforma di blogging gratis e open source, creato per semplificare il processo di pubblicazione online per blogger e testate."
-published: 2019-09-12
+date: 2019-09-12
 layout: post
 author: Hersel Giannella
 author_github: hersel

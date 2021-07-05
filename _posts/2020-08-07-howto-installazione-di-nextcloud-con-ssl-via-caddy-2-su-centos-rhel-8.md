@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Nextcloud con SSL via Caddy 2 su Centos/RHEL 8'
-published: 2020-08-07
+date: 2020-08-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

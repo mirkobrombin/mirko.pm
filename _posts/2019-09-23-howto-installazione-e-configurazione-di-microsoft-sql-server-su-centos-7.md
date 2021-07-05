@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di Microsoft SQL Server su Centos 7'
 description: "Dalla release del 2017, Microsoft SQL Server è disponibile per sistemi Linux in modo nativo."
-published: 2019-09-23
+date: 2019-09-23
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

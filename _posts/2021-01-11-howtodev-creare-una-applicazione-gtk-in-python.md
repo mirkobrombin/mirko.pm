@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Creare una applicazione GTK in Python'
-published: 2021-01-11
+date: 2021-01-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

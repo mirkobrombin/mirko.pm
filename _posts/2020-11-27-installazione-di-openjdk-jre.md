@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di OpenJDK/JRE su Linux'
-published: 2020-11-27
+date: 2020-11-27
 layout: post
 author: WhiXard
 author_github: Bildcraft1

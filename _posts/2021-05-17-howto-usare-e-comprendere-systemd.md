@@ -1,6 +1,6 @@
 ---
 title: '#howto - Usare e comprendere Systemd' 
-published: 2021-05-17
+date: 2021-05-17
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady

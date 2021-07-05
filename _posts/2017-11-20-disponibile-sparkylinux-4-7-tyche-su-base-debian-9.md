@@ -1,6 +1,6 @@
 ---
 title: 'Disponibile SparkyLinux 4.7 Tyche su base Debian 9'
-published: 2017-11-20
+date: 2017-11-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

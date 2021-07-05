@@ -1,6 +1,6 @@
 ---
 title: '#howto - Come cambiare il fuso orario su Linux'
-published: 2020-07-08
+date: 2020-07-08
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

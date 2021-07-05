@@ -1,6 +1,6 @@
 ---
 title: '#howto #ChromeOS – Programmazione pt.2'
-published: 2018-11-04
+date: 2018-11-04
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

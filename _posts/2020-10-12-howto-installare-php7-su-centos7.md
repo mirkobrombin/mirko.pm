@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di PHP 7 su CentOS 7 e derivate'
-published: 2020-10-12
+date: 2020-10-12
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

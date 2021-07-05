@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Typora'
-published: 2020-07-29
+date: 2020-07-29
 layout: post
 author: Davide Galati
 author_github: psykedady

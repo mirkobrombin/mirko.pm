@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di ADB (Android Debug Bridge) su Linux'
-published: 2020-04-25
+date: 2020-04-25
 layout: post
 author: Niccolò Martiri
 author_github: talebian

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Drupal 9 su CentOS/RHEL 8 con Nginx e OPCache'
-published: 2021-02-12
+date: 2021-02-12
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

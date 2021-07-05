@@ -1,6 +1,6 @@
 ---
 title: 'Perché Ubuntu 18.04 LTS utilizzerá Xorg di default e non Wayland?'
-published: 2018-01-29
+date: 2018-01-29
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

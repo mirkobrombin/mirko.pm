@@ -1,6 +1,6 @@
 ---
 title: 'KPTI, la nuova funzionalitá del kernel che mitiga meltdown'
-published: 2018-01-07
+date: 2018-01-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

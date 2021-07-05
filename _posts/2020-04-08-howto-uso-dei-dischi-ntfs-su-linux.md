@@ -1,7 +1,7 @@
 ---
 title: '#howto - Utilizzo di NTFS su Ubuntu, Fedora e Arch Linux'
 description: "NTFS è il filesystem di Microsoft per sistemi NT, nonché quello predefinito su Windows."
-published: 2020-04-08
+date: 2020-04-08
 layout: post
 author: Niccolò Martiri
 author_github: talebian

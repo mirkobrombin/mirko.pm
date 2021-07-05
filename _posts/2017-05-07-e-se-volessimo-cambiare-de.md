@@ -1,6 +1,6 @@
 ---
 title: 'E se volessimo cambiare DE?'
-published: 2017-05-07
+date: 2017-05-07
 layout: post
 author: Giuliano Z.
 author_github: linuxhubit

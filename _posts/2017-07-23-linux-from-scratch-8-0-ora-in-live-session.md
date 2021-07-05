@@ -1,6 +1,6 @@
 ---
 title: 'Linux From Scratch 8.0 ora in Live Session'
-published: 2017-07-23
+date: 2017-07-23
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

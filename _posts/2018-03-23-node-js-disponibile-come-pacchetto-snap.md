@@ -1,6 +1,6 @@
 ---
 title: 'Node.js disponibile come pacchetto Snap'
-published: 2018-03-23
+date: 2018-03-23
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

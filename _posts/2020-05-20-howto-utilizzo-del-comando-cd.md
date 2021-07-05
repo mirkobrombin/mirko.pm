@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando cd'
-published: 2020-05-20
+date: 2020-05-20
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

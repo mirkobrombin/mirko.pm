@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione ed utilizzo di SSH'
 description: "SSH è uno strumento fondamentale per gestire server e PC locali, come ad esempio un Raspberry PI.."
-published: 2020-03-18
+date: 2020-03-18
 layout: post
 author: Niccolò Martiri
 author_github: talebian

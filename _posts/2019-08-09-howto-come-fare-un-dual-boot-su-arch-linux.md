@@ -1,7 +1,7 @@
 ---
 title: '#howto - Dual boot su Arch Linux'
 description: "Arch Linux è una distribuzione molto amata dalla comunità, per via di una community attiva e una wiki completa, ma non per questo è esente da problemi di sorta o complicazioni nell'uso."
-published: 2019-08-09
+date: 2019-08-09
 layout: post
 author: Niccolò Martiri
 author_github: talebian

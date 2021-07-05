@@ -1,6 +1,6 @@
 ---
 title: 'KDE Plasma si aggorna, risolta falla di sicurezza sulle etichette dei dispositivi USB'
-published: 2018-02-13
+date: 2018-02-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

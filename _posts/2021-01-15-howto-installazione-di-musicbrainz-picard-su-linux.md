@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di MusicBrainz Picard su Linux'
-published: 2021-01-15
+date: 2021-01-15
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

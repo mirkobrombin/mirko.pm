@@ -1,6 +1,6 @@
 ---
 title: "openSUSE Leap 42.2 raggiunge l'EOL (End of line)"
-published: 2018-01-29
+date: 2018-01-29
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

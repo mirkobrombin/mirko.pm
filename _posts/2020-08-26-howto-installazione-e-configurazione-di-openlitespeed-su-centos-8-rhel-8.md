@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di OpenLitespeed su Centos 8/RHEL 8'
-published: 2020-08-26
+date: 2020-08-26
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

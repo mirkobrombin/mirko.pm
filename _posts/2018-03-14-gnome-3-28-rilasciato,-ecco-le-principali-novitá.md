@@ -1,6 +1,6 @@
 ---
 title: 'GNOME 3.28 rilasciato, ecco le principali novitá'
-published: 2018-03-14
+date: 2018-03-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

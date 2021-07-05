@@ -1,7 +1,7 @@
 ---
 title: "#howto - Utilizzo del comando 'ls'"
 description: "ls è uno dei principali comandi che un amministratore di sistema (ma non solo) utilizza nella vita di tutti i giorni per poter sfru.."
-published: 2020-01-04
+date: 2020-01-04
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

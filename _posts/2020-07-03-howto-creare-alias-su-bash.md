@@ -1,6 +1,6 @@
 ---
 title: '#howto - Creare alias su bash'
-published: 2020-07-03
+date: 2020-07-03
 layout: post
 author: WhiXard
 author_github: Bildcraft1

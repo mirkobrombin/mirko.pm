@@ -1,6 +1,6 @@
 ---
 title: '? #pausacaffè - Linux e gli standard...  Un passo verso il futuro o uno verso il baratro?'
-published: 2017-10-13
+date: 2017-10-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Esce dalla Beta Windows Subsystem for Linux'
-published: 2017-08-02
+date: 2017-08-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

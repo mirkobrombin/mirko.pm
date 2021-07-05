@@ -1,6 +1,6 @@
 ---
 title: 'Red Hat Enterprise Linux 7.4 disponibile per Server ARM'
-published: 2017-11-14
+date: 2017-11-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,7 +1,7 @@
 ---
 title: '#howto – Eopkg: il package-manager di Solus'
 description: "Solus per chi non lo sapesse,  nasce nel 2011 su idea di Ikey Doherty, che era stato in precedenza uno dei.."
-published: 2017-10-01
+date: 2017-10-01
 layout: post
 author: Giuliano Z.
 author_github: linuxhubit

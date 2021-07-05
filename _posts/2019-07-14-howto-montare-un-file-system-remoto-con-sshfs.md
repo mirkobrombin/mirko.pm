@@ -1,7 +1,7 @@
 ---
 title: '#howto - Montare un file system remoto con sshfs'
 description: "Sono molti i casi che vedono la necessità, di dover accedere a percorsi remoti da un'altra postazione. Con sshfs possiamo 'collegare' una posizione remota da un server/pc ad un altro."
-published: 2019-07-14
+date: 2019-07-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

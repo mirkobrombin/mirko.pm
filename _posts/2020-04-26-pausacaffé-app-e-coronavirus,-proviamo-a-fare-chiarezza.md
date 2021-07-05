@@ -1,6 +1,6 @@
 ---
 title: '#pausacaffé - App e coronavirus, proviamo a fare chiarezza'
-published: 2020-04-26
+date: 2020-04-26
 layout: post
 author: Andrea Guzzon
 author_github: beard33

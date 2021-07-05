@@ -1,6 +1,6 @@
 ---
 title: 'Importanti aggiornamenti a Mesa per gli utenti openSUSE Tumbleweed'
-published: 2018-01-22
+date: 2018-01-22
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

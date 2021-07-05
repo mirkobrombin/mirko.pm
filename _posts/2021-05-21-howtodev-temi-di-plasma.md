@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - I temi di Plasma' 
-published: 2021-05-21 
+date: 2021-05-21 
 layout: post 
 author: Niccolò Venerandi
 author_github: veggero 

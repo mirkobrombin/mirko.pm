@@ -1,6 +1,6 @@
 ---
 title: 'Siduction Linux OS 2018.2.0 arriva con le patch per Meltdown & Spectre'
-published: 2018-03-11
+date: 2018-03-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

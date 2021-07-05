@@ -1,7 +1,7 @@
 ---
 title: '#howto - Abilitazione del protocollo HTTP/2 in Apache'
 description: "Il protocollo HTTP/2 è la seconda versione del comune protocollo HTTP utilizzato nel web."
-published: 2019-01-07
+date: 2019-01-07
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

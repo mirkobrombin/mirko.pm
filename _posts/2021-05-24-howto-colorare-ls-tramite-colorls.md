@@ -1,6 +1,6 @@
 ---
 title: '#howto - Colorare ls tramite colorls' 
-published: 2021-05-24 
+date: 2021-05-24 
 layout: post 
 author: Floppy
 author_github: raspFloppy 

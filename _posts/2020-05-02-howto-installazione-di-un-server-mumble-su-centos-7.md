@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di un server Mumble su Centos 7'
-published: 2020-05-02
+date: 2020-05-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

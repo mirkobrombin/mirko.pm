@@ -1,7 +1,7 @@
 ---
 title: '#howto – Installazione di VestaCP su Centos 7/Debian/Ubuntu'
 description: "VestaCP è una delle tante soluzioni gratuite ed open source che permette di avere una completa e rapida gestione del proprio web server."
-published: 2019-05-31
+date: 2019-05-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

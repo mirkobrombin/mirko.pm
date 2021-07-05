@@ -1,6 +1,6 @@
 ---
 title: 'Arriva il kernel Linux 4.15.7 su openSUSE Tumbleweed, insieme a diverse patch di sicurezza'
-published: 2018-03-09
+date: 2018-03-09
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

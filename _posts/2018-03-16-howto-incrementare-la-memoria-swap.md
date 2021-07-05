@@ -1,6 +1,6 @@
 ---
 title: '#howto - Incrementare la memoria Swap'
-published: 2018-03-16
+date: 2018-03-16
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Installare Spotify su Debian Stretch'
-published: 2017-10-29
+date: 2017-10-29
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

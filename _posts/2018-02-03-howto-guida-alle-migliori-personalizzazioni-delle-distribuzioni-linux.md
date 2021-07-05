@@ -1,6 +1,6 @@
 ---
 title: '#howto - Guida alle migliori personalizzazioni delle distribuzioni Linux'
-published: 2018-02-03
+date: 2018-02-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

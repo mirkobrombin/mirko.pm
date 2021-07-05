@@ -1,6 +1,6 @@
 ---
 title: 'GNOME 3.28 arriva la terza snapshot'
-published: 2017-12-17
+date: 2017-12-17
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

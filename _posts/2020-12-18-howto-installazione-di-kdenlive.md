@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Kdenlive sulle principali distribuzioni Linux'
-published: 2020-12-18
+date: 2020-12-18
 layout: post
 author: WhiXard
 author_github: Bildcraft1

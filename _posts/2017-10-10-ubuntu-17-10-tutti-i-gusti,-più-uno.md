@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 17.10.. Tutti i gusti, più uno!'
-published: 2017-10-10
+date: 2017-10-10
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

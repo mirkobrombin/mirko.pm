@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Steam sulle principali distribuzioni Linux'
-published: 2020-06-17
+date: 2020-06-17
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

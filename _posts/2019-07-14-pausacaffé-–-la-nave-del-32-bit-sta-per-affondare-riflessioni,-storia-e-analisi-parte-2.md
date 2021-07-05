@@ -1,7 +1,7 @@
 ---
 title: '#pausacaffé – La nave del 32 bit sta per affondare! Riflessioni, storia e analisi (parte 2)'
 description: "L'articolo che segue rappresenta la seconda parte della #pausacaffè presente.."
-published: 2019-07-14
+date: 2019-07-14
 layout: post
 author: Davide Galati
 author_github: psykedady

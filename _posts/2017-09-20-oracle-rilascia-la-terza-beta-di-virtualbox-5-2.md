@@ -1,6 +1,6 @@
 ---
 title: 'Oracle rilascia la terza beta di VirtualBox 5.2'
-published: 2017-09-20
+date: 2017-09-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

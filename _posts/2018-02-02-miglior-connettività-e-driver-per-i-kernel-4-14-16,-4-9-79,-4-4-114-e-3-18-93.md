@@ -1,6 +1,6 @@
 ---
 title: 'Miglior connettività e driver per i kernel 4.14.16, 4.9.79, 4.4.114 e 3.18.93'
-published: 2018-02-02
+date: 2018-02-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

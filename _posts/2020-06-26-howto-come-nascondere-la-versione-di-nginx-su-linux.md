@@ -1,6 +1,6 @@
 ---
 title: '#howto - Nascondere la versione di Nginx'
-published: 2020-06-26
+date: 2020-06-26
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

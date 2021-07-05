@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione ed utilizzo di Aria2 su Linux'
-published: 2020-07-27
+date: 2020-07-27
 layout: post
 author: Andrea Guzzon
 author_github: beard33

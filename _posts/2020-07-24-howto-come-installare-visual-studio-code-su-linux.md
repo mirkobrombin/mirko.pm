@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Visual Studio Code su Linux'
-published: 2020-07-24
+date: 2020-07-24
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

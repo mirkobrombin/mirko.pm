@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di fish (shell) su Linux'
-published: 2020-08-31
+date: 2020-08-31
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

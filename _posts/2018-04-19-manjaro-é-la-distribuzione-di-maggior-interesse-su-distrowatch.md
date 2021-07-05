@@ -1,6 +1,6 @@
 ---
 title: 'Manjaro é la distribuzione di maggior interesse su Distrowatch'
-published: 2018-04-19
+date: 2018-04-19
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

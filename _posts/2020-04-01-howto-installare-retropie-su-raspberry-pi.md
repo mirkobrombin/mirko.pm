@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare RetroPie su Raspberry Pi'
 description: "Retropie è un software che ci permette di giocare ad una vastità di giochi per console retro (NES, SN.."
-published: 2020-04-01
+date: 2020-04-01
 layout: post
 author: WhiXard
 author_github: Bildcraft1

@@ -1,6 +1,6 @@
 ---
 title: '? #pausacaffè - Oggi si celebra il "System Administrator Appreciation Day"'
-published: 2017-07-28
+date: 2017-07-28
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

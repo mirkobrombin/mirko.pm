@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di MongoDB su Centos 7'
 description: "MongoDB è un database non relazionale, basato su documenti. La sua struttura lo colloca nella classifica dei database NoSQL."
-published: 2019-08-03
+date: 2019-08-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

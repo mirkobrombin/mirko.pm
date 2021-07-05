@@ -1,6 +1,6 @@
 ---
 title: 'Raspbian migra a Debian 9 Stretch'
-published: 2017-08-20
+date: 2017-08-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

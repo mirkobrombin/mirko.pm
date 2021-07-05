@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando date'
-published: 2020-08-10
+date: 2020-08-10
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

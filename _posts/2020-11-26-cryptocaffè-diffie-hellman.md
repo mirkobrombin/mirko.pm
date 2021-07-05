@@ -1,6 +1,6 @@
 ---
 title: '# Cryptocaffè: Diffie-Hellman'
-published: 2020-11-26
+date: 2020-11-26
 layout: post
 author: Andrea Guzzon
 author_github: beard33

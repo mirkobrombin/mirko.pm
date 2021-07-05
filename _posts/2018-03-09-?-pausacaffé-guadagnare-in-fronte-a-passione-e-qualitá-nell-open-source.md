@@ -1,6 +1,6 @@
 ---
 title: "#pausacaffé - Guadagnare in fronte a passione e qualitá nell'Open source"
-published: 2018-03-09
+date: 2018-03-09
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

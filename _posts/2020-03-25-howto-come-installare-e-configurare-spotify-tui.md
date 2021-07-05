@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di Spotify TUI'
 description: "Spotify TUI è un vero e proprio client CLI per Spotify scritto in Rust."
-published: 2020-03-25
+date: 2020-03-25
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

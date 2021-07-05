@@ -1,6 +1,6 @@
 ---
 title: 'LibreOffice 6.0 in arrivo su openSUSE Tumbleweed assieme alle KDE Apps 17.12'
-published: 2017-12-11
+date: 2017-12-11
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

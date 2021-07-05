@@ -1,6 +1,6 @@
 ---
 title: "LibreOffice 5.4 sarà l'ultimo update della quinta versione"
-published: 2017-07-31
+date: 2017-07-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

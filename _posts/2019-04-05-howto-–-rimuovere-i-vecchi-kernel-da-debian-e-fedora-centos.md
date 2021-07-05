@@ -1,7 +1,7 @@
 ---
 title: '#howto – Rimuovere i vecchi kernel da Debian e Fedora/CentOS'
 description: "Disinstallare i vecchi kernel inutilizzati è un ottimo metodo per recuperare spazio e alleggerire il sistema in generale."
-published: 2019-04-05
+date: 2019-04-05
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

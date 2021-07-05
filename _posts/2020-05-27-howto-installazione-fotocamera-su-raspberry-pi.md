@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di una telecamera su Raspberry Pi'
-published: 2020-05-27
+date: 2020-05-27
 layout: post
 author: WhiXard
 author_github: Bildcraft1

@@ -1,6 +1,6 @@
 ---
 title: '? #pausacaffè - Se metti le mani è colpa tua! Tweaking delle distribuzioni.'
-published: 2017-11-03
+date: 2017-11-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione ed utilizzo di transmission-cli su Centos 8/RHEL 8/Fedora 30+'
-published: 2020-06-03
+date: 2020-06-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

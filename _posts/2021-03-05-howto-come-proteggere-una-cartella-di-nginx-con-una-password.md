@@ -1,6 +1,6 @@
 ---
 title: '#howto - Come proteggere una cartella di Nginx con una password'
-published: 2021-03-05
+date: 2021-03-05
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

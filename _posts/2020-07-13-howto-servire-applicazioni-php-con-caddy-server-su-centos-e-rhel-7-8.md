@@ -1,6 +1,6 @@
 ---
 title: '#howto - Servire applicazioni PHP con Caddy Server su CentOS e RHEL 8'
-published: 2020-07-13
+date: 2020-07-13
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

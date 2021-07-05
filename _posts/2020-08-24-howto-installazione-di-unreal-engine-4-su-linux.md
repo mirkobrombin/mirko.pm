@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Unreal Engine 4 su Linux'
-published: 2020-08-24
+date: 2020-08-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

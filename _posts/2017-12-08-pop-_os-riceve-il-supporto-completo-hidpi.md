@@ -1,6 +1,6 @@
 ---
 title: 'Pop!_OS riceve il supporto completo HiDPI'
-published: 2017-12-08
+date: 2017-12-08
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

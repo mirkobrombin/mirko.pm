@@ -1,6 +1,6 @@
 ---
 title: "#pausacaffé - La responsabilitá dei progetti per l'Open source per un mondo digitale"
-published: 2017-12-16
+date: 2017-12-16
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

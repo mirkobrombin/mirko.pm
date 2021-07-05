@@ -1,6 +1,6 @@
 ---
 title: 'Calibre 3.12 rilasciato: si amplia il supporto'
-published: 2017-11-12
+date: 2017-11-12
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

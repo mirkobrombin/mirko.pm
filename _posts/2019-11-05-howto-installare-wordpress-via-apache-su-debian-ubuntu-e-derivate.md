@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare WordPress via Apache su Debian/Ubuntu e derivate'
 description: "In questa guida vediamo appunto come Installare Wordpress via server Apache."
-published: 2019-11-05
+date: 2019-11-05
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

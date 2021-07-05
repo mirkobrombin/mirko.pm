@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione di Nginx su Centos 8/RHEL 8 e configurazione SSL'
 description: "In questa guida vediamo come procedere all'installazione dell'ultima versione disponibile di Nginx su siste.."
-published: 2020-01-15
+date: 2020-01-15
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

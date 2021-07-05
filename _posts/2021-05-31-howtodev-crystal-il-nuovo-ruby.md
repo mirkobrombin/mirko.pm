@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Crystal, il nuovo Ruby'
-published: 2021-05-31
+date: 2021-05-31
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit

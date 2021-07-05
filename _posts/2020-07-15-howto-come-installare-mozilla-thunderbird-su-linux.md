@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di Mozilla Thunderbird su Linux'
-published: 2020-07-15
+date: 2020-07-15
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

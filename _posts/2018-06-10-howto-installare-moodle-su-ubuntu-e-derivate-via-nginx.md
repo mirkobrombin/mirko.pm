@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare Moodle su Ubuntu e derivate via Nginx'
 description: "Moodle é un software riservato ai settori dell'istruzione. Si tratta di un gestionale per docenti, studenti e collaboratori, al momento il piú usato."
-published: 2018-06-10
+date: 2018-06-10
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

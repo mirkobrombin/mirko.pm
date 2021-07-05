@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Starship shell prompt'
-published: 2021-02-01
+date: 2021-02-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

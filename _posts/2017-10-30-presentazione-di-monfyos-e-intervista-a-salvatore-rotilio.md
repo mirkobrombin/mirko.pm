@@ -1,6 +1,6 @@
 ---
 title: 'Presentazione di MonfyOS e intervista a Salvatore Rotilio'
-published: 2017-10-30
+date: 2017-10-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Fireofx 57, la prima Quantum release è finalmente qui'
-published: 2017-11-14
+date: 2017-11-14
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

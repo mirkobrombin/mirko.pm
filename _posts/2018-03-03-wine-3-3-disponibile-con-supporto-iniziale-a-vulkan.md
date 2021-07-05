@@ -1,6 +1,6 @@
 ---
 title: 'Wine 3.3 disponibile con supporto iniziale a Vulkan'
-published: 2018-03-03
+date: 2018-03-03
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

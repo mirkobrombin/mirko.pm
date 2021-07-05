@@ -1,6 +1,6 @@
 ---
 title: "#howto - Guida all'utilizzo di DNF come gestore pacchetti"
-published: 2018-01-18
+date: 2018-01-18
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

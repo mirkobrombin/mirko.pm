@@ -1,7 +1,7 @@
 ---
 
 title: '#howtodev - Creare un backend di base in Go'
-published: 2021-06-18
+date: 2021-06-18
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Eseguire il boot di Raspberry Pi 4 da USB'
-published: 2020-10-26
+date: 2020-10-26
 layout: post
 author: WhiXard
 author_github: Bildcraft1

@@ -1,6 +1,6 @@
 ---
 title: 'Guida come installare VirtualBox 5.1.22 su Debian 9'
-published: 2017-08-16
+date: 2017-08-16
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

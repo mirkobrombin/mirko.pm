@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installare .Net Core su Debian'
 description: "In questa guida vediamo come installare e rendere funzionale .NET Core su server Debian."
-published: 2019-05-15
+date: 2019-05-15
 layout: post
 author: Hersel Giannella
 author_github: hersel

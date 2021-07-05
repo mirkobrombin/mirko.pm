@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Utilizzare le espressioni regolari (regex) in vari linguaggi'
-published: 2020-09-09
+date: 2020-09-09
 layout: post
 author: Davide Galati
 author_github: psykedady

@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione ed utilizzo di zap, gestore pacchetti per AppImage'
-published: 2021-02-26
+date: 2021-02-26
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

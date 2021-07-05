@@ -1,6 +1,6 @@
 ---
 title: 'Le migliori piattaforme Web Analytics Open source'
-published: 2019-02-18
+date: 2019-02-18
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

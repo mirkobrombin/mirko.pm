@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e uso di gtop'
 description: "In questa guida vediamo come installare gtop oltre che ad una breve introduzione a questo sistema di monitoraggio basato su NodeJS."
-published: 2019-07-18
+date: 2019-07-18
 layout: post
 author: Hersel Giannella
 author_github: hersel

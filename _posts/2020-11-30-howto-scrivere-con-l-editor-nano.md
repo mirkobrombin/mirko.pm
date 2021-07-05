@@ -1,6 +1,6 @@
 ---
 title: "#howto - usare l'editor di testo Nano"
-published: 2020-11-30
+date: 2020-11-30
 layout: post
 author: Davide Galati
 author_github: psykedady

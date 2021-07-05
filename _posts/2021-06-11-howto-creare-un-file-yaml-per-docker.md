@@ -1,6 +1,6 @@
 ---
 title: "#howto - Creare un file yaml per docker"
-published: 2021-06-11
+date: 2021-06-11
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy

@@ -1,6 +1,6 @@
 ---
 title: 'Le distribuzioni Linux e-Book'
-published: 2017-07-15
+date: 2017-07-15
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

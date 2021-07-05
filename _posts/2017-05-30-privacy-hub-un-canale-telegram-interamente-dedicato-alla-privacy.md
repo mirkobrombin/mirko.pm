@@ -1,6 +1,6 @@
 ---
 title: 'Privacy Hub: un canale Telegram interamente dedicato alla privacy'
-published: 2017-05-30
+date: 2017-05-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

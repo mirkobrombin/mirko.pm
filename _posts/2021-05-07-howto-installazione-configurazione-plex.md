@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di un server Plex ' 
-published: 2021-05-07 
+date: 2021-05-07 
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady

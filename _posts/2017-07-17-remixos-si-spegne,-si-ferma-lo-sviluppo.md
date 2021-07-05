@@ -1,6 +1,6 @@
 ---
 title: 'RemixOS si spegne, si ferma lo sviluppo'
-published: 2017-07-17
+date: 2017-07-17
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

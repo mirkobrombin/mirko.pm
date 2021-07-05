@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando ps'
-published: 2018-02-12
+date: 2018-02-12
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

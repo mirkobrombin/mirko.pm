@@ -1,7 +1,7 @@
 ---
 title: '#howto – Installare e configurare fail2ban in Centos 7'
 description: "Lo strumento fail2ban si occupa di controllare il log accessi del server in tempo reale, bloccando l'indirizzo IP di quelli con ripetuti tentativi falliti.."
-published: 2019-06-01
+date: 2019-06-01
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

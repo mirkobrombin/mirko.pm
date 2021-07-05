@@ -1,6 +1,6 @@
 ---
 title: 'Debian 9 “Stretch”: guida post installazione (completa)'
-published: 2017-07-20
+date: 2017-07-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

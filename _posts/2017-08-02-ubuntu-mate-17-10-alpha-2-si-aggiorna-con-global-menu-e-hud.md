@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu MATE 17.10 Alpha 2 si aggiorna con global menu  e HUD'
-published: 2017-08-02
+date: 2017-08-02
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

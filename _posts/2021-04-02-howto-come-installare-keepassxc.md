@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione di KeePassXC su Linux'
-published: 2021-04-02
+date: 2021-04-02
 layout: post
 author: WhiXard
 author_github: Bildcraft1

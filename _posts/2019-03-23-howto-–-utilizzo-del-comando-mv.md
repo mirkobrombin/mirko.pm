@@ -1,7 +1,7 @@
 ---
 title: "#howto – Utilizzo del comando 'mv'"
 description: "Il comando mv è la soluzione integrata in Linux per spostare e rinominare file nel sistema. Il suo utilizzo è estremamente facile e non richiede istruzioni complicate."
-published: 2019-03-23
+date: 2019-03-23
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

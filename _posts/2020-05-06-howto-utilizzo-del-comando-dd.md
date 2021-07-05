@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo del comando dd'
-published: 2020-05-06
+date: 2020-05-06
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

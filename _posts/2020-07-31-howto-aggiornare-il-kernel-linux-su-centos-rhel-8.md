@@ -1,6 +1,6 @@
 ---
 title: '#howto – Aggiornare il kernel Linux su CentOS/RHEL 8'
-published: 2020-07-31
+date: 2020-07-31
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

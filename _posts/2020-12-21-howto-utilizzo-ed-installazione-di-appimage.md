@@ -1,6 +1,6 @@
 ---
 title: '#howto - Utilizzo ed installazione di AppImage'
-published: 2020-12-21
+date: 2020-12-21
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,7 +1,7 @@
 ---
 title: '#howto - Fedora 31 Post Installazione'
 description: "Se stai consultando questo articolo è perchè, molto probabilmente, hai appena installato sul tuo PC Fedora 31.."
-published: 2020-02-22
+date: 2020-02-22
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma

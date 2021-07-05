@@ -1,6 +1,6 @@
 ---
 title: 'Ora Ubuntu Dock supporta le barre di avanzamento e i contatori notifiche'
-published: 2017-09-25
+date: 2017-09-25
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

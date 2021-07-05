@@ -1,6 +1,6 @@
 ---
 title: ' #howto - Come controllare se CentOS o RHEL necessita di un riavvio completo dopo un aggiornamento'
-published: 2020-09-21
+date: 2020-09-21
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

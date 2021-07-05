@@ -1,6 +1,6 @@
 ---
 title: 'Google Chrome 60 arriva su desktop'
-published: 2017-07-28
+date: 2017-07-28
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

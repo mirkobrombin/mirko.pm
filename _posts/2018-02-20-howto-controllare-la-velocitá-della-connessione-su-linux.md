@@ -1,6 +1,6 @@
 ---
 title: '#howto - Controllare la velocitá della connessione su Linux'
-published: 2018-02-20
+date: 2018-02-20
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,6 +1,6 @@
 ---
 title: 'Importante aggiornamento Kernel per Meltdown & Spectre in Debian 9 Stretch'
-published: 2018-03-05
+date: 2018-03-05
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

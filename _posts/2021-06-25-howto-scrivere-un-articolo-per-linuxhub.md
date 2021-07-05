@@ -1,6 +1,6 @@
 ---
 title: '#howto - Scrivere un articolo per linux/hub' 
-published: 2021-06-25
+date: 2021-06-25
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
@@ -73,7 +73,7 @@ Inoltre ogni articolo **deve contenere il seguente header** a partire dalla prim
 ```
 ---
 title: '#howto - nome articolo' 
-published: aaaa-mm-gg 
+date: aaaa-mm-gg 
 layout: post 
 author: Nome Autore
 author_github: Nome github 

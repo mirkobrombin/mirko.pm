@@ -1,6 +1,6 @@
 ---
 title: 'Rilasciata Chakra 2017.10 “Goedel”'
-published: 2017-10-09
+date: 2017-10-09
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

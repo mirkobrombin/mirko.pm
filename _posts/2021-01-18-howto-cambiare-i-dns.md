@@ -1,6 +1,6 @@
 ---
 title: '#howto - Cambiare i DNS su Linux'
-published: 2021-01-18
+date: 2021-01-18
 layout: post
 author: WhiXard
 author_github: Bildcraft1

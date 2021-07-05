@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installazione e configurazione di Netflix su Kodi'
-published: 2020-10-14
+date: 2020-10-14
 layout: post
 author: Davide Galati
 author_github: psykedady

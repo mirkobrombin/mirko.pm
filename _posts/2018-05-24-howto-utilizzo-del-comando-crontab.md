@@ -1,7 +1,7 @@
 ---
 title: "#howto - Utilizzo del comando 'crontab'"
 description: "L'automatizzazione di varie operazioni su una macchina, sono un tassello fondamentale per l'amministrazione di sistemi ma anche.."
-published: 2018-05-24
+date: 2018-05-24
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

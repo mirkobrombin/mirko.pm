@@ -1,7 +1,7 @@
 ---
 title: 'Il primo post'
 description: "Il progetto nasce dall'idea di tre ragazzi: Giuliano Zamboni, Leonardo Occhiuzzi e Mirko Brombin. "
-published: 2016-11-25
+date: 2016-11-25
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

@@ -1,7 +1,7 @@
 ---
 title: "#howto – Utilizzo del comando 'chpasswd'"
 description: "L'utilizzo del comando chpasswd si applica principalmente in un contesto produttivo dove si vede la condivisione di una macchina con piú utenti."
-published: 2018-08-30
+date: 2018-08-30
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

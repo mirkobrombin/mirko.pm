@@ -1,6 +1,6 @@
 ---
 title: '#howto - Mostrare un banner o messaggio al login in SSH'
-published: 2020-12-14
+date: 2020-12-14
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev

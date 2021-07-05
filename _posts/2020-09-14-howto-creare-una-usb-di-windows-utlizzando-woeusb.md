@@ -1,6 +1,6 @@
 ---
 title: '#howto - Creare una USB di Windows con WoeUSB'
-published: 2020-09-14
+date: 2020-09-14
 layout: post
 author: WhiXard
 author_github: Bildcraft1

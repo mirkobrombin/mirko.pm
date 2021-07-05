@@ -1,6 +1,6 @@
 ---
 title: 'Disponibile la beta di LibreOffice 6'
-published: 2017-11-27
+date: 2017-11-27
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

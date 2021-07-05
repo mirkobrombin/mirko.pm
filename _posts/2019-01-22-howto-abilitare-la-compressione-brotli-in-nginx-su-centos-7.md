@@ -1,7 +1,7 @@
 ---
 title: '#howto - Abilitare la compressione Brotli in Nginx su Centos 7'
 description: "Brotli è un algoritmo di compressione sempre più difuso nei browser moderni."
-published: 2019-01-22
+date: 2019-01-22
 layout: post
 author: Mirko B.
 author_github: mirkobrombin

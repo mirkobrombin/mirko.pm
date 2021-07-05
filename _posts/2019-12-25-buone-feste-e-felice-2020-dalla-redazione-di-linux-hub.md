@@ -1,7 +1,7 @@
 ---
 title: 'Buone feste e felice 2020 dalla redazione di linux/hub'
 description: "Il 2019 è stato il terzo anno di linux/hub, un progetto ambizioso con una redazione composta da 9 elementi guidati dalla passio.."
-published: 2019-12-25
+date: 2019-12-25
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
