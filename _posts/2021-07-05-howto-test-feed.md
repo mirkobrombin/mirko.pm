@@ -1,6 +1,6 @@
 ---
 title: '#howto - test feed' 
-published: 2021-07-05 13:00 +0000
+published: 2021-07-05 13:00:00 +0000
 layout: post 
 author: PsykeDady
 author_github: PsykeDady 
