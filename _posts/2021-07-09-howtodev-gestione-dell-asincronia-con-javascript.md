@@ -1,7 +1,6 @@
 ---
-
 title: "howtodev gestione dell'asincronia con javascript"
-published: 2021-07-09
+date: 2021-07-09 13:00
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy
@@ -18,13 +17,13 @@ In questo articolo andremo a spiegare quella che è l'**asincronia ad eventi** i
 Prima di iniziare una breve spiegazione su come funziona la programmazione sincrona.
 Per programmazione sincrona si intende che il codice viene eseguico sequenzialmente riga per riga ovvero ogni **task** viene eseguito solo se il precedente è stato eseguito con successo, un esempio in **Javascript**:
 
-``` Javascript
+```javascript
 var a = 1;
 var b = 2;
 console.log(a+b);
 ```
 
-``` bash
+```bash
 output: 3 
 ```
 
@@ -35,7 +34,7 @@ Il problema è che ci sono casi in cui non è adatto utilizzarla perchè può ri
 Sul web abbiamo in genere un server (o più distribuiti) e dei client che fanno delle richieste al server, definiamo queste richieste dei **task**, ora immaginate se ogni client dovesse aspettare che il precedente abbia finito il proprio **task** per poter fare una richiesta al server, fintanto che i task riguardano semplici operazioni e i client sono giusto due o tre non ci sono problemi ma quando le operazioni si fanno più complesse e i client più numerosi abbiamo bisogno di un altrenativa per gestire più **task** insieme.
 
 Molti linguaggi adottano la **programmazione parallela** o **multithreading**, in **Javascript** viene utilizzata la **asincronia ad eventi**.
-Nell'asincronia ad eventi viene eseguito parte di un task dopodichè si passa ad eseguire un'altra parte di un'altro task e così via poi si ritorna al primo task se ne esegue una parte poi si passa al successivo task e così via fin quando non sono conclusi tutti i task, ovviamente ogni task si completerà in tempi diversi perciò ci sararanno **alcuni task** che **finiranno prima di altri**, questo è molto importante per capire perchè esistono dei metodi per gestire l'asincronia con Javascript.
+Nell'asincronia ad eventi viene eseguito parte di un task dopodichè si passa ad eseguire un'altra parte di un'altro task e così via poi si ripete fin quando non sono conclusi tutti i task, ovviamente ogni task si completerà in tempi diversi perciò ci sararanno **alcuni task** che **finiranno prima di altri**. Questo è molto importante per capire perché esistono dei metodi per gestire l'asincronia con Javascript.
 L'asincronia viene gestita così perchè Javascript è **single thread** ovvero ha solo un heap di memoria ed uno singolo stack per le chiamate e perciò per eseguire più task contemporaneamente deve fare in questo modo.
 
 
@@ -48,7 +47,8 @@ Esempio:
 |---|----|---|---|---|---|---|---|---|---|---|---|---|---|
 
 Nell'esempio viene mostrato come possono venire eseguiti tre task contemporaneamente in Javascript. 
-Notiamo come il secondo task finisca per primo, questo perchè come spiegato prima non tutti i task hanno gli stessi tempi di esecuzione e questo può diventare un problema, se per esempio l'apertura di un file si esegue prima che si verifichi che quel file che vogliamo aprire effettimanente esisti potremmo avere degli errori durante il runtime del codice, per questo sono stati creati tre metodi per gestire l'asincronia in javascript che tengono conto di controllare gli errori e i tempi di esecuzione, questi metodi sono:
+
+Notiamo come il secondo task finisce per primo, questo perchè come spiegato prima non tutti i task hanno gli stessi tempi di esecuzione e questo può diventare un problema, se per esempio l'apertura di un file viene eseguita prima della verifica della sua esistenza, potremmo avere degli errori durante il runtime del codice, motivo per cui esistono tre metodi per gestire l'asincronia in javascript e specificatamente usati per controllare gli errori e i tempi di esecuzione:
 - **Callback**
 - **Promise**
 - **Async/Await**
@@ -63,7 +63,7 @@ Prima di tutto iniziamo dicendo che in Javascript le **funzioni sono** considera
 Le callback sono il metodo più comune e più semplice di gestire l'asincronia ma anche quello che porta poi a più problemi sopratutto per quanto riguarda l'ordine del codice.
 
 Un esempio di callback:
-``` javascript
+```javascript
 function a() { 
     console.log('I')
 }
@@ -85,7 +85,7 @@ function callback_test() {
 callback_test()
 ```
 
-``` bash
+```bash
 output: 
 Yoda
 I
@@ -95,17 +95,17 @@ am
 In questo esempio sono stati create tre funzioni che vengono eseguite tutte all'interno della funzione `callback-test()` ma la funzione `a()` e `b()` sono callback della funzione setTimeout che blocca l'esecuzione della funzione passata come parametro per un tot di millisecondi che noi impostiamo nel secondo parametro ovvero `1000` e `2000` mentre la funzione `c()` viene eseguita normalmente.
 Ora nonostante l'ordine delle funzioni sarebbe `a->b->c` viene eseguita prima la funzione `c()` poi la `a()` ed infine la `b()`, questo perchè le prima due sono bloccate dal `setTimeout()` quindi nel frattempo Javascript esegue la funzione `c()` poi passa alla funzione `a()` dato che nel frattempo la funzione `b()`  è ancora in standby e poi esegue la `b()`.
 
-> NOTA 
-> la funzione `c()` è un semplice print su console e viene eseguito subito se fosse stata un'operazione 
-> più complessa sarabba stata eseguita solo una parte della funzione per poi eseguire parte delle altre 
+> NOTA  
+> la funzione `c()` è un semplice print su console e viene eseguito subito. Se fosse stata un'operazione 
+> più complessa sarabbe stata eseguita solo una parte della funzione per poi eseguire parte delle altre 
 > tornare a questa e così via fino al suo completamento.
 
 
-Un esempio più serio è quello spiegato precedentemente dell'apertura e lettura di un file, per farlo dobbiamo specificare il nome del file (ed il suo PATH), poi verificare che esso esista, verificare che sia un file leggibile ed infine stampare il contenuto del file, e se uno di questi passaggi non dovesse andare a buon fine allora bloccare l'intero processo ed è quindi necessario avere una gestione degli errori per ogni passaggio.
+Un esempio più serio è quello spiegato precedentemente dell'apertura e lettura di un file, per farlo dobbiamo specificare il nome del file (ed il suo PATH), poi verificare che esista, che sia leggibile ed infine stamparne il contenuto. Se uno di questi passaggi non dovesse andare a buon fine bisona bloccare l'intero processo ed è quindi necessario avere una gestione degli errori per ogni passaggio.
 Nel frattempo però il resto del codice si eseguirà sempre seguendo l'asincronia ad eventi di Javascript.
 
 Esempio:
-``` Javascript
+```javascript
 var fs = require('fs')
 var file = 'file.txt'
 
@@ -127,6 +127,7 @@ fs.exists(file, function(exists) {
 
 console.log('Vengo stampato prima io XD !!!')
 ```
+
 ```
 output:
 Vengo stampato prima io XD !!!
@@ -147,7 +148,7 @@ Come le funzioni in Javascript anche le promise sono oggetti e permettono di ave
 La gestione dell'asincronia è molto simile alle callback ma il tutto viene **diviso per blocchi**.
 Prendiamo l'esempio di prima dell'apertura di un file ma trasposto in **Promise**:
 
-``` Javascript
+```javascript
 var fs = require('fs');
 var file = 'file.txt'
 
@@ -205,7 +206,7 @@ const filePromise = () => {
 filePromise()
 console.log('aaa vengo eseguito prima!!!')
 ```
-``` bash
+```bash
 output:
 aaa vengo eseguito prima!!!
 file data: ciao sono un file
@@ -217,15 +218,15 @@ La gestione degli errori viene gestita attraverso le condizioni `if / else` che 
 - **Pending**: quando viene eseguita una promise ma non si sa ancora il risultato essa si trova in questo stato, appunto in attesa.
 - **Resolved**: quando la promessa viene mantenuta, ovvero non ci sono errori la promise risulta risolta.
 - **Rejected**: se invece la promessa non viene mantenute, quindi vi è un errore la promise viene rigettata.
-- 
+
+ 
 Questi tre stati sono importanti per la gestione dell'asincronia attraverso le promise.
-Nell'ultima parte del codice troviamo la funzione filePromise() che contiene una serie di `.then()` e `.catch()` queste due funzioni servono appunto a gestire le promise.
+Nell'ultima parte del codice troviamo la funzione `filePromise()` che contiene una serie di `.then()` e `.catch()` queste due funzioni servono appunto a gestire le promise.
+
 Quello che succede è che la prima promise viene eseguita, entra in fase di `pending` in attesa di un risultato, se quest'ultimo ritorna un `resolve()` allora prosegue con il `then()` se ritorna `reject()` il `catch()` intercetta l'errore ed esce dalla promise.
-Questo controllo del risultato viene fatto ad ogni `then()` che se vengono tutti completati con successo (tutte le promise ritornano un `resolve()`) allora si può dire che la promessa è stata mantenuta altrimenti se ci dovesse essere un `reject()` si dirà che la promessa non è stata mantenuta.
 
-Come al solito mentre le promise viene eseguito il resto del codice si esegue in maniera asincrona, vediamo infatti che il `console.log()` a fine codice viene eseguito prima delle promise. 
-
-Questo tipo di sintassi è si migliore delle callback ma mantiene comunque alcuni problemi di chiarezza del codice per questo è stato creato un terzo metodo per la gestione asincrona.
+Questo tipo di sintassi è migliore delle callback ma mantiene comunque alcuni problemi di chiarezza del codice
+Motivo per cui è stato creato un terzo metodo per la gestione asincrona.
 
 
 
@@ -233,8 +234,9 @@ Questo tipo di sintassi è si migliore delle callback ma mantiene comunque alcun
 
 **Async ed Await** sono due **keyword** aggiunte alla sintassi di Javascript che permettono di gestire blocchi di codice asincorno in maniera più lineare e pulito possibile cercando di essere più simile ad un codice sincrono.
 
+Vediamone subito un esempio:
 
-``` Javascript
+```javascript
 function a() {
     return new Promise(resolve => {
       setTimeout(() => {
@@ -275,7 +277,8 @@ async function printAsync() {
 printAsync()
 a()
 ```
-``` bash
+
+```bash
 output: 
 COME
 
@@ -288,7 +291,7 @@ VA
 Ora come vediamo abbiamo tre funzioni che contengono delle promise che si eseguono con un certo deley impostato dalla funzione `setTimeout()`.
 Se noi chiamassimo queste tre funzione `a()`, `b()`, e `c()` normalmente per i motivi spiegati nell'introduzione verrebbero eseguiti si quasi contemporanemanente ma finirebbero in tempi diversi, in questo caso  a->b->c che però stamperebbero il messaggio in ordine sbagliato:
 
-``` bash
+```bash
 output:  COME CIAO VA
 ```
 
