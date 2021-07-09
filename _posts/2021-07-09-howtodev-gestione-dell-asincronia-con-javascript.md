@@ -45,19 +45,19 @@ L'asincronia viene gestita così perchè Javascript è **single thread** ovvero 
 Esempio:
 
 <table> <tbody><tr>
-<td>Single Thread</td>
-<td>T1</td>
-<td>T2</td>
-<td>T3</td>
-<td>T1</td>
-<td>T2</td>
-<td>T3</td>
-<td>T1</td>
-<td>T2</td>
-<td>T3</td>
-<td>...</td>
-<td>fine T2</td>
-<td>fine T1</td>
+<td style="border-right:0.1em black solid">Single Thread</td>
+<td style="border-right:0.1em black solid">T1</td>
+<td style="border-right:0.1em black solid">T2</td>
+<td style="border-right:0.1em black solid">T3</td>
+<td style="border-right:0.1em black solid">T1</td>
+<td style="border-right:0.1em black solid">T2</td>
+<td style="border-right:0.1em black solid">T3</td>
+<td style="border-right:0.1em black solid">T1</td>
+<td style="border-right:0.1em black solid">T2</td>
+<td style="border-right:0.1em black solid">T3</td>
+<td style="border-right:0.1em black solid">...</td>
+<td style="border-right:0.1em black solid">fine T2</td>
+<td style="border-right:0.1em black solid">fine T1</td>
 <td>fine T3</td>
 </tr></tbody></table>
 
