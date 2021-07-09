@@ -43,8 +43,9 @@ L'asincronia viene gestita così perchè Javascript è **single thread** ovvero 
 
 
 Esempio:
-|Single Thread |T1 |T2 |T3 |T1 |T2 |T3 |T1 |T2 |T3 |... |end T2 |fine T1 | fine T3 |
-|---|----|---|---|---|---|---|---|---|---|---|---|---|---|
+
+| Single Thread | T1   | T2   | T3   | T1   | T2   | T3   | T1   | T2   | T3   | ...  | end T2 | fine T1 | fine T3 |
+| ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ------- | ------- |
 
 Nell'esempio viene mostrato come possono venire eseguiti tre task contemporaneamente in Javascript. 
 
@@ -219,7 +220,7 @@ La gestione degli errori viene gestita attraverso le condizioni `if / else` che 
 - **Resolved**: quando la promessa viene mantenuta, ovvero non ci sono errori la promise risulta risolta.
 - **Rejected**: se invece la promessa non viene mantenute, quindi vi è un errore la promise viene rigettata.
 
- 
+
 Questi tre stati sono importanti per la gestione dell'asincronia attraverso le promise.
 Nell'ultima parte del codice troviamo la funzione `filePromise()` che contiene una serie di `.then()` e `.catch()` queste due funzioni servono appunto a gestire le promise.
 
@@ -285,7 +286,7 @@ COME
 CIAO
 COME
 VA
-``` 
+```
 
 
 Ora come vediamo abbiamo tre funzioni che contengono delle promise che si eseguono con un certo deley impostato dalla funzione `setTimeout()`.
