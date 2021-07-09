@@ -471,8 +471,8 @@ Anche Java implementa le regex, con alcuni semplici metodi oltretutto.
 Il primo semplice metodo per usufruire del match dell'intera stringa è sfruttare il metodo stesso della classe String:
 
 ```java
-String email="ajeje@brazzorf.com"
-System.out.println("\\w+@\\w+\\.\\w")
+String email="ajeje@brazzorf.com";
+System.out.println(email.matches("\\w+@\\w+\\.\\w"));
 ```
 
 Da notare come in questo caso sia importante generare **un escape** per il carattere `\` quando si usufruisce dei gruppi. Infatti lo stesso carattere *è usato come escape da Java stesso*, quindi per utilizzarlo nella regex va interpretato come carattere.
