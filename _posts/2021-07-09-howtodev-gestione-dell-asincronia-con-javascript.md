@@ -44,8 +44,24 @@ L'asincronia viene gestita così perchè Javascript è **single thread** ovvero 
 
 Esempio:
 
-| Single Thread | T1   | T2   | T3   | T1   | T2   | T3   | T1   | T2   | T3   | ...  | end T2 | fine T1 | fine T3 |
-| ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ------- | ------- |
+<table> <tbody><tr>
+<td>Single Thread</td>
+<td>T1</td>
+<td>T2</td>
+<td>T3</td>
+<td>T1</td>
+<td>T2</td>
+<td>T3</td>
+<td>T1</td>
+<td>T2</td>
+<td>T3</td>
+<td>...</td>
+<td>fine T2</td>
+<td>fine T1</td>
+<td>fine T3</td>
+</tr></tbody></table>
+
+
 
 Nell'esempio viene mostrato come possono venire eseguiti tre task contemporaneamente in Javascript. 
 
