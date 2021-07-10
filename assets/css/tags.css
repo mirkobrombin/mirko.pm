@@ -201,6 +201,11 @@ tag.crystal {
     background-color: #fde5f0
 }
 
+.tag.javascript {
+    color: #c1ad19;
+    background-color: #fcfde5;
+}
+
 .tag.special-tag {
     padding: 0 10px;
 }
