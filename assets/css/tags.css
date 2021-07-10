@@ -202,6 +202,7 @@ tag.crystal {
 }
 
 .tag.javascript {
+    background-image: url(../images/tags/icon_javascript.png);
     color: #c1ad19;
     background-color: #fcfde5;
 }
