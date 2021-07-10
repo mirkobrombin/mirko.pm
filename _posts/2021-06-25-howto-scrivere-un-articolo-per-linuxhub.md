@@ -171,7 +171,7 @@ Di seguito vengono esposte le linee guida per scrivere correttamente un articolo
 
 ## Tipologie di articoli accettati 
 
-Attualmente son previste tre categorie di articoli attualmente : 
+Attualmente son previste tre categorie di articoli: 
 
 - howto : guide generiche sul mondo Linux/Unix
 - howtodev : guide sul mondo della programmazione 
