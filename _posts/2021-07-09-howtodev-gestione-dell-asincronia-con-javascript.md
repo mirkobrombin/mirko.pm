@@ -1,5 +1,5 @@
 ---
-title: "howtodev gestione dell'asincronia con javascript"
+title: "#howtodev - gestione dell'asincronia con javascript"
 date: 2021-07-09 13:00
 layout: post
 author: Floppy Loppy
