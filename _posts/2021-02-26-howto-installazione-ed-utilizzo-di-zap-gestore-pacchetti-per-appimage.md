@@ -5,7 +5,8 @@ layout: post
 author: Mirko B.
 author_github: mirkobrombin
 tags:
-  - github  - bash
+  - github  
+  - bash
 ---
 Abbiamo già parlato di AppImage in un [precedente articolo](https://linuxhub.it/articles/howto-utilizzo-ed-installazione-di-appimage): si tratta di un formato portabile per la distribuzione software. 
 
