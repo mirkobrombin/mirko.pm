@@ -6,9 +6,8 @@ author: Massimiliano Noviello
 author_github: linuxhubit
 tags:
 
-- cheat
-- man
-- guida
+- cheatsh
+- bash
 ---
 
 ## Introduzione
