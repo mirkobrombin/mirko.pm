@@ -1,6 +1,6 @@
 ---
 title: '#howto - Guide rapide con cheat.sh'
-date: 2021-07-15
+date: 2021-07-15 11:00
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit
@@ -21,7 +21,6 @@ Il suo segreto è la cheat.sh è la capacità di aggregare istruzioni, esempi e 
 
 Adesso vediamo come possiamo sfruttare questo strumento.
 
----
 
 ## Utilizzi
 
@@ -45,7 +44,6 @@ Ad esempio `curl cheat.sh/rust/print` ci mostrerà informazione sulla macro `pri
 
 Magari vogliamo ottenere informazioni sulle classi i python, in quel caso ci basterà fare `curl cheat.sh/python/class`
 
----
 
 ## Ulteriori informazioni
 
@@ -59,10 +57,5 @@ Informazioni bonus sul servizio:
 
 Si può accedere al sito web anche tramite un normale browser web, quindi non solo tramite riga di comando con programmi come curl.
 
----
-
-## Conclusione
-
-Questo è uno strumento utile e potente, ma magari qualcosa non ti è chiaro e hai altri domande da porci?
 
 Se questo è il caso, faccelo sapere sul nostro [gruppo Telegram](https://t.me/linuxpeople).
