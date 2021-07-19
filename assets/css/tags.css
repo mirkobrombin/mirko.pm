@@ -1,132 +1,151 @@
 .tag {
-    padding: 0 .7rem 0 1.95rem;
+    padding: 0 .7rem;
     background-repeat: no-repeat;
     font-weight: 500;
     margin: 0 .875rem .8rem 0;
     display: inline-table;
     background-position: .6rem .26rem;
     border-radius: 1rem;
-    box-shadow: 0px 0.1875em 0.5em -0.3125em;
+    box-shadow: 0 .1875em .5em -.3125em;
 }
 
 .tag.nginx {
     background-image: url(../images/tags/icon_nginx.png);
     color: #009830;
-    background-color: #e3fdeb
+    background-color: #e3fdeb;
+    padding-left: 1.95rem;
 }
 
 .tag.debian {
     background-image: url(../images/tags/icon_debian.png);
     color: #d90150;
-    background-color: #ffe4ee
+    background-color: #ffe4ee;
+    padding-left: 1.95rem;
 }
 
 .tag.apache {
     background-image: url(../images/tags/icon_apache.png);
     color: #84206f;
-    background-color: #fff0fc
+    background-color: #fff0fc;
+    padding-left: 1.95rem;
 }
 
 .tag.ruby {
     background-image: url(../images/tags/icon_ruby.png);
     color: #84202e;
     background-color: #fff0f0;
+    padding-left: 1.95rem;
 }
 
 .tag.mysql {
     background-image: url(../images/tags/icon_mysql.png);
-    color: #00618b
+    color: #00618b;
+    padding-left: 1.95rem;
 }
 
 .tag.ubuntu {
     background-image: url(../images/tags/icon_ubuntu.png);
     color: #ff6209;
-    background-color: #ffebdf
+    background-color: #ffebdf;
+    padding-left: 1.95rem;
 }
 
 .tag.nodejs {
     background-image: url(../images/tags/icon_nodejs.png);
     color: #8cc84b;
-    background-color: #f3ffe5
+    background-color: #f3ffe5;
+    padding-left: 1.95rem;
 }
 
 .tag.mongodb {
     background-image: url(../images/tags/icon_mongodb.png);
     color: #1e8f36;
-    background-color: #def9e4
+    background-color: #def9e4;
+    padding-left: 1.95rem;
 }
 
 .tag.chromeos {
     background-image: url(../images/tags/icon_chromeos.png);
     color: #3582ea;
-    background-color: #e5f0ff
+    background-color: #e5f0ff;
+    padding-left: 1.95rem;
 }
 
 .tag.centos {
     background-image: url(../images/tags/icon_centos.png);
     color: #232278;
-    background-color: #ecebff
+    background-color: #ecebff;
+    padding-left: 1.95rem;
 }
 
 .tag.fedora {
     background-image: url(../images/tags/icon_fedora.png);
     color: #243f72;
-    background-color: #e3ebf9
+    background-color: #e3ebf9;
+    padding-left: 1.95rem;
 }
 
 .tag.letsencrypt {
     background-image: url(../images/tags/icon_letsencrypt.png);
     color: #ffa403;
-    background-color: #fdf4e5
+    background-color: #fdf4e5;
+    padding-left: 1.95rem;
 }
 
 .tag.netcore {
     background-image: url(../images/tags/icon_netcore.png);
     color: #6c429c;
-    background-color: #f5edff
+    background-color: #f5edff;
+    padding-left: 1.95rem;
 }
 
 .tag.vestacp {
     background-image: url(../images/tags/icon_vestacp.png);
     color: #505050;
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    padding-left: 1.95rem;
 }
 
 .tag.python {
     background-image: url(../images/tags/icon_python.png);
     color: #336b99;
-    background-color: #e1f2ff
+    background-color: #e1f2ff;
+    padding-left: 1.95rem;
 }
 
 .tag.php {
     background-image: url(../images/tags/icon_php.png);
     color: #4c6394;
-    background-color: #e4edff
+    background-color: #e4edff;
+    padding-left: 1.95rem;
 }
 
 .tag.nextcloud {
     background-image: url(../images/tags/icon_nextcloud.png);
     color: #118acc;
-    background-color: #e4f5ff
+    background-color: #e4f5ff;
+    padding-left: 1.95rem;
 }
 
 .tag.github {
     background-image: url(../images/tags/icon_github.png);
     color: #24292e;
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    padding-left: 1.95rem;
 }
 
 .tag.gnome {
     background-image: url(../images/tags/icon_gnome.png);
     color: #24292e;
-    background-color: #ebecee
+    background-color: #ebecee;
+    padding-left: 1.95rem;
 }
 
-.tag.arch.linux,
-.tag.archlinux {
+.tag.arch.linux,.tag.archlinux {
     background-image: url(../images/tags/icon_archlinux.png);
     color: #1793d1;
-    background-color: #ddf4ff
+    background-color: #ddf4ff;
+    padding-left: 1.95rem;
 }
 
 .tag.go {
@@ -135,84 +154,84 @@
     background-position: 10px 10px;
     color: #13bbe6;
     background-color: #ddf9ff;
+    padding-left: 1.95rem;
 }
 
 .tag.natale {
     background-image: url(../images/tags/icon_christmas.png);
     color: #ea6b77;
-    background-color: #ffeaec
+    background-color: #ffeaec;
+    padding-left: 1.95rem;
 }
 
 .tag.rhel {
     background-image: url(../images/tags/icon_rhel.png);
     color: #fb3333;
-    background-color: #ffe3e3
+    background-color: #ffe3e3;
+    padding-left: 1.95rem;
 }
 
 .tag.caddy {
     background-image: url(../images/tags/icon_caddy.png);
     color: #269973;
-    background-color: #d4fde8
+    background-color: #d4fde8;
+    padding-left: 1.95rem;
 }
 
 .tag.java {
     background-image: url(../images/tags/icon_java.png);
     color: #609beb;
-    background-color: #e5f4fd
+    background-color: #e5f4fd;
+    padding-left: 1.95rem;
 }
 
 .tag.docker {
     background-image: url(../images/tags/icon_docker.png);
     color: #609beb;
-    background-color: #e5f4fd
+    background-color: #e5f4fd;
+    padding-left: 1.95rem;
 }
 
 tag.crystal {
     background-position: 7px 2px;
     background-image: url(../images/tags/icon_crystal.png);
-    color: #000000;
+    color: #000;
     background-color: #fbfbfb;
-}
-
-.tag.bash,
-.tag.privacy,
-.tag.ssh,
-.tag.systemd {
-    padding-left: .7rem
+    padding-left: 1.95rem;
 }
 
 .tag.ssh {
     color: #267999;
-    background-color: #dbf9f2
+    background-color: #dbf9f2;
 }
 
 .tag.bash {
     color: #7146b5;
-    background-color: #ebe5fd
+    background-color: #ebe5fd;
 }
 
 .tag.systemd {
     color: #269973;
-    background-color: #e5fded
+    background-color: #e5fded;
 }
 
 .tag.privacy {
     color: #99264e;
-    background-color: #fde5f0
+    background-color: #fde5f0;
 }
 
 .tag.javascript {
     background-image: url(../images/tags/icon_javascript.png);
     color: #c1ad19;
     background-color: #fcfde5;
+    padding-left: 1.95rem;
 }
 
 .tag.special-tag {
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 .tag.edit {
     box-shadow: none;
-    padding: 0;
+    padding: 0
 }
-
