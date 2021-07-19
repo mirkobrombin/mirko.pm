@@ -172,7 +172,7 @@ section[related]>div article {
     width: 100%;
     position: relative;
     top: 0;
-    text-align: initial
+    text-align: initial;
 }
 
 main>div {
@@ -604,14 +604,13 @@ header form>div::-webkit-scrollbar {
 }
 
 header form>div article {
-    width: 30%;
-    min-width: 28rem;
-    display: inline-table;
     text-align: initial;
     padding: 2rem;
     min-height: 12.3rem;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    margin: 0;
+    max-width: unset;
 }
 
 header form>div article ul.uk-article-meta,
@@ -704,7 +703,11 @@ header form>section::after {
 
 header form>div>div {
     max-width: 100rem;
-    margin: 0 auto
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 0 1rem;
 }
 
 header form>div article h5 {
@@ -730,7 +733,7 @@ header.typing>div>ul {
 
 header.typing>div>form {
     margin: -.7rem 0 0 0;
-    width: 100%
+    width: 100%;
 }
 
 header.typing>div>form>input {
@@ -742,7 +745,7 @@ header.typing+main {
 }
 
 header.typing>div>form>.icon {
-    display: none
+    /* display: none; */
 }
 
 header form>div article::after {

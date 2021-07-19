@@ -153,7 +153,9 @@
     .uk-search-page article,
     main>article,
     main>article.hasSummary,
-    main>div>article {
+    main>div>article,
+    header,
+    header.typing>div>form>input {
         border-color: #e4e4e4
     }
 
@@ -298,6 +300,7 @@
 
 @media screen and (max-width:46.5625em) {
     body {
-        background-color: #fff
+        background-color: #fff;
+        background-image: none;
     }
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width:46.5625em) {
+@media screen and (max-width: 46.5625em) {
     ::-webkit-scrollbar {
         display: none
     }
@@ -10,6 +10,11 @@
     section.spotlight>div {
         padding: 0 .625rem .6rem;
         max-width: initial
+    }
+
+    header>div>form>input[type=search] {
+        box-shadow: none;
+        border-radius: 0;
     }
 
     header>div>a {
@@ -137,7 +142,8 @@
 
     header form>div>div {
         max-width: initial;
-        padding: 0 1rem
+        padding: 0 1rem;
+        display: block;
     }
 
     header>div>a img:first-child {
@@ -146,7 +152,22 @@
 
     header>div>a img:nth-child(2) {
         display: block !important;
-        top: .1rem
+        top: .4rem;
+    }
+
+    header.typing>div {
+        padding: 0;
+    }
+
+    header.typing>div>form>input {
+        border-bottom: 1px solid;
+        padding: 1rem 1rem 1rem 2.9rem;
+    }
+
+    header.typing>div>form {
+        top: 11px;
+        padding: 0;
+        margin: -11px 0 0 0;
     }
 
     main>aside {
@@ -155,7 +176,8 @@
         border-bottom: 1px solid;
         max-height: 40vh;
         overflow-y: auto;
-        z-index: 3
+        z-index: 3;
+        top: 67px;
     }
 
     main>aside>ul>li a {
@@ -206,25 +228,33 @@
     }
 
     @media (prefers-color-scheme:dark) {
-        main>aside {
+
+        main>aside,
+        header {
             background-color: #202122
         }
     }
 
     @media (prefers-color-scheme:light) {
-        main>aside {
+
+        main>aside,
+        header {
             background-color: #fff
         }
     }
 
     header {
-        height: 6rem;
-        padding: 0
+        height: 4.2rem;
+        padding: 0;
+        border-bottom: 1px solid;
+        position: sticky;
+        top: 0;
     }
 
     header>div>form {
-        margin: -.3rem 0 0 1%;
-        padding: .4rem .3rem 1rem
+        margin: -.7rem 0 0 1%;
+        padding: 0 .3rem;
+        top: 1rem;
     }
 
     header form>div::after {
@@ -237,6 +267,11 @@
         background-position: 0 0;
         background-size: cover;
         position: relative;
+        display: none;
+    }
+
+    header.typing>div>form>.icon {
+        margin: 1.4rem 0 0 1.4rem;
     }
 
     section.spotlight h3 {
