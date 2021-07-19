@@ -5,7 +5,9 @@ layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
 tags:
-  - nginx  - apache  - bash
+  - nginx  
+  - apache  
+  - bash
 ---
 Proteggere una cartella sul web con una password o un filtro può tornare molto utile: magari si sta lavorando ad un progetto che non deve essere ancora visibile al pubblico, e pertanto sorge la necessità di nascondere ciò che si sta sviluppando.
 
