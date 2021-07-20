@@ -146,6 +146,10 @@
         display: block;
     }
 
+    footer > div > div:not(:first-of-type) {
+        display: none
+    }
+
     header>div>a img:first-child {
         display: none
     }
