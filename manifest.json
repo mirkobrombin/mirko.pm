@@ -1,0 +1,16 @@
+{
+    "name": "linux/hub",
+    "short_name": "linuxhub",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "Guide curate sul mondo Linux e Open source",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/assets/images/logo-lh-icon.svg",
+        "sizes": "512x512",
+        "type": "image/svg"
+      }
+    ]
+  }
