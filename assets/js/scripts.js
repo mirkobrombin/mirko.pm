@@ -40,10 +40,5 @@ function isInStandaloneMode() {
 }
 
 if (isInStandaloneMode()) {
-    $("body").addClass("app")
-    if (is_iOS()) {
-        $("body").addClass("ios")
-    } else {
-        $("body").addClass("android")
-    }
+    body.classList.add("app")
 }
