@@ -28,9 +28,6 @@ function load(dom, url, source_dom=false)
 
 /* PWA */
 function isInStandaloneMode() {
-    if(getCookie("is_app")) {
-        return true
-    }
     if(window.matchMedia('(display-mode: standalone)').matches) {
         return true
     }
@@ -42,11 +39,7 @@ function isInStandaloneMode() {
     }
 }
 
-if(isInStandaloneMode()) {
-    setCookie("is_app", true, 999999999)
-}
-
-if (isInStandaloneMode() || getCookie("is_app")) {
+if (isInStandaloneMode()) {
     $("body").addClass("app")
     if (is_iOS()) {
         $("body").addClass("ios")
