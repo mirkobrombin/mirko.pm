@@ -836,3 +836,7 @@ section.spotlight a button {
 section.spotlight>div {
     max-width: 66rem;
 }
+
+.app footer {
+    display: none
+}
