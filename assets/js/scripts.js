@@ -24,3 +24,33 @@ function load(dom, url, source_dom=false)
     xml_http.open("GET", url, true);
     xml_http.send(null);
 }
+
+
+/* PWA */
+function isInStandaloneMode() {
+    if(getCookie("is_app")) {
+        return true
+    }
+    if(window.matchMedia('(display-mode: standalone)').matches) {
+        return true
+    }
+    if(window.navigator.standalone) {
+        return true
+    }
+    if(document.referrer.includes('android-app://')) {
+        return true
+    }
+}
+
+if(isInStandaloneMode()) {
+    setCookie("is_app", true, 999999999)
+}
+
+if (isInStandaloneMode() || getCookie("is_app")) {
+    $("body").addClass("app")
+    if (is_iOS()) {
+        $("body").addClass("ios")
+    } else {
+        $("body").addClass("android")
+    }
+}
