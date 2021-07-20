@@ -9,7 +9,7 @@
     "icons": [
       {
         "src": "/assets/images/logo-lh-icon.svg",
-        "sizes": "512x512",
+        "sizes": "480x512",
         "type": "image/svg"
       }
     ]
