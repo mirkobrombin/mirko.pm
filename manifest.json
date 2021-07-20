@@ -8,9 +8,9 @@
     "theme_color": "#ffffff",
     "icons": [
       {
-        "src": "/assets/images/logo-lh-icon.svg",
-        "sizes": "480x512",
-        "type": "image/svg"
+        "src": "/assets/images/512.png",
+        "sizes": "512x512",
+        "type": "image/png"
       }
     ]
   }
