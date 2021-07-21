@@ -11,32 +11,24 @@
     <p>Hosted by <a href="https://github.com/mirkobrombin/mirko.pm" title="GitHub Pages">GitHub Pages</a></p>
 </footer>
 <link rel="stylesheet" type="text/css" href="{{ site.assets }}/css/style.min.css?v6" />
+
+<!-- Start Open Web Analytics Tracker -->
 <script type="text/javascript">
-    var Countly = Countly || {};
-    Countly.q = Countly.q || [];
+//<![CDATA[
+var owa_baseUrl = 'https://data.fabricators.ltd/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', '08c9c84478b561361c95bf7c22a0036a']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
 
-    Countly.app_key = 'e21bf4ca2baded20b1fc1937652c29213b0e9fb2';
-    Countly.url = 'https://data.fabricators.ltd';
-
-    Countly.q.push(['track_sessions']);
-    Countly.q.push(['track_pageview']);
-    Countly.q.push(['track_clicks']);
-    Countly.q.push(['track_scrolls']);
-    Countly.q.push(['track_errors']);
-    Countly.q.push(['track_links']);
-
-    (function () {
-        var cly = document.createElement('script');
-        cly.type = 'text/javascript';
-        cly.async = true;
-        cly.src = 'https://data.fabricators.ltd/sdk/web/countly.min.js';
-        cly.onload = function () {
-            Countly.init()
-        };
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(cly, s);
-    })();
+(function() {
+    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
 </script>
-<noscript>
-    <img src='https://data.fabricators.ltd/pixel.png?app_key=e21bf4ca2baded20b1fc1937652c29213b0e9fb2&begin_session=1'/>
-</noscript>
+<!-- End Open Web Analytics Code -->
+
+        
