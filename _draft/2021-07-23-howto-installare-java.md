@@ -102,6 +102,8 @@ add-apt-repository ppa:linuxuprising/java
 
 apt update 
 
+apt install oracle-java16-installer
+
 oracle-java16-installer --install-recommends
 ```
 
