@@ -1,5 +1,5 @@
 ---
-title: '#howto - Installare Java' 
+title: '#howto - Installazione di Java sulle principali distribuzioni' 
 date: 2021-07-23 10:30
 layout: post 
 author: Davide Galati
