@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare Java' 
-date: 2021-07-23 09:30
+date: 2021-07-23 10:30
 layout: post 
 author: Davide Galati
 author_github: Davide Galati (in arte PsykeDady)
