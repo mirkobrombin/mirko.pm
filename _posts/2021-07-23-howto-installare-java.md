@@ -12,19 +12,13 @@ tags:
 - archlinux 
 ---
 
-
+Java è stato per anni uno dei linguaggi di programmazione più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
 > 3 Billion Devices "Run" Java
 >
 > ~cit necessaria
 
-
-
-Java è stato per anni uno dei linguaggi di programmazione più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
-
 Ma come lo installiamo sulle nostre distribuzioni? 
-
-
 
 ## Quale java
 
