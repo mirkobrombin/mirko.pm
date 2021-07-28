@@ -1,8 +1,6 @@
-
-
 ---
 title: '#howto - 'migliorare le prestazioni dei package manager' 
-date: aaaa-mm-gg H:M
+date: 2021-07-30 H:M
 layout: post 
 author: Nome Floppy Loppy
 author_github: raspFloppy 
