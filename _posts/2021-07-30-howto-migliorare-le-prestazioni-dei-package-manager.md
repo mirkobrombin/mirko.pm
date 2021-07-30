@@ -1,6 +1,6 @@
 ---
-title: '#howto - 'Migliorare le prestazioni dei Package Manager' 
-date: 2021-07-30 H:M
+title: 'howto - Migliorare le prestazioni dei Package Manager' 
+date: 2021-07-30 13:00
 layout: post 
 author: Floppy Loppy
 author_github: raspFloppy 
