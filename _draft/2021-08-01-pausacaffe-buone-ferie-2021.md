@@ -111,6 +111,9 @@ Ne approfitto anche per ricordarvi che abbiamo un altra bellissima rubrica che a
 
 Sono disponibili sia tramite telegram [qui](https://t.me/linuxpeople_feed), che nel nostro nuovissimo sito dedicato [feed.linuxpeople.org](https://feed.linuxpeople.org) 
 
+> **NOTA**:   
+> Il sito ha ancora un minor numero di contenuti rispetto al canale telegram
+
 
 
 ## Grazie 
