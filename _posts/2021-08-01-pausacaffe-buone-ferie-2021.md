@@ -98,7 +98,7 @@ Sono disponibili sia tramite telegram [qui](https://t.me/linuxpeople_feed), che 
 
 ## Grazie 
 
-Grazie a tutti voi che ogni giorno consultate il nostro sito! ma soprattutto vorrei ringraziare i nostri attuali articolisti: 
+Grazie a tutti voi che ogni giorno consultate il nostro sito! Ma soprattutto vorrei ringraziare i nostri attuali autori: 
 
 - *Massimiliano Noviello*
 - *Floppy Loppy* 
