@@ -8,14 +8,9 @@ tags:
 - agosto 
 - ferie 
 - bash 
-
 ---
 
-
-
 Questo è stato un anno particolare per la redazione di linux/hub, tra nuovi impegni, membri e progetti, ma anche vecchi progetti e membri che ci siamo lasciati alle spalle, abbiamo pensato di meritarci una piccola pausa estiva !
-
-
 
 ## Cosa implica la nostra pausa
 
@@ -23,9 +18,7 @@ Ci sarà un arco di un mese a partire da oggi in cui i nostri editori non seguir
 
 In realtà confido da parte del nostro team in un assoluta pausa che li aiuti a riflettere e trovare nuovi spunti e idee di scrittura, in modo da poter ripartire con carica nei prossimi mesi.
 
-
-
-## Ehy, voglio scrivere un articolo per voi!
+## Ehi, voglio scrivere un articolo per voi!
 
 Beh se tu caro lettore vuoi invece riempire di contenuti la nostra pagina al posto nostro, puoi ancora benissimo farlo.
 
@@ -37,20 +30,15 @@ Per ripercorrere brevemente i passi:
 - create una pull request [sul nostro repository](https://github.com/linuxhubit/linuxhub.it/) 
 - Aspettate che qualcuno di noi revisioni il vostro lavoro!
 
-
-
 ## Tutto qui? 
 
 Un articolo così povero in effetti, non mi si confà! Ecco a voi un piccolo **trucco del giorno**
 
-
-
-### come cercare articoli di Linuxhub direttamente dal vostro terminale 
+### Come cercare articoli linux/hub direttamente dal vostro terminale 
 
 Potete creare una funzione da mettere nel vostro `~/.bashrc` che vi consenta di cercare articoli dal vostro terminale!
 
 Ecco come: 
-
 
 ```bash
 function cercaArticoli(){
@@ -72,8 +60,6 @@ Ecco un esempio di utilizzo:
 ```bash
 cercaArticoli 'ssh'
 ```
-
-
 
 Ed ecco un esempio di output: 
 
@@ -97,15 +83,11 @@ Ed ecco un esempio di output:
 "I nostri dati al sicuro con Rsync" → https://linuxhub.it/articles/i-nostri-dati-al-sicuro-con-rsync/
 ```
 
-
-
 > **NOTA** :   
 >
 > Ci potrebbe mettere un pochino fino a quando finisce la ricerca
 
-
-
-### i trucchi del giorno 
+### I trucchi del giorno 
 
 Ne approfitto anche per ricordarvi che abbiamo un altra bellissima rubrica che ad Agosto continuerà *ogni giorno* a produrre contenuti, ovvero i trucchi del giorno! 
 
@@ -113,8 +95,6 @@ Sono disponibili sia tramite telegram [qui](https://t.me/linuxpeople_feed), che 
 
 > **NOTA**:   
 > Il sito ha ancora un minor numero di contenuti rispetto al canale telegram
-
-
 
 ## Grazie 
 
@@ -131,8 +111,6 @@ I nostri redattori:
 E soprattutto colui che tiene l'intera baracca su, ovvero **Mirko Brombin** il fondatore del sito, del gruppo telegram e di tutti questi fantastici progetti che ci divertiamo a portare avanti.
 
 *Buone vacanze a tutti, a Settembre!*
-
-
 
 
 Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
