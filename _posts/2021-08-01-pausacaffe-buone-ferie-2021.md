@@ -13,7 +13,7 @@ tags:
 
 
 
-Questo è stato un anno particolare per la redazione di Linuxhub, tra nuovi impegni, membri e progetti, ma anche vecchi progetti e membri che ci siamo lasciati alle spalle, abbiamo pensato di meritarci una piccola pausa estiva !
+Questo è stato un anno particolare per la redazione di linux/hub, tra nuovi impegni, membri e progetti, ma anche vecchi progetti e membri che ci siamo lasciati alle spalle, abbiamo pensato di meritarci una piccola pausa estiva !
 
 
 
