@@ -108,7 +108,7 @@ I nostri redattori:
 - *Michael Messaggi*
 - *Alby, Mastro Alberto* 
 
-E soprattutto colui che tiene l'intera baracca su, ovvero **Mirko Brombin** il fondatore del sito, del gruppo telegram e di tutti questi fantastici progetti che ci divertiamo a portare avanti.
+E soprattutto colui che tiene su l'intera baracca, ovvero **Mirko Brombin** il fondatore del sito, del gruppo telegram e di tutti questi fantastici progetti che ci divertiamo a portare avanti.
 
 *Buone vacanze a tutti, a Settembre!*
 
