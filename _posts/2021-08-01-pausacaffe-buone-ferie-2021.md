@@ -14,7 +14,7 @@ Questo è stato un anno particolare per la redazione di linux/hub, tra nuovi imp
 
 ## Cosa implica la nostra pausa
 
-Ci sarà un arco di un mese a partire da oggi in cui i nostri editori non seguiranno alcuna schedulazione degli articoli, saranno liberi se vorranno di scrivere articoli quando vogliono o di non scriverne alcuno. A loro volta non chiediamo la disponibilità ai nostri redattori, che potranno riposarsi gli occhi senza dover scovare errori di qualunque tipo tra le righe di un articolista frettoloso con mille impegni!
+Ci sarà un arco di un mese a partire da oggi in cui i nostri editori non seguiranno alcuna schedulazione degli articoli, saranno liberi se vorranno di scrivere articoli quando vogliono o di non scriverne alcuno. A loro volta non chiediamo la disponibilità ai nostri redattori, che potranno riposarsi gli occhi senza dover scovare errori di qualunque tipo tra le righe di un autore frettoloso con mille impegni!
 
 In realtà confido da parte del nostro team in un assoluta pausa che li aiuti a riflettere e trovare nuovi spunti e idee di scrittura, in modo da poter ripartire con carica nei prossimi mesi.
 
