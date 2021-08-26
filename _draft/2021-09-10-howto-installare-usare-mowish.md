@@ -20,6 +20,10 @@ Di necessità si fa virtù, e con la virtù ho creato una piccola utility che ho
 
 
 
+![un esempio di funzionamento di mowish](https://github.com/PsykeDady/mowish/raw/main/documentation/media/mowish_test.gif)
+
+
+
 ## Cos'è mowish
 
 Letteralemente **M**ake **O**rder **WI**th ba**SH** (Fai ordine con bash)  è un progettino con il quale puoi categorizzare i tuoi file in base al tipo. Come saprete su linux il tipo dei file non è dato dall'estensione, ma viene individuato tramite il così detto "*magic number*". Mowish tenta di catalogare attraverso questo.   
