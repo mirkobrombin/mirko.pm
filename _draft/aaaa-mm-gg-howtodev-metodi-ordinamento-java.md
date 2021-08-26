@@ -20,10 +20,7 @@ In questo articolo verranno affrontati i seguenti argomenti
 
 - Il problema dell'ordinamento dei vettori 
 - metodi di ordinamento classici in java 
-- l'approccio ricorsivo
-- divide et impera
-- metodi ricorsivi in java 
-- i metodi di ordinamento ricorsivo in java
+- divide et impera nei vettoris
 
 
 
@@ -31,7 +28,7 @@ In questo articolo verranno affrontati i seguenti argomenti
 
 I requisiti per la piena comprensione di questo articolo sono stati affrontati nell'articolo:   
 
-[*I metodi in java*](https://linuxhub.it/articles/howtodev-i-metodi-in-java)  
+[*metodi ricorsivi in java*](https://linuxhub.it/articles/howtodev-metodi-ricorsivi-java)  
 
  
 

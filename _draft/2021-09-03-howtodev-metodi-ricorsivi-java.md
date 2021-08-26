@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Metodi ricorsivi e ordinamento dei vettori in java' 
-date: 
+date: 2021-09-03 11:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
@@ -394,16 +394,28 @@ private static int resto(int ab, int maxp2){
 }
 
 private static int karatsubaR(int ab, int lab, int cd, int lcd){
+    //caso di uscita: i numeri hanno entrambi una cifra
 	if (lab<=1&&lcd<=1) return ab*cd;
+    
+    // calcolo la metà delle lunghezze, approssimate per eccesso
 	int lab2=lab/2+lab%2;
 	int lcd2=lcd/2+lcd%2;
+    
+    // calcolo la più grande delle lunghezze, non si deve fare sulle lunghezze originali ma sulle metà per evitare massimi dispari
 	int max=lab2<lcd2?lcd2*2:lab2*2;
+    
+    // 10^max
 	int maxp=(int)(Math.pow(10, max));
+    // 10^max/2
 	int maxp2=(int)(Math.pow(10, max/2));
+    
+    // divido a metà le cifre dei numeri
 	int a=dividi(ab,maxp2);
 	int b=resto(ab,maxp2);
 	int c=dividi(cd,maxp2);
 	int d=resto(cd,maxp2);
+    
+    // chiamata ricorsiva
 	return karatsubaR(a,lab2,c,lcd2)* maxp+ (karatsubaR(a,lab2,d,lcd2) + karatsubaR(b,lab2,c,lcd2))*maxp2+   karatsubaR(b,lab2,d,lcd2);
 }
 
@@ -416,12 +428,32 @@ public static int karatsuba(int ab, int cd){
 		neg=neg^true;
 	}
 
+    // il log in base 10 di un numero ti dice quante cifre ci sono in quel numero (-1)
 	int lab=ab==0? 0: (int)(Math.log10(ab))+1;
 	int lcd=cd==0? 0: (int)(Math.log10(cd))+1;
 	
 	return (neg? -1 : 1) *  karatsubaR(ab,lab,cd,lcd);
 } 
 ```
+
+
+
+Come potete notare, rispetto ai normali metodi ricorsivi, quelli basati su approccio divide et impera sono molto più ragionati e complessi.   
+
+Non è affatto semplice lavorare con questo genere di approccio, il consiglio che posso dare è quello di partire supponendo sempre di dovervi fermare alla prima metà (Senza chiamate ricorsive) 
+
+Se funziona allora procedete pensando a cosa succede nella ricorsione.
+
+
+
+## Simulazione dell'approccio ricorsivo 
+
+Si possono avere i vantaggi della ricorsione senza ricorsione? La risposta è **ni**   
+
+Il motivo di questa domanda ovviamente è per evitare gli "svantaggi" della ricorsione, quindi liberando man mano la memoria occupata dalle chiamate dello stack.   
+E bene è proprio *nello stack la soluzione*. Riscrivendo in maniera iterativa un algoritmo ricorsivo, bisogna emulare le dinamiche dello stack per conservare le variabili durante le varie chiamate *ma avendone il pieno controllo*. Il vantaggio di un approccio simile? Potete sfruttare la tail recursion!  
+
+Tuttavia per emulare dinamiche così complesse, c'è necessità di strumenti più potenti di quelli visti fin ora, come array e il concetto di classe, si rimanda quindi lo studio ad un momento successivo.
 
 
 
