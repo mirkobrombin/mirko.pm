@@ -46,7 +46,7 @@ Se siete novizi di Java potete iniziare direttamente da [*Introduzione alla prog
 
 
 
-La ricorsione è considerata uno degli espedienti di programmazione più elegante per risolvere un problema. Come suggerisce il nome si tratta di una procedura che richiama se stessa per risolvere un problema, normalmente è contro intuitivo scrivere e pensare in maniera ricorsiva, *la sensazione è quella di un cane che si morde la coda*, ma con alcuni piccoli accorgimenti diventa anche divertente. 
+La ricorsione è considerata uno degli espedienti di programmazione più elegante per risolvere un problema. Come suggerisce il nome, si tratta di una procedura che richiama se stessa per risolvere un problema. Normalmente è contro intuitivo scrivere e pensare in maniera ricorsiva, *la sensazione è quella di un cane che si morde la coda*, ma con alcuni piccoli accorgimenti diventa anche divertente. 
 
 
 
@@ -54,7 +54,7 @@ La ricorsione è considerata uno degli espedienti di programmazione più elegant
 
 La ricorsione innanzitutto si applica in tutti quegli algoritmi per cui utilizzeresti dei cicli iterativi, il senso è quello di sostituire la ripetizione del ciclo con una chiamata a se stessi, ma variando i parametri passati. 
 
-La prima cosa, nonché la più importante, da analizzare è il così detto "**caso di uscita**", esso vi permetterà di arrivare ad un punto in cui il ciclo di ricorsioni si completerà e *inizierà la catena di ritorni*. **Il caso di uscità deve essere posizionato sempre prima della chiamata ricorsiva**!  
+La prima cosa, nonché la più importante da analizzare è il così detto "**caso di uscita**", esso vi permetterà di arrivare ad un punto in cui il ciclo di ricorsioni si completerà e *inizierà la catena di ritorni*. **Il caso di uscita deve essere posizionato sempre prima della chiamata ricorsiva**!  
 
 Per citare il professore universitario che mi introdusse questi concetti, *L.Nigro*, possiamo vedere questa fase come se il nostro algoritmo, per magia, fosse già concluso e ci mancasse "solo un istruzione". 
 
@@ -181,7 +181,7 @@ public static String serieF(int n){
 
 
 
-Vediamo ora come possiamo rendere ricorsivo questo metodo, utilizziamo una coppia di metodi per farlo, uno dei due farà da innesco per la ricorsione
+Vediamo ora come possiamo rendere ricorsivo questo metodo, utilizziamo una coppia di metodi per farlo, uno dei due farà da innesco per la ricorsione:
 
 ```java
  public static String serieFR(int n){
@@ -246,10 +246,10 @@ Cosa avviene :
 
 1. si identifica il maggiore dei due numeri
 2. fino a che il minore dei due è maggiore di zero:
-   a. calcoli il resto della divisione intera tra maggiore e minore
-   b. assegni il vecchio valore del minor numero al maggiore
-   c. assegni il resto calcolato in precedenza al minore 
-   e. riparti da punto 
+   1. calcoli il resto della divisione intera tra maggiore e minore
+   2. assegni il vecchio valore del minor numero al maggiore
+   3. assegni il resto calcolato in precedenza al minore 
+   4. riparti da punto 
 3. il maggiore dei due numeri è il MCD dei numeri di partenza
 
 
