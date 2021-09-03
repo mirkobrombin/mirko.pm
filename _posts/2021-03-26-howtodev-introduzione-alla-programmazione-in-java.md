@@ -8,7 +8,7 @@ tags:
   - java  
 ---
 
-[Come installare java6larr;](https://linuxhub.it/articles/howto-installare-java/)  
+[Come installare java&larr;](https://linuxhub.it/articles/howto-installare-java/)  
 
 [SUCCESSIVO: Guida Java Parte 2 - Blocchi di codice&larr;](https://linuxhub.it/articles/howtodev-introduzione-ai-vari-blocchi-di-codice-in-java/)  
 

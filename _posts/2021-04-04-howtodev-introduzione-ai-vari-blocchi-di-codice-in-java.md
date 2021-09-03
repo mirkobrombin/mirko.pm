@@ -9,6 +9,7 @@ tags:
 ---
 
 [PRECEDENTE: Guida Java Parte 1 - Introduzione&larr;](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java/)
+
 [SUCCESSIVO: Guida Java Parte 3 - Vettori&larr;](https://linuxhub.it/articles/howtodev-introduzione-ai-vettori-in-java/)
 
 

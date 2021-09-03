@@ -9,7 +9,8 @@ tags:
 ---
 
 [PRECEDENTE: Guida Java Parte 3 - Vettori&larr;](https://linuxhub.it/articles/howtodev-introduzione-ai-vettori-in-java/)
-[SUCCESSIVO: Guida Java Parte 5 - Metodi Ricorsivi&larr;](https://linuxhub.it/articles/howtodev-I-metodi-in-Java/)
+
+[SUCCESSIVO: Guida Java Parte 5 - Metodi Ricorsivi&larr;](https://linuxhub.it/articles/howtodev-metodi-ricorsivi-java/)
 
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
