@@ -7,6 +7,11 @@ author_github: psykedady
 tags:
   - java  
 ---
+
+[Come installare java6larr;](https://linuxhub.it/articles/howto-installare-java/)  
+
+[SUCCESSIVO: Guida Java Parte 2 - Blocchi di codice&larr;](https://linuxhub.it/articles/howtodev-introduzione-ai-vari-blocchi-di-codice-in-java/)  
+
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
 ## Obiettivi 
@@ -455,10 +460,10 @@ I tipi primitivi sopra citati (interi, caratteri, numeri decimali) possono esser
 | ---------------------- | ----------------- | ------------ | --------- |
 | `>`                    | maggiore          | `2>0`        | vero      |
 | `<`                    | minore            | `2<0`        | falso     |
-| ` ==`                  | uguale            | `2.1f==2.0f` | falso     |
-| ` !=`                  | diverso           | `2.1f!=2.0f` | vero      |
-| ` >=`                  | maggiore o uguale | `'a'>='a'`   | vero      |
-| ` <=`                  | minore o uguale   | `'A'>='a'`   | falso     |
+| `==`                   | uguale            | `2.1f==2.0f` | falso     |
+| `!=`                   | diverso           | `2.1f!=2.0f` | vero      |
+| `>=`                   | maggiore o uguale | `'a'>='a'`   | vero      |
+| `<=`                   | minore o uguale   | `'A'>='a'`   | falso     |
 
 Notiamo che funziona con tutti i tipi trattati, ma assicuriamoci che siamo dello stesso tipo (o che vengano convertiti in automatico). È sicuramente lecito chiedersi come conservare tale risultato, che non è un numero, ma un valore binario che ne rappresenta la verità.
 

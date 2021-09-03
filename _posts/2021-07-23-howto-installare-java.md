@@ -12,6 +12,8 @@ tags:
 - archlinux 
 ---
 
+Cerchi come programmare in java? [Qui la nostra guida &larr;](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java/) 
+
 Java è stato per anni uno dei linguaggi di programmazione più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
 > 3 Billion Devices "Run" Java

@@ -7,6 +7,12 @@ author_github: psykedady
 tags:
 
 ---
+
+[PRECEDENTE: Guida Java Parte 1 - Introduzione&larr;](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java/)
+[SUCCESSIVO: Guida Java Parte 3 - Vettori&larr;](https://linuxhub.it/articles/howtodev-introduzione-ai-vettori-in-java/)
+
+
+
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
 ## Obiettivi 

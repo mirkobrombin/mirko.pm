@@ -1,5 +1,5 @@
 ---
-title: '#howtodev - Metodi ricorsivi e ordinamento dei vettori in java' 
+title: '#howtodev - Metodi ricorsivi in java' 
 date: 2021-09-03 11:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
@@ -8,6 +8,7 @@ tags:
 - java
 ---
 
+[PRECEDENTE: Guida Java Parte 4  - Metodi&larr;](https://linuxhub.it/articles/howtodev-I-metodi-in-Java/)
 
 
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
@@ -333,7 +334,7 @@ Tuttavia si può fare di meglio, negli algoritmi la vera essenza del dividi e co
 
 Possiamo attuare ulteriori miglioramenti all'algoritmo sfruttando maggiormente il concetto di divisione del problema. 
 
-> ATTENZIONE: segue un ragionamento matematico, se sei interessato direttamente all'algoritmo passa qua
+> ATTENZIONE: segue un ragionamento matematico, se sei interessato direttamente all'algoritmo [passa qua](https://linuxhub.it/articles/howtodev-metodi-ricorsivi-java/#title10)
 
 
 

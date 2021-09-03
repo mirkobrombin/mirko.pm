@@ -7,6 +7,10 @@ author_github: psykedady
 tags:
   - java
 ---
+
+[PRECEDENTE: Guida Java Parte 2 - Blocchi di codice&larr;](https://linuxhub.it/articles/howtodev-introduzione-ai-vari-blocchi-di-codice-in-java/)
+[SUCCESSIVO: Guida Java Parte 3 - Metodi&larr;](https://linuxhub.it/articles/howtodev-I-metodi-in-Java/)
+
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
 
