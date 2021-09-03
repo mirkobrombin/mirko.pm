@@ -39,7 +39,9 @@ Se siete novizi di Java potete iniziare direttamente da [*Introduzione alla prog
 ## L'approccio ricorsivo
 
 > **Definizione di ricorsione:**
+>
 > `vedere voce "ricorsione"`
+>
 >   *~ cit necessaria*
 
 
