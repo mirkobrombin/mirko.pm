@@ -1,6 +1,6 @@
 ---
 title: '#howto - installare ed usare mowish' 
-date: 2021-09-10 11:00
+date: 2021-09-10 21:05
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
