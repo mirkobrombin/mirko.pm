@@ -1,6 +1,6 @@
 ---
 title: '#howto - Gestione dei servizi di Runit' 
-date: 2021-09-17 10:00
+date: 2021-09-17 11:00
 layout: post 
 author: Massimiliano Noviello
 author_github: linuxhubit 
