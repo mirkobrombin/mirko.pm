@@ -1,39 +1,29 @@
 ---
-
-title: '#howto - Gestione dei servizi di Runit'
-
-date: 2021-09-16
-
-layout: post
+title: '#howto - Gestione dei servizi di Runit' 
+date: 2021-09-17 10:00
+layout: post 
 author: Massimiliano Noviello
-author_github: linuxhubit
-tags:
-
-- init
-
-- daemon
-
-- demone
-
+author_github: linuxhubit 
+tags: 
+- init 
+- daemon 
 - systemd
-
-- runit
-
----
+- runit 	
+----
 
 
 
 ## Introduzione
 
-Systemd è oggi il sistema di init di default in moltissime distribuzioni, ma esso è un'intero set di software per la gestione del sistema e magari qualcuno preferirebbe un'alternativa più minimale.
-
-Questo articolo presenta Runit, un sistema di init senza troppi fronzoli.
-
+Systemd è, ad oggi, il sistema di init di default in moltissime distribuzioni. La piu grande controversia a riguardo è che sia un'intero set di software per la gestione del sistema, non rispettando quella filosofia tipica dei sistemi unix in cui generalmente si tende a specializzare l'obiettivo di un software e non generalizzarlo.  
+Questo ha portato alcuni utenti ad usare diverse soluzioni, una di queste é **runit**.
 
 
-*Nota bene: Le distribuzioni supportate da questo articolo sono:
-Artix Linux, Void Linux e Devuan.
-Tuttavia i contenuti dell'articolo possono adattarsi anche ad altre distribuzioni*
+> Nota bene: 
+> 
+> Le distribuzioni supportate da questo articolo sono:  
+> Artix Linux, Void Linux e Devuan.
+> Tuttavia i contenuti dell'articolo possono adattarsi anche ad altre distribuzioni
 
 
 
@@ -73,13 +63,13 @@ Mentre per disabilitarlo dovrei fare:
 unlink /var/service/gdm
 ```
 
-o rimuovere il symlink con rm (Il comando `rm` è stato trattato in [questo articolo](https://linuxhub.it/articles/howto-shredding-e-rimozione-dei-file/)).
+o rimuovere il symlink con rm ([i comandi di rimozione sono stati trattati in questo articolo](https://linuxhub.it/articles/howto-shredding-e-rimozione-dei-file/)).
 
 
 
 ## Comando sv
 
-Per gestire i servizi abilitati è possibile usare il comando sv.
+Per gestire i servizi abilitati è possibile usare il comando `sv`.
 
 Ecco alcuni dei comandi utili di sv:
 
