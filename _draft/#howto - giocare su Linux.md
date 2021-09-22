@@ -1,5 +1,3 @@
-
-
 ---
 title: '#howto - giocare su Linux' 
 date: 2021-09-24 
