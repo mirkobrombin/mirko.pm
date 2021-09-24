@@ -1,6 +1,6 @@
 ---
 title: '#howto - giocare su Linux' 
-date: 2021-09-24 10:00
+date: 2021-09-24 11:00
 layout: post 
 author: Floppy	
 author_github: raspFloppy
