@@ -279,7 +279,8 @@ Si può usare nelle operazioni una particolare abbreviazione per aggiornare dire
 
 L'esempio più inflazionato è l'**auto-incremento** (o **auto-decremento**): 
 - `a++` che equivale a `a=a+1`
-- `a--` che equibale a `a=a-1` 
+- `a--` che equivale a `a=a-1` 
+
 Gli auto-incrementi possono essere a loro volta assegnati: 
 ```java
 int a=1;
