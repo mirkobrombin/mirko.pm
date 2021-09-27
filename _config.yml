@@ -28,9 +28,11 @@ navigation:
     - link: "/"
       name: Home
     - link: "https://t.me/linuxpeople"
-      name: Community Telegram
+      name: Community
     - link: "https://linuxpeople.org"
       name: "linuxpeople"
+    - link: "https://github.com/linuxhubit/linuxhub.it"
+      name: "Scrivi"
 
 plugins:
   - jekyll-feed

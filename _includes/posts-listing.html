@@ -6,7 +6,7 @@
     <article itemscope itemtype="https://schema.org/NewsArticle">
         <meta itemprop="image" content="/assets/images/cover.png" hidden="">
         <h2 itemprop="headline">{{ post.title }}</h2>
-        <span>
+        <span class="metaingo">
             <em itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
                 <span itemprop="name">linux/hub</span>
                 <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
@@ -24,14 +24,15 @@
             </em>
         </span>
         <p>{{ post.content | strip_html | truncatewords: 32 }}…</p>
-        <div>
+        <div class="tags">
             {% for tag in post.tags %}
                 <div class="tag {{ tag }}">{{ tag }}</div>
             {% endfor %}
         </div>
-        <span>{{ post.content | number_of_words | divided_by: 197 }} minuti circa di lettura</span>
-        <a itemprop="url" href="{{ post.url }}">Leggi tutto
-            <img class="icon" src="/assets/images/zondicons/arrow-thin-right.svg" alt="Leggi articolo" />
+        <span class="reading-time">{{ post.content | number_of_words | divided_by: 197 }} minuti circa di lettura</span>
+        <a class="read-more" itemprop="url" href="{{ post.url }}">
+            <span>Leggi tutto</span>
+            <span class="mdi material-icons-outlined">keyboard_arrow_right</span>
         </a>
     </article>
 

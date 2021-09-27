@@ -1,0 +1,97 @@
+@media screen and (max-width: 480px) {
+    header nav {
+        display: none;
+    }
+
+    .brand img:first-of-type {
+        display: none;
+    }
+
+    .brand img:last-of-type {
+        display: block !important;
+        margin: 8px;
+    }
+
+    header .brand {
+        max-width: 50px;
+    }
+
+    .listing,
+    .sitemap,
+    .container.article {
+        display: block;
+    }
+
+    .article aside {
+        top: 62px;
+        margin: -10px 0 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid;
+    }
+
+    .article aside ul,
+    .article aside .reading-time {
+        display: none;
+    }
+
+    .article aside:hover ul {
+        display: block;
+    }
+
+    .article article {
+        border: 0;
+    }
+
+    .container.article {
+        padding: 0;
+    }
+
+    .searchbox.show input {
+        margin: 0 0 0 10px;
+        min-width: initial;
+        width: calc(100% - 28px);
+    }
+
+    header.typing .brand {
+        display: none;
+    }
+
+    .searchbox.show {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5px;
+        bottom: 0;
+    }
+
+    .searchbox.show .mdi {
+        margin-left: 21px;
+    }
+
+    .searchbox input:focus {
+        min-width: 300px;
+    }
+
+    article .tags {
+        display: block;
+    }
+    
+    .tag {
+        display: inline-table;
+    }
+    
+    .tag.edit {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    .listing article {
+        margin: 0 0 10px 0;
+        padding: 14px 19px 44px;
+    }
+
+    aside .mdi {
+        float: right;
+        display: block;
+    }
+}

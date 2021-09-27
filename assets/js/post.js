@@ -3,7 +3,7 @@ document.querySelectorAll("pre").forEach(t => {
     hljs.highlightBlock(t)
 }),
 // summary
-headings = document.querySelectorAll("main>article>div h2,main>article>div h3,main>article>div h4"),
+headings = document.querySelectorAll(".article article>div h2,.article article>div h3,main>article>div h4"),
 summary = document.querySelector("aside>ul"),
 document.querySelector("aside>ul>li:first-child").remove(),
 url = window.location.href,

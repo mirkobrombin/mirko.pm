@@ -1,12 +1,10 @@
-.tag {
-    padding: 0 .7rem;
-    background-repeat: no-repeat;
-    font-weight: 500;
-    margin: 0 .875rem .8rem 0;
-    display: inline-table;
-    background-position: .6rem .26rem;
-    border-radius: 1rem;
-    box-shadow: 0 .1875em .5em -.3125em;
+.tag.edit a {
+    color: #000;
+    border-bottom: .0625rem dashed;
+}
+
+.tag.edit:hover a {
+    color: #ff2f00;
 }
 
 .tag.nginx {
@@ -231,7 +229,4 @@ tag.crystal {
     padding: 0 10px
 }
 
-.tag.edit {
-    box-shadow: none;
-    padding: 0
-}
+.tag.edit {background-color: transparent;}
