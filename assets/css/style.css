@@ -454,3 +454,12 @@ aside .mdi {
     bottom: 10px;
     right: 10px;
 }
+
+.content ul li {
+    list-style: disc;
+    margin: 0;
+}
+
+.content ul {
+    margin: 0 0 30px 20px;
+}
