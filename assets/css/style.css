@@ -463,3 +463,24 @@ aside .mdi {
 .content ul {
     margin: 0 0 30px 20px;
 }
+
+.content ul li {
+    list-style: disc;
+    margin: 0;
+}
+
+.content ul {
+    margin: 0 0 30px 20px;
+}
+
+.content table thead {
+    border-bottom: 1px solid;
+}
+
+.content table {
+    border-collapse: collapse;
+}
+
+.content th, .content td {
+    padding: 2px 6px;
+}

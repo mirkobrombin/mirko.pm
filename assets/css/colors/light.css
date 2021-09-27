@@ -35,7 +35,8 @@ footer {
 
 header,
 footer,
-article {
+article,
+.content table thead {
     border-color: #d6d6d6;
 }
 
@@ -124,6 +125,10 @@ aside>ul>li>a.active {
 
 blockquote {
     background-color: #f5f6f9;
+}
+
+.content tr:nth-child(odd) td {
+    background-color: #f7f7f7;
 }
 
 @media screen and (max-width: 767px) {

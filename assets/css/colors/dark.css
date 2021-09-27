@@ -39,7 +39,8 @@
     }
 
     article,
-    .searchbox input {
+    .searchbox input,
+    .content tr:nth-child(odd) td {
         background-color: #1b1b1b;
     }
 
@@ -49,7 +50,8 @@
 
     header,
     footer,
-    article {
+    article,
+    .content table thead  {
         border-color: #353535;
     }
 
