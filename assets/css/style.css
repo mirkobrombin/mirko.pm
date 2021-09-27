@@ -396,6 +396,7 @@ aside .reading-time {
     letter-spacing: .0531rem;
     line-height: 1.9em;
     margin: 0 0 1.5625rem;
+    word-break: break-word;
 }
 
 .content {
