@@ -34,7 +34,7 @@ navigation:
     - link: "https://linuxpeople.org"
       name: "linuxpeople"
 
-    - link: "https://feeds.linuxpeople.org"
+    - link: "https://feed.linuxpeople.org"
       name: "Tricks"
       icon: "auto_fix_high"
       
