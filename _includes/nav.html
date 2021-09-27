@@ -17,7 +17,12 @@
             <ul>
                 {% for item in site.navigation %}
                     <li class="{% if page.url == item.link %}active{% endif %}">
-                        <a href="{{ item.link }}">{{ item.name }}</a>
+                        <a href="{{ item.link }}">
+                            {% if item.icon != nil %}
+                                <span class="mdi material-icons">{{ item.icon }}</span>
+                            {% endif %}
+                            {{ item.name }}
+                        </a>
                     </li>
                 {% endfor %}
             </ul>
