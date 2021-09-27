@@ -1,5 +1,5 @@
 ---
-title: '#howto - giocare su Linux' 
+title: '#howto - Giocare su Linux' 
 date: 2021-09-24 11:00
 layout: post 
 author: Floppy	
