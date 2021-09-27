@@ -320,17 +320,19 @@ aside span {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
+    margin: 0 0 0 14px;
 }
 
 aside {
     font-size: 15px;
+    padding-left: 3px;
     margin: 54px 0 20px 0;
 }
 
 aside>ul>li>a {
     border-left: 2px solid transparent;
-    padding: 0 0 0 1.65rem;
-    margin: 0 0 0 -1.85rem
+    padding: 0 0 0 10px;
+    margin: 0 0 0 0;
 }
 
 aside>ul>li>a.H3::before {
