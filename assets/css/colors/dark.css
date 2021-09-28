@@ -110,4 +110,10 @@
             border-bottom-color: #353535;
         }
     }
+
+    @-moz-document url-prefix() {
+        header {
+            background-color: #191919;
+        }
+    }
 }

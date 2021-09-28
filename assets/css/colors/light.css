@@ -137,3 +137,9 @@ blockquote {
         border-bottom-color: #d6d6d6;
     }
 }
+
+@-moz-document url-prefix() {
+    header {
+        background-color: #ffffff;
+    }
+}
