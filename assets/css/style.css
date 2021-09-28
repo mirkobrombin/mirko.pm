@@ -32,6 +32,18 @@ a.read-more span {
 }
 
 
+blockquote,
+.hljs,
+.pagination li a,
+article,
+.tag,
+header nav ul li a,
+.searchbox .results ul li,
+.searchbox .results,
+.searchbox input {
+    border-radius: 6px;
+}
+
 button,
 fieldset,
 html,
@@ -82,7 +94,6 @@ header {
 
 .searchbox input {
     border: 1px solid;
-    border-radius: 4px;
     padding: 6px 10px 6px 35px;
     min-width: 300px;
     box-shadow: 0 0 0 transparent;
@@ -98,7 +109,6 @@ header {
 .searchbox .results {
     position: absolute;
     margin: -46px -6px 0 -6px;
-    border-radius: 4px;
     padding: 45px 5px 5px 5px;
     z-index: -1;
     box-shadow: 0 0 0 transparent;
@@ -135,7 +145,6 @@ header {
 
 .searchbox .results ul li {
     padding: 10px;
-    border-radius: 4px;
     margin: 0 0 6px 0;
 }
 
@@ -143,7 +152,6 @@ header nav ul li a {
     color: #000;
     font-weight: 500;
     padding: 0 5px;
-    border-radius: 4px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -194,7 +202,6 @@ article .tags {
 }
 
 .tag {
-    border-radius: 4px;
     padding: 0 5px;
     background-repeat: no-repeat;
     background-position: 7px;
@@ -211,7 +218,6 @@ a.read-more {
 
 article {
     border: 1px solid;
-    border-radius: 4px;
     padding: 20px 20px 70px;
     box-shadow: 0 0 0 transparent;
     position: relative;
@@ -306,7 +312,6 @@ footer {
 
 .pagination li a {
     padding: 4px 12px;
-    border-radius: 4px;
     background-color: transparent;
     gap: 10px;
 }
@@ -420,7 +425,6 @@ aside .reading-time {
 
 .hljs {
     font-size: .95em;
-    border-radius: 4px;
     padding: 10px 20px;
     border: 1px solid;
     overflow: auto;
@@ -436,7 +440,6 @@ aside .reading-time {
 blockquote {
     margin: 0;
     padding: 19px 35px 2px;
-    border-radius: 4px;
     font-style: italic;
     font-size: 17px;
     font-family: 'Scheherazade New', serif;
