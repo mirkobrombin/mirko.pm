@@ -10,7 +10,7 @@ uploads: /uploads
 permalink: /articles/:title/
 markdown: kramdown
 
-paginate: 5
+paginate: 7
 paginate_path: "/:num/"
 
 defaults:
