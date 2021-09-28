@@ -61,7 +61,8 @@ header nav ul {
     justify-content: flex-end;
 }
 
-header nav, header .searchbox {
+header nav,
+header .searchbox {
     flex: 1;
 }
 
@@ -314,6 +315,7 @@ footer {
     display: grid;
     grid-template-columns: 230px minmax(auto, 1fr);
     align-items: start;
+    width: 100%;
 }
 
 aside span {
@@ -366,6 +368,7 @@ aside>ul>li>a {
 
 .article article {
     grid-column: 2 / 4;
+    width: 100%;
 }
 
 aside>ul>li>a.active {
@@ -482,6 +485,7 @@ aside .mdi {
     border-collapse: collapse;
 }
 
-.content th, .content td {
+.content th,
+.content td {
     padding: 2px 6px;
 }
