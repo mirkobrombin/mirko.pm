@@ -33,10 +33,7 @@ footer {
     background-color: #ffffffc9;
 }
 
-header,
-footer,
-article,
-.content table thead {
+header, footer, article, .content table thead {
     border-color: #d6d6d6;
 }
 
@@ -70,10 +67,7 @@ aside>ul>li>a:hover {
     color: #ff2f00;
 }
 
-.searchbox .results ul li a,
-.sitemap li:not(.small)>a,
-header nav ul li a,
-a.read-more {
+.searchbox .results ul li a, .sitemap li:not(.small)>a, header nav ul li a, a.read-more, article h2 a {
     color: #000;
 }
 

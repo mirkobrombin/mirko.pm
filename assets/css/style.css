@@ -19,6 +19,10 @@
     width: 6px
 }
 
+.results::-webkit-scrollbar {
+    display: none;
+}
+
 header,
 aside {
     backdrop-filter: saturate(180%) blur(20px);
@@ -31,6 +35,13 @@ a.read-more span {
     transition: all .2s ease-in-out;
 }
 
+header,
+article,
+article img,
+blockquote,
+.hljs {
+    box-shadow: 0 1px 1px #0000001a;
+}
 
 blockquote,
 .hljs,
@@ -40,8 +51,9 @@ article,
 header nav ul li a,
 .searchbox .results ul li,
 .searchbox .results,
-.searchbox input {
-    border-radius: 6px;
+.searchbox input,
+article img {
+    border-radius: 4px;
 }
 
 button,
@@ -83,7 +95,6 @@ header {
     min-height: 62px;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid;
     z-index: 2;
 }
 
@@ -129,12 +140,12 @@ header {
 .searchbox input:focus,
 .searchbox.show input {
     outline: none;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 5px 10px rgb(0 0 0 / 6%);
+    box-shadow: 0 1px 1px #0000001a;
     min-width: 480px;
 }
 
 .searchbox.show .results {
-    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 5px 10px rgb(0 0 0 / 6%);
+    box-shadow: 0 1px 1px #0000001a;
     pointer-events: initial;
     opacity: 1;
 }
@@ -168,7 +179,7 @@ article {
 }
 
 main {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 article h2 {
@@ -219,7 +230,6 @@ a.read-more {
 article {
     border: 1px solid;
     padding: 20px 20px 70px;
-    box-shadow: 0 0 0 transparent;
     position: relative;
 }
 
@@ -234,7 +244,7 @@ article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin: 5px auto;
+    margin: 0 auto;
 }
 
 .listing article:first-of-type {
@@ -243,10 +253,6 @@ article {
 
 .listing article:first-of-type h2 {
     font-size: 2.1rem;
-}
-
-.listing article:hover {
-    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 5px 10px rgb(0 0 0 / 6%);
 }
 
 .reading-time {
@@ -374,6 +380,7 @@ aside>ul>li>a {
 .article article {
     grid-column: 2 / 4;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 aside>ul>li>a.active {
@@ -486,9 +493,14 @@ aside .mdi {
 
 .content table {
     border-collapse: collapse;
+    margin: 0 0 20px 0;
 }
 
 .content th,
 .content td {
     padding: 2px 6px;
+}
+
+.searchbox.show input {
+    width: 100%;
 }

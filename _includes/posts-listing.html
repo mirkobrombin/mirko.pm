@@ -5,7 +5,9 @@
 
     <article itemscope itemtype="https://schema.org/NewsArticle">
         <meta itemprop="image" content="/assets/images/cover.png" hidden="">
-        <h2 itemprop="headline">{{ post.title }}</h2>
+        <h2 itemprop="headline">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
         <span class="metaingo">
             <em itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
                 <span itemprop="name">linux/hub</span>
