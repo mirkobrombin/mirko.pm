@@ -18,7 +18,9 @@
     background-color: #949699
 }
 
-html, aside, .results {
+html,
+aside,
+.results {
     scrollbar-color: #191919 #f9f9f9;
 }
 
@@ -38,7 +40,11 @@ footer {
     background-color: #ffffffc9;
 }
 
-header, footer, article, .content table thead, .changelog {
+header,
+footer,
+article,
+.content table thead,
+.card {
     border-color: #d6d6d6;
 }
 
@@ -58,12 +64,15 @@ header nav ul li.active a,
     color: #ffffff;
 }
 
-.searchbox .results, article, .changelog {
+.searchbox .results,
+article,
+.card {
     background-color: #ffffff;
 }
 
 .searchbox .results ul li:hover,
-.changelog li a:hover {
+.changelog li a:hover,
+.splitter section:hover {
     background-color: #f2f2f2;
 }
 
@@ -72,7 +81,13 @@ aside>ul>li>a:hover {
     color: #ff2f00;
 }
 
-.searchbox .results ul li a, .sitemap li:not(.small)>a, header nav ul li a, a.read-more, article h2 a,.changelog li a {
+.searchbox .results ul li a,
+.sitemap li:not(.small)>a,
+header nav ul li a,
+a.read-more,
+article h2 a,
+.changelog li a,
+.splitter section a {
     color: #000;
 }
 

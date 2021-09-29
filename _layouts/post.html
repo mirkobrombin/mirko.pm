@@ -6,12 +6,15 @@ layout: default
 
 <div class="container article">
     <aside>
-        <span>Indice</span>
+        <b><span class="mdi material-icons"> list </span> Indice</b>
         <span class="mdi material-icons"> expand_more </span>
         <ul>
             <li>Caricamento..</li>
         </ul>
-        <span class="reading-time">{{ content | number_of_words | divided_by: 197 }} minuti circa di lettura</span>
+        <b class="reading-time">
+            <span class="mdi material-icons"> timer </span> 
+            {{ content | number_of_words | divided_by: 197 }} minuti circa di lettura
+        </b>
     </aside>
     <article itemscope itemtype="https://schema.org/NewsArticle" class="hasSummary">
         <meta itemprop="image" content="https://linuxhub.it/storage/linuxhub.png" hidden />
@@ -44,8 +47,34 @@ layout: default
         <div class="content">{{ content }}</div>
     </article>
 
-    <div class="changelog">
-        <b><span class="mdi material-icons"> history </span> Changelog</b>
+    <div class="card discuss">
+        <b>
+            <span class="mdi material-icons-outlined"> comment </span> Discutiamone
+        </b>
+        <div class="splitter">
+            <section>
+                <a href="https://twitter.com/linuxhub" target="_blank">
+                    <b>
+                        <span class="mdi material-icons-outlined"> campaign </span> Canale
+                    </b>
+                    <p>Trovi altri contenuti, guide e notizie sul nostro canale Telegram.</p>
+                </a>
+            </section>
+            <section>
+                <a href="https://t.me/linuxpeople" target="_blank">
+                    <b>
+                        <span class="mdi material-icons-outlined"> forum </span> Community
+                    </b>
+                    <p>Discuti questo contenuto con la nostra community Telegram.</p>
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <div class="card changelog">
+        <b>
+            <span class="mdi material-icons-outlined"> history </span> Revisioni
+        </b>
         <ul></ul>
     </div>
 </div>

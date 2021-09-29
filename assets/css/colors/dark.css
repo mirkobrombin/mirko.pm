@@ -42,7 +42,7 @@
         border-color: #333333;
     }
 
-    article, .searchbox input, .content tr:nth-child(2n+1) td, .changelog,.searchbox .results ul li:hover, .changelog li a:hover {
+    article, .searchbox input, .content tr:nth-child(2n+1) td, .card, .searchbox .results ul li:hover {
         background-color: #1b1b1b;
     }
 
@@ -50,11 +50,11 @@
         background-color: #191919;
     }
 
-    header, footer, article, .content table thead,.changelog  {
+    header, footer, article, .content table thead, .card  {
         border-color: #353535;
     }
 
-    body, .searchbox .results ul li a, .sitemap li:not(.small) > a, header nav ul li a, a.read-more, .searchbox input, .tag.edit a, article p, .content, article h2 a, .changelog li a {
+    body, .searchbox .results ul li a, .sitemap li:not(.small) > a, header nav ul li a, a.read-more, .searchbox input, .tag.edit a, article p, .content, article h2 a, .changelog li a,.splitter section a {
         color: #fff;
     }
 
@@ -71,8 +71,7 @@
         color: #000;
     }
 
-    main,
-    .searchbox .results {
+    main, .searchbox .results, .card li a:hover, .splitter section:hover {
         background-color: #272727;
     }
 

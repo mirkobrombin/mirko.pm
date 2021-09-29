@@ -35,11 +35,29 @@ a.read-more span {
     transition: all .2s ease-in-out;
 }
 
-header, article, article img, blockquote, .hljs, .changelog {
+header,
+article,
+article img,
+blockquote,
+.hljs,
+.card {
     box-shadow: 0 1px 1px #0000001a;
 }
 
-blockquote, .hljs, .pagination li a, article, .tag, header nav ul li a, .searchbox .results ul li, .searchbox .results, .searchbox input, article img, .changelog, .changelog li img,.changelog li a {
+blockquote,
+.hljs,
+.pagination li a,
+article,
+.tag,
+header nav ul li a,
+.searchbox .results ul li,
+.searchbox .results,
+.searchbox input,
+article img,
+.card,
+.changelog li img,
+.changelog li a,
+.splitter section {
     border-radius: 4px;
 }
 
@@ -246,7 +264,6 @@ article {
 .reading-time {
     font-size: .9375rem;
     margin: 0 0 0 0;
-    display: block;
     position: relative;
     top: 23px;
 }
@@ -318,11 +335,13 @@ footer {
     gap: 10px 0;
 }
 
-aside span {
+aside b,aside span {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
-    margin: 0 0 0 14px;
+    margin: 0 0 0 4px;
+    display: flex;
+    gap: 5px;
 }
 
 aside {
@@ -441,7 +460,7 @@ blockquote {
     font-family: 'Scheherazade New', serif;
 }
 
-aside .mdi {
+aside b+.mdi {
     display: none;
 }
 
@@ -494,13 +513,13 @@ aside .mdi {
     width: 100%;
 }
 
-.changelog {
+.card {
     grid-column: 2/4;
     border: 1px solid;
     padding: 15px 20px;
 }
 
-.changelog b {
+.card b {
     font-weight: 500;
     font-size: 18px;
     display: flex;
@@ -522,6 +541,34 @@ aside .mdi {
     padding: 0 5px;
 }
 
-.changelog ul {
+.card ul {
     margin: 0 -4px;
+}
+
+.splitter {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.splitter section {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.card .splitter {
+    margin: 0 -10px;
+}
+
+.splitter section b {
+    margin: 0 0 3px 0;
+    font-size: 16px;
+}
+
+.splitter section b .mdi {
+    font-size: 22px;
+}
+
+.splitter section p {
+    font-size: 16px;
 }
