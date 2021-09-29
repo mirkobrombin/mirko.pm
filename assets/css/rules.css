@@ -27,6 +27,7 @@
         margin: -10px 0 0;
         padding: 10px 20px;
         border-bottom: 1px solid;
+        overflow: hidden;
     }
 
     .article aside ul,
@@ -44,6 +45,7 @@
 
     .container.article {
         padding: 0;
+        margin: -15px 0 0 0;
     }
 
     .searchbox.show input {
@@ -73,7 +75,9 @@
     }
 
     article .tags {
-        display: block;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: end;
     }
     
     .tag {
@@ -82,7 +86,6 @@
     
     .tag.edit {
         display: block;
-        margin: 0 0 10px 0;
     }
 
     .listing article {
@@ -93,5 +96,16 @@
     aside .mdi {
         float: right;
         display: block;
+    }
+
+    .searchbox.show .results {
+        margin: -45px 0 0 0px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    aside ul li {
+        padding: 4px 0;
     }
 }

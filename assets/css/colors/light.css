@@ -33,7 +33,7 @@ footer {
     background-color: #ffffffc9;
 }
 
-header, footer, article, .content table thead {
+header, footer, article, .content table thead, .changelog {
     border-color: #d6d6d6;
 }
 
@@ -53,12 +53,12 @@ header nav ul li.active a,
     color: #ffffff;
 }
 
-.searchbox .results,
-article {
+.searchbox .results, article, .changelog {
     background-color: #ffffff;
 }
 
-.searchbox .results ul li:hover {
+.searchbox .results ul li:hover,
+.changelog li a:hover {
     background-color: #f2f2f2;
 }
 
@@ -67,7 +67,7 @@ aside>ul>li>a:hover {
     color: #ff2f00;
 }
 
-.searchbox .results ul li a, .sitemap li:not(.small)>a, header nav ul li a, a.read-more, article h2 a {
+.searchbox .results ul li a, .sitemap li:not(.small)>a, header nav ul li a, a.read-more, article h2 a,.changelog li a {
     color: #000;
 }
 

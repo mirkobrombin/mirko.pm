@@ -35,24 +35,11 @@ a.read-more span {
     transition: all .2s ease-in-out;
 }
 
-header,
-article,
-article img,
-blockquote,
-.hljs {
+header, article, article img, blockquote, .hljs, .changelog {
     box-shadow: 0 1px 1px #0000001a;
 }
 
-blockquote,
-.hljs,
-.pagination li a,
-article,
-.tag,
-header nav ul li a,
-.searchbox .results ul li,
-.searchbox .results,
-.searchbox input,
-article img {
+blockquote, .hljs, .pagination li a, article, .tag, header nav ul li a, .searchbox .results ul li, .searchbox .results, .searchbox input, article img, .changelog, .changelog li img,.changelog li a {
     border-radius: 4px;
 }
 
@@ -327,6 +314,7 @@ footer {
     grid-template-columns: 230px minmax(auto, 1fr);
     align-items: start;
     width: 100%;
+    gap: 10px 0;
 }
 
 aside span {
@@ -503,4 +491,36 @@ aside .mdi {
 
 .searchbox.show input {
     width: 100%;
+}
+
+.changelog {
+    grid-column: 2/4;
+    border: 1px solid;
+    padding: 15px 20px;
+}
+
+.changelog b {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    margin: 0 0 10px 0;
+    align-items: center;
+    gap: 7px;
+}
+
+.changelog li img {
+    width: 18px;
+}
+
+.changelog li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.changelog ul {
+    margin: 0 -4px;
 }
