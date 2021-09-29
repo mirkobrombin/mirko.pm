@@ -1,0 +1,526 @@
+::-webkit-scrollbar {
+    background: 0 0;
+    height: 20px;
+    width: 20px
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    box-sizing: content-box;
+    width: 6px
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: 7px solid transparent;
+    border-radius: 20px;
+    box-sizing: content-box;
+    min-height: 30px;
+    width: 6px
+}
+
+.results::-webkit-scrollbar {
+    display: none;
+}
+
+header,
+aside {
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+a,
+.searchbox input,
+.listing article,
+a.read-more span {
+    transition: all .2s ease-in-out;
+}
+
+header, article, article img, blockquote, .hljs, .changelog {
+    box-shadow: 0 1px 1px #0000001a;
+}
+
+blockquote, .hljs, .pagination li a, article, .tag, header nav ul li a, .searchbox .results ul li, .searchbox .results, .searchbox input, article img, .changelog, .changelog li img,.changelog li a {
+    border-radius: 4px;
+}
+
+button,
+fieldset,
+html,
+input,
+input[type=submit],
+select,
+textarea {
+    font: normal 1rem/1.625rem Heebo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+header nav,
+header .searchbox {
+    flex: 1;
+}
+
+header {
+    padding: 5px 0;
+    min-height: 62px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.brand img {
+    height: 30px;
+    margin: 7px 0 0 0;
+}
+
+.searchbox input {
+    border: 1px solid;
+    padding: 6px 10px 6px 35px;
+    min-width: 300px;
+    box-shadow: 0 0 0 transparent;
+    width: 70%;
+}
+
+.searchbox .mdi {
+    position: absolute;
+    margin: 11px 0 0 11px;
+    font-size: 18px;
+}
+
+.searchbox .results {
+    position: absolute;
+    margin: -46px -6px 0 -6px;
+    padding: 45px 5px 5px 5px;
+    z-index: -1;
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: auto;
+    max-height: 720px;
+    left: 0;
+    right: 0;
+}
+
+.searchbox {
+    position: relative;
+    top: 2px;
+}
+
+.searchbox input:focus,
+.searchbox.show input {
+    outline: none;
+    box-shadow: 0 1px 1px #0000001a;
+    min-width: 480px;
+}
+
+.searchbox.show .results {
+    box-shadow: 0 1px 1px #0000001a;
+    pointer-events: initial;
+    opacity: 1;
+}
+
+.searchbox .results ul {
+    padding: 10px 5px;
+}
+
+.searchbox .results ul li {
+    padding: 10px;
+    margin: 0 0 6px 0;
+}
+
+header nav ul li a {
+    color: #000;
+    font-weight: 500;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 4px;
+}
+
+header nav ul li {
+    position: relative;
+    top: 2px;
+}
+
+article {
+    padding: 20px 10px;
+}
+
+main {
+    padding: 15px 0;
+}
+
+article h2 {
+    font-size: 1.375rem;
+    line-height: 1.46364;
+    letter-spacing: -.02rem;
+}
+
+article .metainfo {
+    display: block;
+    font-size: 14px;
+}
+
+article .metainfo a {
+    font-weight: 500;
+}
+
+article .metainfo em {
+    font-style: normal;
+}
+
+article p {
+    font-size: 1.1875rem;
+    line-height: 1.99rem;
+    margin: 1.5625rem 0;
+}
+
+article .tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    padding: 0 5px;
+    background-repeat: no-repeat;
+    background-position: 7px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+a.read-more {
+    float: right;
+    display: flex;
+    position: relative;
+}
+
+article {
+    border: 1px solid;
+    padding: 20px 20px 70px;
+    position: relative;
+}
+
+.listing {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 5px auto;
+}
+
+.listing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.listing article:first-of-type {
+    grid-column: 1 / span 2;
+}
+
+.listing article:first-of-type h2 {
+    font-size: 2.1rem;
+}
+
+.reading-time {
+    font-size: .9375rem;
+    margin: 0 0 0 0;
+    display: block;
+    position: relative;
+    top: 23px;
+}
+
+.listing article:not(:first-of-type) a.read-more span:not(.mdi) {
+    opacity: 0;
+}
+
+.listing article:hover a.read-more span:not(.mdi) {
+    opacity: 1;
+}
+
+.sitemap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    justify-items: center;
+}
+
+footer {
+    border-top: 1px solid;
+    padding: 30px 0;
+}
+
+.sitemap .small {
+    font-size: .75rem;
+    margin: 0 0 .3125rem;
+}
+
+.sitemap .spacer {
+    height: 20px;
+}
+
+.sitemap li:not(.small)>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sitemap a {
+    font-size: .875rem;
+}
+
+.sitemap li li {
+    padding: 4px;
+}
+
+.sitemap li .mdi {
+    font-size: 22px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.pagination li a {
+    padding: 4px 12px;
+    background-color: transparent;
+    gap: 10px;
+}
+
+.container.article {
+    display: grid;
+    grid-template-columns: 230px minmax(auto, 1fr);
+    align-items: start;
+    width: 100%;
+    gap: 10px 0;
+}
+
+aside span {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0 0 0 14px;
+}
+
+aside {
+    font-size: 15px;
+    padding-left: 3px;
+    margin: 54px 0 20px 0;
+}
+
+aside>ul>li>a {
+    border-left: 2px solid transparent;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 0;
+}
+
+aside>ul>li>a.H3::before {
+    content: "- ";
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+aside>ul>li>a.H3 {
+    font-weight: 400;
+}
+
+aside>ul>li>a {
+    font-weight: 500;
+}
+
+.article aside {
+    grid-column: 1/2;
+    grid-row: 1;
+    position: sticky;
+    top: 80px;
+    bottom: 0;
+    overflow-y: scroll;
+    max-height: calc(100vh - 90px);
+}
+
+.article article {
+    grid-column: 2 / 4;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+aside>ul>li>a.active {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.article article h1 {
+    font-size: 2.3em;
+    margin: 0 0 .15rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+aside .reading-time {
+    position: initial;
+    font-size: 12px;
+}
+
+.article article .metainfo {
+    margin: 0 0 20px 0;
+}
+
+.content p,
+.content ul li {
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: .0531rem;
+    line-height: 1.9em;
+    margin: 0 0 1.5625rem;
+    word-break: break-word;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+.content h2,
+.content h3,
+.content h4 {
+    margin: 2.1875rem 0 0.8rem;
+    font-weight: 500;
+}
+
+.hljs {
+    font-size: .95em;
+    padding: 10px 20px;
+    border: 1px solid;
+    overflow: auto;
+}
+
+.content :not(pre)>code {
+    font-weight: 600;
+    border-radius: .1875rem;
+    font-size: .975rem;
+    padding: .125rem .3125rem;
+}
+
+blockquote {
+    margin: 0;
+    padding: 19px 35px 2px;
+    font-style: italic;
+    font-size: 17px;
+    font-family: 'Scheherazade New', serif;
+}
+
+aside .mdi {
+    display: none;
+}
+
+.listing article .reading-time {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    top: initial;
+}
+
+.listing article .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.content ul li {
+    list-style: disc;
+    margin: 0;
+}
+
+.content ul {
+    margin: 0 0 30px 20px;
+}
+
+.content ul li {
+    list-style: disc;
+    margin: 0;
+}
+
+.content ul {
+    margin: 0 0 30px 20px;
+}
+
+.content table thead {
+    border-bottom: 1px solid;
+}
+
+.content table {
+    border-collapse: collapse;
+    margin: 0 0 20px 0;
+}
+
+.content th,
+.content td {
+    padding: 2px 6px;
+}
+
+.searchbox.show input {
+    width: 100%;
+}
+
+.changelog {
+    grid-column: 2/4;
+    border: 1px solid;
+    padding: 15px 20px;
+}
+
+.changelog b {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    margin: 0 0 10px 0;
+    align-items: center;
+    gap: 7px;
+}
+
+.changelog li img {
+    width: 18px;
+}
+
+.changelog li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.changelog ul {
+    margin: 0 -4px;
+}

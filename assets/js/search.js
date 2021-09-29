@@ -1,10 +1,10 @@
-search_field = document.querySelector("header input[type='search']"),
-    body = document.querySelector("body"),
-    header = document.querySelector("header"),
-    search_results_container = document.querySelector("header form > div"),
-    search_results = document.querySelector("header form > div > div"),
-    search_result = document.querySelector("header form > div > div article"),
-    search_keywords = "";
+search_field = document.querySelector(".searchbox input[type='search']"),
+body = document.querySelector("body"),
+header = document.querySelector("header"),
+search_results_container = document.querySelector(".searchbox"),
+search_results = document.querySelector(".searchbox .results ul"),
+search_result = document.querySelector(".searchbox .results ul li"),
+search_keywords = "";
 
 
 var taglist_tmp = [];
@@ -53,17 +53,16 @@ fetch('https://linuxhub.it/search.json')
             }
 
             results.forEach(result => {
-                var post = document.createElement("article");
+                var post = document.createElement("li");
                 post.innerHTML = `
-                    <a href="${result["url"]}">
-                        <h2>${result["title"]}</h2>
-                    </a>
-                    <br />
+                <a href="${result["url"]}">
+                    <b>${result["title"]}</b>
                     <p>${result["excerpt"]}</p>
+                </a>
                 `;
                 search_results.appendChild(post);
             });
-            search_results_container.style.display = "block";
+            search_results_container.classList.add("show");
         }
         search_field.addEventListener("keyup", search);
     })
@@ -75,7 +74,7 @@ fetch('https://linuxhub.it/search.json')
 
 window.addEventListener('mouseup', e => {
     if(e.target.tagName == "DIV") {
-        search_results_container.style.display = "none",
+        search_results_container.classList.remove("show"),
             search_results.innerHTML = "",
             body.style.overflow = "auto",
             search_field.value = "",

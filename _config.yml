@@ -10,7 +10,7 @@ uploads: /uploads
 permalink: /articles/:title/
 markdown: kramdown
 
-paginate: 5
+paginate: 7
 paginate_path: "/:num/"
 
 defaults:
@@ -27,10 +27,21 @@ defaults:
 navigation:
     - link: "/"
       name: Home
+
     - link: "https://t.me/linuxpeople"
-      name: Community Telegram
+      name: Community
+
     - link: "https://linuxpeople.org"
       name: "linuxpeople"
+
+    - link: "https://feed.linuxpeople.org"
+      name: "Tricks"
+      icon: "auto_fix_high"
+      
+    - link: "https://github.com/linuxhubit/linuxhub.it"
+      name: "Scrivi"
+      icon: "add_box"
+      color: "#00c36b"
 
 plugins:
   - jekyll-feed

@@ -4,44 +4,51 @@ layout: default
 
 {% assign lght = page.url | size | minus: 1 %}
 
-<aside>
-    <span>Indice</span>
-    <ul>
-        <li>Caricamento..</li>
-    </ul>
-    <span>{{ content | number_of_words | divided_by: 197 }} minuti circa di lettura</span>
-</aside>
-<article itemscope itemtype="https://schema.org/NewsArticle" class="hasSummary">
-    <meta itemprop="image" content="https://linuxhub.it/storage/linuxhub.png" hidden />
-    <h1 itemprop="headline">{{ page.title }}</h1>
-    <span>
-        <em itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
-            <span itemprop="name">linux/hub</span>
-            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <meta itemprop="url" content="https://linuxhub.it/storage/brand.png" />
-            </span>
-        </em>
-        Scritto da
-        <em itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <a href="//github.com/{{ page.author_github }}" target="_blank">
-                <span itemprop="name">{{ page.author }}</span>
-            </a>
-        </em> il
-        <em itemprop="datePublished" content="{{ page.date }}">
-            <time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
-        </em>
-    </span>
-    <div>
-        <div class="tag edit">
-            <a href="https://github.com/linuxhubit/linuxhub.it/blob/main/_posts/{{ page.date | date:'%Y-%m-%d' }}-{{ page.url | truncate: lght,'' | replace: '/articles/', ''}}.md">Edit on GitHub</a>
+<div class="container article">
+    <aside>
+        <span>Indice</span>
+        <span class="mdi material-icons"> expand_more </span>
+        <ul>
+            <li>Caricamento..</li>
+        </ul>
+        <span class="reading-time">{{ content | number_of_words | divided_by: 197 }} minuti circa di lettura</span>
+    </aside>
+    <article itemscope itemtype="https://schema.org/NewsArticle" class="hasSummary">
+        <meta itemprop="image" content="https://linuxhub.it/storage/linuxhub.png" hidden />
+        <h1 itemprop="headline">{{ page.title }}</h1>
+        <span class="metainfo">
+            <em itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
+                <span itemprop="name">linux/hub</span>
+                <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <meta itemprop="url" content="https://linuxhub.it/storage/brand.png" />
+                </span>
+            </em>
+            Scritto da
+            <em itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <a href="//github.com/{{ page.author_github }}" target="_blank">
+                    <span itemprop="name">{{ page.author }}</span>
+                </a>
+            </em> il
+            <em itemprop="datePublished" content="{{ page.date }}">
+                <time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
+            </em>
+        </span>
+        <div class="tags">
+            <div class="tag edit">
+                <a href="https://github.com/linuxhubit/linuxhub.it/blob/main/_posts/{{ page.date | date:'%Y-%m-%d' }}-{{ page.url | truncate: lght,'' | replace: '/articles/', ''}}.md">Edit on GitHub</a>
+            </div>
+            {% for tag in page.tags %}
+                <div class="tag {{ tag }}">{{ tag }}</div>
+            {% endfor %}
         </div>
-        {% for tag in page.tags %}
-            <div class="tag {{ tag }}">{{ tag }}</div>
-        {% endfor %}
-    </div>
-    <div>{{ content }}</div>
-</article>
+        <div class="content">{{ content }}</div>
+    </article>
 
+    <div class="changelog">
+        <b><span class="mdi material-icons"> history </span> Changelog</b>
+        <ul></ul>
+    </div>
+</div>
 <!--
 <section related>
     <h4>Leggi anche</h4>

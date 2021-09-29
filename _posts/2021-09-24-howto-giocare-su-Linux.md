@@ -1,5 +1,5 @@
 ---
-title: '#howto - giocare su Linux' 
+title: '#howto - Giocare su Linux' 
 date: 2021-09-24 11:00
 layout: post 
 author: Floppy	
@@ -64,7 +64,7 @@ dpkg --install steam.deb
 ```
 
 
-### Approfondimenti: Steam OS e Steam Deck
+### Steam OS e Steam Deck
 
 *SteamOS* è un sistema operativo sviluppato da *steam* ed ottimizzato per la loro piattaforma e per il gaming. Attualmente basato su **debian** e pubblicizzato tramite le **steam machine** è un progetto che non ha visto tantissima fortuna ed è sempre rimasto marginale rispetto ad altre piattaforme videoludiche.  
 

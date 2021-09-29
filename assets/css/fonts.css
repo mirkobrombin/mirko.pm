@@ -1,2 +1,8 @@
 /* Heebo */
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Heebo:400,500,700&display=swap';
+
+/* Material Icons */
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+
+/* Scheherazade New */
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
