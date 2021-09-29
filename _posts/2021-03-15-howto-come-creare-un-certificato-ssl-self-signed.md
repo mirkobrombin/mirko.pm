@@ -73,4 +73,3 @@ Email Address []:email@dominio.com
 
 Dopo aver salvato il nostro certificato, dovremo usarlo nella nostra applicazione web. Per fare ciò, bisognerà specificare il percorso del certificato SSL e della sua chiave nelle configurazioni dei web server (Apache, Nginx, ecc.). Questo processo varia in base al web server che si utilizza.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

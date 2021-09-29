@@ -37,4 +37,3 @@ export PATH=$PATH:/usr/local/go/bin
 
 Salviamo il file ed effettuiamo un logout per confermare le modifiche del file `.profile`. Se tutto è andato a buon fine, una volta che eseguiremo il comando `go version` dovremmo ottenere come output la versione installata di Go, quella specificata nell'archivio.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

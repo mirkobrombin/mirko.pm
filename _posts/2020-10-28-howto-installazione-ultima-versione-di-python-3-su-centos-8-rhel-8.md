@@ -77,4 +77,3 @@ dovremmo ottenere in output la sua versione come conferma.
 
 Assieme a Python viene installato *pip*, il gestore pacchetti del linguaggio. Possiamo accedere a questo tramite il comando *pip3.9* dove la versione cambia in base alla versione che abbiamo compilato.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.

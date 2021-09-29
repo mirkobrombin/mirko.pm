@@ -1112,4 +1112,4 @@ Ora puoi eseguire il tutto con `go run` e compilare con `go build` se hai instal
 
 Questo è quanto. Non era poi così difficile, vero?
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

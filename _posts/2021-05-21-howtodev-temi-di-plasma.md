@@ -96,7 +96,7 @@ Questa riga attiva le funzionalità di trasparenza adattiva. Semplicemente, l'ut
 
 Va anche supportato a livello di SVG, come vedremo dopo.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+
 
 ## File Directory
 Le cartelle che un tema può usare sono: `widgets/`, `weather/`, `icons/`, `dialogs/`, `solid/`, `translucent/`, `opaque/`.
@@ -131,4 +131,4 @@ Fortunatamente, ho già speso varie ore a descrivere molti SVG. Potete vedere [q
 
 Trovo che sia molto più utile vedere come i file SVG vengono effettivamente creati piuttosto che cercare di spiegarli con del semplice testo: non avrebbe lo stesso effetto.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

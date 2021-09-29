@@ -159,4 +159,4 @@ cd $HOME/work/wine/wine/chardonnay-*-x86_64/bin
 ./wine64 winecfg
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople). Mentre per problemi legati agli strumenti di compilazione, vi invito ad aprire una <a href="https://github.com/bottlesdevs/build-tools/issues">Issue</a> nella repository dedicata.
+ Mentre per problemi legati agli strumenti di compilazione, vi invito ad aprire una <a href="https://github.com/bottlesdevs/build-tools/issues">Issue</a> nella repository dedicata.

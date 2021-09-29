@@ -213,5 +213,5 @@ Se volete partecipare con idee o direttamente sul codice, contattatemi pure tram
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+
 

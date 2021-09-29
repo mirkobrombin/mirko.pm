@@ -507,4 +507,4 @@ Tramite *yay* potete visualizzare la differenza tra versione presente e quella a
 
 > Note: Trovate la guida completa e sempre aggiornata su [GitHub](https://github.com/PsykeDady/ArchlinuxARM_installazione)
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.
+

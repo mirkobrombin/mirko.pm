@@ -42,4 +42,3 @@ dnf install google-chrome-stable
 
 accettiamo l'inserimento nel sistema della chiave GPG e attendiamo il termine dell'installazione.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

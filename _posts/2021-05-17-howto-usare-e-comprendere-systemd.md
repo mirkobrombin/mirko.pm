@@ -289,4 +289,4 @@ I comandi possibili sono
 - `loginctl kill-user nomeutente` ( equivalente a `pkill -u nomeutente`, termina brutalmente la sessione )
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

@@ -54,4 +54,3 @@ Su CentOS/RHEL 7 via `yum`:
 yum install kdenlive
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.

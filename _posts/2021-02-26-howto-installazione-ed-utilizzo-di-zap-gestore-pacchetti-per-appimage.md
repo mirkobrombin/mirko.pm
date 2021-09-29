@@ -82,4 +82,4 @@ Possiamo visualizzare la lista completa delle opzioni sfruttando l'opzione `help
 zap --help
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.
+

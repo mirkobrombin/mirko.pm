@@ -44,4 +44,3 @@ Non ci resta quindi che installare PHP 7 ed i moduli necessari per eseguire molt
 yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

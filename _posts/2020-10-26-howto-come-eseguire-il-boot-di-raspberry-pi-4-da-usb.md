@@ -70,4 +70,4 @@ Dopo, dovrebbe avviarsi correttamente il sistema.
 
 Ora con la possibilità di poter avviare distro per il Raspberry PI da USB possiamo dotare il nostro dispositivo con memorie ancora più veloci e grandi grazie all'SSD.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.
+

@@ -152,4 +152,4 @@ Se tutto è andato a buon fine, dovreste vedere nella sezione in alto, cliccando
 
 Se così non è, giocate con le impostazioni, attivate l'accesso remoto e ricontrollate i processi spiegati in precedenza.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

@@ -81,4 +81,4 @@ e visitando la cartella protetta dovrebbe apparirci un form che ci chiederà di 
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

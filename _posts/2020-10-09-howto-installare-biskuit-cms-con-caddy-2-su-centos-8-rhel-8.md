@@ -239,4 +239,3 @@ composer install
 
 Una volta ultimato proseguiamo con l'installazione guidata, visitando l'indirizzo del dominio che abbiamo configurato sul server Caddy.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

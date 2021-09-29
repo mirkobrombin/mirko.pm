@@ -154,4 +154,3 @@ Ovviamente molte altre cose non son state citate in questa guida, come i comandi
 
 Potete notare che alcune scorciatoie hanno ulteriori combinazioni tra parentesi, potrete usare una o l'altra combinazione, senza alcuna differenza.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

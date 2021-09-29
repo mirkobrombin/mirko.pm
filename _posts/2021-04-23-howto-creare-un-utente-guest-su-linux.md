@@ -150,4 +150,4 @@ Nel primo caso useremo la password del nostro utente amministratore, mentre, nel
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

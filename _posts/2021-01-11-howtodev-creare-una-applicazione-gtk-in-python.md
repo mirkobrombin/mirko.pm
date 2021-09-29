@@ -425,4 +425,3 @@ Abbiamo finito il lavoro, e la nostra prima applicazione GTK in Python è pronta
 
 Vi lascio alla repository GitHub dove potete trovare [l'esempio completo](https://github.com/linuxhubit/examples-MyFirstApplication).
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

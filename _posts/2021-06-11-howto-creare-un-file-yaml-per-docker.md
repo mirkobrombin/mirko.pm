@@ -164,4 +164,4 @@ Se adesso proviamo ad accedere a `localhost:8080` dovremmo vedere il il messaggi
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

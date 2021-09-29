@@ -320,4 +320,4 @@ Chiamando le funzioni in modo tale che il messaggio sia stampato nell'ordine cor
 Ovviamente come già avrete capito il resto del codice sarà comunque eseguito asincornamente e ho utilizzato come esempio la chiamata della funzione `a()` all'esterno della funzione `printAsync()` che stampa prima delle altre funzioni all'interno di `printAsync()`.
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

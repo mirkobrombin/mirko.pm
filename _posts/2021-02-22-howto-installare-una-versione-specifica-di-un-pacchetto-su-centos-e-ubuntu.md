@@ -58,4 +58,3 @@ apt remove firefox
 apt install firefox=45.0.2+build1-0ubuntu1
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

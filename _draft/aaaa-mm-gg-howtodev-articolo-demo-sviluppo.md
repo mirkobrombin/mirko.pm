@@ -43,4 +43,3 @@ Lista dei prerequisiti e di conoscenze presenti in altri articoli che verranno d
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

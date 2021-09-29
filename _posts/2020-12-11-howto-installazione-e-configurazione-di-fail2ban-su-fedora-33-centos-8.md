@@ -90,4 +90,3 @@ dove:
 * *action* l'azione da effettuare: `%(action_)s` banna l'utente, mentre nel nostro caso `%(action_mwl)s` bannerà l'utente ed invierà una mail contenente il whois dell'indirizzo IP
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

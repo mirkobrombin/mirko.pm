@@ -112,4 +112,3 @@ Dopo aver installato Zebralette, apriamo REAPER e in automatico dovrebbe fare la
 
 Dopo aver seguito questi passaggi avrete un DAW per realizzare musica sulla vostra distribuzione Linux. 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

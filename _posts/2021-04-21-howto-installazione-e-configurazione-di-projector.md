@@ -115,4 +115,4 @@ Una volta che abbiamo installato l'IDE che preferiamo, lanciamo  `projector run`
 ## Conclusione
 Bene, una volta aver fatto tutti questi passaggi possiamo utilizzare la nostra IDE senza dover usare la nostra potenza di calcolo per esempio per compilare un programma, qui sotto lascio due link utili che riportano direttamente alla Wiki di Jetbrains, una per poter installare un vostro certificato SSL per poter utilizzare <a href="https://github.com/JetBrains/projector-installer#secure-connection">Projector sotto HTTPS</a> (che abilità delle funzioni in più) e la seconda spiega come installare <a href="https://github.com/JetBrains/projector-installer#android-studio-support">Android Studio</a>, perché per ragioni legali non si può installare direttamente dalla CLI di Projector.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

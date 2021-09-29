@@ -208,4 +208,4 @@ Se quindi proviamo andare in `http://172.17.0.2:5000` potrevo vedere stampato il
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate sul nostro [gruppo Telegram](https://t.me/linuxpeople).
+

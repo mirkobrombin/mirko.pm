@@ -105,4 +105,3 @@ il quale ritornerà la lista dei container con il loro relativo stato.
 
 Ci sono diversi aspetti da considerare nella gestione del server SQL. Per questi vi rimando alla [documentazione ufficiale](https://docs.microsoft.com/it-it/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash#change-the-sa-password) sul sito di Microsoft.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

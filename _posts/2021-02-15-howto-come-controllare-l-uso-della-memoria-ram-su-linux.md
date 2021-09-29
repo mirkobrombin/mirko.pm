@@ -73,4 +73,3 @@ cat /proc/meminfo
 
 L'output che ci ritroveremo mostrerà tante informazioni, ma quelle che davvero ci servono sono le prime tre righe, che indicano la memoria totale, libera e disponibile per le applicazioni.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

@@ -118,4 +118,4 @@ Dopo aver aggiunto la repository, installiamo Sublime Text con il seguente coman
 dnf install sublime-text
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople). 
+ 

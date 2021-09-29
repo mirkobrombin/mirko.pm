@@ -212,4 +212,4 @@ Gli articoli che vengono riscritti devono essere spostati nella cartella **_tras
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

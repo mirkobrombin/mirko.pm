@@ -158,4 +158,3 @@ echo "<?php phpinfo();" > /var/www/lighttpd/test.php
 
 Visitiamo la pagina per verificarne il funzionamento.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

@@ -34,4 +34,3 @@ makepkg -si
 
 Successivamente, se desideriamo avere i colori quando usiamo Pacman, decommentiamo dentro al file di configurazione di Pacman la riga `Color`.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

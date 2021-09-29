@@ -159,4 +159,4 @@ CONTAINER ID       IMAGE             COMMAND       CREATED      STATUS        PO
 
 A questo punto avremo Docker funzionante sul nostro sistema pronto all'uso per la creazione di container.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

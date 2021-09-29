@@ -63,4 +63,4 @@ Una volta fatto ciò, il software ci installerà i plugins che abbiamo inserito 
 Dopo aver seguito tutti questi passaggi avrete un Plugin Manager installato su Vim che permette di avere molte più funzionalità di un semplice text editor. Per altre estensioni consiglio il sito
 <a href="https://vimawesome.com/">vimawesome</a>
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.
+

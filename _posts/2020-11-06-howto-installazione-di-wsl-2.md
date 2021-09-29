@@ -87,4 +87,4 @@ wsl --unregister <NomeDistribuzione>
 ## Conclusione
 Con questa guida avete imparato come installare Linux su Windows. Per usarlo, invece, dovrete conoscere come funziona la vostra distribuzione (o anche solo i comandi più base di bash).
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.
+

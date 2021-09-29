@@ -83,4 +83,3 @@ Modifichiamo il file *php.ini* inserendo ove possibile la stringa `extension=ima
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

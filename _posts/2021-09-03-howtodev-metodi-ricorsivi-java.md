@@ -461,5 +461,5 @@ Tuttavia per emulare dinamiche così complesse, c'è necessità di strumenti pi�
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+
 

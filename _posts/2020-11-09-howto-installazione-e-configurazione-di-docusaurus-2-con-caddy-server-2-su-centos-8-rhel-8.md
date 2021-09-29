@@ -104,4 +104,3 @@ Ora, visitando il dominio precedentemente configurato, ci troveremo davanti alla
 
 Ad ogni modifica, è necessario ripetere il processo di *build* e caricare nuovamente i file.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

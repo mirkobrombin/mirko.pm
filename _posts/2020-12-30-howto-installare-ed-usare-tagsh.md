@@ -266,4 +266,3 @@ TagSH permette di etichettare dei file con dei tag e averli sotto la cartella `$
 | `tagsh -v`                                    |               Stampa la versione del programma               |
 | `tagsh -d altreOpzioni altriParametri`        | Attiva la modalità debug ad uno qualsiasi dei comandi elencati sopra |
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

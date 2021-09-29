@@ -42,4 +42,3 @@ pacman -S mpv
 ## Conclusione
 Seguiti questi procedimenti, mpv dovrebbe essere installato ed utilizzabile senza problemi sulla vostra macchina.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

@@ -88,4 +88,3 @@ Per cancellare una docset tra quelle scaricate sarà sufficiente recarci all'int
 ## Conclusione
 Questo era Zeal, uno strumento che personalmente ritengo fondamentale per poter consultare tutte le documentazioni di cui necessito anche in assenza di connessione e in mobilitá.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

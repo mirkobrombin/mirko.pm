@@ -144,4 +144,4 @@ Per quanto riguarda la mia esperienza ho notato che il carattere backspace non f
 Bisogna invece spostarsi col cursore sul carattere errato e premere `canc`
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

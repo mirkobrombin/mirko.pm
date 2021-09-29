@@ -126,4 +126,3 @@ Come comportamento predefinito il plugin non si sincronizza con gli episodi vist
 - installare **Up next - add-on** che permette di passare al prossimo episodio
 - impostare colori e personalizzare lo stato guardato a livello grafico
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

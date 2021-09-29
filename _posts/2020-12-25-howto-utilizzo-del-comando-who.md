@@ -59,4 +59,3 @@ pi       + pts/0        2020-12-24 12:44   .         15981 (192.168.2.28)
 
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

@@ -102,4 +102,3 @@ firewall-cmd --reload
 
 Visitando il dominio che abbiamo configurato, ci ritroveremo davanti la nostra nuova installazione di GitLab.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.

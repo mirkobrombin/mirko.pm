@@ -444,9 +444,3 @@ ciao come stai
 ```
 
 
-
-
-
-
-
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople)

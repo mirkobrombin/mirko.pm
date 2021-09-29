@@ -58,4 +58,3 @@ Una volta che abbiamo installato e avviato Glimpse dovremmo trovarci di fronte a
 
 Da qua in poi potremmo creare un nuovo file/modificarne uno gia esistente e fare tutte le modifiche che vogliamo.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.

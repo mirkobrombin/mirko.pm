@@ -252,4 +252,4 @@ Testate il percorso di esecuzione, se non funziona provate con:
 /home/vostronome/.local/share/gem/ruby/3.0.0/bin/fusuma
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.
+

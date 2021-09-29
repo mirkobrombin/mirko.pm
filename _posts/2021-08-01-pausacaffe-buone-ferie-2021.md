@@ -113,4 +113,4 @@ E soprattutto colui che tiene su l'intera baracca, ovvero **Mirko Brombin** il f
 *Buone vacanze a tutti, a Settembre!*
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+

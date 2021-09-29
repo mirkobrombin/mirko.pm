@@ -56,4 +56,3 @@ dnf install arduino
 ## Conclusione
 Una volta seguiti tutti questi passaggi, sul nostro sistema dovremmo ritrovarci un Arduino IDE completamente funzionante e pronto per la configurazione della vostra scheda.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

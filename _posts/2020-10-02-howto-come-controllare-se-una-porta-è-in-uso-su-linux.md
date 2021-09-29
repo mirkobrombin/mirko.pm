@@ -105,4 +105,3 @@ ss -tulw
 Dopo aver fatto ciò, possiamo renderci conto del fatto che l'output è molto simile al precedente, ma che al posto della porta viene indicata il servizio che la sta utilizzando. Per questo motivo è sempre meglio eseguire il comando nella prima maniera e poi nel secondo.
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al [nostro gruppo Telegram](https://t.me/linuxpeople).

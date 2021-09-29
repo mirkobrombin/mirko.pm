@@ -47,4 +47,3 @@ ed eseguiamolo:
 
 Ora, all'avvio di una qualsiasi AppImage, ci verrà proposto di installarla o semplicemente eseguirla.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

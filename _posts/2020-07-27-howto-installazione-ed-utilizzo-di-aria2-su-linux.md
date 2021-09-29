@@ -172,4 +172,4 @@ alias download = "aria2c --on-download-complete=exit -d $HOME/Downloads/"
 
 ## Conclusioni
 
-Questa era una breve guida all'installazione di **aria2** ed una breve disamina dei comandi più basici che offre. [Qui](https://aria2.github.io/manual/en/html/aria2c.html) trovate il manuale ufficiale con l'elenco completo dei comandi mentre per ogni dubbio o chiarimento, ci trovate al solito [gruppo Telegram](https://t.me/linuxpeople).
+Questa era una breve guida all'installazione di **aria2** ed una breve disamina dei comandi più basici che offre. [Qui](https://aria2.github.io/manual/en/html/aria2c.html) trovate il manuale ufficiale con l'elenco completo dei comandi.

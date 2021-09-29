@@ -132,4 +132,3 @@ javac --version
 
 Se tutto è andato come previsto, sul sistema ora avrete sia JRE che JDK, oppure uno dei due in base a che cosa vi serve.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.

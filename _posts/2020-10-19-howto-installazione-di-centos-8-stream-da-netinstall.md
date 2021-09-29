@@ -124,4 +124,3 @@ Possiamo abilitare le repository EPEL (Extra Packages for Enterprise Linux) via 
 dnf install epel-release
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.

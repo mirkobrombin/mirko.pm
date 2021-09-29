@@ -300,5 +300,5 @@ Anche se dovrebbe comunque partire in automatico dopo l'installazione.
 
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+
 

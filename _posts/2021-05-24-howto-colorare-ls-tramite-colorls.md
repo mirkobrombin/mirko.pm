@@ -108,5 +108,5 @@ source ~/.zshrc
 Adesso possiamo goderci la nostra nuova shell customizzata con icone e cartelle colorate.
 
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).
+
 

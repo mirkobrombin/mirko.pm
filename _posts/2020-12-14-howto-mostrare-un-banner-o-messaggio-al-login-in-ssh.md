@@ -84,4 +84,3 @@ pi@192.168.2.44's password:
 
 Ora sapete come inserire un messaggio al login di SSH e mostrare a chi effettuerà l'accesso qual è la vostra ASCII Art preferita, o più semplicemente alcune semplici regole per la gestione del server o PC.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

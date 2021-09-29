@@ -65,4 +65,3 @@ gnome-extensions enable material-shell@papyelgringo
 ## Conclusione
 Dopo aver installato e abilitato questa estensione, ora il nostro GNOME somiglierà decisamente di più ad un WM. A <a href="https://material-shell.com/#hotkeys">questa pagina</a> potete trovare una serie di keybinds di default per comprendere come muoversi con la tastiera.
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al <a href="https://t.me/linuxpeople">nostro gruppo Telegram</a>.

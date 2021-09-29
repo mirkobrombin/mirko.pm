@@ -54,4 +54,3 @@ cpu=$(</sys/class/thermal/thermal_zone0/temp)
 echo "$((cpu/1000)) C"
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro [gruppo Telegram](https://t.me/linuxpeople).

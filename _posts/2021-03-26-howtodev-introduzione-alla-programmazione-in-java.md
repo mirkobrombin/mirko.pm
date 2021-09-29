@@ -566,4 +566,4 @@ public class NomeFile {
 }
 ```
 
-Per ogni dubbio, chiarimento o curiosità ci trovate al nostro <a href="https://t.me/linuxpeople">gruppo Telegram</a>.
+
