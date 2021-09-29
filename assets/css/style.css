@@ -31,7 +31,8 @@ aside {
 a,
 .searchbox input,
 .listing article,
-a.read-more span {
+a.read-more span,
+.splitter section {
     transition: all .2s ease-in-out;
 }
 
