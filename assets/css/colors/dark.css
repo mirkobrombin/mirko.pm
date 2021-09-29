@@ -19,6 +19,10 @@
         background-color: #949699
     }
 
+    html, aside, .results {
+        scrollbar-color: #cccccc #191919;
+    }
+
     a,
     aside>ul>li>a:hover {
         color: #ee7256;
@@ -38,9 +42,7 @@
         border-color: #333333;
     }
 
-    article,
-    .searchbox input,
-    .content tr:nth-child(odd) td {
+    article, .searchbox input, .content tr:nth-child(2n+1) td, .changelog,.searchbox .results ul li:hover, .changelog li a:hover {
         background-color: #1b1b1b;
     }
 
@@ -48,23 +50,11 @@
         background-color: #191919;
     }
 
-    header,
-    footer,
-    article,
-    .content table thead  {
+    header, footer, article, .content table thead,.changelog  {
         border-color: #353535;
     }
 
-    body,
-    .searchbox .results ul li a,
-    .sitemap li:not(.small)>a,
-    header nav ul li a,
-    a.read-more,
-    .searchbox input,
-    .tag.edit a,
-    article p,
-    .content,
-    article h2 a {
+    body, .searchbox .results ul li a, .sitemap li:not(.small) > a, header nav ul li a, a.read-more, .searchbox input, .tag.edit a, article p, .content, article h2 a, .changelog li a {
         color: #fff;
     }
 
@@ -99,6 +89,7 @@
     .hljs::-webkit-scrollbar-track {
         background-color: #5d5749;
         border-color: #756a4c;
+        scrollbar-color: #d4c8a9 #5d5749;
     }
 
     aside a {
