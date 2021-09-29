@@ -79,11 +79,11 @@
         grid-template-columns: auto auto auto;
         align-items: end;
     }
-    
+
     .tag {
         display: inline-table;
     }
-    
+
     .tag.edit {
         display: block;
     }
@@ -107,5 +107,9 @@
 
     aside ul li {
         padding: 4px 0;
+    }
+
+    .changelog {
+        margin: 10px;
     }
 }
