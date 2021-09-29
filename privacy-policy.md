@@ -14,21 +14,17 @@ Utilizziamo i vostri dati per fornire e migliorare il Servizio. Utilizzando il S
 
 ## Definizioni
 
-*   **Servizio**
+- **Servizio**  
+  Il Servizio è il sito https://linuxhub.it gestito da linux/hub & linuxpeople
 
-    Il Servizio è il sito https://linuxhub.it gestito da linux/hub & linuxpeople
+- **Dati personali**  
+  I Dati personali sono i dati di un individuo vivente che può essere identificato da quei dati (o da quelli e altre informazioni in nostro possesso o che potrebbero venire in nostro possesso).
 
-*   **Dati personali**
+- **Dati di utilizzo**  
+  I dati di utilizzo sono i dati raccolti automaticamente generati dall'utilizzo del Servizio o dall'infrastruttura del Servizio stesso (ad esempio, la durata della visita di una pagina).
 
-    I Dati personali sono i dati di un individuo vivente che può essere identificato da quei dati (o da quelli e altre informazioni in nostro possesso o che potrebbero venire in nostro possesso).
-
-*   **Dati di utilizzo**
-
-    I dati di utilizzo sono i dati raccolti automaticamente generati dall'utilizzo del Servizio o dall'infrastruttura del Servizio stesso (ad esempio, la durata della visita di una pagina).
-
-*   **Cookies**
-
-    I cookie sono piccoli file memorizzati sul vostro dispositivo (computer o dispositivo mobile).
+- **Cookies**  
+  I cookie sono piccoli file memorizzati sul vostro dispositivo (computer o dispositivo mobile).
 
 ## Raccolta e uso delle informazioni
 
@@ -40,8 +36,8 @@ Raccogliamo diversi tipi di informazioni per vari scopi, per fornire e migliorar
 
 Durante l'utilizzo del nostro Servizio, potremmo chiedervi di fornirci alcune informazioni di identificazione personale che possono essere utilizzate per contattarvi o identificarvi ("Dati personali"). Le informazioni di identificazione personale possono includere, ma non sono limitate a:
 
-*   Indirizzo email
-*   Cookie e dati di utilizzo
+- Indirizzo email
+- Cookie e dati di utilizzo
 
 #### Dati di utilizzo
 
@@ -57,21 +53,21 @@ Potete chiedere al vostro browser di rifiutare tutti i cookie o di indicare quan
 
 Esempi di cookie che utilizziamo:
 
-*   **Cookie di sessione.** Utilizziamo i cookie di sessione per gestire il nostro servizio.
-*   **Cookie di preferenza.** Utilizziamo i cookie di preferenza per ricordare le vostre preferenze e varie impostazioni.
-*   **Cookie di sicurezza.** Utilizziamo i cookie di sicurezza per motivi di sicurezza.
+- **Cookie di sessione.** Utilizziamo i cookie di sessione per gestire il nostro servizio.
+- **Cookie di preferenza.** Utilizziamo i cookie di preferenza per ricordare le vostre preferenze e varie impostazioni.
+- **Cookie di sicurezza.** Utilizziamo i cookie di sicurezza per motivi di sicurezza.
 
 ## Uso dei dati
 
 linux/hub & linuxpeople utilizza i dati raccolti per vari scopi:
 
-*   Per fornire e mantenere il nostro Servizio
-*   Per comunicare agli utenti variazioni apportate al servizio che offriamo
-*   Per permettere agli utenti di fruire, a propria discrezione, di funzioni interattive del nostro servizio
-*   Per fornire un servizio ai clienti
-*   Per raccogliere analisi o informazioni preziose in modo da poter migliorare il nostro Servizio
-*   Per monitorare l'utilizzo del nostro Servizio
-*   Per rilevare, prevenire e affrontare problemi tecnici
+- Per fornire e mantenere il nostro Servizio
+- Per comunicare agli utenti variazioni apportate al servizio che offriamo
+- Per permettere agli utenti di fruire, a propria discrezione, di funzioni interattive del nostro servizio
+- Per fornire un servizio ai clienti
+- Per raccogliere analisi o informazioni preziose in modo da poter migliorare il nostro Servizio
+- Per monitorare l'utilizzo del nostro Servizio
+- Per rilevare, prevenire e affrontare problemi tecnici
 
 ## Trasferimento dei dati
 
@@ -89,11 +85,11 @@ linux/hub & linuxpeople adotterà tutte le misure ragionevolmente necessarie per
 
 linux/hub & linuxpeople può divulgare i vostri Dati personali in buona fede, ritenendo che tale azione sia necessaria per:
 
-*   Rispettare un obbligo legale
-*   Proteggere e difendere i diritti o la proprietà di linux/hub & linuxpeople
-*   Prevenire o investigare possibili illeciti in relazione al Servizio
-*   Proteggere la sicurezza personale degli utenti del Servizio o del pubblico
-*   Proteggere contro la responsabilità legale
+- Rispettare un obbligo legale
+- Proteggere e difendere i diritti o la proprietà di linux/hub & linuxpeople
+- Prevenire o investigare possibili illeciti in relazione al Servizio
+- Proteggere la sicurezza personale degli utenti del Servizio o del pubblico
+- Proteggere contro la responsabilità legale
 
 ## Sicurezza dei dati
 
@@ -133,5 +129,5 @@ Si consiglia di rivedere periodicamente la presente Informativa sulla privacy pe
 
 In caso di domande sulla presente Informativa sulla privacy, si prega di contattarci:
 
-*   Tramite e-mail: amministrazione[ at ]linuxhub.it
-*   Visitando questa pagina sul nostro sito web: https://linuxhub.it/form/contact
+- Tramite e-mail: amministrazione[ at ]linuxhub.it
+- Gruppo Telegram: https://t.me/linuxpeople

@@ -50,7 +50,7 @@
         background-color: #191919;
     }
 
-    header, footer, article, .content table thead, .card  {
+    header, footer, article, .content table thead, .card, hr  {
         border-color: #353535;
     }
 

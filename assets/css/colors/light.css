@@ -40,11 +40,7 @@ footer {
     background-color: #ffffffc9;
 }
 
-header,
-footer,
-article,
-.content table thead,
-.card {
+header, footer, article, .content table thead, .card, hr {
     border-color: #d6d6d6;
 }
 
