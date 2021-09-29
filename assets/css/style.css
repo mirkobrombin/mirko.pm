@@ -577,3 +577,24 @@ hr {
     border: 0;
     border-bottom: 1px solid;
 }
+
+.searchbox .results ul li:first-of-type b::before,
+.searchbox .results ul li:nth-of-type(2) b::before,
+.searchbox .results ul li:nth-of-type(3) b::before {
+    border-radius: 4px;
+    padding: 0 3px;
+    margin: 0 3px 0 0;
+    text-transform: uppercase;
+}
+
+.searchbox .results ul li:first-of-type b::before {
+    content: "1"
+}
+
+.searchbox .results ul li:nth-of-type(2) b::before {
+    content: "2"
+}
+
+.searchbox .results ul li:nth-of-type(3) b::before {
+    content: "3"
+}

@@ -56,7 +56,10 @@ header, footer, article, .content table thead, .card, hr {
 .pagination li a:hover,
 header nav ul li:hover a,
 header nav ul li.active a,
-.content :not(pre)>code {
+.content :not(pre)>code,
+.searchbox .results ul li:first-of-type b::before,
+.searchbox .results ul li:nth-of-type(2) b::before,
+.searchbox .results ul li:nth-of-type(3) b::before {
     color: #ffffff;
 }
 
@@ -139,6 +142,12 @@ blockquote {
 
 .content tr:nth-child(odd) td {
     background-color: #f7f7f7;
+}
+
+.searchbox .results ul li:first-of-type b::before,
+.searchbox .results ul li:nth-of-type(2) b::before,
+.searchbox .results ul li:nth-of-type(3) b::before {
+    background: #569dff;
 }
 
 @media screen and (max-width: 767px) {
