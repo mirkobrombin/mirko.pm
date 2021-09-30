@@ -73,7 +73,7 @@ printf "$(printf resources/mowish_dolphin.desktop)" "organizzaCartelle" "organiz
 
 Potrai quindi usare mowish dal menu azioni di dolphin (tasto destro su uno spazio vuoto &rarr; azioni &rarr; Organizza Cartelle)
 
-#### Integrazione Nautilus
+### Integrazione Nautilus
 Per il gestore dei file nautilus (normalmente installato con Gnome DE) puoi seguire le seguenti istruzioni:
 ```bash 
 mkdir -p $HOME/.local/share/nautilus/scripts
@@ -89,7 +89,7 @@ Da considerare che ci sono alcune limitazioni in questa integrazione:
 - Il menu script appare solo se si selezionano uno o più file. 
 - lo script non viene installato per tutti gli utenti, ogni utente dovrà installare il suo
 
-#### Integrazione Nemo
+### Integrazione Nemo
 Per il gestore dei file nemo (normalmente installato con Cinnamon DE) puoi seguire le seguenti istruzioni: 
 
 ```bash
@@ -98,7 +98,7 @@ printf "$(printf resources/mowish_nemo.nemo_action)" "Organizza Cartella" "Organ
 
 Potrai quindi usare mowish dal menu contestuale di nemo (Tasto destro su uno spazio vuoto &rarr; Organizza cartella )
 
-#### Integrazione elementary 
+### Integrazione elementary 
 Per il gestore dei file di elementary (normalmente installato con Pantheon DE) puoi seguire le seguenti istruzioni: 
 
 ```bash
