@@ -26,7 +26,7 @@ Voglio spendere qualche minuto del vostro tempo in un ragionamento che potrebbe 
 
 Una delle ultime vulnerabilità di gran peso su sudo è stata la **CVE-2021-3156**, anche chiamata *Barone Samedì* (corretta poi nella versione **1.9.5p2** di sudo); proprio in corrispondenza di tale scoperta ho letto molti commenti del tipo: 
 
-> *L'ennesima dimostrazione di quanto sia poco sicuro sudo, usiamo doas*
+> L'ennesima dimostrazione di quanto sia poco sicuro sudo, usiamo doas
 
 Ragionamenti di questo tipo su un software open source sono, a mio parere, totalmente insensati: neanche gli *helloworld* sono esenti da falle idealmente, ogni software che scriviamo è purtroppo soggetto a tutta una serie di considerazioni che sono impossibili da tenere conto mentre lo stiamo scrivendo e questo non ci deve impedire di portarlo a termine, di utilizzarlo o di considerarlo come mediamente sicuro. Ed è proprio in questo contesto che l'open source si distingue dagli altri modelli di pubblicazione del software: più occhi son puntati sul codice sorgente del nostro operato, più falle e problematiche verranno corrette. In sintesi il fatto che venga trovata e corretta una falla non è motivo di allontanarsi da un software, ma è anzi motivo di avvicinarsi ad esso ed essere ancora più sicuri di utilizzarlo. 
 
