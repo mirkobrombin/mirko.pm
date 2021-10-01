@@ -61,7 +61,7 @@ make install
 
 ### configure
 
-Sofferiamoci però sulla terza istruzione, il `.\configure`: questo script fa un controllo di tutte le dipendenze installate o meno sulla vostra distribuzione, ogni riga formata così: 
+Sofferiamoci però sulla terza istruzione, il `./configure`: questo script fa un controllo di tutte le dipendenze installate o meno sulla vostra distribuzione, ogni riga formata così: 
 
 ```
 Checking for nomesoftware ...         yes.
