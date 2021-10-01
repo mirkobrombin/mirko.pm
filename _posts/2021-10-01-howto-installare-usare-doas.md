@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare ed usare doas' 
-date: 2021-10-01 11:00
+date: 2021-10-01 12:00
 layout: post 
 author: PsykeDady
 author_github: PsykeDady 
