@@ -1,5 +1,5 @@
 ---
-title: '#howto - cercare i duplicati da terminale con fdupes'
+title: '#howto - Cercare i duplicati da terminale con fdupes'
 date: 2021-05-03T09:30
 layout: post
 author: Davide Galati (in arte PsykeDady)
@@ -18,7 +18,6 @@ L'unico modo per esserne certi però è lasciare che dei software analizzino le 
 Uno dei software, utilizzabili direttamente da terminale, tra i più immediati è sicuramente `fdupes`.  Presente nella maggiorparte delle repository. Possiamo installarlo con il nostro gestore di pacchetti di sistema.
 
 ### Ubuntu 
-
 Su Ubuntu tramite apt  
 
 ```bash 
@@ -39,8 +38,7 @@ Su archlinux tramite pacman
 pacman -S fdupes
 ```
 
-## utilizzo 
-
+## Utilizzo 
 Normalmente possiamo utilizzare fdupes da linea di comando indicando una o più cartelle in cui cercare i duplicati così:
 
 ```bash
@@ -52,7 +50,6 @@ fdupes Cartella1 Cartella2
 ```
 
 > **NOTA:**  
-> 
 > fdupes può essere utilizzato solo su cartelle, verrà poi eseguito l'algoritmo sui file al suo interno ( solo i file )
 
 I file trovati simili verranno elencati e quindi raggruppati (ogni gruppo è separato da uno spazio da un altro), ecco un esempio di output:
@@ -71,8 +68,7 @@ I file trovati simili verranno elencati e quindi raggruppati (ogni gruppo è sep
 
 Possiamo notare tre gruppi di file uguali, il primo formato dai due file `unfile` e `file4` il secondo dai tre file `asd.txt`,`file2`,`file3` e così via...
 
-### l'opzione --delete
-
+### L'opzione --delete
 Potrebbe essere comodo cercare i duplicati ed eliminarli anche, magari scegliendo quali tenere. Quindi lo facciamo con l'opzione `--delete`. 
 
 `fdupes --delete Cartella` 
@@ -80,8 +76,7 @@ Potrebbe essere comodo cercare i duplicati ed eliminarli anche, magari scegliend
 Una volta avviata la grafica, viene subito all'occhio che i file restano raggruppati per duplicati, e ogni duplicato è numerato. 
 Navighiamo, all'interno della lista con le frecce direzionali su e giu, eventuali azioni devono essere scritte tramite comandi precisi, visualizzabili scrivendo `h` e premendo invio. 
 
-#### operazioni a gruppo
-
+#### Operazioni a gruppo
 Per ogni blocco si possono specificare alcune operazioni, supponiamo di avere un gruppo di tre duplicati, numerati quindi da 1 a 3. 
 La prima operazione da poter fare è poter indicare uno o più file da preservare, ad esempio conserviamo solo il primo digitando `1`, oppure *più file separati da virgole*, scrivendo ad esempio `1,2`. 
 
@@ -98,7 +93,7 @@ Potete anche tracciare i file digitando `Maiuscolo + destra` per conservarlo e `
 Se abbiamo sbagliato una determinata selezione, possiamo tornare con le frecce sul gruppo e quindi scrivere: `rg`, per resettare singolarmente basta digitare invece sul file `?`.
 Se in un determinato gruppo non vogliamo eliminare nessun duplicato, possiamo digitare `all` e quindi invio.
 
-#### operazioni su più gruppi 
+#### Operazioni su più gruppi 
 Non è sicuramente il massimo operare un gruppo alla volta nel caso di tantissimi duplicati, quindi possiamo operare anche per "**selezioni**"
 
 Si possono selezionare tutti i file che, nel percorso, contengono un determinato testo con: `sel testocontenuto` 
@@ -124,14 +119,12 @@ Se non te ne intendi, abbiamo scritto un articolo su [come scrivere le espressio
 
 Per fare un esempio, scrivendo `selr .*file\d.*` stiamo cercando tutti i file che nel percorso hanno la scritta `file` *seguita da una cifra numerica*
 
-#### chiudere o applicare
-
+#### Chiudere o applicare
 Per chiudere un eliminazione fdupes **senza applicare modifiche** basta digitare `quit` o `exit` 
 
 Per applicare le modifiche invece possiamo digitare `prune` oppure premere solo il tasto `canc`
 
-### l'opzione ricorsiva
-
+### L'opzione ricorsiva
 Probabilmente non avrete alcun interesse nell'analizzare una sola cartella con i suoi file. fdupes può essere lanciata in maniera ricorsiva analizzando anche cartelle dentro altre cartelle e tutti i file all'interno. Questo grazie all'opzione `-r`
 
 `fdupes -r Cartella`
@@ -142,6 +135,3 @@ L'opzione ricorsiva funziona anche con l'opzione `delete`
 ## Throubleshoot con --delete
 Per quanto riguarda la mia esperienza ho notato che il carattere backspace non funziona con `fdupes --delete` mentre si scrive un comando ( se si sbaglia)
 Bisogna invece spostarsi col cursore sul carattere errato e premere `canc`
-
-
-
