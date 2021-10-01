@@ -21,7 +21,7 @@ Al tempo in cui scrivo, doas è ancora supportato da aggiornamenti frequenti, l'
 
 
 
-## Perché non usare sudo ? La controversia dei bug
+## Perché non usare sudo? La controversia dei bug
 
 Ogni qualvolta esce fuori una nuova vulnerabilità in un generico software è prassi comune iniziare a domandarsi perché si sta utilizzando quel software e non un altro che magari non ha lo stesso numero di falle. `sudo` non è immune da queste chiacchiere da bar (purtroppo).
 
@@ -107,7 +107,7 @@ pam_appl_h
 
 **ATTENZIONE**:
 
-uno strumento di amministrazione del sistema deve essere sempre aggiornato. Compilare un pacchetto da soli non da questa garanzia, quindi ogni tanto verificate aggiornamenti con una `git pull` 
+Uno strumento di amministrazione del sistema deve essere sempre aggiornato. Compilare un pacchetto da soli non dà questa garanzia, quindi ogni tanto verificate aggiornamenti con una `git pull` 
 
 ### Archlinux 
 Gli user di archlinux possono installare opendoas direttamente con pacman: 
@@ -214,7 +214,7 @@ Se in output abbiamo:
 ciao da doas 
 ```
 
-Abbiamo impostato tutto correttamente ( potete eliminare il file di test con: `doas rm /etc/ciao` )
+Abbiamo impostato tutto correttamente ( potete eliminare il file di test con: `doas rm /etc/ciao`)
 
 
 
@@ -285,13 +285,13 @@ deny paperino
 
 ### nopass
 
-aggiungendo alle righe di `doas.conf` l'opzione `nopass`, potete evitare di inserire la password per fare accesso:
+Aggiungendo alle righe di `doas.conf` l'opzione `nopass`, potete evitare di inserire la password per fare accesso:
 
 ```
 permit nopass :wheel
 ```
 
-Pensate che non sia una buona idea dal punto di vista della sicurezza? concordo con voi, ma che ne pensate di limitare questo comportamento solo a quando ad esempio **aggiornare il sistema o installare pacchetti** ? ecco un esempio su pacman: 
+Pensate che non sia una buona idea dal punto di vista della sicurezza? Concordo con voi, ma che ne pensate di limitare questo comportamento solo a quando ad esempio **aggiornare il sistema o installare pacchetti**? ecco un esempio su pacman: 
 
 ```
 permit :wheel
