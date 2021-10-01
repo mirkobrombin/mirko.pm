@@ -1,5 +1,5 @@
 ---
-title: '#howto - Installare ed usare doas' 
+title: '#howto - Installazione ed utilizzo di doas' 
 date: 2021-10-01 12:00
 layout: post 
 author: PsykeDady
