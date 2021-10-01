@@ -44,24 +44,17 @@ Ma allontanarsi da un software quando viene scoperto un nuovo bug, scusatemi il 
 
 
 ## Installare doas
-
 `doas` è disponibile su linux tramite il porting **OpenDoas**, e si può installare tramite il repository di github: 
 
 ```bash
 git clone https://github.com/Duncaen/OpenDoas 
-
 cd OpenDoas 
-
 ./configure 
-
 make install
 ```
 
-
-
 ### configure
-
-Sofferiamoci però sulla terza istruzione, il `./configure`: questo script fa un controllo di tutte le dipendenze installate o meno sulla vostra distribuzione, ogni riga formata così: 
+Soffermiamoci però sulla terza istruzione, il `./configure`: questo script fa un controllo di tutte le dipendenze installate o meno sulla vostra distribuzione, ogni riga formata così: 
 
 ```
 Checking for nomesoftware ...         yes.
@@ -99,12 +92,7 @@ login_cap_h
 pam_appl_h
 ```
 
-
-
 ### Update 
-
-
-
 **ATTENZIONE**:
 
 Uno strumento di amministrazione del sistema deve essere sempre aggiornato. Compilare un pacchetto da soli non dà questa garanzia, quindi ogni tanto verificate aggiornamenti con una `git pull` 
@@ -115,16 +103,11 @@ Gli user di archlinux possono installare opendoas direttamente con pacman:
 pacman -S opendoas
 ```
 
-
-
 ### NIXOS
 
 Cercando in rete pare che ci siano testimonianze del fatto che `doas` non funzioni a dovere su NIXOS per problemi legati al pam ( la configurazione delle libreria di autenticazione di sistema )
 
-
-
 ## Configurazione di doas 
-
 Il file di configurazione principale di doas è `/etc/doas.conf` , possiamo editarlo direttamente con il nostro editor preferito, supponiamo `nano`:
 
 ```bash
@@ -157,23 +140,17 @@ Assicuratevi che il file abbia gruppo e permessi di root:
 chown root:root /etc/doas.conf 
 ```
 
-
-
 Se avete finito di modificare il file, è buona norma togliere i permessi di scrittura e lettura a tutti: 
 
 ```
 chmod 0400 /etc/doas.conf
 ```
 
-
-
 Quindi verificate che il file non abbia errori di scrittura: 
 
 ```
 doas -C /etc/doas.conf && echo "il file non contiene errori" || echo "ops... rileggi il file"
 ```
-
-
 
 Copiate quindi le configurazioni di **pam**:
 
@@ -190,12 +167,7 @@ account         include         system-auth
 session         include         system-auth
 ```
 
-
-
 ## Uso
-
-
-
 Quindi proviamo ad usarlo:
 
 ```bash
@@ -216,13 +188,8 @@ ciao da doas
 
 Abbiamo impostato tutto correttamente ( potete eliminare il file di test con: `doas rm /etc/ciao`)
 
-
-
 ## Trick 
-
 Ecco a voi qualche consiglio per un utilizzo quotidiano di `doas`
-
-
 
 ### sudo alias
 
@@ -232,8 +199,6 @@ Siete sicuramente ancora troppo abituati ad utilizzare `sudo`, potrebbe aiutarvi
 alias sudo="doas "
 ```
 
-
-
 Per farla più simpatica, potreste anche pensare di scrivere su uno script simile: 
 
 ```bash
@@ -242,21 +207,14 @@ echo "eh-eh-eh, ancora sudo usiamo qua? passa a doas"
 doas "$@"
 ```
 
-
-
 e far puntare l'alias allo script
 
-
-
-### abilitare solo specifici comandi o utenti
-
+### Abilitare solo specifici comandi o utenti
 Il file di configurazione di doas permette configurazioni molto dettagliate, la sintassi completa per ogni riga è: 
 
 ```bash
 permit|deny [options] identity [as target] [cmd command [args ...]]
 ```
-
- 
 
 Abilitiamo un determinato utente ad esempio all'esecuzione di doas solo con il comando `tee`:
 
@@ -264,15 +222,11 @@ Abilitiamo un determinato utente ad esempio all'esecuzione di doas solo con il c
 permit nomeutente as root cmd tee
 ```
 
-
-
 Oppure neghiamo i permessi ad uno specifico utente e solo per uno specifico comando (ad esempio sempre `tee`): 
 
 ```bash
 deny nomeutente as root cmd tee
 ```
-
-
 
 Potete specificare insieme all'utente il gruppo ( o solo il gruppo) scrivendolo dopo il carattere `:` . Ad esempio abilitiamo i permessi a tutti gli utenti del gruppo `wheel`, ma non **paperino**, perché lui ci sta antipatico: 
 
@@ -280,8 +234,6 @@ Potete specificare insieme all'utente il gruppo ( o solo il gruppo) scrivendolo 
 permit :wheel
 deny paperino
 ```
-
-
 
 ### nopass
 
@@ -298,4 +250,3 @@ permit :wheel
 
 permit nopass :wheel cmd pacman
 ```
-
