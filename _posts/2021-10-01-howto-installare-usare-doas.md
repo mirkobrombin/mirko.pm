@@ -6,7 +6,6 @@ author: PsykeDady
 author_github: PsykeDady 
 tags: 
 - doas 
-- sudo
 - ubuntu 
 - archlinux 
 - fedora
@@ -19,13 +18,9 @@ Sviluppato nel 2015, doas è un alternativa di sudo utilizzata in ambiente UNIX/
 
 Al tempo in cui scrivo, doas è ancora supportato da aggiornamenti frequenti, l'ultima release è stata rilasciata qualche settimana fa sul [suo repository principale](https://cvsweb.openbsd.org/src/usr.bin/doas/).
 
-
-
 ## Perché non usare sudo? La controversia dei bug
 
 Ogni qualvolta esce fuori una nuova vulnerabilità in un generico software è prassi comune iniziare a domandarsi perché si sta utilizzando quel software e non un altro che magari non ha lo stesso numero di falle. `sudo` non è immune da queste chiacchiere da bar (purtroppo).
-
-
 
 Voglio spendere qualche minuto del vostro tempo in un ragionamento che potrebbe guidarvi su quelle che sono le vostre scelte in questo ambito.  
 
@@ -37,11 +32,7 @@ Ragionamenti di questo tipo su un software open source sono, a mio parere, total
 
 Ovviamente questo ragionamento non è assoluto, lo sviluppo sul software preso in considerazione deve essere attivo, non sottovalutare le issue aperti dagli utenti e deve essere progettato in maniera da considerare che la maggior parte della sua vita sarà quella di essere sottoposto a modifiche (quindi facilmente riscrivibile nei suoi singoli moduli).
 
-
-
 Ma allontanarsi da un software quando viene scoperto un nuovo bug, scusatemi il francesismo, è una **boiata**.
-
-
 
 ## Installare doas
 `doas` è disponibile su linux tramite il porting **OpenDoas**, e si può installare tramite il repository di github: 
