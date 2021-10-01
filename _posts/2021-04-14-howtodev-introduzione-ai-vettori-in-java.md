@@ -1,5 +1,5 @@
 ---
-title: '#howtodev - introduzione ai vettori in java'
+title: '#howtodev - Introduzione ai vettori in java'
 date: 2021-04-14
 layout: post
 author: Davide Galati
@@ -14,25 +14,19 @@ tags:
 
 Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
-
 ## Obiettivi 
-
 In questo articolo saranno trattati:
 
 - I vettori o array di tipi primitivi 
 - La scomposizione di una stringa in tutti i suoi caratteri
 
 ## Prerequisiti
-
 I prerequisiti richiesti da questo articolo sono stati affrontati nei due precedenti articoli:
 
 - [Introduzione alla programmazione in java](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java) : variabili, main e operazioni tra tipi di base
 - [Introduzione ai vari blocchi di codice in Java](https://linuxhub.it/articles/howtodev-introduzione-ai-vari-blocchi-di-codice-in-java) : If, switch, for, while e do-while in java
 
-
-
 ## Accumulare più dati dello stesso tipo: i vettori
-
 A volte è necessario, nonché comodo, che tanti dati simili tra di loro siano agglomerati in un unico luogo dove poterli operare insieme, pensando ad una serie di casi d'uso tra cui:
 
 - Una serie di voti scolastici di cui poi farne una media
@@ -41,19 +35,12 @@ A volte è necessario, nonché comodo, che tanti dati simili tra di loro siano a
 
 Nei linguaggi di programmazione questo concetto è detto "vettore" o "array".
 
-
-
 ### Creazione di un vettore 
-
 Vediamo come creare un vettore in java, genericamente: 
 `tipo [] nomevariabile = new tipo [dimensione];`
 
-
-
 Più nel dettaglio, creiamo un vettore di 10 interi: 
 `int [] voti = new int [10];`
-
-
 
 Possiamo peraltro crearlo direttamente con degli elementi al suo interno, senza specificare la dimensione, così:
 
@@ -63,8 +50,6 @@ tipo [] nomevariabile= {
 };
 ```
 
-
-
 Esempio concreto con degli interi: 
 
 ```java
@@ -73,15 +58,9 @@ int [] voti={
 };
 ```
 
-
-
 > **Attenzione**: 
->
 > la sintassi di creazione "diretta" usando gli elementi è possibile solo alla prima creazione, in fase di nuovo assegnamento non è più possibile.   
->
 > Praticamente parlando:  `int[]voti={1,2,3,4};` va bene. `voti={3,4,5,6};`  scritto successivamente no.
-
-
 
 Normalmente tutti gli elementi di un vettore vengono creati con i così detti "**valori di default**", se non specificati con la sintassi diretta. 
 Questo significa che : 
@@ -93,10 +72,7 @@ Questo significa che :
 
 Quando si utilizza un vettore, la prima cosa da fare quindi è pensare a cosa devono essere assegnati i singoli elementi.
 
-
-
 ### Richiamare i vettori all'interno di un vettore
-
 E come richiamare un valore di un vettore? Anche qui nulla di complesso, supponendo di voler richiamare l'elemento "`n`", lo si può richiamare scrivendo: 
 `nomevettore[n-1]` 
 
@@ -109,23 +85,15 @@ E come richiamare un valore di un vettore? Anche qui nulla di complesso, suppone
 >  - `voti[1] = 2`
 >  - `voti[2] = 5`
 
-
-
 Avendo il numero della cella (o indice) possiamo operare per l'appunto su quel singolo valore:
-
 - assegnargli un valore : `nomevettore[indice]=valore;` 
 - stamparlo o usarlo in un calcolo : `System.out.println(nomevettore[indice]);` 
-
-
 
 Possiamo sempre sapere quante celle ha un vettore (numero **massimo** degli elementi) usando la parolina magica `length`:
 
 `nomevettore.length`. L'ultimo elemento avrà indice `nomevettore.length-1`
 
-
-
 ### Uso dei vettori
-
 In generale i vettori si operano *a partire dai loro elementi*, per stampare ad esempio i valori di un vettore, dovrete prendere ad uno ad uno le celle e stamparle. 
 
 Detta così sembra complicato ed inutile, immaginatevi vettori di 100 elementi operati singolarmente uno ad uno, *cosa ci porterebbe ad usare un vettore e non tante variabili separate*?
@@ -149,8 +117,6 @@ public class SenzaVettore{
 }
 ```
 
-
-
 Ora vediamo come sarebbe  lo stesso codice ma con i vettori: 
 
 ```java 
@@ -170,23 +136,15 @@ public class vettore{
 }
 ```
 
-
-
 Ad un primo occhio: **abbiamo scritto addirittura un istruzione in più**! Ma osserviamo alcuni vantaggi: 
-
 - non abbiamo dovuto creare 5 variabili per i voti, ma una sola che le rappresenta tutte e 5, che è più facile da richiamare
 - il codice non dipende più dal numero di voti: se un giorno i voti diventassero 10, ci sarebbe solo da aumentare i numeri nel vettore, il resto verrebbe tutto aggiornato di conseguenza
 - se ci fosse più di un operazione per ogni singolo elemento da fare, il numero di istruzioni aumenterebbe in proporzione: due istruzioni per variabile raddoppierebbero; con la gestione del `for` invece, ogni istruzione viene applicata a tutte le variabili.
 
-
-
 ### Un esempio più chiaro
-
 Se non siete ancora convinti, vediamo un esempio più complesso: *avendo una serie di 10 caratteri, vogliamo trasformare le maiuscole in minuscole e le minuscole in maiuscole, stampare tutte le variabili e mandare solo all'ultima variabile a capo*. 
 
 Già solo il pensiero di inizializzare *10 variabili char* personalmente mi fa venire l'angoscia, senza scriverlo dunque tutto, ecco come apparirebbe un programma senza i vettori nelle sue prime righe:
-
-
 
 ```java
 public class SenzaVettore{
@@ -232,8 +190,6 @@ public class SenzaVettore{
 
 ```
 
-
-
 Inizia a diventare un po' più difficile da leggere vero? Vediamo ora lo stesso programma, con i vettori: 
 
 ```java
@@ -266,16 +222,11 @@ public class ConVettore{
 
 ```
 
-
-
 - più corto
 - più semplice da modificare
 - più semplice da leggere 
 
-
-
 ### Problemi con i vettori : cosa non bisogna fare
-
 I problemi più comuni con i vettori son sicuramente i così detti `IndexOutOfBound`: ovvero quando, per difetto o per eccesso che sia, si esce al di fuori delle celle riservate. 
 Replichiamo uno dei casi che sicuramente si verifica di più : 
 
@@ -295,10 +246,7 @@ for (int i=0; i<=vettore.length; i++)
 
 Questo è **sbagliato** poichè gli indici come già detto prima dovrebbero arrivare a `vettore.length-1`, motivo per cui all'interno di un for si utilizza il `<` non `<=`
 
-
-
 ### Scorrere i vettori al contrario, come non farlo e come farlo
-
 Un altro caso tipico, scorriamo un vettore ma al contrario (dall'ultima cella fino alla prima):
 
 ```java
@@ -317,10 +265,7 @@ La forma giusta sarebbe stata:
 for (int i=vettore.length-1; i>=0; i--)
 ```
 
-
-
 ## Le stringhe sono un vettore di caratteri ? 
-
 La risposta è **si**. 
 
 In alcuni linguaggi questo è esplicito mentre in Java è tutto nascosto dietro al tipo "Stringa", che consente poi di operare su una serie di operazioni, tuttavia questo introduce delle complicazioni a coloro che ancora non sanno cos'è un **oggetto**.
@@ -334,11 +279,7 @@ String alfa="Ciao a tutti";
 System.out.println(alfa.charAt(2)); // stamperà a
 ```
 
-
-
 Per sapere la lunghezza useremo sempre la parolina "`length`" ma seguita da due parentesi tonde: `()`
-
-
 
 Riprendiamo l'esempio delle maiuscole e vediamo come affrontarlo usando però la Stringa come un vettore: 
 
@@ -362,7 +303,3 @@ public class ConStringa{
 
 }
 ```
-
-
-
-
