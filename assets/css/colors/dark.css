@@ -81,16 +81,19 @@
 
     .content i,
     .content em {
-        background-color: #ab6e00;
+        background-color: #12375d;
     }
 
-    .hljs,
-    .hljs::-webkit-scrollbar-track {
-        background-color: #5d5749;
-        border-color: #756a4c;
-        scrollbar-color: #d4c8a9 #5d5749;
+    .hljs, pre.hljs, .hljs::-webkit-scrollbar-track {
+        background-color: #002b36;
+        border-color: #002b36;
+        scrollbar-color: #395163 #002b36;
     }
 
+    .hljs::-webkit-scrollbar-thumb {
+        background-color: #395163;
+    }
+    
     aside a {
         color: #b9b9b9;
     }

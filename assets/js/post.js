@@ -67,3 +67,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        with (document.getElementById("hljs_theme")) {
+            href = href.replace("solarized-light.min.css", "solarized-dark.min.css");
+        }
+    }
+});

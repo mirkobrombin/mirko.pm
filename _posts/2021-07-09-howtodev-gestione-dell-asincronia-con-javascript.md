@@ -1,5 +1,5 @@
 ---
-title: "#howtodev - gestione dell'asincronia con javascript"
+title: "#howtodev - Gestione dell'asincronia con javascript"
 date: 2021-07-09 13:00
 layout: post
 author: Floppy Loppy
@@ -37,11 +37,6 @@ Molti linguaggi adottano la **programmazione parallela** o **multithreading**, i
 Nell'asincronia ad eventi viene eseguito parte di un task dopodichè si passa ad eseguire un'altra parte di un'altro task e così via poi si ripete fin quando non sono conclusi tutti i task, ovviamente ogni task si completerà in tempi diversi perciò ci sararanno **alcuni task** che **finiranno prima di altri**. Questo è molto importante per capire perché esistono dei metodi per gestire l'asincronia con Javascript.
 L'asincronia viene gestita così perchè Javascript è **single thread** ovvero ha solo un heap di memoria ed uno singolo stack per le chiamate e perciò per eseguire più task contemporaneamente deve fare in questo modo.
 
-
-
-
-
-
 Esempio:
 
 <table> <tbody><tr>
@@ -60,8 +55,6 @@ Esempio:
 <td style="border-right:0.1em black solid">fine T1</td>
 <td>fine T3</td>
 </tr></tbody></table>
-
-
 
 Nell'esempio viene mostrato come possono venire eseguiti tre task contemporaneamente in Javascript. 
 
@@ -245,8 +238,6 @@ Quello che succede è che la prima promise viene eseguita, entra in fase di `pen
 Questo tipo di sintassi è migliore delle callback ma mantiene comunque alcuni problemi di chiarezza del codice
 Motivo per cui è stato creato un terzo metodo per la gestione asincrona.
 
-
-
 ## Async/Await
 
 **Async ed Await** sono due **keyword** aggiunte alla sintassi di Javascript che permettono di gestire blocchi di codice asincorno in maniera più lineare e pulito possibile cercando di essere più simile ad un codice sincrono.
@@ -304,7 +295,6 @@ COME
 VA
 ```
 
-
 Ora come vediamo abbiamo tre funzioni che contengono delle promise che si eseguono con un certo deley impostato dalla funzione `setTimeout()`.
 Se noi chiamassimo queste tre funzione `a()`, `b()`, e `c()` normalmente per i motivi spiegati nell'introduzione verrebbero eseguiti si quasi contemporanemanente ma finirebbero in tempi diversi, in questo caso  a->b->c che però stamperebbero il messaggio in ordine sbagliato:
 
@@ -318,6 +308,3 @@ Per farlo dichiariamo una funzione con la keyword `async` di nome `printAsync()`
 Chiamando le funzioni in modo tale che il messaggio sia stampato nell'ordine corretto ed utilizzado l'`await` siamo in grado di controllare l'esecuzione del codice asincrono che si eseguira proprio come farebbe un codice sincrono all'interno dello **scope** della funzione `printAsync()`.
 
 Ovviamente come già avrete capito il resto del codice sarà comunque eseguito asincornamente e ho utilizzato come esempio la chiamata della funzione `a()` all'esterno della funzione `printAsync()` che stampa prima delle altre funzioni all'interno di `printAsync()`.
-
-
-

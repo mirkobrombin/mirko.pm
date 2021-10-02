@@ -24,8 +24,7 @@ aside,
     scrollbar-color: #191919 #f9f9f9;
 }
 
-.hljs,
-.hljs::-webkit-scrollbar-track {
+.hljs, pre.hljs, .hljs::-webkit-scrollbar-track {
     background-color: #fdf6e3;
     border-color: #fdf6e3;
     scrollbar-color: #d4c8a9 #fdf6e3;
