@@ -71,7 +71,7 @@
         color: #000;
     }
 
-    main, .searchbox .results, .card li a:hover, .splitter section:hover {
+    main, .searchbox .results, .card li a:hover, .splitter section:hover, blockquote {
         background-color: #272727;
     }
 
