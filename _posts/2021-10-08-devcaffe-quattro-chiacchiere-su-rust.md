@@ -20,7 +20,7 @@ Parliamo quindi di Rust e alcune buone motivazioni per utilizzarlo.
 
 
 > Lo scopo del seguente articolo &egrave; quello di fornirti una conoscenza di base dell'argomento accompagnato da alcune considerazioni soggettive.   
-> Si consiglia di leggere in un momento di relax magari mentre di beve qualcosina di caldo  
+> Si consiglia di leggere in un momento di relax magari mentre si beve qualcosina di caldo  
 > `*sip*` ☕ 
 
 
