@@ -13,7 +13,6 @@ tags:
 ---
 
 
-
 Magari avrai sentito parlare di Rust ma non hai mai avuto motivo di provarlo o sei semplicemente incuriosito.
 
 Parliamo quindi di Rust e alcune buone motivazioni per utilizzarlo.
@@ -24,15 +23,13 @@ Parliamo quindi di Rust e alcune buone motivazioni per utilizzarlo.
 > `*sip*` ☕ 
 
 
-
-
 ## Un compilatore flessibile
 
 Rust offre vari tipi di macro che ti permettono di manipolare l'AST (abstract syntax tree) costruendo la tua sintassi o anche eseguire codice Rust in tempo di compilazione.
 
 Questo consente l'introduzione di *syntax sugar* (zucchero sintattico) e ottimizzare meglio il codice. Una conseguenza immediata di ciò è ad esempio nei generici, che son trattati a livello di compilazione.
 
-### argomenti variadici 
+### Argomenti variadici 
 Un esempio di ottimizzazione che le macro garantiscono sono gli **argomenti variadici**.
 
 Mentre in linguaggi come Go rappresentano solo dei costrutti eleganti, in Rust solo una macro può essere variadica, e ciò ne assicura l'ottimizzazione.
@@ -51,7 +48,6 @@ lisp!(defun main () ()
     (defconstant num (factorial 10))
     (println "10! = {}" num));
 ```
-
 
 
 ## Un sistema di compilazione che ti accompagna alla giusta soluzione
@@ -84,7 +80,6 @@ error[E0596]: cannot borrow `a` as mutable, as it is not declared as mutable
 For more information about this error, try `rustc --explain E0596`.
 
 ```
-
 
 
 > Non è fantastico il livello di dettaglio?
