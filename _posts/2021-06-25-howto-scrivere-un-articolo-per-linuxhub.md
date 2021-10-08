@@ -64,6 +64,7 @@ Tutti gli articoli vanno scritti in *formato testuale con sintassi Markdown*, ri
   - `howto` - guide sul mondo linux
   - `howtodev` - guide di programmazione 
   - `pausacaffe` - riflessioni varie
+  - `devcaffe` - riflessioni e considerazioni su linguaggi di programmazione
 - `nome-articolo` : il nome dell'articolo, sostituendo gli spazi con i trattini
 
 
@@ -176,7 +177,7 @@ Attualmente son previste tre categorie di articoli:
 - howto : guide generiche sul mondo Linux/Unix
 - howtodev : guide sul mondo della programmazione 
 - pausacaffé : riflessioni varie 
-
+- devcaffe: riflessioni e considerazioni su linguaggi di programmazione
 
 
 Le guide devono trattare argomenti legali, di interesse per l'utente e non devono essere banali. Inoltre è necessario che chiunque scriva gli articoli non metta in pericolo i dati dell'utente pubblicando passaggi non testati da lui. 
