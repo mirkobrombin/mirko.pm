@@ -108,7 +108,6 @@ Go mira ad essere minimale con poche feature ma cerca di evitarti molto lavoro, 
 Allo stato attuale delle cose molta roba è stata già fatta dalla community ed è disponibile sul gestore dei progetti di Rust, **Cargo**.
 
 
-
 ## Ah sì! Cargo
 
 Molti linguaggi moderni implementano il loro gestore dei pacchetti ( o moduli che dir si voglia) oggi, ad esempio Python con *pip* o Ruby con *gem*, generalmente ispirati ai gestori dei pacchetti che troviamo sui sistemi Unix-like.  
