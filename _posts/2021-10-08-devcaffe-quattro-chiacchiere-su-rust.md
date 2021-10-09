@@ -13,17 +13,14 @@ tags:
 ---
 
 
-
 Magari avrai sentito parlare di Rust ma non hai mai avuto motivo di provarlo o sei semplicemente incuriosito.
 
 Quindi parliamone, e scopriamo alcune buone motivazioni per utilizzarlo.
 
 
 > Lo scopo del seguente articolo &egrave; quello di fornirti una conoscenza di base dell'argomento accompagnato da alcune considerazioni soggettive.   
-> Si consiglia di leggere in un momento di relax magari mentre di beve qualcosina di caldo  
+> Si consiglia di leggere in un momento di relax magari mentre si beve qualcosina di caldo  
 > `*sip*` ☕ 
-
-
 
 
 ## Un compilatore flessibile
@@ -32,7 +29,7 @@ Rust offre vari tipi di macro che ti permettono di manipolare l'AST (abstract sy
 
 Questo consente l'introduzione di *syntax sugar* (zucchero sintattico) e ottimizzare meglio il codice. Una conseguenza immediata di ciò è ad esempio nei generici, che son trattati a livello di compilazione.
 
-### argomenti variadici 
+### Argomenti variadici 
 Un esempio di ottimizzazione che le macro garantiscono sono gli **argomenti variadici**. 
 
 > Le funzioni variadiche son tali se accettano un qualsiasi numero di argomenti in ingresso
@@ -55,7 +52,6 @@ lisp!(defun main () ()
     (defconstant num (factorial 10))
     (println "10! = {}" num));
 ```
-
 
 
 ## Un sistema di compilazione che ti accompagna alla giusta soluzione
@@ -90,7 +86,6 @@ For more information about this error, try `rustc --explain E0596`.
 ```
 
 
-
 > Non è fantastico il livello di dettaglio?
 
 Ovviamente tutto ciò è supportato da materiali e documentazioni molto precise, che aiutano ogni sviluppatore in erba ad orientarsi.
@@ -110,7 +105,6 @@ Go non mira ad avere una libreria standard completa di ogni piccola funzione e c
 Go mira ad essere minimale con poche feature ma cerca di evitarti molto lavoro, mentre Rust ti mette in mano una miriade di strumenti per svolgere al meglio il tuo lavoro.
 
 Allo stato attuale delle cose molta roba è stata già fatta dalla community ed è disponibile sul gestore dei pacchetti di Rust, **Cargo**.
-
 
 
 ## Ah sì! Cargo
