@@ -11,7 +11,7 @@ tags:
 - fedora
 ---
 
-Uno dei primi comandi che impariamo sui nostri terminali da utenti linux è `sudo`, ovvero **super user do** ( alcuni lo traducono anche con **substitute user do** ) che serve fondamentalmente a digitare comandi impersonificando un altro utente in maniera temporanea ( per comportamento predefinito, generalmente lo si usa per impersonificare l'utente root ). Ma esistono alternative a questo comando? Ecco a voi `doas`.
+Uno dei primi comandi che impariamo sui nostri terminali da utenti linux è `sudo`, ovvero **super user do** (alcuni lo traducono anche con **substitute user do**) che serve fondamentalmente a digitare comandi impersonificando un altro utente in maniera temporanea (per comportamento predefinito, generalmente lo si usa per impersonificare l'utente root). Ma esistono alternative a questo comando? Ecco a voi `doas`.
 
 ## Cos'è e a cosa serve doas
 Sviluppato nel 2015, doas è un alternativa di sudo utilizzata in ambiente UNIX/BSD sotto licenza ISC (Internet Systems Consortium) con lo scopo di creare uno strumento più sicuro e semplice. 
@@ -96,10 +96,10 @@ pacman -S opendoas
 
 ### NIXOS
 
-Cercando in rete pare che ci siano testimonianze del fatto che `doas` non funzioni a dovere su NIXOS per problemi legati al pam ( la configurazione delle libreria di autenticazione di sistema )
+Cercando in rete pare che ci siano testimonianze del fatto che `doas` non funzioni a dovere su NIXOS per problemi legati al pam (la configurazione delle libreria di autenticazione di sistema)
 
 ## Configurazione di doas 
-Il file di configurazione principale di doas è `/etc/doas.conf` , possiamo editarlo direttamente con il nostro editor preferito, supponiamo `nano`:
+Il file di configurazione principale di doas è `/etc/doas.conf`, possiamo editarlo direttamente con il nostro editor preferito, supponiamo `nano`:
 
 ```bash
 nano /etc/doas.conf 
@@ -149,7 +149,7 @@ Copiate quindi le configurazioni di **pam**:
 cp /etc/pam.d/sudo /etc/pam.d/doas
 ```
 
-Se non doveste avere questo file ( magari non avete proprio installato sudo, in quei pochi sistemi che permettono di scegliere liberamente cosa installare) il mio file di pam contiene queste informazioni, che potete copiare manualmente: 
+Se non doveste avere questo file (magari non avete proprio installato sudo, in quei pochi sistemi che permettono di scegliere liberamente cosa installare) il mio file di pam contiene queste informazioni, che potete copiare manualmente: 
 
 ```
 #%PAM-1.0
@@ -177,7 +177,7 @@ Se in output abbiamo:
 ciao da doas 
 ```
 
-Abbiamo impostato tutto correttamente ( potete eliminare il file di test con: `doas rm /etc/ciao`)
+Abbiamo impostato tutto correttamente (potete eliminare il file di test con: `doas rm /etc/ciao`)
 
 ## Trick 
 Ecco a voi qualche consiglio per un utilizzo quotidiano di `doas`
@@ -219,7 +219,7 @@ Oppure neghiamo i permessi ad uno specifico utente e solo per uno specifico coma
 deny nomeutente as root cmd tee
 ```
 
-Potete specificare insieme all'utente il gruppo ( o solo il gruppo) scrivendolo dopo il carattere `:` . Ad esempio abilitiamo i permessi a tutti gli utenti del gruppo `wheel`, ma non **paperino**, perché lui ci sta antipatico: 
+Potete specificare insieme all'utente il gruppo (o solo il gruppo) scrivendolo dopo il carattere `:`. Ad esempio abilitiamo i permessi a tutti gli utenti del gruppo `wheel`, ma non **paperino**, perché lui ci sta antipatico: 
 
 ```bash
 permit :wheel
