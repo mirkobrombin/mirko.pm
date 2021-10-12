@@ -1,5 +1,5 @@
 ---
-title: '#howto - usare il proprio smartphone su linux' 
+title: '#howto - usare il proprio smartphone android su linux' 
 date: 2021-10-15 
 layout: post 
 author: Floppy
