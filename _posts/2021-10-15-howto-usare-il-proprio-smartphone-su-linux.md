@@ -1,6 +1,6 @@
 ---
 title: '#howto - usare il proprio smartphone android su linux' 
-date: 2021-10-15 
+date: 2021-10-15 11:00
 layout: post 
 author: Floppy
 author_github: raspFloppy 
@@ -36,7 +36,7 @@ Per installare adb in base alla propria distrubuzione eseguire il comando:
 
 
 
-Mentre le *opzioni da sviluppatore*, sono molto spesso nascoste all'utente per questioni di sicurezza, ma si possono attivare attraverso le impostazioni, la procedura varia da telefono a telefono quindi vi consiglio di cercare "come attivare le le opzioni di da sviluppatore per il telefono x" prima di procedere ma in generale si dovrebbero attivare in `Impostazioni > Info Telefono > Numero di build` e cliccando su questa opzione vi spunterà un pop-up che vi dirà che le opzioni da sviluppatore sono state sbloccate.
+Mentre le *opzioni da sviluppatore*, sono molto spesso nascoste all'utente per questioni di sicurezza, ma si possono attivare attraverso le impostazioni, la procedura varia da telefono a telefono quindi vi consiglio di cercare "come attivare le le opzioni di da sviluppatore per il telefono x" prima di procedere ma in generale si dovrebbero attivare in `Impostazioni > Info Telefono > Numero di build` e cliccando su questa opzione vi spunterà un pop-up che vi dirà che le opzioni da sviluppatore sono state sbloccate (cliccate più volte per attivarle).
 
 Una volta fatto cercate nelle impostazioni *Debug USB* e attivate la spunta o il check e dovreste essere a posto.
 
@@ -99,15 +99,24 @@ Bene fatto ciò staccate il telefono dal cavo USB e collegatevi di nuovo tramite
 Scrcpy ha anche alcune opzioni aggiuntive per migliorare l'esperienza finale dell'utente:
 
 ### Modificare la risoluzione
-`scrcpy --max-size x`
+
+```
+scrcpy --max-size x
+```
+
 dove x sta per i numeri di pixel in orizzontale.
 
 ### Modificare il bitrate
-`scrcpy --bit-rate xM`
+```
+scrcpy --bit-rate xM
+```
+
 dove x sta per i Mbps.
 
 ### Modificare la framerate
-`scrcpy --max-fps x`
+```
+scrcpy --max-fps x
+```
 dove x sta per gli FPS.
 
 ### Modificare l'orientamento dello schermo iniziale
@@ -120,19 +129,17 @@ scrcpy --lock-video-orientation=3   # 270° (orizzontale)
 ```
 
 ### Rimuovere la title-bar (per i WM enjoyer)
-`scrcpy --window-borderless`
+```
+scrcpy --window-borderless
+```
 
 ### Partire in full screen
-`scrcpy --fullscreen`
+```
+scrcpy --fullscreen
+```
 
 
 ## Conclusioni
 Scrcpy è sicuramente un ottimo software che permette di utilizzare anche in modo wireless il proprio smartphone da pc quando, per esempio, si ha a necessità di utilizzare un'applicazione android, come capita per le app di Otp, senza doversi alzare e andare a prendere il telefono e perdere magari il workflow o comunque la concentrazione mentre si è al pc.
 Di pecca però abbiamo che l'audio non viene trasmesso sul nostro computer ma viene emesso dalle casse dello smartphone e seconda cosa quando spegnamo il nostro pc, alla riaccensione dobbiamo svolgere nuovamente la procedura di adb per il wireless.
 Nonostante questi difetti è sicuramente un comodo pezzo di software.
-
-
-
-
-
-
