@@ -1,7 +1,7 @@
 ---
 title: '#howto - Installazione e configurazione di MongoDB'
 description: "Installazione di Mongo DB e cenni sui sistemi NoSQL."
-date: 2020-10-22 11:00
+date: 2021-10-22 11:00
 layout: post
 author: linux/hub
 author_github: linuxhubit
@@ -37,7 +37,7 @@ Nel 1998 un professore di informatica dell'università californiana Berkeley, ta
 
 Da queste e altre considerazioni nasce il principio **BASE** (ovvero **B**asically **A**vailable **S**oft-state (services with) **E**ventual consistency) che è alla base dei sistemi NoSQL, ciò enuncia che rilassando il principio di consistenza dei DBMN è possibile garantire disponibilità, isolamento e durabilità.   
 
-In realtà ciò non significa che questi sistemi non godono di consistenza, ma causa ritardi ed eventuali fallimenti di comunicazione non possono essere garantiti in tempi reali.
+In realtà ciò non significa che questi sistemi non godono di consistenza, ma causa ritardi ed eventuali fallimenti di comunicazione, non può essere garantita in tempi reali.
 
 ## Installazione di MongoDB
 
@@ -72,6 +72,17 @@ Proviamo ad installare il secondo:
 git clone https://aur.archlinux.org/packages/mongodb-bin/
 cd mongodb-bin
 makepkg -si 
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 Ovviamente possiamo usare anche un [AUR-helper](https://linuxhub.it/articles/howto-introduzione-alla-aur-e-aur-helper/).  
