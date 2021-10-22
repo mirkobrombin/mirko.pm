@@ -166,7 +166,7 @@ dove **ok: 1** è la conferma che il server funziona correttamente.
 
 Per impostazione base MongoDB è configurato per funzionare nella maggior parte delle casistiche, unico accorgimento è quello di modificare l'indirizzo IP a cui è consentita la connessione. Infatti di default resta in ascolto sull'indirizzo locale **127.0.0.1** per consetire a MongoDB di funzionare con un IP pubblico ci basta modificare le impostazioni con il seguente comando:
 
-    sudo nano /etc/mongodb.conf
+    nano /etc/mongodb.conf
 
 andiamo quindi a modificare come segue:
 
@@ -176,5 +176,5 @@ dove **NOSTRO_IP** è ovviamente il nostro indirizzo IP a cui vogliamo abilitare
 
 Ultimate le modifiche riavviamo il servizio via systemctl:
 
-    sudo systemctl restart mongodb
+    systemctl restart mongodb
 
