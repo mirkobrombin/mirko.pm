@@ -74,7 +74,7 @@ cd mongodb-bin
 makepkg -si 
 ```
 
-Ovviamente possiamo usare anche un **AUR-helper**.  
+Ovviamente possiamo usare anche un [AUR-helper](https://linuxhub.it/articles/howto-introduzione-alla-aur-e-aur-helper/).  
 
 Inoltre esiste un pacchetto con diversi strumenti utili di mongo, i [mongodb-tools](https://aur.archlinux.org/packages/mongodb-tools/) ( o se lo volete precompilato i [mongodb-tools-bin](https://aur.archlinux.org/packages/mongodb-tools-bin/) ).
 
