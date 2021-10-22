@@ -136,7 +136,7 @@ dnf install mongodb-org
 
 
 
-## Configurazione con systemd
+## Avvio con systemd
 
 procediamo con l'abilitazione e l'avvio del servizio via **systemctl**:
 
@@ -189,3 +189,4 @@ Ultimate le modifiche riavviamo il servizio via systemctl:
 
     systemctl restart mongodb
 
+v
