@@ -14,7 +14,9 @@ tags:
 ---
 **MongoDB** è un database non relazionale, basato su documenti. La sua struttura lo colloca nella classifica dei database **NoSQL**.
 
-
+> NOTA BENE:
+> 
+> Se noti inesattezze o parti non aggiornate di questa guida segnalale sul nostro github, è nostra intenzione tenerla quanto più possibile aggiornata col tempo.
 
 ## NoSQL - excursus
 
