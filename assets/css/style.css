@@ -1,8 +1,10 @@
-@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@400;600&display=swap);body {
-    visibility: visible!important;
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@400;600&display=swap);
+
+body {
+    visibility: visible !important;
     transition: opacity .2s;
-    opacity: 1!important;
-    font-family: Martel,serif;
+    opacity: 1 !important;
+    font-family: Martel, serif;
     padding: 10px;
     font-size: 1.1em;
     color: #1c1714
@@ -35,19 +37,32 @@ h3 {
     font-size: 1.7em
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Playfair Display',serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif
 }
 
-blockquote,main>ol li {
+blockquote,
+main>ol li {
     border-left: 3px solid
 }
 
-.d span,footer,header {
+.d span,
+footer,
+header {
     text-align: center
 }
 
-.d span,.d::after,main>article>h3+time,main>ol li,main>span>small,pre>code {
+.d span,
+.d::after,
+main>article>h3+time,
+main>ol li,
+main>span>small,
+pre>code {
     display: block
 }
 
@@ -63,14 +78,15 @@ header a {
     display: inline-table;
     padding: 0 10px;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro',sans-serif
+    font-family: 'Source Sans Pro', sans-serif
 }
 
 header a.s {
     font-weight: 700
 }
 
-main>article li,main>article p {
+main>article li,
+main>article p {
     font-size: 1.125em;
     line-height: 36px
 }
@@ -94,11 +110,14 @@ article {
     margin: 0 0 30px
 }
 
-.d::after,article+article,footer {
+.d::after,
+article+article,
+footer {
     border-top: 1px solid
 }
 
-article>h1,article>h2 {
+article>h1,
+article>h2 {
     margin: 0 0 17px
 }
 
@@ -110,19 +129,23 @@ main>article>h3+time {
     margin: -10px 0
 }
 
-footer p,main>h2+span {
+footer p,
+main>h2+span {
     font-size: .938em
 }
 
-article>time,main>h2+span {
+article>time,
+main>h2+span {
     padding: 0 0 10px
 }
 
-main a:not(.nb),main>ol li:hover a:not(.nb) {
+main a:not(.nb),
+main>ol li:hover a:not(.nb) {
     padding: 1px 7px
 }
 
-main p,main>ul li {
+main p,
+main>ul li {
     line-height: 30px
 }
 
@@ -192,10 +215,12 @@ blockquote {
 
 main>article>blockquote>p {
     font-size: 1.1em;
-    line-height: 27px
+    line-height: 40px;
+    margin: 8px 0;
 }
 
-main>article>img,main>article>p>img {
+main>article>img,
+main>article>p>img {
     margin: 0 0 0 -6%;
     width: 105%
 }
@@ -259,7 +284,10 @@ header>h1>b {
     color: #795548
 }
 
-header a:not(.nb):hover, main a:not(.nb):hover, main>ol li a:not(.nb):hover, main>ol li:hover a:not(.nb):hover {
+header a:not(.nb):hover,
+main a:not(.nb):hover,
+main>ol li a:not(.nb):hover,
+main>ol li:hover a:not(.nb):hover {
     background-color: #795548
 }
 
@@ -268,7 +296,7 @@ header a:not(.nb):hover, main a:not(.nb):hover, main>ol li a:not(.nb):hover, mai
     font-family: Martel;
     font-style: normal;
     font-weight: 400;
-    src: local('Martel Regular'),local(FiraSans-Regular),url(../fonts/Martel-Regular.ttf) format("truetype")
+    src: local('Martel Regular'), local(FiraSans-Regular), url(../fonts/Martel-Regular.ttf) format("truetype")
 }
 
 @font-face {
@@ -276,7 +304,7 @@ header a:not(.nb):hover, main a:not(.nb):hover, main>ol li a:not(.nb):hover, mai
     font-family: Martel;
     font-style: normal;
     font-weight: 700;
-    src: local('Martel Bold'),local(FiraSans-Bold),url(../fonts/Martel-Bold.ttf) format("truetype")
+    src: local('Martel Bold'), local(FiraSans-Bold), url(../fonts/Martel-Bold.ttf) format("truetype")
 }
 
 @font-face {
@@ -284,7 +312,7 @@ header a:not(.nb):hover, main a:not(.nb):hover, main>ol li a:not(.nb):hover, mai
     font-family: Martel;
     font-style: normal;
     font-weight: 800;
-    src: local('Martel Extra Bold'),local(FiraSans-Bold),url(../fonts/Martel-ExtraBold.ttf) format("truetype")
+    src: local('Martel Extra Bold'), local(FiraSans-Bold), url(../fonts/Martel-ExtraBold.ttf) format("truetype")
 }
 
 html::-webkit-scrollbar {
@@ -308,13 +336,16 @@ html::-webkit-scrollbar-thumb {
     width: 6px
 }
 
-@media screen and (max-width: 745px) {
-    main>article>img,main>article>p>img {
-        width:100%;
+@media screen and (max-width:745px) {
+
+    main>article>img,
+    main>article>p>img {
+        width: 100%;
         margin: 0 auto
     }
 
-    header,header a {
+    header,
+    header a {
         display: block
     }
 
@@ -360,36 +391,55 @@ html::-webkit-scrollbar-thumb:window-inactive {
     background-color: #949699
 }
 
-footer a,header a {
+footer a,
+header a {
     color: #191919
 }
 
-header a.s,header a:hover,main a:not(.nb) {
+header a.s,
+header a:hover,
+main a:not(.nb) {
     color: #fff
 }
 
-header a.s,main a:not(.nb) {
+header a.s,
+main a:not(.nb) {
     background-color: #4d4942
 }
 
-article>time,footer p,main>h2+span {
+article>time,
+footer p,
+main>h2+span {
     color: #908d9d
 }
 
-.d span,body,html::-webkit-scrollbar-track {
+.d span,
+body,
+html::-webkit-scrollbar-track {
     background-color: #fbfbfe
 }
 
-::selection,main>article p em,main>article p i,mark {
+::selection,
+main>article p em,
+main>article p i,
+mark {
     background: #ffffd5;
     color: #535219
 }
 
-header a.s,header a:hover,html::-webkit-scrollbar-thumb:hover,main a:not(.nb),main>ol li a:not(.nb),main>ol li:hover a:not(.nb) {
+header a.s,
+header a:hover,
+html::-webkit-scrollbar-thumb:hover,
+main a:not(.nb),
+main>ol li a:not(.nb),
+main>ol li:hover a:not(.nb) {
     background-color: #191919
 }
 
-article+article,footer,header,hr {
+article+article,
+footer,
+header,
+hr {
     border-color: #e8e8e8
 }
 
@@ -405,12 +455,14 @@ div.twitter-tweet {
     margin: 10px auto
 }
 
-aside,code {
+aside,
+code {
     background-color: #4d494212;
     color: #4d4942
 }
 
-span.no-translation,span.translation {
+span.no-translation,
+span.translation {
     padding: 1rem;
     display: block;
     margin: 1rem 0;
@@ -437,33 +489,46 @@ span.translation a {
     font-weight: 600
 }
 
-.language-css .n,.language-python .k,.language-python .ow {
+.language-css .n,
+.language-python .k,
+.language-python .ow {
     color: #0f9814
 }
 
-.language-css .nt,.language-css .o,.language-html .s,.language-python .s {
+.language-css .nt,
+.language-css .o,
+.language-html .s,
+.language-python .s {
     color: #006dc3
 }
 
-.language-css .nb,.language-python .nb {
+.language-css .nb,
+.language-python .nb {
     color: #ff9800
 }
 
-.language-css .nl,.language-html .nt,.language-python .k,.language-python .nb,.language-python .ow {
+.language-css .nl,
+.language-html .nt,
+.language-python .k,
+.language-python .nb,
+.language-python .ow {
     font-weight: 700
 }
 
-.language-css .k,.language-python .bp,.language-python .mi {
+.language-css .k,
+.language-python .bp,
+.language-python .mi {
     color: #8c1540
 }
 
-.language-html .na,.language-python .nf {
+.language-html .na,
+.language-python .nf {
     color: #f13355
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme:dark) {
     html::-webkit-scrollbar-track {
-        border:7px solid #1e1e1f
+        border: 7px solid #1e1e1f
     }
 
     html::-webkit-scrollbar-track:hover {
@@ -478,7 +543,10 @@ span.translation a {
         background-color: #949699
     }
 
-    ::selection,main>article p em,main>article p i,mark {
+    ::selection,
+    main>article p em,
+    main>article p i,
+    mark {
         background-color: #2e2d37;
         color: #9ecbff
     }
@@ -505,7 +573,11 @@ span.translation a {
         text-shadow: 0 0 20px #c050ff
     }
 
-    header a:not(.nb):hover,main a:not(.nb):hover,main>ol li a:not(.nb):hover,span.translation {
+    header a:not(.nb):hover,
+    main a:not(.nb):hover,
+    main>ol li a:not(.nb):hover,
+    span.translation,
+    main>ol li:hover a:not(.nb):hover {
         background-color: #c050ff;
         box-shadow: 0 0 90px 0 #c050ff
     }
@@ -514,15 +586,23 @@ span.translation a {
         border-color: #662988
     }
 
-    .d span,a.nb,body,footer a,header a,header h1 span {
+    .d span,
+    a.nb,
+    body,
+    footer a,
+    header a,
+    header h1 span {
         color: #b4aecc
     }
 
-    article,header {
+    article,
+    header {
         color: #bbb7cc
     }
 
-    .d span,body,html::-webkit-scrollbar-track {
+    .d span,
+    body,
+    html::-webkit-scrollbar-track {
         background-color: #131217
     }
 
@@ -534,15 +614,20 @@ span.translation a {
         border-top-color: #e8ebff91
     }
 
-    header a.s,header::after,main a:not(.nb),main>ol li a:not(.nb) {
+    header a.s,
+    header::after,
+    main a:not(.nb),
+    main>ol li a:not(.nb) {
         background-color: #000
     }
 
-    header,hr {
+    header,
+    hr {
         border-bottom-color: #22202b
     }
 
-    article+article,footer {
+    article+article,
+    footer {
         border-top-color: #22202b
     }
 
@@ -550,9 +635,9 @@ span.translation a {
         background-color: #a6a6a61f
     }
 
-    aside,code {
+    aside,
+    code {
         color: #b0acc1;
         background-color: #1b1920
     }
 }
-
