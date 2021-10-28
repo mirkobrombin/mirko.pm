@@ -455,10 +455,10 @@ aside .reading-time {
 
 blockquote {
     margin: 0;
-    padding: 19px 35px 2px;
+    padding: 19px 35px;
     font-style: italic;
     font-size: 17px;
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 aside b+.mdi {
@@ -606,4 +606,9 @@ nav li:hover .mdi {
 
 .reading-time .mdi {
     filter: invert(0.6) saturate(6);
+}
+
+.content blockquote p {
+    margin: 0 0 10px 0;
+    line-height: 1.2em;
 }
