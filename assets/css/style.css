@@ -600,6 +600,6 @@ hr {
     content: "3"
 }
 
-.has-color .mid {
+.has-color .mdi {
     filter: invert(1) saturate(10);
 }
