@@ -603,3 +603,7 @@ hr {
 nav li:hover .mdi {
     filter: invert(1) saturate(10);
 }
+
+.reading-time .mdi {
+    filter: invert(0.6) saturate(6);
+}
