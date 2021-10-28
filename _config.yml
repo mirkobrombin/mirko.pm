@@ -42,6 +42,7 @@ navigation:
       name: "Scrivi"
       icon: "add_box"
       color: "#00c36b"
+      hue: "80deg"
 
 plugins:
   - jekyll-feed

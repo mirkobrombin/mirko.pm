@@ -23,7 +23,9 @@
                             {% endif %}
                             >
                             {% if item.icon != nil %}
-                                <span class="mdi material-icons-two-tone">{{ item.icon }}</span>
+                                <span class="mdi material-icons-two-tone" {% if item.hue %}style="filter: invert(0.6) saturate(6) sepia(1) hue-rotate({{ item.hue }});"{% endif %}>
+                                    {{ item.icon }}
+                                </span>
                             {% endif %}
                             {{ item.name }}
                         </a>
