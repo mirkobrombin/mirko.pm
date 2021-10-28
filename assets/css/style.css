@@ -599,3 +599,7 @@ hr {
 .searchbox .results ul li:nth-of-type(3) b::before {
     content: "3"
 }
+
+.has-color .mid {
+    filter: invert(1) saturate(10);
+}
