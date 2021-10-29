@@ -53,13 +53,13 @@ Molti possono pensare che stare in una carica alta significhi fondamentalmente d
 
 Questo però è un ragionamento falsato da tanti fattori, storici e sociali, come ad esempio il fatto che tendiamo a ricordare e notare molto più facilmente gli errori della storia che non le cose positive, e quindi ricordiamo più facilmente esempi negativi di leadership, oppure quella credenza popolare per cui il lavoro fisico valga più di quello da scrivania per il solo fatto che usuri il nostro corpo più velocemente. 
 
-I lavoratori di più alto livello lavorano di meno solo in un ottica apparente, in verità molti non smettono mai di lavorare, semplicemente non lo fanno in ufficio, fisicamente. 
+Le figure amministrative di più alto livello lavorano di meno *solo in un ottica apparente*, in verità molti non smettono mai di lavorare, semplicemente non lo fanno in ufficio, fisicamente. 
 
 
 
 ### Le difficoltà amministrative
 
-Se siete mai stati ad una riunione di condominio vi sarà subito chiaro che mettere tante teste diverse in una stanza e dialogare pacificamente è probabilmente una storia degna di una qualsiasi narrazione fantasy. E generalmente colui che ha il compito di "amministrare" ( per l'appunto l'amministratore del condominio ) non riesce mai a dare un ordine preciso a chi deve parlare, fino a quanto e se sta andando fuori tema fermarlo. 
+Se siete mai stati ad una riunione di condominio vi sarà subito chiaro che mettere tante teste diverse in una stanza e dialogare pacificamente è probabilmente una storia degna di una qualsiasi narrazione fantasy. E generalmente colui che ha il compito di "amministrare" (per l'appunto l'amministratore del condominio) non riesce mai a dare un ordine preciso a chi deve parlare, fino a quanto e se sta andando fuori tema fermarlo. 
 
 Il ruolo di amministrazione e organizzazione di risorse non è mai un compito semplice, deve avere lungimiranza nelle scelte, saper ascoltare senza però perdere il proprio tempo presso ogni suo singolo dipendente, riconoscere i talenti di coloro che assume e saperli sfruttare nel modo migliore, circondarsi di chi può avere fiducia e molto altro. In particolare, colui che sta in cima ad un organizzazione, ne diventa il volto, se ne assume le responsabilità in prima linea anche se non opera personalmente su tutto quello che fa, deve saper vendere spesso prodotti di cui non conosce né il processo creativo ne le tecnologie che stanno dietro.   
 
