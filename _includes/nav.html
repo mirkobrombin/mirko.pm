@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="searchbox">
-            <span class="mdi material-icons-outlined"> search </span>
+            <span class="mdi material-icons-two-tone"> search </span>
             <input type="search" placeholder="Cerca...">
             <div class="results">
                 <ul></ul>
@@ -16,14 +16,16 @@
         <nav>
             <ul>
                 {% for item in site.navigation %}
-                    <li class="{% if page.url == item.link %}active{% endif %}">
+                    <li class="{% if page.url == item.link %}active{% endif %} {% if item.color %}has-color{% endif %}">
                         <a href="{{ item.link }}"
                             {% if item.color != nil %}
                                 style="color: {{ item.color }};"
                             {% endif %}
                             >
                             {% if item.icon != nil %}
-                                <span class="mdi material-icons">{{ item.icon }}</span>
+                                <span class="mdi material-icons-two-tone" {% if item.hue %}style="filter: invert(0.6) saturate(6) sepia(1) hue-rotate({{ item.hue }});"{% endif %}>
+                                    {{ item.icon }}
+                                </span>
                             {% endif %}
                             {{ item.name }}
                         </a>

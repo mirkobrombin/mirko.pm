@@ -455,10 +455,10 @@ aside .reading-time {
 
 blockquote {
     margin: 0;
-    padding: 19px 35px 2px;
+    padding: 19px 35px;
     font-style: italic;
     font-size: 17px;
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 aside b+.mdi {
@@ -598,4 +598,17 @@ hr {
 
 .searchbox .results ul li:nth-of-type(3) b::before {
     content: "3"
+}
+
+nav li:hover .mdi {
+    filter: invert(1) saturate(10);
+}
+
+.reading-time .mdi {
+    filter: invert(0.6) saturate(6);
+}
+
+.content blockquote p {
+    margin: 0 0 10px 0;
+    line-height: 1.2em;
 }
