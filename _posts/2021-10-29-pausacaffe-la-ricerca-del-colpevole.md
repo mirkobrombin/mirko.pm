@@ -129,7 +129,7 @@ In questo caso più che mai il ruolo di un capo progetto è indispensabile, poic
 
 ### Non occuparti solo del tuo lavoro 
 
-È dovere di ogni dipendente la buona riuscita del progetto su cui si lavora, onde per cui osservare anche l'andamento di altre parti del progetto non è una cosa errata. Controllare il lavoro altrui per assicurarti la buona riuscita del lavoro complessivo è un dovere quanto fare la propria parte, per fare un paragone con la vita quotidiana, se è giusto fare la differenziata e non buttare cartacce per strada, è anche corretto se vedi qualcuno che lo ricordargli che esistono i cestini della spazzatura (differenziata possibilmente), ancora più azzeccato è se pensiamo ad un condominio, in quanto se sbaglia uno, la multa la prendono tutti. 
+È dovere di ogni dipendente la buona riuscita del progetto su cui si lavora, onde per cui osservare anche l'andamento di altre parti del progetto non è una cosa errata. Controllare il lavoro altrui per assicurarti la buona riuscita del lavoro complessivo è un dovere quanto fare la propria parte, per fare un paragone con la vita quotidiana, se è giusto fare la differenziata e non buttare cartacce per strada, è altrettanto corretto rimproverare chi noti che non la stia facendo. Ancora più azzeccato è se pensiamo ad un condominio, in quanto se sbaglia uno, la multa la prendono tutti. 
 
 
 
