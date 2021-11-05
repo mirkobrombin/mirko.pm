@@ -9,7 +9,7 @@ tags:
 - chiacchiere
 ---
 
-Ci sono così tanti linguaggi di programmazione in giro, ma essi non sono certamente frutto della caduta di Babele, bensì dei numerosi bisogni dei programmatori, sempre in grado di trovare nuovi problemi da risolvere.
+Ci sono così tanti linguaggi di programmazione in giro ma essi non sono certamente frutto della caduta di Babele, bensì dei numerosi bisogni dei programmatori sempre in grado di trovare nuovi problemi da risolvere.
 
 In questo articolo daremo una breve occhiata ai seguenti linguaggi:
 
@@ -25,7 +25,7 @@ In questo articolo daremo una breve occhiata ai seguenti linguaggi:
 
 
 
-Ogni sezione avrà una sottosezione dei pro e uno dei contro, si parlerà di fattori come: 
+Ogni sezione, divisa propriamente in sottosezioni riguardanti i pro e i contro, tratterà i seguenti fattori:
 
 - Paradigmi di programmazione
 - se è compilato o interpretato ( o entrambi )
@@ -47,7 +47,7 @@ Ecco un glossario di alcuni termini che si utilizzeranno nel corso dell'articolo
 
 ## Python
 
-La particolarità di questo linguaggio è il suo basso livello di difficoltà, il livello di sintassi è simile alla scrittura di pseudocodice.  È un linguaggio interpretato, orientato ad oggetti.
+La particolarità di questo linguaggio è il suo basso livello di difficoltà, con una sintassi simile alla scrittura di pseudocodice.  È un linguaggio interpretato, orientato ad oggetti.
 
 ### pro
 
@@ -55,13 +55,13 @@ La particolarità di questo linguaggio è il suo basso livello di difficoltà, i
 - Viene utilizzato per quasi ogni genere di cosa: da dei semplici script di installazione a intere reti neurali
   -  questo garantisce anche la presenza di un ampio ecosistema (anche attraverso il suo package manager, *pip*).
 - La sua natura da linguaggio interpretato favorisce il check immediato di eventuali dubbi che si creano durante la scrittura dei propri programmi
-- È fortemente educativo per la pulizia del codice, infatti è obbligatorio indentare il codice.
+- È fortemente educativo per la pulizia del codice, infatti l'indentazione è obbligatoria.
 
 
 
 ### contro 
 
-- A causa della tipizzazione dinamica risulta difficile trovare bug in fase di scrittura e rende difficile l'uso di Linters e documentazioni.
+- A causa della tipizzazione dinamica risulta difficile trovare bug in fase di scrittura e rende difficile l'uso di Linkers e documentazioni.
 
 - Il GIL (global interpreter lock) impedisce a Python di utilizzare più thread di sistema, cosa che potrebbe risultare scomoda a molti (si intravedono piani per la sua rimozione ma si parla di un futuro remoto)
 - Le prestazioni rispetto ad altri linguaggi sono scadenti per via dell'interprete che aggiunge overhead
