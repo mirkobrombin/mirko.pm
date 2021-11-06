@@ -70,42 +70,6 @@ La particolarità di questo linguaggio è il suo basso livello di difficoltà, c
 
 
 
-
-## Java
-
- È uno dei linguaggi più longevi e completi. Didatticamente parlando è spesso utilizzato per l'apprendimento della programmazione procedurale ed orientata ad Oggetti. Fino a pochi anni fa era anche il linguaggio più utilizzato al mondo.     
-
-È un linguaggio compilato e poi interpretato, questo doppio approccio ha reso possibile la massima compatibilità con tutti i sistemi: ogni sorgente java viene prima compilato in un linguaggio intermedio chiamato bytecode, poi viene interpretato da un software chiamato Java Virtual Machine (JVM) che viene rilasciato per quasi tutti i sistemi software e hardware.  È un linguaggio imperativo, orientato ad oggetti, possiede meccanismi di reflection e concorrenza ( che viene poi ottimizzata dalla JVM ).  
-
-Ha ricevuto forti influenze da C e C++, ma possiede meccanismi che rendono nascosta la gestione dei puntatori per evitare problematiche allo sviluppatore.
-
-### pro
-
-- Scrivi una volta, esegui ovunque il tuo codice ( completa indipendenza dalla piattaforma, sia GUI che BE )
-- Ha un vastissimo parco software incluso e da terze parti, anche facilmente raggiungibile tramite il portale di Maven ( project e dependency manager non ufficiale )
-- Fino alla versione 8, ogni versione di Java era perfettamente retrocompatibile. Ancora oggi è uno dei linguaggi che più di tutti assicura la retrocompatibilità se pur ora con qualche meccanismo deprecato 
-- Possiede un suo sistema di "impacchettamento" del software, in grado di generare degli archivi eseguibili da ogni JVM
-- Esiste un gran numero di software di sviluppo che lo supportano nativamente offrendo meccanismi di compilazione, building, debugging e strutturazione dei progetti automatizzati e incorporati
-- Il sistema di import dei moduli è strutturato attraverso un meccanismo di classpath che permette la visibilità di tutto il progetto ed anche di codici esterni al progetto stesso.
-- Ha uno dei più sofisticati Garbage Collector nel mondo della programmazione
-- Possiede una buona documentazione 
-- Possiede un meccanismo di generazione della documentazione che trasforma commenti del codice in pagine html (`javadoc`)
-- Ha una libreria GUI nativa indipendente dalla piattaforma (facilmente estendibile)
-
-### contro 
-
-- La sua sintassi ormai vecchia e verbosa inizia a pesare agli sviluppatori.
-- La libreria GUI nativa ha uno stile notoriamente "vecchio" e poco User Friendly
-- Non incoraggia la pulizia del codice
-- La curva di apprendimento è abbastanza lenta, senza una buona guida o insegnante è un linguaggio difficile e si rischiano molti errori 
-- Dipendendo da un software esterno per la sua esecuzione, negli anni java è stato al centro di numerosi security issues indipendenti dai programmatori 
-
-
-
-> **Cerchi come programmare in java** ?  
->
-> Dai un occhiata [alla nostra guida](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java/)
-
 ## JavaScript
 
 Attualmente uno dei linguaggi più diffusi per la scrittura di backend, nonché il più popolare lato frontend, JavaScript domina il settore web.  La sua sintassi è simile per certi versi a quella dei linguaggi di programmazione Orientata agli Oggetti più famosi come Java e C++, ma contiene alcuni elementi che ricordano i linguaggi di scripting.  
@@ -150,6 +114,45 @@ TypeScript è un linguaggio creato da Microsoft che estende Javascript introduce
 - Non è obbligatorio usare la sintassi di Typescript, il che può far ricadere un programmatore poco esperto in uno qualsiasi dei problemi già sopra citati
 - La compilazione di progetti grossi può essere molto elevata 
 - Alla fine viene eseguito come codice javascript, alcuni problemi potrebbero derivare da questo ma non essere facilmente individuabili a causa del fatto che su typescript non esistono errori evidenti 
+
+
+
+## Java
+
+ È uno dei linguaggi più longevi e completi. Didatticamente parlando è spesso utilizzato per l'apprendimento della programmazione procedurale ed orientata ad Oggetti. Fino a pochi anni fa era anche il linguaggio più utilizzato al mondo.     
+
+È un linguaggio compilato e poi interpretato, questo doppio approccio ha reso possibile la massima compatibilità con tutti i sistemi: ogni sorgente java viene prima compilato in un linguaggio intermedio chiamato bytecode, poi viene interpretato da un software chiamato Java Virtual Machine (JVM) che viene rilasciato per quasi tutti i sistemi software e hardware.  È un linguaggio imperativo, orientato ad oggetti, possiede meccanismi di reflection e concorrenza ( che viene poi ottimizzata dalla JVM ).  
+
+Ha ricevuto forti influenze da C e C++, ma possiede meccanismi che rendono nascosta la gestione dei puntatori per evitare problematiche allo sviluppatore.
+
+### pro
+
+- Scrivi una volta, esegui ovunque il tuo codice ( completa indipendenza dalla piattaforma, sia GUI che BE )
+- Ha un vastissimo parco software incluso e da terze parti, anche facilmente raggiungibile tramite il portale di Maven ( project e dependency manager non ufficiale )
+- Fino alla versione 8, ogni versione di Java era perfettamente retrocompatibile. Ancora oggi è uno dei linguaggi che più di tutti assicura la retrocompatibilità se pur ora con qualche meccanismo deprecato 
+- Possiede un suo sistema di "impacchettamento" del software, in grado di generare degli archivi eseguibili da ogni JVM
+- Esiste un gran numero di software di sviluppo che lo supportano nativamente offrendo meccanismi di compilazione, building, debugging e strutturazione dei progetti automatizzati e incorporati
+- Il sistema di import dei moduli è strutturato attraverso un meccanismo di classpath che permette la visibilità di tutto il progetto ed anche di codici esterni al progetto stesso.
+- Ha uno dei più sofisticati Garbage Collector nel mondo della programmazione
+- Possiede una buona documentazione 
+- Possiede un meccanismo di generazione della documentazione che trasforma commenti del codice in pagine html (`javadoc`)
+- Ha una libreria GUI nativa indipendente dalla piattaforma (facilmente estendibile)
+
+### contro 
+
+- La sua sintassi ormai vecchia e verbosa inizia a pesare agli sviluppatori.
+- La libreria GUI nativa ha uno stile notoriamente "vecchio" e poco User Friendly
+- Non incoraggia la pulizia del codice
+- La curva di apprendimento è abbastanza ripida, senza una buona guida o insegnante è un linguaggio difficile e si rischiano molti errori 
+- Dipendendo da un software esterno per la sua esecuzione, negli anni java è stato al centro di numerosi security issues indipendenti dai programmatori 
+
+
+
+> **Cerchi come programmare in java** ?  
+>
+> Dai un occhiata [alla nostra guida](https://linuxhub.it/articles/howtodev-introduzione-alla-programmazione-in-java/)
+
+
 
 ## Go
 
@@ -198,8 +201,8 @@ Le sue particolarità più grandi sono il suo paradigma di gestione della memori
 
 ### contro 
 
-- La sua gestione della memoria nonostante prevenga le perdite e le dimenticanze tende ad essere inefficiente
-- Ha una curva di apprendimento molto lenta
+- Il suo paradigma di gestione della memoria nonostante prevenga perdite e dimenticanze tende ad essere complessa da afferrare
+- Ha una curva di apprendimento molto ripida
 
 
 
@@ -270,5 +273,5 @@ Esso è particolarmente apprezzato in ambito matematico e per l'intelligenza art
 
 ### contro 
 
-- Ha una curva di apprendimento molto, molto, molto lenta
+- Ha una curva di apprendimento molto, molto, molto ripida
 - La sua natura di programmazione puramente funzionale tende a rendere i codici sorgenti incomprensibili
