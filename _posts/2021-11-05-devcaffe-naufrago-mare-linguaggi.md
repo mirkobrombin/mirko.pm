@@ -14,9 +14,9 @@ Ci sono così tanti linguaggi di programmazione in giro ma essi non sono certame
 In questo articolo daremo una breve occhiata ai seguenti linguaggi:
 
 * Python
-* Java
 * JavaScript 
 * TypeScript
+* Java
 * Go
 * Rust
 * C 
@@ -143,7 +143,7 @@ Ha ricevuto forti influenze da C e C++, ma possiede meccanismi che rendono nasco
 - La sua sintassi ormai vecchia e verbosa inizia a pesare agli sviluppatori.
 - La libreria GUI nativa ha uno stile notoriamente "vecchio" e poco User Friendly
 - Non incoraggia la pulizia del codice
-- La curva di apprendimento è abbastanza ripida, senza una buona guida o insegnante è un linguaggio difficile e si rischiano molti errori 
+- L'apprendimento richiede tempo, senza una buona guida o insegnante è un linguaggio difficile e si rischiano molti errori 
 - Dipendendo da un software esterno per la sua esecuzione, negli anni java è stato al centro di numerosi security issues indipendenti dai programmatori 
 
 
@@ -202,7 +202,7 @@ Le sue particolarità più grandi sono il suo paradigma di gestione della memori
 ### contro 
 
 - Il suo paradigma di gestione della memoria nonostante prevenga perdite e dimenticanze tende ad essere complessa da afferrare
-- Ha una curva di apprendimento molto ripida
+- L'apprendimento richiede molto tempo
 
 
 
@@ -273,5 +273,5 @@ Esso è particolarmente apprezzato in ambito matematico e per l'intelligenza art
 
 ### contro 
 
-- Ha una curva di apprendimento molto, molto, molto ripida
+- Il suo apprendimento richiede molto molto tempo
 - La sua natura di programmazione puramente funzionale tende a rendere i codici sorgenti incomprensibili
