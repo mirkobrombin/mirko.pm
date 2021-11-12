@@ -12,7 +12,7 @@ tags:
 - bash
 ---
 
-Il motivo originale per cui son nati i computer è quello di fare calcoli. Oggi è una cosa che diamo per scontato, ma voi sapete in quanti modi si possono fare calcoli sulla vostra distribuzione? Vediamone alcuni
+Il motivo originale per cui son nati i computer è quello di fare calcoli. Oggi è una cosa che diamo per scontata, ma voi sapete in quanti modi si possono fare calcoli sulla vostra distribuzione? Vediamone alcuni
 
 
 
@@ -26,8 +26,8 @@ La sintassi corretta per usarlo è:
 let "espressione aritmetica"
 ```
 
-Il comando di per se non restituisce un output, ma è capace di utilizzare e assegnare delle variabili esterne.  
-Per fare qualche esempio possiamo creare una variabile che contiene un espressione aritmetica con let e stamparla: 
+Il comando di per sè non restituisce un output, ma è capace di utilizzare ed assegnare delle variabili esterne.  
+Per fare qualche esempio possiamo creare una variabile che contiene un'espressione aritmetica con let e stamparla: 
 
 ```bash
 let "ans=2+2"
@@ -57,11 +57,11 @@ output:
 
 
 
-Che operazioni possiamo fare con let ? Purtroppo non esiste un manuale vero e proprio.   
+Che operazioni possiamo fare con let? Purtroppo non esiste un manuale vero e proprio.   
 
-Innanzitutto dipende dalla nostra shell, bash ad esempio ha funzioni aritmetiche *molto limitate con let*, con zsh avete accesso a molte più funzioni.
+Innanzitutto dipende dalla nostra shell, infatti se bash, ad esempio, dispone di funzioni aritmetiche *molto limitate con let*, con zsh avrete accesso a molte più funzioni.
 
-Quindi son andato un po' a tentativi per cercarli tutti:
+Quindi sono andato un po' a tentativi per cercarle tutte:
 
 | Operazione                | Su let            | esempio                | echo $a |
 | ------------------------- | ----------------- | ---------------------- | ------- |
@@ -121,7 +121,8 @@ $((espressione aritmetica))
 
 
 
-Trovo questa sintassi molto più comoda, soprattutto in vista di dover stampare o utilizzare un determinato calcolo. Le regole son le stesse di `let` (attinge alle stesse funzioni essendo in realtà una funzione interna a bash), ma vediamo come cambia il nostro modo di fare calcoli utilizzandola, ad esempio calcoliamo l'area di un triangolo rettangolo con base 5 e altezza 3: 
+Trovo questa sintassi molto più comoda, soprattutto in vista di dover stampare o utilizzare un determinato calcolo. Le regole son le stesse di `let` (attinge alle stesse funzioni essendo in realtà una funzione interna a bash), ma vediamo come cambia il nostro modo di fare calcoli utilizzandola.
+Ad esempio calcoliamo l'area di un triangolo rettangolo con base 5 e altezza 3: 
 
 ```bash
 base=5
@@ -137,7 +138,7 @@ l'area è 7
 
 
 
-Ovviamente non è precisa dal punto di vista decimale, in zsh potete effettivamente attingere anche a questa funzione volendo: 
+Ovviamente non è precisa dal punto di vista decimale, però in zsh potrete effettivamente attingere anche a questa funzione volendo: 
 
 ```bash
 base=5.
@@ -153,13 +154,14 @@ l'area è 7.5
 
 
 
-Mettendo un punto dopo il numero, fate intendere a zsh di voler calcolare il risultato come numero decimale
+Infatti, mettendo un punto dopo il numero, fate intendere a zsh di voler calcolare il risultato come numero decimale.
 
 
 
-## Perché non un linguaggio di programmazione? python 
+## Perché non un linguaggio di programmazione? Python 
 
-Un ottimo metodo, veloce e senza molti limiti, è quello di utilizzare le funzioni matematiche dei linguaggi di programmazione interpretati. Ad esempio troviamo *python in quasi tutte le distribuzioni linux*. **Non serve saper programmare per utilizzare tali funzioni tranquilli!**
+Un ottimo metodo, veloce e senza molti limiti, è quello di utilizzare le funzioni matematiche dei linguaggi di programmazione interpretati. 
+Ad esempio troviamo *python in quasi tutte le distribuzioni linux*. **Non serve saper programmare per utilizzare tali funzioni tranquilli!**
 
 
 
@@ -203,7 +205,7 @@ Come notiamo, i numeri decimali son pienamente già supportati dal linguaggio.
 
 
 
-Abbiamo per lo più le stesse operazioni di `let`, cambiano però 
+Abbiamo per lo più le stesse operazioni di `let`, ad eccezione delle seguenti: 
 
 | Operazione                 | in python                                      | esempio                       | output |
 | -------------------------- | ---------------------------------------------- | ----------------------------- | ------ |
@@ -215,9 +217,9 @@ Abbiamo per lo più le stesse operazioni di `let`, cambiano però
 | or logico                  | or                                             | 1 or 0                        | 1      |
 | if ternario                | risultato if condizione else altro risultato   | i=0; <br />a= 5 if i>0 else 7 | 7      |
 
-Possiamo utilizzare svariate funzioni e costanti matematiche, qui serve però conoscere qualche passaggio in più rispetto le normali operazioni. 
+Possiamo utilizzare svariate funzioni e costanti matematiche, tuttavia è necessario conoscere qualche passaggio in più rispetto alle normali operazioni. 
 
-Innanzitutto dobbiamo chiedere al linguaggio di "importarle", ovvero dichiariamo di volerle utilizzare: 
+Innanzitutto dobbiamo chiedere al linguaggio di "importarle", ovvero dichiarare di volerle utilizzare: 
 
 ```python
 from math import * 
@@ -232,7 +234,7 @@ Ora possiamo utilizzarle senza problemi. Abbiamo accesso ad una serie di costant
 
 
 
-E a molte funzioni matematiche, ad esempio : 
+Ed a molte funzioni matematiche, ad esempio : 
 
 | operazione             | in python | esempio   | valore |
 | ---------------------- | --------- | --------- | ------ |
@@ -245,18 +247,19 @@ Le funzioni son davvero tante per elencarle tutte, avete una lista completa [sul
 
 
 
-Per uscire dalla shell interattiva di python potete digitare `CTRL+D` o scrivere `exit`
+Per uscire dalla shell interattiva di python potete digitare `CTRL+D` o scrivere `exit`.
 
 
 
-Potete anche accedere alle funzioni di python in maniera "non interattiva" richiamandolo così: 
+Potete anche accedere alle funzioni di Python in maniera "non interattiva" richiamandolo così: 
 
 ```bash
 python -c "comando"
 ```
 
 
-Tuttavia per vedere il suo output, dovrete richiedere esplicitamente quale operazione o risultato con la funzione `print`. Ad esempio: 
+Tuttavia, per vedere il suo output, dovrete richiedere esplicitamente quale operazione o risultato con la funzione `print`. 
+Ad esempio: 
 
 ```bash
 python -c "from math import *; b=3;n=81;print(log(n)/log(b))"
@@ -269,17 +272,17 @@ output :
 ```
 
 
-Usare questa sintassi però potrebbe risultare poco leggibile ed un po' caotico
+Usare questa sintassi però potrebbe risultare poco leggibile ed un po' caotico.
 
-## Octave, il simil matlab
+## Octave, il simil Matlab
 
-Nato come sostituto open source di matlab, octave è davvero un bel software di calcolo, ha tante estensioni *tramite il suo plugin manager forge* e offre già di base molte operazioni.  
+Nato come sostituto open source di Matlab, Octave è davvero un bel software di calcolo, ha tante estensioni *tramite il suo plugin manager forge* e offre già di base molte operazioni.  
 
-Va installato come pacchetto a parte tramite il package manager della vostra distribuzione
+Va installato come pacchetto a parte tramite il package manager della vostra distribuzione.
 
 
 
-### Installare su ubuntu 
+### Installare su Ubuntu 
 
 ```bash
 apt install octave
@@ -287,7 +290,7 @@ apt install octave
 
 
 
-### Installare su archlinux 
+### Installare su Archlinux 
 
 ``` bash
 pacman -S octave 
@@ -303,18 +306,18 @@ dnf install octave
 
 
 
-### Avviare o eseguire comandi con octave 
+### Avviare o eseguire comandi con Octave 
 
-Una volta installato avete quattro modi di interagire con il software: 
+Una volta installato avrete quattro modi di interagire con il software: 
 
-- in modalità interattiva digitando semplicemente `octave`
+- in modalità interattiva, digitando semplicemente `octave`
 - inviando i singoli comandi, digitando:
 
 ```bash
 octave --eval 'istruzioni'
 ```
 
-- in modalità GUI digitando `octave --gui`
+- in modalità GUI, digitando `octave --gui`
 - scrivendo le istruzioni in un file, quindi digitando: 
 
 ```bash
@@ -323,9 +326,9 @@ octave /percorso/file
 
 
 
-### Uso 
+### Utilizzo
 
-Come già sottolineato octave è un software con molte funzioni, più di quelle che probabilmente vi servono. Ma le funzioni di base son tutte molto intuitive.   
+Come già sottolineato, Octave è un software con molte funzioni, più di quelle che probabilmente vi servono. Ma le funzioni di base son tutte molto intuitive.   
 
 Ogni comando che scrivete viene immediatamente calcolato e quindi mandato in output. Ad esempio: 
 
@@ -339,7 +342,7 @@ output:
 ans = 2
 ```
 
-Se non volete stampare il risultato di un operazione, semplicemente scrivete alla fine il punto e virgola: 
+Se non volete stampare il risultato di un'operazione, semplicemente scrivete alla fine il punto e virgola: 
 
 ```octave
 1+3;
@@ -347,7 +350,7 @@ Se non volete stampare il risultato di un operazione, semplicemente scrivete all
 
 
 
-Potete anche assegnare variabili e riutilizzarle: 
+Potete anche assegnare delle variabili e riutilizzarle: 
 
 ```octave
 a=3; 
@@ -360,7 +363,7 @@ output:
 ans = 10
 ```
 
-Se non assegnate una variabile ad una determinata istruzione, viene in automatico assegnata ad una variabile detta `ans`, che potete liberamente utilizzare a vostro piacimento: 
+Se non assegnate una variabile ad una determinata istruzione, viene in automatico assegnata ad una variabile detta `ans`, che potrete liberamente utilizzare a vostro piacimento: 
 
 ```octave
 8+3;
@@ -375,7 +378,7 @@ ans = 22
 
 
 
-Octave gestisce nativamente anche il calcolo vettoriale, potete applicare operatori su interi vettori: 
+Octave gestisce nativamente anche il calcolo vettoriale, perciò potete applicare operatori su interi vettori: 
 
 ```octave
 [1,2,3]+2
@@ -400,7 +403,7 @@ output:
 ans = -14
 ```
 
-In questo caso come potete notare, abbiamo due vettori creati con diversa sintassi.  
+In questo caso, come potete notare, abbiamo due vettori creati con diversa sintassi.  
 
 I vettori creati separando gli elementi con le virgole son *vettori riga*, ovvero nell'esempio son *1&times;3*.
 
@@ -462,7 +465,7 @@ Arriviamo a quello che, secondo me, è il tool più bilanciato e utile. Cioè `q
 
 
 
-### Installare su ubuntu 
+### Installare su Ubuntu 
 
 ```bash
 apt install qalculate
@@ -470,7 +473,7 @@ apt install qalculate
 
 
 
-### Installare su fedora
+### Installare su Fedora
 
 ```bash
 dnf install qalculate
@@ -478,7 +481,7 @@ dnf install qalculate
 
 
 
-### Installare su archlinux
+### Installare su Archlinux
 
 ```bash
 pacman -S libqalculate
@@ -490,15 +493,15 @@ pacman -S libqalculate
 
 Potete utilizzare qalc in due modi: 
 
-- in modalità interattiva digitando solo `qalc`
-- a singolo comando scrivendo `qalc espressione`
+- in modalità interattiva, digitando solo `qalc`
+- a singolo comando, scrivendo `qalc espressione`
   - se il risultato del comando vi serve all'interno di una variabile, conviene utilizzare il parametro: `qalc -t espressione` poiché normalmente l'output viene generato tenendo conto di tutta l'espressione
 
 
 
-### Uso 
+### Utilizzo
 
-la sintassi di qalc è molto semplice ed espressiva, da ogni comando viene generato un output.   
+La sintassi di qalc è molto semplice ed espressiva, da ogni comando viene generato un output.   
 
 *In qalc non si possono inserire variabili*. Tuttavia in modalità "shell" (quindi non interattiva) potete utilizzare le variabili della shell e memorizzarci dentro il risultato del calcolo. Per fare un esempio: 
 
@@ -515,7 +518,7 @@ output:
 Area triangolo 7,5
 ```
 
-Notare come la virgola, vista come separatori tra interi e decimali, sia specificata nel formato italiano. Questo dipende dalla lingua di sistema: per forzare ad utilizzare il punto come divisore, anteporre `LANG=C` davanti l'uso di `qalc` oppure definire temporaneamente la variabile `LANG` con export: 
+Notare come la virgola, vista come separatore tra interi e decimali, sia specificata nel formato italiano. Questo dipende dalla lingua di sistema: per forzare ad utilizzare il punto come divisore, anteporre `LANG=C` davanti l'uso di `qalc` oppure definire temporaneamente la variabile `LANG` con export: 
 
 ```bash
 base=5
@@ -568,7 +571,7 @@ Vediamo ora le operazioni di base:
 
 
 
-Con qalc hai accesso a costanti matematiche e scientifiche: 
+Con qalc avrete accesso a costanti matematiche e scientifiche: 
 
 | costante                   | su qalc |
 | -------------------------- | ------- |
@@ -590,7 +593,8 @@ ricordate di scrivere in inglese.
 
 
 
-Ovviamente ci sono anche numerose funzioni
+Ovviamente ci sono anche numerose funzioni, quali:
+
 | operazione                  | qalc                  | esempio    | output |
 | --------------------------- | --------------------- | ---------- | ------ |
 | Logaritmo naturale          | log                   | log(e)     | 1      |
@@ -610,7 +614,7 @@ Ovviamente ci sono anche numerose funzioni
 Capiamoci, perché qalc dovrebbe essere così speciale? 
 
 In realtà octave offre molte più funzioni, tuttavia l'immediatezza con la quale qalc offre alcune funzioni particolari è disarmante.   
-Facciamo alcuni esempi banali, risolviamo l'equazione di secondo grado:   
+Facciamo alcuni esempi banali, come risolvere l'equazione di secondo grado:   
 
 x<sup>2</sup> + 4x + 4  
 
@@ -628,13 +632,14 @@ Il risultato sarà:
 
 
 
-Essendo che non ci son variabili, con qalc mettere una lettera vicino un numero è esattamente come in matematica simbolo di ripetizione e quindi moltiplicazione. Anche mettere due simboli insieme: 
+Essendo che non ci son variabili, con qalc mettere una lettera vicino un numero è, esattamente come in matematica, simbolo di ripetizione e quindi di moltiplicazione.
+Anche mettere due simboli insieme ha lo stesso significato, infatti la scrittura seguente: 
 
 ```
 epi
 ```
 
-Da in output: 
+Dà in output: 
 
 ```
 e x pi ~ 8,5397342226735670654635508695
@@ -644,7 +649,7 @@ e x pi ~ 8,5397342226735670654635508695
 
 ### Le conversioni 
 
-qalc converte qualsiasi unità o valuta e mantiene quanto più possibile aggiornato il database di conversione. 
+Qalc converte qualsiasi unità o valuta e mantiene quanto più possibile aggiornato il database di conversione. 
 
 Facciamo subito qualche esempio e convertiamo kb in GiB: 
 
@@ -690,7 +695,7 @@ Bitcoin in euro:
 
 
 
-### precisione
+### Precisione
 
 È possibile impostare la precisione dei calcoli tramite l'istruzione: 
 
@@ -708,14 +713,14 @@ qalc -s "precision n" "espressione"
 
 
 
-Il numero indicato sarà il totale di cifre tra intere e decimali che ne uscirà fuori, la priorità verrà data ovviamente alle cifre intere
+Il numero indicato sarà il totale di cifre tra intere e decimali che ne uscirà fuori, la priorità verrà data ovviamente alle cifre intere.
 
 
 
 ### GUI 
 
-esistono due interfacce grafiche per Qalculate, una *scritta in gtk* e una in **qt**.   
-Penso che la migliore delle due sia quella scritta in gtk, oltre la più facile da installare. Se non la trovate nei vostri repository potete comodamente sfruttare flatpak: 
+Esistono due interfacce grafiche per Qalculate, una *scritta in gtk* e una in **qt**.   
+Penso che la migliore delle due sia quella scritta in gtk, oltre che la più facile da installare. Se non la trovate nei vostri repository potete comodamente sfruttare flatpak: 
 
 ```bash
 flatpak install qalculate
