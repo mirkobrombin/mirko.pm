@@ -10,8 +10,8 @@ tags:
 ---
 
 **Vim** è un editor di testo da CLI, veloce, leggero, ricco di shortcut che aumentano la produttività degli utilizzatori. 
-C'è però un problema, di default Vim risulta sprovvisto di tutte quelle features che hanno gli editor moderni come **Visual Studio Code**, **Sublime Text**, **Atom** ecc...
-Ma se vi dicessi che è possibile, "sporcandosi un pò le mani" rendere Vim alla pari degli editor citati mantenendo però tutti i pro? Andiamolo a scoprire in questo articolo!
+C'è però un problema: di default Vim risulta sprovvisto di tutte quelle features che hanno gli editor moderni come **Visual Studio Code**, **Sublime Text**, **Atom** ecc...
+Ma se vi dicessi che è possibile "sporcandosi un pò le mani" rendere Vim alla pari degli editor citati mantenendo però tutti i pro? Andiamolo a scoprire in questo articolo!
 
 ## Prerequisiti
 Prima di procedere con l'articolo è doveroso prima leggere questi due articoli:
