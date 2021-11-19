@@ -1,6 +1,6 @@
 ---
 title: '#howto - Fare calcoli con linux' 
-date: 2021-11-19 17:00
+date: 2021-11-19 11:00
 layout: post 
 author: PsykeDady
 author_github: PsykeDady 
