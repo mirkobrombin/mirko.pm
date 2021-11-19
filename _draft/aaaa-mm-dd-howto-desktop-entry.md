@@ -1,9 +1,10 @@
 ---
 title: '#howto - Desktop Entry'
-date: aaaa-mm-dd
+date: 2021-11-26 11:00
 layout: post
 author: Ivonne
 author_github: ivochan
+published: false
 tags:
 - desktop
 - entry
