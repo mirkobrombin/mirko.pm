@@ -1,6 +1,6 @@
 ---
 title: '#howto - migliorare l'esperienza VIM'
-date: 2021-11-19
+date: 2021-11-19 11:00
 layout: post
 author: Floppy
 author_github: raspFloppy
