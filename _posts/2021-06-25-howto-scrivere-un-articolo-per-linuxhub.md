@@ -75,7 +75,7 @@ Inoltre ogni articolo **deve contenere il seguente header** a partire dalla prim
 ```
 ---
 title: '#howto - nome articolo' 
-date: aaaa-mm-gg 
+date: aaaa-mm-gg 11:00
 layout: post 
 author: Nome Autore
 author_github: Nome github 
