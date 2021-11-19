@@ -2,8 +2,8 @@
 title: "#howto - Migliorare l'esperienza con VIM"
 date: 2021-11-19 11:00
 layout: post 
-author: PsykeDady
-author_github: PsykeDady 
+author: Floppy Loppy
+author_github: raspFloppy
 tags:  
 - ubuntu 
 - archlinux 
