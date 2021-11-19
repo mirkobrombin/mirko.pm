@@ -1,5 +1,5 @@
 ---
-title: '#howto - Fare calcoli con linux' 
+title: '#howto - Migliorare l'esperienza con VIM' 
 date: 2021-11-19 11:00
 layout: post 
 author: PsykeDady
