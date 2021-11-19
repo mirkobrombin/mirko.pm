@@ -1,6 +1,6 @@
 ---
 title: '#howto - articolo demo' 
-date: 2021-11-19 H:M
+date: 2021-11-19 11:00
 layout: post 
 published: false
 author: Nome Autore
