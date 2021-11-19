@@ -4,6 +4,7 @@ date: aaaa-mm-gg H:M
 layout: post 
 author: Nome Autore
 author_github: Nome github 
+published: false
 tags: 
 - lista 
 - dei 

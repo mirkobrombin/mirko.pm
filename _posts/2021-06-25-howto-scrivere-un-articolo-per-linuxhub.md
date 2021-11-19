@@ -4,6 +4,7 @@ date: 2021-06-25
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
+published: true
 tags: 
 - markdown 
 - github
@@ -28,7 +29,7 @@ Abbiamo voluto, nei nostri ultimi cambiamenti, pensare un modo per includere il 
 Tutto parte dal repository github https://github.com/linuxhubit/linuxhub.it. Tralasciando gran parte delle directory che son utilizzate internamente dal sito, il focus della pubblicazione comprende le sole cartelle : 
 
 - `_draft` : in questa cartella risiedono gli articoli in bozza nonché articoli demo lasciati come esempio per le nostre categorie principali
-- `_posts` : in questa cartella si trovano gli articoli pubblicati. 
+- `_posts` : in questa cartella si trovano gli articoli pubblicati, in revisione o programmati per la pubblicazione. 
 - `uploads` : qui risiedono i file allegati alle varie pubblicazioni, come foto o pdf. Ci teniamo a precisare che per maggiore leggibilità nonché leggerezza del repository è nostra politica *limitare quanto più possibile gli allegati ad un articolo*
 - `_trash` : qui vengono spostati vecchi articoli non più attuali che hanno subito una riedizione completa
 
@@ -78,6 +79,7 @@ date: aaaa-mm-gg
 layout: post 
 author: Nome Autore
 author_github: Nome github 
+published: false
 tags: 
 - lista 
 - dei 
@@ -86,7 +88,9 @@ tags:
 ---
 ```
 
-
+> NOTA BENE:
+> 
+> la riga `published: false` rimane tale fintanto che non vengono pubblicati gli articoli, dopo aver passato il processo di revisione
 
 ## Sintassi Markdown
 
@@ -136,7 +140,7 @@ Tabella:
 
 
 
-Nei nostri articoli non utilizziamo mai il **titolo 1**, ma si parte sempre *da Titolo 2* ( e comunque dopo *l'header* ) e massimo fino a **Titolo 4**.  
+Nei nostri articoli non utilizziamo mai il **titolo 1** ma si parte sempre *da Titolo 2* ( e comunque dopo *l'header* ) e massimo fino a **Titolo 4**.  
 
 La sezione che intercorre tra **l'header** e la prima occorrenza del **Titolo 2** è una presentazione del contenuto dell'articolo
 
@@ -192,9 +196,11 @@ Le guide sull'installazione di un determinato software per non essere considerat
 Chiunque può scrivere un articolo per linux/hub, modificarne uno esistente o proporne una nuova versione. 
 
 ### creare un nuovo articolo 
-I membri dello staff possono creare un nuovo articolo creando un file nella cartella  **_draft** e chiedendone una revisione. Il file verrà poi pubblicato spostandolo nella cartella **_post**
+I membri dello staff possono creare un nuovo articolo creando un file nella cartella  **_posts** con il flag di `published: false` **nell'header** e chiedendone una revisione. 
 
-I lettori interessati a partecipare attivamente possono invece fare [un fork e quindi aprire una pull request](https://github.com/linuxhubit/linuxhub.it/pulls) sulla pagina del progetto, nel farlo ovviamente le modalità rimangono le stesse descritte sopra 
+Il file verrà poi pubblicato dopo la revisione (modificando il flag di cui sopra).
+
+I lettori interessati a partecipare attivamente possono invece fare [un fork e quindi aprire una pull request](https://github.com/linuxhubit/linuxhub.it/pulls) sulla pagina del progetto, nel farlo ovviamente le modalità rimangono le stesse descritte sopra.
 
 
 
