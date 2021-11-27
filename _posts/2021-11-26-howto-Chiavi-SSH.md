@@ -1,4 +1,3 @@
-```
 ---
 title: '#howto - Chiavi SSH' 
 date: 2021-11-26 19:55
@@ -13,7 +12,6 @@ tags:
 - ubuntu
 - fedora
 ---
-```
 
 Conoscere l'uso delle chiavi SSH è, al giorno d'oggi, una conoscenza essenziale.
 Rispetto alle classiche password, che possono essere forzate attraverso un attacco a dizionario, le chiavi SSH sono in grado di resistere a questo tipo di forzatura. In questo articolo scopriamo come generare una coppia di chiavi SSH e sfruttarle per l'accesso a un server GNU/Linux!
