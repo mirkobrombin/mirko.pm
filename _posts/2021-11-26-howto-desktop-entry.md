@@ -25,7 +25,7 @@ In generale, il programma di installazione di una qualsiasi applicazione si occu
 
 
 
-#### Come crearlo?
+### Come crearlo?
 
 Nel caso in cui, però, questo non dovesse verificarsi, allora si potrà dotare l'applicazione in questione di un collegamento, attuando il procedimento che verrà riportato di seguito.
 
@@ -52,7 +52,7 @@ Si precisa che non tutti i campi del file sopraelencati siano necessari per il s
 
 
 
-#### Come strutturarlo? 
+### Come strutturarlo? 
 
 Ecco il contenuto di un generico file che descrive un lanciatore:
 
@@ -75,7 +75,7 @@ In questo modo, è possibile avere, anche su Linux, il tanto agognato collegamen
 
 
 
-#### Come creare una Action?
+### Come creare una Action?
 
 Per dotare un lanciatore di alcune funzionalità aggiuntive è possibile definire delle "opzioni", cliccabili tramite il tasto destro del dispositivo di puntamento che si sta utilizzando, defininendo una Action.
 
@@ -131,7 +131,7 @@ e poi specificare  una *Desktop Action* corrispondente ad ognuna delle azioni ch
 
 
 
-#### Quale categoria scegliere?
+### Quale categoria scegliere?
 
 La definizione di una determinata categoria, alla voce *Type* del file .desktop, è necessaria per permettere che l'applicazione venga visualizzata nella voce del **Menu Applicazioni** , che è riservata proprio a questa categoria.
 
@@ -152,7 +152,7 @@ Alcune delle categorie che si possono utilizzare sono riportate in questa tabell
 
 
 
-#### Esempio : creazione di un lanciatore per un IDE di sviluppo
+### Esempio : creazione di un lanciatore per un IDE di sviluppo
 
 Ecco un esempio di come è fatto il launcher di Visual Studio Code:
 
@@ -176,7 +176,7 @@ Categories=Development;WebDevelopment;IDE;Utility;TextEditor;
 
 
 
-#### Utilizzo del lanciatore per l'avvio automatico dell'applicazione
+### Utilizzo del lanciatore per l'avvio automatico dell'applicazione
 
 Un altro modo in cui sfruttare la creazione di un lanciatore potrebbe essere quello di utilizzarlo per eseguire una determninata applicazione all' avvio del sistema.
 
@@ -184,7 +184,7 @@ Questo può essere realizzato creando, se non è ancora stato definito, oppure c
 
 
 
-#### Esempio: esecuzione automatica di un'applicazione all'avvio del sistema
+### Esempio: esecuzione automatica di un'applicazione all'avvio del sistema
 
 Per esemplificare il procedimento descritto in precedenza, segue il codice utilizzato per la definizione, a linea di comando, del lanciatore di Kupfer, un avviatore di applicazioni in stile spotlight, in modo tale che  questo venga eseguito automaticamente, ad ogni accesso al sistema.
 
@@ -203,7 +203,7 @@ Exec=kupfer --no-splash
 
 
 
-#### Esempio: utilizzo del lanciatore come scorciatoia per gli aggiornamenti
+### Esempio: utilizzo del lanciatore come scorciatoia per gli aggiornamenti
 
 Su Ubuntu e derivate, il lanciatore può anche essere sfruttato per velocizzare la ricerca e l'esecuzione degli aggiornamenti di sistema, facendo in modo che l'utente avviarne l'esecuzione con un semplice click sull'icona *Update*, che si troverà nel **Menu Applicazioni**.
 
@@ -227,7 +227,7 @@ Terminal=True" > ~/.local/share/applications/apt-update.desktop
 
 
 
-#### Software Dex: creazione di un lanciatore senza sporcarsi (troppo) le mani
+### Software Dex: creazione di un lanciatore senza sporcarsi (troppo) le mani
 
 Se per ogni nuova applicazione che verrà installata sul sistema, copiare ed incollare poche linee di codice per creare un lanciatore risulta un dispendio di energie non accettabile, allora si può utilizzare `Dex`.
 
