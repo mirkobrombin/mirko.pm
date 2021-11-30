@@ -13,36 +13,37 @@ tags:
 - fedora
 ---
 
-Conoscere l'uso delle chiavi SSH è, al giorno d'oggi, una conoscenza essenziale.
-Rispetto alle classiche password, che possono essere forzate attraverso un attacco a dizionario, le chiavi SSH sono in grado di resistere a questo tipo di forzatura. In questo articolo scopriamo come generare una coppia di chiavi SSH e sfruttarle per l'accesso a un server GNU/Linux!
+Conoscere l'uso delle chiavi SSH è, al giorno d'oggi una conoscenza essenziale.
+Rispetto alle classiche password, che possono essere forzate attraverso un attacco a dizionario, le chiavi SSH sono in grado di resistere a questo tipo di forzatura. 
+In questo articolo scopriamo come generare una coppia di chiavi SSH e sfruttarle per l'accesso a un server GNU/Linux!
 
 ## Teoria sulle chiavi SSH
 
-Una coppia di chiavi SSH è suddivisa in due chiavi, quella pubblica e quella privata.
+Una coppia di chiavi SSH è suddivisa in due chiavi: Pubblica e Privata.
 
-La chiave pubblica è in grado di crittare dati che solo la corrispondente chiave privata è in grado di decrittare. La chiave privata è in grado di decrittare ciò che viene crittato con la corrispondente chiave pubblica.
+La chiave pubblica è in grado di criptare dati che solo la corrispondente chiave privata è in grado di decriptare. La chiave privata è in grado di decrptare ciò che viene criptato con la corrispondente chiave pubblica.
 
 ## Funzionamento di un login tramite chiavi SSH
 
-Durante un login tramite SSH attraverso l'uso delle chiavi SSH avviene una situazione di questo tipo:
+Durante un login tramite SSH attraverso l'uso delle chiavi SSH avvengono le seguenti cose:
 
-1) Il client inizializza una connessione SSH al server inviando ad esso la chiave pubblica con la quale vuole accedere
+- Il client inizializza una connessione SSH al server inviando ad esso la chiave pubblica con la quale vuole accedere
 
-2) Il server controlla che la chiave SSH pubblica sia presente all'interno del file `authorized_keys`. Se così è, si procede l'autenticazione
+- Il server controlla che la chiave SSH pubblica sia presente all'interno del file `authorized_keys`. Se così è, si procede l'autenticazione
 
-3) Il server invia un messaggio casuale al client, crittandolo con la chiave pubblica inviata al server, dal client, nel punto 1
+- Il server invia un messaggio casuale al client, criptandolo con la chiave pubblica inviata al server, dal client, nel punto 1
 
-4) Il client, attraverso la chiave privata, decritta il messaggio inviato dal server
+- Il client, attraverso la chiave privata, decripta il messaggio inviato dal server
 
-5) Il client invia al server il messaggio decrittato
+- Il client invia al server il messaggio decriptato
 
-6) Se i messaggi corrispondono allora il client può avere accesso al server
+- Se i messaggi corrispondono allora il client può avere accesso al server
 
 ## Generazione delle chiavi SSH
 
-Per generare una coppia di chiavi SSH useremo l'algoritmo "ED25519".
+Per generare una coppia di chiavi SSH utilizzeremo l'algoritmo "ED25519".
 
-Spesso viene anche usato RSA come algoritmo, però presenta dei problemi come il fatto di non essere resiliente a collisioni di funzioni hash, ossia quando un valore viene hashato nello stesso modo con il quale è stato hashato un altro valore. Tramite ED25519 questo problema viene risolto!
+Spesso viene anche usato "RSA" come algoritmo, però presenta dei problemi, come il fatto di non essere resiliente a collisioni di funzioni hash, ossia quando un valore viene hashato nello stesso modo con il quale è stato hashato un altro valore. Tramite ED25519 questo problema viene risolto!
 
 Dunque, generiamo la nostra coppia di chiavi SSH:
 
@@ -60,8 +61,8 @@ Analizziamo le flag:
 
 - -C: Indica un commento da poter inserire
 
-Avviando questo comando, il software **ssh-keygen** ci chiederà di inserire una password con la quale crittare la nostra chiave privata per maggiore sicurezza. 
-In caso che qualcuno ci rubasse la chiave privata, non sarebbe comunque in grado di utilizzarla perché non conoscerebbe la password di essa.
+Avviando questo comando, il software **ssh-keygen** ci chiederà di immettere una password con la quale criptare la nostra chiave privata per una maggiore sicurezza. 
+Nel malaugurato caso in cui qualcuno ci rubasse la nostra chiave privata, non sarebbe  in grado di utilizzarla perché non conoscerebbe la password di essa.
 
 ## Importazione delle chiavi SSH sul server
 
@@ -75,16 +76,16 @@ ssh-copy-id utente@ipserver
 
 In questo comando bisognerà sostituire ***utente*** con il nome utente che si desidera usare per l'autenticazione tramite chiavi SSH e ***ipserver*** che andrà sostituito con l'IP del server al quale connettersi.
 
-## Ritocchi finali
+## Passaggi finali
 
-Ora che abbiamo configurato l'accesso tramite chiavi SSH è conveniente fare dei piccoli ritocchi per rendere ancora più sicuro l'accesso al server. 
-Questi piccoli ritocchi consistono nel cambiare la porta in ascolto del server SSH, che di default è 22, a una porta diversa come la **34821** e accettare solo autenticazioni tramite chiavi SSH.
+Adesso che abbiamo configurato l'accesso tramite chiavi SSH è consigliato effettuare dei passaggi per aumentare la sicurezza nell'accesso al server
+Questi passaggi consistono nel cambiare la porta in ascolto del server SSH, che di default è 22, a una porta diversa come la **34821** e accettare solo autenticazioni tramite chiavi SSH.
 
-La porta 22 infatti viene principalmente usata a scopi di bruteforce o, in italiano, forzatura. Anche se usiamo l'autenticazione tramite chiavi SSH è sempre meglio cambiare la porta di ascolto del server SSH.
+La porta 22 infatti viene principalmente usata a scopi di bruteforce cioé a scopo di forzatura. Anche se usiamo l'autenticazione tramite chiavi SSH è consigliabile cambiare la porta di ascolto del server SSH.
 
 Per farlo andremo ad editare il seguente file: `/etc/ssh/sshd_config`
 
-Siccome tempo è denaro, tramite questo comando saremo in grado di eseguire i ritocchi finali in modo molto semplice:
+Dato che  il tempo è denaro, tramite questo comando saremo in grado di completare i passaggi in modo semplice:
 
 ```bash
 sed -i '1s/^/Port 34821\nPasswordAuthentication no\n/' sshd_config
