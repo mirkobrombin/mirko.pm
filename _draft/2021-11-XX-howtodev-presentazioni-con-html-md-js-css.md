@@ -25,7 +25,7 @@ A fine articolo il lettore acquisirà le competenze per utilizzare reveal.js all
 
 ## Prerequisiti 
 
-Al lettore son richieste alcune specifiche conoscenze in ambito di programmazione: 
+Al lettore son richieste alcune specifiche conoscenze in ambito di programmazione, quali: 
 
 - html
 - css
@@ -33,7 +33,7 @@ Al lettore son richieste alcune specifiche conoscenze in ambito di programmazion
 - utilizzo di node e npm
 - utilizzo di git 
 
-Opzionalmente potrebbe esservi utile conoscere: 
+Opzionalmente, potrebbe essere utile conoscere: 
 
 - markdown
 - scss
@@ -42,7 +42,7 @@ Opzionalmente potrebbe esservi utile conoscere:
 
 ## Cos'è Reveal.js
 
-[Reveal.js](https://revealjs.com) è un framework scritto con varie tecnologie *node* che permette all'utilizzatore di creare facilmente delle presentazioni in modalità **WYSIWYM** (**W**hat **Y**ou **S**ee **I**s **W**hat **Y**ou **M**ean) scrivendo codice html, js, css e opzionalmente markdown.   
+[Reveal.js](https://revealjs.com) è un framework, scritto con varie tecnologie *node*, che permette all'utilizzatore di creare facilmente delle presentazioni in modalità **WYSIWYM** (**W**hat **Y**ou **S**ee **I**s **W**hat **Y**ou **M**ean), scrivendo codice html, js, css e opzionalmente markdown.   
 
 
 
@@ -66,7 +66,7 @@ La prima cosa da fare è clonarsi il repository di Reveal.js:
 git clone https://github.com/hakimel/reveal.js.git 
 ```
 
-Entrate nella directory e fare partire i processi di installazione di npm: 
+Entra nella directory e fate partire i processi di installazione di npm: 
 ```bash
 cd reveal.js
 
@@ -84,9 +84,9 @@ Normalmente il server parte sulla porta `8000`, tuttavia  possiamo cambiarla a p
 npm start -- --port=8080
 ```
 
-Apriamo il nostro browser sull'indirizzo: `http://localhost:8000` ( o qualunque porta abbiamo scelto ) e troveremo le nostre slide li, pronte ad essere visualizzate tramite browser e ricaricate per ogni singola modifica che facciamo.
+Apriamo il nostro browser sull'indirizzo: `http://localhost:8000` ( o qualunque porta abbiamo scelto ) e troveremo le nostre slide lì, pronte ad essere visualizzate tramite browser e ricaricate per ogni singola modifica che facciamo.
 
-Ora però che abbiamo tutti i tasselli in ordine, apriamo il nostro editor di codice preferito ( consiglio Visual studio code ) e iniziamo a scrivere i contenuti delle nostre slide.
+Ora però che abbiamo tutti i tasselli in ordine, apriamo il nostro editor di codice preferito ( consiglio Visual studio code ) ed iniziamo a scrivere i contenuti delle nostre slide.
 
 
 
