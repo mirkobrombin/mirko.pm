@@ -88,5 +88,5 @@ Per farlo andremo ad editare il seguente file: `/etc/ssh/sshd_config`
 Dato che  il tempo è denaro, tramite questo comando saremo in grado di completare i passaggi in modo semplice:
 
 ```bash
-sed -i '1s/^/Port 34821\nPasswordAuthentication no\n/' sshd_config
+sed -i '1s/^/Port 34821\nPasswordAuthentication no\n/' /etc/ssh/sshd_config
 ```
