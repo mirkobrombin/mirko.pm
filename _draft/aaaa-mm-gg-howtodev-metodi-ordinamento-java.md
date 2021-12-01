@@ -10,17 +10,17 @@ tags:
 
 
 
-Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi è fondamentale per tantissime aziende che lavorano nel mondo IT. 
+Java è stato per anni uno dei linguaggi più utilizzati, da poco sorpassato da Python in fama, ma ancora oggi fondamentale per tantissime aziende che lavorano nel mondo IT. 
 
 
 
 ## Obiettivi
 
-In questo articolo verranno affrontati i seguenti argomenti
+In questo articolo verranno affrontati i seguenti argomenti:
 
-- Il problema dell'ordinamento dei vettori 
-- metodi di ordinamento classici in java 
-- divide et impera nei vettoris
+- il problema dell'ordinamento dei vettori;
+- i metodi di ordinamento classici in java;
+- divide et impera nei vettori;
 
 
 
@@ -41,13 +41,15 @@ Se siete novizi di Java potete iniziare direttamente da [*Introduzione alla prog
 
 Uno dei problemi più studiati nel mondo dell'informatica è come effettuare una ricerca in maniera veloce ed efficiente.  
 
-I termini di paragone utilizzati sono lo spazio occupato ed il tempo. Per il calcolo delle prestazioni in tal senso viene in genere utilizzato un input di dati teoricamente infinito, senza mettere su troppa notazione matematica, questo comporta che se indichiamo infinito con &#8734; e con **c** un qualunque numero sappiate che: 
+I termini di paragone utilizzati sono lo spazio occupato ed il tempo. 
 
-- *&#8734; + c = &#8734;*  ( una somma di un numero con infinito non non modifica il risultato )
+Per il calcolo delle prestazioni in tal senso viene, in genere, utilizzato un input di dati teoricamente infinito, senza mettere su troppa notazione matematica, questo comporta che se indichiamo infinito con &#8734; e con **c** un qualunque numero sappiate che: 
+
+- *&#8734; + c = &#8734;*  ( una somma di un numero con infinito non modifica il risultato )
   - stessa cosa per la sottrazione 
 - *c&#215;&#8734; = &#8734;*  ( una moltiplicazione di un numero con infinito non modifica il risultato )
   - stessa cosa per la divisione 
-- *&#8734; + &#8734; = &#8734;* ( una somma di un numero con infinito non  modifica il risultato )
+- *&#8734; + &#8734; = &#8734;* ( una somma di un numero con infinito non modifica il risultato )
   - stessa cosa per la sottrazione 
 - *&#8734;&#215; &#8734; = &#8734;<sup>2</sup>* ( una moltiplicazione di un numero con infinito modifica il risultato )
   - stessa cosa per la divisione
@@ -56,7 +58,7 @@ I termini di paragone utilizzati sono lo spazio occupato ed il tempo. Per il cal
 
 
 
-Questo concetto, se compreso, aiuterà a comprendere come alcune scelte nel codice *possono o non possono* influenzare le prestazioni in base anche semplicemente alla loro posizione.
+Questo concetto, se compreso, aiuterà a capire come alcune scelte nel codice *possono o non possono* influenzare le prestazioni in base anche semplicemente alla loro posizione.
 
 
 
@@ -81,9 +83,9 @@ Nell'articolo saranno trattati anche:
 
 
 
-## metodi di ordinamento classici
+## Metodi di ordinamento classici
 
-I metodi di ordinamento classici nonchè i primi studiati a livello didattico sono
+I metodi di ordinamento classici nonchè i primi studiati a livello didattico sono:
 
 - **selection sort**
 - **insertion sort**
@@ -91,7 +93,7 @@ I metodi di ordinamento classici nonchè i primi studiati a livello didattico so
 
 
 
-Questi rappresentano anche dal punto di vista logico quelli *più naturali*, così come anche quelli meno efficienti.   
+Questi rappresentano, anche dal punto di vista logico, quelli *più naturali*, così come anche quelli meno efficienti.   
 
 
 

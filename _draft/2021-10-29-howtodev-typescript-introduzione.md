@@ -33,13 +33,11 @@ In questo articolo vedremo :
 
 ## Prerequisiti 
 
-Per eseguire javascript e installare typescript avete bisogno di `node` e `npm`. Per comprendere a pieno l'articolo: 
+Per eseguire javascript e installare typescript avete bisogno di `node` e `npm`. Per comprendere a pieno l'articolo serviranno: 
 
 - Conoscenze base di javascript 
 - Conoscenze base di programmazione procedurale 
-- Conoscenze base di logica di programmazione ( i.e. logica booleana )
-
-
+- Conoscenze base di logica di programmazione ( i.e. logica booleana)
 
  
 
@@ -67,7 +65,9 @@ Una volta compilato, troveremo un file javascript da poter testare come meglio s
 node nomefile.js  
 ```
 
-## commenti  
+
+
+## Commenti  
 
 Esistono due tipi di commenti in ts, inline: 
 
@@ -101,7 +101,7 @@ const stringa="aaaaaaaa";
 
 
 
-Tuttavia volendo sfruttare quelli che sono i meccanismi di TypeScript potremmo specificare la tipologia di ogni variabile dopo il suo nome, separato dal carattere `:` 
+Tuttavia, volendo sfruttare quelli che sono i meccanismi di TypeScript, potremmo specificare la tipologia di ogni variabile dopo il suo nome, separato dal carattere `:` 
 
 ```typescript
 var lettera:string="a";
@@ -112,7 +112,7 @@ const stringa:string="aaaaaaaa";
 
 
 
-### string concat e string interpolation
+### String concat e String interpolation
 
 Si possono "sommare" due stringhe così facendo: 
 
@@ -132,18 +132,16 @@ let variabile:number=3
 let stringaSomma: string=stringa1+variabile;// diventa = "ciao3"
 ```
 
-Il tutto diventa poi di tipo stringa ovviamente. 
+Il risultato verrà poi convertito in tipo stringa ovviamente. 
 
 
 
-Le stringhe hanno anche il concetto di **interpolazione**, questa operazione consente di inserire variabili all'interno di una stringa senza usare la somma ma richiamando le variabili direttamente al suo interno. Per farlo bisogna creare le stringhe con il **backtick** (carattere **&#96;**) e inserire le singole variabili all'interno della combinazione `${}`
+Le stringhe permettono anche l'utilizzo del concetto di **interpolazione**, un'operazione che consente di inserire delle variabili all'interno di una stringa, senza usare la somma, ma richiamando le variabili direttamente al suo interno. Per farlo bisogna creare le stringhe con il **backtick** (carattere **&#96;**) ed inserire le singole variabili all'interno della combinazione `${}`
 
 ```typescript
 let codice:number=9
 let stringa:string=`Identità numero ${numero}!` // diventa="Identità numero 9!"
 ```
-
-
 
 
 
@@ -155,7 +153,7 @@ Per stampare una variabile possiamo usare la console log :
 console.log(nomevariabile)
 ```
 
-Genericamente il console log fa il cast automatico delle variabili in stringhe, perciò è comune scrivere al suo interno direttamente le stringhe sommate o interpolate: 
+Genericamente il console log fa il casting automatico delle variabili in stringhe, perciò è comune scrivere al suo interno direttamente le stringhe sommate o interpolate: 
 
 ```typescript
 console.log("La variabile x ha valore "+x)
@@ -163,7 +161,7 @@ console.log(`La variabile y ha valore ${y}`)
 ```
 
 
-Tuttavia al suo interno il metodo prende un numero infinito di stringhe che poi concatena automaticamente separando da spazi. Non è quindi affatto strano trovarsi di fronte anche ad una sintassi simile: 
+Tuttavia, questo metodo, nella sua implementazione, prende un numero infinito di stringhe che poi concatena automaticamente separandole tramite degli spazi. Non è quindi affatto strano trovarsi di fronte ad un tipo di sintassi simile: 
 
 ```typescript
 console.log("La variabile x ha valore",x,"e la variabile y ha valore",y)
@@ -179,9 +177,9 @@ Si può specificare il tipo array con la sintassi:
 var vettore_numeri:number[] = [18,18,30];
 ```
 
-Alternativamente anche con il tipo `Array<number>` 
+Alternativamente, lo si può fare anche con il tipo `Array<number>` .
 
-Sugli array si possono fare le normali operazioni di javascript, segue esempio sulla media 
+Sugli array si possono eseguire le normali operazioni di javascript, segue esempio sulla media :
 
 ```typescript
 let vettore_numeri:Array<number> = [18,30,18,21]
@@ -222,7 +220,9 @@ Ancora, si può usare il metodo `concat`, che permette anche di aggiungere inter
 
 ### Tuple
 
-Le tuple son vettori nel quale devi definire a priori il tipo di ogni cella. È un tipo che nativamente non presente in javascript ed introdotto su **typescript**. Supponiamo un vettore che rappresenta *nome,cognome ed età*
+Le tuple sono vettori nei quali deve essere definito a priori il tipo di ogni cella. Questo tipo, che non è nativamente presente in javascript, è stato introdotto in **typescript**. 
+
+Supponiamo di voler definire un vettore che rappresenta *nome,cognome ed età* :
 
 ```typescript
 var persona: [string,string, number]= ["Davide","Galati",30]
@@ -234,7 +234,7 @@ Se proviamo ad assegnare una combinazione diversa di tipi, ad esempio stringa, n
 persona: [string,string, number]= ["Davide",30,"Galati"]
 ```
 
-output: 
+L'output sarà: 
 
 ```typescript
 esempi.ts:40:20 - error TS2322: Type 'number' is not assignable to type 'string'.
@@ -248,7 +248,7 @@ esempi.ts:40:23 - error TS2322: Type 'string' is not assignable to type 'number'
                          ~~~~~~~~
 ```
 
-Le tuple hanno una dimensione fissa, se proviamo a creare una nuova cella (`persona[4]=123`) avremo in output un errore: 
+Le tuple hanno una dimensione prefissata, perciò se proviamo a creare una nuova cella (`persona[4]=123`) avremo in output un errore: 
 
 ```typescript
 esempi.ts:46:9 - error TS2493: Tuple type '[string, string, number]' of length '3' has no element at index '4'.
@@ -267,7 +267,7 @@ console.log(persona.concat(123))
 
 ### Enumerazioni
 
-Typescript possiede il tipo "*enumerazione*" che crea delle costanti identificate dal loro nome molto comode da usare: 
+Typescript possiede il tipo "*enumerazione*" che crea delle costanti identificate dal loro nome, molto comode da usare: 
 
 ```typescript
 enum BIBITE {
@@ -301,7 +301,7 @@ output:
 
 
 
-L'enumerazione viene inizializzata come una sorta di vettore, quindi per avere il suo valore stringa bisogna accedere utilizzando il numero ordinale all'intera enumerazione. Così: 
+L'enumerazione viene inizializzata come una sorta di vettore, quindi per avere il suo valore stringa bisogna accedervi utilizzando il numero ordinale all'intera enumerazione. Così: 
 
 ```typescript
 console.log("valore stringa="BIBITE[bibita])
@@ -315,7 +315,7 @@ ACQUA
 
 
 
-Per ottenere questa relazione biunivoca, sotto la scocca l'enumerazione viene come un json valido da un lato e da un altro. Per essere chiari stampando un intera enumerazione viene su questo :
+Per ottenere questa relazione biunivoca, sotto la scocca l'enumerazione viene vista come un json valido da un lato e da un altro. Per essere chiari, stampando un'intera enumerazione si ottiene questo :
 
 ```typescript
 tutte le bibite= {
@@ -328,13 +328,13 @@ tutte le bibite= {
 }
 ```
 
-Così facendo se si chiede l'elemento '`0`' viene restituita la stringa "`ACQUA`", ma se si chiede l'elemento "`ACQUA`" viene restituito anche lo '`0`' 
+Così facendo, se si chiede l'elemento '`0`' viene restituita la stringa "`ACQUA`", ma se si chiede l'elemento "`ACQUA`" viene restituito anche lo '`0`' 
 
-Quest'operazione è anche detta **Reverse mapping**
+Quest'operazione è anche detta **Reverse mapping** .
 
 #### Enumerazioni : AVANZATE 
 
-Si può assegnare alle enumerazioni un valore ben preciso, supponiamo questo esempio con i colori: 
+Si può assegnare, alle enumerazioni, un valore ben preciso, supponiamo questo esempio con i colori: 
 
 ```typescript
 enum COLORI {
@@ -346,7 +346,7 @@ enum COLORI {
 
 
 
-In questo modo quando andremo ad utilizzare l'enumerazione, il suo valore numerico è sostituito dal valore che gli abbiamo dato noi.
+In questo modo, quando andremo ad utilizzare l'enumerazione, il suo valore numerico sarà sostituito dal valore che gli abbiamo dato.
 
 Stampando: 
 
@@ -354,7 +354,7 @@ Stampando:
 console.log(COLORI.ROSSO)
 ```
 
-La risposta sarà 
+La risposta sarà:
 
 ```typescript
 #FF0000
@@ -362,7 +362,7 @@ La risposta sarà
 
 
 
-Ma cosa succede al *Reverse mapping*? Sostanzialmente si perde, infatti se proviamo a stampare l'enumerazione scopriremo sostanzialmente che le relazioni non sono più biunivoche: 
+Ma cosa succede al *Reverse mapping*? Sostanzialmente si perde, infatti se proviamo a stampare l'enumerazione scopriremo che le relazioni non sono più biunivoche: 
 
 ```typescript
 console.log("Tutti i colori=",COLORI);
@@ -409,7 +409,7 @@ valore stringa colore rosso = ROSSO
 
 
 
-Resta comunque possibile ciclare con un for in automatico tutte le chiavi di un enumerazione, così:
+Resta comunque possibile ciclare, con un for, in automatico tutte le chiavi di un'enumerazione, così:
 
 ```typescript
 for (let i in COLORI){ 
@@ -429,9 +429,9 @@ BLUE
 
 ### Tipo any
 
-Una dichiarazione che non ha vincoli di alcun tipo ( come in javascript per intenderci ) sottointende in typescript il tipo `any`
+Una dichiarazione che non ha vincoli di alcun tipo ( come in javascript, per intenderci ) sottointende, in typescript, il tipo `any`.
 
-può essere usato come tipo in inizializzazioni di qualunque genere, variabili o vettori, e viene considerato implicito se non c'è nessun tipo nell'inizializzazione di una variabile :
+Questo può essere usato come tipo in inizializzazioni di qualunque genere, variabili o vettori, e viene considerato implicito se non è stato definito nessun tipo nell'inizializzazione di una variabile :
 
 ```typescript 
 let variabile="sono una stringa" // questa variabile è di tipo any
@@ -439,7 +439,7 @@ let variabile="sono una stringa" // questa variabile è di tipo any
 let variabilequalunque:any="sono una stringa qualunque" // anche questa variabile  
 ```
 
-Questo tipo è molto comodo nei metodi, nel tipo di ritorno oppure nelle tuple, dove è necessario dichiarare a priori dei tipi. Altresì si potrebbe utilizzare per creare vettori misti 
+Questo tipo è molto comodo nei metodi, nel tipo di ritorno oppure nelle tuple, dove è necessario dichiarare a priori dei tipi. Altresì si potrebbe utilizzare per creare dei vettori di elementi di tipi misti.
 
 
 
