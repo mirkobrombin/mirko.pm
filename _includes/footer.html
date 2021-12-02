@@ -12,23 +12,31 @@
 </footer>
 <link rel="stylesheet" type="text/css" href="{{ site.assets }}/css/style.min.css?v7" />
 
-<!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'https://data.fabricators.ltd/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', '08c9c84478b561361c95bf7c22a0036a']);
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
+<script type='text/javascript'>
+    //some default pre init
+    var Countly = Countly || {};
+    Countly.q = Countly.q || [];
 
-(function() {
-    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
+    //provide countly initialization parameters
+    Countly.app_key = 'd88efdfbf1f66898b81cdcdc0491cb8d6acc8be0';
+    Countly.url = 'https://analytics.fabricators.ltd';
+
+    Countly.q.push(['track_sessions']);
+    Countly.q.push(['track_pageview']);
+    Countly.q.push(['track_clicks']);
+    Countly.q.push(['track_scrolls']);
+    Countly.q.push(['track_errors']);
+    Countly.q.push(['track_links']);
+
+    //load countly script asynchronously
+    (function() {
+        var cly = document.createElement('script'); cly.type = 'text/javascript';
+        cly.async = true;
+        //enter url of script here
+        cly.src = 'https://analytics.fabricators.ltd/sdk/web/countly.min.js';
+        cly.onload = function(){Countly.init()};
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+    })();
 </script>
-<!-- End Open Web Analytics Code -->
 
         
