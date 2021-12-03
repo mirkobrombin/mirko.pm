@@ -1,10 +1,10 @@
 ---
 title: '#howto - Chiavi SSH' 
-date: 2021-12-03 11:00
+date: 2021-12-03 13:15
 layout: post 
 author: Alphvino
 author_github: Alphvino
-published: false
+published: true
 tags: 
 - server 
 - ssh 
