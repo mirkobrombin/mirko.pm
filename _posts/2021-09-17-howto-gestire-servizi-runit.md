@@ -45,7 +45,7 @@ Per abilitare ed avviare un servizio basta fare un collegamento dalla cartella d
 
 | Distro | Cartella di esecuzione |
 | ------:| ---------------------- |
-| Artix  | /var/run/              |
+| Artix  | /run/runit/service/    |
 | Void   | /var/service/          |
 | Devuan | /var/run/              |
 
