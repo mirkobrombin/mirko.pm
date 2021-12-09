@@ -1,9 +1,10 @@
 ---
 title: '#howtodev - Introduzione a typescript' 
-date: 2021-10-29 10:42
+date: 2021-XX-YY 11:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+published: false
 tags: 
 - javascript
 - typescript
@@ -65,8 +66,47 @@ Una volta compilato, troveremo un file javascript da poter testare come meglio s
 node nomefile.js  
 ```
 
+### Target di compilazione
+
+In alcuni casi potrebbe essere necessario cambiare target di compilazione, cioè specificare che quel file verrà  eseguito con una versione specifica di javascript più che un altra. Ad esempio supponiamo di voler eseguire Typescript con versioni di javascript da es6 in poi:
+
+```bash
+tsc -t es6 file.ts
+```
+
+Va poi ovviamente eseguito in modo appropriato anche con node:
+```bash
+node --harmony file.js
+```
 
 
+
+### Debug
+
+Il debug su typescript va impostato seguendo alcuni passaggi.
+Innanzitutto va creato il così detto "*source map*" che aiuta il debugger di node a capire quale istruzione js corrisponde a quale istruzione typescript. In fase di compilazione di ts scrivere :
+
+```typescript
+tsc --sourceMap true nomefile.ts
+```
+
+
+
+Quindi dobbiamo dire a node di andare in modalità *debug*, ma nel farlo specificheremo di non eseguire il file se non vi è attaccato alcun debugger:
+
+```typescript
+node --inspect-brk nomefile.js
+```
+
+
+
+Quindi ci uscirà in output indirizzo e porta di debug, normalmente:
+
+```
+127.0.0.1:9229
+```
+
+A quel punto possiamo chiedere al nostro IDE di connettersi a quel websocket remoto per il debug
 ## Commenti  
 
 Esistono due tipi di commenti in ts, inline: 
@@ -145,6 +185,8 @@ let stringa:string=`Identità numero ${numero}!` // diventa="Identità numero 9!
 
 
 
+
+
 ### Console log
 
 Per stampare una variabile possiamo usare la console log :
@@ -168,6 +210,10 @@ console.log("La variabile x ha valore",x,"e la variabile y ha valore",y)
 ```
 
 
+
+#### console.log senza andare a capo
+
+Non esiste un modo per non andare a capo con `console.log`, ma potete ovviare: create una stringa con ciò che volete stampare costruendola passo passo senza new lines
 
 ### Array
 
@@ -216,7 +262,33 @@ nomi[nomi.length]="emanuela";
 
 Ancora, si può usare il metodo `concat`, che permette anche di aggiungere interi vettori.
 
+#### scorrere un array per indice
 
+Per scorrere un array abbiamo diversi meccanismi.
+
+Possiamo scorrere i vari indici attraverso la parolina `in`
+
+```typescript
+for (let i in vettore) {
+	console.log(`${i} \u00e8 l'indice di ${vettore[i]} nel vettore`);
+}
+```
+
+
+
+> <u>**NB:**</u>
+>
+> l'indice viene però prelevato come se fosse una stringa, quindi non potete utilizzarlo poi per calcoli matematici a meno di conversioni.
+
+#### scorrere un array per indice
+
+Alternativamente possiamo scorrere direttamente i valori attraverso la parolina of
+
+```typescript
+for (let val of vettore) {
+	console.log(`${val} \u00e8 un elemento del vettore`);
+}
+```
 
 ### Tuple
 
@@ -490,9 +562,7 @@ esempi.ts:107:5 - error TS2322: Type 'string' is not assignable to type 'void'.
 107 let asd:void="ciao"
 ```
 
-
-
-### Tipo custom type o json 
+### Oggetti o json
 
 Possiamo creare al volo un tipo custom, un json, formato da più tipi primitivi al suo interno. 
 Ecco come: 
@@ -513,4 +583,37 @@ Possiamo quindi richiamare ogni singolo valore all'interno dell'oggetto usando l
 
 ```typescript
 console.log("valore 1 dell'oggetto=",oggetto.valore1);
+```
+
+
+
+### Tipi definiti come variabili
+
+Possiamo crearci un nuovo tipo dandogli un nome con la direttiva `type`.
+
+Creiamoci ad esempio un **tipo: libro**, che è un oggetto con nome e descrizione:
+
+```typescript
+type libro = {nome:string,autore:string}
+```
+
+Quindi assegnamo una variabile di tipo libro, ad esempio la variabile hp:
+
+```typescript
+var hp:libro= {nome:"harry potter: la pietra filosofale",autore:"J.K.Rowling"}
+```
+
+Questo potrebbe facilitare la lettura nonché il riutilizzo di oggetti specifici.
+
+Possiamo anche definire un tipo come l'unione di più tipi, ad esempio il tipo alfanum, che può essere un number o una stringa:
+
+```typescript
+type alfanum = string | number;
+```
+
+E quindi inizializzarle una variabile come alfanum tanto con una stringa quanto con un numero:
+
+```typescript
+let v1:alfanum = "ciao";
+let v2:alfanum = 1;
 ```
