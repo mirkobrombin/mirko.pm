@@ -4,37 +4,37 @@ title: '#howto - Creazione di servizi runit'
 date: 2021-12-09 11:00
 layout: post 
 author: Massimiliano Noviello
-author_github: linuxhubit 
+author_github: DumbMahreeo
 published: false
 tags: 
-
+- Artix 
+- Void 
+- Devuan
 - init 
 - daemon
 - systemd
 - runit
-
----  
-
+ ---  
 ## Intro
 
-Abbiamo già parlato in un [articolo precedente](https://linuxhub.it/articles/howto-gestire-servizi-runit/) di come gestire servizi runit già esistenti, ma che sia per la mancanza delle loro controparti systemd o per un nostro bisogno personale, saperli creare può rivelarsi un'abilità molto utile.
+Abbiamo giá affrontato precedentemente questo argomento, e abbiamo capito il metodo [articolo precedente](https://linuxhub.it/articles/howto-gestire-servizi-runit/) per gestire dei servizi runit già esistenti. 
+Saperli creare é sempre una competenza in piú, e che risulterá sempre molto utile.
 
-Andiamo quindi a vedere come possiamo fare per impostare dei nostri servizi.
-
+Andiamo quindi a impostare i nostri servizi.
 
 
 ## Struttura di un servizio
 
-Essi non sono altro che cartelle all'interno di una grande cartella d'esecuzione (se non conosci la tua magari dai un'occhiata all'[articolo](https://linuxhub.it/articles/howto-gestire-servizi-runit/) dove parliamo di gestione dei servizi), adesso vedremo alcuni file fondamentali che l'utente dovrà includere in esse.
+Essi non sono altro che cartelle all'interno di una grande cartella d'esecuzione (se non conosci la tua magari dai un'occhiata all'[articolo](https://linuxhub.it/articles/howto-gestire-servizi-runit/) dove viene trattata la gestione dei servizi), adesso vedremo alcuni file fondamentali che l'utente dovrà includere in queste cartelle.
 
 
 
 ### File `run`
 
-Il file `run` è un semplice script nella root del servizio, con un normale shebang
-(`#!/bin/sh` genericamente) che si occupa di effettuare l'avvio del servizio.
+Il file `run` è uno script nella root del servizio, con un normale shebang
+(comunemente `#!/bin/sh` ) che si occupa di effettuare l'avvio del servizio.
 
-Esso deve essere eseguibile, quindi sarebbe opportuno dare
+Esso deve essere eseguibile, quindi é opportuno dare i seguenti comandi
 
 ```bash
 chmod +x run
@@ -42,7 +42,7 @@ chmod +x run
 
 subito dopo la sua creazione.
 
-Nonostante la sua somiglianza ad un normale script è importante tenere a mente un paio di cose:
+Nonostante la sua somiglianza ad un normale script è importante ricordare un paio di cose:
 
 * È importante non eseguire nulla che rimanga in background rispetto all'esecuzione dello script (ad esempio l'operatore `&`)
 
@@ -50,7 +50,7 @@ Nonostante la sua somiglianza ad un normale script è importante tenere a mente 
 
 
 
-Rendendo il contenuto di un file `run` qualcosa di simile:
+Rendendo il contenuto di un file `run` in questa maniera:
 
 ```bash
 #!/bin/sh
@@ -60,40 +60,34 @@ exec nome_processo
 
 
 
-### File `config` (opzionale)
+### File `config` 
 
 Il file `config` esattamente come prima sarà uno script, ma il suo scopo è fornire impostazioni allo script `run`, di conseguenza nella maggiorparte dei casi si tratterà solamente di un file contentente delle variabili da esportare. Esso si attiene alle stesse regole stabilite per run.
 
+*NB: Questo file è totalmente opzionale*
+
+
+
+### File `finish` 
+
+È uno script esattamente come `run` e `config`, e come loro si attiene alle regole stabilite per `run`, solo che esso viene eseguito in fase di arresto del processo.
 
 *NB: Questo file è totalmente opzionale*
 
 
 
-### File `finish` (opzionale)
+### Cartella `log` 
 
-È uno script esattamente come `run` e `config`, ed esattamente come loro si attiene alle regole stabilite per `run`, solo che esso viene eseguito in fase di arresto del processo.
+Questa é una parte molto interessante.
 
-
-
-*NB: Questo file è totalmente opzionale*
-
-
-
-### Cartella `log` (opzionale)
-
-Questa è molto interessante.
-
-La cartella `log` contiene generalmente questi due file
+La cartella `log` contiene generalmente questi due file:
 
 * Un secondo `run`, il cui compito è catturare lo stdout del primo e loggarlo
 
 * Un file `current` dove viene indicato qual è lo script di log in uso.
 
 
-
 Tuttavia qui è richiesto l'uso del logger di runit chiamato `svlogd`, che uscirebbe fuori dallo scopo di questo articolo.
-
-
 
 *NB: Tutta questa cartella è totalmente opzionale*
 
