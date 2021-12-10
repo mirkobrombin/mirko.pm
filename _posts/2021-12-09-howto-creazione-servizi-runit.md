@@ -1,11 +1,10 @@
 ---
-
 title: '#howto - Creazione di servizi runit' 
-date: 2021-12-09 11:00
+date: 2021-12-09 10:10
 layout: post 
 author: Massimiliano Noviello
-author_github: DumbMahreeo
-published: false
+author_github: linuxhubit
+published: true
 tags: 
 - Artix 
 - Void 
@@ -14,7 +13,8 @@ tags:
 - daemon
 - systemd
 - runit
- ---  
+---
+
 ## Intro
 
 Abbiamo giá affrontato precedentemente questo argomento, e abbiamo capito il metodo [articolo precedente](https://linuxhub.it/articles/howto-gestire-servizi-runit/) per gestire dei servizi runit già esistenti. 
