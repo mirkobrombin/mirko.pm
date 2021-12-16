@@ -40,8 +40,8 @@ sudo pacman -S exa
 
 
 ## [fd](https://github.com/sharkdp/fd)
-**fd** possiamo considerarlo il **find** sotto steroidi, fd server per cercari file o cartelle nel nostro sistema, 
-la sua paculiarità è quella di essere più efficente nella ricerca, ha una sintassi più semplice e intuitiva oltre
+**fd** possiamo considerarlo il **find** sotto steroidi, fd server per cercare file o cartelle nel nostro sistema, 
+la sua peculiarità è quella di essere più efficente nella ricerca, ha una sintassi più semplice e intuitiva oltre
 che l'highlight di essa.
 alcuni comandi:
 ``` bash
