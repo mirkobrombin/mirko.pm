@@ -1,10 +1,9 @@
 ---
 title: '#howto - Utilizzare tool cli alternativi scritti in rust' 
-date: 2021-12-17 11:00
+date: 2021-12-17 13:15
 layout: post 
 author: Floppy Loppy
 author_github: raspFloppy
-published: true
 tags: 
 - ubuntu
 - fedora
@@ -12,7 +11,7 @@ tags:
 - bash 
 ---
 
-Rust è diventato un linguaggio che negli ultimi anni ha raggiunto molta popolarità e molti sviluppatori si sono divertiti a riscrivere molti software cli che 
+Rust è diventato un linguaggio che negli ultimi anni ha raggiunto molta popolarità e molti sviluppatori si sono divertiti a riscrivere molti software cli che  
 troviamo preinstallati nelle nostre distro, seguendo l'onda del "Rewrite it in Rust".
 Andiamo a vedere alcuni di questi software.
 
@@ -43,8 +42,7 @@ sudo pacman -S exa
 
 ## [fd](https://github.com/sharkdp/fd)
 
-**fd** possiamo considerarlo il **find** sotto steroidi, fd server per cercare file o cartelle nel nostro sistema, 
-la sua peculiarità è quella di essere più efficente nella ricerca, ha una sintassi più semplice e intuitiva oltre
+**fd** possiamo considerarlo il **find** sotto steroidi, fd server per cercare file o cartelle nel nostro sistema, la sua peculiarità è quella di essere più efficente nella ricerca, ha una sintassi più semplice e intuitiva oltre
 che l'highlight di essa.
 alcuni comandi:
 
@@ -91,11 +89,9 @@ Per installarlo su Archlinux:
 sudo pacman -S fd
 ```
 
-
 ## [bat](https://github.com/sharkdp/bat)
 
-**bat** è il sostituto di **cat** e serve per mostrare il contenuto dei file stampandolo su terminale, 
-implementa nell'output il nome del file, l'highlight della sintassi e la collonna delle righe in modo da rendere più chiara il tutto, esempio:
+**bat** è il sostituto di **cat** e serve per mostrare il contenuto dei file stampandolo su terminale, implementa nell'output il nome del file, l'highlight della sintassi e la collonna delle righe in modo da rendere più chiara il tutto, esempio:
 
 ``` bash
 ───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -168,8 +164,7 @@ sudo pacman -S ripgrep
 
 ## [procs](https://github.com/dalance/procs)
 
-**proc** è il sostituto di **ps**, ovvero si occupa di mostrare i processi del nostro sistema, come quasi tutti i software elencati prima, esso possiede 
-l'highlight della sintassi oltre che un output più dettagliato dei processi.
+**proc** è il sostituto di **ps**, ovvero si occupa di mostrare i processi del nostro sistema, come quasi tutti i software elencati prima, esso possiede, l'highlight della sintassi oltre che un output più dettagliato dei processi.
 
 Per installarlo su Ubuntu:
 
