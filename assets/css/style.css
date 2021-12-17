@@ -336,7 +336,8 @@ footer {
     gap: 10px 0;
 }
 
-aside b,aside span {
+aside b,
+aside span {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
