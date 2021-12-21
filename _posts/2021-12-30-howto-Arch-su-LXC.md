@@ -1,4 +1,3 @@
-```
 ---
 title: '#howto - Arch GNU/Linux su LXC' 
 date: 2021-12-30 12:00
@@ -11,7 +10,6 @@ tags:
 - lxc
 - archlinux
 ---
-```
 
 Configurare Arch GNU/Linux su container LXC non è una passeggiata, questo avviene per il fatto che sono molto conosciuti problemi riguardo a dei certificati CA quando si prova a configurarlo. Per mia esperienza personale, su proxmox, mentre cercavo di configurare Arch GNU/Linux su LXC ho riscontrato problemi simili. In questo articolo vediamo come configurare correttamente Arch GNU/Linux su LXC!
 
