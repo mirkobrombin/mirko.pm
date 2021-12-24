@@ -38,9 +38,9 @@ condivisione delle configurazioni desktop *gentedilinux*
 configurazioni non del pinguino.
 
 Da quando abbiamo fornito la guida per 
-[scrivere un'articolo su linuxhub](https://linuxhub.it/articles/howto-scrivere-un-articolo-per-linuxhub/) 
+[scrivere un articolo su linuxhub](https://linuxhub.it/articles/howto-scrivere-un-articolo-per-linuxhub/) 
 anche qualcuno di esterno si è avvicinato alla redazione del progetto,
-portando ottimi contenuti e riflessioni, qualcun' altro invece si è dimostrato 
+portando ottimi contenuti e riflessioni, qualcun altro invece si è dimostrato 
 interessato a darci degli spunti interessanti ma non da scriverci lui stesso 
 qualcosa. Quindi, perché non utilizzare il forum per raccogliere idee e 
 approfittare anche di *creazioni di guide spontanee* date anche dal supporto 
@@ -49,6 +49,7 @@ dei nostri utenti? Questo è un altro dei vari utilizzi che faremo del forum!
 Beh caro Babbo, come sempre ti lascio una scatola di cookies e ti ringrazio se 
 vorrai passare a leggere queste righe, e magari a dare un occhiata al nostro 
 forum. Chissà se il primo post sarà proprio il tuo! 
+
 
 Buon Natale 2021,   
 
