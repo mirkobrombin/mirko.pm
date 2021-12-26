@@ -11,39 +11,39 @@ tags:
 - archlinux
 ---
 
-Configurare Arch GNU/Linux su container LXC non è una passeggiata, questo avviene per il fatto che sono molto conosciuti problemi riguardo a dei certificati CA quando si prova a configurarlo. Per mia esperienza personale, su proxmox, mentre cercavo di configurare Arch GNU/Linux su LXC ho riscontrato problemi simili. In questo articolo vediamo come configurare correttamente Arch GNU/Linux su LXC!
+Configurare Arch GNU/Linux su container LXC non è molto semplice,  per il fatto che sono molto conosciuti problemi riguardo a dei certificati CA quando si prova a configurarlo. In questo articolo vediamo come configurare correttamente Arch GNU/Linux su LXC, e non incappare in problemi!
 
 ## Teoria su container LXC
 
-I container LXC sono una tecnologia di virtualizzazione che permettono tempi di deployment corti e minimo uso di memoria RAM. Ogni container LXC è isolato da ogni altro container e condivide lo stesso kernel dell'host.
+I container LXC sono una tecnologia di virtualizzazione che permettono dei tempi di deployment corti e un minimo uso di memoria RAM. Ogni container LXC è isolato da ogni altro container e condivide lo stesso kernel dell'host.
 
-Ad esempio se l'host, ossia la macchina nella quale vengono deployati i container LXC, possiede il kernel 5.15.7 anche i container che verranno deployati possiederano il medesimo kernel.
+Ad esempio se l'host, ossia la macchina nella quale vengono deployati i container LXC, possiede il kernel 5.15.7 anche i container che verranno deployati possiederanno il medesimo kernel.
 
 ## Selezione di un mirror
 
 Prima di tutto è necessario selezionare un mirror dal quale ricevere aggiornamenti.
 
-Basterà editare il file `/etc/pacman.d/mirrorlist` e selezionare un mirror appropriato.
+Basterà editare il file `/etc/pacman.d/mirrorlist` e selezionare il mirror che piú ci aggrada.
 
 ## Configurazione iniziale di pacman-key
 
-Una volta deployato il container LXC di Arch GNU/Linux, è possibile iniziare la configurazione, iniziando con pacman-key.
+Una volta deployato il container LXC di Arch GNU/Linux, è possibile svolgere la configurazione, iniziando con pacman-key.
 
-Il primo comando che andremo ad eseguire è il seguente:
+Ecco il  primo comando che andremo ad eseguire:
 
 ```shell
 pacman-key --init
 ```
 
-Tramite questo comando siamo in grado di controllare che il keyring, ossia l'insieme delle chiavi, sia inizializzato correttamente. Se tutto funziona correttamente il comando non restituisce output.
+Tramite questo comando siamo in grado di controllare che il keyring, ossia l'insieme delle chiavi, sia inizializzato correttamente. Se tutto funziona correttamente il comando non restituisce un output.
 
-Ora che abbiamo controllato che il keyring sia funzionante è il momento di aggiungere le chiavi di Arch GNU/Linux tramite questo comando:
+Una volta controllato che il keyring sia funzionante, è il momento di aggiungere le chiavi di Arch GNU/Linux mediante questo comando:
 
 ```shell
 pacman-key --populate archlinux
 ```
 
-Così facendo saremo in grado di inserire nel keyring le chiavi di Arch GNU/Linux che risiedono in `/usr/share/pacman/keyrings`
+In questo modo saremo in grado di inserire nel keyring le chiavi di Arch GNU/Linux che risiedono in `/usr/share/pacman/keyrings`
 
 ## Configurazione dei certificati CA
 
@@ -55,11 +55,12 @@ trust extract-compat
 
 Tramite questi due comandi siamo in grado di far funzionare correttamente gli aggiornamenti su Arch GNU/Linux.
 
-Grazie a questo comando i certificati vengono estratti permettendo così la loro lettura nel modo corretto!
+Inoltre, grazie a questo comando i certificati vengono estratti permettendo così la loro lettura nel modo corretto.
 
 ## Configurazione del keyring aggiornato
 
-Bene, siamo giunti alla fine della configurazione. In quest'ultima parte dovremmo solo installare i pacchetti `gnupg` e `archlinux-keyring` e ricaricare `pacman-key` con le chiavi aggiornate, appena scaricate.
+Siamo giunti dunque alla fine della configurazione. 
+In quest'ultima parte dovremmo solo installare i pacchetti `gnupg` e `archlinux-keyring` e ricaricare `pacman-key` con le chiavi aggiornate, appena scaricate.
 
 Installiamo i due pacchetti:
 
@@ -75,10 +76,11 @@ pacman-key --refresh-keys
 
 ## Update finale
 
-Ora abbiamo completato la configurazione di Arch GNU/Linux su LXC! L'unico passaggio che ci rimane è fare un bel update completo del sistema e verificare che funzioni tutto! Quindi, da bravi arch user eseguiamo il mistico comando:
+Ora abbiamo completato la configurazione di Arch GNU/Linux su LXC! L'unico passaggio che ci rimane è fare un update completo del sistema e verificare che tutto funzioni correttamente!
+Quindi, da bravi Arch user eseguiamo il mistico comando:
 
 ```shell
 pacman -Syyu
 ```
 
-Specificando `yy` forzeremo il ricaricamento delle informazioni sui pacchetti del mirror così da avere un mirror aggiornato ad-hoc!
+Specificando `yy`  forzeremo il ricaricamento delle informazioni sui pacchetti del mirror così da avere un mirror aggiornato ad-hoc!
