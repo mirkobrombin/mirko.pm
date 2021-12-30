@@ -1,10 +1,10 @@
 ---
 title: '#howto - Arch GNU/Linux su LXC' 
-date: 2021-12-30 12:00
+date: 2021-12-30 10:45
 layout: post 
 author: Alphvino
 author_github: Alphvino
-published: false
+published: true
 tags: 
 - server 
 - lxc
