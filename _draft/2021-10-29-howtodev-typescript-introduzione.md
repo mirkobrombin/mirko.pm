@@ -225,7 +225,7 @@ let nomi:string[] = ["davide","giulia","giovanni"]
 nomi.push("emanuela")
 ```
 
-Oppure usando l'indice della lunghezza del vettore: 
+Oppure usando l'indice della lunghezza del vettore:
 
 ```typescript
 let nomi:string[] = ["davide","giulia","giovanni"]
@@ -276,7 +276,7 @@ Se proviamo ad assegnare una combinazione diversa di tipi, ad esempio stringa, n
 persona: [string,string, number]= ["Davide",30,"Galati"]
 ```
 
-L'output sarà: 
+L'output sarà:
 
 ```typescript
 esempi.ts:40:20 - error TS2322: Type 'number' is not assignable to type 'string'.
@@ -459,7 +459,7 @@ Questo tipo è molto comodo nei metodi, nel tipo di ritorno oppure nelle tuple, 
 
 ### Tipo void
 
-Il `void` è invece utilizzato nelle funzioni per annunciare l'assenza di un valore di ritorno 
+Il `void` è invece utilizzato nelle funzioni per annunciare l'assenza di un valore di ritorno
 
 ```typescript
 function nomeFunzione():void{
