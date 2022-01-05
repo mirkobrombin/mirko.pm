@@ -187,7 +187,7 @@ Tuttavia, questo metodo, nella sua implementazione, prende un numero infinito di
 console.log("La variabile x ha valore",x,"e la variabile y ha valore",y)
 ```
 
-#### console.log senza andare a capo
+#### Usare console.log senza andare a capo
 
 Non esiste un modo per non andare a capo con `console.log`, ma potete ovviare: create una stringa con ciò che volete stampare costruendola passo passo senza new lines
 
