@@ -1,10 +1,10 @@
 ---
 title: '#howtodev - Introduzione a typescript' 
-date: 2022-01-07 11:00
+date: 2022-01-07 12:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
-published: false
+published: true
 tags: 
 - javascript
 - typescript
