@@ -110,7 +110,6 @@ services:
 Come in per ogni altro server minecraft è necessario accettare l'accordo con l'utente finale di Mojang prima di poter effettuare l'avvio.
 
 ```yaml
-```yaml
 version: '3'
 
 services:
@@ -129,7 +128,6 @@ services:
       EULA: "TRUE"
 
     restart: "unless-stopped"
-```
 ```
 
 
