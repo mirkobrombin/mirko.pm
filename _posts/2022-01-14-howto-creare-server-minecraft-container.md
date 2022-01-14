@@ -1,5 +1,4 @@
 ---
-
 title: '#howto - Creare un server minecraft in container' 
 date: 2022-01-14 10:36
 layout: post 
@@ -13,7 +12,6 @@ tags:
 - podman
 - container
 - docker-compose
-
 ---
 
 ## Come creare un server di minecraft dockerizzato
