@@ -18,7 +18,7 @@ tags:
 
 Quante volte vi siete trovati in difficoltà nel gestire diversi server minecraft sulla vostra macchina? Beh, i container possono risolvere tutto questo.
 
-*Nota: Questo articolo fa uso di Docker o Podman, se desideri maggiori delucidazioni in materia potresti dare un'occhiata a [quest'altro articolo.](https://github.com/linuxhubit/linuxhub.it/blob/main/_posts/2021-04-30-howto-Installazione-ed-utilizzo-di-Docker-su-Linux.md)*
+*Nota: Questo articolo fa uso di Docker o Podman, se desideri maggiori delucidazioni in materia potresti dare un'occhiata a [quest'altro articolo.](https://linuxhub.it/articles/howto-Installazione-ed-utilizzo-di-Docker-su-Linux/)*
 
 ## Impostazione del container
 
@@ -113,7 +113,11 @@ L'opzione `restart` ci permette di indicare in questo caso di riavviare il serve
 
 ### Impostazioni aggiuntive
 
-È possibile tramite la sezione `environment` fornire alcune impostazioni che normalmente specificheremmo nel file `server.properties` o addirittura utilizzare un host per plugin come spigot o paper (nonostante sia possibile modificare a mano i file di configurazione consiglio sempre di fare il più possibile nel `docker-compose.yml`).
+È possibile tramite la sezione `environment` fornire alcune impostazioni che normalmente specificheremmo nel file `server.properties` o addirittura utilizzare un host per plugin come paperspigot (nonostante sia possibile modificare a mano i file di configurazione consiglio sempre di fare il più possibile nel `docker-compose.yml`).
+
+> *Nota:*
+>  
+> [PaperSpigot](https://github.com/felixklauke/paperspigot-docker) è un plugin ottimizzato per avviare server paperMC
 
 Ecco un paio di esempi in cui viene disabilitata la `online mode` (cioè viene disattivata l'autenticazione tramite account ufficiale) e impostato paper come plugin host.
 
