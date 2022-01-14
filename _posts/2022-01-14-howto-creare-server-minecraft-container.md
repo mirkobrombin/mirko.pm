@@ -1,3 +1,4 @@
+[2022-01-14-howto-creare-server-minecraft-container.md](https://github.com/linuxhubit/linuxhub.it/files/7869405/2022-01-14-howto-creare-server-minecraft-container.md)
 ---
 
 title: '#howto - Creare un server minecraft in container' 
