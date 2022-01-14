@@ -138,7 +138,7 @@ L'opzione `restart` ci permette di indicare in questo caso di riavviare il serve
 
 ### Impostazioni aggiuntive
 
-È possibile tramite la sezione `environment` fornire alcune impostazioni che normalmente specificheremmo nel file `server.properties` o addirittura utilizzare un host per plugin come spigot o paper.
+È possibile tramite la sezione `environment` fornire alcune impostazioni che normalmente specificheremmo nel file `server.properties` o addirittura utilizzare un host per plugin come spigot o paper (nonostante sia possibile modificare a mano i file di configurazione consiglio sempre di fare il più possibile nel `docker-compose.yml`).
 
 
 
