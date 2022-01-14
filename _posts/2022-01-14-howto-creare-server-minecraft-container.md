@@ -10,7 +10,7 @@ tags:
 - minecraft-server
 - docker
 - podman
-- container
+- containers
 - docker-compose
 ---
 
