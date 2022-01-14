@@ -1,7 +1,7 @@
 ---
 
 title: '#howto - Creare un server minecraft in container' 
-date: 2022-01-14 10:10
+date: 2022-01-14 10:36
 layout: post 
 author: Massimiliano Noviello
 author_github: linuxhubit
