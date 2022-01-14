@@ -117,7 +117,7 @@ L'opzione `restart` ci permette di indicare in questo caso di riavviare il serve
 
 > *Nota:*
 >  
-> [PaperSpigot](https://github.com/felixklauke/paperspigot-docker) è un plugin ottimizzato per avviare server paperMC
+> [PaperSpigot](https://github.com/felixklauke/paperspigot-docker) è un immagine ottimizzata per avviare server paperMC
 
 Ecco un paio di esempi in cui viene disabilitata la `online mode` (cioè viene disattivata l'autenticazione tramite account ufficiale) e impostato paper come plugin host.
 
