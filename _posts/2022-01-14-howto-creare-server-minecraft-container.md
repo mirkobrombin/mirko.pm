@@ -170,6 +170,7 @@ services:
 
 ```
 
+Potrete trovarne altri direttamente nel README della repository del progetto su github: [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server#readme)
 
 
 ## Interazione col server
