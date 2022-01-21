@@ -1,10 +1,10 @@
 ---
 title: '#howto - Emulare la Playstation su Linux' 
-date: 2022-01-21 15:00
+date: 2022-01-21 15:40
 layout: post 
 author: Floppy	
 author_github: raspFloppy
-published: false
+published: true
 tags: 
 - gaming
 - ubuntu
@@ -15,7 +15,9 @@ tags:
 Siete PC Gamer Nostalgici, o desiderate rigiocare i vostri giochi d'infanzia della famosissima PS1 di casa Sony? Nessun problema, ci viene in soccorso PCSX-Reloaded.
 Scopriamo subito come avverare il nostro desiderio.
 
-Disclaimer: Tutto lo staff di LinuxHub é contro ogni forma di pirateria, pertanto questo articolo é soltanto a scopo informativo.
+> Disclaimer:
+> 
+> Lo staff di LinuxHub é contro ogni forma di pirateria, pertanto questo articolo é soltanto a scopo informativo.
 
 
 ## PCSX-Reloaded (Playstation 1)
