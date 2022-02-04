@@ -1,6 +1,6 @@
 ---
 title: '#howto - Comprendere ed usare inputrc' 
-date: 2022-02-04 12:30
+date: 2022-02-04 15:11
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
@@ -8,17 +8,14 @@ published: true
 tags: 
 - inputrc 
 ---
+
 Eravate a conoscenza dell'esistenza di un file *denominato inputrc* che può essere utile, e vi puó aiutare a personalizzare la mappatura dei tasti del vostro terminale.
 
 Dalle Combinazioni di tasti, funzioni dello standard output, dello standard input ed altro, vediamo oggi come possiamo sfruttare al meglio questo strumento.
 
-
-
 ## La readline
 
 La prima domanda da porsi,  è chiedersi i software affetti dai cambiamenti che apporteremo a questo file, per comprenderli a pieno è necessario introdurre il concetto di `readline`.
-
-
 
 Nei sistemi operativi UNIX le librerie di **readline** rappresentano un livello di interazione che si interpone tra l'inserimento utente e quei software che gestiscono *lo standard input e lo standard output*, ovvero i software che normalmente agiscono tramite linea di comando (i.e. terminali).  
 
