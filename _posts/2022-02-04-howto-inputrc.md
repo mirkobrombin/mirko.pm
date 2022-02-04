@@ -7,6 +7,7 @@ author_github: PsykeDady
 published: true
 tags: 
 - inputrc 
+- bash
 ---
 
 Eravate a conoscenza dell'esistenza di un file *denominato inputrc* che può essere utile, e vi puó aiutare a personalizzare la mappatura dei tasti del vostro terminale.
@@ -31,14 +32,10 @@ Oppure in versione più interattiva con `info`:
 info readline
 ```
 
-
-
  ### Precisazione: bash vs altre shell 
 
 Se vi starete chiedendo perché le modifiche apportate sulla `readline` non influenzano la vostra shell (i.e. `zsh` con `oh-my-zsh`) è perché loro stesse ridefiniscono poi le opzioni della `readline`.
 Quindi, se volete vedere il risultato finale del vostro sistema a seguito delle modifiche apportate , utilizzate `bash`.
-
-
 
 ## Manipolare il file
 
@@ -52,16 +49,11 @@ Una prima parte dovrebbe contenere istruzioni del tipo:
 ```bash
 set nome-variabile valore
 ```
-
-
-
 Una seconda parte dovrebbe invece contenere questo tipo di righe: 
 
 ```bash
 "sequenza": comando
 ```
-
-
 
 Ovviamente esiste una sintassi ben precisa per ognuna di queste righe.  
 
@@ -91,8 +83,6 @@ Ovviamente la lista completa si trova nelle `info` della `readline`: `info readl
 - `mark-directories` : se abilitata, l'auto completamento completerà le cartelle aggiungendo anche un `/` finale.
 - `horizontal-scroll-mode`: se abilitata, quando un comando eccede la dimensione orizzontale del terminale (ovvero le colonne) la vista viene spostata sulla destra e non va a capo invece come succede normalmente.
 - `enable-bracketed-paste` : se abilitata, quando si copia un blocco di istruzioni che contengono dei caratteri "a capo", non vengono inviati ma vengono lasciati in modifica fino a che non si preme invio esplicitamente. Il comportamento predefinito prevede che se si copiano 2 linee di codice su bash, la prima venga inviata e venga lasciata in modifica solo la seconda.
-
-
 
 #### un esempio: 
 
