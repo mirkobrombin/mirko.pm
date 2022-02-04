@@ -8,22 +8,21 @@ published: false
 tags: 
 - inputrc 
 ---
+Eravate a conoscenza dell'esistenza di un file *denominato inputrc* che può essere utile, e vi puó aiutare a personalizzare la mappatura dei tasti del vostro terminale.
 
-Sapevate dell'esistenza di un file *denominato inputrc* che può aiutarvi a personalizzare la mappatura dei tasti del vostro terminale?  
-
-Combinazioni di tasti, funzioni dello standard output, dello standard input ed altro, vediamo come possiamo sfruttare al meglio questo strumento.
+Dalle Combinazioni di tasti, funzioni dello standard output, dello standard input ed altro, vediamo oggi come possiamo sfruttare al meglio questo strumento.
 
 
 
 ## La readline
 
-La prima domanda è quali software siano affetti dai cambiamenti che apportiamo a questo file, per comprenderlo a pieno è necessario introdurre il concetto di `readline`.
+La prima domanda da porsi,  è chiedersi i software affetti dai cambiamenti che apporteremo a questo file, per comprenderli a pieno è necessario introdurre il concetto di `readline`.
 
 
 
 Nei sistemi operativi UNIX le librerie di **readline** rappresentano un livello di interazione che si interpone tra l'inserimento utente e quei software che gestiscono *lo standard input e lo standard output*, ovvero i software che normalmente agiscono tramite linea di comando (i.e. terminali).  
 
-È forse inutile dire che trovate tutte le informazioni che desiderate in merito sul manuale della libreria, disponibile direttamente nei vostri sistemi tramite il comando: 
+È inutile ripetervi quindi, che trovate sempre tutte le informazioni che desiderate in merito sul manuale della libreria, disponibile  nei vostri sistemi tramite il comando: 
 
 ```bash
 man readline
@@ -39,18 +38,19 @@ info readline
 
  ### Precisazione: bash vs altre shell 
 
-Se vi state chiedendo perché le vostre modifiche sulla `readline` non influenzano la vostra shell (i.e. `zsh` con `oh-my-zsh`) è perché loro stesse ridefiniscono poi le opzioni della `readline`.
-Quindi se volete vedere come le vostre modifiche hanno effetto poi sul sistema, utilizzate `bash`.
+Se vi starete chiedendo perché le modifiche apportate sulla `readline` non influenzano la vostra shell (i.e. `zsh` con `oh-my-zsh`) è perché loro stesse ridefiniscono poi le opzioni della `readline`.
+Quindi, se volete vedere il risultato finale del vostro sistema a seguito delle modifiche apportate , utilizzate `bash`.
 
 
 
 ## Manipolare il file
 
-È innanzitutto necessario sapere che esistono due copie del file, una globale che si trova in `/etc/inputrc`, una per ogni utente nella propria home denominata come `$HOME/.inputrc`. Se quest'ultima non dovesse esistere, è possibile crearla da sé.
+È necessario sapere che esistono due copie del file, una globale che si trova in `/etc/inputrc`, una per ogni utente nella propria home denominata come `$HOME/.inputrc`. Se quest'ultima non dovesse esistere, è possibile crearla da sé.
 
 ### Struttura del file 
 
-Nel file possiamo trovare due tipologie di "righe" diverse tra loro, normalmente raggruppate e divise. Una prima parte dovrebbe contenere istruzioni del tipo:
+Nel file troveremo delle tipologie di "righe" diverse tra di loro, normalmente raggruppate e divise. 
+Una prima parte dovrebbe contenere istruzioni del tipo:
 
 ```bash
 set nome-variabile valore
@@ -82,9 +82,9 @@ Le variabili nel file vengono impostate con la seguente sintassi:
 set nome-variabile valore
 ````
 
-Normalmente il `valore` è selezionabile tra `on` o `off`, ma ci sono casi in cui son possibili altre scelte.  
+Normalmente il `valore`, è selezionabile tra `on` o `off`, ma ci sono casi in cui son possibili altre scelte.  
 
-Ovviamente la lista completa si trova nelle `info` della `readline`: `info readline` &rarr; `Command Line Editing` &rarr; `Readline init file` &rarr; `Readline Init File Syntax`, ma vediamo una selezione di alcune variabili che possono essere utili: 
+Ovviamente la lista completa si trova nelle `info` della `readline`: `info readline` &rarr; `Command Line Editing` &rarr; `Readline init file` &rarr; `Readline Init File Syntax`, ma vedremo una selezione di alcune variabili che possono essere utili: 
 
 - `colored-stats` :  impone l'uso dei colori nell'output dell'auto completamento, se vi è più di un risultato. 
 - `comment-begin` : tramite questa variabile puoi impostare quale carattere va inserito a inizio linea per far si che un comando sia considerato un commento. Di default è `#` (modificare questo valore potrebbe invalidare diversi script)
@@ -99,7 +99,7 @@ Ovviamente la lista completa si trova nelle `info` della `readline`: `info readl
 
 #### un esempio: 
 
-Abilitiamo alcune variabiuli come `horizontal-scroll-mode`, `completion-ignore-case` e 
+Abilitiamo alcune variabili come `horizontal-scroll-mode`, `completion-ignore-case` e 
 
 `colored-stats`: 
 
@@ -147,7 +147,7 @@ Per riassumere, la mappatura di tutte le lettera della tastiera può essere fatt
 
 - **back slash (\)** : `\\`.  
 
-A scansare ogni equivoco si può comunque usare il valore del carattere ascii stesso tramite una di queste due sequenze: 
+A scanso di ogni equivoco ,si può comunque usare il valore del carattere ascii stesso tramite una di queste due sequenze: 
 
 - `\NNN` : valore in ottale
 -  `\xHH`: Valore in esadecimale
@@ -165,7 +165,7 @@ I comandi possibili sono veramente tanti, ancora una volta vi è l'esortazione a
 
 Vediamone alcuni tra quelli che si potrebbero considerare più utili:
 
-- "`tab-insert`" : inserisce il carattere tab. Normalmente non potreste farlo perché a tab è già assegnato l'autocompletamento
+- "`tab-insert`" : inserisce il carattere tab. Normalmente non potreste farlo ,perché a tab è già assegnato l'autocompletamento.
 - "`overwrite-mode`" : inserisce la modalità di sovrascrittura, ovvero ogni carattere che scriverete sostituirà quello antecedente al cursore
 - "` possible-completions`" : normalmente mappato come `alt+?`, chiede la lista dei possibili auto completamenti
 - " `copy-forward-word`" : copia la parola davanti al cursore 
