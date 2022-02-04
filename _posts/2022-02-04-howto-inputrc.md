@@ -10,7 +10,7 @@ tags:
 - bash
 ---
 
-Eravate a conoscenza dell'esistenza di un file *denominato inputrc* che può essere utile, e vi puó aiutare a personalizzare la mappatura dei tasti del vostro terminale.
+Eravate a conoscenza dell'esistenza di un file *denominato inputrc* che può essere utile, e vi puó aiutare a personalizzare la mappatura dei tasti del vostro terminale?
 
 Dalle Combinazioni di tasti, funzioni dello standard output, dello standard input ed altro, vediamo oggi come possiamo sfruttare al meglio questo strumento.
 
