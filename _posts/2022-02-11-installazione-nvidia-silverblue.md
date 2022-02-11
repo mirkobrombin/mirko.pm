@@ -1,6 +1,6 @@
 ---
 title: '#howto - Installare driver NVIDIA su Silverblue' 
-date: 2022-02-04 15:11
+date: 2022-02-04 17:47
 layout: post 
 author: Mirko Brombin
 author_github: mirkobrombin 
