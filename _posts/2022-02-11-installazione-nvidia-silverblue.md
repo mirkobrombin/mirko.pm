@@ -43,6 +43,7 @@ Procediamo con l'installazione dei driver NVIDIA. Ci sono diversi altri 2 pacche
 
 * `xorg-x11-drv-nvidia-cuda` per il supporto a CUDA
 * `xorg-x11-drv-nvidia-power` per la gestione dei profili
+
 Nel nostro caso li installeremo tutti:
 
 ```bash
