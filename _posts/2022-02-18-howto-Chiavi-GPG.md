@@ -13,43 +13,38 @@ tags:
 - debian
 ---
 
-Molto probabilmente avete già letto l'articolo riguardo [chiavi SSH](https://linuxhub.it/articles/howto-Chiavi-ssh/) e avete sicuramente capito che esse vengono usate per l'autenticazione a un server. Oggi parliamo, invece, di chiavi GPG, un ottimo metodo per inviare e ricevere messaggi criptati! 
+Molto probabilmente avete già letto l'articolo riguardo l'utilizzo delle [chiavi SSH](https://linuxhub.it/articles/howto-Chiavi-ssh/) e avete sicuramente capito che queste vengono usate per autenticarsi ad un server. Oggi parliamo, invece, di chiavi GPG, un ottimo metodo per inviare e ricevere messaggi criptati.
 
 
 ## GPG? Da dove deriva?
 
-GNU Privacy Guard, o meglio conosciuto come GPG, è un software libero(rigorosamente) che fu ideato per sostituire la vecchia PGP.
+GNU Privacy Guard, o meglio conosciuto come GPG, è un software libero (rigorosamente) che fu ideato per sostituire la vecchia PGP (Pretty Good Privacy).
 
-Attualmente esistono 3 branch di sviluppo per questo software:
+Attualmente vengono mantenuti 3 rami di sviluppo differente per questo software:
 
-- Branch modern, v2.2.x, contiene tutte le funzionalità proposte.
+- **modern** v2.2.x, contiene tutte le funzionalità proposte
 
-- Branch stable, v2.0x, consigliata per uso standard.
+- **stable** v2.0x, consigliata per uso standard
 
-- Branch classic, v1.4.x, disponibile per retro-compatibilità.
+- **classic** v1.4.x, disponibile per retro-compatibilità
 
 ## Dove posso installare la suite GPG?
 
-GPG è disponibile su sistemi GNU/Linux, *BSD, Windows e MacOS.
+GPG è disponibile su sistemi GNU/Linux, *BSD, Windows e MacOS. Questo ci permette di poter criptare e decriptare messaggi cifrati in qualsiasi sistema ci troviamo.
 
-Questo ci permette di poter criptare e decriptare messaggi cifrati in qualsiasi sistema ci troviamo.
-
-Inoltre esistono anche software grafici che semplificano l'uso di GPG come [Kleopatra](https://www.openpgp.org/software/kleopatra/) o [Seahorse](https://it.wikipedia.org/wiki/Seahorse).
+Esistono inoltre anche software grafici che semplificano l'uso di GPG come [Kleopatra](https://www.openpgp.org/software/kleopatra/) o [Seahorse](https://it.wikipedia.org/wiki/Seahorse).
 
 ## Concetto di chiave pubblica e privata
 
-Il funzionamento di GPG si basa sull'uso di una coppia di chiavi pubblica e privata.
+Il funzionamento di GPG si basa sull'uso di una coppia di chiavi *pubblica* e *privata*.
 
-Come dice il nome la chiave pubblica è quella che posso condividere con altri, mentre quella privata deve rimanere solo mia.
+Come dice il nome la chiave pubblica è quella che possiamo condividere con terzi, mentre quella privata deve rimanere solo al proprietario.
 
-Mettiamo caso una situazione dove Marco vuole inviare un messaggio criptato ad Andrea con l'uso di GPG.
+Mettiamo caso una situazione dove Marco vuole inviare un messaggio criptato ad Andrea via GPG:
 
 1) Marco scrive il messaggio e lo cripta con la chiave pubblica di Andrea
-
 2) Marco invia il messaggio ad Andrea via mail o tramite altri servizi
-
 3) Andrea riceve il messaggio e lo decripta attraverso la sua chiave privata
-
 4) Andrea legge il messaggio e in caso risponde criptando il messaggio con la chiave pubblica di Marco
 
 Da ciò abbiamo capito che per inviare messaggi criptati con GPG dobbiamo essere in possesso della chiave pubblica del destinatario mentre per decriptarli dobbiamo essere in possesso della chiave privata.
@@ -65,23 +60,14 @@ gpg --full-generate-key
 Analizziamo il processo:
 
 1) Ci viene chiesto che tipo di chiave creare, scegliamo l'opzione 1.
-
 2) Ci viene chiesta la lunghezza della chiave, scegliamo 4096 bits dato che sarà ancora più difficile da bucare. Anche 3072 bits è una buona lunghezza quasi imbucabile, però è sempre meglio avere 4096 bits.
-
 3) Ci viene chiesto di inserire il tempo per il quale la chiave rimarrà valida. Se si vuole specificare che la chiave scada fra 340 giorni basta semplicemente scrivere 340. Se invece si vuol far scadere la chiave fra 5 anni basta scrivere 5y. Oppure è possibile rendere la chiave valida a vita scrivendo 0.
-
 4) Ora confermiamo le informazioni inserite con "y"
-
 5) Inseriamo il nostro nome per la chiave, ad esempio "Andrea".
-
 6) Inseriamo la nostra mail.
-
 7) In caso aggiungiamo un commento come "Chiavi di Andrea"
-
 8) Confermiamo scrivendo "O".
-
 9) Infine inseriamo una password.
-
 10) Ora dobbiamo fare qualche azione casuale, come scrivere cose a caso nel blocco note, per generare entropia.
 
 ## Esportiamo la nostra coppia di chiavi!
