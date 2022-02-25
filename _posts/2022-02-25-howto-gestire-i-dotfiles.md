@@ -1,6 +1,6 @@
 ---
 title: '#howto - Gestire i dotfiles' 
-date: 2022-02-25 10:19
+date: 2022-02-25 10:30
 layout: post 
 author: Floppy
 author_github: raspFloppy
