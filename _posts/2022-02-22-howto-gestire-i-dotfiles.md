@@ -4,7 +4,7 @@ date: 2022-02-25 10:45
 layout: post 
 author: Floppy
 author_github: raspFloppy
-published: false
+published: true
 tags: 
 - ubuntu
 - fedora
