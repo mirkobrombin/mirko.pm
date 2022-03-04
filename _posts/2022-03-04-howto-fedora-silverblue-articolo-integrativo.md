@@ -1,6 +1,6 @@
 ---
 title: '#howto - Articolo integrativo su Fedora Silverblue'
-date: 2022-03-04 12:47
+date: 2022-03-04 11:30
 layout: post 
 author: MastroAlberto (aka Alberto Bella) 
 author_github: al6263
