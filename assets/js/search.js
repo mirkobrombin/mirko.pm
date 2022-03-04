@@ -7,7 +7,6 @@ search_results = document.querySelector(".searchbox .results ul"),
 search_result = document.querySelector(".searchbox .results ul li"),
 search_keywords = "";
 
-
 var taglist_tmp = [];
 var posts = [];
 
