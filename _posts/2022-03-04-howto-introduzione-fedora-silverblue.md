@@ -1,10 +1,10 @@
 ---
-title: '#pausacaffé - introduzione a Fedora Silverblue'
-date: 2022-02-04 11:00
+title: '#howto - introduzione a Fedora Silverblue'
+date: 2022-02-04 11:15
 layout: post 
 author: MastroAlberto (aka Alberto Bella) 
 author_github: al6263
-published: false
+published: true
 tags:
 - Container
 - Fedora
@@ -88,15 +88,15 @@ Beh iniziamo sicuramente da DNF, difatti con i container abbiamo una versione di
 
 All'interno di Toolbox tutte le applicazioni sono isolate dal sistema principale, sebbene porti dei vantaggi sopratutto in termini di sviluppo, è una soluzione meno adatta ad applicazioni lato GUI, infatti dovremo copiare il `.desktop` e modificarlo a dovere per poter vedere le nostre applicazioni girare come se fossero integrate, ma tranquilli arriverà una guida a proposito. 
 
-Prestazionalmente invece, non ho notato alcun calo, c'è da dire però che per esempio Chromium  ritarda qualche secondo nell'apertura e su GNOME non si può appuntare nella dock ( piccolezze insomma )
+Nei casi più generali dal punto di vista delle prestazioni non vi è alcun calo, personalmente ho potuto osservare che per software del calibro di Chromium ritarda qualche secondo nell'apertura
 
-
+Un altro difetto che può essere fastidioso è che su GNOME non si possono appuntare le applicazioni installate con questo metodo
 
 ### Rpm-ostree
 
 Questo terzo metodo a differenza dei primi due si tratta di fare una vera e propria estensione dei pacchetti di cui è composto il sistema di base.
 
-Il suo principale scopo è l'installazione di pacchetti con un interesse globale sul sistema, i quali non possono essere eseguiti all'interno dei container:
+Il suo principale scopo è l'installazione di pacchetti con un interesse globale sul sistema, i quali non possono essere eseguiti all'interno dei container.
 
 Possono essere per esempio driver, librerie o anche Desktop-Environment
 
@@ -106,28 +106,22 @@ la sintassi per installare di pacchetti è:
 $ rpm-ostree install <nome pacchetto>`
 ```
 
-Questa operazione è comunque abbastanza lenta, abbiate pazienza in ogni caso, al termine del processo verrà richiesto un riavvio in modo da applicare le modifiche in stallo, se invece desiderate applicare live le modifche potete utilizzare una flag particolare:
+Questa operazione è comunque abbastanza lenta, abbiate pazienza in ogni caso, al termine del processo verrà richiesto un riavvio in modo da applicare le modifiche in stallo (si ricordi che il file system è in sola lettura, quindi ogni modifica al sistema necessita un riavvio), se invece desiderate applicare live le modifche potete utilizzare una flag particolare:
 
 ```bash
 $ rpm-ostree --apply-live install <nome pacchetto>` 
 ```
-tuttavia non lo consiglio anche per una questione di sicurezza 
 
-Possiamo anche fare un **override** del pacchetto, ovvero possiamo aver per esempio una casistica dove vogliamo testare una nuova versione di un determinato software; 
+tuttavia non lo consiglio anche per una questione di sicurezza.
 
-La sintassi:
+Possiamo anche fare un **override** del pacchetto, ovvero possiamo aver per esempio una casistica dove vogliamo testare una nuova versione di un determinato software, ecco come:
 
 ```bash
 $ rpm-ostree override replace <path to package>
 ```
 
-E se volessimo rimuovere anche quello che stiamo sovrascrivendo, arrivando quindi a sostituirlo completamente? 
+E se volessimo rimuovere anche quello che stiamo sovrascrivendo, arrivando quindi a sostituirlo completamente? Ecco come:
 
-SI puo!
-
-```bash	
+```bash
 $ rpm-ostree override remove <path to package>
 ```
-
-
-E questo è tutto per oggi, abbiamo parlato in generale della distro se avete qualsiasi dubbio non esitate a scrivere nel [nostro gruppo telegram](t.me/linuxpeople)
