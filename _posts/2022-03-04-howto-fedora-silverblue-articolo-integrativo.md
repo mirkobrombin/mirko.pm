@@ -4,7 +4,6 @@ date: 2022-03-04 12:47
 layout: post 
 author: MastroAlberto (aka Alberto Bella) 
 author_github: al6263
-published: true
 tags:
 - Container
 - Fedora
