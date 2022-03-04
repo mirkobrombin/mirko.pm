@@ -18,7 +18,7 @@ fetch('https://linuxhub.it/search.json')
         function search() 
         {
             term = search_field.value.toLowerCase();
-            search_results.innerHTML = "",
+            search_results.innerHTML = "";
             body.style.overflow = "hidden";
 
             if(term.length < 3) {return false}
