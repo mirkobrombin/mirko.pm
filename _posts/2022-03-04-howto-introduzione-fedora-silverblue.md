@@ -1,6 +1,6 @@
 ---
 title: '#howto - introduzione a Fedora Silverblue'
-date: 2022-02-04 11:15
+date: 2022-03-04 11:15
 layout: post 
 author: MastroAlberto (aka Alberto Bella) 
 author_github: al6263
