@@ -107,7 +107,7 @@ let b=a
 
 
 
-Vi state sbagliando è anche tanto. 
+Vi state sbagliando ed anche tanto.  
 Supponendo che, durante un compito in classe, stiate pensando di poter chiedere aiuto ad un vostro collega più preparato, ci si può arrivare benissimo da soli a capire che c'è un enorme differenza tra *copiare il suo compito* (ciò che fa lo spread operator) e *prendere direttamente il suo compito e consegnare lo stesso identico foglio in due* (**b=a**). 
 
 Se già nella realtà questo vi sembra errato, dal punto di vista della programmazione corrisponde ad un concetto ben noto a cui il programmatore deve sempre fare molta attenzione, denominato "**aliasing**". Se fate aliasing di una variabile, quando ne cambiate il valore, cambierete il valore anche dell'altra variabile, contemporaneamente!  
