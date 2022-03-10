@@ -161,7 +161,7 @@ Se pur usa la stessa identica notazione, il significato è totalmente diverso.
 
 I Parametri REST (in altri linguaggi son chiamati anche *varargs*) servono a *raggruppare tanti parametri dello stesso tipo* nell'*intestazione di una funzione*, senza però saperne esattamente il numero! Questi parametri vengono poi raccolti e si possono utilizzare nel metodo sotto forma di vettore. 
 
-![Cart](cart.png)
+![Cart](/uploads/javascript/RESTvsSPREAD/cart.png)
 
 ### Nella pratica 
 
