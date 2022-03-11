@@ -1,10 +1,10 @@
 ---
 title: '#howtodev - SPREAD vs REST Operators in Javascript'
-date: 2022-03-11 11:30
+date: 2022-03-11 13:45
 layout: post 
 author: Davide Galati (in arte PsykeDady) 
 author_github: PsykeDady
-published: false
+published: true
 tags:
 - javascript
 - REST
