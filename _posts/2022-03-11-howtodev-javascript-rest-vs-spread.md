@@ -17,18 +17,22 @@ Ma di cosa si tratta e quali sono le differenze?
 
 ## Obiettivi
 
-In questo articolo si raggiungeranno i seguenti obiettivi
+In questo articolo si raggiungeranno i seguenti obiettivi:
 
-- comprensione degli operatori SPREAD in javascript
-- comprensione dei parametri REST in javascript
+- comprensione degli operatori SPREAD
+- comprensione dei parametri REST
+
+Nel linguaggio Javascript
 
 ## Prerequisiti 
 
 Lista dei prerequisiti e di conoscenze presenti in altri articoli che verranno date per scontato: 
 
-- conoscenza dei tipi primitivi di Javascript
-- padronanza degli array e dei json in javascript
-- conoscenza delle funzioni in javascript e dei parametri 
+- conoscenza dei tipi primitivi
+- padronanza degli array e dei json
+- conoscenza delle funzioni e dei parametri
+
+Ovviamente sempre riguardante Javascript
 
 ## Significato
 
