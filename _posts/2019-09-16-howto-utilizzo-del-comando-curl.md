@@ -82,6 +82,6 @@ Nel caso in cui vogliamo interagire con la risorsa inviando un header, ad esempi
 
 il quale restituirà un output a seconda della programmazione della risorsa.
 
-Per dubbi e chiarimenti, fate accesso al nostro gruppo [Telegram](https://t.me/gentedilinux).
+
 
 _?Good *nix _**__Mirko_**
