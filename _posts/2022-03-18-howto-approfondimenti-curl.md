@@ -7,11 +7,10 @@ author_github: PsykeDady
 published: true
 tags: 
 - curl
+
 ---
 
 Abbiamo già parlato del comando `curl` [in un articolo precedente](https://linuxhub.it/articles/howto-utilizzo-del-comando-curl/), ma spendiamoci qualche parola in più
-
-
 
 ## Descrizione approfondita
 
@@ -43,13 +42,11 @@ curl http://ind.iri.zzo.ip:porta/risorsa/
 
 Tuttavia alcuni siti hanno necessità di credenziali per determinate operazioni, anche solo per navigare. 
 
-CURL ti consente di autenticarti tramite protocollo BASIC AUTHENTICATION così: 
+**cURL** ti consente di autenticarti tramite protocollo **BASIC AUTHENTICATION** così: 
 
 ```bash
 curl -v http://ind.iri.zzo.ip:porta/risorsa/ --user nomeutente:password
 ```
-
-
 
 
 
@@ -67,13 +64,9 @@ htmlparsing () {
 curl 'http://ind.iri.zzo.ip:porta/risorsa/' | while htmlparsing ; do if [[ "$VALUE" != "" ]]; then echo $VALUE;fi  ; done
 ```
 
-Non è proprio bellissimo il risultato ma qualcosa la riuscirete a capire!
+Non è proprio bellissimo il risultato ma qualcosa la riuscirete a capire!  
 
-
-
-Premete poi `CTRL+C` per terminare
-
-
+Premete poi `CTRL+C` per terminare  
 
 ## POST 
 
@@ -84,13 +77,13 @@ Ecco come inviarne una:
 curl -X post -H "Content-Type: application/json;" -d "{json}" ind.iri.zzo.ip
 ```
 
+
+
 Potete anche sostituire a "post" un altra tipologia di richiesta, come PUT, realizzandone quindi una di quel tipo!
-
-
 
 ## IMAP 
 
-Potete fare delle richieste IMAP per navigare la posta
+Potete fare delle richieste IMAP per navigare la posta.  
 Ad esempio chiedere la lista delle cartelle email:
 
 ```bash
@@ -111,7 +104,7 @@ Ma se vogliamo analizzare una cartella? Dobbiamo aggiungere una richiesta con il
 curl --ssl imaps://imap-mail.outlook.com:993 -u 'ind.iri.zzo@email':'password'  --request "EXAMINE nomecartella"
 ```
 
-La parola "`EXAMINE`" è un comando imap, ne esistono diversi. 
+La parola "`EXAMINE`" è un comando imap, ne esistono diversi.  
 
 Supponiamo ora di voler vedere i primi 5 UID (ovvero gli **identificativi unici** che rappresentano ogni messaggio) della cartella "**inbox**": 
 
@@ -134,8 +127,6 @@ Leggiamo quella con **id 13**, per farlo introduciamo anche il flag `-v` o megli
 ```bash
 curl --ssl imaps://imap-mail.outlook.com:993/inbox -u 'ind.iri.zzo@email':'password' -X "FETCH 1 BODY.PEEK[]" -v
 ```
-
-
 
 Ovviamente esistono molti altri comandi IMAP da poter utilizzare con curl per eliminare la propria posta ad esempio, marcarla come letta oppure come da leggere, spostarla o archiviarla. Leggere e gestire la propria email attraverso curl potrebbe sembrare complesso, ma potrebbe essere un buon modo per evitare di cadere in attacchi informatici a cui son soggette le letture tramite i normali client di posta.
 
