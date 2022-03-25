@@ -1,4 +1,5 @@
 search_field = document.querySelector(".searchbox input[type='search']"),
+    
 //body
 body = document.querySelector("body"),
 header = document.querySelector("header"),
