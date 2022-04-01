@@ -1,4 +1,5 @@
 /* https://git.mirko.pm/brombinmirko/httploader-js */
+
 let body = document.getElementsByTagName("body")[0];
 
 /* load data from other page */
