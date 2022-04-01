@@ -85,7 +85,7 @@ apt install nomeprogramma
 dnf install nomeprogramma
 ```
 
-![](/uploads/1aprile2022/wow.jpg)
+![](/uploads/1aprile2022/wow.jpeg)
 
 
 
