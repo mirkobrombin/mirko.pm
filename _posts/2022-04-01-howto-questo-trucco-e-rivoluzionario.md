@@ -1,5 +1,5 @@
 ---
-title: '#howto - Questo comando linux sconosciuto cambierà il tuo modo di usare il computer!' 
+title: '#howto - Cambierà il tuo modo di usare il computer!' 
 date: 2022-04-01 09:00
 layout: post 
 author: Psyke quello Euforico!
