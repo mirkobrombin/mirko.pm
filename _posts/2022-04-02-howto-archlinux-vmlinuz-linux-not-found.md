@@ -1,20 +1,18 @@
 ---
-title: '#howto - vmlinuz-linux not found' 
-date: 2022-03-01 10:45
+title: '#howto - Correggere vmlinuz-linux not found su Archlinux' 
+date: 2022-04-02 09:00
 layout: post 
 author: Alphvino
 author_github: Alphvino
-published: false
+published: true
 tags: 
 - archlinux
 - pacman
-- linux
-- ramdisk
 ---
 
 Vi è mai capitato di riavviare la vostra macchina durante un aggiornamento? Può succedere che un riavvio improvviso possa causare danni. Oggi vediamo la risoluzione del seguente messaggio di errore dopo aver riavviato per sbaglio Arch Linux durante un aggiornamento:
 
-```shell
+```bash
 Loading Linux linux ...
 error: file "/boot/vmlinuz-linux" not found
 Loading initial ramdisk ...
@@ -34,39 +32,33 @@ Infine, all'ultima riga, troviamo un altro errore che ci dice che prima di caric
 
 ## E ora? Come possiamo sistemare?
 
-Sistemare questo errore non è molto difficile.
+Una prima strada la abbiamo già indicata in questo articolo [qui, sul GRUB RESCUE](https://linuxhub.it/articles/howto-avviare-il-sistema-da-grub-rescue/). Ma se avete una usb di archlinux tanto meglio usarla. Da usb con archlinux: 
 
-Ecco i passaggi che dovremo seguire:
+1. Digitiamo `lsblk` per listare tutti i dischi e partizioni trovate. Ci tornerà utile per capire in quale disco e in quale partizione si trovano la root e la /boot
 
-1) Innanzitutto procuriamoci una USB live di arch linux
+2. Mettiamo caso che la UEFI risieda in /dev/sda1 mentre la root in /dev/sda2
 
-2) Facciamo il boot nella live
+3. Ora dobbiamo montare le due partizioni ai seguenti punti di mount:
+   `mount /dev/sda2 /mnt`
+   `mount /dev/sda1 /mnt/boot/efi`
 
-3) Digitiamo `lsblk` per listare tutti i dischi e partizioni trovate. Ci tornerà utile per capire in quale disco e in quale partizione si trovano la root e la /boot
-
-4) Mettiamo caso che la UEFI risieda in /dev/sda1 mentre la root in /dev/sda2
-
-5) Ora dobbiamo montare le due partizioni ai seguenti punti di mount:
-   /mnt -> /dev/sda2
-   /mnt/boot/efi -> /dev/sda1
-
-6) Digitiamo quindi:
-   
-   ```shell
+4. Digitiamo quindi:
+   ```bash
    mount /dev/sda2 /mnt
    mount /dev/sda1 /mnt/boot/efi
    ```
-7. Entriamo in chroot per eseguire le operazioni di recupero con:
+
+5. Entriamo in chroot per eseguire le operazioni di recupero con:
    `arch-chroot /mnt`
 
-8. Dato che il kernel Linux pare mancare è necessario riscaricarlo! Perciò eseguiamo questo comando:
-   `sudo pacman -Syy linux`
-   Così facendo risincronizziamo i repository e sovrascriviamo il kernel Linux. Infatti con pacman è possibile reinstallare un pacchetto semplicemente riscaricandolo, esso sovrascriverà quello vecchio. Dato che mancano vari file, la sovrascrittura porterà con sé anche i file mancanti.
+## Una volta nel sistema
+O che siate entrati con l'usb o che siate dentro tramite metodo GRUB RESCUE potete adesso sistemare così: 
 
-9. Infine, in caso ci fossero altri aggiornamenti digitiamo:
-   `sudo pacman -Syu` 
+1. Dato che il kernel Linux pare mancare è necessario riscaricarlo! Perciò eseguiamo questo comando: `pacman -Syy linux` Così facendo risincronizziamo i repository e sovrascriviamo il kernel Linux. Infatti con pacman è possibile reinstallare un pacchetto semplicemente riscaricandolo, esso sovrascriverà quello vecchio. Dato che mancano vari file, la sovrascrittura porterà con sé anche i file mancanti.
 
-10. Ora possiamo uscire dalla chroot con `exit` e infine smontiamo tutti i dischi montati con `umount -a`
+2. Infine, in caso ci fossero altri aggiornamenti digitiamo: `pacman -Syu` 
+
+3. Ora possiamo uscire dalla chroot con `exit` e infine smontiamo tutti i dischi montati con `umount -a`
 
 ## Conclusioni
 
