@@ -10,20 +10,20 @@ tags:
 - bash
 ---
 
-Vediamo come connetterci su ssh e scambiare dati con un server remoto!
+In questa guida verrá spiegata la procedura  per connettersi su ssh e scambiare dati con un server remoto!
 
 
 
-## Andiamo sul semplice: connettersi e scambiare dati!
+## Connessione e scambio dati
 
-Per connettervi ad un dispositivo tramite ssh dovete assicurarvi essenzialmente di queste cose: 
+Per connetterci ad un dispositivo tramite ssh assicuriamoci essenzialmente di soddisfare questi requisiti: 
 
-- Il device a cui vi dovete connettere deve avere sshd aperto 
-- Dovete conoscere l'indirizzo ip (locale o meno)  
-- Dovete conoscere gli utenti abilitati a ssh 
-- Dovete conoscere la password
+- SSHD aperto nel device alla quale dovremo connetterci
+- Conoscere l'indirizzo ip (locale o meno)  
+- Conoscere gli utenti abilitati a ssh 
+- Conoscere la password
 
-Avendo queste informazioni la connessione avviene in maniera molto semplice dalla vostra distribuzione: 
+Avendo queste informazioni la connessione avviene in maniera molto semplice direttamente dalla nostra Distribuzione: 
 
 ```bash
 ssh utente@ind.iri.zzo.ip
@@ -31,9 +31,9 @@ ssh utente@ind.iri.zzo.ip
 
 
 
-### SSHD ? che è? 
+### SSHD ? Cosa é? 
 
-`sshd`  è il nome del demone di sistema che fa da server ad ssh, installatelo con il vostro package manager, quindi attivatelo.
+`sshd`  è il nome del demone di sistema che fa da server ad ssh, installatelo con il vostro package manager, successivamente attivatelo.
 
 
 
@@ -63,12 +63,12 @@ pacman -S openssh
 
 #### Avvio su sistemi systemd based
 
-Nei sistemi systemd based è molto semplice interfacciarsi con ssh, per avviarlo in una sessione specifica digitare: 
+Nei sistemi systemd based è molto semplice interfacciarsi con ssh, per avviarlo in una sessione specifica digitare i seguenti comandi: 
 ```bash
 systemctl start sshd 
 ```
 
-Per avviarlo ogni apertura del sistema operativo: 
+Per avviarlo all'apertura del sistema operativo: 
 
 ```bash
 systemctl enable sshd 
@@ -101,8 +101,8 @@ chmod +755 /run/ssh
 
 ###  SSH, ma su un altra porta
 
-La porta di default per `ssh` è la *porta 22*. Ma potete avviare `sshd` su un altra porta, per farlo cercate nel file `/etc/ssh/sshd_config` la riga `#Port 22`.
-Decommentate la riga (eliminando il carattere `#`) e quindi scrivete la porta desiderata. Ad esempio per la porta `2044` scriverete: 
+La porta di default per `ssh` è la *22*. Ma potete anche avviare `sshd` su un altra porta, per farlo cercate nel file `/etc/ssh/sshd_config` la riga `#Port 22`.
+Modificate la riga (eliminando il carattere `#`) e quindi scrivete la porta desiderata. Ad esempio per la porta `2044` scriverete: 
 
 ```properties
 Port 2044
@@ -110,7 +110,7 @@ Port 2044
 
 Quindi avviate `sshd` sul dispositivo server.
 
-Sul dispositivo in connessione invece dovrete specificare la porta con il parametro `-p`: 
+Sul dispositivo in connessione invece dovremmo specificare la porta con il parametro `-p`: 
 
 ```bash
 ssh -p 2044 utente@ind.iri.zzo.ip
@@ -118,11 +118,11 @@ ssh -p 2044 utente@ind.iri.zzo.ip
 
 
 
-### Copiare i tuoi dati con scp 
+### Copiare i  dati con scp 
 
 
 
-Per copiare i tuoi dati con `scp` basta scrivere: 
+Per copiare i  dati con `scp` basterá scrivere: 
 ```bash
 scp tuofile utente@ind.iri.zzo.ip:/posizione/cartella
 ```
@@ -170,7 +170,7 @@ ssh utente@ind.iri.zzo.ip comando
 
 ### Avviare un software con GUI da remoto
 
-Potete avviare sulla macchina di destinazione un software con interfaccia grafica. Se è vero che normalmente `ssh` si usa con server (quindi dispositivi sprovvisti di schermo) è anche vero che con la diffusione dei raspberry è molto comune avere a che fare con media center ad esempio.  
+Possiamo anche  avviare sulla macchina di destinazione un software con interfaccia grafica. Se è vero che normalmente `ssh` si usa con server (quindi dispositivi sprovvisti di schermo) è anche vero che con la diffusione dei raspberry è molto comune avere a che fare con media center ad esempio.  
 
 Quindi vediamo come avviare sulla macchina target un software che necessita di UI: 
 
