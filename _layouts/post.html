@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
+<h1>{{ page.title }}</h1>
 <article>
-    <h2>{{ page.title }}</h2>
     <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
     {% if page.is_translation == false %}
         {% if page.is_english == nil %}
             {% if page.translation == false  %}
-                <span class="no-translation">I'm sorry but this post was written in Italian, my native language. I could translate it in the future.</span>
+                <div class="panel warning">I'm sorry but this post was written in Italian, my native language. I could translate it in the future.</div>
             {% else %}
-                <span class="translation">
+                <div class="panel info">I
                     <a href="/blog/{{ page.translation }}">Here</a> you can find the english version of this post.
-                </span>
+                </div>
             {% endif %}
         {% endif %}
     {% endif %}

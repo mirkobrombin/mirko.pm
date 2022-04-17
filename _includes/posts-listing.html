@@ -5,9 +5,13 @@
     <h3>{{ post.title }}</h3>
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ date | date: "%a, %b %e, %Y" }}</time>
     <p>{{ post.content | strip_html | truncatewords: 32 }}</p>
-    <a href="{{ post.url }}">Read</a>
-    {% if post.translation %}
-        <a href="/blog/{{ post.translation }}" class="no-button">English version</a>
-    {% endif %}
+    <div class="text right">
+        {% if post.translation %}
+            <a href="/blog/{{ post.translation }}" class="button link">English version</a>
+        {% endif %}
+        <a href="{{ post.url }}" class="button primary">
+            Read more <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>
+    </div>
 </article>
 {% endif %}

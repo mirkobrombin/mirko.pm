@@ -5,10 +5,12 @@
 	{% include head.html %}
 </head>
 
-<body style="opacity: 0;">
+<body>
 	{% include nav.html %}
 	<main>
-		{{ content }}
+		<div class="wrapper">
+			{{ content }}
+		</div>
 	</main>
 	{% include footer.html %}
 </body>

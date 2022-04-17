@@ -1,8 +1,13 @@
 {% assign project = include.project %}
-<li>
-    <b>{{ project.name }}</b>
+<div class="card">
+    <h3>{{ project.name }}</h3>
     {{ project.content }}
     {% for item in project.links %}
-        <a href="{{ item.link }}">{{ item.name }}</a>
+        <a class="button link" href="{{ item.link }}">
+            {% if item.icon != nil %}
+                <ion-icon name="{{ item.icon }}"></ion-icon>
+            {% endif %}
+            {{ item.name }}
+        </a>
     {% endfor %}
-</li>
+</div>

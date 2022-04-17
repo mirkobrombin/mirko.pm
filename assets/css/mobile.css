@@ -1,0 +1,28 @@
+@media screen and (max-width:745px) {
+    header .wrapper {}
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .button.menu-toggle {
+        display: block;
+    }
+
+    nav.show {
+        display: block;
+        position: fixed;
+        top: 84px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
