@@ -1,13 +1,14 @@
 ---
 title: "#howto -  Guida all'utilizzo di git"
-date: 2020-06-05
+date: 2020-06-05 11:00
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - bash
+  - git
 ---
-Quando si parla di *software di versioning*, `git` è sicuramente il primo programma che ci viene in mente. È l'alternativa più popolare a sistemi come `svn`, e viene utilizzata anche in ambito enterprise. 
+Quando si parla di *software di versioning*, `git` è sicuramente il primo programma che ci viene in mente. È l'alternativa più popolare a sistemi come `svn`, e viene utilizzata anche in ambito enterprise.
 
 Per chi non lo sapesse, un software di versioning consente di conservare "**la storia**" delle <u>modifiche</u> di una determinata *cartella con tutti i suoi file e le sue sottocartelle*, o più comunemente di un **progetto**. Questo approccio, particolarmente usato nei progetti di programmazione, consente di poter tenere traccia degli autori delle modifiche, modificare su più fronti i contenuti di quelle cartelle senza intralciarsi l'un l'altro o eventualmente di annullare specifiche modifiche.  
 *Git è esattamente tutto questo*. Ma soprattutto, `git` lo ha fatto **Linus Torvalds**. Sì, proprio lui, quello di Linux. *FUCK YOU NVIDIA!*
@@ -20,9 +21,6 @@ Sono necessarie alcune precisazioni:
 - Prima di applicare qualsiasi nozione presente in questo articolo su progetti di grandi dimensioni con dati importanti, ricordatevi di effettuare dei test su copie ed eseguire dei backup. Ricordate che `git` è uno strumento potente, e se ci può tanto aiutare allo stesso tempo può farci perdere ore di lavoro, se usato male. ? Linux/hub declina ogni **responsabilità** per i danni derivanti da un uso improprio delle informazioni contenute nel **sito**. ?
 - Tutte le immagini dell'articolo sono interpretazioni create dall'autore dell'articolo ( strumenti utilizzati: [Suite Libreoffice](https://it.libreoffice.org/), [G.I.M.P.](https://www.gimp.org/))
 
-### Precisazioni per l'edizione PDF dell'articolo
-
-L'articolo è disponibile anche in pdf [qui](storage/howtogit-linuxhub.pdf).
 
 ### Legenda
 
@@ -30,14 +28,14 @@ L'articolo è disponibile anche in pdf [qui](storage/howtogit-linuxhub.pdf).
 
 ## Installazione
 
-`git` è multipiattaforma, ed è quindi disponibile su ogni piattaforma tramite lo store o il package manager del sistema, oppure ancora attraverso il [sito web ufficiale](https://git-scm.com). Sono disponibili anche diverse interfacce grafiche che possono semplificare il suo operato, ma <u>sconsiglio vivamente di usare GUI nel caso in cui non si riuscisse ad utilizzare git da terminale</u>. Più facile, infatti, non significa sempre meglio se non si conosce la struttura e il funzionamento del software: ricordatevi che in ballo ci potrebbero essere progetti personali o ancora peggio quelli della propria azienda. 
+`git` è multipiattaforma, ed è quindi disponibile su ogni piattaforma tramite lo store o il package manager del sistema, oppure ancora attraverso il [sito web ufficiale](https://git-scm.com). Sono disponibili anche diverse interfacce grafiche che possono semplificare il suo operato, ma <u>sconsiglio vivamente di usare GUI nel caso in cui non si riuscisse ad utilizzare git da terminale</u>. Più facile, infatti, non significa sempre meglio se non si conosce la struttura e il funzionamento del software: ricordatevi che in ballo ci potrebbero essere progetti personali o ancora peggio quelli della propria azienda.
 
 A questo punto installiamo git tramite i package manager delle distribuzioni più utilizzate:
 
 
 ```bash
 # Debian, Ubuntu e derivate
-apt install git 
+apt install git
 
 # Fedora e derivate
 dnf install git
@@ -56,8 +54,8 @@ Innanzitutto, `Git` è un sistema di <u>controllo delle versioni distribuito</u>
 Git prevede 3 stati di memorizzazione per i file:
 
 - normalmente questi si trovano nella **working area**, e stato in cui si trovano quelli su cui si lavora, su cui si attuano modifiche e dove se ne aggiungono di nuovi.  
-- Finite le modifiche si possono quindi spostare i file nella **staging area**. Nelle cartelle di `git` vengono aggiunti gli *object* relativi alle informazioni su quali sono i file modificati. 
-- Si procede infine allo spostamento dei file nella **repository**, dove vengono creati i file '*incremento*' che descrivono come si è evoluta la propria working area. 
+- Finite le modifiche si possono quindi spostare i file nella **staging area**. Nelle cartelle di `git` vengono aggiunti gli *object* relativi alle informazioni su quali sono i file modificati.
+- Si procede infine allo spostamento dei file nella **repository**, dove vengono creati i file '*incremento*' che descrivono come si è evoluta la propria working area.
 
 Da qui in poi, in genere, il codice viene inviato nei <u>repository remoti</u> da noi impostati.
 
@@ -65,15 +63,15 @@ Giusto per essere chiari, possiamo identificare queste 3 aree anche all'interno 
 
 - la <u>working area</u> rappresenta i file su cui lavoriamo, quindi tutta la **nostra cartella progetto**
 - la <u>staging area</u> è in realtà fittizia, e si tratta di una serie di file che indicano quali documenti sono cambiati dall'ultimo commit. Nuovi file di tracking vengono già inseriti nel **repository**.
-- infine il <u>repository</u> è interamente localizzato nella cartella nascosta dentro il nostro progetto `.git` 
+- infine il <u>repository</u> è interamente localizzato nella cartella nascosta dentro il nostro progetto `.git`
 
-![Working staging repo base](storage/workingstagingrepobase.png)
+![Working staging repo base](/uploads/git/workingstagingrepobase.png)
 
 
 Il primo movimento dalla working area alla staging area è detto "*operazione di* **add**", mentre il secondo movimento da staging a repository è detto "*operazione di* **commit**". Si veda qua in basso la differenza tra tre repository <u>prima della</u> **add**, dopo la **add** e dopo il **commit**:
-![la struttura delle directory git](storage/git_meld_add-commit-bakdiff.png)
+![la struttura delle directory git](/uploads/git/git_meld_add-commit-bakdiff.png)
 
-Quando si punta ad un <u>*repository remoto*</u>, gli scambi di codici con quello locale son detti <u>operazione di **pull**</u> e <u>operazione di **push**</u>. "*Remoto*" in realtà è una parola un po' fuorviante, questo perchè l'URL può essere anche locale. Il senso di un'operazione del genere non è banale né solo didattica: ad esempio possiamo puntare una cartella del nostro file system che è poi sincronizzata con <u>una cloud dati</u>. Io utilizzo questo sistema per sincronizzare i miei progetti con **Dropbox** e **Mega**, ad esempio. 
+Quando si punta ad un <u>*repository remoto*</u>, gli scambi di codici con quello locale son detti <u>operazione di **pull**</u> e <u>operazione di **push**</u>. "*Remoto*" in realtà è una parola un po' fuorviante, questo perchè l'URL può essere anche locale. Il senso di un'operazione del genere non è banale né solo didattica: ad esempio possiamo puntare una cartella del nostro file system che è poi sincronizzata con <u>una cloud dati</u>. Io utilizzo questo sistema per sincronizzare i miei progetti con **Dropbox** e **Mega**, ad esempio.
 
 I repository puntati hanno poi dei "nomi" (in genere <u>origin</u>), funzionalità che crea la possibilità di gestirne anche più di uno decidendo volta per volta dove effettuare *pull* e *push*. Si tratta di una tecnica utile quando si ha a che fare con progetti di lavoro dove <u>non si hanno i permessi di creare branch nuovi</u>.
 
@@ -104,7 +102,7 @@ git init --bare
 
 Se si fa ora una differenza tra quello che viene creato nella cartella **reporemoto1** e **cartellaproj** notiamo subito enormi differenze. Supponiamo che nella cartella di progetto ci fossero già <u>dei file .c</u>. In quel caso, la situazione sarebbe simile a questa:
 
-![](storage/projVSrepo.png)
+![](/uploads/git/projVSrepo.png)
 
 In **cartellaproj** sembrano siano semplicemente rimasti gli stessi file di prima senza alcuna apparente modifica, ma in realtà esiste ora una <u>cartella nascosta **.git**</u> che fondamentalmente ha la stessa identica struttura della cartella <u>reporemoto1</u>.
 
@@ -118,7 +116,7 @@ Si entri nella cartella **<u>repo2</u>** e inizializziamo una repository non min
 
 A scopo dimostrativo, le relazioni tra i vari progetti saranno strutturate così:
 
-- <u>cartellaproj</u> e <u>repo2</u> punteranno alla repository remota <u>reporemoto1</u> 
+- <u>cartellaproj</u> e <u>repo2</u> punteranno alla repository remota <u>reporemoto1</u>
 - <u>cartellaproj</u> avrà una seconda repository remota, cioè **repo2/.git**
 
 Per realizzare questi passaggi è necessario (dopo essere entrati nella cartella) scrivere un istruzione come la seguente nel proprio terminale:
@@ -176,7 +174,7 @@ L'uso base di `git` è già sufficiente a gestire da soli o con piccoli gruppi u
 
 ### Configurazione utente
 
-Senza aver compreso a dovere questa sezione sarà molto comune riscontrare errori in alcune fasi, soprattutto durante le operazioni di <u>commit e push</u>. Si proceda quindi ad interrogare lo stato delle configurazioni del proprio utente (che a rigori di logica, a git appena installato, dovrebbero essere vuote o mancanti): 
+Senza aver compreso a dovere questa sezione sarà molto comune riscontrare errori in alcune fasi, soprattutto durante le operazioni di <u>commit e push</u>. Si proceda quindi ad interrogare lo stato delle configurazioni del proprio utente (che a rigori di logica, a git appena installato, dovrebbero essere vuote o mancanti):
 
 - Per il nome:
   - `git config --global user.name`
@@ -199,7 +197,7 @@ Questa differenza può essere utile se si vuole dividere la firma (email e nome 
 
 Potrebbe essere necessario impostare altri due parametri per una configurazione che possa non dare noie, cioè <u>l'editor di testo</u> e un <u>merge tool</u> esterno:
 
-- **Editor di testo**: Alcune operazioni, come la realizzazione di un messaggio di commit, necessitano la scrittura di testi più o meno lunghi. Per via predefinita viene aperto l'editor preferito di sistema (variabile di sistema EDITOR per gli ambienti UNIX ), ma anche questa scelta si può personalizzare nel seguente modo: 
+- **Editor di testo**: Alcune operazioni, come la realizzazione di un messaggio di commit, necessitano la scrittura di testi più o meno lunghi. Per via predefinita viene aperto l'editor preferito di sistema (variabile di sistema EDITOR per gli ambienti UNIX ), ma anche questa scelta si può personalizzare nel seguente modo:
   - `git config --global core.editor [comando che avvia l'editor]`
 - **Merge tool**: quando si lavora sugli stessi file è inevitabile che qualche modifica possa "entrare in conflitto". Gli strumenti di "fusione" (merge) servono a fare un'unione "controllata" delle modifiche in conflitto. Spesso è richiesto questo intervento manuale da parte di `git`, quindi è bene tenersi uno strumento preferito (consiglio **meld**):
   - `git config --global merge.tool [comando che avvia lo strumento di merge]`  
@@ -287,7 +285,7 @@ git commit --amend
 
 <u>Nota</u>: **Buone norme**
 
-Per buona norma è meglio avere tanti piccoli commit significativi, ognuno che sia utile a identificare uno specifico cambiamento nel comportamento generale del progetto, più che un unico commit che descrive una serie di novità. 
+Per buona norma è meglio avere tanti piccoli commit significativi, ognuno che sia utile a identificare uno specifico cambiamento nel comportamento generale del progetto, più che un unico commit che descrive una serie di novità.
 
 Questo perché è importante capire quale modifica può avere causato, ad esempio, un problema di regressione e poter quindi più facilmente individuare e correggere le righe che causano l'anomalia.
 
@@ -342,7 +340,7 @@ git revert [codice commit]
 Supponendo tre commit recenti:
 
 - commit aaaa123 - aggiunto file 1
-- commit bbbb321 - aggiunto file 2 
+- commit bbbb321 - aggiunto file 2
 - commit c1aab12 - modificato file 1
 
 Digitando:
@@ -375,7 +373,7 @@ git checkout -- .
 
 #### Inverso: dal commit alla add
 
-In questo caso bisogna fare una distinzione: 
+In questo caso bisogna fare una distinzione:
 
 1. nel caso in cui si sia <u>appena fatto il primo commit</u>, non è possibile tornare alla fase precedente a questo perchè non esiste una storia a cui tornare. Si può però simulare questo evento semplicemente **cancellando la storia di git**
    - `git update-ref -d HEAD`
@@ -392,7 +390,7 @@ ___
 
 Un piccolo riassunto di quanto detto:
 
-![RiassuntoBaseC](storage/riassuntoBaseC.png)
+![RiassuntoBaseC](/uploads/git/riassuntoBaseC.png)
 
 ___
 
@@ -497,12 +495,12 @@ Nel caso in cui la similitudine non vi fosse completamente chiara, seguirà un m
 Le diramazioni di git **condividono**, *fino al punto in cui si son divise,* **gli stessi file nello stesso stato**, mentre *da quel momento in poi vivono due vite separate* fino a che la diramazione non si ricongiunge con il ramo principale. Alcuni esempi di divisioni utili in branch potrebbero essere:
 
 - sviluppare una nuova feature che prima di essere integrata deve essere considerata stabile
-- correggere una specifica famiglia di bug, derivati tutti da una parte in particolare di codice malfunzionante ma di cui comunque si conosce bene il comportamento 
+- correggere una specifica famiglia di bug, derivati tutti da una parte in particolare di codice malfunzionante ma di cui comunque si conosce bene il comportamento
 - lavorare con due tecniche diverse sullo stesso pezzo di codice (due branch), e quindi decidere alla fine quale tenere e quale buttare
 - separare sviluppo frontend da quello backend
 - altro...
 
-![esplicazione dei branch](storage/branch.png)
+![esplicazione dei branch](/uploads/git/branch.png)
 
 Per creare un branch basta digitare:
 
@@ -572,7 +570,7 @@ git checkout feature1
 
 # simulandone una modifica
 touch feature1.txt
-git add . 
+git add .
 git checkout -m "aggiunta la prima feature"
 
 # creando il branch gui e partendo da feature
@@ -598,7 +596,7 @@ echo "aggiunta la gui a feature" >> feature1.txt
 
 # merge
 git checkout feature1
-git merge gui 
+git merge gui
 
 # si può eliminare il branch gui
 git branch -d gui
@@ -621,7 +619,7 @@ In alcune distribuzioni, Git viene installato già con un suo client chiamato **
 gitk
 ```
 
-Il software richiamato in questo modo traccia solo le modifiche del branch corrente, e per una prospettiva completa consiglio di dare: 
+Il software richiamato in questo modo traccia solo le modifiche del branch corrente, e per una prospettiva completa consiglio di dare:
 
 ```bash
 gitk --all
