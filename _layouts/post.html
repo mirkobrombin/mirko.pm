@@ -7,10 +7,10 @@ layout: default
     {% if page.is_translation == false %}
         {% if page.is_english == nil %}
             {% if page.translation == false  %}
-                <div class="panel warning">I'm sorry but this post was written in Italian, my native language. I could translate it in the future.</div>
+                <div class="panel warning">This article is written in Italian, my language. I could translate it in the future.</div>
             {% else %}
-                <div class="panel info">I
-                    <a href="/blog/{{ page.translation }}">Here</a> you can find the english version of this post.
+                <div class="panel info">
+                    This article is also available in English <a href="/blog/{{ page.translation }}">here</a>.
                 </div>
             {% endif %}
         {% endif %}
