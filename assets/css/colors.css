@@ -75,9 +75,14 @@ header,
     background-color: var(--color-bg);
 }
 
-.button.primary {
+.button.primary,
+.card:hover {
     background-color: var(--color-primary-bg);
     color: var(--color-primary-fg);
+}
+
+.card:hover {
+    border-color: var(--color-primary-bg);
 }
 
 .button.primary:hover {
