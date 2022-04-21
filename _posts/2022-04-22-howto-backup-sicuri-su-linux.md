@@ -49,10 +49,10 @@ Può sembrare molto confusivo, in realtà le cose da fare sono davvero poche!
 
 1. Creiamo la nostra chiave SSH seguendo [questo articolo](https://linuxhub.it/articles/howto-Chiavi-ssh/)
   
-2. Installiamo il pacchetto `sshpass` con il nostro package manager!
-  
+2. Installiamo il pacchetto `sshpass` con il nostro package manager!  
 
-## Creazione della repository borg
+
+## Creazione della repository borg
 
 Ora dobbiamo creare la repository di borg nella quale dovranno essere immagazzinati i backup. Assicuriamoci di essere in un server esterno, come un NAS che supporta accesso tramite ssh. Creiamo una cartella nella quale creare la repository e infine tramite questo comando, creiamo ufficialmente la repository di borg:
 
@@ -71,7 +71,7 @@ Questo metodo è il più sicuro tra tutti. Sfrutta blake2 come sistema di critto
 Direi che siamo belli che sicuri se teniamo tutto sotto controllo e distribuiamo chiave + password solo nei client da noi posseduti!
   
 
-## Esportiamo il keyfile
+## Esportiamo il keyfile
 
 Prima avevo menzionato questo famigerato `keyfile`, il quale deve essere presente nel filesystem di ogni client. Per ricavare questo file dobbiamo, sempre nel server di backup dove abbiamo inizializzato la repository, recarci nella seguente directory:  
 
@@ -79,7 +79,7 @@ Prima avevo menzionato questo famigerato `keyfile`, il quale deve essere present
 
 Qui dentro troveremo un file chiamato proprio keyfile, il quale dovrà essere esportato, nella stessa directory, nei vari client.
 
-## Borg.sh, cos'è?
+## Borg.sh, cos'è?
 
 Borg.sh è un progetto su github, creato da me, che permette di gestire, cancellare, ripristinare, creare backup in un modo molto più diretto e semplice! 
 Infatti scrivere ogni volta il comando di creazione, elimazione, listing dei backup non è il massimo, perciò ho deciso di semplificarmi la vita creando questo script che potete trovare [qui!](https://github.com/Alphvino/borg.sh)
