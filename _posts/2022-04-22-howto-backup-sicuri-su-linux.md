@@ -84,7 +84,7 @@ Qui dentro troveremo un file chiamato proprio keyfile, il quale dovrà essere es
 Borg.sh è un progetto su github, creato da me, che permette di gestire, cancellare, ripristinare, creare backup in un modo molto più diretto e semplice! 
 Infatti scrivere ogni volta il comando di creazione, elimazione, listing dei backup non è il massimo, perciò ho deciso di semplificarmi la vita creando questo script che potete trovare [qui!](https://github.com/Alphvino/borg.sh)
 
-## Settiamo lo script!
+## Settiamo lo script!
 
 Una volta eseguito il git clone della repository è necessario darei i permessi di esecuzione allo script tramite `chmod +x borg.sh`.
 
