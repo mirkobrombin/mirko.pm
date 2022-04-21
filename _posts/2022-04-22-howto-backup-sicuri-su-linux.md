@@ -13,8 +13,8 @@ tags:
 - ubuntu
 ---
 
-Vi è mai capitato di aver cancellato per errore alcuni file importanti? Oppure di aver sovrascritto uno di essi? Ora vi ritrovate con un lavoro che non vi piace e non avete modo di ricercare la versione originale.
-Oggi vediamo come configurare i backup su linux in modo da avere sempre copie di file importanti, grazie a [borg backup](https://borgbackup.readthedocs.io/en/stable/)!
+Vi è mai capitato di aver eliminato per errore alcuni file importanti? Oppure sovrascrivere dei file per sbaglio? 
+Nessuna preoccupazione, oggi vedremo come configurare i backup su linux per stare tranquilli e per dimenticarci la perdita dei dati disponendo di una copia, grazie a [borg backup](https://borgbackup.readthedocs.io/en/stable/)!
 
 ## Borg backup
 
@@ -37,7 +37,7 @@ I punti chiave di borg sono i seguenti:
 
 ## Come posso iniziare a usare borg?
 
-Per iniziare a usare borg in maniera sicura abbiamo bisogno dei seguenti requisiti:
+Per iniziare a usare Borg, assicuriamoci di soddisfare i seguenti requisiti: 
 
 - Chiave SSH cifrata con password, preferibilmente `ed25519`
   
@@ -45,7 +45,7 @@ Per iniziare a usare borg in maniera sicura abbiamo bisogno dei seguenti requisi
   
 - Una repository di borg creata seguendo la direttiva `keyfile-blake2`
 
-Può sembrare molto confusivo, in realtà le cose da fare sono davvero poche!
+Può sembrare molto confusionario,  ma in realtà i procedimenti da svolgere sono molto semplici.
 
 1. Creiamo la nostra chiave SSH seguendo [questo articolo](https://linuxhub.it/articles/howto-Chiavi-ssh/)
   
@@ -54,7 +54,7 @@ Può sembrare molto confusivo, in realtà le cose da fare sono davvero poche!
 
 ## Creazione della repository borg
 
-Ora dobbiamo creare la repository di borg nella quale dovranno essere immagazzinati i backup. Assicuriamoci di essere in un server esterno, come un NAS che supporta accesso tramite ssh. Creiamo una cartella nella quale creare la repository e infine tramite questo comando, creiamo ufficialmente la repository di borg:
+Dobbiamo ora creare la repository di borg nella quale dovranno essere immagazzinati i backup. Assicuriamoci di disporre accesso in un server esterno, come un NAS che supporta accesso tramite ssh. Creiamo una cartella nella quale creare la repository e infine tramite questo comando, creiamo ufficialmente la repository di borg:
 
 ```bash
 borg init -e keyfile-blake2
@@ -66,14 +66,14 @@ Analizziamo le flag:
   
 - `keyfile-blake2` indica effettivamente in che modo creare la repository.
 
-Questo metodo è il più sicuro tra tutti. Sfrutta blake2 come sistema di crittografia, generalmente più veloce e sicuro di SHA256. Per apportare qualsiasi modifica alla repository è necessario avere un file contenente la chiave denominato `keyfile` all'interno del filesystem del client. Infine è necessaria una password.
+Questo metodo è il più sicuro tra tutti. Sfrutta blake2 come sistema di crittografia, generalmente più veloce e sicuro di SHA256. Per apportare qualsiasi modifica alla repository è necessario disporre di  un file contenente la chiave denominato `keyfile` all'interno del filesystem del client. Infine è necessaria una password.
 
 Direi che siamo belli che sicuri se teniamo tutto sotto controllo e distribuiamo chiave + password solo nei client da noi posseduti!
   
 
 ## Esportiamo il keyfile
 
-Prima avevo menzionato questo famigerato `keyfile`, il quale deve essere presente nel filesystem di ogni client. Per ricavare questo file dobbiamo, sempre nel server di backup dove abbiamo inizializzato la repository, recarci nella seguente directory:  
+Prima menzionai  `keyfile`, il quale , esso deve essere presente nel filesystem di ogni client. Per ricavare questo file dobbiamo, sempre nel server di backup dove abbiamo inizializzato la repository, recarci nella seguente directory:  
 
 `~/.config/borg/keys/`  
 
@@ -81,20 +81,20 @@ Qui dentro troveremo un file chiamato proprio keyfile, il quale dovrà essere es
 
 ## Borg.sh, cos'è?
 
-Borg.sh è un progetto su github, creato da me, che permette di gestire, cancellare, ripristinare, creare backup in un modo molto più diretto e semplice! 
-Infatti scrivere ogni volta il comando di creazione, elimazione, listing dei backup non è il massimo, perciò ho deciso di semplificarmi la vita creando questo script che potete trovare [qui!](https://github.com/Alphvino/borg.sh)
+Borg.sh è un progetto  su github, creato da me, che permette di gestire, cancellare, ripristinare, creare backup in un modo molto più diretto e semplice! 
+scrivere ogni volta il comando di creazione, elimazione, listing dei backup non è il massimo, ho deciso, perciò di semplificare il processo creando uno script reperibile al seguente link: (https://github.com/Alphvino/borg.sh)
 
 ## Settiamo lo script!
 
-Una volta eseguito il git clone della repository è necessario darei i permessi di esecuzione allo script tramite `chmod +x borg.sh`.
+Una volta eseguito il git clone della repository è necessario dare i permessi di esecuzione allo script tramite `chmod +x borg.sh`.
 
-Dopodiché dobbiamo configurare delle variabili all'interno dello script, il loro significato è descritto nel `README.md` della repository.
+Dobbiamo, successivamente configurare delle variabili all'interno dello script, il loro significato è descritto nel `README.md` della repository.
 
 ## Conclusioni
 
-Se hai seguito il README.md su github completamente non dovresti avere problemi!
+Se hai seguito correttamente il README.md su github non dovresti riscontrare problemi!
 Ora ti ritrovi, quindi, con un sistema di backup sicuro e veloce! 
 Inoltre, puoi anche creare un cronjob che crea un backup, magari ogni giorno, facendo uso dello script `borg.sh`!
 
-Infine ti ricordo che i backup creati con borg aumentano di dimensione solo quando c'è qualcosa di nuovo. Quindi se un backup pesa 2GB, quello successivo non peserà sempre 2GB ma bensì avrà il peso dei file nuovi non presenti nel backup precedente!
-Ecco appunto cosa significa deduplicazione!
+Ricordiamo che i backup creati con borg aumentano di dimensione solo quando c'è qualcosa di nuovo. Quindi se un backup pesa 2GB, quello successivo non peserà sempre 2GB ma avrà il peso dei file non presenti nel backup precedente!
+Ecco la prova pratica della "Deduplicazione"
