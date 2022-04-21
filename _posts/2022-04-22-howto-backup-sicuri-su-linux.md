@@ -1,5 +1,5 @@
 ---
-title: '#howto - Backup sicuri su linux' 
+title: '#howto - Backup sicuri su linux con borg' 
 date: 2022-04-22 09:00
 layout: post 
 author: Alphvino
@@ -33,7 +33,7 @@ I punti chiave di borg sono i seguenti:
 - Community di supporto multipiattaforma: IRC, reddit, twitter
   
 - Ultima ma non per importanza, borg è software libero sotto licenza BSD!
-  
+
 
 ## Come posso iniziare a usare borg?
 
@@ -44,7 +44,6 @@ Per iniziare a usare borg in maniera sicura abbiamo bisogno dei seguenti requisi
 - Il pacchetto `sshpass` e `borgbackup` installato nel client
   
 - Una repository di borg creata seguendo la direttiva `keyfile-blake2`
-  
 
 Può sembrare molto confusivo, in realtà le cose da fare sono davvero poche!
 
@@ -57,21 +56,27 @@ Può sembrare molto confusivo, in realtà le cose da fare sono davvero poche!
 
 Ora dobbiamo creare la repository di borg nella quale dovranno essere immagazzinati i backup. Assicuriamoci di essere in un server esterno, come un NAS che supporta accesso tramite ssh. Creiamo una cartella nella quale creare la repository e infine tramite questo comando, creiamo ufficialmente la repository di borg:
 
-`borg init -e keyfile-blake2`
+```bash
+borg init -e keyfile-blake2
+```
 
 Analizziamo le flag:
 
 - `-e` indica al comando borg init che tipo di repository creare
   
 - `keyfile-blake2` indica effettivamente in che modo creare la repository.
-  Questo metodo è il più sicuro tra tutti. Sfrutta blake2 come sistema di crittografia, generalmente più veloce e sicuro di SHA256. Per apportare qualsiasi modifica alla repository è necessario avere un file contenente la chiave denominato `keyfile` all'interno del filesystem del client. Infine è necessaria una password.
-  Direi che siamo belli che sicuri se teniamo tutto sotto controllo e distribuiamo chiave + password solo nei client da noi posseduti!
+
+Questo metodo è il più sicuro tra tutti. Sfrutta blake2 come sistema di crittografia, generalmente più veloce e sicuro di SHA256. Per apportare qualsiasi modifica alla repository è necessario avere un file contenente la chiave denominato `keyfile` all'interno del filesystem del client. Infine è necessaria una password.
+
+Direi che siamo belli che sicuri se teniamo tutto sotto controllo e distribuiamo chiave + password solo nei client da noi posseduti!
   
 
 ## Esportiamo il keyfile
 
-Prima avevo menzionato questo famigerato `keyfile`, il quale deve essere presente nel filesystem di ogni client. Per ricavare questo file dobbiamo, sempre nel server di backup dove abbiamo inizializzato la repository, recarci nella seguente directory:
-`~/.config/borg/keys/`
+Prima avevo menzionato questo famigerato `keyfile`, il quale deve essere presente nel filesystem di ogni client. Per ricavare questo file dobbiamo, sempre nel server di backup dove abbiamo inizializzato la repository, recarci nella seguente directory:  
+
+`~/.config/borg/keys/`  
+
 Qui dentro troveremo un file chiamato proprio keyfile, il quale dovrà essere esportato, nella stessa directory, nei vari client.
 
 ## Borg.sh, cos'è?
