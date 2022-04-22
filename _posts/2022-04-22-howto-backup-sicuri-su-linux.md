@@ -1,10 +1,10 @@
 ---
 title: '#howto - Backup sicuri su linux con borg' 
-date: 2022-04-22 09:00
+date: 2022-04-22 08:17
 layout: post 
 author: Alphvino
 author_github: Alphvino
-published: false
+published: true
 tags:
 - archlinux
 - server
