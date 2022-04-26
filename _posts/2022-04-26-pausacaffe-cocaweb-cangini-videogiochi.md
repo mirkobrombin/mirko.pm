@@ -20,13 +20,13 @@ Avevamo già parlato della [legge proposta dal senatore Pillon](https://linuxhub
 
 
 
-Il web ed i videogiochi fanno male? son come la droga? 
+Il web ed i videogiochi fanno male? Son come la droga? 
 
 
 
-## Spoiler : si, se ne abusate.
+## Spoiler: si, se ne abusate.
 
-Parliamo subito dell'elefante nella stanza. **Si il web fa male**, i videogiochi pure e se me lo chiedete anche *l'alcool, lo sport ed il cibo*. Volete dirmi che non vi sentite dipendenti da un bel piatto di pasta con il vostro condimento preferito sopra? *State già sbavando solo a pensarci*.
+Parliamo subito dell'elefante nella stanza. **Sì, il web fa male**, i videogiochi pure e se me lo chiedete anche *l'alcool, lo sport ed il cibo*. Volete dirmi che non vi sentite dipendenti da un bel piatto di pasta con il vostro condimento preferito sopra? *State già sbavando solo a pensarci*.
 
 Quindi ora che vogliamo fare? Ci diamo all'ascetismo tipo monaci buddisti? 
 
@@ -34,7 +34,7 @@ Quindi ora che vogliamo fare? Ci diamo all'ascetismo tipo monaci buddisti?
 
 ### Il sistema di ricompense del nostro organismo
 
-Forse non lo sapete, ma quando si parla di "sistema di ricompense" legato al nostro organismo, stiamo parlando di un sistema di "*appagamento*" indotto dal nostro sistema neurale al variare di alcune condizioni fisiche del nostro corpo. Banalmente ad esempio, ci sentiamo appagati quando *ci nutriamo*, quando facciamo *all' ammmore* o quando facciamo *sport*. 
+Forse non lo sapete, ma quando si parla di "sistema di ricompense" legato al nostro organismo, stiamo parlando di un sistema di "*appagamento*" indotto dal nostro sistema neurale al variare di alcune condizioni fisiche del nostro corpo. Banalmente ad esempio, ci sentiamo appagati quando *ci nutriamo*, quando facciamo *all'ammmore* o quando facciamo *sport*. 
 
 Perché il nostro corpo ci "*ricompensa*"? Semplice, è un meccanismo di sopravvivenza, se siamo incentivati dal nostro istinto a mangiare, mangeremo, e questo fornisce al nostro organismo l'energia necessaria per continuare a operare e svolgere i suoi compiti. Intuitivo no? 
 
@@ -64,11 +64,11 @@ Il sistema di ricompense corporeo è ovviamente attivato anche dal gaming, *inut
 
 Questo sistema, se portato all'estremo, è stato definito come **Gaming Disorder** dall' O.M.S. o World Health Organization ([fonti](https://www.who.int/news-room/questions-and-answers/item/addictive-behaviours-gaming-disorder)) 
 
-[Se siete interessati ne parla molto bene anche Focus](https://www.focus.it/comportamento/psicologia/videogame-bambini-e-adolescenti-fanno-fatica-a-interrompere-un-gioco), ma aspettate un attimo... avete letto bene cosa dice la World Health Organization nel suo comunicato ?
+[Se siete interessati ne parla molto bene anche Focus](https://www.focus.it/comportamento/psicologia/videogame-bambini-e-adolescenti-fanno-fatica-a-interrompere-un-gioco), ma aspettate un attimo... avete letto bene cosa dice la World Health Organization nel suo comunicato?
 
 
 
-### "Tutti" sono affetti da Gaming Disorder ? 
+### "Tutti" sono affetti da Gaming Disorder? 
 
 Ovviamente no, altrimenti non sarei qua a scrivere una articolo. Probabilmente starei giocando a qualcosa e non riuscirei a smettere.
 
@@ -101,7 +101,7 @@ Qui, in inglese, [avete da wikipedia](https://en.wikipedia.org/wiki/Internet_add
 
 ## Cocaweb di Cangini
 
-Non ho avuto ancora il piacere di leggere Cocaweb di Cangini, probabilmente lo farò. Ma ho invece seguito l'intervista al tg1:  
+Non ho avuto ancora il piacere di leggere Cocaweb di Cangini, probabilmente lo farò. Ma ho invece seguito l'intervista al TG1:  
 [TG1 Contro i Videogiochi - Puntata Intera del 12/04/2022](https://www.youtube.com/watch?v=AANhjCbWJHM)  
 
 Son venuto a conoscenza del servizio grazie [al video dei PlayerInside](https://www.youtube.com/watch?v=Vd_PToe-FPg).
@@ -130,7 +130,7 @@ Questo è potuto succedere perché la mia famiglia era molto presente nella mia 
 
 ### Il nostro Q.I. va calando? 
 
-Vorrei ora soffermarmi su una frase del secondo minuto del video, ovvero che "...*questa è la prima generazione che ha un quoziente di intelligenza inferiore alle generazioni che la hanno preceduto...*" (al di là del fatto che "la generazione" è femminile, quindi avrebbe dovuto dire preceduta, ma va beh)
+Vorrei ora soffermarmi su una frase del secondo minuto del video, ovvero che "... *questa è la prima generazione che ha un quoziente di intelligenza inferiore alle generazioni che la hanno preceduto*..." (al di là del fatto che "la generazione" è femminile, quindi avrebbe dovuto dire preceduta, ma va beh)
 
 
 
@@ -163,7 +163,7 @@ Tuttavia nessuna delle cause sembra correlata alla tecnologia, si parla invece d
 
 
 
-Se poi volete una mia opinione da profano, penso che le cause di simili fenomeni non siano mai attribuibili ad una sola causa ne ad un piccolo sottoinsieme. Ma di questo se volete né parleremo in un altro caso.
+Se poi volete una mia opinione da profano, penso che le cause di simili fenomeni non siano mai attribuibili ad una sola causa né ad un piccolo sottoinsieme. Ma di questo se volete né parleremo in un altro caso.
 
  
 
@@ -258,5 +258,5 @@ Partiamo sempre dall'esempio della dipendenza del cibo, puoi immaginare di voler
 
 ### Soluzioni? 
 
-Ovviamente queste sono *soluzioni* che devono essere accompagnate da un buon supporto psicologico, li dove ce n'è bisogno se non ti senti abbastanza forte da farcela solo, il primo passo è sempre parlarne con qualcuno che ti può aiutare. Un genitore, un amico o una figura di riferimento!
+Ovviamente queste sono *soluzioni* che devono essere accompagnate da un buon supporto psicologico, lì dove ce n'è bisogno se non ti senti abbastanza forte da farcela solo, il primo passo è sempre parlarne con qualcuno che ti può aiutare. Un genitore, un amico o una figura di riferimento!
 
