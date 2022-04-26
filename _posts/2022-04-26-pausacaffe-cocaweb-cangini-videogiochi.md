@@ -1,10 +1,10 @@
 ---
 title: '#pausacaffé - Il web ed i videogiochi son pericolosi? Cocaweb e Cangini' 
-date: 2022-04-26 10:00
+date: 2022-04-26 08:50
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
-published: false
+published: true
 tags: 
 - Cangini 
 - cocaweb
@@ -231,8 +231,6 @@ Un primo metodo potrebbe essere quella di alternare la dipendenza con uno stimol
 L'esempio più lampante è quello della dipendenza da cibo, avete mai fatto caso che la dipendenza da cibo colpisce lo stesso "luogo" fisico di quella da sport? 
 
 Se con una delle due allarghiamo la pancia, con l'altra la asciughiamo.   
-
-Potrebbe sembrare una banalità, ma uno dei modi più semplici per uscire dalla dipendenza da cibo è proprio quello di alternare i momenti di fame a momenti in cui si mangia e momenti in cui la sconfiggi con lo sport. 
 
 Paradossalmente, durante la corsa ad esempio, non hai fame ed anzi, mettere qualcosa in bocca durante uno sforzo fisico ti fa venire la nausea.
 
