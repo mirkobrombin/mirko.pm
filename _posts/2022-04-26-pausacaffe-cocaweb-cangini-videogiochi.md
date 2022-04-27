@@ -226,7 +226,7 @@ Come vi ho già spiegato, la dipendenza fa leva sul nostro meccanismo delle rico
 
 ### Alterna la tua dipendenza con una simile
 
-Un primo metodo potrebbe essere quella di alternare la dipendenza con uno stimolo *simile e contrario*. Essi lo so sembra un ossimoro, mi spiego meglio.
+Un primo metodo potrebbe essere quella di alternare la dipendenza con uno stimolo *simile e contrario*. Lo so, sembra un ossimoro, adesso mi spiego meglio.
 
 L'esempio più lampante è quello della dipendenza da cibo, avete mai fatto caso che la dipendenza da cibo colpisce lo stesso "luogo" fisico di quella da sport? 
 
