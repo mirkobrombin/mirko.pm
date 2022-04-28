@@ -122,6 +122,10 @@ footer {
     display: none;
 }
 
+.button.menu-toggle ion-icon {
+    font-size: 22px;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
