@@ -115,6 +115,10 @@ li.dropdown ul li:hover {
     color: var(--color-panel-fg-info);
 }
 
+button {
+    background-color: transparent;
+}
+
 ::selection,
 mark {
     background: var(--color-selection-bg);
