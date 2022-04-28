@@ -132,3 +132,108 @@ man sshd_config
 Una delle domande che ricevo più spesso quanto riguarda la connessione ssh è: "ma devo inserire ogni volta la password? Che due scatole..."
 
 Beh esistono delle opzioni per evitarlo in effetti. 
+
+### Inviare la propria chiave al server
+
+Tramite `ssh-copy-id` potete copiare la vostra chiave pubblica nel server allo scopo di non inviare più la password per accedere. 
+
+Il primo passo è proprio generare la password, potete seguire [la guida di linuxhub dedicata](https://linuxhub.it/articles/howto-Chiavi-ssh/).
+
+Ovviamente se avete protetto la vostra chiave pubblica con password alla generazione, dovrete inserire quella. 
+
+Dopo aver generate la vostra chiave potete mandarla tramite questo comando: 
+
+```bash
+ssh-copy-id -i /percorso/alla/chiave.pub user@host
+```
+
+Se eventualmente volete cambiare porta basta specificare l'apposito parametro:
+
+```bash
+ssh-copy-id -i /percorso/alla/chiave.pub -p <numero> user@host
+```
+
+Normalmente la chiave viene salvata nel percorso `/home/nomeutente/.ssh/id_qualcosa.pub`  
+
+
+
+#### Come vengono conservate le autorizzazioni lato server
+
+Lato server, se siete curiosi, le chiavi autorizzate lato server vengono conservate nel file: 
+
+```bash
+/home/nomeutente/.ssh/keys_authorized
+```
+
+
+
+#### Eventuali problematiche: Lato client
+
+Se non doveste riuscire per qualche problema a inviare la chiave, controllate localmente che la chiave abbia i giusti permessi, devono essere `600` (ovvero lettura e scrittura per l'owner, nessun permesso per gli altri), ecco come cambiare permessi nel caso: 
+
+```bash
+chmod 600 ~/.ssh/id_algoritmo.pub
+```
+
+
+
+#### Eventuali problematiche: Lato server
+
+In caso di altri problemi potete verificare le impostazioni lato server, aprite il file di configurazione di sshd ( `/etc/ssh/sshd_config`) e cercate le tre impostazioni: 
+
+- `RSAAuthentication` e verificate sia decommentata (senza carattere `#`) e con valore `yes`
+- `PubkeyAuthentication` e verificate sia decommentata (senza carattere `#`) e con valore `yes`
+- `AuthorizedKeysFile` e verificate sia decommentata (senza carattere `#`) e con valore `.ssh/authorized_keys`
+
+se qualcuna delle tre impostazioni non dovesse esserci, potete anche scriverla manualmente.
+
+
+
+Se ancora dovesse dare problemi, create a mano il file delle autorizzazioni: 
+```bash
+touch ~/.ssh/authorized_keys
+```
+
+
+
+### sshpass
+
+Se qualcosa dovesse andar male con il primo metodo, potete usare `sshpass`. Questo software (normalmente scaricabile dai repository) consente di inserire manualmente nel comando stesso la password (oppure specificarlo tramite file)
+
+
+
+#### Installare sshpass su Ubuntu/Debian
+
+```bash
+apt install sshpass
+```
+
+#### Installare sshpass su Fedora
+
+```bash
+dnf install sshpass 
+```
+
+#### Installare sshpass su Archlinux
+
+```bash
+pacman -S sshpass
+```
+
+#### Uso di sshpass
+
+Potete usarlo in modalità "manuale" così: 
+```bash
+sshpass -p "latuapassword" ssh user@ind.iri.zzo.ip
+```
+
+Ovviamente potete usarlo anche per altri comandi che implicano ssh, come scp: 
+```bash
+sshpass -p "latuapassword" scp file user@ind.iri.zzo.ip
+```
+
+Ma alcuni di voi potranno pensare che scrivere manualmente la password (che poi rimane in chiaro su `bash_history`) non sia proprio la migliore delle idee, ecco perché sshpass offre un altra possibilità, ovvero specificare un file da cui prendere una password: 
+```bash
+sshpass -f /percorso/file/password ssh user@ind.iri.zzo.ip
+```
+
