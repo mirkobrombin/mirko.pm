@@ -14,7 +14,7 @@ tags:
 
 
 
-In questa guida vedremo come modificare il *file di configurazione* di ssh, salvare le nostre connessioni per *non reinserire i dati* e l'uso di `sshpass`,
+In questa guida vedremo come modificare il *file di configurazione* di ssh, salvare le nostre connessioni per *non reinserire i dati* e l'uso di `sshpass`
 
 
 
