@@ -65,7 +65,7 @@ Giusto per essere chiari, possiamo identificare queste 3 aree anche all'interno 
 - la <u>staging area</u> è in realtà fittizia, e si tratta di una serie di file che indicano quali documenti sono cambiati dall'ultimo commit. Nuovi file di tracking vengono già inseriti nel **repository**.
 - infine il <u>repository</u> è interamente localizzato nella cartella nascosta dentro il nostro progetto `.git`
 
-![Working staging repo base](/uploads/git/workingstagingrepobase.png)
+![Working staging repo base](/uploads/git/working-staging-repo_base.png)
 
 
 Il primo movimento dalla working area alla staging area è detto "*operazione di* **add**", mentre il secondo movimento da staging a repository è detto "*operazione di* **commit**". Si veda qua in basso la differenza tra tre repository <u>prima della</u> **add**, dopo la **add** e dopo il **commit**:
