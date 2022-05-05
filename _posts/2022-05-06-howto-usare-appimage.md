@@ -12,14 +12,14 @@ tags:
 Immaginate di poter installare e disinstallare un'applicazione rimuovendo un semplice file e poterlo utilizzare su qualsiasi distribuzione indipendetemente dal package manager, ecco questi sono gli **Appimage**.
 
 ## Cosa sono
-Le appimage sono un formato di packaging di applicazioni che incapsulano un'applicazione e le sue librerie in un unico file `.AppImage`.
+Le AppImage sono un formato di packaging che permette di racchiudere un' applicazione e le sue librerie in un unico file `.AppImage`
 
 ## Come funzionano
-Un AppImage è essenzialmente le appimage contengono un'immagine che in eseguzione verrà montata con all'interno un filesystem (contenente l'applicazione e le dipendenze) nel quale viene eseguito il programma.
+Le appimage contengono un'immagine che in eseguzione verrà montata con all'interno un filesystem (contenente l'applicazione e le dipendenze) nel quale viene eseguito il programma.
 
 Gli appimage non hanno un repository perciò dovremmo trovare noi le applicazioni che usano questo formato, [qui](https://appimage.github.io/apps/) una piccola lista di software che usano questo sistema. 
 
-Generalmente comunque nel sito dell'app, nella sezione download dovrebbe esserci l'opzione per questo formato se esso lo usa.
+Generalmente nel sito dell'app, nella sezione download dovrebbe esserci l'opzione per questo formato se esso lo usa.
 
 Una volta installato il file, apriamo il terminale ed eseguiamo:
 ```bash
