@@ -2,7 +2,7 @@
 title: '#howto - Installazione e configurazione di Netflix su Kodi'
 date: 2020-10-14
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - python  - github  - bash

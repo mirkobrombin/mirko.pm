@@ -2,7 +2,7 @@
 title: '#howto - Installazione e configurazione di un server Kodi'
 date: 2020-06-29
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - fedora

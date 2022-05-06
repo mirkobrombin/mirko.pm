@@ -3,7 +3,7 @@ title: '#howto - Cifrare file e cartelle con CryFS e ECryptFS'
 description: "In questa guida vediamo due metodi per tenere al sicuro i nostri file, nello specifico CryFS e ecryptfs."
 date: 2019-07-27
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - github  

@@ -2,7 +2,7 @@
 title: '#howto - Installazione e configurazione di Typora'
 date: 2020-07-29
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - github  - bash

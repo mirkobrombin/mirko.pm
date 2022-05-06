@@ -2,7 +2,7 @@
 title: '#howto - Creare un utente Guest su Linux'
 date: 2021-04-23
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - bash

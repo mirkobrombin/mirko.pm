@@ -2,8 +2,8 @@
 title: '#howto - Installazione di Java sulle principali distribuzioni' 
 date: 2021-07-23 10:30
 layout: post 
-author: Davide Galati
-author_github: Davide Galati (in arte PsykeDady)
+author: Davide Galati (in arte PsykeDady)
+author_github: psykedady
 tags: 
 - java 
 - bash 

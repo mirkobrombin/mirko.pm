@@ -2,7 +2,7 @@
 title: '#pausacaffé - Quando lo stato ti fa da mamma: il decreto giustizia e il filtro dei contenuti'
 date: 2020-07-07
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - legge

@@ -2,7 +2,7 @@
 title: '#howto - Installazione di Arch Linux su CPU ARM 64 bit (sperimentale)'
 date: 2020-11-25
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - github  

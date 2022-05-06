@@ -3,7 +3,7 @@ title: "#howto - Guida all'uso di awk"
 description: "AWK è un linguaggio di programmazione nato dalla necessità di manipolare piccole porzioni di testo in diversi file con poche righe di codice.."
 date: 2019-10-30
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - python 

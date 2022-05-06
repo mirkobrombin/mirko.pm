@@ -2,7 +2,7 @@
 title: '#howto - Creare e configurare gesture con Fusuma'
 date: 2021-03-10
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - github

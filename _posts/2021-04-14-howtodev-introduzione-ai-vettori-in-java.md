@@ -2,7 +2,7 @@
 title: '#howtodev - Introduzione ai vettori in java'
 date: 2021-04-14
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - java

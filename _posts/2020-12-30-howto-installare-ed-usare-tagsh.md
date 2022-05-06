@@ -2,7 +2,7 @@
 title: '#howto - Installazione ed uso di TagSH'
 date: 2020-12-30
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - github  - bash

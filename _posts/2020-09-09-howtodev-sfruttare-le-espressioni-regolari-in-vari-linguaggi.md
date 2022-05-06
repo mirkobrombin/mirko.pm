@@ -2,7 +2,7 @@
 title: '#howtodev - Utilizzare le espressioni regolari (regex) in vari linguaggi'
 date: 2020-09-09
 layout: post
-author: Davide Galati
+author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
 tags:
   - python
