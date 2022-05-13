@@ -1,37 +1,60 @@
 ---
-
 title: '#howto -  Nginx reverse proxy' 
-date: 2022-05-13 10:45
+date: 2022-05-13 08:45
 layout: post 
 author: Alphvino
 author_github: Alphvino
-published: false
+published: true
 tags: 
 
 - server
 - nginx
 - ubuntu
 - debian
-
 ---
 
-Mettiamo caso che stiate hostando qualcosa nel vostro homelab però vi sale un dubbio: "I servizi che selfhosto sono sicuri?"
+I servizi che eseguite sul vostro server sono sicuri?
 
-Una grande domanda! Però oggi sei nel posto fortunato, oggi vediamo come hostare in sicurezza i servizi del tuo homelab!
+Una grande domanda! Oggi spiegheremo come ospitare  in sicurezza i servizi del tuo homelab!
+
+> Puoi configurare un reverse proxy con solo nodejs, utilizzando quest'altra nostra guida:
+> 
+>  [#howto - Impostare un reverse proxy di un server NodeJS su Nginx](https://linuxhub.it/articles/howto-come-impostare-il-reverse-proxy-di-un-server-nodejs-su-nginx/)
 
 ## Quanto sono sicuri i servizi?
 
-Ogni servizio ha i suoi standard di sicurezza, qualcuno usa https di default, qualcuno ha possibilità di abilitarlo e qualcun'altro non usa proprio https. In generale tutti e tre non sono proprio lo standard ideale di sicurezza. Nel primo caso avremo https però non avremo un certificato SSL trusted, quindi vedremo sempre l'icona del lucchetto aperto! Nel secondo caso si ripeterà la stessa situazione del primo caso. Nel terzo invece useremo direttamente il protocollo HTTP, quindi insicuro di base.
+Ogni servizio ha i suoi standard di sicurezza, qualcuno usa https di default, qualcuno ha possibilità di abilitarlo e qualcun'altro non usa proprio https. 
+
+Nel primo caso e nel secondo caso avremo https ma non un certificato SSL trusted, quindi vedremo sempre l'icona del lucchetto aperto ed altri messaggi noiosi del nostro browser! 
+Nel terzo invece useremo direttamente il protocollo HTTP, quindi insicuro di base.
 
 ## Come sistemiamo?
 
-Per sistemare questo problema faremo uso di un programma chiamato Nginx Proxy Manager. Quest'ultimo possiede una web UI dalla quale gestire il tutto. Sostanzialmente si tratta di un servizio chiamato nginx, molto popolare, ma la cui configurazione per il reverse proxy è stata semplificata grazie appunto alla web UI. Tramite esso non solo saremo in grado di rendere sicuri i nostri servizi hostati localmente, ma anche di poter di esporre publicamente qualche servizio senza aprire più porte.
+Per sistemare questo problema faremo uso di un programma chiamato **Nginx Proxy Manager** che possiede una web UI dalla quale gestire il tutto.
+
+Sostanzialmente è un front-end per la configurazione del reverse proxy su `nginx`, servizio molto popolare. Tramite esso non solo saremo in grado di rendere sicuri i nostri servizi ospitati localmente, ma anche di poter di esporre publicamente qualche servizio senza aprire più porte.
 
 ## Installazione
 
-Iniziamo a mettere in sicurezza i nostri servizi locali creando un Dockerfile per Nginx Proxy Manager copiando e incollando il seguente snippet di codice:
+Provvediamo adesso all'installazione di tutti i vari componenti che ci permetteranno di configurare il reverse proxy.
 
-```
+## Installazione di nginx
+
+Avete nginx? in caso contrario potete seguire una delle nostre guide al riguardo: 
+
+- [#howto - Installazione e configurazione di Nginx su Clear Linux](https://linuxhub.it/articles/howto-installazione-e-configurazione-di-nginx-su-clear-linux/)
+- [CentOS 7](https://linuxhub.it/articles/howto-installare-nginx-su-centos-7-e-configurazione-ssl) 
+- [CentOS/RHEL 8](https://linuxhub.it/articles/howto-installazione-di-nginx-su-centos-8-rhel-8-e-configurazione-ssl)
+
+
+## Installazione Docker 
+
+Anche per docker, potete seguire [a nostra guida](https://linuxhub.it/articles/howto-Installazione-ed-utilizzo-di-Docker-su-Linux/)
+
+## Installazione Proxy manager 
+Iniziamo a mettere in sicurezza i nostri servizi locali creando un `Dockerfile` per Nginx Proxy Manager copiando e incollando il seguente snippet di codice:
+
+```bash
 version: '3'
 services:
   app:
@@ -68,7 +91,7 @@ docker-compose up -d
 
 Ora che abbiamo il nostro container in funzione è arrivato il momento di accedere alla pagina web dalla quale gestire il tutto.
 
-Per fare ciò rechiamoci su: `iplocale:81` e inseriamo come username `admin@example.com` e come password `changeme`.
+Per fare ciò rechiamoci su: `http://localhost:81` e inseriamo come username `admin@example.com` e come password `changeme`.
 
 Appena loggati avremo l'obbligo di cambiare la mail e la password, quindi procediamo a farlo.
 
