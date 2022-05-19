@@ -11,12 +11,12 @@ tags:
 ---
 
 Se pensate che ssh serva solo per connettervi ad un altro pc in remoto per gestirlo, beh potreste sbagliarvi. 
-Ecco quattro applicazioni che, tramite ssh, vi permettono di fare qualcosa in più.
+Esistono infatti,  quattro applicazioni che tramite ssh, vi permettono di fare qualcosa in più.
 
 
 
 
-Se non lo hai fatto vai a vedere i nostri due articoli precedenti su ssh: 
+Se hai dei dubbi o vuoi avere dei chiarimenti su SSH ,vai a leggere i nostri articoli citati sotto: 
 
 - [Come usare  ssh](https://linuxhub.it/articles/howto-usare-ssh)  
 - [ssh parte 2](https://linuxhub.it/articles/howto-usare-ssh-pt2)  
@@ -30,11 +30,11 @@ Tramite ssh potrete gestire il vostro repository git senza dover accedere alla p
 
 
 
-I client web come github e gitlab prevedono già ovviamente la possibilità di autenticarsi, ecco ad esempio la nostra guida su [come autenticarsi su github con la chiave ssh](https://linuxhub.it/articles/howto-utilizzo-di-ssh-per-connettersi-a-github/).
+I client web come github e gitlab prevedono già  la possibilità di autenticarsi, ecco ad esempio la nostra guida su [come autenticarsi su github con la chiave ssh](https://linuxhub.it/articles/howto-utilizzo-di-ssh-per-connettersi-a-github/).
 
 
 
-In generale se avete un server con dei vostri repository git potete impostare il vostro repository su cui pushare a:
+In genere se avete un server con dei vostri repository git potete impostare il vostro repository su cui pushare a:
 
 ```bash
 nomeutente@ind.iri.zzo.ip:/percorso/progetto/git
@@ -60,11 +60,11 @@ git remote add mioserver nomeutente@ind.iri.zzo.ip:PORTA/percorso/progetto/git
 
 ## Trasferire file con sshfs 
 
-E se vi dicessi che potete montare un intera cartella remota sul vostro pc ? SSH file system, ovvero sshfs lo rende possibile. 
+E se vi dicessimo che potreste montare un'intera cartella remota sul vostro pc ? SSHFileSystem, ovvero sshfs lo rende possibile. 
 
 
 
-Installatelo con il vostro package manager
+Installatelo con il vostro package manager di riferimento
 
 ### Installazione sshfs su Ubuntu o derivate
 
@@ -92,7 +92,7 @@ pacman -S sshfs
 
 ### Utilizzo 
 
-Per montare una cartella remota bisogna innanzitutto avere una cartella di destinazione del montaggio, come se fosse un device: 
+Per montare una cartella remota bisogna innanzitutto possedere di una cartella di destinazione del montaggio, come se fosse un device: 
 
 ```bash
 mkdir puntodimount
@@ -137,7 +137,7 @@ Esattamente come se fosse un unità esterna fisica.
 
 ## Filezilla
 
-Esiste un programmino che utilizza ssh per per fare trasferimento di file in `ftps`, ovvero `Filezilla`-
+Esiste un programma che utilizza ssh per per fare trasferimento di file in `ftps`, ovvero `Filezilla`-
 
 
 
@@ -166,7 +166,7 @@ pacman -S filezilla
 ### utilizzo 
 Una volta scaricato non vi è tantissimo da spiegare in realtà, il tool è una GUI molto user friendly, in alto trovate dei campi di testo editabili dove inserire: 
 
-- host: ovvero indirizzo dove connettervi
+- host: ovvero l'indirizzo della macchina o del server a cui desiderate connettervi
 - Nome utente
 - Password
 - Porta 
@@ -179,7 +179,7 @@ A sinistra vedrete invece le vostre cartelle, selezionate quella dove volete sca
 
 ## Condividere un terminale con tmux
 
-Potete condividere una sessione di terminale con un amico o un altro dispositivo! Tramite ssh, in maniera molto semplice.
+Potete condividere una sessione di terminale con un amico o un altro dispositivo tramite ssh in maniera molto semplice.
 
 Per farlo dovrete installare `tmux`
 
@@ -240,7 +240,7 @@ need UTF-8 locale (LC_CTYPE) but have ANSI_X3.4-1968
 
 
 
-Andrete a modificare il file `sshd_config` del server scrivendo : 
+andate a modificare il file `sshd_config` del server scrivendo : 
 
 ```bash
 SendEnv LC_*
@@ -256,8 +256,7 @@ Se volete condividere la sessione con un amico, potrebbe essere meglio condivide
 
 ## Messaggiare con sshchat
 
-Potete chattare tramite ssh! Beh non credo ci siano tante persone con cui farlo... ma giusto nel caso...
-
+Potete messaggiare tramite ssh! Beh non credo ci siano tante persone con cui farlo... ma nel caso..
 ### Installazione 
 
 Sul vostro server scriverete: 
@@ -288,7 +287,7 @@ make
 
 ### Generiamo le chiavi 
 
-Per avviare il server dobbiamo generare delle chiavi, se non le abbiamo: 
+Per avviare il server dobbiamo generare delle chiavi, se non le abbiamo generate: 
 ```bash
 ssh-keygen
 ```
@@ -297,7 +296,7 @@ ssh-keygen
 
 ### Avvio server
 
-A fine compilazione potremo avviare il server, supponiamolo di farlo funzionare su porta 2022:
+A fine compilazione potremmo avviare il server, supponendo il suo funzionamento su porta 2022:
 
 ```bash
 ./ssh-chat --bind ":2022" --identity ~/.ssh/id_rsa
