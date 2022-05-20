@@ -11,14 +11,14 @@ tags:
 ---
 
 Se pensate che ssh serva solo per connettervi ad un altro pc in remoto per gestirlo, beh potreste sbagliarvi. 
-Esistono infatti,  quattro applicazioni che tramite ssh, vi permettono di fare qualcosa in più.
+Esistono infatti alcune applicazioni che tramite ssh, vi permettono di fare qualcosa in più.
 
 
 
 
-Se hai dei dubbi o vuoi avere dei chiarimenti su SSH ,vai a leggere i nostri articoli citati sotto: 
+Se hai dei dubbi o vuoi avere dei chiarimenti su SSH, vai a leggere i nostri articoli citati sotto: 
 
-- [Come usare  ssh](https://linuxhub.it/articles/howto-usare-ssh)  
+- [Come usare ssh](https://linuxhub.it/articles/howto-usare-ssh)  
 - [ssh parte 2](https://linuxhub.it/articles/howto-usare-ssh-pt2)  
 
 
@@ -30,7 +30,7 @@ Tramite ssh potrete gestire il vostro repository git senza dover accedere alla p
 
 
 
-I client web come github e gitlab prevedono già  la possibilità di autenticarsi, ecco ad esempio la nostra guida su [come autenticarsi su github con la chiave ssh](https://linuxhub.it/articles/howto-utilizzo-di-ssh-per-connettersi-a-github/).
+I client web come github e gitlab prevedono già la possibilità di autenticarsi, ecco ad esempio la nostra guida su [come autenticarsi su github con la chiave ssh](https://linuxhub.it/articles/howto-utilizzo-di-ssh-per-connettersi-a-github/).
 
 
 
@@ -237,7 +237,7 @@ Quindi entriamo nella directory:
 cd ssh-chat 
 ```
 
-Per compilare il progetto serve `go`, se non lo abbiamo, *installiamolo con il nostro package manager* .
+Per compilare il progetto serve `go`, se non lo abbiamo, *installiamolo con il nostro package manager*.
 
 Quindi diamo 
 
