@@ -1,10 +1,10 @@
 ---
 title: '#howto - Applicazioni da usare con ssh' 
-date: 2022-05-20 08:04
+date: 2022-05-20 08:40
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
-published: false
+published: true
 tags: 
 - ssh 
 - bash
@@ -60,7 +60,7 @@ git remote add mioserver nomeutente@ind.iri.zzo.ip:PORTA/percorso/progetto/git
 
 ## Trasferire file con sshfs 
 
-E se vi dicessimo che potreste montare un'intera cartella remota sul vostro pc ? SSHFileSystem, ovvero sshfs lo rende possibile. 
+E se vi dicessimo che potreste montare un'intera cartella remota sul vostro pc ? SSH File System, ovvero sshfs lo rende possibile. 
 
 
 
@@ -92,7 +92,7 @@ pacman -S sshfs
 
 ### Utilizzo 
 
-Per montare una cartella remota bisogna innanzitutto possedere di una cartella di destinazione del montaggio, come se fosse un device: 
+Per montare una cartella remota bisogna innanzitutto creare una cartella di destinazione del montaggio, come se fosse un device: 
 
 ```bash
 mkdir puntodimount
@@ -114,11 +114,7 @@ Se il vostro ssh server è montato su una porta diversa dalla 22 potete usare il
 sshfs nomeutente@ind.iri.zzo.ip:/percorso/cartella/da/montare -p PORTA
 ```
 
- 
-
 Dovreste quindi trovarvi la cartella montata sul vostro file system locale, nel percorso creato ed indicato!
-
-
 
 Se non doveste riuscire a scrivere, provate a montare la cartella utilizzando queste opzioni: 
 `sshfs -o rw,allow_other nomeutente@ind.iri.zzo.ip:/percorso/cartella/da/montare -p PORTA`
@@ -131,15 +127,11 @@ Per smontare la cartella basta scrivere:
 umount puntodimount
 ```
 
-
-
-Esattamente come se fosse un unità esterna fisica.
+Esattamente come se fosse un' unità esterna fisica.
 
 ## Filezilla
 
 Esiste un programma che utilizza ssh per per fare trasferimento di file in `ftps`, ovvero `Filezilla`-
-
-
 
 ### Installare Filezilla su Ubuntu e derivate
 
@@ -147,15 +139,11 @@ Esiste un programma che utilizza ssh per per fare trasferimento di file in `ftps
 apt install filezilla
 ```
 
-
-
 ### Installare Filezilla su Fedora 
 
 ```bash
 dnf install -y filezilla
 ```
-
-
 
 ### Installare Filezilla su Archlinux 
 
@@ -171,8 +159,6 @@ Una volta scaricato non vi è tantissimo da spiegare in realtà, il tool è una 
 - Password
 - Porta 
 
-
-
 Infine premendo su "Connessione rapida" dovreste vedere, nel riquadro a destra, le cartelle del server remoto. 
 
 A sinistra vedrete invece le vostre cartelle, selezionate quella dove volete scaricare i vostri file.
@@ -183,15 +169,11 @@ Potete condividere una sessione di terminale con un amico o un altro dispositivo
 
 Per farlo dovrete installare `tmux`
 
-
-
 ### Installare termux su Ubuntu e derivate
 
 ```bash
 apt install tmux
 ```
-
-
 
 ### Installare termux su Fedora 
 
@@ -199,15 +181,11 @@ apt install tmux
 dnf install -y tmux
 ```
 
-
-
 ### Installare termux su Archlinux 
 
 ```bash
 pacman -S tmux
 ```
-
-
 
 ### Condividere la sessione tmux
 
@@ -217,46 +195,34 @@ Una volta installato scrivete:
 tmux new-session 
 ```
 
-
-
-Sulla macchina di cui volete condividere la sessione.
-
-
+Sulla macchina di cui volete condividere la sessione.  
 
 Sull'altra macchina invece bisogna connettersi con ssh:
-
-
 
 ```bash 
 ssh guest@ind.iri.zzo.ip -t tmux attach-session 
 ```
 
-
-
 Se dovesse apparire un errore del genere: 
-```
+
+```plain
 need UTF-8 locale (LC_CTYPE) but have ANSI_X3.4-1968
 ```
 
-
-
-andate a modificare il file `sshd_config` del server scrivendo : 
+Andate a modificare il file `sshd_config` del server scrivendo : 
 
 ```bash
 SendEnv LC_*
 ```
 
-
-
 Quindi riavviate il demone ssh e riprovate a connettervi!
 
 Se volete condividere la sessione con un amico, potrebbe essere meglio condividere una *sessione guest*, ecco [una guida su come crearne una](https://linuxhub.it/articles/howto-creare-un-utente-guest-su-linux/)!
 
-
-
 ## Messaggiare con sshchat
 
 Potete messaggiare tramite ssh! Beh non credo ci siano tante persone con cui farlo... ma nel caso..
+
 ### Installazione 
 
 Sul vostro server scriverete: 
@@ -265,15 +231,11 @@ Sul vostro server scriverete:
 git clone https://github.com/shazow/ssh-chat.git 
 ```
 
-
-
 Quindi entriamo nella directory: 
 
 ```bash
 cd ssh-chat 
 ```
-
-
 
 Per compilare il progetto serve `go`, se non lo abbiamo, *installiamolo con il nostro package manager* .
 
@@ -283,16 +245,12 @@ Quindi diamo
 make 
 ```
 
-
-
 ### Generiamo le chiavi 
 
 Per avviare il server dobbiamo generare delle chiavi, se non le abbiamo generate: 
 ```bash
 ssh-keygen
 ```
-
-
 
 ### Avvio server
 
@@ -302,8 +260,6 @@ A fine compilazione potremmo avviare il server, supponendo il suo funzionamento 
 ./ssh-chat --bind ":2022" --identity ~/.ssh/id_rsa
 ```
 
-
-
 ### Connettersi lato client
 
 Ora andiamo sui vari client, e colleghiamoci all'ip e a quella porta tramite ssh: 
@@ -311,8 +267,6 @@ Ora andiamo sui vari client, e colleghiamoci all'ip e a quella porta tramite ssh
 ```bash
 ssh -p2022 ind.iri.zzo.ip
 ```
-
-
 
 ### Disconnettersi
 
