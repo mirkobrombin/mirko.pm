@@ -24,7 +24,9 @@ aside,
     scrollbar-color: #191919 #f9f9f9;
 }
 
-.hljs, pre.hljs, .hljs::-webkit-scrollbar-track {
+.hljs,
+pre.hljs,
+.hljs::-webkit-scrollbar-track {
     background-color: #fdf6e3;
     border-color: #fdf6e3;
     scrollbar-color: #d4c8a9 #fdf6e3;
@@ -39,8 +41,13 @@ footer {
     background-color: #ffffffc9;
 }
 
-header, footer, article, .content table thead, .card, hr {
-    border-color: #d6d6d6;
+header,
+footer,
+article,
+.content table thead,
+.card,
+hr {
+    border-color: #cdcdcd;
 }
 
 .searchbox input,
@@ -98,8 +105,7 @@ header nav ul li.active a {
     background-color: #000;
 }
 
-main {
-    background-color: #f9f9f9;
+background-color: #f9f9f9;
 }
 
 .tag {

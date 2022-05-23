@@ -19,7 +19,8 @@
     width: 6px
 }
 
-.results::-webkit-scrollbar {
+.results::-webkit-scrollbar,
+aside::-webkit-scrollbar {
     display: none;
 }
 
@@ -42,7 +43,7 @@ article img,
 blockquote,
 .hljs,
 .card {
-    box-shadow: 0 1px 1px #0000001a;
+    box-shadow: 0 1px 1px #0000000d;
 }
 
 blockquote,
@@ -80,33 +81,50 @@ textarea {
 
 header .container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 20px;
+    min-height: 63px;
 }
 
 header nav ul {
     display: flex;
-    gap: 15px;
+    
     justify-content: flex-end;
 }
 
 header nav,
 header .searchbox {
-    flex: 1;
+
+    display: flex;
+    align-items: center;
 }
 
 header {
-    padding: 5px 0;
+
     min-height: 62px;
     position: sticky;
     top: 0;
     z-index: 2;
+    border-bottom: 1px solid;
 }
 
 .brand img {
     height: 30px;
     margin: 7px 0 0 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+.searchbox {
+    flex: 1;
 }
 
 .searchbox input {
@@ -119,17 +137,18 @@ header {
 
 .searchbox .mdi {
     position: absolute;
-    margin: 11px 0 0 11px;
+    margin: 0 0 0 11px;
     font-size: 18px;
 }
 
 .searchbox .results {
     position: absolute;
-    margin: -46px -6px 0 -6px;
-    padding: 45px 5px 5px 5px;
+    margin: 0 auto;
+    padding: 55px 15px 6px 15px;
     z-index: -1;
     box-shadow: 0 0 0 transparent;
     border: 1px solid;
+    border-top: 0;
     opacity: 0;
     pointer-events: none;
     overflow-y: auto;
@@ -137,11 +156,10 @@ header {
     left: 0;
     right: 0;
     scrollbar-width: none;
-}
-
-.searchbox {
-    position: relative;
-    top: 2px;
+    top: 0;
+    max-width: 1240px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .searchbox input:focus,
@@ -149,10 +167,10 @@ header {
     outline: none;
     box-shadow: 0 1px 1px #0000001a;
     min-width: 480px;
-}
+width: 100%;}
 
 .searchbox.show .results {
-    box-shadow: 0 1px 1px #0000001a;
+    box-shadow: 0 1px 1px #0000001a, 0 0 0 33rem #efefefd9;
     pointer-events: initial;
     opacity: 1;
 }
@@ -169,7 +187,7 @@ header {
 header nav ul li a {
     color: #000;
     font-weight: 500;
-    padding: 0 5px;
+    padding: 3px 13px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -333,7 +351,7 @@ footer {
     grid-template-columns: 230px minmax(auto, 1fr);
     align-items: start;
     width: 100%;
-    gap: 10px 0;
+    gap: 20px;
 }
 
 aside b,
@@ -599,10 +617,6 @@ hr {
 
 .searchbox .results ul li:nth-of-type(3) b::before {
     content: "3"
-}
-
-nav li:hover .mdi {
-    filter: invert(1) saturate(10);
 }
 
 .reading-time .mdi {

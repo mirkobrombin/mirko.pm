@@ -2,12 +2,11 @@
     <div class="container">
         <div class="brand">
             <a href="/" title="{{ site.title }}">
-                <img src="/assets/images/brand.svg" alt="linux/hub" />
-                <img src="/assets/images/logo-lh-icon.svg" alt="linux/hub" style="display:none" />
+                <img src="/assets/images/logo-lh-icon.svg" alt="linux/hub" />
             </a>
         </div>
         <div class="searchbox">
-            <span class="mdi material-icons-two-tone"> search </span>
+            <span class="mdi material-icons"> search </span>
             <input type="search" placeholder="Cerca...">
             <div class="results">
                 <ul></ul>
@@ -23,7 +22,7 @@
                             {% endif %}
                             >
                             {% if item.icon != nil %}
-                                <span class="mdi material-icons-two-tone" {% if item.hue %}style="filter: invert(0.6) saturate(6) sepia(1) hue-rotate({{ item.hue }});"{% endif %}>
+                                <span class="mdi material-icons" {% if item.hue %}style="filter: invert(0.6) saturate(6) sepia(1) hue-rotate({{ item.hue }});"{% endif %}>
                                     {{ item.icon }}
                                 </span>
                             {% endif %}
