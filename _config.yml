@@ -37,9 +37,7 @@ navigation:
       
     - link: "https://github.com/linuxhubit/linuxhub.it"
       name: "Scrivi"
-      icon: "add_box"
-      color: "#5db36e"
-      hue: "80deg"
+      icon: "edit_note"
 
 plugins:
   - jekyll-feed
