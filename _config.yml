@@ -31,7 +31,7 @@ navigation:
     - link: "https://t.me/linuxpeople"
       name: Community
 
-    - link: "https://feed.linuxhub.it"
+    - link: "https://t.me/linuxpeople_feed"
       name: "Tricks"
       icon: "auto_fix_high"
       
