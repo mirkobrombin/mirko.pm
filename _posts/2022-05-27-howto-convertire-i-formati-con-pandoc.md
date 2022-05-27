@@ -1,6 +1,6 @@
 ---
 title: '#howto - Convertire i formati con Pandoc' 
-date: 2022-05-27 10:05
+date: 2022-05-27 10:06
 layout: post 
 author: Floppy
 author_github: raspFloppy  
