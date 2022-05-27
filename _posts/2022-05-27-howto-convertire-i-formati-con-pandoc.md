@@ -1,10 +1,10 @@
 ---
 title: '#howto - Convertire i formati con Pandoc' 
-date: 2022-05-27 
+date: 2022-05-27 10:05
 layout: post 
 author: Floppy
 author_github: raspFloppy  
-published: false
+published: true
 tags: 
 - archlinux 
 - ubuntu
@@ -15,7 +15,7 @@ Potrebbe capitarci di dover convertire un file word in un semplice txt, oppure u
 
 
 ## Cos'è
-**Pandoc** è una tool open source da linea di comando scritto in *Haskell*, che serve a convertire da un linguaggio di markup ad un altro in modo semplice e veloce.
+**Pandoc** è un tool open source da linea di comando scritto in *Haskell*, che serve a convertire da un linguaggio di markup ad un altro in modo semplice e veloce.
 Supporta svariati formati tra cui:
 - `latex`
 - `markdown`
@@ -23,26 +23,24 @@ Supporta svariati formati tra cui:
 - `docx`
 Una lista completa dei linguaggi supportati la trovate [qui](https://github.com/jgm/pandoc).
 
-Inoltre è in grado di convertire i file da un determinato linguaggio di markup ad un formato `pdf, epub ecc...`
+Inoltre è in grado di convertire i file da un determinato linguaggio di markup ad un formato pdf, epub ecc...
 
 **Pandoc** è anche una libreria open source, perciò potrete implementarlo nel vostro codice per usufruire delle sue funzionalità, trovate la documentazione della libreria [qui](https://hackage.haskell.org/package/pandoc).
-
-
 
 ## Installazione
 Come spiegato nella wiki, pandoc si trova in quasi tutti i repository delle distro principali perciò ci bastera scaricarlo con il nostro package manager preferito:
 
-**UBUNTU:**
+### Ubuntu e derivate
 ```bash
 apt install pandoc
 ```
 
-**FEDORA:**
+### Fedora
 ```bash
 dnf install pandoc
 ```
 
-**ARCHLINUX:**
+## Archlinux
 ```bash
 pacman -S pandoc
 ```
@@ -65,7 +63,7 @@ pandoc -s note.md -o note.tex
 > NOTA BENE:
 > NON è possibile convertire un pdf o epub in un linguaggio di markup
 
-
+### Altre opzioni
 esistono poi opzioni molto interessanti, ne elenchiamo alcune:
 
 - **`--write=formato`:** che va a specificare la versione del formato, pensiamo magari di voler convertire un file in `html5` scriveremo `--write=html5`.
