@@ -1,5 +1,5 @@
 ---
-title: '#howtodev - Funzioni in typescript' 
+title: '#howtodev - Funzioni in TypeScript' 
 date: 2022-06-03 07:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
@@ -13,7 +13,7 @@ tags:
 
 
 
-Javascript `#chaiproblemigrossi`, quindi Microsoft ha ben pensato di strutturarci sopra un linguaggio che ne risolvesse i problemi principali, come **la tipizzazione debole**.
+JavaScript `#chaiproblemigrossi`, quindi Microsoft ha ben pensato di strutturarci sopra un linguaggio che ne risolvesse i problemi principali, come **la tipizzazione debole**.
 
 > TypeScript becomes JavaScript via the delete key
 >  
@@ -21,7 +21,7 @@ Javascript `#chaiproblemigrossi`, quindi Microsoft ha ben pensato di strutturarc
 
 
 
-Questo è il secondo di una serie di articoli su Typescript, parleremo di funzioni.
+Questo è il secondo di una serie di articoli su TypeScript, parleremo di funzioni.
 
 
 
@@ -48,7 +48,7 @@ Lista degli obiettivi che a fine articolo il lettore consegue:
 
 Lista dei prerequisiti e di conoscenze presenti in altri articoli che verranno date per scontato: 
 
-- [I nostri articoli su Typescript precedenti, a partire dal primo](https://linuxhub.it/articles/howtodev-typescript-introduzione/)
+- [I nostri articoli su TypeScript precedenti, a partire dal primo](https://linuxhub.it/articles/howtodev-typescript-introduzione/)
 - Alcune nozioni di matematica basilari
 - Alcune nozioni di logica booleana basilari
 
@@ -56,7 +56,7 @@ Lista dei prerequisiti e di conoscenze presenti in altri articoli che verranno d
 
 ## Funzioni 
 
-Creare una funzione con type script è molto semplice: 
+Creare una funzione con TypeScript è molto semplice: 
 
 ```typescript
 function nomeFunzione(nomearg1:tipoarg1, nomearg2:tipoarg2):tiporitorno {
@@ -73,7 +73,7 @@ Se il tipo di ritorno è `void` non si ha alcuna necessità di restituire un val
 
 
 
-Normalmente le funzioni di typescript lavorano gli argomenti *usando il loro valore e non il loro riferimento in memoria* (**passaggio per valore**).
+Normalmente le funzioni di TypeScript lavorano gli argomenti *usando il loro valore e non il loro riferimento in memoria* (**passaggio per valore**).
 
 Ciò significa che funzioni del genere: 
 
@@ -288,7 +288,7 @@ funzioneConArgomentiVariabili(...arrayVarargs)
 
 ### Le variabili funzione e le funzioni anonime
 
-In Typescript *le funzioni sono a tutti gli effetti delle variabili*, questo consente di crearle e memorizzarle all'interno di una di esse.  
+In TypeScript *le funzioni sono a tutti gli effetti delle variabili*, questo consente di crearle e memorizzarle all'interno di una di esse.  
 
 Facciamo un esempio con una funzione che stampa true se la prima stringa ha un numero di caratteri superiore oppure è alfa-numericamente maggiore della seconda:
 
