@@ -209,11 +209,11 @@ tutti gli argomenti= [Arguments] { '0': 1 }
 
 
 
-### Argomenti REST ( o varargs )
+### Argomenti REST (o varargs)
 
-Gli argomenti variabili ( varargs in alcuni linguaggi, REST in altri ) son un numero indefinito di argomenti che vengono trasformati poi in un vettore, vanno inseriti a fine metodo e condividono tutti lo stesso tipo. 
+Gli argomenti variabili (varargs in alcuni linguaggi, REST in altri) son un numero indefinito di argomenti che vengono trasformati poi in un vettore, vanno inseriti a fine metodo e condividono tutti lo stesso tipo. 
 
-Per inserire un argomento variabile bisogna farne precedere il nome da tre caratteri `.` di seguito, il tipo scelto deve essere poi di tipo array : 
+Per inserire un argomento variabile bisogna farne precedere il nome da tre caratteri `.` di seguito, il tipo scelto deve essere poi un array: 
 
 ```typescript 
 function funzioneConArgomentiVariabili(parametro1:number,parametro2:string,...argomentovarargs:string[]):void {
@@ -257,7 +257,7 @@ varargs list: []
 
 
 
-Gli argomenti variabili vengono poi trattati all'interno del metodo come fossero un array, con tutto quello che ne comporta, ad esempio è possibile richiamarci su la proprietà `length` oppure prelevare un particolare parametro : 
+Gli argomenti variabili vengono poi trattati all'interno del metodo come fossero un array, con tutto quello che comporta, ad esempio è possibile richiamare la proprietà `length` oppure prelevare un particolare parametro: 
 
 ```typescript
 function funzioneConArgomentiVariabili(...argomentovarargs:string[]):void {
@@ -462,7 +462,7 @@ Argument of type 'number' is not assignable to parameter of type 'string'.
 
 #### Best practice: usare type e funzioni anonime insieme 
 
-Potrebbe essere un vantaggio quello di inizializzare con type un nuovo tipo che corrisponde ad un specifico tipo di funzione. Tipo : 
+Potrebbe essere un vantaggio quello di inizializzare con type un nuovo tipo che corrisponde ad un specifico tipo di funzione. Esempio: 
 
 ```typescript
 type fConfrontoStringhe = (var1:string, var2:string)=> boolean; 
@@ -478,7 +478,7 @@ let funConfrontoStringhe:fConfrontoStringhe=(stringa1:string, stringa2:string) =
 
 
 
-E quindi vincolarla in un metodo: 
+Infine, vincolarla in un metodo: 
 
 ```typescript
 function fOrdinamentoCorretta (var1:string,var2:string,funzioneOrdinamento: fConfrontoStringhe){
@@ -504,5 +504,4 @@ function (arg1,arg2...) : tipoRitorno {}
 
 
 
-La differenza è che il primo metodo se pur più elegante sintatticamente ottiene delle limitazioni, non viene infatti creata <u>una funzione come oggetto</u> ma più come oggetto primitivo. 
-
+La differenza è che il primo metodo, seppur più elegante sintatticamente, ha delle limitazioni, non viene infatti creata <u>una funzione come oggetto</u> ma più come oggetto primitivo.
