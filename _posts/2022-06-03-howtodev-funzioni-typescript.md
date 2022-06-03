@@ -1,10 +1,10 @@
 ---
 title: '#howtodev - Funzioni in TypeScript' 
-date: 2022-06-03 07:00
+date: 2022-06-03 06:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
-published: false
+published: true
 tags: 
 - typescript 
 - funzioni 
