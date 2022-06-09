@@ -1,5 +1,5 @@
 ---
-title: '#howto - La struttura del filesystem Linux'
+title: '#howto - La struttura del file system Linux'
 date: 2022-06-10
 layout: post
 author: Alphvino
@@ -10,60 +10,61 @@ tags:
 - filesystem 
 ---
 
-Ogni giorno, non solo noi, ma anche altre persone nel mondo usano distro linux.
-Ognuna di quest'ultime ha le sue peculiarità, magari il package manager oppure il loro init di sistema. Probabilmente c'è solo una cosa che è molto simile, quasi spiccicata, in tutte le distribuzioni linux. La struttura del filesystem.
+Parliamo del file system Linux, cerchiamo di comprendere ogni cartella creata dalla nostra distribuzione che ruolo ha per il nostro sistema.
 
-## Cos'è un filesystem?
+## Cos'è un file system?
 
-Un filesystem indica il modo con il quale i file e le cartelle sono organizzate all'interno del disco fisico. All'interno di un filesystem Linux i dati vengono scritti all'interno di blocchi e successivamente vengono aggiornate tutte le tabelle e le strutture.
+Un file system indica il modo con il quale i file e le cartelle sono organizzate all'interno del disco fisico. All'interno di un file system Linux i dati vengono scritti all'interno di blocchi e successivamente vengono aggiornate tutte le tabelle e le strutture.
 
-Attualmente, in molte distro Linux, il filesystem di base è EXT4, basato sul journaling dove la dimensione massima di un file arriva a 16TB e le dimensioni dell'intera struttura del filesystem fino a 1 exabyte. (1 milione di TB).
+Attualmente, in molte distro Linux, il file system di base è **EXT4**, basato sul journaling dove la dimensione massima di un file arriva a `16TB` e le dimensioni dell'intera struttura del file system fino a `1 exabyte`. (*1 milione di TB*); è anche vero che ci si sta spostando verso il file system **BTRFS**, di tipo copy-on-write e dotato di varie funzionalità, come quella di poter riconoscere modifiche e ripristinare a stati precedenti ogni singolo file.
 
-### Struttura del filesystem Linux
+### Struttura del file system Linux
 
-La struttura di un filesystem è molto simile tra le varie distro e tutte seguono lo standard FHS(Filesystem Hierarchy Standard). Ci possono essere piccole differenze come nel caso di Ubuntu che tende a creare nella`/`(radice di sistema) una cartella chiamata snap, non presente di default in altre distro.
+La struttura di un file system è molto simile tra le varie distro e tutte seguono lo standard FHS(File System Hierarchy Standard) seguito da tutti i sistemi operativi UNIX like. 
+Ci possono essere piccole differenze.
 
-- /bin -> Contiene tutti gli eseguibili richiamabili da chiunque nel sistema.
-  Ad esempio il comando `rm`, `ls`, `ping` si trovano proprio qua.
+- `/bin` &rarr; Contiene i software binari che dovrebbero stare alla base del nostro os, quindi software che svolgono ruoli precisi e limitati. Ad esempio il comando `rm`, `ls`, `ping` si trovano proprio qua.
   
-- /boot -> Contiene tutti i file necessari all'avvio del sistema, incluso il kernel Linux.
+- `/boot` &rarr; Contiene tutti i file necessari all'avvio del sistema, incluso il kernel Linux e il `grub`. A volte la cartella EFI, anche se quest'ultima potrebbe trovarsi in una cartella /efi a se stante in alcune distribuzioni. 
   
-- /dev -> Contiene i file di tutti i dispositivi hardware sulla macchina, come cpu, cdrom, dischi. (Sostanzialmente tutto è un file)
+- `/dev` &rarr; Contiene i file di tutti i dispositivi hardware sulla macchina, come cpu, cdrom, dischi. (Sostanzialmente tutto è un file)
   
-- /etc -> Contiene tutti i file di configurazione delle applicazioni system-wide
+- `/etc` &rarr; Contiene tutti i file di configurazione delle applicazioni system-wide
   
-- /home -> Contiene le cartelle e file personali di tutti gli utenti del sistema
+- `/home` &rarr;  cartella forse che conoscete di più, al suo interno vi sono **tutte** le cartelle utenti. Specifico **tutte**, infatti la `/home` non contiene una home, ma *tante*, pensare il contrario è un errore comune nei neofiti, sappiate quindi che al suo interno vedrete tante cartelle ognuna chiamata con il nome dell'utente di cui contengono una home. Ad esempio `/home/nomeutente 
+  `
+- `/root` &rarr; Contiene i file e cartelle personali dell'utente root. Unico utente a non risiedere sotto `/home`
+
+- `/lib` &rarr; contiene le librerie software, ovvero dei particolari binari che non sono direttamente eseguibili, ma contengono funzionalità che servono ad altri software. lib contiene tipicamente librerie a 32bit.
+
+- `/lib64` &rarr; come lib, ma a 64 bit.
   
-- /lib -> Contengono tutte le librerie che servono al funzionamento dei programmi che si trovano in `/bin`
+- `/lost+found` &rarr; Viene creata quando il sistema rileva (tramite `fsck` ad esempio) delle incongruenze sui file. I processi di recupero di dati corrotti sul file system qui usano questa cartella per tentare di ricostruire i file daneggiati, non tutti i file system per lo utilizzano (in genere gli `ext` ne fanno uso).
   
-- /lost+found -> Viene creata quando il sistema va in crash. Qui vengono salvati i file al momento del crash
+- `/mnt` &rarr; Non è usata spesso, però è la cartella più usata per montare dischi manualmente.
   
-- /media -> Contengono i file dei dispositivi removibili inseriti nel sistema, come USB
+- `/opt` &rarr; Contiene software applicativo di terze parti, generamente senza codice sorgente.
   
-- /mnt -> Non è usata spesso, però è la cartella più usata per montare dischi
+- `/proc` &rarr; Contiene informazioni sull'esecuzione di un processo con un particolare Process-id noto anche come pid.
   
-- /opt -> Contiene software applicativo di terze parti
+- `/run` &rarr; Quando un'applicazione ha bisogno di salvare dati temporanei, essi verranno messi qua. ta per runtime, qui dentro vengono inserite informazioni riguardo la sessione desktop corrente, la cartella non esiste sul disco ma è creata con tempfs che si trova sulla ram. A ogni reboot la cartella viene appunto svuotata. Alcune distribuzioni come arch utilizzano una loro subdirectory per montare dispositivi esterni 
   
-- /proc -> Contiene informazioni sull'esecuzione di un processo con un particolare Process-id noto anche com pid
+- `/sbin` &rarr; Molto simile a `/bin`. Contiene file eseguibili ma che si usano quasi solamente in modalità di super utente. Ad esempio programmi per eseguire manutenzione su dischi come `mount`. In alcuni casi troverete che il significato del nome sta per "sudo bin", in altri troverete "system bin"
   
-- /root -> Contiene i file e cartelle personali dell'utente root. Unico utente a non risiedere sotto `/home`
+- `/srv` &rarr; Contiene file di servizi che vengono usati sui server come server FTP o webserver.
   
-- /run -> Quando un'applicazione ha bisogno di salvare dati temporanei, essi verranno messi qua. La cartella non esiste sul disco ma è creata con tempfs che si trova sulla ram. A ogni reboot la cartella viene appunto svuotata.
+- `/sys` &rarr; Contiene informazioni utili sui dispositivi collegati al sistema. Come il modello di un disco.
   
-- /sbin -> Molto simile a `/bin`. Contiene file eseguibili ma che si usano quasi solamente in modalità di super utente. Ad esempio programmi per eseguire manutenzione su dischi come `mount`
+- `/tmp` &rarr; Contiene file temporanei. Rispetto a /run questa cartella può essere usata da tutti senza particolari privilegi.
   
-- /srv -> Contiene file di servizi che vengono usati sui server come server FTP o webserver.
+- `/usr` &rarr; Sta per user-data e contiene in genere le installazioni software, con tanto di alcuni file di configurazione per ognuno di essi.
   
-- /sys -> Contiene informazioni utili sui dispositivi collegati al sistema. Come il modello di un disco.
-  
-- /tmp -> Contiene file temporanei. Rispetto a /run questa cartella può essere usata da tutti senza particolari privilegi.
-  
-- /usr -> Contiene eseguibili, codice sorgente, manuali, librerie di altre applicazioni
-  
-- /var -> Contiene file che tendono ad aumentare di dimensione come i log di sistema o di altre applicazioni.
+- `/var` &rarr; Contiene file che tendono ad aumentare di dimensione come i log di sistema o di altre applicazioni.
+
+- `/media` &rarr; questa cartella contiene generalmente i file system esterni montati, ma non tutte le distribuzioni la usano (vedi arch). Controllate il suo contenuto se state cercando dove è stata montata la vostra penna usb!
   
 
 ### Conclusioni
 
-Bene, oggi sei venuto a conoscenza della struttura del filesystem Linux!
-Abbiamo parlato di cos'è un filesystem per finire poi con l'utilità delle varie cartelle in una comune distribuzione Linux :)
+Bene, oggi sei venuto a conoscenza della struttura del file system Linux!
+Abbiamo parlato di cos'è un file system per finire poi con l'utilità delle varie cartelle in una comune distribuzione Linux :)
