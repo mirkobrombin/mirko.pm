@@ -1,10 +1,10 @@
 ---
 title: '#howto - Nextcloud su Docker'
-date: 2022-06-17 
+date: 2022-06-17 07:00
 layout: post
 author: Floppy
 author_github: raspFloppy
-published: false
+published: true
 tags:
 - linux
 - docker 
@@ -13,7 +13,6 @@ tags:
 
 Come già visto in articoli precedenti Docker si ritrova ad essere un tool molto comondo per fare il 
 deploy di alcune applicazioni, oggi parliamo di **Nextcloud su Docker**.
-
 
 ## Prerequisiti
 Alcuni articoli utili per i neofiti sono
@@ -28,7 +27,8 @@ Installeremo due immagini:
 e connetteremo il database direttamente a nextcloud tramite il file yaml.
 
 Iniziamo creando la configurazione di nextcloud:
-```YAML
+
+```yaml
 services:
     nextcloud:
         image: nextcloud
@@ -53,7 +53,7 @@ Infine la porta di uscita di nextcloud andrà mappata.
 
 
 Perfetto adesso settiamo invece il database:
-```YAML
+```yaml
 services:
     database:
         image: mariadb
@@ -79,7 +79,7 @@ quando il database effettuerà `DELETE` e `UPDATE`, per maggiori informazioni le
 
 
 Perfetto, ora uniamo in unico `docker-compose.yml`:
-```YAML
+```yaml
 services:
     database:
         image: mariadb
