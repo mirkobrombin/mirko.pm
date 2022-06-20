@@ -390,7 +390,7 @@ ___
 
 Un piccolo riassunto di quanto detto:
 
-![RiassuntoBaseC](/uploads/git/riassuntoBaseC.png)
+![RiassuntoBaseC](/uploads/git/riassuntoBase.png)
 
 ___
 
