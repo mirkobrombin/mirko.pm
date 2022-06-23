@@ -59,7 +59,7 @@ Il pacco è un semplicissimo box marroncino simile a quelli di amazon, un po' pi
 
 
 
-![custodia](../uploads/steamdeck/sd_package.jpg)
+![custodia](/uploads/steamdeck/sd_package.jpg)
 
 
 
@@ -83,7 +83,7 @@ Essendo abituato al layout della Switch ho sempre pensato che avere sulla stessa
 Il layout studiato da valve è interessante, e per nulla scomodo. Raggiungi subito tutti i controlli senza alcuna difficoltà, anche i grilletti superiori e posteriori. 
 I trackpad aptici in realtà non trovano molta utilità nei giochi, ma per utilizzare le funzioni desktop son essenziali a mio parere. I 4 grilletti posteriori allo stesso modo non trovano molta utilità nei giochi a meno di creare dei layout custom gioco per gioco (cosa che può diventare, alla lunga, un po' stressante).
 
-![portabilità della steam deck](../uploads/steamdeck/sd_portability.jpg)
+![portabilità della steam deck](/uploads/steamdeck/sd_portability.jpg)
 
 ## Il software di Valve
 
@@ -102,11 +102,11 @@ Questa modalità è pensata esattamente per la Steam Deck e si vede. Tramite il 
 
 Dell'ultimo punto è particolarmente interessante la funzione che consente anche di cambiare finestra nel caso in cui un gioco ne apra più di una (anche se nel mio caso non ha funzionato). 
 
-![pannello sinistro](../uploads/steamdeck/sd_gaming_panel.jpg)
+![pannello sinistro](/uploads/steamdeck/sd_gaming_panel.jpg)
 
 Premendo il pulsante del menu sinistro del device accederemo ad menu di impostazioni con un layout che ricorda tantissimo quello della switch (ed anche alcuni device iOS/MacOS), con informazioni di sistema utili, slider per controllare luminosità ed altri parametri e notifiche. 
 
-![](../uploads/steamdeck/sd_impostazioni.jpg) 
+![](/uploads/steamdeck/sd_impostazioni.jpg) 
 
 Da qui è inoltre possibile abilitare e disabilitare un overlay che indica le attuali prestazioni del software che avete aperto (è possibile anche aumentare o diminuire il numero di informazioni).
 
@@ -141,7 +141,7 @@ Nulla da dire per *l'autonomia* se non si esce mai dalla Gaming Mode e se, come 
 
 ### Le funzioni speciali del tasto steam
 
-![](../uploads/steamdeck/sd_legenda.jpg)
+![](/uploads/steamdeck/sd_legenda.jpg)
 
 ## Desktop Mode 
 
@@ -175,7 +175,7 @@ passwd
 
 per crearne una. La *lingua del sistema è inglese* e non è possibile cambiarla per via del sistema read-only. 
 
-![](../uploads/steamdeck/sd_lang.jpg)
+![](/uploads/steamdeck/sd_lang.jpg)
 
 ### Deck e dock
 
@@ -183,7 +183,7 @@ Agire in modalità desktop direttamente dalla Deck non è esattamente una cosa s
 
 Quindi è meglio munirsi, fino a che non arriva la Dock ufficiale, di un HUB usb C che comprenda anche la funzione di carica e il trasferimento del segnale video (HDMI), tastiera e mouse esterni (oltre che magari un monitor). 
 
-![](../uploads/steamdeck/sd_docked.jpg)
+![](/uploads/steamdeck/sd_docked.jpg)
 
 
 
@@ -203,8 +203,8 @@ Il peggio è proprio la tastiera virtuale, dimenticate tutto quello che riguarda
 
 Tuttavia non tutto è perduto, infatti il modo migliore per utilizzarla è abituarsi a farlo con i trackpad: ogni trackpad si gestisce metà tastiera, scorrendo potete sorvolare sulle varie lettere. Premendo poi il trackpad inserirete quella specifica lettera. Se si fa un po' di esercizio diventa un modo molto veloce di scrivere, quasi piacevole.
 
-![](../uploads/steamdeck/sd_keyboard.jpg) 
- 
+![](/uploads/steamdeck/sd_keyboard.jpg) 
+
 
 
 
@@ -212,19 +212,19 @@ Tuttavia non tutto è perduto, infatti il modo migliore per utilizzarla è abitu
 
 Ecco qualche argomento bonus sulle applicazioni. Consiglio comunque di aggiungere ogni applicazione che intendete usare al di fuori di Steam come gioco "custom" di Steam stesso. In modo tale da potere accedere poi a quel software anche in Gaming Mode.
 
-![](../uploads/steamdeck/sd_bottles_as_steam.jpg)
+![](/uploads/steamdeck/sd_bottles_as_steam.jpg)
 
 ###  Bottles o Lutris ?
 
 Iniziando dal fatto che Lutris non è proprio riuscito sulla mia Deck a scaricare le dipendenze, Bottles ha un interfaccia più touch friendly che rende sicuramente migliore l'esperienza
 
-![](../uploads/steamdeck/sd_bottles.jpg)
+![](/uploads/steamdeck/sd_bottles.jpg)
 
 ### Sub container per installare le applicazioni 
 
 Ho provato varie strategie per installare applicazioni in maniera semplice su Steam. La migliore che vi segnalo è quella di utilizzare `pacstrap` per creare in una cartella della home una sorta di container custom, ed utilizzare poi `systemd-nspawn` e `xhost` per emulare una connessione `ssh` ed utilizzare `X11 Forward` ed avviare le applicazioni grafiche. 
 
-![](../uploads/steamdeck/sd_subcontainer.jpg)
+![](/uploads/steamdeck/sd_subcontainer.jpg)
 
 Se siete interessati potremmo portare una guida su questo argomento in futuro. Fatecelo sapere nei nostri gruppi telegram! 
 
