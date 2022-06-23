@@ -51,7 +51,7 @@ I confronti che farò con l'esperienza da gaming avverranno con il mio pc princi
 Tralasciamo ciò che concerne i tempi di prevendita, noti a tutti per essere esageratamente lunghi, 
 una volta che arriva la famosa email (ti senti un po' come *Harry Potter con la lettera di Hogwarts*) hai 3 giorni di tempo per completare l'acquisto. 
 
-Questo limite di tempo *mi ha un po' infastidito* ad essere sinceri, avrei preferito una settimana. Essendo possibile comprare la Steam Deck con il credito Steam infatti avrei voluto avere più tempo per potermi organizzare e cercare i buoni in vari negozi per fare l'acquisto più che utilizzare una carta di credito online. Ma va beh passiamo oltre. 
+Questo limite di tempo *mi ha un po' infastidito* ad essere sinceri, avrei preferito una settimana. Essendo possibile comprare la Steam Deck con il credito Steam infatti avrei voluto avere più tempo per potermi organizzare e cercare i buoni in vari negozi per fare l'acquisto più che utilizzare una carta di credito online. Ma va beh, passiamo oltre. 
 
 Mi è arrivata la famosa email il 16 Maggio e l'ho aperta il giorno dopo (banalmente non avevo visto l'email), ho completato l'ordine il giorno stesso e mi è arrivata il 24 Maggio, 7 giorni di attesa. Ovviamente hai a disposizione il tracking e tutte le informazioni necessarie senza problemi.
 
@@ -81,7 +81,7 @@ Uno dei punti su cui, a prima vista, ero meno sicuro riguardo l'hardware della S
 Essendo abituato al layout della Switch ho sempre pensato che avere sulla stessa linea i due analogici non fosse una grande idea, e che il destro dovesse stare più in basso. *Beh mi sbagliavo*.
 
 Il layout studiato da valve è interessante, e per nulla scomodo. Raggiungi subito tutti i controlli senza alcuna difficoltà, anche i grilletti superiori e posteriori. 
-I trackpad aptici in realtà non trovano molta utilità nei giochi, ma per utilizzare le funzioni desktop son essenziali a mio parere. I 4 grilletti posteriori allo stesso modo non trovano molta utilità nei giochi a meno di creare dei layout custom gioco per gioco (cosa che può diventare, alla lunga, un po' stressante).
+I trackpad aptici non sono molto utili nei giochi, ma per l'utilizzo delle funzioni desktop sono a mio avviso essenziali. Anche i quattro grilletti posteriori sono poco utili nei giochi, a meno che non si creino layout personalizzati partita per partita (cosa che alla fine può diventare un po' stressante).
 
 ![portabilità della steam deck](/uploads/steamdeck/sd_portability.jpg)
 
@@ -91,13 +91,13 @@ Entriamo subito in quella che è sicuramente la sezione più corposa nonché il 
 
 ### Primo avvio 
 
-Il primo avvio mi ha ricordato moltissimo quello dei device Android. Si tratta infatti di configurare l'account steam, lingua e accedere. Il tutto in maniera molto semplice.
+Il primo avvio mi ha ricordato moltissimo quello dei device Android. Si tratta infatti di configurare l'account Steam, lingua e accedere. Il tutto in maniera molto semplice.
 
 
 
 ### Gaming mode
 
-La console si avvia sempre nella così detta **Gaming Mode**, da non confondere per niente con la *Big Picture*. 
+La console si avvia sempre nella cosidetta **Gaming Mode**, da non confondere per niente con la *Big Picture*. 
 Questa modalità è pensata esattamente per la Steam Deck e si vede. Tramite il pulsante "`Steam`" si apre un **pannello di controllo** (sinistro) tramite cui è possibile accedere a *libreria*, *negozio*, *profilo*, *impostazioni di spegnimento* oppure un *menu di sistema* per il gioco corrente. 
 
 Dell'ultimo punto è particolarmente interessante la funzione che consente anche di cambiare finestra nel caso in cui un gioco ne apra più di una (anche se nel mio caso non ha funzionato). 
@@ -112,7 +112,7 @@ Da qui è inoltre possibile abilitare e disabilitare un overlay che indica le at
 
 #### Gaming Mode vs Big Picture
 
-Se paragoniamo la *Big Picture* ad un interfaccia tipica dei *Media Center*, la *Gaming Mode* è più simile ad un menù di una console. È inoltre fortemente ottimizzata per il touch e nel particolare per le funzioni della steam deck (funziona persino lo scrolling inverso se trascini col dito). Considero la Gaming Mode un update della Big Picture non solo necessario a questo caso d'uso, ma di una comodità e semplicità d'uso disarmante.
+Se paragoniamo la *Big Picture* ad un interfaccia tipica dei *Media Center*, la *Gaming Mode* è più simile ad un menù di una console. È inoltre fortemente ottimizzata per il touch e nel particolare per le funzioni della Steam Deck (funziona persino lo scrolling inverso se trascini col dito). Considero la Gaming Mode un update della Big Picture non solo necessario a questo caso d'uso, ma di una comodità e semplicità d'uso disarmante.
 
 
 
@@ -149,7 +149,7 @@ Passiamo a quella che per me è la nota più dolente, la modalità Desktop. Il m
 
 Spoiler: potrebbe non essere la cosa più facile.
 
-### Archlinux si, ma dimenticatevi pacman
+### Archlinux sì, ma dimenticatevi Pacman
 
 Tempo fa scrissi una guida per l'installazione di **Archlinux**, come punto chiave della domanda "Perché installare Arch" citai proprio la semplicità di usare il suo package manager, `pacman`, e anche l'enorme repository della community, ovvero **AUR**.
 
@@ -161,9 +161,9 @@ Per disattivare la *read only* in realtà si potrebbe anche dare un comando appo
 steamos-readonly disable
 ```
 
-ma comunque dopo gli aggiornamenti tutti i pacchetti o configurazioni aggiuntive andrebbero perse. 
+ma comunque dopo gli aggiornamenti <!-- dello steam deck/di sistema/del firmware -->tutti i pacchetti o configurazioni aggiuntive andrebbero perse. 
 
-Potete installare applicazioni persistenti solo nella vostra home, quindi con flatpak, appimage oppure spacchettando manualmente le cose (il che non è propriamente facilissimo quando ci son dipendenze da risolvere ad esempio).
+Potete installare applicazioni persistenti solo nella vostra home, quindi con Flatpak, AppImage oppure spacchettando manualmente le cose (il che non è propriamente facilissimo quando ci son dipendenze da risolvere ad esempio).
 
 ### Utente steam e lingua inglese
 
@@ -189,9 +189,9 @@ Quindi è meglio munirsi, fino a che non arriva la Dock ufficiale, di un HUB usb
 
 ### Trackpad aptici in modalità desktop 
 
-Il pulsante **steam** ha diverse funzionalità come già visto, e molte funzionano anche in modalità desktop. Premessa: il supporto non è esattamente nativo, per muovere il mouse ad esempio (tenete premuto steam e muovete il trackpad sinistro) dovrete *avere steam aperto* anche in modalità desktop. 
+Il pulsante **Steam** ha diverse funzionalità come già visto, e molte funzionano anche in modalità desktop. Premessa: il supporto non è esattamente nativo, per muovere il mouse ad esempio (tenete premuto steam e muovete il trackpad sinistro) dovrete *avere Steam aperto* anche in modalità desktop. 
 
-**Consiglio**, una volta che entrate in modalità desktop, di aprire *steam* ed andare alle *impostazioni dei controlli*, quindi premere su "*Configurazione desktop*" dove potrete impostare tutto ciò che riguarda i comandi in modalità desktop. 
+**Consiglio**, una volta che entrate in modalità desktop, di aprire *steam* ed andare alle *impostazioni dei controlli*, quindi premendo su "*Configurazione desktop*" è possibile impostare tutto ciò che riguarda i comandi in modalità desktop. 
 
 
 
@@ -201,7 +201,7 @@ Qualunque sia il contesto in cui siete, la tastiera virtuale si apre con il tast
 
 Il peggio è proprio la tastiera virtuale, dimenticate tutto quello che riguarda le bellissime tastiere Android, quella di Steam Deck è macchinosa, non prende tutti gli input ed è forse l'esperienza peggiore che avrete. 
 
-Tuttavia non tutto è perduto, infatti il modo migliore per utilizzarla è abituarsi a farlo con i trackpad: ogni trackpad si gestisce metà tastiera, scorrendo potete sorvolare sulle varie lettere. Premendo poi il trackpad inserirete quella specifica lettera. Se si fa un po' di esercizio diventa un modo molto veloce di scrivere, quasi piacevole.
+Tuttavia non tutto è perduto, infatti il modo migliore per utilizzarla è abituarsi a farlo con i trackpad: ogni trackpad si gestisce metà tastiera, scorrendo potete sorvolare sulle varie lettere. Premendo poi il trackpad inserirete quella specifica lettera. Con un po' di pratica, diventa un modo di scrivere assai veloce, quasi piacevole.
 
 ![](/uploads/steamdeck/sd_keyboard.jpg) 
 
@@ -226,13 +226,13 @@ Ho provato varie strategie per installare applicazioni in maniera semplice su St
 
 ![](/uploads/steamdeck/sd_subcontainer.jpg)
 
-Se siete interessati potremmo portare una guida su questo argomento in futuro. Fatecelo sapere nei nostri gruppi telegram! 
+Se siete interessati potremmo portare una guida su questo argomento in futuro. Fatecelo sapere nei nostri gruppi Telegram! 
 
 
 
 ## Le conclusioni 
 
-Steam Deck non è un prodotto finito, ha diverse mancanze e può essere migliorata in modi neanche immaginabili attualmente. Ma questo non significa che non sia un buon prodotto anzi, è attualmente **un ottimo prodotto**.
+Steam Deck non è un prodotto finito, ha diverse lacune e può essere migliorato in modi che al momento non sono nemmeno immaginabili. Ma questo non significa che non sia un buon prodotto anzi, è effettivamente **un ottimo prodotto**.
 
-Ma la domanda è: Steam Deck fa per voi? Se siete gamer fissati con dettagli come la grafica 4k, le performance perfette, fate streaming e giocate per 10 ore di fila probabilmente no. 
-Altresì se siete giocatori occasionali, non trovate comodo giocare al pc fisso o al notebook, volete un sistema portabile ma malleabile io vi direi di dargli una chance, ammesso che riusciate a preordinarla!
+Ma la domanda è: Steam Deck fa per voi? Se siete gamer fissati con dettagli come la grafica 4k, le performance perfette, fate streaming e giocate per 10 ore di fila, allora probabilmente no. 
+Se invece siete giocatori occasionali, non trovate comodo giocare al pc fisso o al notebook, volete un sistema portabile ma flessibile, vi direi di dargli una possibilità, ammesso che riusciate a preordinarla!
