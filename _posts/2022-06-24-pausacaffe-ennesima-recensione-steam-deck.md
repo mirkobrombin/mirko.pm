@@ -167,7 +167,7 @@ Per disattivare la *read only* in realtà si potrebbe anche dare un comando appo
 steamos-readonly disable
 ```
 
-ma comunque dopo gli aggiornamenti <!-- dello steam deck/di sistema/del firmware -->tutti i pacchetti o configurazioni aggiuntive andrebbero perse. 
+ma comunque dopo gli aggiornamenti di sistema, tutti i pacchetti o configurazioni aggiuntive andrebbero perse. 
 
 Potete installare applicazioni persistenti solo nella vostra home, quindi con Flatpak, AppImage oppure spacchettando manualmente le cose (il che non è propriamente facilissimo quando ci son dipendenze da risolvere ad esempio).
 
