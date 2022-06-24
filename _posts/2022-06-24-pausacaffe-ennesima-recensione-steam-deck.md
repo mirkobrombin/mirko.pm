@@ -1,10 +1,10 @@
 ---
 title: '#pausacaffé - La recensione di Steam Deck che non avete chiesto' 
-date: 2022-06-24 08:55
+date: 2022-06-24 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
-published: false
+published: true
 tags: 
 - Steam
 - deck
@@ -53,6 +53,12 @@ una volta che arriva la famosa email (ti senti un po' come *Harry Potter con la 
 
 Questo limite di tempo *mi ha un po' infastidito* ad essere sinceri, avrei preferito una settimana. Essendo possibile comprare la Steam Deck con il credito Steam infatti avrei voluto avere più tempo per potermi organizzare e cercare i buoni in vari negozi per fare l'acquisto più che utilizzare una carta di credito online. Ma va beh, passiamo oltre. 
 
+> **Aggiornamento in merito**: 
+>
+> Il revisore dell'articolo, che ringrazio tantissimo (*grazie Martin <3 tvb*) mi fa notare che da qualche giorno è uscita una notizia interessante. Se vi siete persi l'email di Steam Deck e il periodo di tre giorni è terminato, si può contattare il supporto di Steam per avere un po' più tempo. [Ulteriori dettagli qui.](https://twitter.com/OnDeck/status/1538949772010086400)
+
+
+
 Mi è arrivata la famosa email il 16 Maggio e l'ho aperta il giorno dopo (banalmente non avevo visto l'email), ho completato l'ordine il giorno stesso e mi è arrivata il 24 Maggio, 7 giorni di attesa. Ovviamente hai a disposizione il tracking e tutte le informazioni necessarie senza problemi.
 
 Il pacco è un semplicissimo box marroncino simile a quelli di amazon, un po' più decorato dall'interno forse; una volta aperto trovi questa busta di plastica in cui trovi il pc dentro la custodia (la mia versione comprendeva la custodia) e un ulteriore box con il caricatore.
@@ -81,7 +87,7 @@ Uno dei punti su cui, a prima vista, ero meno sicuro riguardo l'hardware della S
 Essendo abituato al layout della Switch ho sempre pensato che avere sulla stessa linea i due analogici non fosse una grande idea, e che il destro dovesse stare più in basso. *Beh mi sbagliavo*.
 
 Il layout studiato da valve è interessante, e per nulla scomodo. Raggiungi subito tutti i controlli senza alcuna difficoltà, anche i grilletti superiori e posteriori. 
-I trackpad aptici non sono molto utili nei giochi, ma per l'utilizzo delle funzioni desktop sono a mio avviso essenziali. Anche i quattro grilletti posteriori sono poco utili nei giochi, a meno che non si creino layout personalizzati partita per partita (cosa che alla fine può diventare un po' stressante).
+I trackpad aptici non sono molto utili nei giochi, ma per l'utilizzo delle funzioni desktop sono a mio avviso essenziali. Anche i quattro grilletti posteriori sono poco utili nelle attività video ludiche, a meno che non si creino layout personalizzati partita per partita (cosa che alla fine può diventare un po' stressante).
 
 ![portabilità della steam deck](/uploads/steamdeck/sd_portability.jpg)
 
