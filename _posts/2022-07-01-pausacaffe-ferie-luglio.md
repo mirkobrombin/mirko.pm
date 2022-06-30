@@ -1,5 +1,5 @@
 ---
-title: '#pausacaffé - Linuxhub in ferie per l\'estate' 
+title: "#pausacaffé - Linuxhub in ferie per l'estate"
 date: 2022-07-01 08:30
 layout: post
 author: Davide Galati (in arte PsykeDady)
