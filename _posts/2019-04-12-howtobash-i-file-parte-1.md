@@ -99,6 +99,4 @@ Immaginiamo di aver scaricato un pack di 30 sfondi bellissimo che adesso si trov
 
 Anche per oggi direi che è tutto, vi saluto e spero di avervi dato qualche spunto per iniziare ad usare in modo più piacevole il terminale.
 
-Se aveste dubbi o domande da porre trovate me e gli altri membri dello staff sul gruppo **telegram** della nostra community [**/gentedilinux**](https://t.me/gentedilinux).
-
 Ci becchiamo col prossimo episodio di **#howtobash**!
