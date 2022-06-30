@@ -1,5 +1,5 @@
 ---
-title: '#pausacaffé - Linuxhub in ferie per l'estate' 
+title: '#pausacaffé - Linuxhub in ferie per l\'estate' 
 date: 2022-07-01 08:30
 layout: post
 author: Davide Galati (in arte PsykeDady)
@@ -26,7 +26,7 @@ Nonostante i continui cambi di staff che stiamo avendo (cerchiamo sempre autori,
 
 Circa ad inizio Giugno, Mirko Brombin (il fondatore di Linux/hub) ha sottolineato come in questo periodo siamo arrivati ad avere 5000 visite per mese. 
 
-![tweet mirko](/uploads/ferieLuglio2022/tweet.png)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just realized that my Italian Linux blog has reached 5.5k views per month 🥳 <a href="https://t.co/banjXtMyPL">https://t.co/banjXtMyPL</a><br><br>Thanks <a href="https://twitter.com/PsykeDady?ref_src=twsrc%5Etfw">@PsykeDady</a> and all the kind guys👀</p>&mdash; Mirko Brombin (@brombinmirko) <a href="https://twitter.com/brombinmirko/status/1532273634848518144?ref_src=twsrc%5Etfw">June 2, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Può Sembrare poco e banale, ma ricordiamo sempre che Linux/hub è una piattaforma senza introiti, senza pubblicità e soprattutto che non si pubblicizza. Siamo solo un gruppo di ragazzi che scrivono articoli per passione. 
 
@@ -97,7 +97,7 @@ Grazie a **Floppy**, unico editore rimasto ad oggi in redazione, ma grazie anche
 Alcuni nomi importanti importanti son stati sicuramente: 
 
 - *Alessandro Zangrandi* di [GamingTalker](https://www.gamingtalker.it), ex capo-redattore.
-- *Andrea Guzzon*, il nostro esperto di sicurezza che odiava Java, lo saluto con tante tazzine di caffé.
+- *Andrea Guzzon*, il nostro esperto di sicurezza che odiava Java, lo saluto con tante tazzine di caffé 🍵🍵.
 
 
 
