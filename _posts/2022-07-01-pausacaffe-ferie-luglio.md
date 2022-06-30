@@ -1,5 +1,5 @@
 ---
-title: '#pausacaffé - Linuxhub in ferie per l'estate!' 
+title: '#pausacaffé - Linuxhub in ferie per l'estate' 
 date: 2022-07-01 08:30
 layout: post
 author: Davide Galati (in arte PsykeDady)
@@ -9,8 +9,6 @@ tags:
 - ferie
 - luglio
 ---
-
-
 
 Chi ha gli esami di stato, chi quelli dell'università e chi le consegne a lavoro prima del periodo di chiusura dell'azienda.  
 
@@ -99,7 +97,7 @@ Grazie a **Floppy**, unico editore rimasto ad oggi in redazione, ma grazie anche
 Alcuni nomi importanti importanti son stati sicuramente: 
 
 - *Alessandro Zangrandi* di [GamingTalker](https://www.gamingtalker.it), ex capo-redattore.
-- *Andrea Guzzon*, il nostro esperto di sicurezza che odiava Java, lo saluto con tante tazzine di caffé 🍵.
+- *Andrea Guzzon*, il nostro esperto di sicurezza che odiava Java, lo saluto con tante tazzine di caffé.
 
 
 
