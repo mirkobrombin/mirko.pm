@@ -1,10 +1,10 @@
 ---
 title: "#pausacaffé - Linuxhub in ferie per l'estate"
-date: 2022-07-01 08:30
+date: 2022-07-01 10:00
 layout: post
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
-published: false
+published: true
 tags: 
 - ferie
 - luglio
