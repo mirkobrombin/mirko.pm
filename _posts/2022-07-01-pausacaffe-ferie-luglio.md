@@ -28,7 +28,7 @@ Circa ad inizio Giugno, Mirko Brombin (il fondatore di Linux/hub) ha sottolineat
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just realized that my Italian Linux blog has reached 5.5k views per month 🥳 <a href="https://t.co/banjXtMyPL">https://t.co/banjXtMyPL</a><br><br>Thanks <a href="https://twitter.com/PsykeDady?ref_src=twsrc%5Etfw">@PsykeDady</a> and all the kind guys👀</p>&mdash; Mirko Brombin (@brombinmirko) <a href="https://twitter.com/brombinmirko/status/1532273634848518144?ref_src=twsrc%5Etfw">June 2, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Può Sembrare poco e banale, ma ricordiamo sempre che Linux/hub è una piattaforma senza introiti, senza pubblicità e soprattutto che non si pubblicizza. Siamo solo un gruppo di ragazzi che scrivono articoli per passione. 
+Può sembrare poco e banale, ma ricordiamo sempre che Linux/hub è una piattaforma senza introiti, senza pubblicità e soprattutto che non si pubblicizza. Siamo solo un gruppo di ragazzi che scrivono articoli per passione. 
 
 
 
