@@ -1,10 +1,10 @@
 ---
 title: '#howto - Gestire file e cartelle pesanti con ncdu'
-date: 2022-08-05 21:00
+date: 2022-08-05 09:00
 layout: post 
 author: Midblyte
 author_github: Midblyte
-published: false
+published: true
 tags: 
 - ubuntu
 - fedora
