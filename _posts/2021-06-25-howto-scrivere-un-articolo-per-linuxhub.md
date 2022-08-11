@@ -94,7 +94,7 @@ tags:
 
 > NOTA BENE:
 > 
-> la riga `published: false` rimane tale fintanto che non vengono pubblicati gli articoli, dopo aver passato il processo di revisione
+> la riga `published: false` rimane tale fintanto che non vengono pubblicati gli articoli, dopo aver passato il processo di revisione. Quanto riguarda il redattore, va inserito linuxhubit, il valore viene poi cambiato da chi effettivamente corregge l'articolo
 
 ## Sintassi Markdown
 
