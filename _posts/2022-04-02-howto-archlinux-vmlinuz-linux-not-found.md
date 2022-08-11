@@ -4,6 +4,8 @@ date: 2022-04-02 09:00
 layout: post 
 author: Alphvino
 author_github: Alphvino
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - archlinux

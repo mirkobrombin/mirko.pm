@@ -5,6 +5,8 @@ date: 2019-03-30
 layout: post
 author: Leo
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - ubuntu  
   - bash

@@ -5,6 +5,8 @@ date: 2017-10-01
 layout: post
 author: Giuliano Z.
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
 
 ---

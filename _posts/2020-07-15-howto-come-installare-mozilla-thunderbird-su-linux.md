@@ -4,6 +4,8 @@ date: 2020-07-15
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash  - privacy  - bash  - privacy
 ---

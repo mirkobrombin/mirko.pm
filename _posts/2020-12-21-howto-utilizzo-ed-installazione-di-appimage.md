@@ -4,6 +4,8 @@ date: 2020-12-21
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - github  - bash
 ---

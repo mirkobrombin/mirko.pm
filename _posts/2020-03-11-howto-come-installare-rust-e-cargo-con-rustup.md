@@ -5,6 +5,8 @@ date: 2020-03-11
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
 ---

@@ -4,6 +4,8 @@ date: 2022-05-27 10:06
 layout: post 
 author: Floppy
 author_github: raspFloppy  
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - archlinux 

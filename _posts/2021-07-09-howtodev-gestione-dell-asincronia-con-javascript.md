@@ -4,6 +4,8 @@ date: 2021-07-09 13:00
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
     - bash
     - javascript

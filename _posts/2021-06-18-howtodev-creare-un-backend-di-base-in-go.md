@@ -5,6 +5,8 @@ date: 2021-06-18
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
 
 - go

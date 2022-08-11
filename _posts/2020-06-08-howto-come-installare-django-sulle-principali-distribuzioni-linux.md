@@ -4,6 +4,8 @@ date: 2020-06-08
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - fedora  
   - python  

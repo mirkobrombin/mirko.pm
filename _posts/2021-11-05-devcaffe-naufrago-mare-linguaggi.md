@@ -4,6 +4,8 @@ date: 2021-11-05 16:20
 layout: post 
 author: Massimiliano Noviello
 author_github: linuxhubit 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
 - caffe 
 - chiacchiere

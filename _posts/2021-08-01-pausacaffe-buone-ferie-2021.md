@@ -4,6 +4,8 @@ date: 2021-08-01 09:30
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - agosto 
 - ferie 

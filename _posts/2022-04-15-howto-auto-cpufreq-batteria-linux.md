@@ -4,6 +4,8 @@ date: 2022-04-15 08:20
 layout: post
 author: Floppy
 author_github: raspFloppy
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags:
 - battery

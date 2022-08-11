@@ -5,6 +5,8 @@ date: 2017-09-26
 layout: post
 author: Leonardo O.
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - debian
 ---

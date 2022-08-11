@@ -4,6 +4,8 @@ date: 2022-03-25 17:20
 layout: post
 author: Floppy
 author_github: raspFloppy
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags:
 - ubuntu

@@ -4,6 +4,8 @@ date: 2021-12-31 21:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - capodanno

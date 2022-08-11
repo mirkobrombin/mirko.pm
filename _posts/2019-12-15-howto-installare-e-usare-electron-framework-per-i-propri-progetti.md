@@ -5,6 +5,8 @@ date: 2019-12-15
 layout: post
 author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - mysql
 ---

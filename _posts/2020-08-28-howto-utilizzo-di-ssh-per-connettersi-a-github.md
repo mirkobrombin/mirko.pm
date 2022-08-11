@@ -4,6 +4,8 @@ date: 2020-08-28
 layout: post
 author: Andrea Guzzon
 author_github: beard33
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - github  - bash  - ssh  - ssh  - bash
 ---

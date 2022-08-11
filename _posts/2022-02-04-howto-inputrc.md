@@ -4,6 +4,8 @@ date: 2022-02-04 15:11
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - inputrc 

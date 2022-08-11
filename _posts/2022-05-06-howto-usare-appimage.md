@@ -4,6 +4,8 @@ date: 2022-05-06 11:00
 layout: post
 author: Floppy
 author_github: raspFloppy
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags:
 - appimage

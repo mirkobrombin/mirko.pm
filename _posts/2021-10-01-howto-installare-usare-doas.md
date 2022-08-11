@@ -4,6 +4,8 @@ date: 2021-10-01 12:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - doas 
 - ubuntu 

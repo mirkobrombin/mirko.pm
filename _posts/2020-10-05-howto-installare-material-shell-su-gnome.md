@@ -4,6 +4,8 @@ date: 2020-10-05
 layout: post
 author: WhiXard
 author_github: Bildcraft1
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - github  
   - gnome  

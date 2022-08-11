@@ -4,6 +4,8 @@ date: 2021-01-29
 layout: post
 author: WhiXard
 author_github: Bildcraft1
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
 ---

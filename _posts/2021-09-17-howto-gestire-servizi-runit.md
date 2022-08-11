@@ -4,6 +4,8 @@ date: 2021-09-17 11:00
 layout: post 
 author: Massimiliano Noviello
 author_github: linuxhubit 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - init 
 - daemon 

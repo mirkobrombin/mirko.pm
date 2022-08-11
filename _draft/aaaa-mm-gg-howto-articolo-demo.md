@@ -4,6 +4,8 @@ date: aaaa-mm-gg H:M
 layout: post 
 author: Nome Autore
 author_github: Nome github 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: false
 tags: 
 - lista 

@@ -4,6 +4,8 @@ date: 2021-07-23 10:30
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - java 
 - bash 

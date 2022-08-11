@@ -35,6 +35,13 @@ layout: default
             <em itemprop="datePublished" content="{{ page.date }}">
                 <time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date: "%a, %b %e, %Y" }}</time>
             </em>
+			<br>
+			Redatto da
+            <em itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <a href="//github.com/{{ page.coauthor_github }}" target="_blank">
+                    <span itemprop="name">{{ page.coauthor }}</span>
+                </a>
+            </em>
         </span>
         <div class="tags">
             <div class="tag edit">

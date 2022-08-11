@@ -4,6 +4,8 @@ date: 2021-09-24 11:00
 layout: post 
 author: Floppy	
 author_github: raspFloppy
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - ubuntu
 - archlinux 

@@ -4,6 +4,8 @@ date: 2020-06-05 11:00
 layout: post
 author: Davide Galati (in arte PsykeDady)
 author_github: psykedady
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
   - git

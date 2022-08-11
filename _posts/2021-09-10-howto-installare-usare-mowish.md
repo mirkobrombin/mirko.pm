@@ -4,6 +4,8 @@ date: 2021-09-10 21:05
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - bash 
 - ubuntu 

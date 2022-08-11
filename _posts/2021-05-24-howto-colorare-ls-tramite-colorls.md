@@ -4,6 +4,8 @@ date: 2021-05-24
 layout: post 
 author: Floppy
 author_github: raspFloppy 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - bash
 - ubuntu

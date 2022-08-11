@@ -4,6 +4,8 @@ date: 2020-05-07
 layout: post
 author: Pietro di Caprio
 author_github: pietrodicaprio
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - nginx  
   - centos  

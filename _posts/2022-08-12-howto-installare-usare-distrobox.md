@@ -4,6 +4,8 @@ date: 2022-08-12 09:00
 layout: post
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: false
 tags: 
 - distrobox

@@ -5,6 +5,8 @@ date: 2019-08-06
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - nextcloud  
   - github  

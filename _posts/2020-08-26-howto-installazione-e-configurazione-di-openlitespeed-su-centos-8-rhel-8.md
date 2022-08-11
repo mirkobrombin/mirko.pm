@@ -4,6 +4,8 @@ date: 2020-08-26
 layout: post
 author: Mirko B.
 author_github: mirkobrombin
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - centos  - rhel
 ---

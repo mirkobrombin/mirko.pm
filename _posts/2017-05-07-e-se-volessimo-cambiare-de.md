@@ -4,6 +4,8 @@ date: 2017-05-07
 layout: post
 author: Giuliano Z.
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - php  
   - gnome  

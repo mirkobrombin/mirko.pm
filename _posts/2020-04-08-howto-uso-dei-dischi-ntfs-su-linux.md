@@ -5,6 +5,8 @@ date: 2020-04-08
 layout: post
 author: Niccolò Martiri
 author_github: talebian
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
 ---

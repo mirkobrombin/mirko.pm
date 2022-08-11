@@ -4,6 +4,8 @@ date: 2020-06-19
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
 ---

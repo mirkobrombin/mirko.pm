@@ -4,6 +4,8 @@ date: 2021-12-09 10:10
 layout: post 
 author: Massimiliano Noviello
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - Artix 

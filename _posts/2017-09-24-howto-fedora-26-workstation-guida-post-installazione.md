@@ -4,6 +4,8 @@ date: 2017-09-24
 layout: post
 author: Giuseppe F.
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - fedora  
   - gnome

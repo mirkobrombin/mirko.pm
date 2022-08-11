@@ -4,6 +4,8 @@ date: 2020-10-02
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - nginx  - bash  - ssh  - ssh  - bash
 ---

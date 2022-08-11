@@ -4,6 +4,8 @@ date: 2021-05-14
 layout: post
 author: Floppy Loppy
 author_github: raspFloppy
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
 - bash
 - docker	

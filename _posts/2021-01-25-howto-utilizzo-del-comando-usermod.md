@@ -4,6 +4,8 @@ date: 2021-01-25
 layout: post
 author: Alessandro Zangrandi
 author_github: AlexzanDev
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
 ---

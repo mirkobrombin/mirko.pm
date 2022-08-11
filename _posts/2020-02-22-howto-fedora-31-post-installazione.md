@@ -5,6 +5,8 @@ date: 2020-02-22
 layout: post
 author: Mattia Cosma
 author_github: mattiacosma
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - fedora  
   - gnome  

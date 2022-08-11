@@ -4,6 +4,8 @@ date: 2021-06-25
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - markdown 
@@ -79,6 +81,8 @@ date: aaaa-mm-gg 11:00
 layout: post 
 author: Nome Autore
 author_github: Nome github 
+coauthor: Nome Redattore
+coauthor_github: Profilo redattore github
 published: false
 tags: 
 - lista 

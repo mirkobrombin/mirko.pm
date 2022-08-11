@@ -5,6 +5,8 @@ date: 2021-10-08 12:00
 layout: post 
 author: Massimiliano Noviello
 author_github: linuxhubit 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - rust 
 - caffe 

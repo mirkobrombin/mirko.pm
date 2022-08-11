@@ -4,6 +4,8 @@ date: 2022-04-01 09:00
 layout: post 
 author: Psyke quello Euforico!
 author_github: PsykeDady
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags: 
 - wow
 - somuchfool

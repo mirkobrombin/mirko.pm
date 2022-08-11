@@ -4,6 +4,8 @@ date: 2021-05-31
 layout: post
 author: Massimiliano Noviello
 author_github: linuxhubit
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
 
 - ruby

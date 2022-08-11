@@ -5,6 +5,8 @@ date: 2020-03-14
 layout: post
 author: WhiXard
 author_github: Bildcraft1
+coauthor: linuxhub
+coauthor_github: linuxhubit
 tags:
   - bash
 ---

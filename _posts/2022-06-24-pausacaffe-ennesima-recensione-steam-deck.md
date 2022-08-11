@@ -4,6 +4,8 @@ date: 2022-06-24 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
+coauthor: linuxhub
+coauthor_github: linuxhubit
 published: true
 tags: 
 - Steam
