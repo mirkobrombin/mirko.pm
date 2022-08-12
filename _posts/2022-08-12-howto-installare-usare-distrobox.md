@@ -85,6 +85,8 @@ systemctl start docker
 systemctl start podman
 ```
 
+Potrebbe essere utile abilitare il servizio all'avvio, così da non dover ogni volta scrivere questo comando per avviare distrobox. [Leggete la nostra guida su systemd per sapere come fare](https://linuxhub.it/articles/howto-usare-e-comprendere-systemd/).
+
 
 
 ### Installazione
@@ -213,7 +215,7 @@ distrobox-list
 
 In realtà questo comando a sua volta utilizza un processo per identificare quali container di *podman* o *docker* son installati, giusto per farvi un idea potreste dare il comando (se state usando podman): 
 ```bash
-podman ps -a --no-trunc --format "{{.ID}}|{{.Image}}|{{.Names}}|{{.State}}|{{.Labels}}{{.Mounts}}"
+podman ps -a --no-trunc --format "&#123;&#123;.ID&#125;&#125;|&#123;&#123;.Image&#125;&#125;|&#123;&#123;.Names&#125;&#125;|&#123;&#123;.State&#125;&#125;|&#123;&#123;.Labels&#125;&#125;|&#123;&#123;.Mounts&#125;&#125;"
 
 ```
 
