@@ -28,7 +28,7 @@ Il container è fortemente connesso al sistema ospitante e consente anche di uti
 
 ## Guida all'installazione
 
-Distrobox è supportato ufficilamente da un gran numero di distribuzioni: Ubuntu, Fedora, Silverblue, Archlinux, Suse ecc... e l'installazione non dipende dal package manager, ma si può installare direttamente tramite l'utilizzo di [curl](https://linuxhub.it/articles/howto-utilizzo-del-comando-curl/).
+Distrobox è supportato ufficilamente da un gran numero di distribuzioni: Ubuntu, Fedora, Silverblue, Archlinux, Suse ecc... Alcune distribuzioni hanno il pacchetto incluso nel proprio package manager. Ma esiste comunque un processo di installazione che non dipende dal package manager, attraverso l'utilizzo di [curl](https://linuxhub.it/articles/howto-utilizzo-del-comando-curl/).
 
 
 
@@ -52,10 +52,9 @@ apt install podman
 
 #### Podman su Fedora 
 
-Da Fedora 35 è necessario abilitare i repository COPR
+Per installare su Fedora: 
 
 ```bash
-dnf -y copr enable rhcontainerbot/podman4
 dnf -y install podman
 ```
 
@@ -75,14 +74,10 @@ pacman -S podman
 
 #### Avviare il servizio
 
-Che abbiate installato podman o docker, ricordatevi di avviare il servizio prima di utilizzare distrobox: 
+Se avete installato  docker, ricordatevi di avviare il servizio prima di utilizzare distrobox: 
 
 ```bash
-# Per docker
 systemctl start docker
-
-# Per podman
-systemctl start podman
 ```
 
 Potrebbe essere utile abilitare il servizio all'avvio, così da non dover ogni volta scrivere questo comando per avviare distrobox. [Leggete la nostra guida su systemd per sapere come fare](https://linuxhub.it/articles/howto-usare-e-comprendere-systemd/).
@@ -133,7 +128,7 @@ Quindi scegliamo la nostra distribuzione, la lista è vasta:
 
 
 
-Sostanzialmente son tutte quelle che potete trovare [nell'hub di docker](https://hub.docker.com/search?image_filter=official&q=&type=image). Scegliamo quindi un nome da dare alla nostra installazione.
+Sostanzialmente son tutte quelle che potete trovare [nella lista ufficiale, sul sito di distrobox](https://distrobox.privatedns.org/compatibility.html#supported-container-managers). Scegliamo quindi un nome da dare alla nostra installazione.
 
 Scrivendo: 
 
@@ -155,7 +150,7 @@ distrobox create --image ubuntu --name distribuzione -H /home/distrobox/sububunt
 
 
 
-Come si può notare quindi si ha il nome dell'immagine introdotto dalla flag `--image`, il nome della nostra installazione introdotto dal flag `--distribuzione` e infine la home introdotta da `-H`. 
+Come si può notare quindi si ha il nome dell'immagine introdotto dalla flag `--image`, il nome della nostra installazione introdotto dal flag `--name` e infine la home introdotta da `-H`. 
 
 
 
