@@ -1,12 +1,12 @@
 ---
 title: '#howto - Installare e usare neovim'
-date: 2022-08-19 09:00
+date: 2022-08-19 08:00
 layout: post 
 author: Floppy
 author_github: raspFloppy 
 coauthor: Michael Messaggi
 coauthor_github: MichaelMessaggi
-published: false
+published: true
 tags: 
 - ubuntu
 - fedora
@@ -18,22 +18,29 @@ Esploriamo questo fantastico editor meglio insieme.
 
 
 ## Installazione
-Prima di tutto, installiamo Neovim sulle nostre distro preferite:
-Archlinux:
+Prima di tutto, installiamo Neovim sulle nostre distribuzioni preferite:
+
+### Archlinux
 ```bash
 pacman -S neovim
 ```
 
-Ubuntu:
+### Ubuntu e derivate
+
 ```bash
 apt install neovim
 ```
 
-Fedora:
+### Fedora 
+
 ```bash
 dnf install neovim
 ```
+
+### Uso 
+
 Una volta installato possiamo farlo partire con il comando:
+
 ```bash
 nvim
 ```
