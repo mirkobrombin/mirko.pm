@@ -4,8 +4,8 @@ date: 2022-08-26 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
-coauthor: linuxhub
-coauthor_github: linuxhubit
+coauthor: Alberto Bella (in arte MastroAlberto)
+coauthor_github: al6263 
 published: false
 tags: 
 - archlinux 
