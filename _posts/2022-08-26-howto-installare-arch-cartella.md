@@ -6,7 +6,7 @@ author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
 coauthor: Alberto Bella (in arte MastroAlberto)
 coauthor_github: al6263 
-published: false
+published: true
 tags: 
 - archlinux 
 - systemd 
