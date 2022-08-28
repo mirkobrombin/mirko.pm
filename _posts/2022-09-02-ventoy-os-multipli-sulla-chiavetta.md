@@ -4,8 +4,8 @@ date: 2022-09-02 09:00
 layout: post 
 author: Midblyte
 author_github: Midblyte
-coauthor: 
-coauthor_github: 
+coauthor: Michael Messaggi
+coauthor_github: MichaelMessaggi
 published: false
 tags:
 - ubuntu
@@ -28,7 +28,7 @@ E se non parte? Cos'è che, di preciso, sarà mai andato storto? Forse un'impost
 Poco da fare: in ogni caso **bisognerà ricominciare tutto da capo**.
 
 Senza parlare di quando era necessario aggiornare un sistema operativo, oppure aggiungerne uno nuovo senza dover ricorrere ad altre chiavette, e casi simili.
-Perlomeno, questo è ciò che accadeva in un passato - nemmeno troppo lontano - usando tool tradizionali come Rufus, dd, Gnome disks, Fedora writer, etcher, e così via.
+Perlomeno, questo è ciò che accadeva in un passato - nemmeno troppo lontano - usando tool tradizionali come Rufus, dd, Gnome Disks, Fedora Media Writer, Etcher, e così via.
 
 
 ## La soluzione: ecco Ventoy
