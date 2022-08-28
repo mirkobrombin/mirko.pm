@@ -35,7 +35,7 @@ Se abbiamo un installazione di Archlinux preesistente sarà tutto più semplice,
 
 
 
- ### Metodologia con host archlinux
+### Metodologia con host archlinux
 
 Possiamo utilizzare pacstrap per installare in una cartella tutti i pacchetti che necessitiamo.
 
