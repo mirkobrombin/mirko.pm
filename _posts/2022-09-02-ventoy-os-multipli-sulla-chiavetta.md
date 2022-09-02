@@ -1,12 +1,12 @@
 ---
 title: '#howto - Ventoy: OS multipli sulla chiavetta'
-date: 2022-09-02 09:00
+date: 2022-09-02 08:00
 layout: post 
 author: Midblyte
 author_github: Midblyte
 coauthor: Michael Messaggi
 coauthor_github: MichaelMessaggi
-published: false
+published: true
 tags:
 - ubuntu
 - fedora
