@@ -28,7 +28,7 @@ Abbiamo voluto, nei nostri ultimi cambiamenti, pensare un modo per includere il 
 
 ## Il sistema di pubblicazione 
 
-Tutto parte dal repository github https://github.com/linuxhubit/linuxhub.it. Tralasciando gran parte delle directory che son utilizzate internamente dal sito, il focus della pubblicazione comprende le sole cartelle : 
+Tutto parte [dal repository github](https://github.com/linuxhubit/linuxhub.it). Tralasciando gran parte delle directory che son utilizzate internamente dal sito, il focus della pubblicazione comprende le sole cartelle : 
 
 - `_draft` : in questa cartella risiedono gli articoli in bozza nonché articoli demo lasciati come esempio per le nostre categorie principali
 - `_posts` : in questa cartella si trovano gli articoli pubblicati, in revisione o programmati per la pubblicazione. 
