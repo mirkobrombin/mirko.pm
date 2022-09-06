@@ -30,7 +30,7 @@ Abbiamo voluto, nei nostri ultimi cambiamenti, pensare un modo per includere il 
 
 Tutto parte [dal repository github](https://github.com/linuxhubit/linuxhub.it). Tralasciando gran parte delle directory che son utilizzate internamente dal sito, il focus della pubblicazione comprende le sole cartelle : 
 
-- `_draft` : in questa cartella risiedono gli articoli in bozza nonché articoli demo lasciati come esempio per le nostre categorie principali
+- `_draft` : in questa cartella risiedono gli articoli in demo lasciati come esempio per le nostre categorie principali (o articoli in bozza dalla pubblicazione incerta).
 - `_posts` : in questa cartella si trovano gli articoli pubblicati, in revisione o programmati per la pubblicazione. 
 - `uploads` : qui risiedono i file allegati alle varie pubblicazioni, come foto o pdf. Ci teniamo a precisare che per maggiore leggibilità nonché leggerezza del repository è nostra politica *limitare quanto più possibile gli allegati ad un articolo*
 - `_trash` : qui vengono spostati vecchi articoli non più attuali che hanno subito una riedizione completa
@@ -63,7 +63,7 @@ Tutti gli articoli vanno scritti in *formato testuale con sintassi Markdown*, ri
 - `aaaa` è l'anno di pubblicazione
 - `mm` è il mese di pubblicazione 
 - `dd` è il giorno di pubblicazione 
-- howto è il format. Sono tre i format previsti attualmente da Linuxhub: 
+- howto è il format. I format previsti attualmente da Linuxhub sono: 
   - `howto` - guide sul mondo linux
   - `howtodev` - guide di programmazione 
   - `pausacaffe` - riflessioni varie
