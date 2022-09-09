@@ -11,7 +11,7 @@ tags:
 ---
 Solitamente quando si utilizza GitHub come hosting Git remoto per i progetti (sviluppati da noi o a cui contribuiamo) si è soliti eseguire le principali operazioni di `clone, push` o `pull` **autenticandosi attraverso username e password**. È tuttavia possibile semplificare al massimo l'utilizzo e l'identificazione su GitHub **utilizzando il protocollo SSH** e una **coppia di chiavi**.
 
-> *Disclaimer:* In questa guida darò per scontato che `ssh` sia installato sui vostri dispositivi (qualora non lo fosse vi rimando alla nostra [guida sull'installazione](https://linuxhub.it/articles/howto-come-usare-ssh-su-linux,-parte-1) 
+> *Disclaimer:* In questa guida darò per scontato che `ssh` sia installato sui vostri dispositivi (qualora non lo fosse vi rimando alla nostra [guida sull'installazione](https://linuxhub.it/articles/howto-usare-ssh/) 
 ), **che non abbiate ancora una coppia di chiavi generata** e che abbiate dimestichezza con l'utilizzo di **git** (se così non fosse, anche in questo caso, vi rimando alla [nostra guida](https://linuxhub.it/articles/howto-git-comprenderlo,-usarlo-e-amarlo)
 ).
 
