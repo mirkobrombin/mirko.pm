@@ -54,21 +54,11 @@ Una volta inserita la nostra password e confermata, la coppia di chiavi è stata
 
 Per poterci autenticare attraverso l'uso di SSH su GitHub è necessario aggiungere la chiave pubblica appena generata al nostro account GitHub.
 
-Per farlo dobbiamo recarci su GitHub e dal menù in alto a destra selezionare la voce **Impostazioni**:
+Per farlo dobbiamo recarci su GitHub e dal menù in alto a destra (cliccare la foto profilo) e selezionare la voce **Impostazioni** e selezionare nella colonna di sinistra la voce **SSH and GPG keys** e da qui selezionare **nuova chiave SSH**.  
 
-![github impostazioni](storage/github1.png)
+Ci troveremo davanti ad una schermata dove poter inserire un **titolo** (che ricordi il dispositivo su cui state effettuando la procedura) e per la **chiave pubblica**, incolliamocela dentro.
 
-E selezionare nella colonna di sinistra la voce **SSH and GPG keys** e da qui selezionare **nuova chiave SSH**:
-
-![github chiave ssh](storage/ssh2.png)
-
-Ci troveremo davanti ad una schermata come la seguente, con spazio per un **titolo** e per la **chiave pubblica**:
-
-![github titolo e chiave pubblica](storage/ssh4.png)
-
-Il titolo è un campo utile a ricordare la chiave che stiamo usando (e.g. potrebbe essere utile assegnare il nome del PC da qui ci stiamo connettendo). Per inserire la chiave pubblica invece è necessario copiarla.
-
-Potete aprirla con un qualunque edior di testo o da terminale dare il seguente comando:
+Potete copiare la chiave pubblica da terminale dando il seguente comando:
 
 ```bash
 cat /percorso/chiave/id_rsa.pub
