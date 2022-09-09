@@ -1,5 +1,5 @@
 ---
-title: '? #pausacaffè - Oggi si celebra il "System Administrator Appreciation Day"'
+title: '#pausacaffè - Oggi si celebra il "System Administrator Appreciation Day"'
 date: 2017-07-28
 layout: post
 author: Mirko B.
