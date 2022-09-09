@@ -1,5 +1,5 @@
 ---
-title: '? #pausacaffè - Android, non sicuro come si pensa?'
+title: '#pausacaffè - Android, non sicuro come si pensa?'
 date: 2017-08-23
 layout: post
 author: Mirko B.

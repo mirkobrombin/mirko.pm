@@ -1,5 +1,5 @@
 ---
-title: '? #pausacaffè – Perchè scelgo ElementaryOS?'
+title: '#pausacaffè – Perchè scelgo ElementaryOS?'
 date: 2017-08-27
 layout: post
 author: Mirko B.

@@ -1,5 +1,5 @@
 ---
-title: '? #pausacaffè - Se metti le mani è colpa tua! Tweaking delle distribuzioni.'
+title: '#pausacaffè - Se metti le mani è colpa tua! Tweaking delle distribuzioni.'
 date: 2017-11-03
 layout: post
 author: Mirko B.
