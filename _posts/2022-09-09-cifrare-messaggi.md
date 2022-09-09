@@ -6,7 +6,7 @@ author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
 coauthor: linuxhub
 coauthor_github: linuxhub 
-published: false
+published: true
 tags: 
 - cifrare 
 - messaggi
