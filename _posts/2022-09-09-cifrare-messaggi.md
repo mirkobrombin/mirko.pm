@@ -158,7 +158,7 @@ Tramite openSSL possiamo utilizzare delle chiavi esadecimali per cifrare i nostr
 Innanzitutto trasformiamo la nostra password testuale in esadecimale con `od`: 
 
 ```bash
-echo "la mia password" | od -t x1 -An | tr -d ' '
+echo "la mia password" | od -t x1 -An | tr -d ' \n'
 ```
 
 Quindi usiamola dopo il parametro `-K`, supponiamo sia uscito `FF`
