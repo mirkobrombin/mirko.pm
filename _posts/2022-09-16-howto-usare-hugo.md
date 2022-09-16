@@ -1,6 +1,6 @@
 ---
 title: '#howto - Usare Hugo' 
-date: 2022-09-16 10:34
+date: 2022-09-16 09:34
 layout: post 
 author: Floppy  
 author_github: raspFloppy
