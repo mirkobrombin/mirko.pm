@@ -1,12 +1,12 @@
 ---
 title: '#howto - Usare Hugo' 
-date: 2022-09-16 
+date: 2022-09-16 11:15
 layout: post 
 author: Floppy  
 author_github: raspFloppy
-coauthor: 
-coauthor_github:  
-published: false
+coauthor: Davide Galati (in arte PsykeDady) 
+coauthor_github: PsykeDady
+published: true
 tags: 
 - bash
 - web
@@ -29,23 +29,26 @@ Per scaricare il binario, andiamo sul sito ufficiale nella sezione [Downloads](h
 
 Se decidiamo di installare Hugo dal nostro repository allora andremo a cercare il pacchetto `hugo` e lo installeremo con il nostro gestore dei pacchetti preferito.
 
-**Arch Linux**: 
+#### Arch Linux 
+
 ```bash
 sudo pacman -S hugo
 ```
 
-**Debian/Ubuntu**:
+#### Debian/Ubuntu 
+
 ```bash
 sudo apt install hugo
 ```
 
-**Fedora**:
+#### Fedora
+
 ```bash
 sudo dnf install hugo
 ```
 
 
-### Installare con snap
+#### Installare con snap
 
 Tramite **snap** invece noi andremo a scaricare il pacchetto dallo store di snap e lo installeremo con il comando:
 ```bash
