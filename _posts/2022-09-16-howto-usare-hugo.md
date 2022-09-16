@@ -32,19 +32,19 @@ Se decidiamo di installare Hugo dal nostro repository allora andremo a cercare i
 #### Arch Linux 
 
 ```bash
-sudo pacman -S hugo
+pacman -S hugo
 ```
 
 #### Debian/Ubuntu 
 
 ```bash
-sudo apt install hugo
+apt install hugo
 ```
 
 #### Fedora
 
 ```bash
-sudo dnf install hugo
+dnf install hugo
 ```
 
 
