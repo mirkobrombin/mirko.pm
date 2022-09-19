@@ -404,6 +404,91 @@ Ecco un esempio di output (attaccando e staccando il mio mouse):
 
 ## Le periferiche pci
 
+La Peripheral Component Interconnect (PCI) è uno standard che connette le periferiche direttamente alla scheda madre. Generalmente le periferiche di interesse son quelle di rete e le schede video.  
+
+Il tool che identifica tali periferiche è `lspci`. Non tutte le distribuzioni lo hanno preinstallato. 
+
+### LSPCI su Ubuntu e derivate 
+
+Per installare lspci su Ubuntu: 
+
+```bash
+apt install pciutils
+```
+
+
+### LSPCI su Fedora
+
+Per installare lspci su Fedora: 
+
+```bash
+dnf install pciutils
+```
+
+
+### LSPCI su Archlinux
+
+Per installare lspci su Archlinux: 
+
+```bash
+pacman -S pciutils
+```
+
+### Utilizzo 
+
+Per utilizzarlo basta scrivere: 
+
+```bash
+lspci
+```
+
+Potrebbe essere necessario filtrare con `grep` per avere subito i risultati della periferica ricercata. Ad esempio per cercare il nome della scheda video: 
+
+```bash
+lspci | grep -iP '(VGA|3d)'
+```
+
+### Driver in uso 
+
+È possibile specificare il paramentro `-k` per verificare i moduli del kernel in uso per ogni periferica: 
+
+```bash
+lspci -k
+```
+
+Anche qui un uso consapevole di grep potrebbe aiutare ad ottenere subito i risultati ricercati. Ad esempio per sapere che driver sta utilizzando la periferica di rete si può scrivere:  
+
+```bash
+lspci -k | grep -i network -A 3
+```
+
+## CPU e core 
+
+### cpuinfo
+
+```bash
+cat /proc/cpuinfo
+```
+
+### lscpu
+
+
 ## I software *fetch
 
+I così detti software `*fetch` son programmi caratterizzati sia dalla comune desinenza (**fetch** per l'appunto) sia dalla caratteristica di fornire un *riassunto informativo* di tutte le informazioni di sistema, spesso incentrate su CPU, GPU, RAM e nome della distribuzione.
+
+### screenfetch
+
+### neofetch 
+
+### cpufetch
+
 ## Software di monitoraggio completo
+
+### top
+
+### htop 
+
+### bashtop 
+
+### glances 
