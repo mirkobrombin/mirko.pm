@@ -464,31 +464,379 @@ lspci -k | grep -i network -A 3
 
 ## CPU e core 
 
+Quanti core ha la vostra cpu? A quale frequenza? Vediamo quali strumenti esistono a riguardo. 
+
+### nproc
+
+Per sapere il numero di processori e core il metodo più semplice è usare il comando preinstallato `nproc`: 
+
+```bash
+nproc
+```
+
+
 ### cpuinfo
+
+Informazioni dettagliate sulle caratteristiche della cpu nonché sui singoli core si trovano nel file `/proc/cpuinfo`
 
 ```bash
 cat /proc/cpuinfo
 ```
 
+Si possono trovare svariate informazioni tra cui i set di istruzioni supportate, le mitigation attive, nome, frequenza e tanto altro.  
+
+Ecco un estratto di layout 
+
+```plain
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 80
+model name      : AMD Ryzen 9 5900HX with Radeon Graphics
+stepping        : 0
+microcode       : 0xa50000c
+cpu MHz         : 1567.354
+cache size      : 512 KB
+physical id     : 0
+siblings        : 16
+core id         : 0
+cpu cores       : 8
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 16
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm
+bugs            : sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips        : 6590.85
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate cpb eff_freq_ro [13] [14]
+```
+
+
 ### lscpu
 
+Questo comando riassume le informazioni più importanti della cpu, è meno completo della lettura del file `cpuinfo` ma nella maggior parte dei casi sufficiente.  
+
+Per utilizzarlo digitare semplicemente: 
+
+```bash
+lscpu
+```
+
+Si può avere un output riassuntivo dei vari core tramite l'opzioe `--all`, da usare così: 
+
+```bash
+lscpu --all --extended
+```
 
 ## I software *fetch
 
-I così detti software `*fetch` son programmi caratterizzati sia dalla comune desinenza (**fetch** per l'appunto) sia dalla caratteristica di fornire un *riassunto informativo* di tutte le informazioni di sistema, spesso incentrate su CPU, GPU, RAM e nome della distribuzione.
+I così detti software `*fetch` son programmi caratterizzati sia dalla comune desinenza (**fetch** per l'appunto) sia dalla caratteristica di fornire un *riassunto informativo* di tutte le informazioni di sistema, spesso incentrate su CPU, GPU, RAM e nome della distribuzione.  
 
 ### screenfetch
 
+Screenfetch è probabilmente il più semplice tra questi strumenti, si possono trovare informazioni su OS, numero di pacchetti, uptime, DE, disco utilizzato, CPU, GPU e ram. Normalmente va installato prima di esere utilizzato 
+
+
+#### Installazione di screenfetch su Ubuntu e derivate 
+Per installare il software su Ubuntu digitare: 
+
+```bash 
+apt install screenfetch
+```
+
+#### Installazione di screenfetch su Fedora
+Per installare il software su Fedora digitare: 
+
+```bash 
+dnf install screenfetch
+```
+
+#### Installazione di screenfetch su Archlinux
+Per installare il software su Archlinux digitare: 
+
+```bash 
+pacman -S screenfetch
+```
+
+
+#### Utilizzo di screenfetch
+
+L'utilizzo base si ottiene scrivendo solo: 
+
+```bash
+screenfetch
+```
+
+Esistono alcune opzioni elencabili tramite l'opzione `--help`: 
+
+```bash
+screenfetch --help
+```
+
+Ad esempio è possibile aggiungere delle linee extra con il flag `-c`, passando una stringa fatta da `CHIAVE=VALORE;ALTRACHIAVE=ALTROVALORE...etc..`. Ad esempio aggiungiamo il wan ip: 
+
+```bash
+screenfetch -C "Global_IP=$(curl ifconfig.me 2> /dev/null)" 
+```
+
 ### neofetch 
+
+Neofetch è il software di questa tipologia più completo nonché più personalizzabile. 
+
+#### Installazione di neofetch su Ubuntu e derivate 
+Per installare il software su Ubuntu digitare: 
+
+```bash 
+apt install neofetch
+```
+
+#### Installazione di neofetch su Fedora
+Per installare il software su Fedora digitare: 
+
+```bash 
+dnf install neofetch
+```
+
+#### Installazione di neofetch su Archlinux
+Per installare il software su Archlinux digitare: 
+
+```bash 
+pacman -S neofetch
+```
+
+
+#### Utilizzo di neofetch
+
+L'utilizzo base si ottiene scrivendo solo: 
+
+```bash
+neofetch
+```
+
+Esistono alcune opzioni elencabili tramite l'opzione `--help`: 
+
+```bash
+neofetch --help
+```
+
+Si può ad esempio forzare l'ascii style di una distribuzione. Ad esempio forziamo quella di archlinux: 
+
+```bash
+neofetch --ascii_distro Arch
+```
+
+#### File di configurazione di neofetch
+
+Il file di configurazione di neofetch si trova nella propria home nel percorso `$HOME/.config/neofetch/config.conf`.  
+
+Le informazioni mostrate per scelta predefinitia son quelle richiamate nel metodo `print_info()`. Se si vuole aggiungere qualcosa si deve scrivere dentro il metodo, tra le parentesi graffe. 
+
+Ad esempio per mostrare la canzone corrente che si sta ascoltando basta scrivere verso riga 36:  
+
+```bash
+info "Song" song
+```
 
 ### cpufetch
 
+CPU-fetch è un tool atto a mostrare informazioni sulla CPU.  
+
+#### Installazione di cpufetch su Ubuntu e derivate 
+
+Per installarlo su Ubuntu scrivere:  
+
+```bash
+apt install cpufetch
+```
+
+#### Installazione di cpufetch su Fedora  
+
+Per installarlo su Fedora scrivere:  
+
+```bash
+dnf install cpufetch
+```
+
+#### Installazione di cpufetch su Archlinux 
+
+Per installarlo su Archlinux e possibile utilizzare AUR (con git o tramite AUR-helper). Supponiamo il metodo di installazione tradizionale: 
+
+```bash
+git clone https://aur.archlinux.org/cpufetch.git
+
+cd cpufetch 
+
+makepkg -si 
+```
+
 ## Software di monitoraggio completo
+
+I software di monitoraggio servono a verificare in tempo reale come si stanno comportando tutti i parametri controllati prima, ne esistono diversi alcuni dei quali semplici altri complessi ma molto informativi. 
 
 ### top
 
+Il più comune è sicuramente top, basilare e leggero, presente in tutte le distribuzioni. 
+
+Mostra informazioni sul numero di processi, memoria, e cpu utilizzata. Per utilizzarlo basta scrivere 
+
+```bash
+top
+``` 
+
+Mentre è attivo, digitando `h` si può visualizzare un help.
+
 ### htop 
+
+Htop è poco più di un corrispettivo colorato di top. 
+
+#### Installazione di htop su Ubuntu e derivate 
+Per installare il software su Ubuntu digitare: 
+
+```bash 
+apt install htop
+```
+
+#### Installazione di htop su Fedora
+Per installare il software su Fedora digitare: 
+
+```bash 
+dnf install htop
+```
+
+#### Installazione di htop su Archlinux
+Per installare il software su Archlinux digitare: 
+
+```bash 
+pacman -S htop
+```
+
+
+#### Utilizzo di htop 
+
+Per utilizzarlo : 
+
+```bash
+htop
+```
+
 
 ### bashtop 
 
+Bashtop è un ottimo software di monitoraggio, comprende grafici esemplificativi, dettagli delle informazioni ed ha i temi. 
+
+#### Installazione di bashtop su Ubuntu e derivate 
+Per installare il software su Ubuntu digitare: 
+
+```bash 
+apt install bashtop
+```
+
+#### Installazione di bashtop su Fedora
+
+bashtop non è disponibile nei repository di Fedora, per cui procediamo con l'installazione. Installaiamo pip : 
+
+```bash
+dnf install pip
+```
+
+Quindi psutils: 
+
+```bash
+pip install psutil
+```
+
+Quindi compiliamolo: 
+
+```bash
+git clone https://github.com/aristocratos/bashtop.git
+cd bashtop
+sudo make install
+```
+
+Ovviamente nel caso non li aveste, son necessari anche `make` e `git` che potete installare sempre con `dnf`
+
+
+#### Installazione di bashtop su Archlinux
+Per installare il software su Archlinux digitare: 
+
+```bash 
+pacman install bashtop
+```
+
+#### Utilizzo di bashtop
+
+Per utilizzare bashtop basta digitare 
+
+```bash
+bashtop 
+```
+
+Con le frecce direzionali poi si possono selezionare i vari processi, con `esc` si mette il software in pausa e si può quindi selezionare il menu delle opzioni (dove si possono trovare eventualmente anche i temi).
+
 ### glances 
+
+Glances è un ottimo software di monitoraggio, completo e funzionale. L'installazione avviene tramite pip, superando quindi le barriere delle varie distribuzioni. Installiamo con il nostro package manager quindi `pip` e quindi installiamo Glances con un semplice comando: 
+
+```bash
+pip install glances
+```
+
+Utilizziamolo così: 
+
+```bash
+glances
+```
+
+Se disponiamo di un background del terminale bianco potrebbe essere più adatto utilizzare la versione white: 
+
+```bash
+glances --theme-white
+```
+
+### nvtop 
+
+nvtop è un alternativa a top che analizza le informazioni in tempo reale dei processi che occupano la GPU. 
+
+#### Installazione di nvtop su Ubuntu e derivate 
+Per installare il software su Ubuntu digitare: 
+
+```bash 
+apt install nvtop
+```
+
+#### Installazione di nvtop su Fedora
+Il software non è disponibile nativamente su fedora, per utilizzarlo è necessario installarlo manualmente: 
+
+Installiamo le dipendenze
+```bash 
+sudo dnf install libdrm-devel cmake ncurses-devel git gcc-c++
+```
+
+Quindi compiliamolo: 
+
+```bash
+git clone https://github.com/Syllo/nvtop.git
+mkdir -p nvtop/build 
+cd nvtop/build
+cmake .. -DNVIDIA_SUPPORT=ON -DAMDGPU_SUPPORT=ON
+make
+```
+
+Per installarlo alla fine scrivere: 
+
+```
+make install
+```
+
+#### Installazione di nvtop su Archlinux
+Per installare il software su Archlinux digitare: 
+
+```bash 
+pacman install nvtop
+```
