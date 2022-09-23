@@ -1,12 +1,12 @@
 ---
 title: '#howto - Raccogliere informazioni sul proprio pc da terminale' 
-date: 2022-09-23 09:00
+date: 2022-09-23 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
 coauthor: ALberto Bella 
 coauthor_github: al6263
-published: false
+published: true
 tags: 
 - archlinux
 - ubuntu
