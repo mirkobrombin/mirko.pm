@@ -801,7 +801,7 @@ glances --theme-white
 
 ### nvtop 
 
-nvtop è un alternativa a top che analizza le informazioni in tempo reale dei processi che occupano la GPU. 
+nvtop è un alternativa a top che analizza le informazioni in tempo reale dei processi che occupano la GPU. Non supporta GPU intel ma supporta pienamente AMD e NVIDIA. 
 
 #### Installazione di nvtop su Ubuntu e derivate 
 Per installare il software su Ubuntu digitare: 
@@ -840,3 +840,12 @@ Per installare il software su Archlinux digitare:
 ```bash 
 pacman install nvtop
 ```
+
+#### Utilizzo di nvtop 
+Per utilizzare nvtop basta scrivere 
+
+```bash
+nvtop
+```
+
+Premendo `F2` è possibile accedere al setup, con `F10` si chiude. 
