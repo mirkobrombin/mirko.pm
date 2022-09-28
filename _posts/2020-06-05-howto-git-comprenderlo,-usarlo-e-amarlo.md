@@ -10,27 +10,29 @@ tags:
   - bash
   - git
 ---
-Quando si parla di *software di versioning*, `git` è sicuramente il primo programma che ci viene in mente. È l'alternativa più popolare a sistemi come `svn`, e viene utilizzata anche in ambito enterprise.
+Quando si parla di *software di versioning*, `git` è sicuramente il primo programma che ci viene in mente. È l'alternativa più popolare a sistemi come `svn`, utilizzata anche in ambito enterprise.
 
-Per chi non lo sapesse, un software di versioning consente di conservare "**la storia**" delle <u>modifiche</u> di una determinata *cartella con tutti i suoi file e le sue sottocartelle*, o più comunemente di un **progetto**. Questo approccio, particolarmente usato nei progetti di programmazione, consente di poter tenere traccia degli autori delle modifiche, modificare su più fronti i contenuti di quelle cartelle senza intralciarsi l'un l'altro o eventualmente di annullare specifiche modifiche.  
-*Git è esattamente tutto questo*. Ma soprattutto, `git` lo ha fatto **Linus Torvalds**. Sì, proprio lui, quello di Linux. *FUCK YOU NVIDIA!*
+Per chi non lo sapesse, un software di versioning consente di conservare "**la storia**" delle <u>modifiche</u> di una determinata *cartella con tutti i suoi file e le sue sottocartelle* opuure, più comunemente, di un **progetto**. Questo approccio, particolarmente adottato nei progetti di programmazione, consente di tenere traccia degli autori delle modifiche, modificare su più fronti i contenuti di quelle cartelle senza intralciarsi l'un l'altro o, eventualmente, di annullare delle modifiche specifiche.  
+*Git è esattamente tutto questo*. Ma, soprattutto, è stato creato da **Linus Torvalds**. Sì, proprio lui, quello di Linux. *FUCK YOU NVIDIA!*
 
 ## Piccole precisazioni
 
 Sono necessarie alcune precisazioni:
 
-- l'articolo non coprirà *l'intero sapere umano* su **git**. Lo scopo, infatti, è quello di introdurre le meccaniche alla base, permettendo a chi ci si addentra di avere sempre qualche riferimento da cui iniziare o a cui tornare per <u>dubbi strutturali</u>.
-- Prima di applicare qualsiasi nozione presente in questo articolo su progetti di grandi dimensioni con dati importanti, ricordatevi di effettuare dei test su copie ed eseguire dei backup. Ricordate che `git` è uno strumento potente, e se ci può tanto aiutare allo stesso tempo può farci perdere ore di lavoro, se usato male. ? Linux/hub declina ogni **responsabilità** per i danni derivanti da un uso improprio delle informazioni contenute nel **sito**. ?
-- Tutte le immagini dell'articolo sono interpretazioni create dall'autore dell'articolo ( strumenti utilizzati: [Suite Libreoffice](https://it.libreoffice.org/), [G.I.M.P.](https://www.gimp.org/))
+- l'articolo non coprirà *l'intero sapere umano* su **git**. Lo scopo, infatti, è quello di introdurre le meccaniche alla base, permettendo, a chi ci si addentra, di avere sempre qualche riferimento da cui iniziare o a cui tornare per <u>dubbi strutturali</u>;
+- prima di applicare qualsiasi nozione presente in questo articolo su progetti di grandi dimensioni e/o con dati importanti, ricordatevi di effettuare dei test su delle copie e di eseguire dei backup. Tenete presente, infatti, che `git` è uno strumento potente e che, pur potendoci aiutare molto, allo stesso tempo, può farci perdere ore di lavoro, se usato male. 
+>Linux/hub declina ogni **responsabilità** per i danni derivanti da un uso improprio delle informazioni contenute nel **sito**.
+- tutte le immagini dell'articolo sono interpretazioni create dall'autore dell'articolo (strumenti utilizzati: [Suite Libreoffice](https://it.libreoffice.org/), [G.I.M.P.](https://www.gimp.org/)).
 
 
 ### Legenda
 
-- i contenuti tra parentesi quadrate (`[]`) all'interno dei comandi sono da intendersi come da sostituirsi con i valori di **proprio interesse**. Ad esempio, di fronte al contenuto `comando [il tuo nome]`, se il proprio nome è **Mario** il risultato atteso sarà `comando Mario` (le parentesi quadre ovviamente non sono da includersi nella sostituzione finale).
+I contenuti tra parentesi quadrate (`[]`) all'interno dei comandi sono da intendersi come da sostituirsi con i valori di **proprio interesse**. 
+Ad esempio, di fronte al contenuto `comando [il tuo nome]`, se il proprio nome è **Mario**, il risultato atteso sarà `comando Mario` (le parentesi quadre, ovviamente, non sono da includersi nella sostituzione finale).
 
 ## Installazione
 
-`git` è multipiattaforma, ed è quindi disponibile su ogni piattaforma tramite lo store o il package manager del sistema, oppure ancora attraverso il [sito web ufficiale](https://git-scm.com). Sono disponibili anche diverse interfacce grafiche che possono semplificare il suo operato, ma <u>sconsiglio vivamente di usare GUI nel caso in cui non si riuscisse ad utilizzare git da terminale</u>. Più facile, infatti, non significa sempre meglio se non si conosce la struttura e il funzionamento del software: ricordatevi che in ballo ci potrebbero essere progetti personali o ancora peggio quelli della propria azienda.
+`Git` è un software multipiattaforma, perciò è disponibile su ogni piattaforma tramite lo store o il package manager del sistema, oppure ancora attraverso il [sito web ufficiale](https://git-scm.com). Sono disponibili anche diverse interfacce grafiche che possono semplificare il suo operato, ma <u>sconsiglio vivamente di usare GUI nel caso in cui non si riuscisse ad utilizzare git da terminale</u>. La strada più facile, infatti, non significa che sia sempre la migliore, soprattutto se non si conosce la struttura ed il funzionamento del software: ricordatevi che in ballo ci potrebbero essere progetti personali oppure, ancora peggio, quelli della propria azienda.
 
 A questo punto installiamo git tramite i package manager delle distribuzioni più utilizzate:
 
@@ -51,26 +53,26 @@ Per maggiori approfondimenti sull'installazione (altre distro, installazione man
 ## Comprendere git
 
 `Git` è abbastanza banale da usare, ma è prima necessario comprendere la struttura su cui è basato.  
-Innanzitutto, `Git` è un sistema di <u>controllo delle versioni distribuito</u>; la maggior parte dei sistemi di questo tipo non memorizza i file in sé, ma ne ricostruisce la struttura partendo dalla storia attraverso una piccola serie di file binari che ne tracciano le modifiche.
+Innanzitutto, `Git` è un sistema di <u>controllo delle versioni distribuito</u>; la maggior parte dei sistemi di questo tipo non memorizza i file in sé, ma ne ricostruisce la struttura, partendo dalla storia, attraverso una piccola serie di file binari che ne tracciano le modifiche.
 
 Git prevede 3 stati di memorizzazione per i file:
 
-- normalmente questi si trovano nella **working area**, e stato in cui si trovano quelli su cui si lavora, su cui si attuano modifiche e dove se ne aggiungono di nuovi.  
-- Finite le modifiche si possono quindi spostare i file nella **staging area**. Nelle cartelle di `git` vengono aggiunti gli *object* relativi alle informazioni su quali sono i file modificati.
-- Si procede infine allo spostamento dei file nella **repository**, dove vengono creati i file '*incremento*' che descrivono come si è evoluta la propria working area.
+- normalmente questi si trovano nella **working area**, che consiste nello stato in cui si trovano i file su cui si sta lavorando, su cui si attuano delle modifiche e dove, eventualmente, se ne aggiungono di nuovi;  
+- terminate le modifiche, si possono, quindi, spostare i file nella **staging area**; nelle cartelle di `git` vengono aggiunti gli *object* relativi alle informazioni su quali sono i file modificati;
+- si procede, infine, allo spostamento dei file nella **repository**, dove vengono creati i file '*incremento*' che descrivono come si è evoluta la propria working area;
 
 Da qui in poi, in genere, il codice viene inviato nei <u>repository remoti</u> da noi impostati.
 
 Giusto per essere chiari, possiamo identificare queste 3 aree anche all'interno del nostro file system:
 
-- la <u>working area</u> rappresenta i file su cui lavoriamo, quindi tutta la **nostra cartella progetto**
-- la <u>staging area</u> è in realtà fittizia, e si tratta di una serie di file che indicano quali documenti sono cambiati dall'ultimo commit. Nuovi file di tracking vengono già inseriti nel **repository**.
-- infine il <u>repository</u> è interamente localizzato nella cartella nascosta dentro il nostro progetto `.git`
+- la <u>working area</u>, che rappresenta i file su cui lavoriamo, ossia tutta la **nostra cartella progetto**;
+- la <u>staging area</u>, che, in realtà, è fittizia, poichè si tratta di una serie di file che indicano quali documenti sono cambiati dall'ultimo commit, infatti i nuovi file di tracking vengono già inseriti nel **repository** di interesse;
+- infine, il <u>repository</u>, che è interamente localizzato nella cartella nascosta dentro il nostro progetto `.git`.
 
 ![Working staging repo base](/uploads/git/working-staging-repo_base.png)
 
 
-Il primo movimento dalla working area alla staging area è detto "*operazione di* **add**", mentre il secondo movimento da staging a repository è detto "*operazione di* **commit**". Si veda qua in basso la differenza tra tre repository <u>prima della</u> **add**, dopo la **add** e dopo il **commit**:
+Il primo movimento dalla working area alla staging area è detto "*operazione di* **add**", mentre il secondo movimento da staging a repository è detto "*operazione di* **commit**". Si veda, qua in basso, la differenza tra tre repository <u>prima della</u> **add**, dopo la **add** e dopo il **commit**:
 ![la struttura delle directory git](/uploads/git/git_meld_add-commit-bakdiff.png)
 
 Quando si punta ad un <u>*repository remoto*</u>, gli scambi di codici con quello locale son detti <u>operazione di **pull**</u> e <u>operazione di **push**</u>. "*Remoto*" in realtà è una parola un po' fuorviante, questo perchè l'URL può essere anche locale. Il senso di un'operazione del genere non è banale né solo didattica: ad esempio possiamo puntare una cartella del nostro file system che è poi sincronizzata con <u>una cloud dati</u>. Io utilizzo questo sistema per sincronizzare i miei progetti con **Dropbox** e **Mega**, ad esempio.
@@ -79,22 +81,19 @@ I repository puntati hanno poi dei "nomi" (in genere <u>origin</u>), funzionalit
 
 ### Creare una repository
 
-iniziamo quindi dalle basi, creando una repository `git` nella nostra cartella di progetto. Supponiamo che ci siano queste tre cartelle:
+Iniziamo, quindi, dalle basi, creando una repository `git` nella nostra cartella di progetto. Supponiamo che ci siano queste tre cartelle:
 
-- cartellaproj
-  - contiene i file di progetto in cui scriviamo i codici
-- reporemoto1
-  - contiene la sola repository, potrebbe essere locale o remota, ma non sarà direttamente "scrivibile"
-- repo2
-  - contiene i file di progetto in cui si può scrivere e la repo, come una sorta di copia-clone di cartellaproj. Potremmo pensarlo come se fosse una directory su un altro PC dove lavoriamo o quella di un nostro collega.
+- cartellaproj, che contiene i file di progetto in cui scriviamo i codici;
+- reporemoto1, che contiene la sola repository, potrebbe essere locale o remota, ma non sarà direttamente "scrivibile"
+- repo2, che contiene sia i file di progetto in cui si può scrivere, sia la repo, come una sorta di copia-clone di cartellaproj, da considerare come se fosse una directory su un altro PC, che sia quello su cui lavoriamo o quello di un nostro collega.
 
-Nella *cartellaproj* potrebbero già esserci file, ma ciò non è importante. Si entri quindi nella cartella e digitiamo:
+Nella *cartellaproj* potrebbero già esserci file, ma ciò non è importante. Si entri, quindi, nella cartella e si digiti:
 
 ```bash
 git init
 ```
 
-A questo punto verrà quindi creata la repository vuota. Se si hanno già dei file possiamo <u>aggiungerli e committarli</u>.
+A questo punto verrà creata la repository vuota. Se si hanno già dei file possiamo <u>aggiungerli e committarli</u>.
 
 Nel caso in cui si volesse creare una cartella che funzioni solo da repository, senza avere la necessità di scriverci i file ma per utilizzarla per clonare, mandare il codice e condividerlo con altre postazioni, bisogna creare una **repository minimale**. Spostiamoci <u>nella cartella reporemoto1</u> ed eseguiamo:
 
@@ -102,17 +101,17 @@ Nel caso in cui si volesse creare una cartella che funzioni solo da repository, 
 git init --bare
 ```
 
-Se si fa ora una differenza tra quello che viene creato nella cartella **reporemoto1** e **cartellaproj** notiamo subito enormi differenze. Supponiamo che nella cartella di progetto ci fossero già <u>dei file .c</u>. In quel caso, la situazione sarebbe simile a questa:
+Facendo, ora, un confronto tra quello che viene creato nella cartella **reporemoto1** e quello presente in **cartellaproj** notiamo subito enormi differenze. Supponendo, ad esempio, che che nella cartella di progetto ci fossero già <u>dei file .c</u>, la situazione sarebbe simile a questa:
 
 ![](/uploads/git/projVSrepo.png)
 
 In **cartellaproj** sembrano siano semplicemente rimasti gli stessi file di prima senza alcuna apparente modifica, ma in realtà esiste ora una <u>cartella nascosta **.git**</u> che fondamentalmente ha la stessa identica struttura della cartella <u>reporemoto1</u>.
 
-Concentriamoci quindi su ciò che invece si può notare, ovvero **cosa è apparso nella cartella reporemoto1**: essenzialmente sono tutti file che costituiscono la struttura di `git`, definiscono i vari branch, stati del progetto, storia dei file e log delle modifiche. Qui viene anche identificata la differenza tra un file che si trova in stato di *add* e uno che invece è stato mandato al *commit*.
+Concentriamoci, quindi, su ciò che invece si può notare, ovvero **cosa è apparso nella cartella reporemoto1**: essenzialmente sono tutti file che costituiscono la struttura di `git`, definiscono i vari branch, gli stati del progetto, la storia dei file ed i log delle modifiche. Qui viene anche identificata la differenza tra un file che si trova in stato di *add* e uno che invece è stato mandato al *commit*.
 
-Si troveranno però all'interno <u>oggetti binari e non direttamente modificabili</u>, con nomi lunghi e numerici e totalmente diversi da quelli che sono i veri file del progetto.
+Si troveranno, però, all'interno degli <u>oggetti binari e non direttamente modificabili</u>, con nomi lunghi e numerici, totalmente diversi da quelli identificativi degli effettivi file del progetto.
 
-Si entri nella cartella **<u>repo2</u>** e inizializziamo una repository non minimale vuota (`git init`) come fatto per <u>cartellaproj</u>.
+Si entri nella cartella **<u>repo2</u>** e si inizializzi una repository non minimale vuota (`git init`) come fatto per <u>cartellaproj</u>.
 
 ### Aggiungere una repository remota
 
@@ -121,13 +120,13 @@ A scopo dimostrativo, le relazioni tra i vari progetti saranno strutturate così
 - <u>cartellaproj</u> e <u>repo2</u> punteranno alla repository remota <u>reporemoto1</u>
 - <u>cartellaproj</u> avrà una seconda repository remota, cioè **repo2/.git**
 
-Per realizzare questi passaggi è necessario (dopo essere entrati nella cartella) scrivere un istruzione come la seguente nel proprio terminale:
+Per realizzare questi passaggi è necessario (dopo essere entrati nella cartella) scrivere un'istruzione, come la seguente, nel proprio terminale:
 
 ```bash
 git remote add [nomerepository] [percorso completo repository]
 ```
 
-Supponendo che le cartelle esempio qui trattate siano nella nostra cartella *home*, una volta entrati nella cartella <u>cartellaproj</u> possiamo scrivere:
+Supponendo che le cartelle d'esempio, qui trattate, siano nella nostra cartella *home*, una volta entrati nella cartella <u>cartellaproj</u> possiamo scrivere:
 
 ```bash
 git remote add repository1 ~/reporemoto1/
@@ -136,18 +135,18 @@ git remote add repository2 ~/repo2/.git
 
 Si noti subito la differenza: dato che *reporemoto* è una repository minimale, il percorso indicato per aggiungerlo come repository remota è la cartella stessa. Differente è il caso di *repo2*, che invece necessita che venga indicato <u>nel path la sua cartella .git</u>. Normalmente comunque si ha a che fare con URL internet, dove questa differenza non ha alcun peso.
 
-Si entri ora nella cartella repo2 e si digiti:
+Si entri, ora, nella cartella repo2 e si digiti:
 
 ```bash
 git remote add origin ~/reporemoto1
 ```
 
-Si noti che i nomi scelti per i repository non sono per niente vincolanti e scelti in totale libertà. Bisognerà comunque sempre tenerli a mente perchè indispensabili quando si inizierà a dialogare tra locale e remoto.
+Si noti che i nomi scelti per i repository non sono per niente vincolanti e scelti in totale libertà. Bisognerà, comunque, sempre tenerli a mente perchè indispensabili quando si inizierà a dialogare tra locale e remoto.
 
 ### File da ignorare
 
 Non tutti i file devono essere registrati nella storia di un progetto. Parlando di programmazione ad esempio, è inutile che vengano registrati binari compilati (avendo il sorgente possono essere ricompilati), configurazione dell'IDE, cartelle contenti output e log dell'applicazione e altro.
-Per questo `git` d° la possibilità di aggiungere nella cartella di progetto un file speciale chiamato **.gitignore** (con il punto davanti, su sistemi UNIX sarà quindi un file nascosto) così strutturato: <u>ogni riga indica un file che **deve essere ignorato** da git</u>.
+Per questo `git` dà la possibilità di aggiungere nella cartella di progetto un file speciale chiamato **.gitignore** (con il punto davanti, su sistemi UNIX sarà quindi un file nascosto) così strutturato: <u>ogni riga indica un file che **deve essere ignorato** da git</u>.
 
 Qui si può indicare anche un'intera cartella (verranno quindi ignorati tutti i file dentro, ricorsivamente) o utilizzare <u>i caratteri jolly</u> ( come `*` per indicare una qualsiasi combinazione di caratteri oppure `?` per indicare un singolo carattere variabile) per escludere file con nomi specifici.
 Si consideri un file **gitignore** scritto come segue:
@@ -388,7 +387,7 @@ In questo caso bisogna fare una distinzione:
 
 ___
 
-### riassunto
+### Riassunto
 
 Un piccolo riassunto di quanto detto:
 
