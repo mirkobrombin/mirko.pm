@@ -4,8 +4,8 @@ date: 2022-09-30 09:00
 layout: post 
 author: Midblyte
 author_github: Midblyte
-coauthor:
-coauthor_github:
+coauthor: Ivonne Rizzuto
+coauthor_github: ivochan
 published: false
 tags: 
 - ubuntu
