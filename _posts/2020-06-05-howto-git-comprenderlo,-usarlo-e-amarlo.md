@@ -145,10 +145,10 @@ Si noti che i nomi scelti per i repository non sono per niente vincolanti e scel
 
 ### File da ignorare
 
-Non tutti i file devono essere registrati nella storia di un progetto. Parlando di programmazione ad esempio, è inutile che vengano registrati binari compilati (avendo il sorgente possono essere ricompilati), configurazione dell'IDE, cartelle contenti output e log dell'applicazione e altro.
-Per questo `git` dà la possibilità di aggiungere nella cartella di progetto un file speciale chiamato **.gitignore** (con il punto davanti, su sistemi UNIX sarà quindi un file nascosto) così strutturato: <u>ogni riga indica un file che **deve essere ignorato** da git</u>.
+Non tutti i file devono essere registrati nella storia di un progetto. Parlando di programmazione, ad esempio, è inutile che vengano registrati binari compilati (avendo il sorgente possono essere ricompilati), configurazione dell'IDE, cartelle contenti output e log dell'applicazione e quant'altro.
+Per questo `git` dà la possibilità di aggiungere nella cartella di progetto un file speciale, chiamato **.gitignore** (con il punto davanti, su sistemi UNIX sarà quindi un file nascosto), così strutturato: <u>ogni riga indica un file che **deve essere ignorato** da git</u>.
 
-Qui si può indicare anche un'intera cartella (verranno quindi ignorati tutti i file dentro, ricorsivamente) o utilizzare <u>i caratteri jolly</u> ( come `*` per indicare una qualsiasi combinazione di caratteri oppure `?` per indicare un singolo carattere variabile) per escludere file con nomi specifici.
+Qui si può indicare anche un'intera cartella (verranno quindi ignorati tutti i file dentro, ricorsivamente) oppure utilizzare <u>dei caratteri jolly</u> ( come `*`, per indicare una qualsiasi combinazione di caratteri, oppure `?`, per indicare un singolo carattere variabile) per escludere i file con dei nomi specifici.
 Si consideri un file **gitignore** scritto come segue:
 
 ```
@@ -161,63 +161,64 @@ src/*/esempi/
 
 Ecco alcuni chiarimenti:
 
-- `bin/` : si esclude la cartella **bin** e tutte le sue sottocartelle (molti IDE mettono all'interno di questa cartella i file compilati)
-- `*.class` : si escludono tutti i file che finiscono con **.class** (i file compilati di **Java**)
-- `.classpath` : si esclude il file che si chiama **.classpath** (usato da IDE come Eclipse per indicare il classpath di Java)
-- `.project?` : si escludono i file che iniziano con .project ma che hanno un altro carattere dopo, ad esempio **.projects** oppure le cartelle che si chiamano **.project** (poichè corrisponde a **.project/**)
-- `src/*/esempi/` : esclude la cartella **esempi** presente in **src**
+- `bin/` : si esclude la cartella **bin** e tutte le sue sottocartelle (molti IDE mettono all'interno di questa cartella i file compilati);
+- `*.class` : si escludono tutti i file che finiscono con **.class** (i file compilati di **Java**);
+- `.classpath` : si esclude il file che si chiama **.classpath** (usato da IDE come Eclipse per indicare il classpath di Java);
+- `.project?` : si escludono i file che iniziano con .project ma che hanno un altro carattere dopo, ad esempio **.projects**, oppure le cartelle che si chiamano **.project** (poichè corrisponde a **.project/**);
+- `src/*/esempi/` : esclude la cartella **esempi** presente in **src**;
 
-?**<u>ATTENZIONE:</u>** i file **.gitignore** non sono retroattivi, se si aggiunge un file da ignorare a posteriori e questo era già stato registrato, non sarà eliminato, ma non saranno semplicemente più registrate le sue modifiche. Per correggere questo comportamento, bisogna [rimuovere il file dalla cache](####Situazione-inversa:-dalla-staging-a-alla-working).
+**<u>ATTENZIONE:</u>** i file **.gitignore** non sono retroattivi, se si aggiunge un file da ignorare a posteriori e questo è già stato registrato, non sarà eliminato, ma, semplicemente, non verranno più registrate le sue modifiche. Per correggere questo comportamento, bisogna [rimuovere il file dalla cache](####Situazione-inversa:-dalla-staging-area-alla-working-area).
 
 ## Uso base di git
 
-L'uso base di `git` è già sufficiente a gestire da soli o con piccoli gruppi un progetto. Le operazioni che si vedranno in questa sezione comprendono l'aggiunta di file ai vari alberi di lavoro, rimozione e modifica e la sincronizzazione di codice con una repository remoto. Prima di tutto, però, vediamo la configurazione dell'utente.
+L'uso base di `git` è già sufficiente a gestire da soli, oppure in piccoli gruppi, un progetto. Le operazioni che si vedranno in questa sezione comprendono l'aggiunta di file ai vari alberi di lavoro, la rimozione e la modifica, ma anche la sincronizzazione di codice con un repository remoto. Prima di tutto, però, vediamo la configurazione dell'utente.
 
 ### Configurazione utente
 
-Senza aver compreso a dovere questa sezione sarà molto comune riscontrare errori in alcune fasi, soprattutto durante le operazioni di <u>commit e push</u>. Si proceda quindi ad interrogare lo stato delle configurazioni del proprio utente (che a rigori di logica, a git appena installato, dovrebbero essere vuote o mancanti):
+Senza aver compreso a dovere questa sezione, sarà molto comune riscontrare errori in alcune fasi, soprattutto durante le operazioni di <u>commit e push</u>. Si proceda, quindi, ad interrogare lo stato delle configurazioni del proprio utente (che a rigor di logica, a git appena installato, dovrebbero essere vuote o mancanti):
 
-- Per il nome:
-  - `git config --global user.name`
-- Per l'email
-  - `git config --global user.email`
+- Per il nome si dovrà digitare:
+  `git config --global user.name`
+- Per l'email occorrerà scrivere:
+  `git config --global user.email`
 
-Per modificarle basta specificare il nostro nome o la nostra email dopo il valore. Ad esempio, per modificare il nome possiamo digitare:
+Per modificarle basta specificare il nostro nome o la nostra email dopo il valore richiesto. Ad esempio, per modificare il nome, possiamo digitare:
 
 ```bash
 git config --global user.name "Nome Utente"
 ```
 
-Le configurazioni **global** si riferscono all'utente su qualunque progetto, e risiedono in genere nelle cartelle di configurazione del sistema ( `/etc/gitconfig` o `~/.gitconfig` nel caso di Linux) e sono quindi condivise a <u>meno di configurazioni di progetto diverse</u>, che invece vanno impostate dopo essere entrati nella cartella specifica e aver digitato lo stesso comando, ma senza questa determinata opzione. Per cambiare il nome ad un singolo progetto, infatti, è possibile utilizzare il comando in questa maniera:
+Le configurazioni **global** si riferiscono all'utente su qualunque progetto, e risiedono, in genere, nelle cartelle di configurazione del sistema (ad esempio `/etc/gitconfig`, oppure `~/.gitconfig`, nel caso di sistemi Linux) e sono, quindi, condivise, a <u>meno di configurazioni di progetto diverse</u>, che invece vanno impostate dopo essere entrati nella cartella specifica ed aver digitato lo stesso comando, ma senza questa determinata opzione. Per cambiare il nome utente ad un singolo progetto, infatti, è possibile utilizzare il comando in questa maniera:
 
 ```bash
 git config user.name "Nickname per progetto personale"
 ```
 
-Questa differenza può essere utile se si vuole dividere la firma (email e nome ) che si apporterebbe su un progetto di lavoro da quella che invece vuole che si risulti su un progetto personale.
+Questa differenza può essere utile se si vuole distinguere la firma (intesa come email e nome) che si apporterebbe su un progetto di lavoro da quella che, invece, si vuole che risulti su un progetto personale.
 
-Potrebbe essere necessario impostare altri due parametri per una configurazione che possa non dare noie, cioè <u>l'editor di testo</u> e un <u>merge tool</u> esterno:
+Potrebbe essere necessario impostare altri due parametri per ottenere una configurazione che non darà noie, cioè <u>l'editor di testo</u> e un <u>merge tool</u> esterno:
 
-- **Editor di testo**: Alcune operazioni, come la realizzazione di un messaggio di commit, necessitano la scrittura di testi più o meno lunghi. Per via predefinita viene aperto l'editor preferito di sistema (variabile di sistema EDITOR per gli ambienti UNIX ), ma anche questa scelta si può personalizzare nel seguente modo:
-  - `git config --global core.editor [comando che avvia l'editor]`
-- **Merge tool**: quando si lavora sugli stessi file è inevitabile che qualche modifica possa "entrare in conflitto". Gli strumenti di "fusione" (merge) servono a fare un'unione "controllata" delle modifiche in conflitto. Spesso è richiesto questo intervento manuale da parte di `git`, quindi è bene tenersi uno strumento preferito (consiglio **meld**):
-  - `git config --global merge.tool [comando che avvia lo strumento di merge]`  
+- **Editor di testo**: alcune operazioni, come la realizzazione di un messaggio di commit, necessitano la scrittura di testi più o meno lunghi, quindi, a questo scopo, verrà aperto l'editor predefinito di sistema (variabile di sistema EDITOR per gli ambienti UNIX ); questa ma anche questa scelta si può personalizzare nel seguente modo:
+  `git config --global core.editor [comando che avvia l'editor]`
+  
+- **Merge tool**: quando si lavora sugli stessi file è inevitabile che qualche modifica possa "entrare in conflitto", perciò, in questi casi, si possono utilizzare deglli strumenti di "fusione" (merge), che servono ad attuare un'unione "controllata" delle modifiche in conflitto; spesso si richiede che questo intervento venga eseguito manualmente da parte di `git`, quindi è bene tenersi uno strumento preferito (consiglio **meld**), specificandolo con il comando:
+  `git config --global merge.tool [comando che avvia lo strumento di merge]`  
 
 ### Aggiunta e rollback di modifiche all'area di staging
 
-Fatte delle modifiche al progetto, la prima fase che bisogna considerare è quella di aggiungere le nostre modifiche alla staging area. Quest'operazione si fa semplicemente così:
+Dopo aver apportato delle modifiche al progetto, la prima fase che bisogna considerare è quella di aggiungere le nostre modifiche alla staging area. Quest'operazione si fa semplicemente così:
 
 ```bash
 git add [percorsofile]
 ```
 
-Si possono anche indicare più percorsi e quindi più file, così come una cartella intera per indicare tutti i file in quella cartella che son stati modificati. Per evitare di selezionare tutti i file o tutte le cartelle singolarmente si può scrivere un generico:
+Si possono anche indicare più percorsi e quindi più file, così come una cartella intera, per selezionare tutti i file che sono stati modficati al suo interno. Per evitare di selezionare tutti i file, o tutte le cartelle, singolarmente, si può scrivere un generico:
 
 ```bash
 git add .
 ```
 
-direttamente nella cartella padre del progetto e aggiungere in un colpo solo tutti i file modificati.
+direttamente nella cartella padre del progetto ed aggiungere, in un colpo solo, tutti i file modificati.
 
 #### Situazione inversa: dalla staging area alla working area
 
@@ -233,16 +234,16 @@ Nel caso di rimozione di tutti i file o di un'intera cartella, dovete indicare i
 git rm --cached -r [percorso cartella o .]
 ```
 
-Questo comando può *correggere* la retroattività del [gitignore](###file-da-ignorare) già enunciata.
+Questo comando può *correggere* la retroattività del [gitignore](###File-da-ignorare) già enunciata.
 
-Se nel processo si sono eliminati dei file per sbaglio, bisogna seguire un altro procedimento. In quel caso, potrebbe essere necessario intervenire invece con questi due comandi:
+Se nel processo sono eliminati erroneamente dei file, bisogna seguire un altro procedimento. In quel caso, potrebbe essere necessario intervenire, invece, con questi due comandi:
 
 ```
 git reset
 git checkout --
 ```
 
-La prima operazione elimina l'operazione di *add*, ma non recupera i file in sé, procedimento effettuato invece dalla seconda.
+La prima istruzione annullerà, quindi, l'operazione di *add*, senza recuperare, però, effettivamente i file, procedimento che verrà effettuato, invece, tramite la seconda.
 
 #### Eliminare una modifica specifica
 
