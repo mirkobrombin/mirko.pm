@@ -325,21 +325,23 @@ che mostra anche un elenco dei file che sono stati cambiati nella storia del com
 
 #### Inverso: dal commit alla working directory con revert
 
-Per invertire un commit ci sono diverse strade: quella più 'sicura' è sicuramente il **revert**, che tiene conto della regressione come **un commit a sé stante**. Questo significa avere la possibilità di fare <u>il revert del revert</u> per ritornare alla situazione originale.
+Per invertire un commit ci sono diverse strade: quella più 'sicura' è sicuramente il **revert**, che considera questa azione di regressione come se si trattasse di **un commit a sé stante**. Questo significa che si ha la possibilità di fare <u>il revert del revert</u> per ritornare alla situazione originale.
 
-L'operazione di *revert* richiede due fasi: la prima è di controllare il codice del commit successivo al quale si vuole tornare tramite l'operazione di log:
+L'operazione di *revert* richiede due fasi: 
+
+- la prima è di controllare il codice del commit successivo al quale si vuole tornare tramite l'operazione di log:
 
 ```bash
 git log --oneline
 ```
 
-La seconda è di effettuare la vera e propria operazione:
+- la seconda consiste nell'effettuare l'operazione vera e propria:
 
 ```bash
 git revert [codice commit]
 ```
 
-Supponendo tre commit recenti:
+Ad esempio, supponendo di aver eseguito, di recente, i tre commit seguenti:
 
 - commit aaaa123 - aggiunto file 1
 - commit bbbb321 - aggiunto file 2
@@ -361,13 +363,13 @@ git revert -n codicecommit
 
 #### Inverso: dal commit alla working directory con reset
 
-Una soluzione più drastica invece è quella del **reset** che, a differenza di *revert*, **elimina totalmente la storia** fino al commit indicato (necessita sempre di conoscere il codice del commit):
+Una soluzione più drastica, invece, consiste nell'utilizzare il **reset** che, a differenza di *revert*, **elimina totalmente la storia** fino al commit indicato (necessita sempre di conoscere il codice del commit):
 
 ```bash
 git reset [codice commit]
 ```
 
-Se nel processo si erano eliminati dei file, per ripristinare tutto è necessario fare come nel caso dell'[add](####Situazione-inversa:-dalla-staging-a-alla-working):
+Se, nel processo, ssi sono eliminati erroneamente dei file, per ripristinare tutto è necessario fare come nel caso dell'[add](####Situazione-inversa:-dalla-staging-area-alla-working-area):
 
 ```bash
 git checkout -- .
@@ -380,7 +382,7 @@ In questo caso bisogna fare una distinzione:
 1. nel caso in cui si sia <u>appena fatto il primo commit</u>, non è possibile tornare alla fase precedente a questo perchè non esiste una storia a cui tornare. Si può però simulare questo evento semplicemente **cancellando la storia di git**
    - `git update-ref -d HEAD`
 2. Nel caso in cui si è dal secondo commit in poi la soluzione è:
-   - `git reset --soft HEAD^`
+   - `git reset --soft HEAD`
 
 ?<u>**ATTENZIONE:**</u>
 
@@ -403,11 +405,11 @@ ___
 Le operazioni per comunicare con la repository sono:
 
 - **pull**: per <u>scaricare</u> il codice
-  - `git pull [nomerepository1] [nomebranch]`
+  `git pull [nomerepository1] [nomebranch]`
 - **push**: per <u>inviare</u> il codice
-  - `git push [nomerepository] [nomebranch]`
+  `git push [nomerepository] [nomebranch]`
 
-Il nome del branch ([spiegato in questa sezione](###i-branch)) non è obbligatorio, e nemmeno il nome della repository se ve ne si è solo una.
+Il nome del branch ([spiegato in questa sezione](###I-branch)) non è obbligatorio e nemmeno il nome della repository, se ve ne è solo una.
 
 Se si hanno più repository è consigliato anche inserire un "upstream" principale:
 
@@ -419,7 +421,7 @@ Così facendo, **branch** e repository sono sempre selezionati in maniera predef
 
 <u>Nota:</u>
 
-non è possibile fare il push su repository non minimali. Prendiamo come esempio quello delle tre cartelle: avendo **cartellaproj**, **reporemoto1** e **repo2**, *cartellaproj* <u>potrà fare push su reporemoto1</u>, **ma non su repo2**.
+Non è possibile fare il push su repository non minimali. Prendiamo come esempio quello delle tre cartelle: avendo **cartellaproj**, **reporemoto1** e **repo2**, *cartellaproj* <u>potrà fare push su reporemoto1</u>, **ma non su repo2**.
 
 <u>Nota</u>:
 
