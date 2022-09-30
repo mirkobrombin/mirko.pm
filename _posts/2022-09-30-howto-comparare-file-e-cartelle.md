@@ -6,7 +6,7 @@ author: Midblyte
 author_github: Midblyte
 coauthor: Ivonne Rizzuto
 coauthor_github: ivochan
-published: false
+published: true
 tags: 
 - ubuntu
 - fedora
