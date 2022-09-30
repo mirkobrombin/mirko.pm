@@ -4,7 +4,7 @@ date: 2022-09-30 09:00
 layout: post 
 author: Midblyte
 author_github: Midblyte
-coauthor: Ivonne Rizzuto
+coauthor: Ivonne
 coauthor_github: ivochan
 published: true
 tags: 
