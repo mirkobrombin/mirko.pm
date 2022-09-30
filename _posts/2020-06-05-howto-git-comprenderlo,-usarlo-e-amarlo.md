@@ -247,7 +247,7 @@ La prima istruzione annullerà, quindi, l'operazione di *add*, senza recuperare,
 
 #### Eliminare una modifica specifica
 
-L'operazione di checkout in verità è un po' più complessa e ha diverse funzioni, tra cui quella di poter eliminare le modifiche su specifici file:
+L'operazione di checkout, in verità ,è un po' più complessa e ha diverse funzioni, tra cui quella di poter eliminare le modifiche su specifici file:
 
 ```bash
 git checkout -- nomefile
@@ -257,11 +257,11 @@ Così facendo, il file **nomefile** viene ripristinato a come era prima delle mo
 
 ### Dallo staging al commit
 
-La prossima fase è quella di registrare i cambiamenti sul repository locale. Questa operazione, come già detto in precedenza è detta **commit**.
+La prossima fase è quella di registrare i cambiamenti sul repository locale. Questa operazione, come già detto in precedenza, è denominata **commit**.
 
-La commit deve essere accompagnata da <u>un breve messaggio che spiega il contenuto delle modifiche</u>. Questi messaggi potranno poi essere letti in un momento postumo, ed è importante quindi che abbiano un senso e aiutino a capire come si è evoluta la storia di un progetto.
+La commit deve essere accompagnata da <u>un breve messaggio che spiega il contenuto delle modifiche</u>. Questi messaggi potranno poi essere letti in un momento successivo, perciò è importante che abbiano un senso e che aiutino a capire come si è evoluta la storia di un progetto.
 
-Durante questa fase è importante aver configurato nome e email dell'utente (sezione [Configurazione utente](###Configurazione-utente)).
+Durante questa fase è importante aver configurato il nome e l'email dell'utente (sezione [Configurazione utente](###Configurazione-utente)).
 
 Per creare un commit la struttura del comando deve essere simile alla seguente:
 
@@ -269,7 +269,7 @@ Per creare un commit la struttura del comando deve essere simile alla seguente:
 git commit -m "messaggio di commit" <nomi file>
 ```
 
-È ovviamente possibile indicare anche più file oppure ancora un nome di cartella (`.` nella cartella padre per indicarle tutte) per fare il commit di tutti i file modificati nella cartella in questione e nelle sue sottocartelle. Se il percorso non viene specificato, `git` intterpreterà tutto questo come un "tutti gli aggiornamenti". Alcune volte (come nel caso della rimozione di un file in cache) è necessario non specificare nessun percorso.
+È ovviamente possibile indicare anche più file, oppure un nome di cartella,(`.` nella cartella padre per indicarle tutte) per effettuare, in questo caso, il commit di tutti i file che sono stati modificati al suo interno, includendo anche le sue sottocartelle. Se il percorso non viene specificato, `git` interpreterà tutto questo come un "tutti gli aggiornamenti". Alcune volte (come nel caso della rimozione di un file in cache) è necessario non specificare nessun percorso.
 
 In verità, per fare un commit complessivo di tutti i file potrebbe essere necessario utilizzare il comando:
 
@@ -277,7 +277,7 @@ In verità, per fare un commit complessivo di tutti i file potrebbe essere neces
 git commit -a
 ```
 
-che genera inoltre un messaggio di commit consigliato (ma commentato) e apre il proprio editor di sistema per aggiustarlo.
+che genera, inoltre, un messaggio di commit consigliato (ma commentato), aprendo il proprio editor di sistema per consentirne la modifica.
 
 A necessità, si può modificare <u>l'ultimo messaggio</u> tramite il parametro *amend*:
 
@@ -287,9 +287,9 @@ git commit --amend
 
 <u>Nota</u>: **Buone norme**
 
-Per buona norma è meglio avere tanti piccoli commit significativi, ognuno che sia utile a identificare uno specifico cambiamento nel comportamento generale del progetto, più che un unico commit che descrive una serie di novità.
+Per buona norma è meglio eseguire tanti piccoli commit significativi, in modo che ognuno di questi si riferisca ad uno specifico cambiamento del comportamento generale del progetto, piuttosto che effettuare un unico commit, più corposo e più complesso, che descrive una serie di novità.
 
-Questo perché è importante capire quale modifica può avere causato, ad esempio, un problema di regressione e poter quindi più facilmente individuare e correggere le righe che causano l'anomalia.
+Questo perché è importante capire quale sia la modifica che, eventualmente, può avere causato, ad esempio, un problema di regressione e poter, quindi, più facilmente, individuare e correggere le righe che riguardano l'anomalia.
 
 *Trivia*: **messaggio di commit casuale**
 
@@ -301,7 +301,7 @@ git commit -m "$(curl -s http://whatthecommit.com/index.txt)"
 
 #### Log dei commit
 
-Una volta effettuato un commit, quest'ultimo viene aggiunto ad una sequenza temporale detta *log*. La consultazione di questi permette di verificare la storia delle modifiche, i messaggi, gli autori, le date e i codici (viene assegnato un codice ad ogni commit).
+Una volta effettuato un commit, quest'ultimo viene aggiunto ad una sequenza temporale detta *log*. La consultazione di questi file permette di verificare la storia delle modifiche, i messaggi, gli autori, le date ed i codici (poichè viene assegnato un codice ad ogni commit).
 
 Queste informazioni sono verificabili con:
 
@@ -309,7 +309,7 @@ Queste informazioni sono verificabili con:
 git log
 ```
 
-Se l'interesse è quello di verificare solo il messaggio o il codice dell'operazione si può specificare il parametro `--oneline` che riassume solo queste informazioni:
+Se l'interesse è quello di visionare soltanto il messaggio o il codice dell'operazione si può specificare il parametro `--oneline`, che riassume queste informazioni:
 
 ```bash
 git log --oneline
@@ -321,7 +321,7 @@ Per avere un log ancora più accurato è possibile utilizzare `whatchanged`:
 git whatchanged
 ```
 
-che mostra anche i file cambiati nella storia del commit.
+che mostra anche un elenco dei file che sono stati cambiati nella storia del commit.
 
 #### Inverso: dal commit alla working directory con revert
 
