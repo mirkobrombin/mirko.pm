@@ -4,8 +4,8 @@ date: 2022-10-07 08:00
 layout: post 
 author: Floppy
 author_github: raspFloppy
-coauthor: 
-coauthor_github: 
+coauthor: Davide Galati (in arte PsykeDady)
+coauthor_github: PsykeDady
 published: true
 tags:  
 - ubuntu 
