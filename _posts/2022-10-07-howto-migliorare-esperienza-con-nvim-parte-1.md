@@ -1,12 +1,12 @@
 ---
 title: "#howto - Migliorare l'esperienza con Neovim parte 1"
-date: 2022-10-07 
+date: 2022-10-07 08:00
 layout: post 
 author: Floppy
 author_github: raspFloppy
 coauthor: 
 coauthor_github: 
-published: false
+published: true
 tags:  
 - ubuntu 
 - archlinux 
@@ -16,9 +16,9 @@ tags:
 ---
 
 Abbiamo parlato già parlato di **Vim** in questi tre articoli:
-- [Utilizzo base di Vim](https://linuxhub.it/articles/howto-utilizzo-base-di-vim/)
-- [Installazione e configurazione di Vimplug](https://linuxhub.it/articles/howto-installazione-e-configurazione-di-vimplug/)
-- [Migliorare l'esperienza con Vim](https://linuxhub.it/articles/howto-migliorare-l-esperienza-VIM/)
+- [Utilizzo base di Vim](https://linuxhub.it/articles/howto-utilizzo-base-di-vim/)  
+- [Installazione e configurazione di Vimplug](https://linuxhub.it/articles/howto-installazione-e-configurazione-di-vimplug/)  
+- [Migliorare l'esperienza con Vim](https://linuxhub.it/articles/howto-migliorare-l-esperienza-VIM/)  
 
 e abbiamo anche introdotto **Neovim** in [questo articolo](https://linuxhub.it/articles/howto-installare-e-usare-neovim/), ora però vediamo un pò di più nel dettaglio come migliorarne l'esperienza.
 
@@ -37,7 +37,6 @@ touch ~/.config/nvim/init.lua
 ```
 
 
-
 Perfetto ora andiamo a popolare il file con delle impostazioni base per rendere il nostro editor più comodo da usare.
 
 Prima di tutto aggiungiamo il seguente codice per abilitare **l'highlight della sintassi**:
@@ -46,19 +45,18 @@ syntax on
 ```
 
 Ora aggiungiamo un po' di **estetica** per il nostro editor, aggiungendo il seguente codice:
-```vim
 
+```vim
 set number
 set relativenumber
 set cursorline
 set cursorcolumn
-
 ```
 
 Ora per migliorare **l'indentazione** del nostro codice aggiungiamo il seguente codice:
+
+
 ```vim
-
-
 "Possiamo impostare il numero a nostro piacimento (solitamente 2, 4 o 8)
 set tabstop=4                   
 set shiftwidth=4                
@@ -68,17 +66,14 @@ set expandtab
 set autoindent
 
 filetype plugin indent on       " abilita l'indentazione in base al tipo di file
-
-
 ```
 
 Miglioriamo anche la ricerca nel file con le seguenti impostazioni:
-```vim
 
+```vim
 set hlsearch
 set incsearch
 set showmatch
-
 ```
 
 Miglioriamo anche l'utilizzo della **clipboard** e del **copia incolla**:
@@ -88,7 +83,7 @@ set clipboard=unnamedplus
 ```
 
 
-Perfetto le impostazioni base sono state impostate, ora andiamo a vedere come espandere le capacità di Neovim tramite i plugin.
+Le impostazioni base sono complete, ora andiamo a vedere come espandere le capacità di Neovim tramite i plugin.
 
 
 
@@ -97,17 +92,25 @@ Perfetto le impostazioni base sono state impostate, ora andiamo a vedere come es
 Prima di tutto come per Vim per installare i plugin in Neovim è necessario utilizzare un plugin manager, a differenza di Vim però non andremo ad utilizzare vim-plug ma bensì [packer.nvim](https://github.com/wbthomason/packer.nvim).
 
 Per installare packer.nvim basta eseguire il seguente comando:
+
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-Se usate Arch Linux potete installare il pacchetto `neovim-packer-git` da AUR tramite `yay` o `paru`.
+Se usate Arch Linux potete installare il pacchetto `neovim-packer-git` da AUR tramite il vostro AUR helper preferito. Se usate `paru`: 
+
 ```bash
 paru -S neovim-packer-git
-oppure
+```
+
+Se usate yay
+```bash
 yay -S neovim-packer-git
 ```
+
+e così via per gli altri...
+
 
 Tutti i plugin vanno nel file `~/.config/nvim/lua/plugins.lua`, se non esiste ancora basta crearlo con il comando:
 ```bash
