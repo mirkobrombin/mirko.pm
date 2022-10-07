@@ -145,10 +145,10 @@ Si noti che i nomi scelti per i repository non sono per niente vincolanti e scel
 
 ### File da ignorare
 
-Non tutti i file devono essere registrati nella storia di un progetto. Parlando di programmazione ad esempio, è inutile che vengano registrati binari compilati (avendo il sorgente possono essere ricompilati), configurazione dell'IDE, cartelle contenti output e log dell'applicazione e altro.
-Per questo `git` dà la possibilità di aggiungere nella cartella di progetto un file speciale chiamato **.gitignore** (con il punto davanti, su sistemi UNIX sarà quindi un file nascosto) così strutturato: <u>ogni riga indica un file che **deve essere ignorato** da git</u>.
+Non tutti i file devono essere registrati nella storia di un progetto. Parlando di programmazione, ad esempio, è inutile che vengano registrati binari compilati (avendo il sorgente possono essere ricompilati), configurazione dell'IDE, cartelle contenti output e log dell'applicazione e quant'altro.
+Per questo `git` dà la possibilità di aggiungere nella cartella di progetto un file speciale, chiamato **.gitignore** (con il punto davanti, su sistemi UNIX sarà quindi un file nascosto), così strutturato: <u>ogni riga indica un file che **deve essere ignorato** da git</u>.
 
-Qui si può indicare anche un'intera cartella (verranno quindi ignorati tutti i file dentro, ricorsivamente) o utilizzare <u>i caratteri jolly</u> ( come `*` per indicare una qualsiasi combinazione di caratteri oppure `?` per indicare un singolo carattere variabile) per escludere file con nomi specifici.
+Qui si può indicare anche un'intera cartella (verranno quindi ignorati tutti i file dentro, ricorsivamente) oppure utilizzare <u>dei caratteri jolly</u> ( come `*`, per indicare una qualsiasi combinazione di caratteri, oppure `?`, per indicare un singolo carattere variabile) per escludere i file con dei nomi specifici.
 Si consideri un file **gitignore** scritto come segue:
 
 ```
@@ -161,63 +161,64 @@ src/*/esempi/
 
 Ecco alcuni chiarimenti:
 
-- `bin/` : si esclude la cartella **bin** e tutte le sue sottocartelle (molti IDE mettono all'interno di questa cartella i file compilati)
-- `*.class` : si escludono tutti i file che finiscono con **.class** (i file compilati di **Java**)
-- `.classpath` : si esclude il file che si chiama **.classpath** (usato da IDE come Eclipse per indicare il classpath di Java)
-- `.project?` : si escludono i file che iniziano con .project ma che hanno un altro carattere dopo, ad esempio **.projects** oppure le cartelle che si chiamano **.project** (poichè corrisponde a **.project/**)
-- `src/*/esempi/` : esclude la cartella **esempi** presente in **src**
+- `bin/` : si esclude la cartella **bin** e tutte le sue sottocartelle (molti IDE mettono all'interno di questa cartella i file compilati);
+- `*.class` : si escludono tutti i file che finiscono con **.class** (i file compilati di **Java**);
+- `.classpath` : si esclude il file che si chiama **.classpath** (usato da IDE come Eclipse per indicare il classpath di Java);
+- `.project?` : si escludono i file che iniziano con .project ma che hanno un altro carattere dopo, ad esempio **.projects**, oppure le cartelle che si chiamano **.project** (poichè corrisponde a **.project/**);
+- `src/*/esempi/` : esclude la cartella **esempi** presente in **src**;
 
-?**<u>ATTENZIONE:</u>** i file **.gitignore** non sono retroattivi, se si aggiunge un file da ignorare a posteriori e questo era già stato registrato, non sarà eliminato, ma non saranno semplicemente più registrate le sue modifiche. Per correggere questo comportamento, bisogna [rimuovere il file dalla cache](####Situazione-inversa:-dalla-staging-a-alla-working).
+**<u>ATTENZIONE:</u>** i file **.gitignore** non sono retroattivi, se si aggiunge un file da ignorare a posteriori e questo è già stato registrato, non sarà eliminato, ma, semplicemente, non verranno più registrate le sue modifiche. Per correggere questo comportamento, bisogna [rimuovere il file dalla cache](####Situazione-inversa:-dalla-staging-area-alla-working-area).
 
 ## Uso base di git
 
-L'uso base di `git` è già sufficiente a gestire da soli o con piccoli gruppi un progetto. Le operazioni che si vedranno in questa sezione comprendono l'aggiunta di file ai vari alberi di lavoro, rimozione e modifica e la sincronizzazione di codice con una repository remoto. Prima di tutto, però, vediamo la configurazione dell'utente.
+L'uso base di `git` è già sufficiente a gestire da soli, oppure in piccoli gruppi, un progetto. Le operazioni che si vedranno in questa sezione comprendono l'aggiunta di file ai vari alberi di lavoro, la rimozione e la modifica, ma anche la sincronizzazione di codice con un repository remoto. Prima di tutto, però, vediamo la configurazione dell'utente.
 
 ### Configurazione utente
 
-Senza aver compreso a dovere questa sezione sarà molto comune riscontrare errori in alcune fasi, soprattutto durante le operazioni di <u>commit e push</u>. Si proceda quindi ad interrogare lo stato delle configurazioni del proprio utente (che a rigori di logica, a git appena installato, dovrebbero essere vuote o mancanti):
+Senza aver compreso a dovere questa sezione, sarà molto comune riscontrare errori in alcune fasi, soprattutto durante le operazioni di <u>commit e push</u>. Si proceda, quindi, ad interrogare lo stato delle configurazioni del proprio utente (che a rigor di logica, a git appena installato, dovrebbero essere vuote o mancanti):
 
-- Per il nome:
-  - `git config --global user.name`
-- Per l'email
-  - `git config --global user.email`
+- Per il nome si dovrà digitare:
+  `git config --global user.name`
+- Per l'email occorrerà scrivere:
+  `git config --global user.email`
 
-Per modificarle basta specificare il nostro nome o la nostra email dopo il valore. Ad esempio, per modificare il nome possiamo digitare:
+Per modificarle basta specificare il nostro nome o la nostra email dopo il valore richiesto. Ad esempio, per modificare il nome, possiamo digitare:
 
 ```bash
 git config --global user.name "Nome Utente"
 ```
 
-Le configurazioni **global** si riferscono all'utente su qualunque progetto, e risiedono in genere nelle cartelle di configurazione del sistema ( `/etc/gitconfig` o `~/.gitconfig` nel caso di Linux) e sono quindi condivise a <u>meno di configurazioni di progetto diverse</u>, che invece vanno impostate dopo essere entrati nella cartella specifica e aver digitato lo stesso comando, ma senza questa determinata opzione. Per cambiare il nome ad un singolo progetto, infatti, è possibile utilizzare il comando in questa maniera:
+Le configurazioni **global** si riferiscono all'utente su qualunque progetto, e risiedono, in genere, nelle cartelle di configurazione del sistema (ad esempio `/etc/gitconfig`, oppure `~/.gitconfig`, nel caso di sistemi Linux) e sono, quindi, condivise, a <u>meno di configurazioni di progetto diverse</u>, che invece vanno impostate dopo essere entrati nella cartella specifica ed aver digitato lo stesso comando, ma senza questa determinata opzione. Per cambiare il nome utente ad un singolo progetto, infatti, è possibile utilizzare il comando in questa maniera:
 
 ```bash
 git config user.name "Nickname per progetto personale"
 ```
 
-Questa differenza può essere utile se si vuole dividere la firma (email e nome ) che si apporterebbe su un progetto di lavoro da quella che invece vuole che si risulti su un progetto personale.
+Questa differenza può essere utile se si vuole distinguere la firma (intesa come email e nome) che si apporterebbe su un progetto di lavoro da quella che, invece, si vuole che risulti su un progetto personale.
 
-Potrebbe essere necessario impostare altri due parametri per una configurazione che possa non dare noie, cioè <u>l'editor di testo</u> e un <u>merge tool</u> esterno:
+Potrebbe essere necessario impostare altri due parametri per ottenere una configurazione che non darà noie, cioè <u>l'editor di testo</u> e un <u>merge tool</u> esterno:
 
-- **Editor di testo**: Alcune operazioni, come la realizzazione di un messaggio di commit, necessitano la scrittura di testi più o meno lunghi. Per via predefinita viene aperto l'editor preferito di sistema (variabile di sistema EDITOR per gli ambienti UNIX ), ma anche questa scelta si può personalizzare nel seguente modo:
-  - `git config --global core.editor [comando che avvia l'editor]`
-- **Merge tool**: quando si lavora sugli stessi file è inevitabile che qualche modifica possa "entrare in conflitto". Gli strumenti di "fusione" (merge) servono a fare un'unione "controllata" delle modifiche in conflitto. Spesso è richiesto questo intervento manuale da parte di `git`, quindi è bene tenersi uno strumento preferito (consiglio **meld**):
-  - `git config --global merge.tool [comando che avvia lo strumento di merge]`  
+- **Editor di testo**: alcune operazioni, come la realizzazione di un messaggio di commit, necessitano la scrittura di testi più o meno lunghi, quindi, a questo scopo, verrà aperto l'editor predefinito di sistema (variabile di sistema EDITOR per gli ambienti UNIX ); questa ma anche questa scelta si può personalizzare nel seguente modo:
+  `git config --global core.editor [comando che avvia l'editor]`
+  
+- **Merge tool**: quando si lavora sugli stessi file è inevitabile che qualche modifica possa "entrare in conflitto", perciò, in questi casi, si possono utilizzare deglli strumenti di "fusione" (merge), che servono ad attuare un'unione "controllata" delle modifiche in conflitto; spesso si richiede che questo intervento venga eseguito manualmente da parte di `git`, quindi è bene tenersi uno strumento preferito (consiglio **meld**), specificandolo con il comando:
+  `git config --global merge.tool [comando che avvia lo strumento di merge]`  
 
 ### Aggiunta e rollback di modifiche all'area di staging
 
-Fatte delle modifiche al progetto, la prima fase che bisogna considerare è quella di aggiungere le nostre modifiche alla staging area. Quest'operazione si fa semplicemente così:
+Dopo aver apportato delle modifiche al progetto, la prima fase che bisogna considerare è quella di aggiungere le nostre modifiche alla staging area. Quest'operazione si fa semplicemente così:
 
 ```bash
 git add [percorsofile]
 ```
 
-Si possono anche indicare più percorsi e quindi più file, così come una cartella intera per indicare tutti i file in quella cartella che son stati modificati. Per evitare di selezionare tutti i file o tutte le cartelle singolarmente si può scrivere un generico:
+Si possono anche indicare più percorsi e quindi più file, così come una cartella intera, per selezionare tutti i file che sono stati modficati al suo interno. Per evitare di selezionare tutti i file, o tutte le cartelle, singolarmente, si può scrivere un generico:
 
 ```bash
 git add .
 ```
 
-direttamente nella cartella padre del progetto e aggiungere in un colpo solo tutti i file modificati.
+direttamente nella cartella padre del progetto ed aggiungere, in un colpo solo, tutti i file modificati.
 
 #### Situazione inversa: dalla staging area alla working area
 
@@ -233,20 +234,20 @@ Nel caso di rimozione di tutti i file o di un'intera cartella, dovete indicare i
 git rm --cached -r [percorso cartella o .]
 ```
 
-Questo comando può *correggere* la retroattività del [gitignore](###file-da-ignorare) già enunciata.
+Questo comando può *correggere* la retroattività del [gitignore](###File-da-ignorare) già enunciata.
 
-Se nel processo si sono eliminati dei file per sbaglio, bisogna seguire un altro procedimento. In quel caso, potrebbe essere necessario intervenire invece con questi due comandi:
+Se nel processo sono eliminati erroneamente dei file, bisogna seguire un altro procedimento. In quel caso, potrebbe essere necessario intervenire, invece, con questi due comandi:
 
 ```
 git reset
 git checkout --
 ```
 
-La prima operazione elimina l'operazione di *add*, ma non recupera i file in sé, procedimento effettuato invece dalla seconda.
+La prima istruzione annullerà, quindi, l'operazione di *add*, senza recuperare, però, effettivamente i file, procedimento che verrà effettuato, invece, tramite la seconda.
 
 #### Eliminare una modifica specifica
 
-L'operazione di checkout in verità è un po' più complessa e ha diverse funzioni, tra cui quella di poter eliminare le modifiche su specifici file:
+L'operazione di checkout, in verità ,è un po' più complessa e ha diverse funzioni, tra cui quella di poter eliminare le modifiche su specifici file:
 
 ```bash
 git checkout -- nomefile
@@ -256,11 +257,11 @@ Così facendo, il file **nomefile** viene ripristinato a come era prima delle mo
 
 ### Dallo staging al commit
 
-La prossima fase è quella di registrare i cambiamenti sul repository locale. Questa operazione, come già detto in precedenza è detta **commit**.
+La prossima fase è quella di registrare i cambiamenti sul repository locale. Questa operazione, come già detto in precedenza, è denominata **commit**.
 
-La commit deve essere accompagnata da <u>un breve messaggio che spiega il contenuto delle modifiche</u>. Questi messaggi potranno poi essere letti in un momento postumo, ed è importante quindi che abbiano un senso e aiutino a capire come si è evoluta la storia di un progetto.
+La commit deve essere accompagnata da <u>un breve messaggio che spiega il contenuto delle modifiche</u>. Questi messaggi potranno poi essere letti in un momento successivo, perciò è importante che abbiano un senso e che aiutino a capire come si è evoluta la storia di un progetto.
 
-Durante questa fase è importante aver configurato nome e email dell'utente (sezione [Configurazione utente](###Configurazione-utente)).
+Durante questa fase è importante aver configurato il nome e l'email dell'utente (sezione [Configurazione utente](###Configurazione-utente)).
 
 Per creare un commit la struttura del comando deve essere simile alla seguente:
 
@@ -268,7 +269,7 @@ Per creare un commit la struttura del comando deve essere simile alla seguente:
 git commit -m "messaggio di commit" <nomi file>
 ```
 
-È ovviamente possibile indicare anche più file oppure ancora un nome di cartella (`.` nella cartella padre per indicarle tutte) per fare il commit di tutti i file modificati nella cartella in questione e nelle sue sottocartelle. Se il percorso non viene specificato, `git` intterpreterà tutto questo come un "tutti gli aggiornamenti". Alcune volte (come nel caso della rimozione di un file in cache) è necessario non specificare nessun percorso.
+È ovviamente possibile indicare anche più file, oppure un nome di cartella,(`.` nella cartella padre per indicarle tutte) per effettuare, in questo caso, il commit di tutti i file che sono stati modificati al suo interno, includendo anche le sue sottocartelle. Se il percorso non viene specificato, `git` interpreterà tutto questo come un "tutti gli aggiornamenti". Alcune volte (come nel caso della rimozione di un file in cache) è necessario non specificare nessun percorso.
 
 In verità, per fare un commit complessivo di tutti i file potrebbe essere necessario utilizzare il comando:
 
@@ -276,7 +277,7 @@ In verità, per fare un commit complessivo di tutti i file potrebbe essere neces
 git commit -a
 ```
 
-che genera inoltre un messaggio di commit consigliato (ma commentato) e apre il proprio editor di sistema per aggiustarlo.
+che genera, inoltre, un messaggio di commit consigliato (ma commentato), aprendo il proprio editor di sistema per consentirne la modifica.
 
 A necessità, si può modificare <u>l'ultimo messaggio</u> tramite il parametro *amend*:
 
@@ -286,9 +287,9 @@ git commit --amend
 
 <u>Nota</u>: **Buone norme**
 
-Per buona norma è meglio avere tanti piccoli commit significativi, ognuno che sia utile a identificare uno specifico cambiamento nel comportamento generale del progetto, più che un unico commit che descrive una serie di novità.
+Per buona norma è meglio eseguire tanti piccoli commit significativi, in modo che ognuno di questi si riferisca ad uno specifico cambiamento del comportamento generale del progetto, piuttosto che effettuare un unico commit, più corposo e più complesso, che descrive una serie di novità.
 
-Questo perché è importante capire quale modifica può avere causato, ad esempio, un problema di regressione e poter quindi più facilmente individuare e correggere le righe che causano l'anomalia.
+Questo perché è importante capire quale sia la modifica che, eventualmente, può avere causato, ad esempio, un problema di regressione e poter, quindi, più facilmente, individuare e correggere le righe che riguardano l'anomalia.
 
 *Trivia*: **messaggio di commit casuale**
 
@@ -300,7 +301,7 @@ git commit -m "$(curl -s http://whatthecommit.com/index.txt)"
 
 #### Log dei commit
 
-Una volta effettuato un commit, quest'ultimo viene aggiunto ad una sequenza temporale detta *log*. La consultazione di questi permette di verificare la storia delle modifiche, i messaggi, gli autori, le date e i codici (viene assegnato un codice ad ogni commit).
+Una volta effettuato un commit, quest'ultimo viene aggiunto ad una sequenza temporale detta *log*. La consultazione di questi file permette di verificare la storia delle modifiche, i messaggi, gli autori, le date ed i codici (poichè viene assegnato un codice ad ogni commit).
 
 Queste informazioni sono verificabili con:
 
@@ -308,7 +309,7 @@ Queste informazioni sono verificabili con:
 git log
 ```
 
-Se l'interesse è quello di verificare solo il messaggio o il codice dell'operazione si può specificare il parametro `--oneline` che riassume solo queste informazioni:
+Se l'interesse è quello di visionare soltanto il messaggio o il codice dell'operazione si può specificare il parametro `--oneline`, che riassume queste informazioni:
 
 ```bash
 git log --oneline
@@ -320,25 +321,27 @@ Per avere un log ancora più accurato è possibile utilizzare `whatchanged`:
 git whatchanged
 ```
 
-che mostra anche i file cambiati nella storia del commit.
+che mostra anche un elenco dei file che sono stati cambiati nella storia del commit.
 
 #### Inverso: dal commit alla working directory con revert
 
-Per invertire un commit ci sono diverse strade: quella più 'sicura' è sicuramente il **revert**, che tiene conto della regressione come **un commit a sé stante**. Questo significa avere la possibilità di fare <u>il revert del revert</u> per ritornare alla situazione originale.
+Per invertire un commit ci sono diverse strade: quella più 'sicura' è sicuramente il **revert**, che considera questa azione di regressione come se si trattasse di **un commit a sé stante**. Questo significa che si ha la possibilità di fare <u>il revert del revert</u> per ritornare alla situazione originale.
 
-L'operazione di *revert* richiede due fasi: la prima è di controllare il codice del commit successivo al quale si vuole tornare tramite l'operazione di log:
+L'operazione di *revert* richiede due fasi: 
+
+- la prima è di controllare il codice del commit successivo al quale si vuole tornare tramite l'operazione di log:
 
 ```bash
 git log --oneline
 ```
 
-La seconda è di effettuare la vera e propria operazione:
+- la seconda consiste nell'effettuare l'operazione vera e propria:
 
 ```bash
 git revert [codice commit]
 ```
 
-Supponendo tre commit recenti:
+Ad esempio, supponendo di aver eseguito, di recente, i tre commit seguenti:
 
 - commit aaaa123 - aggiunto file 1
 - commit bbbb321 - aggiunto file 2
@@ -360,13 +363,13 @@ git revert -n codicecommit
 
 #### Inverso: dal commit alla working directory con reset
 
-Una soluzione più drastica invece è quella del **reset** che, a differenza di *revert*, **elimina totalmente la storia** fino al commit indicato (necessita sempre di conoscere il codice del commit):
+Una soluzione più drastica, invece, consiste nell'utilizzare il **reset** che, a differenza di *revert*, **elimina totalmente la storia** fino al commit indicato (necessita sempre di conoscere il codice del commit):
 
 ```bash
 git reset [codice commit]
 ```
 
-Se nel processo si erano eliminati dei file, per ripristinare tutto è necessario fare come nel caso dell'[add](####Situazione-inversa:-dalla-staging-a-alla-working):
+Se, nel processo, ssi sono eliminati erroneamente dei file, per ripristinare tutto è necessario fare come nel caso dell'[add](####Situazione-inversa:-dalla-staging-area-alla-working-area):
 
 ```bash
 git checkout -- .
@@ -379,7 +382,7 @@ In questo caso bisogna fare una distinzione:
 1. nel caso in cui si sia <u>appena fatto il primo commit</u>, non è possibile tornare alla fase precedente a questo perchè non esiste una storia a cui tornare. Si può però simulare questo evento semplicemente **cancellando la storia di git**
    - `git update-ref -d HEAD`
 2. Nel caso in cui si è dal secondo commit in poi la soluzione è:
-   - `git reset --soft HEAD^`
+   - `git reset --soft HEAD`
 
 ?<u>**ATTENZIONE:**</u>
 
@@ -402,11 +405,11 @@ ___
 Le operazioni per comunicare con la repository sono:
 
 - **pull**: per <u>scaricare</u> il codice
-  - `git pull [nomerepository1] [nomebranch]`
+  `git pull [nomerepository1] [nomebranch]`
 - **push**: per <u>inviare</u> il codice
-  - `git push [nomerepository] [nomebranch]`
+  `git push [nomerepository] [nomebranch]`
 
-Il nome del branch ([spiegato in questa sezione](###i-branch)) non è obbligatorio, e nemmeno il nome della repository se ve ne si è solo una.
+Il nome del branch ([spiegato in questa sezione](###I-branch)) non è obbligatorio e nemmeno il nome della repository, se ve ne è solo una.
 
 Se si hanno più repository è consigliato anche inserire un "upstream" principale:
 
@@ -418,7 +421,7 @@ Così facendo, **branch** e repository sono sempre selezionati in maniera predef
 
 <u>Nota:</u>
 
-non è possibile fare il push su repository non minimali. Prendiamo come esempio quello delle tre cartelle: avendo **cartellaproj**, **reporemoto1** e **repo2**, *cartellaproj* <u>potrà fare push su reporemoto1</u>, **ma non su repo2**.
+Non è possibile fare il push su repository non minimali. Prendiamo come esempio quello delle tre cartelle: avendo **cartellaproj**, **reporemoto1** e **repo2**, *cartellaproj* <u>potrà fare push su reporemoto1</u>, **ma non su repo2**.
 
 <u>Nota</u>:
 
