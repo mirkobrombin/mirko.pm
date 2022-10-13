@@ -4,8 +4,8 @@ date: 2022-10-14 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
-coauthor: Linuxhub
-coauthor_github: linuxhub
+coauthor: Alberto Bella
+coauthor_github: al6263
 published: false
 tags: 
 - terminale
