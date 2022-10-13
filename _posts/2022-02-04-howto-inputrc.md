@@ -34,7 +34,7 @@ Oppure in versione più interattiva con `info`:
 info readline
 ```
 
- ### Precisazione: bash vs altre shell 
+### Precisazione: bash vs altre shell 
 
 Se vi starete chiedendo perché le modifiche apportate sulla `readline` non influenzano la vostra shell (i.e. `zsh` con `oh-my-zsh`) è perché loro stesse ridefiniscono poi le opzioni della `readline`.
 Quindi, se volete vedere il risultato finale del vostro sistema a seguito delle modifiche apportate , utilizzate `bash`.
