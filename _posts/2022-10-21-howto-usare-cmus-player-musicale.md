@@ -4,8 +4,8 @@ date: 2022-10-21 09:00
 layout: post
 author: Midblyte
 author_github: Midblyte
-coauthor:
-coauthor_github:
+coauthor: Michael Messaggi
+coauthor_github: MichaelMessaggi
 published: false
 tags:
 - ubuntu
@@ -20,7 +20,7 @@ Su terminale è ormai diventato possibile fare di tutto: non solo [modificare fi
 
 CMUS sta per C* Music Player ed è un player musicale, ossia un software che consente la riproduzione di file audio.
 
-È basato su ncurses, proprio come [ncdu](howto-gestire-file-e-cartelle-pesanti-con-ncdu), vale a dire che è possibile interfacciarvi da terminale pur avendo la stessa familiarità di una GUI.
+È basato su ncurses, proprio come [ncdu](howto-gestire-file-e-cartelle-pesanti-con-ncdu), vale a dire che è possibile interfacciarvisi da terminale pur avendo la stessa familiarità di una GUI.
 
 CMUS ha molte funzionalità, tra cui le seguenti: tiene traccia del numero di volte che un certo file audio è stato riprodotto, consente la creazione delle playlist, offre due interfacce (oltre alla TUI, conveniente per l'uso generale da terminale, anche una CLI, ottima per lo scripting).
 
