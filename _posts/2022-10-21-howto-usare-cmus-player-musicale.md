@@ -13,7 +13,7 @@ tags:
 - archlinux
 ---
 
-Su terminale è ormai diventato possibile fare di tutto: non solo [modificare file di testo](2022-08-19-howto-installare-e-usare-neovim) con Neovim, oppure [cifrare messaggi](2022-09-09-cifrare-messaggi) via GPG e openSSL, o ancora [convertire file di markup](2022-05-27-howto-convertire-i-formati-con-pandoc) con Pandoc, ma anche ascoltare musica grazie a **CMUS**.
+Su terminale è ormai diventato possibile fare di tutto: non solo [modificare file di testo](https://linuxhub.it/articles/2022-08-19-howto-installare-e-usare-neovim) con Neovim, oppure [cifrare messaggi](https://linuxhub.it/articles/2022-09-09-cifrare-messaggi) via GPG e openSSL, o ancora [convertire file di markup](https://linuxhub.it/articles/2022-05-27-howto-convertire-i-formati-con-pandoc) con Pandoc, ma anche ascoltare musica grazie a **CMUS**.
 
 
 ## Che cos'è CMUS
