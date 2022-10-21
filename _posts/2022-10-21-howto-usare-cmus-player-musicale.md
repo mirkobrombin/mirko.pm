@@ -1,12 +1,12 @@
 ---
 title: '#howto - usare CMUS, player musicale'
-date: 2022-10-21 09:00
+date: 2022-10-21 00:00
 layout: post
 author: Midblyte
 author_github: Midblyte
 coauthor: Michael Messaggi
 coauthor_github: MichaelMessaggi
-published: false
+published: true
 tags:
 - ubuntu
 - fedora
