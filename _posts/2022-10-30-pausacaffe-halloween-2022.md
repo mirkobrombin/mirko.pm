@@ -11,30 +11,30 @@ tags:
 - halloween
 ---
 
-Spooky, scary **linux distros**
-`apt install` down your spine
-*Flatpak* will shock your soul
-Seal your *container* tonight
-Spooky, scary **linux distros**
-Speak with such a screech
-You'll `dnf list installed` in surprise
-When you hear these *zombie processes*.
-We're sorry **linux distros**, you're so misunderstood
-You only want to *upgrade the system*, but I don't think we should
-because `your keyring is too out of date `
-to install some packages.
-They'll sneak from their *package manager*
-And just won't leave you be
-`pacman` is shy what's all the fuss?
-But *bugs* of *Plasma* seem so unsafe, it's semi-serious
-Spooky, scary **linux distros**
-Are silly all the same
-They'll smile and *lag* slowly by
-And drive you so insane
-*Gnomes* and *Tux* will break your bones
-They seldom let you snooze
-Spooky, scary **linux distros**
-Will wake you with a KERNEL PANIC
+Spooky, scary **linux distros**  
+`apt install` down your spine  
+*Flatpak* will shock your soul  
+Seal your *container* tonight  
+Spooky, scary **linux distros**  
+Speak with such a screech  
+You'll `dnf list installed` in surprise  
+When you hear these *zombie processes*.  
+We're sorry **linux distros**, you're so misunderstood  
+You only want to *upgrade the system*, but I don't think we should  
+because `your keyring is too out of date`  
+to install some packages.  
+They'll sneak from their *package manager*  
+And just won't leave you be  
+`pacman` is shy what's all the fuss?  
+But *bugs* of *Plasma* seem so unsafe, it's semi-serious  
+Spooky, scary **linux distros**  
+Are silly all the same  
+They'll smile and *lag* slowly by  
+And drive you so insane  
+*Gnomes* and *Tux* will break your bones  
+They seldom let you snooze  
+Spooky, scary **linux distros**  
+Will wake you with a KERNEL PANIC  
 
 
 
