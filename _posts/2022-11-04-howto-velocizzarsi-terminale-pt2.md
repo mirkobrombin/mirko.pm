@@ -12,7 +12,7 @@ tags:
 - shortcut
 ---
 
-Sperando che abbiate apprezzato [la prima parte di questo articolo](https://linuxhub.it/articles/howto-velocizzarsi-terminale/), vediamo quali altri trucchi esistono per diventare più rapidi usando il terminale, automatizzarne alcune operazioni e correggere gli errori fatti digitando male. 
+Sperando che abbiate apprezzato [la prima parte di questo articolo](https://linuxhub.it/articles/howto-velocizzarsi-terminale/), vediamo quali altri trucchi esistono per diventare più rapidi usando il terminale, introducendo le espansioni, le shell option e altri metodi per richiamare la cronologia. 
 
 ## Ricerca nella history tramite espansione
 
