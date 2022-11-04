@@ -1,12 +1,12 @@
 ---
 title: "#howto - Velocizzarsi nell'uso del terminale pt. 2 - history e shell options" 
-date: 2022-11-04 08:00
+date: 2022-11-04 07:55
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
 coauthor: Linuxhub
 coauthor_github: linuxhub
-published: false
+published: true
 tags: 
 - terminale
 - shortcut
