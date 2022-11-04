@@ -143,6 +143,11 @@ cat nomefile
 
 Gli escape di espansione (anche chiamati glob) son caratteri speciali che consentono alla shell di prelevare una serie di opzioni tra quelle disponibili.
 
+> NOTA BENE: 
+> 
+> Gli escape di espansione funzionano sia su bash che su zsh, ma ci potrebbero essere delle differenze. Quelle trattate qui funzionano al 100% con bash.
+
+
 Gli escape di glob sono i seguenti: 
 
 - `*` rappresenta una qualunque sequenza di caratteri. Ad esempio `S*` seleziona sia "*Scrivania*" che "*Scaricati*".
@@ -206,6 +211,11 @@ Esistono una serie di opzioni attivabili per bash chiamate shell option. Tramite
 
 Si può trovare una documentazione completa per le shell option [sul sito ufficiale della gnu foundation](
 https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html).
+
+
+> *NOTA BENE:*
+> 
+> Le shell options sono di bash, non funzionano su zsh. Grazie Roxybar73 che ha segnalato questa mancanza sul gruppo Telegram. SEGNALATE sempre le precisazioni sui nostri gruppi grazie <3.
 
 ### Abilitare una shell option
 
