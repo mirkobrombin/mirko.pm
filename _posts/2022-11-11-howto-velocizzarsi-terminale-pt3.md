@@ -15,7 +15,7 @@ tags:
 - archlinux
 ---
 
-Si è visto come muoversi nel terminale con shortcut ed espansioni atte ad evitare di scrivere lunghi comandi ripetitivi o riscrivere vecchi comandi utilizzati più volte. È tempo di vedere se esistono dei tool esterni che possono aiutare e rendere performante il nostro flusso di lavoro.
+Si è visto come muoversi nel terminale con shortcut ed espansioni atte ad evitare di scrivere lunghi comandi ripetitivi o riscrivere vecchi comandi utilizzati più volte. È tempo di vedere se esistono dei tool esterni che possono aiutare e rendere performante il nostro flusso di lavoro. Nel particolare parliamo di **thefuck**, **make** e **oh my bash**.
 
 Se hai mancano i nostri articoli precedenti ecco una lista: 
 
