@@ -12,6 +12,10 @@ tags:
 - shortcut
 ---
 
+
+[&rarr; velocizzarsi nel terminale pt 3](https://linuxhub.it/articles/howto-velocizzarsi-terminale-pt3/))
+
+
 Sperando che abbiate apprezzato [la prima parte di questo articolo](https://linuxhub.it/articles/howto-velocizzarsi-terminale/), vediamo quali altri trucchi esistono per diventare più rapidi usando il terminale, introducendo le espansioni, le shell option e altri metodi per richiamare la cronologia. 
 
 ## Ricerca nella history tramite espansione
