@@ -6,7 +6,7 @@ author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady 
 coauthor: Linuxhub
 coauthor_github: linuxhub
-published: false
+published: true
 tags: 
 - terminale
 - shortcut
