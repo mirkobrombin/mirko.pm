@@ -110,6 +110,18 @@ Particolarità:
 
 * Un hard link occupa sempre pochi byte, a prescindere dalle dimensioni del file puntato.
 
+Per fare un link hard:
+
+```bash
+ln -h /percorso/completo/fileorigine /percorso/completo/filedestinazione
+```
+
+Come già spiegato non si può fare un hard link di una cartella, ma si può fare una copia di una cartella e l'hard link di tutti i file al suo interno: 
+
+```bash
+cp -lr cartella_origine cartella_copia
+```
+
 ### Nota del redattore: hard link vs soft link
 
 Risulta sempre complesso per qualche strano motivo comprendere la differenza tra hard link e soft link a chiunque io tenti di spiegarlo. Per cui ci spendo qualche parola in più.
