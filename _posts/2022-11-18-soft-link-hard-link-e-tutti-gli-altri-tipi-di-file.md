@@ -1,11 +1,11 @@
 ---
-title: 'Soft link, hard link e tutti gli altri tipi di file'
+title: 'Soft link, hard link ed altri tipi di file'
 date: 2022-11-18 00:00
 layout: post
 author: Midblyte
 author_github: Midblyte
-coauthor: 
-coauthor_github: 
+coauthor: Davide Galati (in arte PsykeDady)
+coauthor_github: PsykeDady
 published: false
 tags:
 - ubuntu
@@ -18,21 +18,18 @@ Oltre ai classici file e alle directory, Linux consente di utilizzare diversi ti
 
 Anche in questo ambito, il kernel Linux ha chiaramente tratto ispirazione da Unix.
 
-
 ## Filesystem, inode e filename: cosa sono?
 
-Per comprendere efficacemente quali siano le differenze tra soft e hard link, è essenziale conoscere i concetti base che vi sono dietro.
-
+Per comprendere efficacemente quali siano le differenze tra *soft* e *hard* link, è essenziale conoscere i concetti base che vi sono dietro.
 
 ### Filesystem
 
-Un **filesystem** è una struttura dati che stabilisce in che modo, e in quale posizione, i file vengono salvati sulle memorie di massa (ossia memorie non temporanee, perciò solitamente ne è esclusa la RAM).
+Un **filesystem** è una struttura dati che stabilisce in che modo, ed in quale posizione, i file vengono salvati sulle memorie di massa (ossia memorie non temporanee, perciò solitamente ne è esclusa la RAM).
 
 Senza un filesystem, i bit salvati in una qualsiasi memoria di massa non avrebbero alcun apparente significato: sarebbero nient'altro che una sequenza indecifrabile di zero e uno.
 
-Se stai usando una distro Linux pensata per l'uso desktop, c'è una buona probabilità che il filesystem sia **Ext4**.
-Analogamente, per gli utenti Windows è NTFS il più comune, mentre per MacOS ci sono sia HFS+ che il più recente APFS.
-
+Se stai usando una distro Linux pensata per l'uso desktop, c'è una buona probabilità che il filesystem sia **Ext4**, recentemente **btrfs**.
+Analogamente, per gli utenti Windows è **NTFS** il più comune, mentre per MacOS ci sono sia **HFS+** che il più recente **APFS**.
 
 ### Inode
 
@@ -40,8 +37,7 @@ Un **inode** è una sequenza di bit che identifica la posizione di un file sulla
 
 Tutti gli inode di un filesystem sono salvati in un indice specifico.
 
-Ciascun inode fa riferimento ad **un solo** ed **unico** file.
-
+Per la natura stessa del concetto bisogna intendere che, se pur diversi file possono avere lo stesso inode, si riferiscono alla **stessa identica porzione di bit**. Semplificheremo questo concetto più avanti.
 
 ### Filename
 
@@ -51,12 +47,9 @@ Proprio come gli inode, anche i filename sono salvati in un indice a parte.
 
 Ciascun filename fa riferimento ad **un solo** ed **unico** inode.
 
-
 ### In sintesi
 
 Ogni **filename** associa un **inode**, che a sua volta indica l'**indirizzo dei contenuti del file** sulla memoria.
-
-
 
 ## Tipi di file
 
@@ -66,19 +59,18 @@ Un **file** (<em>regular file</em>) rappresenta una sequenza limitata di bit, sa
 
 Sono di questo tipo la maggior parte, se non la quasi totalità, dei file salvati su una memoria.
 
-
 ### Directory
 
 Una **directory** (cartella) è un particolare tipo di file contenente un elenco di filename.
 
 Ciascuna directory contiene sempre altri due file:
+
 * `.` (punto singolo), associa la cartella stessa;
 * `..` (punto doppio), associa la cartella gerarchicamente superiore (se si è già nella cartella più in alto gerarchicamente,  ovverosia la root `/`, rimanda a sé stessa)
 
-
 ### Soft link
 
-I **soft link** (o collegamenti simbolici) sono file che associano un filename.
+I **soft link** (o collegamenti simbolici) sono file che puntano ad un filename nella gerarchia del file system (e non nel disco).
 
 Particolarità:
 
@@ -94,10 +86,15 @@ Particolarità:
 
 * Un soft link occupa sempre pochi byte, a prescindere dalle dimensioni del file puntato.
 
+Per fare un soft link bisogna passare il percorso completo del file:
+
+```bash
+ln -s /percorso/completo/fileorigine /percorso/completo/filedestinazione
+```
 
 ### Hard link
 
-Un **hard link** è un file che associa un altro file in base al suo inode.
+Un **hard link** è un file che associa un altro file in base al suo inode, quindi copia il suo puntamento al disco, diventando un *file effettivo*.
 
 Particolarità:
 
@@ -113,6 +110,23 @@ Particolarità:
 
 * Un hard link occupa sempre pochi byte, a prescindere dalle dimensioni del file puntato.
 
+### Nota del redattore: hard link vs soft link
+
+Risulta sempre complesso per qualche strano motivo comprendere la differenza tra hard link e soft link a chiunque io tenti di spiegarlo. Per cui ci spendo qualche parola in più.
+
+Immaginiamo il `FileA` che punta in un disco ad una determinata sequenza di bit
+
+![FileA->Settore Disco](https://kroki.io/mermaid/svg/eNpLL0osyFAIcbFW4FIAArfMnFRHBV1dO4Xg1JKS_KJULrAwlKOhoQFlKaRkFifnK6SmpQH5mWX5mpqaAB0JFqA)
+
+Un collegamento simbolico è un file (`FileB`) che "punta" ad un `FileA`: 
+
+![FileB->FileA->Settore Disco](https://kroki.io/mermaid/svg/eNpLL0osyFAIcbFW4FIAArfMnFRHBV1dO4Xg1JKS_KJUuKgTWBQszwUWhCrQ0NCAshRSMouT8xVS09KA_MyyfE1NTQDOxBuF)
+
+Un collegamento forte, o link hard, è un FileC che punta alla stessa sezione del disco: 
+
+![FileB->FileA->Settore Disco<-FileC](https://kroki.io/mermaid/svg/eNpLL0osyFAIcbFW4FIAArfMnFRHBV1dO4Xg1JKS_KJUuKgTWBQsDxdzRlEJFoZyNDQ0oCyFlMzi5HyF1LQ0ID-zLF9TUxMAOzYhkA)
+
+Ne derivano tutte le proprietà spiegate in precedenza, che ora dovrebbero essere più intuitive. Ad esempio, eliminando `FileA`, `FileB` non saprebbe più a chi puntare, ma `FileC` continuerebbe benissimo a fare il suo lavoro.
 
 ## Tipi di file meno comuni
 
@@ -126,20 +140,17 @@ Mentre l'operatore `|` crea un <em>(anonymous) pipe</em> che può essere usato s
 
 Siccome i dati caricati in input arrivano nello stesso ordine in fase di output, questi file sono comunemente conosciuti anche come **FIFO** (<em>First In, First Out</em>; i primi bit ad entrare sono anche i primi ad uscire).
 
-
 ### Socket
 
 Proprio come nel caso dei file named pipe, anche i socket sono utilizzati per lo scambio di dati tra i processi dello stesso sistema.
 
 Le principali differenze vertono sul tipo di comunicazione (non più monodirezionale ma bidirezionale) e sul tipo di dati trasferibili (sono consentiti anche i "file descriptor" che, in breve, sono numeri identificativi che associano altri file, named pipe o, addirittura, altri socket).
 
-
 ### Device
 
 I file di tipo **device** sono suddivisi in:
 * **Character**, in cui lettura e/o scrittura avvengono in modalità seriale (sono sequenziali);
 * **Block**, in cui lettura e/o scrittura sono casuali (non è necessario scrivere o leggere i bit precedenti a quelli desiderati).
-
 
 ## Come visualizzare il tipo di file
 
@@ -161,7 +172,6 @@ Con `ls` è possibile determinare il tipo di file in due modi:
 | p       | =        | named pipe       |
 
 Osservazione: un hard link è per sua natura indistinguibile dal file originale; in comune, i due tipi di file hanno solo la proprietà di puntare ad uno stesso inode.
-
 
 ### Usando file
 
