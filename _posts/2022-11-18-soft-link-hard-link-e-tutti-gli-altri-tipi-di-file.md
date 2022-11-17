@@ -28,7 +28,7 @@ Un **filesystem** è una struttura dati che stabilisce in che modo, ed in quale 
 
 Senza un filesystem, i bit salvati in una qualsiasi memoria di massa non avrebbero alcun apparente significato: sarebbero nient'altro che una sequenza indecifrabile di zero e uno.
 
-Se stai usando una distro Linux pensata per l'uso desktop, c'è una buona probabilità che il filesystem sia **Ext4**, recentemente **btrfs**.
+Se stai usando una distro Linux pensata per l'uso desktop, c'è una buona probabilità che il filesystem sia **Ext4** oppure uno più recente, come **Btrfs**.
 Analogamente, per gli utenti Windows è **NTFS** il più comune, mentre per MacOS ci sono sia **HFS+** che il più recente **APFS**.
 
 ### Inode
