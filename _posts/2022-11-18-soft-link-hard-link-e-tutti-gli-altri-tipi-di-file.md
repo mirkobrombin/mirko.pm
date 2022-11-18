@@ -1,12 +1,12 @@
 ---
 title: 'Soft link, hard link ed altri tipi di file'
-date: 2022-11-18 00:00
+date: 2022-11-18 08:00
 layout: post
 author: Midblyte
 author_github: Midblyte
 coauthor: Davide Galati (in arte PsykeDady)
 coauthor_github: PsykeDady
-published: false
+published: true
 tags:
 - ubuntu
 - fedora
