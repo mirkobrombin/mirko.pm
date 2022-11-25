@@ -1,12 +1,12 @@
 ---
 title: '#howto - Migliorare l esperienza MAN'
-date: 2022-11-25 
+date: 2022-11-25 08:00 
 layout: post
 author: Floppy
 author_github: raspFloppy 
 coauthor: Michael Messaggi
 coauthor_github: MichaelMessaggi
-published: false
+published: true
 tags:
 - ubuntu
 - fedora
