@@ -58,8 +58,9 @@ dove:
 
 
 Piccolo approfondimento sulle sezioni del manuale:
+
 | Sezione | Descrizione |
-| --- | --- |
+| :---: | :---: |
 | 1 | Comandi di sistema |
 | 2 | Chiamate di sistema |
 | 3 | Chiamate di libreria |
