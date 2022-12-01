@@ -1,6 +1,6 @@
 ---
 title: '#howtodev - Pacchettizzare in Appimage' 
-date: 2022-12-04 08:00
+date: 2022-12-02 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
