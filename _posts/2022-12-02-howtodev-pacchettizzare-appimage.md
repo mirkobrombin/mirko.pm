@@ -11,7 +11,7 @@ tags:
 - appimage
 ---
 
-Nonostante abbiano perso molto terreno rispetto agli appImage, reputo i flatpak un formato per pacchettizzare i software ancora molto valido, flessibile e leggero. 
+Nonostante abbiano perso molto terreno rispetto ai flatpak, reputo gli appImage un formato per pacchettizzare i software ancora molto valido, flessibile e leggero. 
 
 Perché quindi non spiegare come impacchettare un software con Appimage?
 
