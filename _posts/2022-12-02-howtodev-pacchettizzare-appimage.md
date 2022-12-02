@@ -4,14 +4,14 @@ date: 2022-12-02 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
-coauthor: linuxhub
-coauthor_github: linuxhubit
+coauthor: Alberto Bella
+coauthor_github: al6263
 published: false
 tags: 
 - appimage
 ---
 
-Nonostante abbiano perso molto terreno rispetto ai flatpak, reputo i flatpak un formato per pacchettizzare i software ancora molto valido, flessibile e leggero. 
+Nonostante abbiano perso molto terreno rispetto agli appImage, reputo i flatpak un formato per pacchettizzare i software ancora molto valido, flessibile e leggero. 
 
 Perché quindi non spiegare come impacchettare un software con Appimage?
 
