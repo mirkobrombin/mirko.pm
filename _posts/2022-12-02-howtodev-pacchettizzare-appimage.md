@@ -11,7 +11,7 @@ tags:
 - appimage
 ---
 
-Nonostante abbiano perso molto terreno rispetto ai flatpak, reputo gli Appimage un formato per pacchettizzare i software ancora molto valido, flessibile e leggero. 
+Nonostante Appimage ha perso molto terreno rispetto a Flatpak, rimane un formato pacchetto valido, flessibile, leggero ma soprattutto portatile e decentralizzato, due plus da non sottovalutare che rendono questo formato uno dei più compatibili.
 
 Perché quindi non spiegare come impacchettare un software con Appimage?
 
@@ -19,9 +19,9 @@ Perché quindi non spiegare come impacchettare un software con Appimage?
 
 In questo articolo verrà spiegato:
 
-- come creare un pacchetto Appimage.
-- creare un avviatore che prelevi anche i parametri.
-- inserire le librerie necessarie all'avvio.
+- come creare un pacchetto Appimage
+- creare un avviatore che prelevi anche i parametri
+- inserire le librerie necessarie all'avvio
 
 ## Prerequisiti
 
@@ -34,13 +34,13 @@ Non è necessario alcun particolare prerequisito, son gradite però:
 
 Il tool richiesto per la creazione di un Appimage è [AppImageTool da AppImagekit](https://github.com/probonopd/AppImageKit).  
 
-Si può scaricare facilmente con wget:
+Posizioniamoci nel percorso che più ci aggrada e scarichiamo il pacchetto:
 
 ```bash
 wget https://github.com/probonopd/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
 ```
 
-Una volta scaricato va reso eseguibile: 
+impostiamolo quindi come eseguibile: 
 
 ```bash
 chmod +x appimagetool-x86_64.AppImage
@@ -49,7 +49,7 @@ chmod +x appimagetool-x86_64.AppImage
 
 ## Ho scritto un programma, come creo un Appimage?
 
-Supponendo che il software sia interamente locato in una cartella (se non lo è, va creata una cartella con il contenuto al suo interno) si può iniziare scrivendo un [Desktop Entry](https://linuxhub.it/articles/howto-desktop-entry/) al suo interno: 
+Supponendo che il software sia collocato in una singola cartella, creiamo una [Desktop Entry](https://linuxhub.it/articles/howto-desktop-entry/) al suo interno: 
 
 ```bash
 [Desktop Entry]
@@ -59,7 +59,7 @@ Type=Application
 Categories=CATEGORIE
 ```
 
-Come si può notare, non vi è una sezione *Exec*, infatti non risulta necessaria, il punto di avvio dell'applicazione sarà un file script bash chiamato **Apprun**, dove si potrà poi richiamare manualmente l'eseguibile del programma. Ecco un esempio del contenuto: 
+Come si può notare, manca la chiave *Exec*, poichè questa non è necessaria dato che il punto di avvio dell'applicazione sarà un file script bash chiamato **Apprun**, dove si potrà poi richiamare manualmente l'eseguibile del programma. Ecco un esempio del contenuto: 
 
 ```bash
 #!/bin/sh
@@ -67,7 +67,7 @@ Come si può notare, non vi è una sezione *Exec*, infatti non risulta necessari
 exec /percorso/eseguibile
 ```
 
-Una volta creato il file Apprun ed il desktop file si può costruire l'Appimage semplicemente scrivendo:
+Una volta creati questi file, possiamo costruire la nostra AppImage tramite AppimageTool che abbiamo scaricato poco fa:
 
 ```bash
 ARCH=ARCHITETTURA /percorso/appimagetool-x86_64.AppImage CartellaProgetto nomeApp.AppImage 
@@ -89,11 +89,11 @@ Al posto di x86_64 potete mettere l'architettura che più preferite, è ovviamen
 
 ## Un Apprun migliore
 
-Potrebbe essere necessario specificare alcune opzioni per un AppRun più robusto e con più funzioni.
+Potrebbe essere necessario specificare alcune opzioni per un AppRun più robusto, ad esempio controllando alcune impostazioni di sistema come l'assenza di connessione, prima di avviare il programma.
 
 ### Indicare la cartella dell'appimage
 
-Ad esempio se l'eseguibile che avviato è a sua volta interno all'Appimage è necessario specificare la cartella in cui si trova. Si può usare `dirname` per questo:
+Ad esempio se l'eseguibile che avviamo è a sua volta all'interno all'Appimage, è necessario specificare la cartella in cui si trova. Possiamo fare questo con l'ausilio di `dirname`:
 
 ```bash
 #!/bin/sh
@@ -101,11 +101,13 @@ cartellaEseguibile="$(dirname "$0")"
 exec "$cartellaEseguibile"/nomeeseguibile
 ```
 
-La cartella verrà risolta al runtime, nota che non sarà la cartella dell'Appimage vera e propria, ma una versione del progetto estratta in `/tmp`.
+La cartella verrà risolta al runtime, nota che non sarà la cartella dell'Appimage vera e propria, ma una copia del progetto estratta in `/tmp`.
 
 ### Indicare i parametri a linea di comando
 
-Chi dice che gli AppImage non possano essere a linea di comando? Ma per un buon software di questo genere è necessario avere un modo di prelevare anche i parametri passati, scrivendo nel Apprun:
+Chi dice che le AppImage non possano essere utilizare da linea di comando? 
+
+Per applicazioni che supportano parametri da riga di comando, è necessario istruire il nostro AppRun per trasferire questi al comando originale:
 
 ```bash
 #!/bin/sh
@@ -113,10 +115,10 @@ cartellaEseguibile="$(dirname "$0")"
 exec "$cartellaEseguibile"/nomeeseguibile "$@"
 ```
 
-Ora, ad AppRun verrà passato come parametro qualunque parametro con cui evocate il vostro appimage, ad esempio:
+notiamo `"$@"` il quale si occupa di passare tutti gli argomenti a `nomeeseguibile`. Quindi passando ad AppRun uno o più argomenti:
 
 ```bash
 nomeApp.AppImage  n1 n2 n3
 ```
 
-Avrà come valore `$@ = n1 n2 n3`.
+questi verranno letto dal nostro comando originale: `nomecomando n1 n2 n3`, comportandosi come da programmazione.
