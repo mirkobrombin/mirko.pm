@@ -82,7 +82,6 @@ Tuttavia, non sempre ciò è sufficiente: in alcuni casi occorre utilizzare le p
 # dovrebbe stampare "riscrivere"
 
 prefisso=ri
-parola=scrivere
 
 testo=$prefissoscrivere     # Errato: $prefissoscrivere non esiste
 testo=${prefisso}scrivere   # Corretto
@@ -96,6 +95,7 @@ Ma gli spazi non sono gli unici caratteri a cui prestare attenzione: anche l'ast
 
 cd /
 note_pagina="* primo dell'elenco"
+echo $note_pagina
 # Stampa: /bin /boot /etc [...] /usr /var primo dell'elenco
 ```
 
