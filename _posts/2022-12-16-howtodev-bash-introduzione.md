@@ -346,11 +346,30 @@ Questo consente una maggiore protezione nel caso qualcuno inserisca un carattere
 Si può anche far in modo che l'utenta non veda ciò che sta digitando, misura importantissima per inserire ad esempio password sotto occhi indiscreti.  
 Per farlo usare l'opzione `-s:
 
-
 ```bash
 echo -n "inserisci password:> "
 
 read -s psk
 
 echo "grazie."
+```
+
+## Avvio di un programma bash
+
+Per avviare uno script bash bisogna prima renderlo eseguibile utilizzando `chmod`: 
+
+```bash
+chmod +x /percorso/file/script.sh
+```
+
+Quindi basta scrivere il nome preceduto dal percorso assoluto: 
+
+```bash
+/percorso/file/script.sh
+```
+
+Non si può utilizzare il percorso relativo per eseguire uno script, a meno che questo non sia preceduto dal carattere `.`, che viene sostituito in automatico dal percorso corrente: 
+
+```bash
+./percorso/file/script.sh
 ```
