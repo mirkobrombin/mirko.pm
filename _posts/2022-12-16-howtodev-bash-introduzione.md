@@ -11,7 +11,7 @@ tags:
   - bash
 ---
 
-[NON CI SONO ARTICOLI SUCCESSIVI ANCORA](https:/linuxhub.it/articles/2022-12-16-howtodev-bash-introduzione)
+[NON CI SONO ARTICOLI SUCCESSIVI ANCORA](https://linuxhub.it/articles/2022-12-16-howtodev-bash-introduzione)
 
 
 
