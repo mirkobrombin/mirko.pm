@@ -43,7 +43,7 @@ Abbiamo già affrontato le stringhe nell'articolo:
 
 Anche lo scripting shell fa parte dei linguaggi di programmazione e come tale è possibile utilizzarlo per veri e propri programmi.
 
-La programmazione bash inizia dal così detto shellbang, ovvero un istruzione a inizio file di testo che recita: 
+La programmazione bash inizia dal cosiddetto shellbang, ovvero un'istruzione a inizio file di testo che recita: 
 
 ```bash
 #!/bin/bash
@@ -61,13 +61,13 @@ Scrivere uno script in linguaggio `sh` anziché `bash` garantisce che questo abb
 
 ### Quindi perché usare bash? Nota dell'editore
 
-Detto ciò: a meno che non sia prettamente necessario (ad esempio si stia scrivendo uno script che viene avviato in fase di avvio quando molti servizi ancora non sono attivi, o non si stia facendo un programma che deve garantire una certa compatibilità tra vari sistemi), è mia personalissima opinione quella di consigliare di utilizzare *bash*, che ha comunque un ottimo grado di compatibilità ma contemporaneamente una sintassi più ampia ed evoluta rispetto *sh*. Questa guida non tratterà comunque la POSIX standard, ma **bash**.
+Se strettamente necessario, ad esempio scrivendo uno script che viene avviato in fase di avvio quando molti servizi ancora non sono attivi, o facendo un programma che deve garantire una certa compatibilità tra vari sistemi è possibile utilizzare *sh*, ma in generale, per quanto mi riguarda, consiglio *bash*, che mantiene un ottimo grado di compatibilità ma allo stesso tempo ha una sintassi più ampia e avanzata di *sh*. In ogni caso questa guida non tratterà la POSIX standard, ma **bash**.
 
 ## Gli spazi in bash
 
 Nel linguaggio di scripting bisogna stare innanzitutto sempre molto **attenti agli spazi**. A differenza di tantissimi altri linguaggi infatti, gli spazi giocano un ruolo fondamentale in quanto delimitano i parametri di un comando.
 
-È quindi **nota importantissima** di **non usare spazi** se *non necessariamente indicato*, cose banali come le condizioni di un if o assegnamenti di variabili potrebbero rompere le loro funzionalità utilizzando spazi se non necessario.
+È quindi **nota importantissima** di **non usare spazi** se *non necessariamente indicato*, cose banali come le condizioni di un if o assegnamenti di variabili potrebbero rompere le loro funzionalità utilizzando spazi non necessari.
 
 ## Creare una variabile
 
@@ -79,7 +79,7 @@ Una variabile in bash si assegna semplicemente con un `=`, senza alcun spazio tr
 variabile=valore
 ```
 
-bash non distingue tra molti tipi di variabili, essenziali son le stringhe e i numeri.
+bash non distingue fra tipi specifici di variabili, rimangono le distinzioni fra stringhe e numeri.
 
 ### Esempio
 
@@ -104,14 +104,15 @@ Esempio:
 
 ```bash
 variabile1="valore"
-variabile2=$variabile1"
+variabile2="$variabile1"
+echo $variabile2
 ```
 
 Alla fine, `variabile2` sarà uguale a `variabile1`.
 
 ## Interpolazione
 
-L'interpolazione è un concetto presente in molti linguaggi moderni e consente principalmente di creare delle stringhe inserendo al loro interno delle variabili senza doverle concatenarle con funzioni o altri espedienti che ne renderebero complessa la leggibilità.
+L'interpolazione è un concetto presente in molti linguaggi moderni e consente di creare delle stringhe inserendo al loro interno delle variabili senza doverle concatenarle con funzioni o altri espedienti che ne renderebero complessa la leggibilità.
 
 In bash l'interpolazione è automatica, basta richiamare una variabile all'interno di una stringa per utilizzarla. Esempio:  
 
@@ -125,19 +126,19 @@ variabilestringa="La variabilenumerica vale $variabilenumerica"
 
 In bash un commento inizia con `#` ed esistono solo i commenti in linea (non a blocchi).  
 
-Per chi non fosse pratico di programmazione i commenti son linee di codici che non vengono lette dall'interprete, solitamente utilizzati per documentare il codice o lasciare chiarimenti.
+Per chi non fosse pratico di programmazione i commenti son linee di codici che non vengono lette dall'interprete, quindi non eseguiti, solitamente utilizzati per documentare il codice o lasciare chiarimenti.
 
 Ecco un esempio di commento: 
 
 ```bash
 # questa linea di codice non verrà letta
 # neanche questa 
-assegnamentovar=2 # possono iniziare anche dopo un istruzione i commenti 
+assegnamentovar=2 # I commenti possono iniziare anche dopo un'istruzione
 ```
 
 ## Stampa
 
-La stampa di un testo in bash può avvenire tramite due direttive, `printf` ed `echo`.
+La stampa di un testo in *bash* può avvenire tramite due direttive, `printf` ed `echo`.
 
 > **NOTA**:
 > 
@@ -147,7 +148,7 @@ Normalmente in bash si utilizza direttamente `echo` con le funzioni di interpola
 
 ### echo
 
-Per stampare con echo si utilizza semplicemente scrivere le stringhe da stampare separandole da uno spazio: 
+Per stampare con echo, è sufficiente scrivere le stringhe da stampare separandole con uno spazio: 
 
 ```bash
 echo stringa1 stringa2 stringa3
@@ -210,13 +211,13 @@ echo -e "stringa con escape\ndisabilitati"
 
 > **NOTA**: 
 >
-> Per chi fosse nuovo di programmazione, gli escape son particolari sequenze di caratteri che, introdotte dal backslash, che poi vengono tradotti con caratteri normalmente non scrivibili in formato stringa, come tab, fine linea e così via... oppure per utilizzare caratteri che altrimenti verrebbero interpretati come parte del linguaggio, come virgolette, apici o simboli. 
+> Per chi fosse nuovo di programmazione, gli escape son particolari sequenze di caratteri che, introdotte dal backslash, poi vengono tradotte con caratteri normalmente non scrivibili in formato stringa, come tab, fine linea e così via... oppure per utilizzare caratteri che altrimenti verrebbero interpretati come parte del linguaggio, come virgolette, apici o simboli. 
 > 
-> Ad esempio l'escape `\n` indica il fine linea.
+> Ad esempio l'escape `\n` indica il fine linea, mentre `\$` viene letto come carattere dollaro, non come variabile.
 
 ### printf
 
-Il `printf`, ovvero **print format**, è una delle più vecchie funzioni di programmazioni, presente anche in `c`.
+Il `printf`, ovvero **print format**, è una delle più vecchie funzioni di programmazione, presente anche in `c`.
 
 Preleva come parametro la stringa da stampare e vari altri argomenti che verranno interpolati nella stringa utilizzando alcuni caratteri speciali come placeholder.
 
@@ -266,7 +267,7 @@ Mario     Mariani
 
 Per spiegare meglio, con il placeholder `%-10s` stiamo chiedendo a printf di creare un array di 10 caratteri e piazzarci all'inizio la nostra stringa e coprire i buchi restanti con spazi. Se la stringa fosse più lunga verrebbe allungato l'array.
 
-Il `-` in tal caso sta dicendo che vogliamo piazzare l'allineamento di tale stringa verso sinistra, con + lo avrebbe messo a destra.
+Il `-` in tal caso sta dicendo che vogliamo piazzare l'allineamento di tale stringa verso sinistra, con `+` lo avrebbe messo a destra.
 
 Per dare anche una dimensione massima, avremo potutto aggiungere dopo 10 `.n`, con n la dimensione massima. 
 Ad esempio: 
@@ -343,7 +344,7 @@ Questo consente una maggiore protezione nel caso qualcuno inserisca un carattere
 
 ### Leggere silenziosamente
 
-Si può anche far in modo che l'utenta non veda ciò che sta digitando, misura importantissima per inserire ad esempio password sotto occhi indiscreti.  
+Si può anche far in modo che l'utente non veda ciò che sta digitando, misura importantissima per inserire ad esempio password sotto occhi indiscreti.  
 Per farlo usare l'opzione `-s:
 
 ```bash
