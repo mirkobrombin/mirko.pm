@@ -70,6 +70,10 @@ article.reveal::after {
     background-image: linear-gradient(0deg, var(--color-bg), transparent);
 }
 
+header::after  {
+    background-image: linear-gradient(180deg, var(--color-bg), transparent);
+}
+
 header,
 .card {
     background-color: var(--color-bg);
