@@ -13,7 +13,7 @@ tags:
 ---
 
 
-Quest'anno mi seccavo scrivervi un articolo di natale, quindi l'ho fatto generare a ChatGPT:
+Quest'anno mi seccavo scrivervi un articolo di natale, quindi l'ho fatto generare a [ChatGPT](https://chat.openai.com/chat):
 
 ## La lettera di babbo natale
 
@@ -89,3 +89,7 @@ while true; do
 	wait
 done
 ```
+
+## Auguri dalla redazione!
+
+Tantissimi auguroni dalla redazione di Linux/hub!!
