@@ -1,6 +1,6 @@
 ---
 title: '#pausacaffé - Buon 2023 con VanillaOS' 
-date: 2022-12-31 20:00
+date: 2022-12-31 17:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
