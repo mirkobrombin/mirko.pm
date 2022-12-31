@@ -6,7 +6,7 @@ author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
 coauthor: linuxhub
 coauthor_github: linuxhubit
-published: false
+published: true
 tags:
   - capodanno
   - vanillaos
@@ -14,7 +14,7 @@ tags:
 
 Mancano poche ore alla fine di questo 2022. Sicuramente un anno difficile, insieme a tutti quelli precedenti.
 
-Ma noi non ci facciamo abbattere e troviamo sempre il modo di adattarci. Come una nuova distribuzione da installare!
+Ma noi non ci facciamo abbattere e troviamo sempre il modo di adattarci. Ad esempio installando una nuova distribuzione!
 
 Ecco per cui, per la fine di questo anno, voglio parlare un po' di quello che è il progetto del 2022, il progetto del creatore di LinuxHub: [Vanilla OS](https://vanillaos.org).
 
