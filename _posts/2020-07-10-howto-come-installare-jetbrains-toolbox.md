@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di  JetBrains Toolbox su Linux'
 date: 2020-07-10
 layout: post

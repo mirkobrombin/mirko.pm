@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione del linguaggio Go'
 description: "In questa guida vedremo come installare tutto il necessario per utilizzare Go in ambiente Linux."
 date: 2020-02-05

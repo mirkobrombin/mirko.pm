@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto: Installare e configurare ZSH'
 date: 2017-10-27
 layout: post

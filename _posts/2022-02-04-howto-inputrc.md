@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Comprendere ed usare inputrc' 
 date: 2022-02-04 15:11
 layout: post 

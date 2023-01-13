@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare e configurare gesture con Fusuma'
 date: 2021-03-10
 layout: post

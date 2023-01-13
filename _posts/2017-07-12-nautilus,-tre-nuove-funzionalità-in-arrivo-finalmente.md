@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Nautilus, tre nuove funzionalità in arrivo (finalmente)'
 date: 2017-07-12
 layout: post

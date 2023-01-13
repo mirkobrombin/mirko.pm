@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Arch Linux su CPU ARM 64 bit (sperimentale)'
 date: 2020-11-25
 layout: post

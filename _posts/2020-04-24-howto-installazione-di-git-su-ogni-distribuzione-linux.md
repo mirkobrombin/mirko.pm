@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di git su ogni distribuzione Linux'
 date: 2020-04-24
 layout: post

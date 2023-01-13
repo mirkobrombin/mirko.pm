@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di un server Plex ' 
 date: 2021-05-07 
 layout: post 

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtobash - Comincia il viaggio'
 description: "Tutto quello che vorreste sapere sul terminale ma non avete mai osato chiedere."
 date: 2019-03-30

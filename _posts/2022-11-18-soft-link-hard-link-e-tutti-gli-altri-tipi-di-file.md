@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Soft link, hard link ed altri tipi di file'
 date: 2022-11-18 08:00
 layout: post

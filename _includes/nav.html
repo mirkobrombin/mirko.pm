@@ -1,35 +1,36 @@
-<header itemscope itemtype="https://schema.org/WebSite">
-    <div class="container">
-        <div class="brand">
-            <a href="/" title="{{ site.title }}">
-                <img src="/assets/images/logo-lh-icon.svg" alt="linux/hub" />
-            </a>
-        </div>
-        <div class="searchbox">
-            <span class="mdi material-icons"> search </span>
-            <input type="search" placeholder="Cerca...">
-            <div class="results">
-                <ul></ul>
+<nav class="top-nav {% if page.url == "/" %}home-nav{% endif %}">
+    {% if page.url != "/" %}
+        <div class="search-bar" itemscope itemtype="https://schema.org/WebSite">
+            <div class="brand">
+                <a href="/" title="{{ site.title }}">
+                    <img src="/assets/images/logo-lh-icon.svg" alt="linux/hub" />
+                </a>
             </div>
+            <form class="searchbox" action="/results" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                <span class="mdi material-icons"> search </span>
+                <input type="search" placeholder="Cerca..." name="q" itemprop="query-input" required />
+                <div class="results">
+                    <ul></ul>
+                </div>
+            </form>
         </div>
-        <nav>
-            <ul>
-                {% for item in site.navigation %}
-                    <li class="{% if page.url == item.link %}active{% endif %} {% if item.color %}has-color{% endif %}">
-                        <a href="{{ item.link }}"
-                            {% if item.color != nil %}
-                                style="color: {{ item.color }};"
-                            {% endif %}
-                            >
-                            {% if item.icon != nil %}
-                                <span class="mdi material-icons" {% if item.hue %}style="filter: invert(0.6) saturate(6) sepia(1) hue-rotate({{ item.hue }});"{% endif %}>
-                                    {{ item.icon }}
-                                </span>
-                            {% endif %}
-                            {{ item.name }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </nav>
-</header>
+    {% endif %}
+    <ul>
+        {% for item in site.navigation %}
+            <li class="{% if page.url == item.link %}active{% endif %} {% if item.color %}has-color{% endif %}">
+                <a href="{{ item.link }}"
+                    {% if item.color != nil %}
+                        style="color: {{ item.color }};"
+                    {% endif %}
+                    >
+                    {% if item.icon != nil %}
+                        <span class="mdi material-icons" {% if item.hue %}style="filter: invert(0.6) saturate(6) sepia(1) hue-rotate({{ item.hue }});"{% endif %}>
+                            {{ item.icon }}
+                        </span>
+                    {% endif %}
+                    {{ item.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

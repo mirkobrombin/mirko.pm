@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando "w"'
 description: "Una delle principali utilità per l'amministrazione di sistemi Linux, é il comando.."
 date: 2018-05-21

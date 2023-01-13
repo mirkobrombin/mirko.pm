@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando who'
 date: 2020-12-25
 layout: post

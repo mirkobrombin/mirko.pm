@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Introduzione alla programmazione in Go'
 date: 2021-04-16
 layout: post

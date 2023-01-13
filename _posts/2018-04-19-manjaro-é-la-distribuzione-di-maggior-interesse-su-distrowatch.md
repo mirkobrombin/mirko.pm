@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Manjaro é la distribuzione di maggior interesse su Distrowatch'
 date: 2018-04-19
 layout: post

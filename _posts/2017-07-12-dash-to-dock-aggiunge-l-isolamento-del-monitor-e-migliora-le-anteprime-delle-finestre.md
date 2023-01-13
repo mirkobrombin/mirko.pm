@@ -1,4 +1,5 @@
 ---
+class: post
 title: "Dash to Dock aggiunge l'isolamento del monitor e migliora le anteprime delle finestre"
 date: 2017-07-12
 layout: post

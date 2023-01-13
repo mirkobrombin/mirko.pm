@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cambierà il tuo modo di usare il computer!' 
 date: 2022-04-01 09:00
 layout: post 

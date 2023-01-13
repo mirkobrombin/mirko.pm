@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Composer su Linux'
 date: 2021-03-29
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Simulazione di schermi più o meno grandi con xrandr'
 description: "Wayland offre diverse ottimizzazioni per HiDPI, nonostante ciò non è ancora possibile sfruttarlo ovunque a c.."
 date: 2019-06-26

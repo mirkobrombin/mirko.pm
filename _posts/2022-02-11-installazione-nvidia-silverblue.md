@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare driver NVIDIA su Silverblue' 
 date: 2022-02-04 17:47
 layout: post 

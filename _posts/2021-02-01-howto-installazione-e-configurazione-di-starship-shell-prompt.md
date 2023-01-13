@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Starship shell prompt'
 date: 2021-02-01
 layout: post

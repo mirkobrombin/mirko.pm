@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - Europa, Google in posizione dominante e giornalismo'
 description: "Google, posizione dominante, estorsione, Europa, violazioni, querele, giornalismo, libertá di interpretazione, grande casino."
 date: 2018-07-19

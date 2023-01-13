@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Aggiungiamo programmi a Debian 9'
 date: 2017-07-22
 layout: post

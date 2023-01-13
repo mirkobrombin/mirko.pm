@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come ripulire un file su linux'
 date: 2018-01-20
 layout: post

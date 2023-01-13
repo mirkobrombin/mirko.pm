@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di TeamSpeak 3 su Linux'
 date: 2020-06-22
 layout: post

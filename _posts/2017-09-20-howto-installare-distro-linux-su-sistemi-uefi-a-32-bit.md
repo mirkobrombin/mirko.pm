@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare distro Linux su sistemi UEFI a 32 bit'
 date: 2017-09-20
 layout: post

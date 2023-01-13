@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'GNOME 3.28 arriva la terza snapshot'
 date: 2017-12-17
 layout: post

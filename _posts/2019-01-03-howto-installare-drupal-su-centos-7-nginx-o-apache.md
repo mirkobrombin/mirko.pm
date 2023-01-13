@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Drupal su Centos 7 (Nginx o Apache)'
 description: "In questa #howto vediamo come si installa Drupal su Centos 7.."
 date: 2019-01-03

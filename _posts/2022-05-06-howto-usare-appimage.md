@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Usare appimage'
 date: 2022-05-06 11:00 
 layout: post

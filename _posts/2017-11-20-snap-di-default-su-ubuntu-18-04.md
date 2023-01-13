@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Snap di default su Ubuntu 18.04?'
 date: 2017-11-20
 layout: post

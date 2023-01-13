@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Utilizzo del comando 'dmesg'"
 description: "L'utilizzo di questo comando torna spesso utile su macchine di produzione, dove un aggiornamento o un nuovo hardware puó causare conflitti"
 date: 2018-07-16

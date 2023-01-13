@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'GNOME - In fase di risoluzione il problema di perdita memoria'
 date: 2018-03-30
 layout: post

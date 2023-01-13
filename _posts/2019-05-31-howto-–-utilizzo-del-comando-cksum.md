@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'cksum'"
 description: "Capita spesso di dover verificare l'integrità di un documento trasferito/scaricato e controllarne quindi la validità con la fonte.."
 date: 2019-05-31

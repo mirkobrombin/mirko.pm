@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Guide rapide con cheat.sh'
 date: 2021-07-15 11:00
 layout: post

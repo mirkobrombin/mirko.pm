@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di MusicBrainz Picard su Linux'
 date: 2021-01-15
 layout: post

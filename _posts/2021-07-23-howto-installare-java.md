@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Java sulle principali distribuzioni' 
 date: 2021-07-23 10:30
 layout: post 

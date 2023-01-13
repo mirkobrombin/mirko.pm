@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Installare ed usare Distrobox"
 date: 2022-08-12 08:59
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di fish (shell) su Linux'
 date: 2020-08-31
 layout: post

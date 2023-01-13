@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Importante aggiornamento Kernel per Meltdown & Spectre in Debian 9 Stretch'
 date: 2018-03-05
 layout: post

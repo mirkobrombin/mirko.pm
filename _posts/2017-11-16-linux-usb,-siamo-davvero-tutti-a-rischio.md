@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Linux: USB, siamo davvero tutti a rischio?'
 date: 2017-11-16
 layout: post

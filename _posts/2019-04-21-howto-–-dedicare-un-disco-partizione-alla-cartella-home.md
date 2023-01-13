@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Dedicare un disco/partizione alla cartella /home'
 description: "Grazie al Cloud e a dischi sempre più capienti, è meno frequente l'esigenza di espandere lo spazio di sistema ma in certe circosta.."
 date: 2019-04-21

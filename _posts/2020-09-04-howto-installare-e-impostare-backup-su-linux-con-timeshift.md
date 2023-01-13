@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Timeshift'
 date: 2020-09-04
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Glimpse Image Editor su Linux'
 date: 2020-10-16
 layout: post

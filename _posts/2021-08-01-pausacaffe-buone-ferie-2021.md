@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - Buone ferie estive (2021)' 
 date: 2021-08-01 09:30
 layout: post 

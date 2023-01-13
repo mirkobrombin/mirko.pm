@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Aggiornamento ai Microcode Intel per Spectre arriva nei repository di Ubuntu'
 date: 2018-04-02
 layout: post

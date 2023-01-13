@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé – Europa/Google, distorsione della libertá'
 description: "Sono passati ormai giorni da quando è entrata in vigore la nuova serie di leggi volte a proteggere i diritti d'autore e la nostra"
 date: 2018-10-24

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cifrare un file o un messaggio' 
 date: 2022-09-09 08:00
 layout: post 

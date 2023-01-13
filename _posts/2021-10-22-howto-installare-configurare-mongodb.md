@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di MongoDB'
 description: "Installazione di Mongo DB e cenni sui sistemi NoSQL."
 date: 2021-10-22 11:00

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Come conoscere il file system in uso'
 date: 2021-02-08
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Gli sviluppatori di Nine Collabora hanno contribuito a 46 patch per Linux 4.14'
 date: 2017-11-14
 layout: post

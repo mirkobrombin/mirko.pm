@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'KDE Plasma 5.12 LTS è stato rilasciato'
 date: 2018-02-07
 layout: post

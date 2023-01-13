@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Typora'
 date: 2020-07-29
 layout: post

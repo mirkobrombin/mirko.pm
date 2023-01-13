@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di neofetch'
 description: "neofetch è un interessante e leggero strumento utilizzabile da terminale che, su ben 150 sistemi operativi diversi.."
 date: 2019-11-30

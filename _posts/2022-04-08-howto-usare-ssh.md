@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Usare ssh' 
 date: 2022-04-08 06:00
 layout: post 

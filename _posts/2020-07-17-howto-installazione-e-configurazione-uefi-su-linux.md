@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di UEFI su Linux'
 date: 2020-07-17
 layout: post

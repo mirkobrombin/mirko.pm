@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Red Hat Enterprise Linux 7.4 disponibile per Server ARM'
 date: 2017-11-14
 layout: post

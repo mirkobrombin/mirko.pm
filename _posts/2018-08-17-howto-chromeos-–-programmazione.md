@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto #ChromeOS – Programmazione'
 description: "Negli ultimi anni il fenomeno Chromebook si fa sentire piú che mai. Dalla sua nascita come esperimento.."
 date: 2018-08-17

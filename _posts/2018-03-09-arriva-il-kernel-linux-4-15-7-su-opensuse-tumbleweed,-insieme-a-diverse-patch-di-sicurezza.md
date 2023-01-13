@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Arriva il kernel Linux 4.15.7 su openSUSE Tumbleweed, insieme a diverse patch di sicurezza'
 date: 2018-03-09
 layout: post

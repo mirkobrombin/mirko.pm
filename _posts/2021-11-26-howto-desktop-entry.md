@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Desktop Entry'
 date: 2021-11-26 10:00
 layout: post

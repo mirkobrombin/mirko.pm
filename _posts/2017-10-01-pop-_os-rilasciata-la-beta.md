@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Pop!_OS:  rilasciata la beta'
 date: 2017-10-01
 layout: post

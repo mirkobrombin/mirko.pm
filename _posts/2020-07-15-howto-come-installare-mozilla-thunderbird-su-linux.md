@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Mozilla Thunderbird su Linux'
 date: 2020-07-15
 layout: post

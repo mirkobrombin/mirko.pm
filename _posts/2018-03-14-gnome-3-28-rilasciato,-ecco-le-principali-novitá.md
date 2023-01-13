@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'GNOME 3.28 rilasciato, ecco le principali novitá'
 date: 2018-03-14
 layout: post

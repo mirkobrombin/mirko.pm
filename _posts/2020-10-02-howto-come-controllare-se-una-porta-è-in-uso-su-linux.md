@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Controllare se una porta è in uso su Linux'
 date: 2020-10-02
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '? /gentedilinux/community - La nuova comunitá di Linux HUB'
 date: 2018-03-18
 layout: post

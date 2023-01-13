@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Scrivere un articolo per linux/hub' 
 date: 2021-06-25
 layout: post 
@@ -76,6 +77,7 @@ Inoltre ogni articolo **deve contenere il seguente header** a partire dalla prim
 
 ```
 ---
+class: post
 title: '#howto - nome articolo' 
 date: aaaa-mm-gg 11:00
 layout: post 

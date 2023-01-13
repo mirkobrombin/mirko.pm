@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di ADB (Android Debug Bridge) su Linux'
 date: 2020-04-25
 layout: post

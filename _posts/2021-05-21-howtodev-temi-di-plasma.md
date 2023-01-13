@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - I temi di Plasma' 
 date: 2021-05-21 
 layout: post 

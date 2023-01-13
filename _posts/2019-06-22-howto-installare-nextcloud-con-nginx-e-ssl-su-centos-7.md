@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Nextcloud con Nginx e SSL su Centos 7'
 description: "NextCloud è una piattaforma di Cloud Storage, basato su ownCloud, rispetto questo si distingue per il gran numero di app.."
 date: 2019-06-22

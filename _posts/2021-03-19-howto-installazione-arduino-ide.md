@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Arduino IDE su Linux'
 date: 2021-03-19
 layout: post

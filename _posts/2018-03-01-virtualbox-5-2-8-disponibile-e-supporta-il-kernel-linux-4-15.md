@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Virtualbox 5.2.8 disponibile e supporta il kernel Linux 4.15'
 date: 2018-03-01
 layout: post

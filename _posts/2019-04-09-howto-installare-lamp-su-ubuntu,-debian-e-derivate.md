@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare LAMP su Ubuntu, Debian e derivate'
 description: "LAMP, acronimo di Linux, Apache, MySQL e PHP, è un gruppo di software open-source che molto spesso viene installato per poter hostare"
 date: 2019-04-09

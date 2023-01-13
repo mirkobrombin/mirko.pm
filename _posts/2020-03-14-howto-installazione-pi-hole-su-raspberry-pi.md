@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione  di Pi-Hole su Raspberry Pi'
 description: "Pi-Hole è un software che permette il blocco pubblicitario direttamente via router, rendendo la rete pulita senza la nec.."
 date: 2020-03-14

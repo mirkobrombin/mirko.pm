@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Collabora Online 3.2 - Nuove potenti funzionalitá per il LibreOffice in Cloud'
 date: 2018-04-25
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Imagick su CentOS 7/8 e derivate'
 date: 2020-11-02
 layout: post

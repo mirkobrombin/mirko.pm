@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed utilizzo di transmission-cli su Centos 8/RHEL 8/Fedora 30+'
 date: 2020-06-03
 layout: post

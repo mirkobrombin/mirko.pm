@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Presentazione di MonfyOS e intervista a Salvatore Rotilio'
 date: 2017-10-30
 layout: post

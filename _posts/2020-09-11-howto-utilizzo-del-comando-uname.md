@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando uname'
 date: 2020-09-11
 layout: post

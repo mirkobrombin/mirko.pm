@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - usare CMUS, player musicale'
 date: 2022-10-21 00:00
 layout: post

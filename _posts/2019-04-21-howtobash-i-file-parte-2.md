@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtobash - I file (Parte 2)'
 date: 2019-04-21
 layout: post

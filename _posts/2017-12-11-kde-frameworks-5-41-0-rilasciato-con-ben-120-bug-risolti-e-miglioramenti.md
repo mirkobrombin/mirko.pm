@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'KDE Frameworks 5.41.0 rilasciato con ben 120 bug risolti e miglioramenti'
 date: 2017-12-11
 layout: post

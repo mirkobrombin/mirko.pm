@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Node.js disponibile come pacchetto Snap'
 date: 2018-03-23
 layout: post

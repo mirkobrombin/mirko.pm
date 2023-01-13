@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Oracle rilascia la terza beta di VirtualBox 5.2'
 date: 2017-09-20
 layout: post

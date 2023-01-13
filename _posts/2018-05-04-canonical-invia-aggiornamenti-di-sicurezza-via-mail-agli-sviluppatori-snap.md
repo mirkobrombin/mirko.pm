@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Canonical invia aggiornamenti di sicurezza via mail agli sviluppatori snap'
 date: 2018-05-04
 layout: post

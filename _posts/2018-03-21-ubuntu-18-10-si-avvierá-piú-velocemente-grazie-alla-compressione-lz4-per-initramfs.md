@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu 18.10 si avvierá piú velocemente grazie alla compressione LZ4 per Initramfs'
 date: 2018-03-21
 layout: post

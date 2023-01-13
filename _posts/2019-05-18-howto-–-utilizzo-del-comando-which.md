@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'which'"
 description: "Capita soprattutto in ambienti di lavoro e sviluppo, di dover identificare il percorso assoluto di uno strumento/comando.."
 date: 2019-05-18

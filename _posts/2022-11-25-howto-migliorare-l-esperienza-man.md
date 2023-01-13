@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Migliorare l'esperienza MAN"
 date: 2022-11-25 08:00 
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di GitHub CLI'
 date: 2020-09-25
 layout: post

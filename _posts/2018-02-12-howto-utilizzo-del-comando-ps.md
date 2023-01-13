@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando ps'
 date: 2018-02-12
 layout: post

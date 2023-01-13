@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo di SSH per connettersi a GitHub'
 date: 2020-08-28
 layout: post

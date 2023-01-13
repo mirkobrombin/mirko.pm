@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Introduzione a typescript' 
 date: 2022-01-07 12:00
 layout: post 

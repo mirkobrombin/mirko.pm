@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare KDE Plasma su Linux Mint 19'
 date: 2018-10-24
 layout: post

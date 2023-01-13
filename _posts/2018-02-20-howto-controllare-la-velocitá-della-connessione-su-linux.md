@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Controllare la velocitá della connessione su Linux'
 date: 2018-02-20
 layout: post

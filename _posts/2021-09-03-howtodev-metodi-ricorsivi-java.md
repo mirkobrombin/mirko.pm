@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Metodi ricorsivi in java' 
 date: 2021-09-03 11:00
 layout: post 

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé – La nave del 32 bit sta per affondare! Riflessioni, storia e analisi (parte 1)'
 description: "L'articolo che segue sarà suddiviso in più parti, ognuna della quale uscirà ogni settimana."
 date: 2019-07-07

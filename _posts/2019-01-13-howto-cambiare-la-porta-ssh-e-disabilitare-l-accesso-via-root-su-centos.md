@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Cambiare la porta SSH e disabilitare l'accesso via root su Centos"
 description: "Una delle principali procedure messe in atto da un amministratore di sistemi è quella di disabilitare l'accesso root via ssh."
 date: 2019-01-13

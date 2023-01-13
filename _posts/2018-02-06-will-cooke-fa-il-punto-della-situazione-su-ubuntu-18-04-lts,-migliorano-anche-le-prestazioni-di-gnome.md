@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Will Cooke fa il punto della situazione su Ubuntu 18.04 LTS, migliorano anche le prestazioni di GNOME'
 date: 2018-02-06
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione del linguaggio R su Debian 10/Ubuntu/Fedora'
 description: "R è un linguaggio di programmazione Open source indirizzato all'analisi statistica dei dati."
 date: 2020-03-04

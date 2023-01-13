@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Collegare e sincronizzare Nextcloud su desktop Linux'
 description: "Ciò che andiamo a vedere oggi è come collegare e sincronizzare Nextcloud nella nostra distribuzione desktop di tutti i.."
 date: 2019-08-06

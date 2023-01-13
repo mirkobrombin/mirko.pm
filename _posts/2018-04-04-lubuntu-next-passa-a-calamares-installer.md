@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Lubuntu Next passa a Calamares Installer'
 date: 2018-04-04
 layout: post

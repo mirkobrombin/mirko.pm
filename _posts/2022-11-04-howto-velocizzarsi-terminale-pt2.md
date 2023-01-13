@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Velocizzarsi nell'uso del terminale pt. 2 - history e shell options" 
 date: 2022-11-04 07:55
 layout: post 

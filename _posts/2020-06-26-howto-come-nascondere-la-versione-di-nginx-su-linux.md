@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Nascondere la versione di Nginx'
 date: 2020-06-26
 layout: post

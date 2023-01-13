@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Rilasciato Adobe Brackets 1.11 con pieno supporto a Linux'
 date: 2017-09-27
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Utilizzo del comando 'screen"
 description: "Sono diverse le circostanze in cui screen viene in nostro soccorso, dimostrandosi uno degli strumenti piu utili."
 date: 2019-06-02

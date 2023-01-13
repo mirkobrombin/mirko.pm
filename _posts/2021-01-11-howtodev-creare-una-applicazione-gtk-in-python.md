@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Creare una applicazione GTK in Python'
 date: 2021-01-11
 layout: post

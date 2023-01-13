@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di .Net Core su Centos 7, Fedora 30 e openSUSE 42.3'
 description: "In questa guida vediamo come installare il framework .Net Core di Microsoft su Centos 7 (e successivi), Fedora 30 e openSUSE 42.3."
 date: 2019-10-04

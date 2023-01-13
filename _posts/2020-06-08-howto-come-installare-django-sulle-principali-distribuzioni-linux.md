@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Django sulle principali distribuzioni Linux'
 date: 2020-06-08
 layout: post

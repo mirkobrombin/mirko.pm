@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#pausacaffé - La responsabilitá dei progetti per l'Open source per un mondo digitale"
 date: 2017-12-16
 layout: post

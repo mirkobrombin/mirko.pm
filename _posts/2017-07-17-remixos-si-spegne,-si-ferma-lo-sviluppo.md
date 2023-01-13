@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'RemixOS si spegne, si ferma lo sviluppo'
 date: 2017-07-17
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#pausacaffé – L'Open source non è discutibile"
 description: "L'allarmismo non é da me ma ammetto che il titolo potrebbe equivocare un tantino il significato di questa #pausacaffé."
 date: 2018-06-03

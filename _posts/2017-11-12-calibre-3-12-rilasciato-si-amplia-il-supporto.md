@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Calibre 3.12 rilasciato: si amplia il supporto'
 date: 2017-11-12
 layout: post

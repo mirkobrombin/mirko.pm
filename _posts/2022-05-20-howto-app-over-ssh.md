@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Applicazioni da usare con ssh' 
 date: 2022-05-20 08:40
 layout: post 

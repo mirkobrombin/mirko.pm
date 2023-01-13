@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Importanti aggiornamenti a Mesa per gli utenti openSUSE Tumbleweed'
 date: 2018-01-22
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Sincronizzazione di Nextcloud su KDE (Calendario, contatti, files)'
 description: "In questa sezione vediamo come sincronizzare i nostri file (o meglio come accedervi in remoto) con Dolphin, il gestore file predefinito in KDE."
 date: 2019-11-20

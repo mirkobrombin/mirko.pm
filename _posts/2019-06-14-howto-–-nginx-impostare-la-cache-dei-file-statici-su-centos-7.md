@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Nginx impostare la cache dei file statici su Centos 7'
 description: "Una delle pratiche più conosciute per diminuire l'utilizzo di banda in un web server che ospita siti web st.."
 date: 2019-06-14

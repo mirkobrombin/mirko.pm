@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Velocizzarsi nell'uso del terminale" 
 date: 2022-10-14 08:00
 layout: post 

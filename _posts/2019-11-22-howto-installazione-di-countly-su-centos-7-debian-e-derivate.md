@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Countly su Centos 7/Debian e derivate'
 description: "Countly è una piattaforma di analitica modulare, ad alte prestazioni ed Open source per App e Siti Web."
 date: 2019-11-22

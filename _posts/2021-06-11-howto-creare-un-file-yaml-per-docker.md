@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Creare un file yaml per docker"
 date: 2021-06-11
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Disponibile la beta di LibreOffice 6'
 date: 2017-11-27
 layout: post

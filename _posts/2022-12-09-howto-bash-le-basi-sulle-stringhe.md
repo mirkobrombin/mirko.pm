@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Bash: le basi sulle stringhe'
 date: 2022-12-09 08:00
 layout: post

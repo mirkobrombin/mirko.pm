@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'GNOME Disks, ridimensiona partizioni e ripara dischi'
 date: 2017-07-31
 layout: post

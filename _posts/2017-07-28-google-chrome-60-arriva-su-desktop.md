@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Google Chrome 60 arriva su desktop'
 date: 2017-07-28
 layout: post

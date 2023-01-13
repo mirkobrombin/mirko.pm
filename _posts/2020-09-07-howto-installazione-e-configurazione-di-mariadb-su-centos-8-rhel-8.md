@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di MariaDB su CentOS 8/RHEL 8'
 date: 2020-09-07
 layout: post

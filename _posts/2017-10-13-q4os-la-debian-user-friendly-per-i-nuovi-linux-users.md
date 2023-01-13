@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Q4OS - La Debian user friendly per i nuovi Linux users'
 date: 2017-10-13
 layout: post

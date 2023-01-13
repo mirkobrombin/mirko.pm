@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Puntare un dominio ad un IP'
 description: "Capita spesso e volentieri di dover collegare un nome a dominio ad un indirizzo IP.."
 date: 2018-06-10

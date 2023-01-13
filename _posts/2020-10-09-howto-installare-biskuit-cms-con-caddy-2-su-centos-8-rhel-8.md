@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Biskuit CMS con Caddy Server 2 su CentOS 8/RHEL 8'
 date: 2020-10-09
 layout: post

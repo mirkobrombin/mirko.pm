@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Un aggiornamento sulla risoluzione di Meltdown & Spectre'
 date: 2018-01-15
 layout: post

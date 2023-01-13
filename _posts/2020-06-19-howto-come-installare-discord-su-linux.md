@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Discord su Linux'
 date: 2020-06-19
 layout: post

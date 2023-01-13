@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare WordPress via Apache su Debian/Ubuntu e derivate'
 description: "In questa guida vediamo appunto come Installare Wordpress via server Apache."
 date: 2019-11-05

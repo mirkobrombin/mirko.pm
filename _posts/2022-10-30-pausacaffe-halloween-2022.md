@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffe - Spooky scary linux distros' 
 date: 2022-10-30 22:00
 layout: post 

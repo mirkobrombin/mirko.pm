@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'GNOME 3.28 previsto per Marzo 2018, disponibile la 3.27.2'
 date: 2017-11-15
 layout: post

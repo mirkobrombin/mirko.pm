@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come impostare un ambiente di sviluppo C/C++ su Arch Linux'
 description: "Quando installiamo Arch Linux sappiamo che nulla sarà già pronto all'uso, anche compilatore e editor andranno installati e configur.."
 date: 2019-12-21

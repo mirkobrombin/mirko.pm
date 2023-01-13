@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando dd'
 date: 2020-05-06
 layout: post

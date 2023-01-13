@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - La ricerca del colpevole' 
 date: 2021-10-29 11:00
 layout: post 

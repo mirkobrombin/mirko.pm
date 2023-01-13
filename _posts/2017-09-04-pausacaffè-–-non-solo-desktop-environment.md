@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè – Non solo Desktop Environment'
 date: 2017-09-04
 layout: post

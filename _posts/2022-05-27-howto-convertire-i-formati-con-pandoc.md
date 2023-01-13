@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Convertire i formati con Pandoc' 
 date: 2022-05-27 10:06
 layout: post 

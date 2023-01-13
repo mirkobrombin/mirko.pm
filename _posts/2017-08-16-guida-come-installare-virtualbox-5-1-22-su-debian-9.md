@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Guida come installare VirtualBox 5.1.22 su Debian 9'
 date: 2017-08-16
 layout: post

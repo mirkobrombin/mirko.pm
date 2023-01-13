@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed uso di TagSH'
 date: 2020-12-30
 layout: post

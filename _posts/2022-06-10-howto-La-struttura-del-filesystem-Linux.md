@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - La struttura del file system Linux'
 date: 2022-06-10 07:30
 layout: post

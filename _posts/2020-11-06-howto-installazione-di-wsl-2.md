@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di WSL 2 su Windows 10'
 date: 2020-11-06
 layout: post

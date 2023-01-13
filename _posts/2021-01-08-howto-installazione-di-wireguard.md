@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di WireGuard su Linux'
 date: 2021-01-08
 layout: post

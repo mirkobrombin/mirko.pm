@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Breve introduzione all'uso di Silverblue"
 date: 2020-05-24
 layout: post

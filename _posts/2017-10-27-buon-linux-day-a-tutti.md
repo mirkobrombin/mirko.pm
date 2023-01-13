@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Buon Linux Day a tutti!'
 date: 2017-10-27
 layout: post

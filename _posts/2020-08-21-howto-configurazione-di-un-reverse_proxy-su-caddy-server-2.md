@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Configurazione di un reverse_proxy su Caddy Server 2'
 date: 2020-08-21
 layout: post

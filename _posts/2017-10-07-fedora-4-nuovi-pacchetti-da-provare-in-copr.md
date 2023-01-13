@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Fedora 4 nuovi pacchetti da provare in COPR'
 date: 2017-10-07
 layout: post

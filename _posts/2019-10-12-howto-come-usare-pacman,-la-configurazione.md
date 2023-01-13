@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come usare Pacman, la configurazione'
 description: "Dopo aver discusso dei suoi comandi fondamentali, oggi parleremo della configurazione di Pacman, package manager di Arch Linux, gestibile tramite il suo config file."
 date: 2019-10-12

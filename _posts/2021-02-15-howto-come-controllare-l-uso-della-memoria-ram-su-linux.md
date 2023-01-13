@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Come controllare l'uso della memoria (RAM) su Linux'"
 date: 2021-02-15
 layout: post

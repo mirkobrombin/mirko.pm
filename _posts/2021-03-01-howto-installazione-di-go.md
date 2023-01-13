@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Go'
 date: 2021-03-01
 layout: post

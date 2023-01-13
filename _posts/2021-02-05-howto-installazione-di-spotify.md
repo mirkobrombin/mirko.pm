@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Spotify su Linux'
 date: 2021-02-05
 layout: post

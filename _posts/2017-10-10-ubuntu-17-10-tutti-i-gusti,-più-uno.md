@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu 17.10.. Tutti i gusti, più uno!'
 date: 2017-10-10
 layout: post

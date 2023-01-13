@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto -  installazione ed utilizzo di Zeal su Linux'
 date: 2020-09-23
 layout: post

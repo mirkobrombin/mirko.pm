@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Impostare gli header di sicurezza su Apache2 e Nginx'
 description: "Possedete uno o più siti web, avete intero accesso al server e volete potenziare la loro sicurezza? Potete farlo con gli.."
 date: 2019-09-23

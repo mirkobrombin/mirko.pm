@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Nextcloud in CentOS 7'
 date: 2018-02-16
 layout: post

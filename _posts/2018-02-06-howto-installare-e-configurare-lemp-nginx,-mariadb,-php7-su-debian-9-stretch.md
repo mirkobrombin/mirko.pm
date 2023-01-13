@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare e configurare LEMP (Nginx, MariaDB, PHP7) su Debian 9 Stretch'
 date: 2018-02-06
 layout: post

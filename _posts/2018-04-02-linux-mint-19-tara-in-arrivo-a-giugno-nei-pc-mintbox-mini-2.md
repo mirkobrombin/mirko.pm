@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Linux Mint 19 "Tara" in arrivo a Giugno nei PC Mintbox Mini 2'
 date: 2018-04-02
 layout: post

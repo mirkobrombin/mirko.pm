@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Migliorare l'esperienza con Neovim parte 1"
 date: 2022-10-07 08:00
 layout: post 

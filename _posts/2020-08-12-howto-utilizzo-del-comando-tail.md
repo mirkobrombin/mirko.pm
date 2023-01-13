@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando tail'
 date: 2020-08-12
 layout: post

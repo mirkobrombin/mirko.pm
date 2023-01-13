@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Sincronizzazione di OneDrive sulle principali distribuzioni Linux'
 date: 2020-05-23
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare un servizio o timer di systemd'
 description: "In questa guida vediamo come programmare un servizio per systemd, il tutto cercando di riassumere e semplificare le già abbo.."
 date: 2020-01-11

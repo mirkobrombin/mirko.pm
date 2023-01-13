@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howtodev - Gestione dell'asincronia con javascript"
 date: 2021-07-09 13:00
 layout: post

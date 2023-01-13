@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Le interfacce in Go'
 date: 2021-04-28 11:00
 layout: post

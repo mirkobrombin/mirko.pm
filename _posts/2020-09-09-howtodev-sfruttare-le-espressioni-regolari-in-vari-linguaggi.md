@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Utilizzare le espressioni regolari (regex) in vari linguaggi'
 date: 2020-09-09
 layout: post

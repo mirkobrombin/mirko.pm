@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Linus Torvalds avvia lo sviluppo del Kernel Linux 4.14'
 date: 2017-09-20
 layout: post

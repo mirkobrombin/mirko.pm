@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'lsblk'"
 description: "Il comando in questione 'lsblk' é di fatto uno strumento molto utile nella consultazione dei blocchi dispositivo."
 date: 2018-09-06

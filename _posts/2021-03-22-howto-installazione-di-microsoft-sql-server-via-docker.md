@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Microsoft SQL Server via Docker'
 date: 2021-03-22
 layout: post

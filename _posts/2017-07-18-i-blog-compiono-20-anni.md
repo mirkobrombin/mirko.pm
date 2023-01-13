@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'I blog compiono 20 anni!'
 date: 2017-07-18
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Gitea su tutte le distribuzioni Linux'
 date: 2020-04-22
 layout: post

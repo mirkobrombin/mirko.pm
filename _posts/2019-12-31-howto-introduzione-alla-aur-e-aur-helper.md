@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Introduzione ad AUR e AUR helper'
 description: "La AUR (Arch User Repository) è una repository di pacchetti per Arch Linux gestito dalla comunità. La AUR contiene dei file.."
 date: 2019-12-31

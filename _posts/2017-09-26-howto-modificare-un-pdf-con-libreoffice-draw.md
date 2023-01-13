@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Modificare un PDF con LibreOffice Draw'
 description: "Qualche volta è probabile trovarsi (nella scomoda) situazione di dover modificare un PDF.."
 date: 2017-09-26

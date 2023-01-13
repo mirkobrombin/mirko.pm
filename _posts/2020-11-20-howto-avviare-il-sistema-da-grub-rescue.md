@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Avviare il sistema da GRUB Rescue'
 date: 2020-11-20
 layout: post

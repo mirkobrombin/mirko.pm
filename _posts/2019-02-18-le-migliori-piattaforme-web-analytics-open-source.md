@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Le migliori piattaforme Web Analytics Open source'
 date: 2019-02-18
 layout: post

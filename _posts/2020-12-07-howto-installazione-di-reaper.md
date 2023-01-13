@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di REAPER su Linux'
 date: 2020-12-07
 layout: post

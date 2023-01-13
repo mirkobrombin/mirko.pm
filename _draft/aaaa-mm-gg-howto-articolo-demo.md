@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - articolo demo' 
 date: aaaa-mm-gg H:M
 layout: post 

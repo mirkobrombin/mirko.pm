@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare VirtualBox 6.0 su Fedora 29'
 description: "VirtualBox è un software di virtualizzazione sviluppato da Oracle, uno dei migliori software del settore Open source ma non solo."
 date: 2019-01-10

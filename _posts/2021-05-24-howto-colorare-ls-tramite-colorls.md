@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Colorare ls tramite colorls' 
 date: 2021-05-24 
 layout: post 

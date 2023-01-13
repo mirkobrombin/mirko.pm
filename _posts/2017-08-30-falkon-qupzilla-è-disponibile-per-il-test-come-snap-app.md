@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Falkon (QupZilla) è disponibile per il test come Snap app'
 date: 2017-08-30
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu 18.04 e il sondaggio: cosa aspettarci?'
 date: 2017-07-23
 layout: post

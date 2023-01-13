@@ -77,6 +77,7 @@ textarea {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+    gap: 20px;
 }
 
 header .container {
@@ -94,11 +95,7 @@ header nav ul {
 }
 
 header nav,
-header .searchbox {
-
-    display: flex;
-    align-items: center;
-}
+.searchbox {display: flex;align-items: center;position: relative;}
 
 header {
 
@@ -129,48 +126,43 @@ header nav {
 
 .searchbox input {
     border: 1px solid;
-    padding: 6px 10px 6px 35px;
+    padding: 11px 20px 11px 45px;
     min-width: 300px;
     box-shadow: 0 0 0 transparent;
-    width: 70%;
+    width: 100%;
+    font-size: 19px;
+    min-width: 480px;
 }
 
 .searchbox .mdi {
     position: absolute;
-    margin: 0 0 0 11px;
-    font-size: 18px;
+    margin: 0 0 0 16px;
+    font-size: 22px;
 }
 
 .searchbox .results {
     position: absolute;
     margin: 0 auto;
-    padding: 55px 15px 6px 15px;
-    z-index: -1;
+    z-index: 999;
     box-shadow: 0 0 0 transparent;
     border: 1px solid;
-    border-top: 0;
     opacity: 0;
     pointer-events: none;
     overflow-y: auto;
-    max-height: 720px;
+    scrollbar-width: none;
     left: 0;
     right: 0;
-    scrollbar-width: none;
-    top: 0;
-    max-width: 1240px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    top: 58px;
+    max-height: 320px;
 }
 
 .searchbox input:focus,
 .searchbox.show input {
     outline: none;
     box-shadow: 0 1px 1px #0000001a;
-    min-width: 480px;
-width: 100%;}
+    }
 
 .searchbox.show .results {
-    box-shadow: 0 1px 1px #0000001a, 0 0 0 33rem #efefefd9;
     pointer-events: initial;
     opacity: 1;
 }
@@ -181,7 +173,6 @@ width: 100%;}
 
 .searchbox .results ul li {
     padding: 10px;
-    margin: 0 0 6px 0;
 }
 
 header nav ul li a {
@@ -201,10 +192,6 @@ header nav ul li {
 
 article {
     padding: 20px 10px;
-}
-
-main {
-    padding: 15px 0;
 }
 
 article h2 {
@@ -266,10 +253,13 @@ article {
 }
 
 .listing {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    border-top: 1px solid;
+    max-width: initial;
 }
 
 .listing article:first-of-type {
@@ -296,15 +286,20 @@ article {
 }
 
 .sitemap {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: start;
-    justify-items: center;
+    display: flex;
+    gap: 10px;
 }
 
 footer {
     border-top: 1px solid;
-    padding: 30px 0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .sitemap .small {
@@ -331,7 +326,7 @@ footer {
 }
 
 .sitemap li .mdi {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .pagination {
@@ -598,27 +593,6 @@ hr {
     border-bottom: 1px solid;
 }
 
-.searchbox .results ul li:first-of-type b::before,
-.searchbox .results ul li:nth-of-type(2) b::before,
-.searchbox .results ul li:nth-of-type(3) b::before {
-    border-radius: 4px;
-    padding: 0 3px;
-    margin: 0 3px 0 0;
-    text-transform: uppercase;
-}
-
-.searchbox .results ul li:first-of-type b::before {
-    content: "1"
-}
-
-.searchbox .results ul li:nth-of-type(2) b::before {
-    content: "2"
-}
-
-.searchbox .results ul li:nth-of-type(3) b::before {
-    content: "3"
-}
-
 .reading-time .mdi {
     filter: invert(0.6) saturate(6);
 }
@@ -626,4 +600,112 @@ hr {
 .content blockquote p {
     margin: 0 0 10px 0;
     line-height: 1.2em;
+}
+
+nav.top-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+nav.top-nav .mdi {
+    font-size: 16px;
+}
+
+nav.top-nav li {
+    font-size: 14px;
+}
+
+nav.top-nav li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav.top-nav {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-home {
+    display: flex;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    bottom: 133px;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 760px;
+    gap: 15px;
+    padding: 10px;
+}
+
+.search-home .brand img {
+    height: 50px;
+}
+
+footer .small a {
+    font-size: 10px;
+}
+
+footer .small {
+    font-size: 11px;
+}
+
+footer li {
+    line-height: 18px;
+}
+
+.searchbox .results ul li b {
+    font-weight: 300;
+}
+
+.listing h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.listing p {
+    line-height: 1.58;
+    font-size: 14px;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    padding: 0;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 20px;
+}
+
+.listing-content .result {
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.listing-content {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: -10px;
+}
+
+.search-bar .searchbox input {
+    padding: 7px 16px 7px 41px;
+}
+
+.search-bar .searchbox .mdi {
+    margin: 0 0 0 11px;
+    font-size: 20px;
+}
+
+body.post footer {
+    position: initial;
 }

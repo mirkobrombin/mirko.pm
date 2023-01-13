@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Crystal, il nuovo Ruby'
 date: 2021-05-31
 layout: post

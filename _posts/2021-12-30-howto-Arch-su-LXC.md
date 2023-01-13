@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Arch GNU/Linux su LXC' 
 date: 2021-12-30 10:45
 layout: post 

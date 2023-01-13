@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Utilizzo del comando 'crontab'"
 description: "L'automatizzazione di varie operazioni su una macchina, sono un tassello fondamentale per l'amministrazione di sistemi ma anche.."
 date: 2018-05-24

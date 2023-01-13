@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - Buon Natale 2022' 
 date: 2022-12-24 09:00
 layout: post 

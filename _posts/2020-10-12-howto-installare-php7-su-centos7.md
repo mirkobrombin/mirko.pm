@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di PHP 7 su CentOS 7 e derivate'
 date: 2020-10-12
 layout: post

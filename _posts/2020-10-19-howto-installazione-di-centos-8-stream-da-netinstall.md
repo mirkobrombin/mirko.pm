@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di CentOS 8 Stream da Netinstall'
 date: 2020-10-19
 layout: post

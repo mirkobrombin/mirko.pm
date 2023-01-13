@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Textpattern via Nginx su Centos 8/Debian 10'
 description: "Textpattern è un CMS semplice e leggero ma potente, ottimo per la realizzazione di progetti web sia elabor.."
 date: 2020-01-27

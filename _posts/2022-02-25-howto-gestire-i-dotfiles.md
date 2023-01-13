@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Gestire i dotfiles' 
 date: 2022-02-25 10:30
 layout: post 

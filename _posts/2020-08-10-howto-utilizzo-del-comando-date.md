@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando date'
 date: 2020-08-10
 layout: post

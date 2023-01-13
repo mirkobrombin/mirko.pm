@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Migliorare le prestazioni dei Package Manager' 
 date: 2021-07-30 13:00
 layout: post 

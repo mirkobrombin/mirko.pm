@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Nova, il nuovo filesystem per memorie persistenti'
 date: 2017-08-03
 layout: post

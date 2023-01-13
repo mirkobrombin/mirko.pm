@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè - Ubuntu, Unity: ci avete pensato?'
 description: "Non intendo se ci abbia pensato Mark Shuttleworth: lui ha di certo giá fatto i conti con Unity."
 date: 2017-04-06

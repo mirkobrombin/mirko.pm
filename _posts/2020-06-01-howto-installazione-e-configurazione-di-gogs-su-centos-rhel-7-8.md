@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Gogs su Centos/RHEL 7/8'
 date: 2020-06-01
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come cambiare la shell di default su Linux'
 date: 2020-07-06
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Drupal 9 su CentOS/RHEL 8 con Nginx e OPCache'
 date: 2021-02-12
 layout: post

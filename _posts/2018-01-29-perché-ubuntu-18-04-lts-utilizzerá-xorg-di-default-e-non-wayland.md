@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Perché Ubuntu 18.04 LTS utilizzerá Xorg di default e non Wayland?'
 date: 2018-01-29
 layout: post

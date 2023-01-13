@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'La LibreOffice Conference di Roma sa da fa, Italo Vignoli rimane, per ora'
 date: 2017-08-26
 layout: post

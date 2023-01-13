@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di fail2ban su Fedora 33/CentOS 8'
 date: 2020-12-11
 layout: post

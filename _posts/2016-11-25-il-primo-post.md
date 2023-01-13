@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Il primo post'
 description: "Il progetto nasce dall'idea di tre ragazzi: Giuliano Zamboni, Leonardo Occhiuzzi e Mirko Brombin. "
 date: 2016-11-25

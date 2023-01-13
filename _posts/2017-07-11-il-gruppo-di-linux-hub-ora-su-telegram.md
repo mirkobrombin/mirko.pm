@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Il gruppo di Linux HUB ora su Telegram!'
 date: 2017-07-11
 layout: post

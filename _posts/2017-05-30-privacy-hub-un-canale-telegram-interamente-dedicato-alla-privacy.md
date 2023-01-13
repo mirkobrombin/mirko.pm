@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Privacy Hub: un canale Telegram interamente dedicato alla privacy'
 date: 2017-05-30
 layout: post

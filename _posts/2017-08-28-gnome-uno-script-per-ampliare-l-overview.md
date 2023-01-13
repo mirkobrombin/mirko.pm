@@ -1,4 +1,5 @@
 ---
+class: post
 title: "Gnome: uno script per ampliare l'overview"
 date: 2017-08-28
 layout: post

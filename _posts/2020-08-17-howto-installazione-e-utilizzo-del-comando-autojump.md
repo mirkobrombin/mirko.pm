@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e utilizzo del comando autojump'
 date: 2020-08-17
 layout: post

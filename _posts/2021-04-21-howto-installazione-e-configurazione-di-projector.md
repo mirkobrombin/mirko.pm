@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Projector'
 date: 2021-04-21
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Aggiornare KDE Neon con PackageKit'
 date: 2018-01-05
 layout: post

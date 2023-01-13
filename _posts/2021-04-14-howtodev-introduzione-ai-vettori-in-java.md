@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Introduzione ai vettori in java'
 date: 2021-04-14
 layout: post

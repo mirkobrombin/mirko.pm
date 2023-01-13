@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'ReactOS, maggior supporto a file system e altri miglioramenti'
 date: 2017-12-09
 layout: post

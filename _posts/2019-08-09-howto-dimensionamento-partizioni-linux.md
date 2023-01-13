@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Dimensionamento partizioni Linux'
 description: "Quanti di voi avranno giocato con le partizioni di Linux, modificando le loro dimensioni per recuperare spazio e al successivo riavvio il sistema non si è più avviato?"
 date: 2019-08-09

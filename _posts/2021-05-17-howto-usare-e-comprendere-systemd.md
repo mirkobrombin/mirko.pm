@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Usare e comprendere Systemd' 
 date: 2021-05-17
 layout: post 

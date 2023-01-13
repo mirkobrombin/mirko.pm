@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Usare Hugo' 
 date: 2022-09-16 09:34
 layout: post 
@@ -100,6 +101,7 @@ Notate che l'estensione del post termina con `.md`, questo perché Hugo supporta
 Il post che abbiamo appena creato sarà salvato nella cartella `content/posts` e avrà un contenuto simile a questo:
 ```markdown
 ---
+class: post
 title: "<nome_post>"
 date: <data>
 draft: true

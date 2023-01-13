@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Pop!_OS! e elementary OS puntano alla crittografia completa del disco'
 date: 2018-01-30
 layout: post

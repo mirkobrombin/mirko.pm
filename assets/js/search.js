@@ -1,84 +1,113 @@
-search_field = document.querySelector(".searchbox input[type='search']"),
-    
-//body
-body = document.querySelector("body"),
-header = document.querySelector("header"),
-search_results_container = document.querySelector(".searchbox"),
-search_results = document.querySelector(".searchbox .results ul"),
-search_result = document.querySelector(".searchbox .results ul li"),
-search_keywords = "";
+function getPosts() {
+    var posts = [];
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://linuxhub.it/search.json", false);
+    xhr.send();
+    if (xhr.status == 200) {
+        console.log("linux/hub posts fetched successfully");
+        posts = JSON.parse(xhr.responseText);
+    } else {
+        console.error("linux/hub posts fetch failed");
+    }
+    return posts;
+}
 
-var taglist_tmp = [];
-var posts = [];
+var posts = getPosts();
 
-fetch('https://linuxhub.it/search.json')
-    .then(res => res.json())
-    .then((posts) => {
-        console.info("linux/hub Posts index found.");
-
-        function search() 
-        {
-            term = search_field.value.toLowerCase();
-            search_results.innerHTML = "";
-            body.style.overflow = "hidden";
-
-            if(term.length < 3) {return false}
-
-            console.log(`Searching for ${term}`)
-            if (!header.classList.contains("typing"))
-            {
-                header.classList.add("typing")
-            }
-
-            window.scrollTo(0, 0);
-
-            let results = [],
-                terms = term.trim().split(" "),
-                regex_string = "";
-
-            terms.forEach(t => {
-                if(t != " ") {
-                    regex_string += `(?=.*${t})`
-                }
-            });
-
-            regex_string = `${regex_string}.*`;
-
-            for (var i=0 ; i < posts.length ; i++)
-            {
-                let matches = posts[i]["title"].toLowerCase().match(regex_string);
-                if (matches != null) 
-                {
-                    results.push(posts[i]);
-                }
-            }
-
-            results.forEach(result => {
-                var post = document.createElement("li");
-                post.innerHTML = `
-                <a href="${result["url"]}">
-                    <b>${result["title"]}</b>
-                    <p>${result["excerpt"]}</p>
-                </a>
-                `;
-                search_results.appendChild(post);
-            });
-            search_results_container.classList.add("show");
-        }
-        search_field.addEventListener("keyup", search);
-    })
-    .catch(err => 
-    {
-        console.error("Failed to fetch linux/hub Posts index!");
-        throw err
+function search(term, maxResults) {
+    var results = fetchSearchResults(term, maxResults);
+    var resultsContainer = document.querySelector(".searchbox .results ul");
+    resultsContainer.innerHTML = "";
+    results.forEach(result => {
+        var post = document.createElement("li");
+        post.innerHTML = `
+        <a href="${result["url"]}">
+            <b>${result["title"]}</b>
+        </a>
+        `;
+        resultsContainer.appendChild(post);
     });
+}
+
+function fetchSearchResults(term, maxResults) {
+    var results = [];
+    var terms = term.trim().split(" ");
+    var regex_string = "";
+
+    terms.forEach(t => {
+        if(t != " ") {
+            regex_string += `(?=.*${t})`
+        }
+    });
+
+    regex_string = `${regex_string}.*`;
+
+    for (var i=0 ; i < posts.length ; i++)
+    {
+        let matches = posts[i]["title"].toLowerCase().match(regex_string);
+        if (matches != null)
+        {
+            results.push(posts[i]);
+        }
+    }
+
+    return results;
+}
+
+function searchFieldHandler() {
+    var searchField = document.querySelector(".searchbox input[type='search']");
+    var searchResultsContainer = document.querySelector(".searchbox");
+    var body = document.querySelector("body");
+    var term = searchField.value.toLowerCase();
+    var maxResults = 5;
+
+    if(term.length < 3) {
+        searchResultsContainer.classList.remove("show");
+        body.style.overflow = "auto";
+        return false;
+    }
+
+    search(term, maxResults);
+    searchResultsContainer.classList.add("show");
+    body.style.overflow = "hidden";
+}
+
+var searchField = document.querySelector(".searchbox input[type='search']");
+searchField.addEventListener("keyup", searchFieldHandler);
 
 window.addEventListener('mouseup', e => {
     if(e.target.tagName == "DIV") {
-        search_results_container.classList.remove("show"),
-            search_results.innerHTML = "",
+        searchResultsContainer.classList.remove("show"),
+            searchResults.innerHTML = "",
             body.style.overflow = "auto",
-            search_field.value = "",
-            header.classList.remove("typing");
+            searchField.value = ""
     }
 });
+
+function listingResults() {
+    var searchParams = new URLSearchParams(window.location.search);
+    var term = searchParams.get("q");
+    var results = fetchSearchResults(term, 0);
+    var resultsContainer = document.querySelector(".listing-content");
+    var articleFound = document.querySelector(".search-found");
+    var articleQuery = document.querySelector(".search-query");
+    resultsContainer.innerHTML = "";
+    results.forEach(result => {
+        var post = document.createElement("div");
+        post.classList.add("result");
+        post.innerHTML = `
+        <a href="${result["url"]}">
+            <h3>${result["title"]}</h3>
+        </a>
+        <p>${result["excerpt"]}</p>
+        `;
+        resultsContainer.appendChild(post);
+    });
+    articleFound.innerHTML = results.length;
+    articleQuery.innerHTML = term;
+}
+
+if (window.location.href.indexOf("/results") > -1 && window.location.search.indexOf("q") > -1) {
+    console.log("Listing results");
+    listingResults();
+}

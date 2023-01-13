@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Backup sicuri su linux con borg' 
 date: 2022-04-22 08:17
 layout: post 

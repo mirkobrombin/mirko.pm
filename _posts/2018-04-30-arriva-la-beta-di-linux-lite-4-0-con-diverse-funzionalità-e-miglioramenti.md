@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Arriva la beta di Linux Lite 4.0 con diverse funzionalità e miglioramenti'
 date: 2018-04-30
 layout: post

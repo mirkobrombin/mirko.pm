@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Wine 3.3 disponibile con supporto iniziale a Vulkan'
 date: 2018-03-03
 layout: post

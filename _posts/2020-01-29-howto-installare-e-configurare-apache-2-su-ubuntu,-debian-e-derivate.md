@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Apache 2 su Ubuntu, Debian e derivate e configurazione del SSL'
 description: "Una delle principali alternative al conosciutissimo Nginx è sicuramente Apache.."
 date: 2020-01-29

@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Guida all'utilizzo di DNF come gestore pacchetti"
 date: 2018-01-18
 layout: post

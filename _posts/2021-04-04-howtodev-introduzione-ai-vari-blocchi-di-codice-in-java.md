@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Introduzione ai vari blocchi di codice in Java'
 date: 2021-04-04
 layout: post

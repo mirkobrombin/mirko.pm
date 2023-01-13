@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Installazione di Nginx e ngx_pagespeed su Centos 7'
 description: "Il modulo ngx_pagespeed (mod_pagespeed su Apache2), è una estensione di Google per web server che ne incrementa le prestazioni."
 date: 2019-05-29

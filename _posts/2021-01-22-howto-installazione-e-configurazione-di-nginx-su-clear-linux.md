@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Nginx su Clear Linux'
 date: 2021-01-22
 layout: post

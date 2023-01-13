@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare una versione specifica di un pacchetto su CentOS, Fedora, Debian, Ubuntu e derivate'
 date: 2021-02-22
 layout: post

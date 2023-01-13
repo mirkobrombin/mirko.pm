@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffe -  Buon 2022' 
 date: 2021-12-31 21:00
 layout: post 

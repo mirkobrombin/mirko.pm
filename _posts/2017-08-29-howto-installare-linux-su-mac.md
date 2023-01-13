@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Linux su Mac'
 date: 2017-08-29
 layout: post

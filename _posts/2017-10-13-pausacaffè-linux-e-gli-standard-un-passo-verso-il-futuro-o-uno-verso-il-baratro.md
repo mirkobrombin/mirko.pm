@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè - Linux e gli standard...  Un passo verso il futuro o uno verso il baratro?'
 date: 2017-10-13
 layout: post

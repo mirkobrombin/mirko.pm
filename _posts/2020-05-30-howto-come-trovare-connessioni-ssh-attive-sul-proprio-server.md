@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come identificare connessioni SSH attive sul proprio server'
 date: 2020-05-30
 layout: post

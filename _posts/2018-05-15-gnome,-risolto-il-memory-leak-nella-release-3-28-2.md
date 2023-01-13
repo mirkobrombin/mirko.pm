@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'GNOME, risolto il memory leak nella release 3.28.2'
 date: 2018-05-15
 layout: post

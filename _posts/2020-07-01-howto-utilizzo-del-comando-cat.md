@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'cat'"
 date: 2020-07-01
 layout: post

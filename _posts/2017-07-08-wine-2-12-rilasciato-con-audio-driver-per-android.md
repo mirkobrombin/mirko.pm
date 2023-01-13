@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Wine 2.12 rilasciato con Audio Driver per Android'
 date: 2017-07-08
 layout: post

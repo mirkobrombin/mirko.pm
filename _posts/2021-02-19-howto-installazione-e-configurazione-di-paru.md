@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Paru'
 date: 2021-02-19
 layout: post

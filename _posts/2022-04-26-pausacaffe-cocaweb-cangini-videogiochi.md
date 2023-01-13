@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - Il web ed i videogiochi son pericolosi? Cocaweb e Cangini' 
 date: 2022-04-26 08:55
 layout: post 

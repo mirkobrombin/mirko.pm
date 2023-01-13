@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Autenticazione via chiave SSH su server Centos/Fedora/Debian/Ubuntu e derivate'
 description: "Oltre ai grossi benefici sulla comodità che una chiave SSH offre rispetto alle password, sono molti i motivi per cui è im.."
 date: 2019-05-31

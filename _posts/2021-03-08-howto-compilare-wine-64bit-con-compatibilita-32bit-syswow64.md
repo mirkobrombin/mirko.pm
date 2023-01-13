@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Compilare Wine 64Bit con compatibilità 32Bit e patch staging'
 date: 2021-03-08
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come usare Pacman, comandi fondamentali'
 description: "Pacman è il Package Manager di Arch Linux installato di default, scritto interamente in C."
 date: 2019-10-05

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'SalentOS - Intervista a Gabriele Martina, fondatore e team leader del progetto.'
 date: 2017-12-14
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Servire applicazioni PHP con Caddy Server su CentOS e RHEL 8'
 date: 2020-07-13
 layout: post

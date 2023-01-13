@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed utilizzo di Aria2 su Linux'
 date: 2020-07-27
 layout: post

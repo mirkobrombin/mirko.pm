@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Chiavi GPG' 
 date: 2022-02-18 10:45
 layout: post 

@@ -1,4 +1,5 @@
 ---
+class: post
 title: "Revenge Installer: uno script per l'installazione  di Arch Linux"
 date: 2017-11-01
 layout: post

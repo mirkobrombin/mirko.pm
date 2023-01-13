@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Mozilla Thunderbird 60 porta con se diverse novitá interessanti'
 date: 2018-04-01
 layout: post

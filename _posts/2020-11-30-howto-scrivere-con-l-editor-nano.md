@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - usare l'editor di testo Nano"
 date: 2020-11-30
 layout: post

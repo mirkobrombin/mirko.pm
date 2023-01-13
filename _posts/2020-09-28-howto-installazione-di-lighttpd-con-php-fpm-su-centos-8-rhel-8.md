@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Lighttpd con php-fpm su CentOS 8/RHEL 8'
 date: 2020-09-28
 layout: post

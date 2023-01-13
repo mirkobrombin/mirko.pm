@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Fare calcoli con linux' 
 date: 2021-11-12 17:00
 layout: post 

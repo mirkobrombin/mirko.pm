@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Fedora 24 termina il proprio ciclo'
 date: 2017-08-03
 layout: post

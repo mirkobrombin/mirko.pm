@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè - Il comfort si paga in Privacy'
 date: 2017-07-24
 layout: post

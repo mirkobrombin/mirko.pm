@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Impostare un reverse proxy di un server NodeJS su Nginx'
 description: "NodeJS è una runtime di JavaScript costruita sul motore V8 di Chrome che viene utilizzata principalmente per real.."
 date: 2020-04-10

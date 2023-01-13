@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Funzioni in TypeScript' 
 date: 2022-06-03 06:00
 layout: post 

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu MATE 17.10 Alpha 2 si aggiorna con global menu  e HUD'
 date: 2017-08-02
 layout: post

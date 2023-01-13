@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Debian Stretch guida post installazione'
 date: 2017-07-10
 layout: post

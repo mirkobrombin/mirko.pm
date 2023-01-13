@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando head'
 date: 2020-08-05
 layout: post

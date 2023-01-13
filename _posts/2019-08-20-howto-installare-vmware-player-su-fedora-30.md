@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare VMware Player su Fedora 30'
 description: "In questa guida vediamo come installare il player su Fedora 30, la quale richiede alcuni accorgimenti come la compilazione dei moduli, al momento non supportati nella versione 5 del kernel Linux."
 date: 2019-08-20

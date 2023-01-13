@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Visual Studio Code su Linux'
 date: 2020-07-24
 layout: post

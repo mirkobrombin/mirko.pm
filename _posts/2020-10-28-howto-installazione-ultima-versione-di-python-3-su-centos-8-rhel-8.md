@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Installazione dell'ultima versione di Python 3 su CentOS 8/RHEL 8"
 date: 2020-10-28
 layout: post

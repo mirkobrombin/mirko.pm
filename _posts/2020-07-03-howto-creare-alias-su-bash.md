@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare alias su bash'
 date: 2020-07-03
 layout: post

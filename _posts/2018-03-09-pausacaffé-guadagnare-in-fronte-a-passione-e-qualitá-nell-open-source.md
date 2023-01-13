@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#pausacaffé - Guadagnare in fronte a passione e qualitá nell'Open source"
 date: 2018-03-09
 layout: post

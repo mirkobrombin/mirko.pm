@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Flatpak e configurazione di Flathub'
 description: "Flatpak è un formato pacchetto sempre più diffuso in Linux. Si tratta di un ambiente sandbox particolarmente responsivo che permette l'esecuz.."
 date: 2019-10-22

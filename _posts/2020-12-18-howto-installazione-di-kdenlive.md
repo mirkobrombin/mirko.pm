@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Kdenlive sulle principali distribuzioni Linux'
 date: 2020-12-18
 layout: post

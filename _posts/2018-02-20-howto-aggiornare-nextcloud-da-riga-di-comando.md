@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Aggiornare Nextcloud da riga di comando'
 date: 2018-02-20
 layout: post

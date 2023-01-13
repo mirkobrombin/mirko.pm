@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Linux Lite, la prima distribuzione a ricevere il kernel 4.14'
 date: 2017-11-14
 layout: post

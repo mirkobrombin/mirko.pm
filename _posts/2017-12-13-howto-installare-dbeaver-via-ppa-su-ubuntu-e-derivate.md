@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare DBeaver via PPA su Ubuntu e derivate'
 date: 2017-12-13
 layout: post

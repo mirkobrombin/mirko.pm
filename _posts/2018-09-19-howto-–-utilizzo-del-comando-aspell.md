@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'aspell'"
 description: "aspell e è un correttore ortografico interattivo che si occupa di analizzare l'input o file, alla ricerca di errori ortografici, permettendoti di correggerli istantaneamente."
 date: 2018-09-19

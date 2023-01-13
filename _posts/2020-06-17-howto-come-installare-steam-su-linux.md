@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Steam sulle principali distribuzioni Linux'
 date: 2020-06-17
 layout: post

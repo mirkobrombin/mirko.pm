@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto #ChromeOS – Programmazione pt.2'
 date: 2018-11-04
 layout: post

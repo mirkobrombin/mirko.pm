@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di GitLab CE con SSL su Centos 8/RHEL 8'
 date: 2020-10-30
 layout: post

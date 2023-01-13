@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - I metodi in Java' 
 date: 2021-05-10
 layout: post 

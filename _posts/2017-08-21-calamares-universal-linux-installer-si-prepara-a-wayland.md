@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Calamares Universal Linux Installer si prepara a Wayland'
 date: 2017-08-21
 layout: post

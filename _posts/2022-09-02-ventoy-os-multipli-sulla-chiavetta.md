@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Ventoy: OS multipli sulla chiavetta'
 date: 2022-09-02 08:00
 layout: post 

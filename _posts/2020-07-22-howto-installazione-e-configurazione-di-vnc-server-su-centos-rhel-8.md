@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di VNC Server su CentOS/RHEL 8'
 date: 2020-07-22
 layout: post

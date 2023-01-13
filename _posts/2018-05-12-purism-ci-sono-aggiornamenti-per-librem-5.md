@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Purism: Ci sono aggiornamenti per Librem 5'
 date: 2018-05-12
 layout: post

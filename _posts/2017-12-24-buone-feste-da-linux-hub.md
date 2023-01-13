@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Buone feste da Linux HUB!'
 date: 2017-12-24
 layout: post

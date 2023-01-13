@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'I nostri dati al sicuro con Rsync'
 date: 2017-07-19
 layout: post

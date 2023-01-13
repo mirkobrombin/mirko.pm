@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Usare auto-cpufreq per ottimizzare la batteria su Linux'
 date: 2022-04-15 08:20
 layout: post

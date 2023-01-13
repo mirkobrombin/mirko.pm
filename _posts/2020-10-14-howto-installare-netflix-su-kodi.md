@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Netflix su Kodi'
 date: 2020-10-14
 layout: post

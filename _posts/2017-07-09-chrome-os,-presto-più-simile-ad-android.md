@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Chrome OS, presto più simile ad Android'
 date: 2017-07-09
 layout: post

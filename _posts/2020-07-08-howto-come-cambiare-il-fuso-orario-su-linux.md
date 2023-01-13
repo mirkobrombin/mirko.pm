@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come cambiare il fuso orario su Linux'
 date: 2020-07-08
 layout: post

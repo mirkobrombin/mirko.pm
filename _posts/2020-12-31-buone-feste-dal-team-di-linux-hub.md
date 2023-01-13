@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Buone feste dal Team di linux/hub'
 date: 2020-12-31
 layout: post

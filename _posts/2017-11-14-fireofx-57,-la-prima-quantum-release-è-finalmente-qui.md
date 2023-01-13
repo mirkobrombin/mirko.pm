@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Fireofx 57, la prima Quantum release è finalmente qui'
 date: 2017-11-14
 layout: post

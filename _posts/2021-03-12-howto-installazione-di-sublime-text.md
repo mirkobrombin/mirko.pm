@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Sublime Text sulle principali distribuzioni Linux'
 date: 2021-03-12
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzare tool cli alternativi scritti in rust' 
 date: 2021-12-17 13:15
 layout: post 

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Rilasciato Red Hat Enterprise Linux 7.5 con diverse novitá per gli utenti business'
 date: 2018-04-11
 layout: post

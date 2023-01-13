@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè - Gentoo, perchè sceglierlo?'
 date: 2017-07-15
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Aggiornare il kernel linux su Centos 7'
 description: "Centos 7 viene normalmente fornito con una versione stabile seppur molto vecchia, del kernel Linux.."
 date: 2019-06-04

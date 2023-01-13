@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cifrare file e cartelle con CryFS e ECryptFS'
 description: "In questa guida vediamo due metodi per tenere al sicuro i nostri file, nello specifico CryFS e ecryptfs."
 date: 2019-07-27

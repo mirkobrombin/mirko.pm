@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Portainer' 
 date: 2022-01-28 10:20
 layout: post 

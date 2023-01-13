@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare e usare neovim'
 date: 2022-08-19 08:00
 layout: post 

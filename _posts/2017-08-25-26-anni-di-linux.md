@@ -1,4 +1,5 @@
 ---
+class: post
 title: '? 26 anni di Linux'
 date: 2017-08-25
 layout: post

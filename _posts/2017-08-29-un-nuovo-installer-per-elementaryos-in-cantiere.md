@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Un nuovo Installer per ElementaryOS in cantiere'
 date: 2017-08-29
 layout: post

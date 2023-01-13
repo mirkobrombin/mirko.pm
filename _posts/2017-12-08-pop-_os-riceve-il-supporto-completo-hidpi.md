@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Pop!_OS riceve il supporto completo HiDPI'
 date: 2017-12-08
 layout: post

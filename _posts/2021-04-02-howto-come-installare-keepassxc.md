@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di KeePassXC su Linux'
 date: 2021-04-02
 layout: post

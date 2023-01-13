@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Installazione e configurazione di Nginx con Let's Encrypt su Debian 10"
 description: "In questa guida andremo a vedere come procedere alla installazione e configurazione con Let’s Encrypt di Nginx su Debian 10."
 date: 2020-01-22

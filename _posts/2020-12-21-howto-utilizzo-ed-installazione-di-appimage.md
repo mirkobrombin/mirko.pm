@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo ed installazione di AppImage'
 date: 2020-12-21
 layout: post

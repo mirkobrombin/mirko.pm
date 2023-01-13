@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Esce dalla Beta Windows Subsystem for Linux'
 date: 2017-08-02
 layout: post

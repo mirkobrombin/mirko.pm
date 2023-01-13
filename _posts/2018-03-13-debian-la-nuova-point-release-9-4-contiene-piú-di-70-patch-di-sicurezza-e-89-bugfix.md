@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Debian la nuova Point release 9.4 contiene piú di 70 patch di sicurezza e 89 bugfix'
 date: 2018-03-13
 layout: post

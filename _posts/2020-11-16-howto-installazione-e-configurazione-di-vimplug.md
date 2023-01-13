@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di VimPlug'
 date: 2020-11-16
 layout: post

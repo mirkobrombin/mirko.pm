@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'E se volessimo cambiare DE?'
 date: 2017-05-07
 layout: post

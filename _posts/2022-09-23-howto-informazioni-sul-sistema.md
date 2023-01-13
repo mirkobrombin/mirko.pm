@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Raccogliere informazioni sul proprio pc da terminale' 
 date: 2022-09-23 08:00
 layout: post 

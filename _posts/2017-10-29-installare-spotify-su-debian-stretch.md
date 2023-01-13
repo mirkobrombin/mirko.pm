@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Installare Spotify su Debian Stretch'
 date: 2017-10-29
 layout: post

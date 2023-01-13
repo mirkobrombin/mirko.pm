@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - AMD e Nvidia GPU su Arch Linux con prime-run'
 date: 2020-08-19
 layout: post

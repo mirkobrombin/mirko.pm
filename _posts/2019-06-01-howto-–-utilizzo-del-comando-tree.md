@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'tree'"
 description: "Capita spesso e in diverse circostanze, di dover prelevare la struttura di una directory, cosa che possiamo fare grazie al comando tree.."
 date: 2019-06-01

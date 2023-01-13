@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare e configurare Nextcloud con dominio e certificato SSL su Ubuntu e derivate'
 description: "Nextcloud è una piattaforma di file sharing open source che permette l'archiviazione in cloud di file personali.."
 date: 2019-01-05

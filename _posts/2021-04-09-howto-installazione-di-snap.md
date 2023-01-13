@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed utilizzo di Snap'
 date: 2021-04-09
 layout: post

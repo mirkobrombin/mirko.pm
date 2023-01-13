@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando locate' 
 date: 2021-05-28
 layout: post 

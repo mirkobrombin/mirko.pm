@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè - Il Web e i lavori del futuro'
 description: "Non mi soffermo di certo sullo spiegare come definire il web stesso un lavoro sia concettualmente un errore da ignorante."
 date: 2017-09-08

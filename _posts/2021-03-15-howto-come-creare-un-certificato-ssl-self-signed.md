@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come creare un certificato SSL self-signed'
 date: 2021-03-15
 layout: post

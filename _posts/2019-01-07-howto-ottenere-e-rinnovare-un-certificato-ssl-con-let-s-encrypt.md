@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Ottenere e rinnovare un certificato SSL con Let's Encrypt"
 description: "Let's Encrypt è una autorità di certificazione che automatizza gratuitamente la creazione, la validazione, il rilascio ed il rinn.."
 date: 2019-01-07

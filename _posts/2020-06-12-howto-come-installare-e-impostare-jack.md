@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di  JACK su Linux'
 date: 2020-06-12
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Installare Fedora tramite NetInstall'
 date: 2018-10-26
 layout: post

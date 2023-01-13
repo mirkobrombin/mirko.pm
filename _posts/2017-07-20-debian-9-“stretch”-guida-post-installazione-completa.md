@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Debian 9 “Stretch”: guida post installazione (completa)'
 date: 2017-07-20
 layout: post

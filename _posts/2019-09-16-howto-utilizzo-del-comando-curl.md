@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto – Utilizzo del comando 'curl'"
 description: "curl è un potente strumento per il download di risorse web e non solo, si può infatti utilizzare anche in altri contesti, come ad esempio interpellare delle API e inviare e/o ricevere header."
 date: 2019-09-16

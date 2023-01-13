@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Google Chrome su Fedora'
 date: 2020-11-13
 layout: post

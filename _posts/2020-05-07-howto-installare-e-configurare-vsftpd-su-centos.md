@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di vsftpd su CentOS/RHEL 7/8'
 date: 2020-05-07
 layout: post

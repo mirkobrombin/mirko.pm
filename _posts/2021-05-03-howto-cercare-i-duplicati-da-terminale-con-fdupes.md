@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cercare i duplicati da terminale con fdupes'
 date: 2021-05-03T09:30
 layout: post

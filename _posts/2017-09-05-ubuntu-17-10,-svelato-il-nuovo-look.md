@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu 17.10, svelato il nuovo look'
 date: 2017-09-05
 layout: post

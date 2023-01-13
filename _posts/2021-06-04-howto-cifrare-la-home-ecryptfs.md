@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cifrare la home con ecryptfs' 
 date: 2021-06-04
 layout: post 

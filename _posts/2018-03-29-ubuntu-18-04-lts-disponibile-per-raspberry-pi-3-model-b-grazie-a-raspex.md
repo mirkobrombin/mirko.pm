@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu 18.04 LTS disponibile per Raspberry Pi 3 Model B grazie a RaspEX'
 date: 2018-03-29
 layout: post

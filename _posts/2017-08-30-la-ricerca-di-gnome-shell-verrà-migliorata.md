@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'La ricerca di GNOME Shell verrà migliorata'
 date: 2017-08-30
 layout: post

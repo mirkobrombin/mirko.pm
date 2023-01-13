@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creazione di servizi runit' 
 date: 2021-12-09 10:10
 layout: post 

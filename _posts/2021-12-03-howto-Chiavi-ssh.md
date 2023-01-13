@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Chiavi SSH' 
 date: 2021-12-03 13:15
 layout: post 

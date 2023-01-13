@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Approfondimenti del comando cUrl' 
 date: 2022-03-18 10:00
 layout: post 

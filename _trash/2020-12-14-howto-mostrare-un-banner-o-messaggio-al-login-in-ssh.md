@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Mostrare un banner o messaggio al login in SSH'
 date: 2020-12-14
 layout: post

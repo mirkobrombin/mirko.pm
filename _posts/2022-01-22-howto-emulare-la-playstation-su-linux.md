@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Emulare la Playstation su Linux' 
 date: 2022-01-21 15:40
 layout: post 

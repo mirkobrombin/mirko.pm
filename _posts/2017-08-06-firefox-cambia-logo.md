@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Firefox cambia logo?'
 date: 2017-08-06
 layout: post

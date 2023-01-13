@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Le impostazioni di KDE cambiano look'
 date: 2017-09-06
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di mpv su Linux'
 date: 2020-12-04
 layout: post

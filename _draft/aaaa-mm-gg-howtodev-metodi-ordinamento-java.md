@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Metodi ricorsivi e ordinamento dei vettori in java' 
 date: 
 layout: post 

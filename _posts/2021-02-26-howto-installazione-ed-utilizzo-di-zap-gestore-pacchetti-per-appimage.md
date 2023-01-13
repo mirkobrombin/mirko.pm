@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed utilizzo di zap, gestore pacchetti per AppImage'
 date: 2021-02-26
 layout: post

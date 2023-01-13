@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#pausacaffè - Sicurezza e privacy più forti nell'Open Source?"
 date: 2017-08-05
 layout: post

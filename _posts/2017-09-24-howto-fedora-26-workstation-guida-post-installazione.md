@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Fedora 26 Workstation guida post installazione'
 date: 2017-09-24
 layout: post

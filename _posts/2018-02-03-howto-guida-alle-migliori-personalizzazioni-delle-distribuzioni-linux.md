@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Guida alle migliori personalizzazioni delle distribuzioni Linux'
 date: 2018-02-03
 layout: post

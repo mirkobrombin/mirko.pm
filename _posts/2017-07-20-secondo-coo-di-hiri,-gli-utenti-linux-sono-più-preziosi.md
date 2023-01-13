@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Secondo COO di Hiri, gli utenti Linux sono più preziosi'
 date: 2017-07-20
 layout: post

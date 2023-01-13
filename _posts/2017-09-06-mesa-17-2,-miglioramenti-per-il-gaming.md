@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Mesa 17.2, miglioramenti per il gaming'
 date: 2017-09-06
 layout: post

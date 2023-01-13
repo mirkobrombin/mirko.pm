@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Introduzione a LaTeX'
 date: 2017-12-10
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '? #pausacaffè - Gentoo come distro lato server? SI o NO?'
 date: 2017-08-01
 layout: post

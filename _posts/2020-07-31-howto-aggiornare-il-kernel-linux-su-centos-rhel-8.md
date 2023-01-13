@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Aggiornare il kernel Linux su CentOS/RHEL 8'
 date: 2020-07-31
 layout: post

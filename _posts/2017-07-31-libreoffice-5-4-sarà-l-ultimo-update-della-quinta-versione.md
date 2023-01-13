@@ -1,4 +1,5 @@
 ---
+class: post
 title: "LibreOffice 5.4 sarà l'ultimo update della quinta versione"
 date: 2017-07-31
 layout: post

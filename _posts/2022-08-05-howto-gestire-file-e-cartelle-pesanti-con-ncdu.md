@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Gestire file e cartelle pesanti con ncdu'
 date: 2022-08-05 09:00
 layout: post 

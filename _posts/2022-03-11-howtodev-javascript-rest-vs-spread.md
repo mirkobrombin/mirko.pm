@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - SPREAD vs REST Operators in Javascript'
 date: 2022-03-11 13:45
 layout: post 

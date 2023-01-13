@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé – Fuga da facebook, perché partecipare'
 description: "Diversi mesi fa abbiamo parlato di come il comfort costi la nostra privacy. Ció significa che se vogliam.."
 date: 2018-12-06

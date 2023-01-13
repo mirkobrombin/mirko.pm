@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Nextcloud su Docker'
 date: 2022-06-17 07:00
 layout: post

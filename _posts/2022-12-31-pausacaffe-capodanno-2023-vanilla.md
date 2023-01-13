@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - Buon 2023 con VanillaOS' 
 date: 2022-12-31 17:00
 layout: post 

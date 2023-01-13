@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffe -  Feliz Navidad 2021!' 
 date: 2021-12-24 14:00
 layout: post 

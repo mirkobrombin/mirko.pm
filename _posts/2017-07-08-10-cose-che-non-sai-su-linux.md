@@ -1,4 +1,5 @@
 ---
+class: post
 title: '10 cose che non sai su Linux'
 description: "Linux è un argomento tanto vasto quanto misterioso, eccoti 10 cose che non sai."
 date: 2017-07-08

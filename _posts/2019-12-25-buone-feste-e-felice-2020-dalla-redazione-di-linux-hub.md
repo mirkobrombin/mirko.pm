@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Buone feste e felice 2020 dalla redazione di linux/hub'
 description: "Il 2019 è stato il terzo anno di linux/hub, un progetto ambizioso con una redazione composta da 9 elementi guidati dalla passio.."
 date: 2019-12-25

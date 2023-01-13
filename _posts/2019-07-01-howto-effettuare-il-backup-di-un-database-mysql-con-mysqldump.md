@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Effettuare il backup di un database MySQL (con mysqldump)'
 description: "Sono molte le cirostanze in cui torna utile il backup di un database, ad esempio nella preparazione ad una migrazione o semplice.."
 date: 2019-07-01

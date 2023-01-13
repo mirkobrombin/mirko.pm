@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Bash introduzione' 
 date: 2022-12-16 09:00
 layout: post 

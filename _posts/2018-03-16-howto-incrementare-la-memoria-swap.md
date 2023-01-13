@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Incrementare la memoria Swap'
 date: 2018-03-16
 layout: post

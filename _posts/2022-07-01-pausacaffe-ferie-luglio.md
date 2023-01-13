@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#pausacaffé - Linuxhub in ferie per l'estate"
 date: 2022-07-01 10:00
 layout: post

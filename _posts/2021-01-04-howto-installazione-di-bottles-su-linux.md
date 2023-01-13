@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Bottles su Linux'
 date: 2021-01-04
 layout: post

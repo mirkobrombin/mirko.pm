@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Docusaurus 2 con Caddy Server 2 su CentOS 8/RHEL 8'
 date: 2020-11-09
 layout: post

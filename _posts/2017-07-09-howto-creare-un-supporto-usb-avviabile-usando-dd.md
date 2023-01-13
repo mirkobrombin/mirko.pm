@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare un supporto USB avviabile usando "dd"'
 date: 2017-07-09
 layout: post

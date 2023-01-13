@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Le ISO Ubuntu 17.10 Respin programmate per la prossima settimana'
 date: 2018-01-06
 layout: post

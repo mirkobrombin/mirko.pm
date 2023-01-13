@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Material Shell su GNOME'
 date: 2020-10-05
 layout: post

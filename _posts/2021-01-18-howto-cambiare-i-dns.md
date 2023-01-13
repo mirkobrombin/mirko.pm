@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cambiare i DNS su Linux'
 date: 2021-01-18
 layout: post

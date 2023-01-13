@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'KPTI, la nuova funzionalitá del kernel che mitiga meltdown'
 date: 2018-01-07
 layout: post

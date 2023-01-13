@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare una USB di Windows con WoeUSB'
 date: 2020-09-14
 layout: post

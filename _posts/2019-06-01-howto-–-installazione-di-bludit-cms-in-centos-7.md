@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto – Installazione di Bludit CMS in Centos 7'
 description: "Bludit è un CMS gratuito e Open source, basato sull'archiviazione in file JSON.."
 date: 2019-06-01

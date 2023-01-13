@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di OpenJDK/JRE su Linux'
 date: 2020-11-27
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando printenv'
 date: 2020-05-13
 layout: post

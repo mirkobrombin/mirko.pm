@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto -  Come usare MOTD su Arch Linux - Pt. 1'
 description: "MOTD o Message Of The Day è un programma che viene eseguito dalla shell di login.."
 date: 2019-12-11

@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Raspbian migra a Debian 9 Stretch'
 date: 2017-08-20
 layout: post

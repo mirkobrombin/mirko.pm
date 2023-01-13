@@ -1,4 +1,5 @@
 ---
+class: post
 title: "#howto - Creare un Dockerfile"
 date: 2021-05-14
 layout: post

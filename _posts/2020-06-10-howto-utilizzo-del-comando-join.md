@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando join'
 date: 2020-06-10
 layout: post

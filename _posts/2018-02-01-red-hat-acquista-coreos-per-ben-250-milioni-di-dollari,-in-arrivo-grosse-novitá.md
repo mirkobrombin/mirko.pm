@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Red Hat acquista CoreOS per ben 250 Milioni di dollari, in arrivo grosse novitá'
 date: 2018-02-01
 layout: post

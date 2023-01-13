@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - Pacchettizzare in Appimage' 
 date: 2022-12-02 08:00
 layout: post 

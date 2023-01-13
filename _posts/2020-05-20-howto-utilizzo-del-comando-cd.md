@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando cd'
 date: 2020-05-20
 layout: post

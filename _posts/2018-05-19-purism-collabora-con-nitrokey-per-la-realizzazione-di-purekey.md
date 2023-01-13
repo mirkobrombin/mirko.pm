@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Purism collabora con Nitrokey per la realizzazione di Purekey'
 date: 2018-05-19
 layout: post

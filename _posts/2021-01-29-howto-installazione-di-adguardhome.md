@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di AdGuardHome'
 date: 2021-01-29
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare la powerline' 
 date: 2021-07-02 
 layout: post 

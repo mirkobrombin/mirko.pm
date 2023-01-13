@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Eseguire il boot di Raspberry Pi 4 da USB'
 date: 2020-10-26
 layout: post

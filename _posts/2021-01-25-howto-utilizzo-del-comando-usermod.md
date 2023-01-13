@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando usermod'
 date: 2021-01-25
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto #ChromeOS - Sviluppare app Android'
 date: 2017-12-04
 layout: post

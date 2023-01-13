@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Autodesk Maya 2020 su Arch Linux'
 description: "Maya è un software per la modellazione 3D sviluppato e distribuito da Autodesk."
 date: 2020-04-18

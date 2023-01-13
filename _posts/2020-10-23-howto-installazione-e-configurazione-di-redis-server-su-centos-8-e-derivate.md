@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Redis Server su CentOS 8 e derivate'
 date: 2020-10-23
 layout: post

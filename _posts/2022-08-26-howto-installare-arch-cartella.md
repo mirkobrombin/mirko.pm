@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Archlinux in una cartella' 
 date: 2022-08-26 08:00
 layout: post 

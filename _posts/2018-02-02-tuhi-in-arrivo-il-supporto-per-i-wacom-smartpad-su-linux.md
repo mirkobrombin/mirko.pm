@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Tuhi - In arrivo il supporto per i Wacom Smartpad su Linux'
 date: 2018-02-02
 layout: post

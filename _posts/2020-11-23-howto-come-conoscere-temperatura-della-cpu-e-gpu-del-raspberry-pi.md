@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Come conoscere temperatura della CPU e GPU del Raspberry Pi'
 date: 2020-11-23
 layout: post

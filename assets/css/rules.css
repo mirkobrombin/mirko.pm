@@ -3,6 +3,23 @@
         display: none;
     }
 
+    .search-home {
+        max-width: initial;
+        display: flex;
+    }
+    
+    .searchbox input {
+        min-width: initial;
+    }
+    
+    footer .sitemap {
+        display: none;
+    }
+
+    .top-nav ul {
+        display: none !important;
+    }
+
     .brand img:first-of-type {
         display: none;
     }
@@ -16,7 +33,6 @@
         max-width: 50px;
     }
 
-    .listing,
     .sitemap,
     .container.article {
         display: block;
@@ -53,30 +69,12 @@
         margin: 32px 0 0 0;
     }
 
-    .searchbox.show input {
-        margin: 0 0 0 10px;
-        min-width: initial;
-        width: calc(100% - 28px);
-    }
-
     header.typing .brand {
         display: none;
     }
 
-    .searchbox.show {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 5px;
-        bottom: 0;
-    }
-
-    .searchbox.show .mdi {
-        margin-left: 21px;
-    }
-
-    .searchbox input:focus {
-        min-width: 300px;
+    .search-bar {
+        width: 100%;
     }
 
     article .tags {
@@ -128,5 +126,9 @@
         height: auto;
         max-height: 270px;
         overflow: auto;
+    }
+
+    .results {
+        display: none !important;
     }
 }

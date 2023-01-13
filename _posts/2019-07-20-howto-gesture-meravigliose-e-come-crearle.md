@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Gesture meravigliose e come crearle'
 description: "Invidiabili le gesture di MacOS?  Vediamo come ottenere la stessa esperienza sulla nostra distribuzione Linux preferita! "
 date: 2019-07-20

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di un server Kodi'
 date: 2020-06-29
 layout: post

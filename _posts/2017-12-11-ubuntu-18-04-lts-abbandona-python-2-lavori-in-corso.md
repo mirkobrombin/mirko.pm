@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Ubuntu 18.04 LTS abbandona Python 2 (lavori in corso)'
 date: 2017-12-11
 layout: post

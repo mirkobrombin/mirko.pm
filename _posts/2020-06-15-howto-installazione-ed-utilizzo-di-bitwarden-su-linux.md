@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed utilizzo di Bitwarden su Linux'
 date: 2020-06-15
 layout: post

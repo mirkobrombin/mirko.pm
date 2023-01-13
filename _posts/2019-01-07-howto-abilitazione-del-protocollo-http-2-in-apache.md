@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Abilitazione del protocollo HTTP/2 in Apache'
 description: "Il protocollo HTTP/2 è la seconda versione del comune protocollo HTTP utilizzato nel web."
 date: 2019-01-07

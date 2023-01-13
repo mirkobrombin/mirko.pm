@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e utilizzo di Electron framework'
 description: "Electron è un framework open source creato e sviluppato da GitHub. Integra un browser Chromium minimale per il frontend e Node.js per il backend."
 date: 2019-12-15

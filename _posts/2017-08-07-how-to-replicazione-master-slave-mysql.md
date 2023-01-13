@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'HOW TO: Replicazione Master/Slave Mysql'
 date: 2017-08-07
 layout: post

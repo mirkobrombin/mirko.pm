@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Arriva Wine 2.0.2 e risolve numerosi Bug!'
 date: 2017-07-24
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Correggere vmlinuz-linux not found su Archlinux' 
 date: 2022-04-02 09:00
 layout: post 

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#devcaffè - Naufrago in un mare di linguaggi' 
 date: 2021-11-05 16:20
 layout: post 

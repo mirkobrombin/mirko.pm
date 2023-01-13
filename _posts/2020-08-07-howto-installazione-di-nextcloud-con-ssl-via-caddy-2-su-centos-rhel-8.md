@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Nextcloud con SSL via Caddy 2 su Centos/RHEL 8'
 date: 2020-08-07
 layout: post

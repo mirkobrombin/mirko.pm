@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare e modificare template personalizzati su VestaCP'
 date: 2020-04-29
 layout: post

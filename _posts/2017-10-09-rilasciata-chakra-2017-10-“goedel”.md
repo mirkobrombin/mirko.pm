@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Rilasciata Chakra 2017.10 “Goedel”'
 date: 2017-10-09
 layout: post

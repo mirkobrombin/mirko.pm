@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di memcached con PHP su CentOS e RHEL 7/8'
 date: 2020-06-24
 layout: post

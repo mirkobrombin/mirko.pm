@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Anchor CMS su Centos 7 (Nginx o Apache)'
 description: "Anchor CMS è scritto in php e trova il consenso in chi cerca qualcosa di semplice ma potente per il proprio sito web."
 date: 2019-01-07

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Apache su Centos 7'
 description: "Apache è uno dei Web server più famosi ed utilizzati al mondo. In questa guida ne trattiamo l'installazione su Centos 7."
 date: 2019-01-04

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howtodev - presentazioni con reveal.js' 
 date: 2022-10-28 08:00
 layout: post 

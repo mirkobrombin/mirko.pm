@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Backup mirati con Grsync'
 date: 2017-07-16
 layout: post

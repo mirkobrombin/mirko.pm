@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di LMMS  '
 date: 2020-08-17
 layout: post

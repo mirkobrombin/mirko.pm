@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Ruby Version Manager (RVM)'
 description: "Ruby è uno dei linguaggi di programmazione più popolari degli ultimi anni, e se utilizzato assieme a framework come Rub.."
 date: 2020-02-19

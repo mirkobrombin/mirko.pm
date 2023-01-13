@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione ed utilizzo di mowish' 
 date: 2021-09-10 21:05
 layout: post 

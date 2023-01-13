@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Xbox Cloud Gaming su Linux'
 date: 2022-03-25 17:20
 layout: post

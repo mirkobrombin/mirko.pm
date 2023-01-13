@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'KDE Plasma si aggorna, risolta falla di sicurezza sulle etichette dei dispositivi USB'
 date: 2018-02-13
 layout: post

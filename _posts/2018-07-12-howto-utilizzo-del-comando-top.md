@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando top'
 description: "Spesso e volentieri, lavorando da riga di comando, torna utile verificare i dettagli relativi un processo.."
 date: 2018-07-12

@@ -1,4 +1,5 @@
 ---
+class: post
 title: "openSUSE Leap 42.2 raggiunge l'EOL (End of line)"
 date: 2018-01-29
 layout: post

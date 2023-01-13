@@ -1,4 +1,5 @@
 ---
+class: post
 title: "Fine Novembre all'insegna dei rilasci"
 date: 2017-11-30
 layout: post

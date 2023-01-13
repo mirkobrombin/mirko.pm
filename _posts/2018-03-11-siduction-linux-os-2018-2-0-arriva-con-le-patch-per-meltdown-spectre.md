@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Siduction Linux OS 2018.2.0 arriva con le patch per Meltdown & Spectre'
 date: 2018-03-11
 layout: post

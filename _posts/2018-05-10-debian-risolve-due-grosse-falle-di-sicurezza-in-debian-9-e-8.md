@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Debian risolve due grosse falle di sicurezza in Debian 9 e 8'
 date: 2018-05-10
 layout: post

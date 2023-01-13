@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Fedora 26, disponibile il download'
 date: 2017-07-11
 layout: post

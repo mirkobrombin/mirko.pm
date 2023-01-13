@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di Unreal Engine 4 su Linux'
 date: 2020-08-24
 layout: post

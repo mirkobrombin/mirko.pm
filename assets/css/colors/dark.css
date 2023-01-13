@@ -38,11 +38,12 @@
     }
 
     .searchbox input,
-    .searchbox .results {
+    .searchbox .results,
+    .listing {
         border-color: #333333;
     }
 
-    article, .searchbox input, .content tr:nth-child(2n+1) td, .card, .searchbox .results ul li:hover {
+    article, .content tr:nth-child(2n+1) td, .card, .searchbox .results ul li:hover {
         background-color: #1b1b1b;
     }
 
@@ -54,7 +55,10 @@
         border-color: #353535;
     }
 
-    body, .searchbox .results ul li a, .sitemap li:not(.small) > a, header nav ul li a, a.read-more, .searchbox input, .tag.edit a, article p, .content, article h2 a, .changelog li a,.splitter section a {
+    body, .searchbox .results ul li a, .sitemap li:not(.small) > a, header nav ul li a, a.read-more, .searchbox input, .tag.edit a, article p, .content, article h2 a, .changelog li a,.splitter section a,
+    nav.home-nav li a,
+    footer a,
+    nav.top-nav li a {
         color: #fff;
     }
 
@@ -71,7 +75,8 @@
         color: #000;
     }
 
-    main, .searchbox .results, .card li a:hover, .splitter section:hover, blockquote {
+    main, .searchbox .results, .card li a:hover, .splitter section:hover, blockquote,.searchbox input,
+    .listing-content .result:hover {
         background-color: #272727;
     }
 
@@ -96,6 +101,18 @@
     
     aside a {
         color: #b9b9b9;
+    }
+
+    .listing a:visited h3 {
+        color: rgb(166, 104, 228);
+    }
+    
+    .listing h3 {
+        color: #6399ff;
+    }
+    
+    .listing p {
+        color: #a09393;
     }
 
     @media screen and (max-width: 767px) {

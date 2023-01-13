@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione e configurazione di Endlessh'
 date: 2020-12-28
 layout: post

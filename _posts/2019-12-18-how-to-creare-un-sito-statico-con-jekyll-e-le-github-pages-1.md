@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Creare un sito statico con Jekyll e le Github pages'
 description: "Questa è una guida in due parti in cui, dopo aver presentato il generatore di siti statici Jekyll.."
 date: 2019-12-18

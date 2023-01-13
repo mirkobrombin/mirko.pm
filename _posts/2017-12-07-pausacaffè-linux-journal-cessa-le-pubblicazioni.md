@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè - Linux Journal cessa le pubblicazioni'
 date: 2017-12-07
 layout: post

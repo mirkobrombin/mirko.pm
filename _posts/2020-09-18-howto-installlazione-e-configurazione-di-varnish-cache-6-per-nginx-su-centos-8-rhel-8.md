@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installlazione e configurazione di Varnish Cache 6 per Nginx su CentOS 8/RHEL 8'
 date: 2020-09-18
 layout: post

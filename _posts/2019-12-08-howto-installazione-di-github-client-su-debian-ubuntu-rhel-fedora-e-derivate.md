@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installazione di GitHub Client su Debian/Ubuntu RHEL/Fedora e derivate'
 description: "GitHub Client è il client ufficiale per l'omonima piattaforma. Offre molte funzionalità e permette di gestire ed interagire con ogni repos.."
 date: 2019-12-08

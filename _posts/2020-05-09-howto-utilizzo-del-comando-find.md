@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Utilizzo del comando find'
 date: 2020-05-09
 layout: post

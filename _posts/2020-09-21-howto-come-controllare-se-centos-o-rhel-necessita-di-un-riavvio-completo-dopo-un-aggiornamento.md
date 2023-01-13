@@ -1,4 +1,5 @@
 ---
+class: post
 title: ' #howto - Come controllare se CentOS o RHEL necessita di un riavvio completo dopo un aggiornamento'
 date: 2020-09-21
 layout: post

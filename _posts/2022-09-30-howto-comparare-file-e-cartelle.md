@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Comparare file e cartelle'
 date: 2022-09-30 09:00
 layout: post 

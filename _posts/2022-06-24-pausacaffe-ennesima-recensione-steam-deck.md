@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - La recensione di Steam Deck che non avete chiesto' 
 date: 2022-06-24 08:00
 layout: post 

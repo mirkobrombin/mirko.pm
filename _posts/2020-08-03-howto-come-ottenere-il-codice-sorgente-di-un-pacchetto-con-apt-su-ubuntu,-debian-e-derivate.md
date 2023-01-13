@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Ottenere il sorgente di un pacchetto via apt su Ubuntu e derivate'
 date: 2020-08-03
 layout: post

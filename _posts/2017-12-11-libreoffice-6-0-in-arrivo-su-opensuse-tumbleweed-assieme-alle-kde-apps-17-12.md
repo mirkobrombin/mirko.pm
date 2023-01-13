@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'LibreOffice 6.0 in arrivo su openSUSE Tumbleweed assieme alle KDE Apps 17.12'
 date: 2017-12-11
 layout: post

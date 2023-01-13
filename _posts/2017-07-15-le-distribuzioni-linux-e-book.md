@@ -1,4 +1,5 @@
 ---
+class: post
 title: 'Le distribuzioni Linux e-Book'
 date: 2017-07-15
 layout: post

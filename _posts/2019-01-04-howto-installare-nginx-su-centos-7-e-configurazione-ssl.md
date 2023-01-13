@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Installare Nginx su Centos 7 e configurazione SSL'
 description: "In questa guida andremo a vedere come è possibile installare Nginx su Centos 7 via repository ufficiale."
 date: 2019-01-04

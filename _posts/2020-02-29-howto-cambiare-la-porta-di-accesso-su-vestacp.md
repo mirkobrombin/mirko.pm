@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#howto - Cambiare la porta di accesso su VestaCP'
 description: "VestaCP è un pannello di gestione e controllo per web server Nginx + php-fpm e/o Apache, oltre che database server come MySQL e.."
 date: 2020-02-29

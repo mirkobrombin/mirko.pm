@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffé - App e coronavirus, proviamo a fare chiarezza'
 date: 2020-04-26
 layout: post

@@ -1,4 +1,5 @@
 ---
+class: post
 title: '#pausacaffè – Suite per ufficio Open Source. Le bionde o le more?'
 date: 2017-10-15
 layout: post
