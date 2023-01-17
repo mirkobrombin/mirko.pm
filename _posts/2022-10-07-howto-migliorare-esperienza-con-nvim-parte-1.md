@@ -121,15 +121,18 @@ touch ~/.config/nvim/lua/plugins.lua
 
 Ora andiamo inserire nel file `plugins.lua` il seguente codice per abilitare packer.nvim:
 ```lua
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 end)
 ```
 
-Usciamo e rientriamo in un qualsiasi file di Neovim ed ora in *normal mode* eseguiamo il comando `:PackerSync` per installare packer.nvim.
-Una volta eseguito avremo packer installato e funzionante sul nostro editor.
+Usciamo e aggiungiamo in cima al nostro `~/.config/nvim/init.vim` la riga:
+```vim
+lua require('plugins')
+```
+
+Usciamo nuovamente e rientriamo in un qualsiasi file con Neovim e in *normal mode* eseguiamo il comando `:PackerSync` per installare packer.nvim.
+Una volta eseguito avremo `packer` installato e funzionante sul nostro editor.
 
 Alcuni comandi utili sono:
 - `:PackerSync` per installare tutti plugin
