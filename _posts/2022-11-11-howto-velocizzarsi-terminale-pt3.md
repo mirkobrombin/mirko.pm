@@ -20,7 +20,7 @@ Si è visto come muoversi nel terminale con shortcut ed espansioni atte ad evita
 
 Se hai mancano i nostri articoli precedenti ecco una lista: 
 
-- [Velocizzarsi nel terminale pt 1](https://linuxhub.it/articles/howto-velocizzarsi-terminale-pt1/)
+- [Velocizzarsi nel terminale pt 1](https://linuxhub.it/articles/howto-velocizzarsi-terminale/)
 - [Velocizzarsi nel terminale pt 2](https://linuxhub.it/articles/howto-velocizzarsi-terminale-pt2/)
 
 ## the fuck

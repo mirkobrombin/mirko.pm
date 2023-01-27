@@ -13,7 +13,7 @@ tags:
 - shortcut
 ---
 
-[&rarr; velocizzarsi nel terminale pt 2](https://linuxhub.it/articles/howto-velocizzarsi-terminale-pt2/))
+[&rarr; velocizzarsi nel terminale pt 2](https://linuxhub.it/articles/howto-velocizzarsi-terminale-pt2/)
 
 
 Il terminale rappresenta lo strumento quotidiano dell'utente Linux. Vediamo un po' quali sono i modi che possono velocizzarne l'utilizzo.  

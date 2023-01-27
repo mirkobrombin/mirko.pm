@@ -14,6 +14,7 @@ tags:
 ---
 
 
+[&larr; velocizzarsi nel terminale pt 1](https://linuxhub.it/articles/howto-velocizzarsi-terminale/)  
 [&rarr; velocizzarsi nel terminale pt 3](https://linuxhub.it/articles/howto-velocizzarsi-terminale-pt3/)
 
 
