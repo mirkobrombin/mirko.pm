@@ -4,7 +4,7 @@ title: '#howtodev - Javascript parte 1'
 date: 2023-02-03 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
-author_github: Nome github 
+author_github: PsykeDady
 coauthor: linuxhub
 coauthor_github: linuxhubit
 published: false
