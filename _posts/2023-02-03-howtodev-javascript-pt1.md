@@ -97,6 +97,30 @@ Per installare su ArchLinux basta digitare
 pacman install nodejs
 ```
 
+## Avviare node o eseguire un programma
+
+Essenzialmente node può essere eseguito in due modi diversi: 
+
+- Interattivamente, utile per provare comandi al volo ad esempio
+- Avviando un programma scritto in precedenza. 
+
+Per avviare interattivamente node, dopo averlo installato, basta riavviare l'applicazione "terminale" e quindi scrivere: 
+
+```bash
+node
+```
+
+Si aprirà la shell interattiva dove si potranno provare tutti i comandi che si vogliono.
+
+Se si vuole invece avviare un file si può scrivere:
+
+```bash
+node percorso/nome/file.js
+```
+
+Questo verrà poi eseguito (sostituendo ovviamente il giusto percorso o nome del file).
+
+
 ## Stampa a schermo
 
 
