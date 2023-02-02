@@ -1,12 +1,12 @@
 ---
 class: post
-title: '#howtodev - Javascript parte 1' 
+title: '#howtodev - JavaScript parte 1' 
 date: 2023-02-03 08:00
 layout: post 
 author: Davide Galati (in arte PsykeDady)
 author_github: PsykeDady
-coauthor: linuxhub
-coauthor_github: linuxhubit
+coauthor: Michael Messaggi
+coauthor_github: MichaelMessaggi
 published: false
 tags: 
 - javascript
@@ -18,37 +18,37 @@ tags:
 
 
 Molto odiato, almeno quanto è usato, JavaScript è alla base dello sviluppo web e anche ormai molte applicazioni lato desktop.  
-Vediamo quindi cosa sono e come si sviluppa utilizzando JavaScript, NodeJS e NPM.
+Vediamo quindi cosa sono e come si sviluppa utilizzando JavaScript, Node.JS e NPM.
 
 ## Obiettivi
 
 Lista degli obiettivi che a fine articolo il lettore consegue:
 
-- Installazione NodeJS
+- Installazione di Node.JS
 - Stampa a schermo
-- Variabili primitive in javascript
+- Variabili primitive in JavaScript
 
 ## Prerequisiti
 
-Questo è il primo articolo su Javascript, non sono previsti prerequisiti particolari ma è consigliata una buona conoscenza di: 
+Questo è il primo articolo su JavaScript, non sono previsti prerequisiti particolari ma è consigliata una buona conoscenza di: 
 
 - Logica booleana (true, false, tabella delle verità)
 - Logica matematica (operazioni di base)
 - Aritmetica binaria (somma in binario, complemento a due)
 
-## Cosa sono JavaScript, Node e Npm
+## Cosa sono JavaScript, Node.js e NPM
 
-**Javascript** è un linguaggio interpretato ad *alto livello*, multi paradigma: *orientato ad oggetti*,
+**JavaScript** è un linguaggio interpretato ad *alto livello*, multi paradigma: *orientato ad oggetti*,
 *orientato agli eventi*, *imperativo* e *funzionale*.  
 
-Insieme a *CSS* e *HTML*, Js è considerata una delle tre tecnologie più influenti nel World Wide Web, attraverso essa infatti si possono costruire pagine web dinamiche e interattive, parte integrante ormai delle comunissime web-application per cui i browser moderni utilizzano dei
-motori software dedicati a parte.
+Insieme a *CSS* e *HTML*, JS è considerata una delle tre tecnologie più influenti nel World Wide Web, attraverso essa infatti si possono costruire pagine web dinamiche e interattive, parte integrante ormai delle comunissime web-application per cui i browser moderni utilizzano dei
+motori software dedicati.
 
-### NodeJS
+### Node.JS
 
 Come già detto, normalmente è interpretato quindi dai nostri browser che utilizzano degli interpreti (o motori) interni che lo eseguono. Ma se volessimo testarlo o utilizzarlo nel nostro computer?
 
-Qui interviene [Node.js](https://nodejs.org/en/), un ambiente di runtime multi piattaforma che esegue codice javascript al di fuori dei browser. NodeJS è un progetto nato dal motore JavaScript di Google Chrome (V8).
+Qui interviene [Node.js](https://nodejs.org/en/), un ambiente di runtime multi piattaforma che esegue codice JavaScript al di fuori dei browser. Node.JS è un progetto nato dal motore JavaScript di Google Chrome (V8).
 
 ### NPM
 
@@ -69,7 +69,7 @@ I pacchetti sono sviluppati e mantenuti dagli utenti (aziende o privati che sian
 
 ## Installazione di node
 
-Con l'installazione di Node.js si avrà accesso sia al motore di esecuzione che npm. Il software è multi piattaforma, questo significa fondamentalmente che si può trovare indipendentemente dal vostro sistema operativo.
+Con l'installazione di Node.js si avrà accesso sia al motore di esecuzione che ad NPM. Il software è multi piattaforma, questo significa fondamentalmente che si può eseguire indipendentemente dal vostro sistema operativo.
 
 Per installarlo sulla nostra distribuzione è in genere sufficiente il nostro package manager. 
 
@@ -97,14 +97,14 @@ Per installare su ArchLinux basta digitare
 pacman install nodejs
 ```
 
-## Avviare node o eseguire un programma
+## Avviare Node.js o eseguire un programma
 
-Essenzialmente node può essere eseguito in due modi diversi: 
+Essenzialmente, Node può essere eseguito in due modi diversi: 
 
 - Interattivamente, utile per provare comandi al volo ad esempio
 - Avviando un programma scritto in precedenza. 
 
-Per avviare interattivamente node, dopo averlo installato, basta riavviare l'applicazione "terminale" e quindi scrivere: 
+Per avviare interattivamente Node, dopo averlo installato, basta riavviare l'applicazione "terminale" e quindi scrivere: 
 
 ```bash
 node
@@ -112,7 +112,7 @@ node
 
 Si aprirà la shell interattiva dove si potranno provare tutti i comandi che si vogliono.
 
-Se si vuole invece avviare un file si può scrivere:
+Se si vuole invece eseguire un file si può scrivere:
 
 ```bash
 node percorso/nome/file.js
@@ -126,9 +126,9 @@ Questo verrà poi eseguito (sostituendo ovviamente il giusto percorso o nome del
 
 Il programma più iconico mai creato è da sempre "**Hello world**", ovvero un banale programma che, sullo schermo, scrive "*Hello world*". Ed è diventato per tutti sinonimo di "primo programma" per esercitarsi con un nuovo linguaggio di programmazione. 
 
-In generale serve a comprendere come "parlare con il terminale", ovvero farsi mostrare dal programma degli output che ci fanno comprendere in tempo reale cosa è giusto e cosa no. Le funzioni che mostrano a schermo delle scritte dei vari linguaggi di programmazione son anche dette "*funzioni di stampa*", "**print**" in inglese (da non confondere con la stampa su carta ovviamente, che è tutt'altra cosa).
+In generale serve a comprendere come "interagire con il terminale", ovvero farsi mostrare dal programma degli output che ci fanno comprendere in tempo reale cosa è giusto e cosa no. Le funzioni che mostrano a schermo delle scritte dei vari linguaggi di programmazione son anche dette "*funzioni di stampa*", "**print**" in inglese (da non confondere con la stampa su carta ovviamente, che è tutt'altra cosa).
 
-Per fare una "stampa" in Javascript si può scrivere:
+Per fare una "stampa" in JavaScript si può scrivere:
 
 ```js
 console.log("frase da stampare")
@@ -152,7 +152,7 @@ I commenti sono porzioni di testo che vengono ignorati dall'interprete. Ci si pu
 
 Esistono due tipi di commento: 
 
-- commento in linea: son commenti che ignorano tutto quello che viene da quando iniziano, fino alla fine della riga. Si creano scrivendo `//` e dopo il commento
+- Commento in linea: son commenti che ignorano tutto quello che viene da quando iniziano, fino alla fine della riga. Si creano scrivendo `//` all'inizio del commento.
 - Commento in blocco: son commenti delimitati da caratteri che ne determinano inizio e fine. Si trovano dopo la sequenza iniziale `/*` e prima della sequenza finale `*/`
 
 
@@ -182,16 +182,16 @@ siamo fuori dal commento
 
 ## Le variabili primitive
 
-La programmazione inizia sempre **dalle variabili**: capire cosa sono, come sfruttarle e padroneggiarle è non solo la base, ma parte delle buona pratiche di programmazione.
+La programmazione inizia sempre **dalle variabili**: capire cosa sono, come sfruttarle e padroneggiarle non solo è la base, ma parte delle buona pratiche di programmazione.
 
-Possiamo immaginare le variabili *come delle piccole scatole*, con un *etichetta* di sopra e un determinato *contenuto*. Non ci metteremo dentro i nostri effetti personali per trasferirci però, ma numeri, frasi o altri  componenti che ci servono per i nostri programmi.
+Possiamo immaginare le variabili *come delle piccole scatole*, con un *etichetta* di sopra e un determinato *contenuto*. Non ci metteremo dentro i nostri effetti personali per trasferirci però, ma numeri, frasi o altri componenti che ci servono per i nostri programmi.
 
 
 ### Tipo 
 
 Qui va fissato il *primo importante concetto*, la tipologia del contenuto di questa scatola è detto "*tipo della variabile*", in ogni linguaggio di programmazione si ha accesso ad un certo numero di tipi detti "*primitivi*" ed altri detti "*complessi*". 
 
-*Javascript* gestisce questi **tipi primitivi**: 
+*JavaScript* gestisce questi **tipi primitivi**: 
 
 - `string` o stringa, rappresenta una sequenza di caratteri, una frase, una parola o tanto altro. 
   - Le stringhe son trascritte tra virgolette doppie o singole. Ad esempio `"sono una stringa"`
@@ -206,12 +206,12 @@ Qui va fissato il *primo importante concetto*, la tipologia del contenuto di que
 - `boolean` un valore logico, rappresenta solo due valori: `false` e `true`, **falso** o **vero**. 
 - `symbol` o simbolo, rappresenta un valore "**Univoco**" che si vuole dare ad una variabile, l'uso sarà più chiaro avanti.
 - `undefined` questo è in realtà un meta-valore, letteralemente significa che la variabile non ha ne tipo ne contenuto, come avere un etichetta ma non la scatola. 
-- `null` se il valore *undefined* rappresenta la mancanza di una scatola, il valore `null` rappresenta una scatola vuota al suo interno. Il null è un **non-valore** in javascript. Nota che null e undefined son **diversi** per definizione. 
+- `null` se il valore *undefined* rappresenta la mancanza di una scatola, il valore `null` rappresenta una scatola vuota al suo interno. Il null è un **non-valore** in JavaScript. Nota che "null" e "undefined" son **diversi** per definizione. 
 
 
 ### Dichiarazione e assegnazione
 
-Le variabili vanno prima "dichiarate" ed "assegnate" e quindi si possono "usare". 
+Le variabili vanno prima "dichiarate" ed "assegnate", quindi possono essere "usate". 
 
 Per *dichiarazione* si intende una fase in cui si "crea" l'etichetta della scatola. Per farlo si possono usare diverse "paroline magiche": 
 
@@ -390,7 +390,7 @@ Le variabili, come dice il nome, son fatte per mutare. E nello specifico mutare 
 
 ### Operazioni matematiche con interi 
 
-Le operazioni matematiche supportate sono le seguentI :
+Le operazioni matematiche supportate sono le seguenti :
 
 | nome            | descrizione                               | simbolo | esempio | risultato |
 | --------------- | ----------------------------------------- | :-----: | ------- | --------- |
@@ -549,7 +549,7 @@ shift a destra forzato
 2147483645
 ```
 
-### Operazioni su boolean
+### Operazioni su booleani
 
 I booleani derivano dalla logica di Bool, come spiegato nel capitolo sulla logica nei numeri questa logica considera fondamentalmente due valori: lo 0 (o `false`, nel caso dei boolean) e 1 (o `true`, nel caso dei boolean). 
 
@@ -784,19 +784,19 @@ Si può considerare lo `0` uguale a `false` ad esempio? In un certo qual senso q
 console.log(false==0)
 ```
 
-Javascript risponderà
+JavaScript risponderà
 
 ```javascript
 true
 ```
 
-Tuttavia noi sappiamo che il valore booleano `false` non è "*strettamente*" uno `0`, non hanno neanche lo stesso tipo: uno dei due valori è un *intero* mentre l'altro è un *booleano*. Questo concetto è definito come "*uguaglianza stretta*", e si ottiene in javascript con tre simboli `=`. Alla domanda: 
+Tuttavia noi sappiamo che il valore booleano `false` non è "*strettamente*" uno `0`, non hanno neanche lo stesso tipo: uno dei due valori è un *intero* mentre l'altro è un *booleano*. Questo concetto è definito come "*uguaglianza stretta*", e si ottiene in JavaScript con tre simboli `=`. Alla domanda: 
 
 ```javascript
 console.log(false===0)
 ```
 
-Javascript risponderà
+JavaScript risponderà
 
 ```javascript
 false
