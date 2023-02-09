@@ -44,9 +44,9 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 ```
 
 Sul sito ufficiale consigliano di utilizzare l'installazione multi-utente in quanto:
-- Un miglior isolamento dei pacchetti.
-- Una migliore sicurezza.
-- Condiviso tra più utenti.
+- Ha miglior isolamento dei pacchetti.
+- Ha una migliore sicurezza.
+- È condiviso tra più utenti.
 
 
 ## Utilizzo
