@@ -9,39 +9,39 @@ translation: false
 is_english: true
 ---
 
-It often happens that developers decide to start a new project instead of contributing to an existing one, becoming a growing trend in the open source world. This decision can lead to various problems, not just for the original software creator but also for the wider community of developers relying on it.
+It often happens that developers start a new project, instead of contributing to an existing one. This decision can lead to various problems, not just for the original software authors, but also for the wider community.
 
-One of the main reasons for this trend is the lack of time and resources to contribute to an existing project, which is ironic thinking about the topic of this article. Many developers are driven by the desire to create something new and innovative, rather than simply improving on what has already been done. They may see an existing project as being too complex or difficult to work with, or they may simply not agree with the direction or philosophy of the existing project.
+In my experience, one of the main reasons for this trend is the lack of time and resources to contribute to an existing project, which is ironic, as starting a new project is time consuming all by itself - you have to set everything up, like chat rooms, forums, etc. Many developers are driven by the desire to create something new and innovative, rather than simply improving on what has already been done. They may see an existing project as being too complex or difficult to work with, or they may simply not agree with the direction or philosophy of the existing project.
 
 ## The problems
 
-However, this can lead to the fragmentation of the open source community, as developers work on their own projects and fail to collaborate with others. This can also result in the duplication of effort, as multiple projects are created to solve the same problem, but with different approaches and solutions.
+This can lead to worsening the fragmentation of the free and open-source community, as developers work on their own projects and avoid collaborating with others. This can also result in unnecessarily duplicating efforts, as multiple projects are created to solve the same problem(s).
 
-Another issue is the potential harm to the reputation of the original project. When a new project is created, it may be seen as a direct challenge to the existing project, and this can cause resentment and mistrust among the developers. This can result in the fragmentation of the community, as developers become divided and refuse to work together.
+Another issue is the potential harm to the reputation of the original project. When a new project is created, it may be seen as a direct competitor to the existing project, and this can cause resentment and mistrust among the developers. This can result in the fragmentation of the community, as developers become divided and refuse to work together.
 
-Finally, the creator of the original software may be damaged by the creation of a new project, since some developers may decide to collaborate on the new project instead of the existing one, this usually happens because a new project has more need for developers and is usually easier to join and contribute since the project is not yet fully established. As a result, the old project will have less manpower available, losing the possibility of receiving more contributions and speeding up the development of new features.
+Finally, the authors of the original software may be harmed by the creation of a new project, since some contributors may decide to collaborate on the new project instead of the existing one. This usually happens because a new project has more need for contributors, while the barrier is extremely low, since the project is not yet fully established.
 
 ## The exceptions
 
-In some cases, creating a new project is essential, even if the result may seem similar, as the final goal is completely different. For example, Bottles was created to integrate the entire Wine toolset graphically, eliminating the dispersion between different and inconsistent tools, and its final goal is to install more software in more prefixes, rather than following the model of 1 app per 1 prefix.
+In some cases, creating a new project is essential, even if the result may seem similar. Sometimes, only the end goal is entirely different, sometimes only the approach is different, and sometimes both. For example, Bottles was created to be a general-purpose Wine frontend to integrate the entire Wine toolset graphically, eliminating the need of using different and inconsistent tools, whereas Lutris is designed specifically with games in mind.
 
-Another example is Vanilla OS, which was created because the concepts would never be compatible with a distro like Fedora or Ubuntu or others. This project includes the removal of Packagekit, the immutable system with A/B partitioning, the use of a meta-package manager like Apx, automatic updates based on the conditions of the PC, and also the ability to allow the user to choose from the beginning how to use their device, whether to have Flatpak, Snap, Appimage, or just Apx.
+Another example is Vanilla OS, which was created, because the concepts and approaches would never be compatible with a distro like Fedora Silverblue, Ubuntu or others. This project includes the removal of Packagekit, the immutable system with A/B partitioning, the use of a meta-package manager like Apx, automatic updates based on the conditions of the PC, and also the ability to allow the user to choose between Flatpak, Snap (soon), Appimage, or just Apx. One of the goals of Vanilla OS is to make it very easy to newcomers to contribute to - our projects are on GitHub, and chat and forums are on Discord, as opposed to projects that use IRC, Bugzilla and/or mailing lists.
 
-A third example is Distrobox, which was created to be portable, written in bash. Additionally, it was designed to provide access to a wide range of distributions for the user, rather than just one.
+A third example is Distrobox, which was created to be portable and compatible with Docker and Podman. Additionally, it was designed to provide access to a wide range of distributions for the user, rather than just one.
 
-> Small note, in the examples I refer only to projects that I know, I didn't want to cite other examples because I don't know the motivations behind the projects, and I didn't want to spread misinformation.
+*Small note, in the examples I refer only to projects that I am familiar with.*
 
 In these cases, the creation of a new project is the best solution to achieve the specific goals and objectives that cannot be achieved by contributing to an existing project. This is because the new project can be tailored to meet the specific needs of the developers and users, and can be designed from the ground up to achieve the desired outcomes.
 
 ## Some "wrong" reasons
 
-Creating a new project that has the same purpose and goals as an existing project is not only a waste of time and resources, but it also causes damage to the open-source community.
+Creating a new project that has the same purpose and goals as an existing project is not only a waste of time and resources, but it also causes damage to the free and open-source community.
 
-I want to give some examples that consolidate my "wrong approach" hypothesis. I will not cite any specific projects, but I will give some examples of what I consider to be the wrong way to do things.
+I will not mention specific projects, as I don't want to harm them, but I will give some examples of what I consider to be the wrong way to do things.
 
-For example, if someone were to re-create Firefox with the exact same final purpose in mind, it would only duplicate the effort and resources that have already been put into the existing project. It would not bring any new or innovative ideas to the table and would only create confusion among users and developers.
+For example, if someone were to re-create Firefox with identical end goals and approaches in mind, it would only duplicate the effort and resources that have already been put into the existing project. It would not bring any new or innovative ideas to the table and would only create confusion among users and developers.
 
-Similarly, a hypothetical clone of Apx, the package manager of Vanilla OS, with the same exact objectives, would not benefit anyone. It would only cause unnecessary fragmentation and competition, while also potentially diverting resources and attention away from the original project. In the case of Apx, there are even fewer reasons to clone the project. Apx is a relatively young project that greatly benefits from contributions. It is also distro-agnostic, designed to be as versatile and compatible as possible with the needs of third-party Linux distributions. This was done specifically to encourage collaboration in the event that it is adopted by other distros. Cloning Apx would only cause unnecessary fragmentation and competition, while also potentially diverting resources and attention away from the original project.
+Similarly, a hypothetical clone of Apx, the package manager of Vanilla OS, with the same exact objectives, would not benefit anyone. It would only cause unnecessary fragmentation and competition, while also potentially diverting resources and attention away from the original project. In the case of Apx, there are even fewer reasons to clone the project. Apx is a relatively young project that greatly benefits from contributions. It is also distro-agnostic, designed to be as versatile and compatible with as many Linux distributions as possible. This was done specifically to encourage collaboration in the event that it is adopted by other distros. Cloning Apx would only cause unnecessary fragmentation and competition, while also potentially diverting resources and attention away from the original project.
 
 
 ## Final thoughts
