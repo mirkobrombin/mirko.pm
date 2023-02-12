@@ -1,12 +1,13 @@
 ---
 title: "Open Source in the Wrong Way"
 description: "Why recreate an open source project: motivations and consequences"
-published: 2023-02-11
+published: 2023-02-12
 layout: post
-published: false
+published: true
 is_translation: false
 translation: false
 is_english: true
+review_by: TheEvilSkeleton
 ---
 
 It often happens that developers start a new project, instead of contributing to an existing one. This decision can lead to various problems, not just for the software authors of the existing project, but also for the wider community.

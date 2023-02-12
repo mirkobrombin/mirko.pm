@@ -16,4 +16,10 @@ layout: default
         {% endif %}
     {% endif %}
     <p>{{ content }}</p>
+    {% if page.review_by %}
+        <br />
+        <hr />
+        <span>Review by <a href="https://github.com/{{ page.review_by }}">{{ page.review_by }}</a></span>
+        <hr />
+    {% endif %}
 </article>
