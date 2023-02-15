@@ -211,9 +211,12 @@ section article {
 }
 
 article p {
-
     font-size: 1.1em;
     line-height: 36px;
+}
+
+article p strong {
+    font-weight: 600;
 }
 
 article ul li {
