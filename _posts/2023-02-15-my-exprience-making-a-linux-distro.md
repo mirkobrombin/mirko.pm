@@ -56,3 +56,5 @@ Overall, creating a Linux distribution has been an incredibly rewarding experien
 One of the most important things that I have learned is the value of perseverance. Creating a Linux distribution is not an easy task, and there were many times when I wanted to give up. However, I was able to push through those moments and come out the other side with a much better understanding of what it takes to create a successful project.
 
 I am proud of what my team and I have accomplished with this distribution, and I believe that we have created something that is unique and valuable for the Linux community. It is my hope that this distribution will continue to grow and improve over time, and that it will help to inspire others to create their own projects and contribute to the open source community.
+
+Small addition: For more than half of the article I refer to the first version of Vanilla OS, now very distant from today's version. That version was used as the basis for subsequent versions with Almost and ABRoot, in these the project was led in the company of Luca di Maio. I wanted to clarify it.
