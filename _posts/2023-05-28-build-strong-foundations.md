@@ -11,7 +11,7 @@ is_english: true
 
 Communities play a key role in supporting many open source projects. These communities are the backbone of an open source project and are made up of people who share a common goal and embrace the project's ideals. It is essential that those who choose to contribute to an open source project, especially when they assume important roles and participate in administrative decisions, are fully aware of the commitment they are making and of their duties to other contributors and to the project itself.
 
-Without a solid understanding of these responsibilities, you risk causing significant damage to projects that often have limited resources. This could force the community to slow down their work to fix any bugs or implement features that had been assigned to others. In some cases, these delays can even jeopardize the project roadmap, which will need to be rearranged to accommodate unforeseen circumstances.
+Without a solid understanding of these responsibilities, you risk causing significant damage to projects that often have limited resources. This could force the community to slow down their work to fix any bugs or implement features that had been assigned to others. In some cases, these delays can even create trouble in the roadmap, which will need to be rearranged to accommodate unforeseen circumstances.
 
 In this article we will explore the fundamental importance of communication, collaboration and accountability within an open source project. We will see how clear and open communication between community members can foster the exchange of ideas and effective problem solving. We will also examine how well-structured collaboration between contributors can streamline workflow and promote smooth project development.
 
