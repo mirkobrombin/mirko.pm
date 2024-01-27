@@ -3,7 +3,7 @@
         <span class="logo">
             Mirko Brombin
             {% if page.url != "/" %}
-                <span>{{ page.url | truncate: 11 }}</span>
+            <span>{{ page.url | truncate: 11 }}</span>
             {% endif %}
         </span>
         <button class="button menu-toggle">
@@ -12,9 +12,10 @@
         <nav>
             <ul>
                 {% for item in site.navigation %}
-                    <li>
-                        <a href="{{ item.link }}" class="{% if page.url == item.link %}active{% endif %}">{{ item.name }}</a>
-                    </li>
+                <li>
+                    <a href="{{ item.link }}" class="{% if page.url == item.link %}active{% endif %}">{{ item.name
+                        }}</a>
+                </li>
                 {% endfor %}
                 <li class="dropdown">
                     <button class="button primary">
