@@ -57,7 +57,7 @@ Criticizing technological innovation without considering the broader context and
 
 ## Invitation to Reflection
 
-It is true that consumerism drives us to buy new products rather than to keep them for the long term, and this continuous cycle can create a dependence on manufacturers. It is an undeniable aspect of modern consumerism, where the market is structured to encourage the purchase of ever-changing versions. New Products. However, there are many other variables at play that need to be considered in order to get a clear view of the situation.
+It is true that consumerism drives us to buy new products rather than to keep them for the long term, and this continuous cycle can create a dependence on manufacturers. It is an undeniable aspect of modern consumerism, where the market is structured to encourage the purchase of ever-changing versions. However, there are many other variables at play that need to be considered in order to get a clear view of the situation.
 
 Take for example the ineffectiveness today of insecticides and pesticides. It is not necessarily because companies are deliberately weakening these products, climate change has led to significant changes in the ecosystem, affecting flora and fauna, insects and plants evolve and develop resistance, making products that once worked perfectly less effective. We, just like insects, are constantly evolving, and all these technological products and innovations respond to the human need to continually adapt and improve.
 
