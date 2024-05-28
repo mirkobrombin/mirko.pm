@@ -29,7 +29,7 @@ Another point is the use of technologies such as DRM (Digital Rights Management)
 
 These systems are not intended to restrict users, but to protect intellectual property. In a complex legal environment, companies must comply with copyright laws and protect their content from piracy, while ensuring that artists and creators receive fair compensation for their work. These systems of protection may seem restrictive, especially to groups of people who over the years have supported propaganda based on terms that are more, excuse me, anarchic than objective. While there is no doubt that the user recognizes a limitation, it is crucial to ensure that theor rights are respected when acting as an author of content, whether actors, singers, writers, or any other content creator. We cannot see this as privatizing a system but as protecting it.
 
-# Cause of Bitrot or Planned Obsolescence
+## Cause of Bitrot or Planned Obsolescence
 
 One of the article's harshest and most superficial criticisms is the inefficiency of modern software, citing examples such as Windows updates that introduce advertisements and user interface changes, arguing that Microsoft, like other companies, exploits these graphical updates to motivate the release of a new version of software.
 
