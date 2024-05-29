@@ -19,4 +19,4 @@ Recently, the Vanilla OS community began developing a version of Vanilla OS base
 
 My intention is to support the KDE team, though I am offering my personal perspective without intending to disparage the team's efforts. I hope to contribute to or at least spark constructive discussions for the project. I have recently joined their official Matrix channels to offer my assistance.
 
-P.S. I am conducting my tests using KDE Neon Unstable with Plasma 6, which is not released yet. I'll take care of updating the Figma project as soon as Plasma 6 is officially released, by revisiting the issues I've identified and checking if they've been addressed.
+P.S. I am conducting my tests using KDE Neon Unstable with Plasma 6, which has not been released yet. I'll take care of updating the Figma project as soon as Plasma 6 is officially released, by revisiting the issues I've identified and checking if they've been addressed.

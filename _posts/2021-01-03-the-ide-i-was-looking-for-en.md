@@ -6,6 +6,7 @@ layout: post
 published: true
 is_translation: true
 ---
+
 I've been a developer for several years now, I started to googling <mark>how
 to make a website</mark> I was 14 years old and since then I've
 made *(I switched to StackOverflow 👅)*.
@@ -20,6 +21,7 @@ All. There are many programming languages, suitable for every context,
 to every developer.
 
 ### IDE & Code editors
+
 I started my way as a programmer on Windows, opened the notepad and
 amused to make colored writings appear on my web page which, for
 fortune, was in local 😅.
@@ -38,6 +40,7 @@ some: geany, gedit, eclipse, atom, code, elementary code, and jetbrains*. These
 served me to find him, the ultimate IDE.
 
 #### The ultimate IDE.
+
 The way I program and the target itself have changed very recently.
 From 2017 I started to develop 
 [Telegram bot] (https://unifiedban.solutions) for the safety and management of
@@ -84,6 +87,7 @@ Collaborate.
 ![](/uploads/2021-01-03 09-55-09-gnome-builder-gnome-sources.png)
 
 #### Meson & Flatpak Integration
+
 GNOME Builder is <mark>Flatpak and Meson</mark> by default. This means that
 every application created, was born as Flatpak and with the build system 
 meson+ninja.
@@ -94,6 +98,7 @@ choice, Flatpak is from GNOME and I find it a great incentive to encourage
 distribution of the project as Flatpak since its inception.
 
 #### Glade, is that you?
+
 I have been using Glade for some time for the realization of GTK interfaces. Yes
 it's a really powerful tool that from a graphic editor returns
 the project in interpretable format 'xml', normally with extension '.ui' or

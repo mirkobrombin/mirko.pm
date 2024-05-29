@@ -9,7 +9,7 @@ translation: false
 is_english: true
 ---
 
-Creating a Linux distribution is a challenging task that requires a lot of dedication and focus, and I learned a lot through the process of creating my own. 
+Creating a Linux distribution is a challenging task that requires a lot of dedication and focus, and I learned a lot through the process of creating my own.
 
 ## The Beginning
 
@@ -21,11 +21,11 @@ On the other hand I admit that having had to discover so many things by myself w
 
 ## Always Take Breaks
 
-In the initial phase of the project, it was important for me to keep in mind the entire functioning of the distribution. Writing down documentation would have slowed down the development process, and at that time, I was a volcano of ideas and it would have been a real waste of time to write down everything that was on my mind. Let's say that my mind was the safest and most versatile space at that time, even if I often saturated ~~my RAM~~ it. 
+In the initial phase of the project, it was important for me to keep in mind the entire functioning of the distribution. Writing down documentation would have slowed down the development process, and at that time, I was a volcano of ideas and it would have been a real waste of time to write down everything that was on my mind. Let's say that my mind was the safest and most versatile space at that time, even if I often saturated ~~my RAM~~ it.
 
 I spent months where my brain was grinding ideas even when I didn't want to think about the project. At some point I started obsessing over the user experience of the project, I wanted every single aspect of the deployment to be perfect and provide the best user experience. However, this was turning into a witch hunt, where I was seeing mistakes even where there were none. I wanted the system to do exactly what I said, even when it couldn't.
 
-I've always been passionate about UX, I feel almost physical pain when something is tedious, difficult and requires unnecessary effort to use. I often experience this annoyance also in my projects because it is not really possible to think of every detail. I had to learn to sacrifice some of these details and then come back to them over time, so as not to slow down the real development. Of course, as a UX designer I understand that this view of "perfect" is subjective and that something that may seem wrong to me may seem perfect to someone else. However, I was not able to see the difference between what was wrong and what was right, and I was starting to lose my focus on what really mattered for the project. 
+I've always been passionate about UX, I feel almost physical pain when something is tedious, difficult and requires unnecessary effort to use. I often experience this annoyance also in my projects because it is not really possible to think of every detail. I had to learn to sacrifice some of these details and then come back to them over time, so as not to slow down the real development. Of course, as a UX designer I understand that this view of "perfect" is subjective and that something that may seem wrong to me may seem perfect to someone else. However, I was not able to see the difference between what was wrong and what was right, and I was starting to lose my focus on what really mattered for the project.
 
 At that point, I had to **take a break** and completely disconnect from the project for a day. The next day, I had a much clearer understanding of the priorities and was able to finish the necessary tasks for the first important build of the distribution.
 
