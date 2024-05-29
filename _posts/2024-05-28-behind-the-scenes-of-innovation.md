@@ -7,6 +7,7 @@ published: true
 is_translation: false
 translation: false
 is_english: true
+review_by: kbdharun
 ---
 
 I recently came across the article [“Why We Can't Have Nice Software”](https://andrewkelley.me/post/why-we-cant-have-nice-software.html) by Andrew Kelley; this is a very critical view of the world of software and technological innovation, but it seems, in my opinion, too superficial, focusing exclusively on the perspective of the consumer or developer. Some of the criticisms are certainly valid, but they lack a deeper understanding of the many variables that influence business decisions in technology development.
