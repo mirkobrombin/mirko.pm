@@ -67,6 +67,7 @@ Il tutto può essere semplificato con una struttura minimale impiegando elementi
     </nav>
 </header>
 ```
+
 Bootstrap come molti altri CSS Framework, utilizza diverse classi per la gestione degli eventi e l'identificazione degli elementi negli script Javascript, ad esempio nell'apertura/chiusura del menu mobile.
 
 ![](https://media1.giphy.com/media/13XW2MJE0XCoM0/giphy.gif?cid=790b7611d6b872db885ff15e635a83fe915441b166232cf4&rid=giphy.gif)
@@ -80,6 +81,7 @@ header>button {
     display: none
 }
 ```
+
 per poi farlo apparire nuovamente su dispositivi più piccoli di 720px:
 
 ```css

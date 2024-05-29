@@ -4,4 +4,4 @@ links:
     - link: "https://github.com/donadigo/eddy"
       name: donadigo/eddy
 ---
-<p>A debian package installer for elementary OS</p>
+<p>A Debian package installer for elementary OS.</p>

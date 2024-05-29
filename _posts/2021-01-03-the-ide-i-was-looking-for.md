@@ -7,6 +7,7 @@ published: true
 is_translation: false
 translation: the-ide-i-was-looking-for-en
 ---
+
 Sono uno sviluppatore da ormai diversi anni, cominciai a googlare <mark>come
 creare un sito web</mark> quando avevo 14 anni e da allora di strada ne ho
 fatta *(sono passato a StackOverflow 👅)*.
@@ -21,6 +22,7 @@ tutti. Ci sono moltissimi linguaggi di programmazione, adatti ad ogni contesto,
 ad ogni sviluppatore.
 
 ### IDE & Code editors
+
 Cominciai la mia strada da programmatore su Windows, aprivo il notepad e mi
 divertito a far comparire scritte colorate sulla mia pagina web che, per
 fortuna, era in locale 😅.
@@ -39,6 +41,7 @@ alcuni: geany, gedit, eclipse, atom, code, elementary code e jetbrains*. Questi
 mi sono serviti a trovare lui, l'IDE definitivo.
 
 #### L'IDE definitivo.
+
 Il mio modo di programmare ed il target in se sono cambiati molto di recente.
 Dal 2017 ho cominciato a sviluppare 
 [bot Telegram](https://unifiedban.solutions) per la sicurezza e gestione dei
@@ -85,6 +88,7 @@ collaborare.
 ![](/uploads/2021-01-03 09-55-09-gnome-builder-gnome-sources.png)
 
 #### Integrazione Meson & Flatpak
+
 GNOME Builder è <mark>Flatpak e Meson</mark> by default. Questo significa che
 ogni applicazione creata, nasce come Flatpak e col il sistema di build 
 meson+ninja.
@@ -95,6 +99,7 @@ scelta, Flatpak è di GNOME e lo trovo un ottimo incentivo favorire la
 distribuzione del progetto come Flatpak sin dalla sua nascita.
 
 #### Glade, sei tu?
+
 Da diverso tempo utilizzo Glade per la realizzazione delle interfacce GTK. Si
 tratta di uno strumento, veramente potente che da un editor grafico restituisce
 il progetto in formato interpretabile `xml`, normalmente con estensione `.ui` o

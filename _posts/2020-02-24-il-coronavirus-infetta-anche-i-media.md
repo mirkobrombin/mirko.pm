@@ -7,6 +7,7 @@ published: true
 is_translation: false
 translation: false
 ---
+
 Ogni mattina mi informo sulle ultime notizie. Apro la mia applicazione preferita, scorro le notizie sul virus.. scorro le notizie sul virus.. scorro nel notizie sul virus.. e.. dove sono i post contro il nuovo Samsung Galaxy Flop? E i miei amati politici?
 
 Si parla solo del virus. Il che va bene, è una minaccia e un grosso problema per tutti ma: "Il virus infetta anche la Serie A" ._.

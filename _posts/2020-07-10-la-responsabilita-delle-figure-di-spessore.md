@@ -7,6 +7,7 @@ published: true
 is_translation: false
 translation: false
 ---
+
 A volte mi capita di fermarmi e ragionare su questioni che probabilmente, anzi sicuramente, non necessitano di una mia intromissione e questo accade nei momenti meno opportuni: mentre parlo con qualcuno, mentre riordino casa, quando lavo l'auto con l'acqua che scorre a fiumi.. insomma tutta una storia.
 
 Di recente mi è capitato di impiegare diverse ore nella preparazione del bollito. Una volta ultimato mi siedo a tavola, prendo la forchetta e fisso il piatto. Tac è partito il viaggio, non so se ho drogato il piatto ma mi sono fermato un buon 15 minuti a ragionare su quelle che sono le responsabilità delle figure di spessore.

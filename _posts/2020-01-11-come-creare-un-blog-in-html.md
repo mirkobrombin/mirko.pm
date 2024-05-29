@@ -7,6 +7,7 @@ published: true
 is_translation: false
 translation: false
 ---
+
 I più curiosi hanno di certo dato un'occhiata al sorgente di questo sito web, arrivando alla deduzione che sia stato realizzato in HTML.
 
 Oggi stesso nella chat staff di linux/hub, mi è stato chiesto se ho utilizzato sistemi come Jekyll/Hugo, prodotti per la scrittura di siti web in HTML partendo da fogli Markdown.
@@ -157,7 +158,7 @@ Posiziono ogni articolo nella stessa directory in modo da creare un link posizio
 
 Per quanto riguarda l'indicizzazione dei contenuti e la semplicità dei link, trattandosi di file `.html`, ho semplicemente scritto una regola per Nginx, il web server in uso, che va a riscrivere il link visualizzato rimuovendo l'estensione.
 
-![it's alive!](https://media.giphy.com/media/YEL7FJP6ed008/giphy.gif)  
+![it's alive!](https://media.giphy.com/media/YEL7FJP6ed008/giphy.gif)
 
 ## Conclusioni
 
