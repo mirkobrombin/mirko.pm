@@ -1,33 +1,30 @@
 ---
-title: "La responsabilità delle figure di spessore"
-description: "A volte mi capita di fermarmi e ragionare su questioni che probabilmente, anzi sicuramente, non necessitano di una mia intromissione e .."
-published: 2020-07-10
-layout: post
+title: "The Responsibility of Prominent Figures"
+description: "Sometimes I find myself stopping to think about issues that probably, actually definitely, don't need my involvement and..."
 published: true
-is_translation: false
-translation: false
+layout: post
 ---
 
-A volte mi capita di fermarmi e ragionare su questioni che probabilmente, anzi sicuramente, non necessitano di una mia intromissione e questo accade nei momenti meno opportuni: mentre parlo con qualcuno, mentre riordino casa, quando lavo l'auto con l'acqua che scorre a fiumi.. insomma tutta una storia.
+Sometimes I find myself stopping to think about issues that probably, actually definitely, don't need my involvement, and this happens at the most inopportune moments: while I'm talking to someone, while tidying up the house, when I'm washing the car with water flowing everywhere... you know, a whole story.
 
-Di recente mi è capitato di impiegare diverse ore nella preparazione del bollito. Una volta ultimato mi siedo a tavola, prendo la forchetta e fisso il piatto. Tac è partito il viaggio, non so se ho drogato il piatto ma mi sono fermato un buon 15 minuti a ragionare su quelle che sono le responsabilità delle figure di spessore.
+Recently, I spent several hours preparing a pot roast. Once it was ready, I sat down at the table, took my fork, and stared at the plate. Boom, my mind took off. I don't know if I drugged the plate, but I spent a good 15 minutes thinking about the responsibilities of prominent figures.
 
-Figure di spessore.. sono persone o meglio entità superiori a noi con delle responsabilità fuori dal comune. Vedi gli attori, cantanti, politici. Questa è gente le cui parole pende una nazione, migliaia e migliaia di gente che vede questa gente come un modello. Gente che si agrappa alla responsabilità di altri con tutte le forze.
+Prominent figures... these are people, or rather entities, who are above us with extraordinary responsibilities. Think of actors, singers, politicians. These are people whose words hold sway over a nation, thousands and thousands of people who see them as role models. People who cling to others' responsibilities with all their might.
 
-Ecco, <mark>responsabilità di altri</mark>. Prendiamo un politico, un uomo/donna che si prende l'incarico di rappresentare qualcuno, di difendere un ideale. Quante responsabilità può avere un politico?
+Here we go, <mark>others' responsibilities</mark>. Take a politician, a man/woman who takes on the task of representing someone, of defending an ideal. How many responsibilities can a politician have?
 
-Certo le mansioni di chi fa questo mestiere non sono poche, io di sicuro impazzirei a stare in tale contesto. Questa è gente che ogni giorno si trova faccia a faccia con i problemi di una nazione. In questo periodo il COVID ha dato tanto a cui pensare, il peso di una nazione sotto quarantena non è certamente facile da gestire. Senza parlare del post-quarantena, di tutte quelle misure essenziali per mantenere l'equilibrio anche dopo il contenimento del virus.
+Of course, the duties of someone in this profession are numerous. I would definitely go crazy in such a context. These are people who face the problems of a nation every day. During this period, COVID has given a lot to think about, and the weight of a nation under quarantine is certainly not easy to manage. Not to mention the post-quarantine period, with all the essential measures needed to maintain balance even after containing the virus.
 
-Grandi e piccole attività sul margine di fallimento, famiglie affrante che non hanno la certezza di come sarà il loro futuro. Chi il futuro non lo vede e chi ha deciso di non vederlo.
+Small and large businesses on the brink of failure, distraught families who are uncertain about their future. Those who don't see a future and those who have decided not to see it.
 
-I problemi sono tanti, le responsabilità quest'anno salgono. Ci aggiungiamo anche questa moda del vedere razzismo ovunque e troviamo altri tanti problemi che a loro volta vanno a generare altre tante responsabilità. Il lavoro si fa sempre più difficile per questa gente.
+The problems are many, and responsibilities increase this year. We add this trend of seeing racism everywhere, and we find many more problems that, in turn, generate even more responsibilities. The job becomes increasingly difficult for these people.
 
-Presto dovremo pensare anche ad un piano per la restituzione dei fondi prestati che dovranno sanare parte del danno subito dalla pandemia. A questo si unisce la <mark>causa-effetto del decreto Semplificazioni</mark> che darà ancora molte più responsabilità a questa gente la quale dovrà essere in grado di decidere chi avrà accesso a questi fondi ed in quale progetto investire. Non è facile, è sicuramente tutto molto complesso.
+Soon we will have to think about a plan for the repayment of borrowed funds to cover part of the damage caused by the pandemic. Added to this is the <mark>cause-effect of the Simplifications Decree</mark>, which will place even more responsibilities on these people, who will have to decide who will have access to these funds and which projects to invest in. It's not easy, it's all very complex.
 
-Ci tengo a precisare che non sono simpatizzante di alcun partito, vedo la politica come una grossa grassa commedia. Mi sono solo fermato a pensare a come questa gente riesca a vivere con questo grosso carico di responsabilità vitali sulla schiena, con la disperazione delle famiglie sulla coscenza e ciò nonostante trovare il tempo per presentare progetti inutili come il "decreto Giustizia". Un decreto ingiusto che vuole fare giustizia calpestando i diritti umani, la libertà di espressione, di pensiero e che punta i piedi quando cambi canale alla TV.
+I want to clarify that I am not a supporter of any party; I see politics as one big, fat comedy. I just stopped to think about how these people manage to live with this huge load of vital responsibilities on their shoulders, with the desperation of families on their conscience, and still find the time to present useless projects like the "Justice Decree." An unjust decree that seeks to do justice by trampling on human rights, freedom of expression, and thought, and digs in its heels when you change the channel on the TV.
 
-Si nel mentre il bollito si è raffreddato ma non era male anche riscaldato.
+Yes, in the meantime, the pot roast got cold, but it wasn't bad even reheated.
 
-Pace e amore.
+Peace and love.
 
 __Mirko_

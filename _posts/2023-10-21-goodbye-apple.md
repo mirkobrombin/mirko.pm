@@ -1,12 +1,8 @@
 ---
 title: "Goodbye Apple"
 description: "My experience with Apple has been a journey of love, disappointment, and hope for better alternatives."
-published: 2023-10-21
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 ---
 
 Since I purchased my first Apple device, an iMac, the world of technology has seen considerable changes. Back then, macOS (known as OS X at the time) was a revolutionary platform that offered an intuitive, consistent, and impressively well-designed experience. Everything seemed to be in its right place, as if Apple had anticipated my every need. But over the years, something has changed.

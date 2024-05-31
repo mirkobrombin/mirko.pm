@@ -1,12 +1,8 @@
 ---
 title: "Open Source in the Wrong Way"
 description: "Why recreate an open source project: motivations and consequences"
-published: 2023-02-12
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 review_by: TheEvilSkeleton
 ---
 

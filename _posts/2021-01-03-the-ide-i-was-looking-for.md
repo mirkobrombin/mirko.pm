@@ -1,134 +1,131 @@
 ---
 title: "The IDE I was looking for"
-description: ""
-published: 2021-01-03
-layout: post
+description: "GNOME Builder is a very powerful tool, it allows you to develop mainly in 7 languages."
 published: true
-is_translation: false
-translation: the-ide-i-was-looking-for-en
+layout: post
 ---
 
-Sono uno sviluppatore da ormai diversi anni, cominciai a googlare <mark>come
-creare un sito web</mark> quando avevo 14 anni e da allora di strada ne ho
-fatta *(sono passato a StackOverflow 👅)*.
+I've been a developer for several years now, I started to googling <mark>how
+to make a website</mark> I was 14 years old and since then I've
+made *(I switched to StackOverflow 👅)*.
 
-Ho la fortuna di essere cresciuto in un periodo in cui l'informatica,
-precisamente la programmazione, era in forte evoluzione. A quei tempi nessuno
-poteva immaginare che Javascript sarebbe diventato un linguaggio talmente
-famoso da far nascere fiumi di framework basati su di esso.
+I'm lucky enough to have grown up at a time when computer science,
+precisely the programming, was in strong evolution. In those days no one
+could imagine that Javascript would become such a language
+famous as to give rise to rivers of frameworks based on it.
 
-La tecnologia in se è evoluta ad una velocità tale da mettersi alla portata di
-tutti. Ci sono moltissimi linguaggi di programmazione, adatti ad ogni contesto,
-ad ogni sviluppatore.
+The technology itself has evolved at such a speed that it is within reach of
+All. There are many programming languages, suitable for every context,
+to every developer.
 
 ### IDE & Code editors
 
-Cominciai la mia strada da programmatore su Windows, aprivo il notepad e mi
-divertito a far comparire scritte colorate sulla mia pagina web che, per
-fortuna, era in locale 😅.
+I started my way as a programmer on Windows, opened the notepad and
+amused to make colored writings appear on my web page which, for
+fortune, was in local 😅.
 
-Quando scoprii PHP, sentii la necessità di passare ad un editor più strutturato
-come Notepad++. Questo forniva plugins, sintassi del codice, formattazione e
-tanti altri strumenti che mi aiutavano a digerire meglio quel linguaggio.
+When I discovered PHP, I felt the need to move on to a more structured editor
+as Notepads. This provided plugins, code syntax, formatting, and
+so many other tools that helped me digest that language better.
 
-In un anno passai a Visual Studio per esigenza di Visual Basic e C# anche se
-abbandonai questi linguaggi abbastanza velocemente quando comprai un iMac con
-OS X Mountain Lion. Li cominciai ad utilizzare editor come BBEdit e Brackets.
+In one year I switched to Visual Studio for Visual Basic and C# needs, even though
+I abandoned these languages pretty quickly when I bought an iMac with
+OS X Mountain Lion. I started using editors like BBEdit and Brackets.
 
-Il grande cambiamento fu quando diversi anni fa passai a Ubuntu. Da qui vi
-risparmio la carrellata di editor e IDE che ho provato, volendone solo citare
-alcuni: geany, gedit, eclipse, atom, code, elementary code e jetbrains*. Questi
-mi sono serviti a trovare lui, l'IDE definitivo.
+The big change was when I moved to Ubuntu several years ago. From here you will
+I save the roundup of editors and IDE I tried, just wanting to mention
+some: geany, gedit, eclipse, atom, code, elementary code, and jetbrains*. These
+served me to find him, the ultimate IDE.
 
-#### L'IDE definitivo.
+#### The ultimate IDE.
 
-Il mio modo di programmare ed il target in se sono cambiati molto di recente.
-Dal 2017 ho cominciato a sviluppare 
-[bot Telegram](https://unifiedban.solutions) per la sicurezza e gestione dei
-gruppi, software per desktop e server (Linux), portali di pubblicazione e
-gestione contenuti, [CMS](https://github.com/biskuitorg/) etc.
+The way I program and the target itself have changed very recently.
+From 2017 I started to develop 
+[Telegram bot] (https://unifiedban.solutions) for the safety and management of
+groups, desktop and server software (Linux), publishing portals and
+[CMS](https://github.com/biskuitorg/) etc.
 
-Essendo lo sviluppo di applicazioni GTK il mio target principale, ho
-cominciato ad utilizzare <mark>GNOME Builder</mark>, l'IDE tutto in uno di
-GNOME.
+As GTK application development is my main target, I have
+started using <mark>GNOME Builder</mark>, the IDE all in one of
+Gnome.
 
 ![](/uploads/2021-01-03 09-00-54-gnome-builder.png)
 
-Evito di parlare della sua eleganza e del mio essere affezionato alle GTK in
-generale o non finiamo più di parlarne.
+I avoid talking about his elegance and my being fond of GTKs in
+general or we don't stop talking about it.
 
-GNOME Builder è uno strumento potentissimo, permette di sviluppare
-principalmente in 7 linguaggi (quelli comunemente utilizzati da GNOME per le
-sue applicazioni):
+GNOME Builder is a very powerful tool, it allows you to develop
+mainly in 7 languages (those commonly used by GNOME for
+its applications):
 
 - C
 - Javascript
-- Python 💘
-- Rust
+Python 💘
+Rust, Rust
 - C++
 - C#
 - Vala
 
 ![](/uploads/2021-01-03 09-50-43-gnome-builder-new-project.png)
 
-Permette di scegliere sin da subito la licenza con cui distribuire il software,
-abilitare il versionamento Git e preconfigura il progetto per un determinato
-contesto. È infatti possibile scegliere il target per il tipo di applicazione
-che stiamo per sviluppare:
+It allows you to immediately choose the license with which to distribute the software,
+enable Git versioning and preconfigure the project for a given
+Context. you can choose the target for the application type
+that we are going to develop:
 
-- Applicazione GNOME (quindi supporto ai widget GTK)
-- Libreria condivisa
-- Applicazione da riga di comando  
+- GNOME application (then support for GTK widgets)
+- Shared library
+- Command-line application  
 
-.. o banalmente un progetto vuoto.
+.. or trivially an empty project.
 
-Possiamo addirittura scegliere uno dei progetti di GNOME da cui imparare o
-collaborare.
+We can even choose one of GNOME's projects from which to learn or
+Collaborate.
 
 ![](/uploads/2021-01-03 09-55-09-gnome-builder-gnome-sources.png)
 
-#### Integrazione Meson & Flatpak
+#### Meson & Flatpak Integration
 
-GNOME Builder è <mark>Flatpak e Meson</mark> by default. Questo significa che
-ogni applicazione creata, nasce come Flatpak e col il sistema di build 
+GNOME Builder is <mark>Flatpak and Meson</mark> by default. This means that
+every application created, was born as Flatpak and with the build system 
 meson+ninja.
 
-Si tratta di una scelta opzionale, basterà eliminare il manifesto `.json` nella
-root del progetto per utilizzare solo la coppia meson+ninja. Ma apprezzo la
-scelta, Flatpak è di GNOME e lo trovo un ottimo incentivo favorire la
-distribuzione del progetto come Flatpak sin dalla sua nascita.
+This is an optional choice, just delete the '.json' manifest in the
+root of the project to use only the meson+ninja pair. But I appreciate the
+choice, Flatpak is from GNOME and I find it a great incentive to encourage
+distribution of the project as Flatpak since its inception.
 
-#### Glade, sei tu?
+#### Glade, is that you?
 
-Da diverso tempo utilizzo Glade per la realizzazione delle interfacce GTK. Si
-tratta di uno strumento, veramente potente che da un editor grafico restituisce
-il progetto in formato interpretabile `xml`, normalmente con estensione `.ui` o
-`.glade`.
+I have been using Glade for some time for the realization of GTK interfaces. Yes
+it's a really powerful tool that from a graphic editor returns
+the project in interpretable format 'xml', normally with extension '.ui' or
+'.glade'.
 
 ![](/uploads/2021-01-03 10-03-31-glade.png)
 
-Include tutti i [widget](https://developer.gnome.org/gtk3/stable/GtkWidget.html)
-GTK, le proprietà, i segnali, accelleratori, tutto. Permette di realizzare una
-interfaccia completa da zero. Inizialmente, stupito dalla efficienza di questo
-strumento, non ho sentito la mancanza di una sua integrazione in GNOME Builder.
-Ma con l'espansione continua del codice di
-[Bottles](https://github.com/bottlesdevs/Bottles), una della applicazioni a cui
-lavoro, ho cominciato a sentire *il peso* del dover passare da una applicazione
-all'altra.
+Includes all [widgets](https://developer.gnome.org/gtk3/stable/GtkWidget.html)
+GTK, properties, signals, accelerators, everything. It allows you to create a
+full interface from scratch. Initially, amazed by the efficiency of this
+tool, I did not miss its integration into GNOME Builder.
+But with the continuous expansion of the code of
+[Bottles] (https://github.com/bottlesdevs/Bottles), one of the applications to which
+work, I began to feel *the weight* of having to go through an application
+to the other.
 
-Ora, siccome sono una scimmia 🙈 e non analizzo mai per bene un programma prima
-di usarlo, non avevo notato che Builder fornisce una integrazione di Glade.
+Now, because I'm a 🙈 and I never analyze a program right before
+to use it, I hadn't noticed that Builder provides a Glade integration.
 
 ![](/uploads/2021-01-03 09-05-21-gnome-builder-glade.png)
 
-Credo si tratti di uno stadio ancora instabile perchè qualche rallentamento
-l'ho percepito ma questa integrazione fa di Builder l'IDE completo per quanto
-riguarda il mio utilizzo. Da qui posso iniziare e terminare lo sviluppo di una
-applicazione, senza mai abbandonare la schermata. Permette di sfogliare le
-documentazioni stesse senza passare al browser, integra la TODOlist, creata
-analizzando il codice dell'applicazione. Fornisce un debugger funzionale, lo
-strumento di analisi Valgrind e permette la profilazione del processo.
+I think it's still an unstable stage because some slowdown
+i sensed it but this integration makes Builder the complete IDE as far as
+is about my use. From here I can begin and end the development of a
+application, without ever abandoning the screen. It allows you to browse the
+documentation without switching to the browser integrates the todolist that you created
+analyzing the application code. It provides a functional debugger, the
+valgrind analysis tool and allows the profiling of the process.
 
-Grazie GNOME 💖, ti sarò per sempre riconoscente.
+Thank you GNOME 💖, I will be forever grateful.
 
 __Mirko_

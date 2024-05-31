@@ -1,12 +1,8 @@
 ---
 title: "My experience making a Linux distribution"
 description: "Creating a Linux distribution is a challenging task that requires a lot of dedication and focus, and I learned a lot through the process of creating my own."
-published: 2023-02-15
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 ---
 
 Creating a Linux distribution is a challenging task that requires a lot of dedication and focus, and I learned a lot through the process of creating my own.

@@ -1,12 +1,8 @@
 ---
 title: "Plasma has all the pieces, but where is the glue?"
 description: "A case study of the KDE Plasma desktop environment UX and design."
-published: 2024-02-20
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 ---
 
 KDE Plasma is among the most popular desktop environments, renowned for its flexibility, customizability, and modern appearance, excelling in these aspects.

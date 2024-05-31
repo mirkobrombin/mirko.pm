@@ -1,12 +1,8 @@
 ---
 title: "Vanilla OS Stable First Thoughts"
 description: "My first thoughts a few hours after the release of the Vanilla OS stable."
-published: 2022-12-30
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 ---
 
 Yesterday we [released](https://vanillaos.org/2022/12/29/vanilla-os-22-10-kinetic.html)

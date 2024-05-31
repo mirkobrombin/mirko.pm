@@ -1,12 +1,8 @@
 ---
 title: "Building Strong Foundations"
 description: "The Power of Communication, Collaboration, and Responsibility in Open Source Communities"
-published: 2023-05-28
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 ---
 
 Communities play a key role in supporting many open source projects. These communities are the backbone of an open source project and are made up of people who share a common goal and embrace the project's ideals. It is essential that those who choose to contribute to an open source project, especially when they assume important roles and participate in administrative decisions, are fully aware of the commitment they are making and of their duties to other contributors and to the project itself.

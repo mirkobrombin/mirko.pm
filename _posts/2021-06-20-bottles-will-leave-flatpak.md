@@ -1,12 +1,8 @@
 ---
 title: "This is why Bottles is about to leave Flatpak"
 description: "I also see that the Flathub user community (the repository where Bottles is distributed) is very demanding."
-published: 2021-06-20
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 ---
 
 > Wait, this article is obsolete, there have been some changes of decision and

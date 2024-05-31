@@ -1,12 +1,8 @@
 ---
 title: "Behind the Scenes of Innovation"
 description: "Reflections on technological innovation and an invitation to consider the multiple variables that influence decisions, whether business, environmental, legal or social, going beyond simplifications and appearances."
-published: 2024-05-28
-layout: post
 published: true
-is_translation: false
-translation: false
-is_english: true
+layout: post
 review_by: kbdharun
 ---
 

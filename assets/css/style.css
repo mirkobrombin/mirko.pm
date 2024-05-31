@@ -57,13 +57,12 @@ h4,
 h5,
 h6 {
     margin-bottom: .2em;
-line-height: 1.3em;}
+    line-height: 1.3em;
+}
 
-.logo,
 h1,
-h2,
-h3 {
-    font-family: 'Arvo', serif;
+h2 {
+    font-family: "Bevan", serif;
 }
 
 h1 {
@@ -74,14 +73,15 @@ h2 {
     font-size: 1.3em;
 }
 
+.logo,
 h3 {
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 h1,
-h2,
-.logo {
-    font-weight: 700;
+h2 {
+    font-weight: 500;
 }
 
 /* Hr */
@@ -96,9 +96,6 @@ hr {
 /* Header */
 header {
     padding: 1.5rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 9;
 }
 
 header .wrapper {

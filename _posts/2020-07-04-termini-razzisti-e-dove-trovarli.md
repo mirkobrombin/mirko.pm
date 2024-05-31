@@ -1,36 +1,34 @@
 ---
-title: "Termini razzisti e dove trovarli"
-description: "Il razzismo è un problema che tormenta la gente da moltissimi anni, oserei dire da sempre. Neri, gialli, bianchi, turchini, leghisti e chi più ne ha più ne metta."
-published: 2020-07-04
-layout: post
+title: "Racist terms and where to find them"
+description: "Racism is a problem that has tormented people for many years, I dare say forever. Black, yellow, white, blue, Northern League members and so on and so forth."
 published: true
-is_translation: false
-translation: false
+layout: post
 ---
-Il razzismo è un problema che tormenta la gente da moltissimi anni, oserei dire da sempre. Neri, gialli, bianchi, turchini, leghisti e chi più ne ha più ne metta. In un modo o nell'altro siamo tutti classificati, se non per il colore per la nazionalità, per i capelli, per la religione, per la preferenza politica.. ce n'è per tutti.
 
-Eppure è ironico leggere di gente schierata contro il razzismo.. vedere razzismo ovunque. Sono giorni che più ci penso e più rido, più rido e più piango. Cioè dai siamo seri.
+Racism is a problem that has plagued people for many years, I would dare to say forever. Black, yellow, white, blue, Lega Nord supporters, and so on. One way or another, we are all classified, if not by color, then by nationality, by hair, by religion, by political preference... there’s something for everyone.
+
+Yet, it’s ironic to read about people standing against racism... seeing racism everywhere. The more I think about it, the more I laugh, the more I laugh, the more I cry. I mean, seriously.
 
 ![](https://media1.giphy.com/media/YWwYgeKquXKJq/giphy.gif?cid=ecf05e47726f659c5e9e226b65f1d952e4fc3fb029cb34b3&rid=giphy.gif)
 
-A volte mi fermo a pensare: posso ordinare un negroni ad un barista di colore? Ma poi di colore che significa? Noi "bianchi" siano incolore? Quindi dovrei ritenermi offeso cioè anche io voglio il colore... mmh ma sto negroni?
+Sometimes I stop to think: can I order a Negroni from a black bartender? But then, what does "of color" mean? Are we "whites" colorless? So should I feel offended, like I also want to be "of color"... but what about the Negroni?
 
-Dai siamo ad un punto della storia in cui per non fare razzismo si fa razzismo. Per non far notare a qualcuno che hai notato il suo colore, la sua religione o che altro, glielo fai notare: "scusa, senza offesa ma vorrei un negroni" :| ed il barista tipo: "ma guarda sto cretino".
+We're at a point in history where, in an attempt to avoid racism, we end up being racist. To avoid showing someone that you noticed their color, their religion, or whatever, you make it noticeable: "excuse me, no offense, but I’d like a Negroni" :| and the bartender is like: "look at this idiot".
 
-Ok questo è stato un esempio un po forzato, la fuori la situazione non è poi così grave... ah no:
+Okay, this was a bit of an exaggerated example. Out there, the situation isn't that bad... oh wait:
 
-*   I termini master e slave in informatica sono razzisti
-*   Blacklist e Whitelist sono razzisti
-*   Negli scacchi muove prima il bianco, scacchi razzisti
+*   The terms master and slave in computing are considered racist
+*   Blacklist and Whitelist are considered racist
+*   In chess, white moves first, so chess is racist
 
-No va beh x.x sparatemi ora, sto mondo fa schifo. Certa gente ha i neuroni che fanno a cazzotti, sicuramente nessuno prenderà provv... [Twitter: We’re starting with a set of words we want to move away from using in favor of more inclusive language](https://twitter.com/TwitterEng/status/1278733305190342656?s=09).... [Canon Has Officially Dropped 'Master' and 'Slave' Terms](https://fstoppers.com/gear/canon-has-officially-dropped-master-and-slave-terms-497389) ..
+No, seriously x.x just shoot me now, this world is a mess. Some people have neurons constantly fighting each other, surely no one will take action... [Twitter: We’re starting with a set of words we want to move away from using in favor of more inclusive language](https://twitter.com/TwitterEng/status/1278733305190342656?s=09).... [Canon Has Officially Dropped 'Master' and 'Slave' Terms](https://fstoppers.com/gear/canon-has-officially-dropped-master-and-slave-terms-497389) ..
 
-E niente, il covid non è l'unica pandemia dell'anno, c'è una tempesta di neuroni in arrivo.
+And that’s it, COVID isn’t the only pandemic of the year, there’s a neuron storm coming.
 
-Sul serio ora, parlando seriamente. Siamo nel 2020, dopo tanti anni di lotte per i diritti, per l'eguaglianza, per il rispetto reciproco, forse è arrivato il momento di trattare il razzismo per quel che è: un argomento stupido che non dovrebbe essere nemmeno preso in causa perchè è più razzista chi vede razzismo ovunque di chi effettivamente (nella sua ignoranza) lo dimostra.
+Seriously now, speaking seriously. We are in 2020, after many years of fighting for rights, for equality, for mutual respect, perhaps it’s time to treat racism for what it is: a stupid topic that shouldn't even be considered because those who see racism everywhere are more racist than those who actually (in their ignorance) demonstrate it.
 
-Puntualizzare ogni volta che il razzismo è ovunque, non fa altro che peggiorare la situazione e creare guerre sempre più complesse, impossibili da sostenere, senza vincitori ne perdenti.
+Pointing out every time that racism is everywhere only worsens the situation and creates increasingly complex wars, impossible to sustain, without winners or losers.
 
-Pace e amore.
+Peace and love.
 
 __Mirko_
