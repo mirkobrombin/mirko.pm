@@ -96,6 +96,8 @@ hr {
 /* Header */
 header {
     padding: 1.5rem 2rem;
+    position: relative;
+    z-index: 9;
 }
 
 header .wrapper {
