@@ -25,6 +25,8 @@ navigation:
       name: Me
     - link: "/blog/"
       name: Blog
+    - link: "/support/"
+      name: Support Me
     - link: "https://github.com/mirkobrombin"
       name: Projects
     - link: "https://t.me/mirkofeeds"
