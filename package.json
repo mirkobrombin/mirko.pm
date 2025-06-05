@@ -1,0 +1,23 @@
+{
+  "name": "mirko.pm",
+  "version": "1.0.0",
+  "description": "The template is distributed under the MIT license. The contents (texts, articles) are my intellectual property.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "fs-extra": "^11.3.0",
+    "gray-matter": "^4.0.3",
+    "liquidjs": "^10.21.1",
+    "live-server": "^1.2.2",
+    "marked": "^15.0.12",
+    "yaml": "^2.8.0"
+  }
+}

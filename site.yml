@@ -32,5 +32,3 @@ navigation:
     - link: "https://t.me/mirkofeeds"
       name: Feed
 
-plugins:
-  - jekyll-feed

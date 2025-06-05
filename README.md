@@ -6,25 +6,26 @@ The template is distributed under the MIT license. The contents (texts, articles
 
 ### Dependencies
 
-- ruby
-- ruby-devel
-- github-pages
+- Node.js (version 18 or higher)
 
 ```bash
-gem install github-pages
+npm install
 ```
+
+Content lives under the `src/` directory and templates under `src/templates`.
+Configuration is stored in `site.yml`.
 
 ### Build
 
 ```bash
-jekyll build
+npm run build
 ```
 
 ### Server
 
 ```bash
-jekyll serve
+npm run dev
 ```
 
 > [!NOTE]
-> This also automatically builds the project.
+> The development server also rebuilds the project on file changes.
